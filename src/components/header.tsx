@@ -1,6 +1,7 @@
 "use client";
 
 import * as React from "react"
+import { createPortal } from "react-dom"
 import Image from "next/image"
 import Link from "next/link"
 import { Sparkles, Building2, HardHat, Droplets, SprayCan, Briefcase, ChevronRight, ChevronDown, Wind, MapPin, Clock, Phone, MenuIcon, XIcon, Mail } from "lucide-react"
@@ -207,48 +208,62 @@ function DesktopMenu() {
 
 function MobileNav() {
   const [open, setOpen] = React.useState(false);
+  const [mounted, setMounted] = React.useState(false);
 
-  return (
-    <Sheet open={open} onOpenChange={setOpen}>
-      <SheetTrigger asChild>
-        <Button size="icon" variant="ghost" className="rounded-md md:hidden">
-          <MenuIcon className="size-5" />
-        </Button>
-      </SheetTrigger>
-      <SheetContent
-        className="bg-background/95 supports-[backdrop-filter]:bg-background/80 w-full gap-0 backdrop-blur-lg border-l-0 sm:max-w-md p-0"
-        showClose={false}
+  React.useEffect(() => { setMounted(true); }, []);
+
+  const close = () => setOpen(false);
+
+  const drawerContent = (
+    <>
+      {/* Backdrop — fades in/out */}
+      <div
+        onClick={close}
+        className={cn(
+          "fixed inset-0 z-[9998] bg-black/50 backdrop-blur-sm transition-opacity duration-300",
+          open ? "opacity-100 pointer-events-auto" : "opacity-0 pointer-events-none"
+        )}
+      />
+      {/* Drawer — slides in from right */}
+      <div
+        className={cn(
+          "fixed inset-y-0 right-0 z-[9999] w-full sm:max-w-md bg-background flex flex-col shadow-2xl transition-transform duration-300 ease-in-out",
+          open ? "translate-x-0" : "translate-x-full"
+        )}
       >
-        <div className="flex h-16 items-center justify-between border-b px-6">
+        {/* Drawer header */}
+        <div className="flex h-16 items-center justify-between border-b px-6 shrink-0">
           <span className="font-bold">Enterprise Cleaning</span>
-          <Button size="icon" variant="ghost" className="rounded-full" onClick={() => setOpen(false)}>
+          <button
+            type="button"
+            onClick={close}
+            className="rounded-full p-2 hover:bg-accent transition-colors inline-flex items-center justify-center"
+          >
             <XIcon className="size-5" />
             <span className="sr-only">Close</span>
-          </Button>
+          </button>
         </div>
-        <div className="container grid gap-y-2 overflow-y-auto px-6 pt-5 pb-12">
+        {/* Nav links */}
+        <div className="overflow-y-auto px-6 pt-5 pb-12 flex-1">
           <Accordion type="single" collapsible className="w-full">
             <AccordionItem value="home" className="border-b-0">
-              <Link href="/" onClick={() => setOpen(false)} className="flex flex-1 items-center justify-between py-4 font-medium transition-all hover:underline">
+              <Link href="/" onClick={close} className="flex flex-1 items-center justify-between py-4 font-medium transition-all hover:underline">
                 Home
               </Link>
             </AccordionItem>
-
             <AccordionItem value="services" className="border-b-0">
-              <AccordionTrigger className="capitalize hover:no-underline">
-                Our Services
-              </AccordionTrigger>
+              <AccordionTrigger className="capitalize hover:no-underline">Our Services</AccordionTrigger>
               <AccordionContent className="space-y-1">
                 <ul className="grid gap-1">
                   {servicesLinks.map((link) => (
-                    <li key={link.href} onClick={() => setOpen(false)}>
+                    <li key={link.title} onClick={close}>
                       <NavItemMobile item={link} href={link.href} />
                     </li>
                   ))}
                   <div className="px-2 py-2 mt-2 border-t">
                     <span className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-2 block">Special Projects</span>
                     {specialProjects.map((link) => (
-                      <li key={link.href} className="mb-1 list-none" onClick={() => setOpen(false)}>
+                      <li key={link.title} className="mb-1 list-none" onClick={close}>
                         <NavItemMobile item={link} href={link.href} />
                       </li>
                     ))}
@@ -256,27 +271,35 @@ function MobileNav() {
                 </ul>
               </AccordionContent>
             </AccordionItem>
-
             <AccordionItem value="about" className="border-b-0">
-              <Link href="/about" onClick={() => setOpen(false)} className="flex flex-1 items-center justify-between py-4 font-medium transition-all hover:underline">
+              <Link href="/about" onClick={close} className="flex flex-1 items-center justify-between py-4 font-medium transition-all hover:underline">
                 About Us
               </Link>
             </AccordionItem>
-
             <AccordionItem value="contact" className="border-b-0">
-              <Link href="/contact" onClick={() => setOpen(false)} className="flex flex-1 items-center justify-between py-4 font-medium transition-all hover:underline">
+              <Link href="/contact" onClick={close} className="flex flex-1 items-center justify-between py-4 font-medium transition-all hover:underline">
                 Contact
               </Link>
             </AccordionItem>
           </Accordion>
-
-          <div className="mt-8" onClick={() => setOpen(false)}>
-            <Button asChild className="w-full">
+          <div className="mt-8">
+            <Button asChild className="w-full" onClick={close}>
               <Link href="/quote">Get a Quote</Link>
             </Button>
           </div>
         </div>
-      </SheetContent>
-    </Sheet>
-  )
+      </div>
+    </>
+  );
+
+  return (
+    <>
+      {/* Hamburger button */}
+      <Button size="icon" variant="ghost" className="rounded-md md:hidden" onClick={() => setOpen(true)}>
+        <MenuIcon className="size-5" />
+      </Button>
+      {/* Always mounted in portal — CSS handles show/hide via transition */}
+      {mounted && createPortal(drawerContent, document.body)}
+    </>
+  );
 }

@@ -70,7 +70,7 @@ const TestimonialCard: React.FC<TestimonialCardProps> = ({
     <div
       onClick={() => handleMove(position)}
       className={cn(
-        "absolute left-1/2 top-1/2 cursor-pointer border p-8 transition-all duration-500 ease-in-out shadow-lg",
+        "absolute left-1/2 top-1/2 cursor-pointer border p-6 sm:p-8 transition-all duration-500 ease-in-out shadow-lg flex flex-col",
         isCenter 
           ? "z-10 bg-[#00B8FF] text-white border-[#00B8FF]" 
           : "z-0 bg-card text-card-foreground border-border hover:border-[#00B8FF]/50"
@@ -103,29 +103,40 @@ const TestimonialCard: React.FC<TestimonialCardProps> = ({
       <img
         src={testimonial.imgSrc}
         alt={`${testimonial.by.split(',')[0]}`}
-        className="mb-6 h-16 w-16 rounded-full border-2 border-background object-cover object-top"
+        className="mb-4 h-12 w-12 sm:h-16 sm:w-16 rounded-full border-2 border-background object-cover object-top shrink-0"
         style={{
           boxShadow: "3px 3px 0px rgba(0,0,0,0.1)"
         }}
       />
-      <h3 className={cn(
-        "text-base sm:text-xl font-medium tracking-tight",
-        isCenter ? "text-white" : "text-foreground"
-      )}>
-        "{testimonial.testimonial}"
-      </h3>
+      <div 
+        className="flex-1 overflow-y-auto pr-2 mb-2"
+        style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}
+      >
+        <h3 className={cn(
+          "text-sm sm:text-base font-medium tracking-tight leading-relaxed",
+          isCenter ? "text-white" : "text-foreground"
+        )}>
+          "{testimonial.testimonial}"
+        </h3>
+      </div>
       <p className={cn(
-        "absolute bottom-8 left-8 right-8 mt-2 text-sm italic font-medium",
+        "mt-auto text-xs sm:text-sm italic font-medium shrink-0 truncate",
         isCenter ? "text-white/80" : "text-muted-foreground"
       )}>
         - {testimonial.by}
       </p>
+      
+      <style dangerouslySetInnerHTML={{__html: `
+        .flex-1::-webkit-scrollbar {
+          display: none;
+        }
+      `}} />
     </div>
   );
 };
 
 export const StaggerTestimonials: React.FC = () => {
-  const [cardSize, setCardSize] = useState(365);
+  const [cardSize, setCardSize] = useState(380);
   const [testimonialsList, setTestimonialsList] = useState(testimonials);
 
   const handleMove = (steps: number) => {
@@ -149,7 +160,7 @@ export const StaggerTestimonials: React.FC = () => {
   useEffect(() => {
     const updateSize = () => {
       const { matches } = window.matchMedia("(min-width: 640px)");
-      setCardSize(matches ? 365 : 290);
+      setCardSize(matches ? 380 : 320);
     };
 
     updateSize();
