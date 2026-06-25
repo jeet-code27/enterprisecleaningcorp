@@ -15,7 +15,7 @@ const locations = [
 
 export function ServiceAreas() {
   return (
-    <section className="py-20 md:py-28 bg-white relative overflow-hidden border-t border-slate-100">
+    <section className="py-20 md:py-28 bg-slate-50 relative overflow-hidden">
       {/* Subtle Dot Pattern Background */}
       <div className="absolute inset-0 pointer-events-none opacity-[0.03]" style={{ backgroundImage: 'radial-gradient(#00B8FF 2px, transparent 2px)', backgroundSize: '32px 32px' }}></div>
       

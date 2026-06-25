@@ -66,7 +66,7 @@ function ServiceItem({ slide, index }: { slide: { title: string }, index: number
 
 export function ServicesSlideshow() {
   return (
-    <HoverSlider className="place-content-center py-20 px-6 md:px-12 bg-white text-brand-navy border-t border-slate-100">
+    <HoverSlider className="place-content-center py-20 px-6 md:px-12 bg-slate-50 text-brand-navy border-t border-slate-100">
       <div className="container mx-auto">
         <h3 className="mb-12 text-primary text-sm font-semibold uppercase tracking-widest flex items-center gap-2">
           <span className="w-8 h-px bg-primary"></span>

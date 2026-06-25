@@ -8,15 +8,16 @@ import {
 } from "@/components/blocks/animated-video-on-scroll";
 import { HowItWorks } from "@/components/ui/how-it-works";
 import { WhyChooseUs } from "@/components/ui/why-choose-us";
-// import { StaggerTestimonials } from "@/components/ui/stagger-testimonials";
+import { StaggerTestimonials } from "@/components/ui/stagger-testimonials";
 import { ServicesSlideshow } from "@/components/blocks/services-slideshow";
 import { EmergencyCTA } from "@/components/blocks/emergency-cta";
 import { StatsBanner } from "@/components/ui/stats-banner";
 import { GallerySection } from "@/components/blocks/gallery-section";
-import { ElfsightReviews } from "@/components/blocks/elfsight-reviews";
+// import { ElfsightReviews } from "@/components/blocks/elfsight-reviews";
 import { WhyEnterprise } from "@/components/blocks/why-enterprise";
 import { ServiceAreas } from "@/components/blocks/service-areas";
 import { GoogleMapSection } from "@/components/blocks/google-map";
+import { FAQSection } from "@/components/blocks/faq-section";
 
 export default function Home() {
   return (
@@ -63,8 +64,8 @@ export default function Home() {
               {/* Video sits below the text naturally */}
               <ContainerInset className="w-full px-4 mt-16 md:mt-24">
                 <HeroVideo
-                  src="https://videos.pexels.com/video-files/8566672/8566672-uhd_2560_1440_30fps.mp4"
-                  data-src="https://videos.pexels.com/video-files/8566672/8566672-uhd_2560_1440_30fps.mp4"
+                  src="/videos/hero.mp4"
+                  data-src="/videos/hero.mp4"
                 />
               </ContainerInset>
               
@@ -79,10 +80,11 @@ export default function Home() {
         <HowItWorks />
         <WhyEnterprise />
         {/* <WhyChooseUs /> */}
-        {/* <StaggerTestimonials /> */}
-        <ServiceAreas />
-        <ElfsightReviews />
+        <StaggerTestimonials />
+        {/* <ElfsightReviews /> */}
         <GoogleMapSection />
+        <FAQSection />
+        <ServiceAreas />
       </main>
     </div>
   );

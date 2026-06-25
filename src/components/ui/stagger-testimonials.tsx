@@ -169,7 +169,7 @@ export const StaggerTestimonials: React.FC = () => {
   }, []);
 
   return (
-    <section className="py-24 bg-background overflow-hidden relative">
+    <section className="py-24 bg-white overflow-hidden relative">
       <div className="max-w-7xl mx-auto px-6 text-center mb-16 relative z-20">
         <h5 className="text-sm uppercase tracking-widest font-bold mb-3" style={{ color: "#00B8FF" }}>Happy Customers</h5>
         <h2 className="text-4xl sm:text-5xl font-bold tracking-tight mb-6">

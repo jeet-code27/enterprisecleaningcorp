@@ -30,7 +30,7 @@ const PROCESS_PHASES = [
 
 export const HowItWorks = () => {
   return (
-    <div className="w-full min-h-svh place-content-center bg-background px-6 text-foreground xl:px-12 py-24">
+    <div className="w-full min-h-svh place-content-center bg-white px-6 text-foreground xl:px-12 py-24">
       <div className="max-w-7xl mx-auto grid md:grid-cols-2 md:gap-12 xl:gap-24">
         <div className="left-0 top-0 md:sticky md:h-svh md:py-24 flex flex-col justify-center">
           <div>
