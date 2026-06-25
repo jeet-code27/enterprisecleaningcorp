@@ -14,7 +14,7 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/
 
 const servicesLinks = [
   {
-    title: "Commercial & Night Cleaning",
+    title: "Commercial Day & Night Cleaning",
     description: "Schools, Healthcare, Warehouses, Technology, etc.",
     href: "#",
     icon: Building2,
@@ -99,6 +99,7 @@ export function Header() {
             width={180}
             height={56}
             className="h-12 w-auto object-contain"
+            style={{ width: "auto" }}
             priority
           />
         </Link>

@@ -15,6 +15,7 @@ export function Footer() {
               width={240}
               height={80}
               className="h-20 w-auto object-contain"
+              style={{ width: "auto" }}
             />
             <p className="text-white/80 text-sm leading-relaxed mt-4">
               There's clean, and then there's ENTERPRISE clean. Specializing in Commercial and Residential Emergency Cleaning.
