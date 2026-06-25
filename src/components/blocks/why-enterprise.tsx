@@ -34,8 +34,8 @@ export function WhyEnterprise() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24 items-center">
           
           {/* Left Side: Features */}
-          <div className="order-2 lg:order-1">
-            <h5 className="text-[#E31837] font-bold tracking-widest uppercase text-sm mb-4">Why Enterprise</h5>
+          <div className="order-1">
+            <h5 className="text-[#E31837] font-bold tracking-widest uppercase text-sm mb-4">Why Enterprise Cleaning and Restoration Corporation</h5>
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-extrabold text-slate-900 leading-tight mb-12">
               The Difference Is a Clean You <br className="hidden lg:block"/>
               <span className="text-[#00B8FF]">Never Have to Think About</span>
@@ -71,7 +71,7 @@ export function WhyEnterprise() {
             whileInView={{ opacity: 1, scale: 1 }}
             viewport={{ once: true }}
             transition={{ duration: 0.7 }}
-            className="order-1 lg:order-2 flex flex-col items-center lg:items-start"
+            className="order-2 flex flex-col items-center lg:items-start"
           >
             {/* Image Wrapper */}
             <div className="relative rounded-3xl overflow-hidden shadow-2xl ring-4 ring-white w-full">
