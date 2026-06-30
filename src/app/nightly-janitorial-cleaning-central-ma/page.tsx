@@ -9,8 +9,8 @@ import {
 import { CTASection } from "@/components/blocks/cta-with-glow";
 
 export const metadata: Metadata = {
-  title: "Nightly Janitorial Services Worcester & Central MA",
-  description: "Reliable nightly janitorial cleaning for offices, medical buildings, and facilities across Worcester and Central Massachusetts. 97% client retention. Get a free quote.",
+  title: "Nightly Janitorial Services Central MA",
+  description: "Reliable nightly janitorial cleaning for offices, medical buildings, and facilities across Central Massachusetts. 97% client retention. Get a free quote.",
   alternates: {
     canonical: "https://enterprisecleaningcorp.com/nightly-janitorial-cleaning-central-ma"
   }
@@ -35,7 +35,6 @@ const structuredDataService = {
     "url": "https://enterprisecleaningcorp.com"
   },
   "areaServed": [
-    "Worcester MA",
     "Central Massachusetts",
     "Rhode Island",
     "New Hampshire"
@@ -57,10 +56,10 @@ const structuredDataFAQ = {
     },
     {
       "@type": "Question",
-      "name": "Do you serve buildings in Worcester and the surrounding towns?",
+      "name": "Do you serve buildings in Central Massachusetts?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes. We provide nightly janitorial cleaning throughout Worcester and Central Massachusetts, including Shrewsbury, Auburn, Holden, Westborough, Marlborough, and Leominster, and we also serve Rhode Island and New Hampshire."
+        "text": "Yes. We provide nightly janitorial cleaning throughout Central Massachusetts, including Shrewsbury, Auburn, Holden, Westborough, Marlborough, and Leominster, and we also serve Rhode Island and New Hampshire."
       }
     },
     {
@@ -108,7 +107,7 @@ export default function NightlyJanitorialPage() {
         <div className="absolute inset-0 z-0">
           <Image 
             src="/images/nightly_janitorial_hero.png" 
-            alt="Professional nightly janitorial services in a pristine modern office in Worcester MA" 
+            alt="Professional nightly janitorial services in a pristine modern office in Central MA" 
             fill
             className="object-cover object-center"
             priority
@@ -130,7 +129,7 @@ export default function NightlyJanitorialPage() {
               
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight leading-[1.1] drop-shadow-md">
                 Nightly Janitorial Services<br/>
-                <span className="text-[#FFE800]">in Worcester &<br/>Central Massachusetts</span>
+                <span className="text-[#FFE800]">in<br/>Central Massachusetts</span>
               </h1>
               
               <div className="text-base md:text-lg text-white/95 font-medium max-w-2xl leading-relaxed mt-6 drop-shadow-sm space-y-4 text-justify">
@@ -373,7 +372,7 @@ export default function NightlyJanitorialPage() {
               Why Central Massachusetts Businesses Choose Enterprise Cleaning
             </h2>
             <p className="text-lg text-white/80 font-medium leading-relaxed max-w-4xl mx-auto text-justify">
-              We are a Central Massachusetts company serving Massachusetts, Rhode Island, and New Hampshire. We bring 97% client retention, four Worcester Business Journal “Best of Business” awards, and BBB accreditation since 2007 to every nightly contract. For facility managers comparing vendors, those are the proof points that matter: a cleaning partner whose clients stay, whose work has been recognized by the region’s leading business publication, and whose accountability is verified by long-standing BBB accreditation. From Worcester and Shrewsbury to Auburn, Holden, Westborough, Marlborough, Leominster, and across Central MA, we keep commercial buildings consistently clean night after night.
+              We are a Central Massachusetts company serving Massachusetts, Rhode Island, and New Hampshire. We bring 97% client retention, four Worcester Business Journal “Best of Business” awards, and BBB accreditation since 2007 to every nightly contract. For facility managers comparing vendors, those are the proof points that matter: a cleaning partner whose clients stay, whose work has been recognized by the region’s leading business publication, and whose accountability is verified by long-standing BBB accreditation. From Shrewsbury to Auburn, Holden, Westborough, Marlborough, Leominster, and across Central MA, we keep commercial buildings consistently clean night after night.
             </p>
           </div>
 
@@ -403,7 +402,7 @@ export default function NightlyJanitorialPage() {
             <div className="absolute inset-0 bg-gradient-to-t from-[#0090c8]/80 via-transparent to-transparent z-10" />
             <Image
               src="/images/worcester_skyline_banner.png"
-              alt="Worcester Massachusetts — Enterprise Cleaning serves Central MA, RI & NH"
+              alt="Central Massachusetts — Enterprise Cleaning serves Central MA, RI & NH"
               width={1200}
               height={500}
               className="object-cover w-full h-[280px] md:h-[380px]"
@@ -414,7 +413,7 @@ export default function NightlyJanitorialPage() {
                   <MapPin className="w-5 h-5 text-[#FFE800]" />
                   <span className="text-[#FFE800] font-bold text-sm uppercase tracking-widest">Service Area</span>
                 </div>
-                <p className="text-white font-bold text-lg md:text-2xl leading-snug">Worcester &amp; Central MA · Rhode Island · New Hampshire</p>
+                <p className="text-white font-bold text-lg md:text-2xl leading-snug">Central MA · Rhode Island · New Hampshire</p>
               </div>
               <Link href="/contact" className="shrink-0 inline-flex items-center gap-2 bg-[#FFE800] text-slate-900 font-extrabold px-6 py-3 rounded-full hover:bg-yellow-300 transition-colors shadow-lg text-sm">
                 Get a Free Quote <ArrowRight className="w-4 h-4" />

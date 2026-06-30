@@ -9,8 +9,8 @@ import {
 import { CTASection } from "@/components/blocks/cta-with-glow";
 
 export const metadata: Metadata = {
-  title: "Day Porter Services Worcester & Central MA",
-  description: "Professional daytime porter and matron services keeping lobbies, restrooms, and common areas spotless all day across Worcester and Central Massachusetts.",
+  title: "Day Porter Services Central MA",
+  description: "Professional daytime porter and matron services keeping lobbies, restrooms, and common areas spotless all day across Central Massachusetts.",
   alternates: {
     canonical: "https://enterprisecleaningcorp.com/day-porter-services-central-ma"
   }
@@ -35,7 +35,6 @@ const structuredDataService = {
     "url": "https://enterprisecleaningcorp.com"
   },
   "areaServed": [
-    "Worcester MA",
     "Central Massachusetts",
     "Rhode Island",
     "New Hampshire"
@@ -68,7 +67,7 @@ const structuredDataFAQ = {
       "name": "Do you offer matron services for ladies’ restrooms and event spaces?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes. Matron services are part of our day porter offering and are popular with hospitality venues, event spaces, and premium office buildings in the Worcester area."
+        "text": "Yes. Matron services are part of our day porter offering and are popular with hospitality venues, event spaces, and premium office buildings in Central Massachusetts."
       }
     },
     {
@@ -76,7 +75,7 @@ const structuredDataFAQ = {
       "name": "Which areas do you cover for day porter service?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "We provide day porter and matron services throughout Worcester and Central Massachusetts, and across Rhode Island and New Hampshire."
+        "text": "We provide day porter and matron services throughout Central Massachusetts, and across Rhode Island and New Hampshire."
       }
     },
     {
@@ -108,7 +107,7 @@ export default function DayPorterPage() {
         <div className="absolute inset-0 z-0">
           <Image 
             src="/images/day_porter_hero.png" 
-            alt="Professional day porter keeping lobby pristine in Worcester MA" 
+            alt="Professional day porter keeping lobby pristine in Central MA" 
             fill
             className="object-cover object-center"
             priority
@@ -130,7 +129,7 @@ export default function DayPorterPage() {
               
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight leading-[1.1] drop-shadow-md">
                 Day Porter & Matron Services<br/>
-                <span className="text-[#FFE800]">in Worcester &<br/>Central Massachusetts</span>
+                <span className="text-[#FFE800]">in<br/>Central Massachusetts</span>
               </h1>
               
               <div className="text-base md:text-lg text-white/95 font-medium max-w-2xl leading-relaxed mt-6 drop-shadow-sm space-y-4 text-justify">
@@ -364,7 +363,7 @@ export default function DayPorterPage() {
               Proven Day Porter Services in Central MA
             </h2>
             <p className="text-lg text-white/80 font-medium leading-relaxed max-w-4xl mx-auto text-justify">
-              As a Central Massachusetts company, we staff our day porter positions with trained, reliable people and back them with real supervision. We bring 97% client retention, four Worcester Business Journal “Best of Business” awards, and BBB accreditation since 2007 to every account — and the same owner-level accountability that has kept our clients with us year after year. We serve Massachusetts, Rhode Island, and New Hampshire, with our core market in Worcester and the surrounding Central MA communities.
+              As a Central Massachusetts company, we staff our day porter positions with trained, reliable people and back them with real supervision. We bring 97% client retention, four Worcester Business Journal “Best of Business” awards, and BBB accreditation since 2007 to every account — and the same owner-level accountability that has kept our clients with us year after year. We serve Massachusetts, Rhode Island, and New Hampshire, with our core market in the surrounding Central MA communities.
             </p>
           </div>
 
@@ -403,7 +402,7 @@ export default function DayPorterPage() {
                   <MapPin className="w-5 h-5 text-[#FFE800]" />
                   <span className="text-[#FFE800] font-bold text-sm uppercase tracking-widest">Service Area</span>
                 </div>
-                <p className="text-white font-bold text-lg md:text-2xl leading-snug">Worcester &amp; Central MA · Rhode Island · New Hampshire</p>
+                <p className="text-white font-bold text-lg md:text-2xl leading-snug">Central MA · Rhode Island · New Hampshire</p>
               </div>
               <Link href="/contact" className="shrink-0 inline-flex items-center gap-2 bg-[#FFE800] text-slate-900 font-extrabold px-6 py-3 rounded-full hover:bg-yellow-300 transition-colors shadow-lg text-sm">
                 Get a Free Quote <ArrowRight className="w-4 h-4" />

@@ -9,8 +9,8 @@ import {
 import { CTASection } from "@/components/blocks/cta-with-glow";
 
 export const metadata: Metadata = {
-  title: "Commercial Floor Care Worcester & Central MA",
-  description: "Strip and wax, VCT, carpet care, and hard-floor maintenance for commercial buildings across Worcester and Central Massachusetts. Free assessment available.",
+  title: "Commercial Floor Care Central MA",
+  description: "Strip and wax, VCT, carpet care, and hard-floor maintenance for commercial buildings across Central Massachusetts. Free assessment available.",
   alternates: {
     canonical: "https://enterprisecleaningcorp.com/floor-care-services-central-ma"
   }
@@ -35,7 +35,6 @@ const structuredDataService = {
     "url": "https://enterprisecleaningcorp.com"
   },
   "areaServed": [
-    "Worcester MA",
     "Central Massachusetts",
     "Rhode Island",
     "New Hampshire"
@@ -76,7 +75,7 @@ const structuredDataFAQ = {
       "name": "What areas do you serve for commercial floor care?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "We provide floor care throughout Worcester and Central Massachusetts, and across Rhode Island and New Hampshire."
+        "text": "We provide floor care throughout Central Massachusetts, and across Rhode Island and New Hampshire."
       }
     },
     {
@@ -108,7 +107,7 @@ export default function FloorCarePage() {
         <div className="absolute inset-0 z-0">
           <Image 
             src="/images/floor_care_hero.png" 
-            alt="Professional janitor polishing a commercial hard floor in Worcester MA" 
+            alt="Professional janitor polishing a commercial hard floor in Central MA" 
             fill
             className="object-cover object-center"
             priority
@@ -130,7 +129,7 @@ export default function FloorCarePage() {
               
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight leading-[1.1] drop-shadow-md">
                 Commercial Floor Care<br/>
-                <span className="text-[#FFE800]">in Worcester &<br/>Central Massachusetts</span>
+                <span className="text-[#FFE800]">in<br/>Central Massachusetts</span>
               </h1>
               
               <div className="text-base md:text-lg text-white/95 font-medium max-w-2xl leading-relaxed mt-6 drop-shadow-sm space-y-4 text-justify">
@@ -366,7 +365,7 @@ export default function FloorCarePage() {
               Proven Commercial Floor Care in Central MA
             </h2>
             <p className="text-lg text-white/80 font-medium leading-relaxed max-w-4xl mx-auto text-justify">
-              We bring 97% client retention, four Worcester Business Journal “Best of Business” awards, and BBB accreditation since 2007 to every floor care contract, and we serve Massachusetts, Rhode Island, and New Hampshire. Our crews work throughout Worcester, Shrewsbury, Auburn, Holden, Westborough, and the wider Central MA region, restoring and maintaining commercial floors for offices, healthcare facilities, schools, municipal buildings, and industrial sites.
+              We bring 97% client retention, four Worcester Business Journal “Best of Business” awards, and BBB accreditation since 2007 to every floor care contract, and we serve Massachusetts, Rhode Island, and New Hampshire. Our crews work throughout Shrewsbury, Auburn, Holden, Westborough, and the wider Central MA region, restoring and maintaining commercial floors for offices, healthcare facilities, schools, municipal buildings, and industrial sites.
             </p>
           </div>
 
@@ -407,7 +406,7 @@ export default function FloorCarePage() {
                   <MapPin className="w-5 h-5 text-[#FFE800]" />
                   <span className="text-[#FFE800] font-bold text-sm uppercase tracking-widest">Service Area</span>
                 </div>
-                <p className="text-white font-bold text-lg md:text-2xl leading-snug">Worcester &amp; Central MA · Rhode Island · New Hampshire</p>
+                <p className="text-white font-bold text-lg md:text-2xl leading-snug">Central MA · Rhode Island · New Hampshire</p>
               </div>
               <Link href="/contact" className="shrink-0 inline-flex items-center gap-2 bg-[#FFE800] text-slate-900 font-extrabold px-6 py-3 rounded-full hover:bg-yellow-300 transition-colors shadow-lg text-sm">
                 Get a Free Quote <ArrowRight className="w-4 h-4" />
