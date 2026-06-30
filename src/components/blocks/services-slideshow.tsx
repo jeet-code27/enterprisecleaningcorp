@@ -13,28 +13,28 @@ import { cn } from "@/lib/utils"
 const SLIDES = [
   {
     id: "slide-1",
-    title: "Commercial Day & Night Cleaning",
-    imageUrl: "/images/service_commercial.png",
+    title: "Nightly Janitorial Cleaning",
+    imageUrl: "/images/nightly_janitorial_hero.png",
   },
   {
     id: "slide-2",
-    title: "Post Construction",
-    imageUrl: "/images/service_post_construction.png",
+    title: "Day Porter Services",
+    imageUrl: "/images/service_porter.png",
   },
   {
     id: "slide-3",
-    title: "Commercial Turnover Cleaning",
-    imageUrl: "/images/service_turnover.png",
+    title: "Floor Care Services",
+    imageUrl: "/images/service_commercial.png",
   },
   {
     id: "slide-4",
-    title: "Mold Cleanup & Removal",
-    imageUrl: "/images/service_mold.png",
+    title: "Specialty Cleaning",
+    imageUrl: "/images/service_turnover.png",
   },
   {
     id: "slide-5",
-    title: "Porter Services & Day Cleaning",
-    imageUrl: "/images/service_porter.png",
+    title: "Emergency & Restoration",
+    imageUrl: "/images/service_mold.png",
   },
 ]
 

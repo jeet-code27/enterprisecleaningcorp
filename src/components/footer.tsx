@@ -15,50 +15,62 @@ export function Footer() {
               width={240}
               height={80}
               className="h-20 w-auto object-contain"
-              style={{ width: "auto" }}
+              style={{ width: "auto", height: "auto" }}
             />
             <p className="text-white/80 text-sm leading-relaxed mt-4">
               There's clean, and then there's ENTERPRISE clean. Specializing in Commercial and Residential Emergency Cleaning.
             </p>
           </div>
 
-          {/* Quick Links */}
+          {/* Core Services */}
           <div>
             <h4 className="text-lg font-bold mb-6 text-white flex items-center gap-2">
               <span className="w-4 h-1 rounded-full bg-white"></span>
-              Cleaning Services
+              Core Services
             </h4>
             <ul className="space-y-3 text-sm text-slate-200">
               <li>
-                <Link href="#" className="hover:text-white/60 transition-colors">Commercial Cleaning</Link>
+                <Link href="/nightly-janitorial-cleaning-central-ma" className="hover:text-white/60 transition-colors">Nightly Janitorial</Link>
               </li>
               <li>
-                <Link href="#" className="hover:text-white/60 transition-colors">Post Construction Cleaning</Link>
+                <Link href="/day-porter-services-central-ma" className="hover:text-white/60 transition-colors">Day Porter Services</Link>
               </li>
               <li>
-                <Link href="#" className="hover:text-white/60 transition-colors">Floor Work</Link>
+                <Link href="/floor-care-services-central-ma" className="hover:text-white/60 transition-colors">Floor Care</Link>
               </li>
               <li>
-                <Link href="#" className="hover:text-white/60 transition-colors">Disaster &amp; Storm Damage</Link>
+                <Link href="/specialty-cleaning-services-central-ma" className="hover:text-white/60 transition-colors">Specialty Cleaning</Link>
+              </li>
+              <li>
+                <Link href="/emergency-restoration-services-central-ma" className="hover:text-white/60 transition-colors">Emergency & Restoration</Link>
               </li>
             </ul>
           </div>
 
-          {/* Emergency Services */}
+          {/* Industries We Serve */}
           <div>
             <h4 className="text-lg font-bold mb-6 text-white flex items-center gap-2">
               <span className="w-4 h-1 rounded-full bg-[#E31837]"></span>
-              Emergency Services
+              Industries
             </h4>
             <ul className="space-y-3 text-sm text-white/80">
               <li>
-                <Link href="#" className="hover:text-white/60 transition-colors">Fire Damage</Link>
+                <Link href="/manufacturing-industrial-cleaning-central-ma" className="hover:text-white/60 transition-colors">Manufacturing & Industrial</Link>
               </li>
               <li>
-                <Link href="#" className="hover:text-white/60 transition-colors">Mold Remediation</Link>
+                <Link href="/medical-healthcare-cleaning-central-ma" className="hover:text-white/60 transition-colors">Medical & Healthcare</Link>
               </li>
               <li>
-                <Link href="#" className="hover:text-white/60 transition-colors">Crime Scene Clean-up</Link>
+                <Link href="/office-financial-cleaning-central-ma" className="hover:text-white/60 transition-colors">Offices & Financial</Link>
+              </li>
+              <li>
+                <Link href="/school-municipal-cleaning-central-ma" className="hover:text-white/60 transition-colors">Education & Municipal</Link>
+              </li>
+              <li>
+                <Link href="/property-management-cleaning-central-ma" className="hover:text-white/60 transition-colors">Property Management</Link>
+              </li>
+              <li>
+                <Link href="/warehouse-distribution-cleaning-central-ma" className="hover:text-white/60 transition-colors">Warehouses & Distribution</Link>
               </li>
             </ul>
           </div>

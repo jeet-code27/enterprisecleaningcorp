@@ -6,6 +6,18 @@
   --animate-accordion-up: accordion-up 0.2s ease-out;
   --animate-marquee: marquee 20s linear infinite;
   --animate-shimmer: shimmer 2s infinite linear;
+  --animate-appear: appear 0.5s ease-out forwards;
+  --animate-appear-zoom: appear-zoom 0.5s ease-out forwards;
+}
+
+@keyframes appear {
+  0% { opacity: 0; transform: translateY(10px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes appear-zoom {
+  0% { opacity: 0; transform: scale(0.95); }
+  100% { opacity: 1; transform: scale(1); }
 }
 
 @keyframes shimmer {
@@ -107,6 +119,10 @@ button{
   --brand-navy: #0B1E36;        /* Deep navy */
   --brand-red: #E31837;          /* Logo red */
   --brand-yellow: #FFE800;      /* CTA yellow */
+  
+  /* Brand blue glow colors */
+  --brand: 197 100% 50%;
+  --brand-foreground: 197 100% 70%;
 }
 
 .dark {
@@ -129,6 +145,9 @@ button{
   --border: oklch(0.269 0 0);
   --input: oklch(0.269 0 0);
   --ring: oklch(0.439 0 0);
+
+  --brand: 197 100% 50%;
+  --brand-foreground: 197 100% 40%;
 }
 
 @layer base {
@@ -137,5 +156,26 @@ button{
   }
   body {
     @apply bg-background text-foreground;
+  }
+}
+
+@layer utilities {
+  .delay-100 {
+    animation-delay: 100ms;
+  }
+  .delay-300 {
+    animation-delay: 300ms;
+  }
+  
+  /* Hover effect for group */
+  .group:hover .group-hover\:translate-y-\[-2rem\] {
+    --tw-translate-y: -2rem;
+    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate))
+      skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x))
+      scaleY(var(--tw-scale-y));
+  }
+  
+  .group:hover .group-hover\:opacity-100 {
+    opacity: 1;
   }
 }

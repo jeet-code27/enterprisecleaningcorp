@@ -12,44 +12,46 @@ import { Sheet, SheetClose, SheetContent, SheetTrigger } from "@/components/ui/s
 import { Button } from "@/components/ui/button"
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion"
 
-const servicesLinks = [
+const coreServices = [
   {
-    title: "Commercial Day & Night Cleaning",
-    description: "Schools, Healthcare, Warehouses, Technology, etc.",
-    href: "#",
+    title: "Nightly Janitorial Cleaning",
+    description: "Consistent nightly cleaning for professional environments.",
+    href: "/nightly-janitorial-cleaning-central-ma",
     icon: Building2,
   },
   {
-    title: "Post Construction",
-    description: "Thorough cleaning after construction or renovation projects.",
-    href: "#",
-    icon: HardHat,
-  },
-  {
-    title: "Commercial Turnover Cleaning",
-    description: "Fast and efficient turnover cleaning for commercial properties.",
-    href: "#",
-    icon: Briefcase,
-  },
-  {
-    title: "Mold Cleanup & Removal",
-    description: "Professional mold remediation and cleanup services.",
-    href: "#",
-    icon: Wind,
-  },
-  {
-    title: "Porter Services & Day Cleaning",
-    description: "Ongoing day porter services to keep your facility pristine.",
-    href: "#",
+    title: "Day Porter Services",
+    description: "Ongoing daily maintenance to keep your facility pristine.",
+    href: "/day-porter-services-central-ma",
     icon: Droplets,
+  },
+  {
+    title: "Floor Care Services",
+    description: "Specialized care for carpets, hard floors, and more.",
+    href: "/floor-care-services-central-ma",
+    icon: Sparkles,
+  },
+  {
+    title: "Specialty Cleaning",
+    description: "Window cleaning, pressure washing, and deep cleaning.",
+    href: "/specialty-cleaning-services-central-ma",
+    icon: SprayCan,
+  },
+  {
+    title: "Emergency & Restoration",
+    description: "24/7 response for water, fire, and storm damage.",
+    href: "/emergency-restoration-services-central-ma",
+    icon: Wind,
   },
 ]
 
-const specialProjects = [
-  { title: "Carpet Cleaning", href: "#", icon: Sparkles },
-  { title: "Floor Refinishing", href: "#", icon: Sparkles },
-  { title: "Real Estate Deep Cleaning", href: "#", icon: Sparkles },
-  { title: "Window Cleaning", href: "#", icon: Sparkles },
+const industryPages = [
+  { title: "Manufacturing & Industrial", href: "/manufacturing-industrial-cleaning-central-ma", icon: HardHat },
+  { title: "Medical & Healthcare", href: "/medical-healthcare-cleaning-central-ma", icon: ChevronRight },
+  { title: "Offices & Financial", href: "/office-financial-cleaning-central-ma", icon: Briefcase },
+  { title: "Educational & Municipal", href: "/school-municipal-cleaning-central-ma", icon: ChevronRight },
+  { title: "Property Management", href: "/property-management-cleaning-central-ma", icon: Building2 },
+  { title: "Warehouses & Distribution", href: "/warehouse-distribution-cleaning-central-ma", icon: ChevronRight },
 ]
 
 export function Header() {
@@ -99,7 +101,7 @@ export function Header() {
             width={180}
             height={56}
             className="h-12 w-auto object-contain"
-            style={{ width: "auto" }}
+            style={{ width: "auto", height: "auto" }}
             priority
           />
         </Link>
@@ -165,7 +167,7 @@ function DesktopMenu() {
             onClick={() => setOpen(false)}
           >
             <div className="grid grid-cols-2 gap-3">
-              {servicesLinks.map((link) => (
+              {coreServices.map((link) => (
                 <Link key={link.title} href={link.href}>
                   <GridCard className="cursor-pointer">
                     <link.icon className="text-foreground/80 relative size-5 mb-2" />
@@ -179,17 +181,17 @@ function DesktopMenu() {
               {/* Special Projects card */}
               <div className="flex flex-col rounded-xl border bg-muted/50 p-4">
                 <div className="flex items-center gap-2 font-medium text-sm text-foreground/80 mb-3">
-                  <SprayCan className="size-4 shrink-0" />
-                  Special Projects
+                  <Building2 className="size-4 shrink-0" />
+                  Industries We Serve
                 </div>
                 <ul className="flex flex-col gap-0.5">
-                  {specialProjects.map((project) => (
+                  {industryPages.map((project) => (
                     <li key={project.title}>
                       <Link
                         href={project.href}
                         className="flex flex-row items-center gap-1 text-xs text-muted-foreground hover:text-foreground transition-colors py-1.5"
                       >
-                        <ChevronRight className="size-3 shrink-0" />
+                        <project.icon className="size-3 shrink-0" />
                         <span>{project.title}</span>
                       </Link>
                     </li>
@@ -256,14 +258,14 @@ function MobileNav() {
               <AccordionTrigger className="capitalize hover:no-underline">Our Services</AccordionTrigger>
               <AccordionContent className="space-y-1">
                 <ul className="grid gap-1">
-                  {servicesLinks.map((link) => (
+                  {coreServices.map((link) => (
                     <li key={link.title} onClick={close}>
                       <NavItemMobile item={link} href={link.href} />
                     </li>
                   ))}
                   <div className="px-2 py-2 mt-2 border-t">
-                    <span className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-2 block">Special Projects</span>
-                    {specialProjects.map((link) => (
+                    <span className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-2 block">Industries We Serve</span>
+                    {industryPages.map((link) => (
                       <li key={link.title} className="mb-1 list-none" onClick={close}>
                         <NavItemMobile item={link} href={link.href} />
                       </li>
