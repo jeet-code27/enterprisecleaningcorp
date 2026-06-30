@@ -10,7 +10,7 @@ interface CTAProps {
   action: {
     text: string
     href: string
-    variant?: "default" | "glow" | "destructive" | "outline" | "secondary" | "ghost" | "link" | null | undefined
+    variant?: "default" | "destructive" | "outline" | "secondary" | "ghost" | "link" | null | undefined
   }
   className?: string
   children?: React.ReactNode
