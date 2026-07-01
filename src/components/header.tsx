@@ -4,7 +4,7 @@ import * as React from "react"
 import { createPortal } from "react-dom"
 import Image from "next/image"
 import Link from "next/link"
-import { Sparkles, Building2, HardHat, Droplets, SprayCan, Briefcase, ChevronRight, ChevronDown, Wind, MapPin, Clock, Phone, MenuIcon, XIcon, Mail } from "lucide-react"
+import { Sparkles, Building2, HardHat, Droplets, SprayCan, Briefcase, ChevronRight, ChevronDown, Wind, MapPin, Clock, Phone, MenuIcon, XIcon, Mail, ArrowRight, Stethoscope, GraduationCap, Package } from "lucide-react"
 import { cn } from "@/lib/utils"
 import { GridCard } from "@/components/ui/grid-card"
 import { NavigationMenuLink, NavItemMobile } from "@/components/ui/navigation-menu"
@@ -47,11 +47,11 @@ const coreServices = [
 
 const industryPages = [
   { title: "Manufacturing & Industrial", href: "/manufacturing-industrial-cleaning-central-ma", icon: HardHat },
-  { title: "Medical & Healthcare", href: "/medical-healthcare-cleaning-central-ma", icon: ChevronRight },
+  { title: "Medical & Healthcare", href: "/medical-healthcare-cleaning-central-ma", icon: Stethoscope },
   { title: "Offices & Financial", href: "/office-financial-cleaning-central-ma", icon: Briefcase },
-  { title: "Educational & Municipal", href: "/school-municipal-cleaning-central-ma", icon: ChevronRight },
+  { title: "Educational & Municipal", href: "/school-municipal-cleaning-central-ma", icon: GraduationCap },
   { title: "Property Management", href: "/property-management-cleaning-central-ma", icon: Building2 },
-  { title: "Warehouses & Distribution", href: "/warehouse-distribution-cleaning-central-ma", icon: ChevronRight },
+  { title: "Warehouses & Distribution", href: "/warehouse-distribution-cleaning-central-ma", icon: Package },
 ]
 
 export function Header() {
@@ -123,19 +123,19 @@ export function Header() {
 const navLinkClass = "inline-flex h-9 items-center justify-center rounded-md px-4 py-2 text-sm font-medium transition-colors hover:bg-primary/10 hover:text-primary focus:bg-primary/10 focus:text-primary focus:outline-none"
 
 function DesktopMenu() {
-  const [open, setOpen] = React.useState(false)
+  const [openDropdown, setOpenDropdown] = React.useState<string | null>(null)
   const menuRef = React.useRef<HTMLDivElement>(null)
 
   // Close on outside click
   React.useEffect(() => {
     function handleClick(e: MouseEvent) {
       if (menuRef.current && !menuRef.current.contains(e.target as Node)) {
-        setOpen(false)
+        setOpenDropdown(null)
       }
     }
     // Close on Escape
     function handleKey(e: KeyboardEvent) {
-      if (e.key === "Escape") setOpen(false)
+      if (e.key === "Escape") setOpenDropdown(null)
     }
     document.addEventListener("mousedown", handleClick)
     document.addEventListener("keydown", handleKey)
@@ -153,51 +153,86 @@ function DesktopMenu() {
       {/* Services Dropdown */}
       <div className="relative">
         <button
-          onClick={() => setOpen((v) => !v)}
-          className={cn(navLinkClass, "gap-1", open && "bg-accent text-accent-foreground")}
-          aria-expanded={open}
+          onClick={() => setOpenDropdown((v) => v === "services" ? null : "services")}
+          className={cn(navLinkClass, "gap-1", openDropdown === "services" && "bg-accent text-accent-foreground")}
+          aria-expanded={openDropdown === "services"}
         >
           Our Services
-          <ChevronDown className={cn("size-3.5 transition-transform duration-200", open && "rotate-180")} />
+          <ChevronDown className={cn("size-3.5 transition-transform duration-200", openDropdown === "services" && "rotate-180")} />
         </button>
 
-        {/* Dropdown Panel */}
-        {open && (
-          <div className="absolute left-1/2 -translate-x-1/2 top-full mt-2 z-50 w-[600px] rounded-xl border bg-background/95 backdrop-blur-xl shadow-lg p-4"
-            onClick={() => setOpen(false)}
+        {openDropdown === "services" && (
+          <div className="absolute left-1/2 -translate-x-1/2 top-full mt-2 z-50 w-[700px] rounded-2xl border bg-background/95 backdrop-blur-xl shadow-2xl p-6"
+            onClick={() => setOpenDropdown(null)}
           >
-            <div className="grid grid-cols-2 gap-3">
+            <h3 className="text-xs font-black uppercase tracking-widest text-[#00B8FF] mb-4 flex items-center gap-2">
+              Our Core Services
+            </h3>
+            <div className="grid grid-cols-2 gap-4">
               {coreServices.map((link) => (
                 <Link key={link.title} href={link.href}>
-                  <GridCard className="cursor-pointer">
-                    <link.icon className="text-foreground/80 relative size-5 mb-2" />
+                  <GridCard className="cursor-pointer hover:border-[#00B8FF]/40 hover:shadow-md transition-all h-full">
+                    <link.icon className="text-foreground/80 relative size-5 mb-2 text-[#0090c8]" />
                     <div>
-                      <span className="text-foreground/80 text-sm font-medium block">{link.title}</span>
-                      <p className="text-muted-foreground mt-1 text-xs">{link.description}</p>
+                      <span className="text-foreground/90 text-sm font-bold block">{link.title}</span>
+                      <p className="text-muted-foreground mt-1 text-[11px] leading-relaxed">{link.description}</p>
                     </div>
                   </GridCard>
                 </Link>
               ))}
-              {/* Special Projects card */}
-              <div className="flex flex-col rounded-xl border bg-muted/50 p-4">
-                <div className="flex items-center gap-2 font-medium text-sm text-foreground/80 mb-3">
-                  <Building2 className="size-4 shrink-0" />
-                  Industries We Serve
-                </div>
-                <ul className="flex flex-col gap-0.5">
-                  {industryPages.map((project) => (
-                    <li key={project.title}>
-                      <Link
-                        href={project.href}
-                        className="flex flex-row items-center gap-1 text-xs text-muted-foreground hover:text-foreground transition-colors py-1.5"
-                      >
-                        <project.icon className="size-3 shrink-0" />
-                        <span>{project.title}</span>
-                      </Link>
-                    </li>
-                  ))}
-                </ul>
-              </div>
+              
+              {/* 6th Card to balance grid */}
+              <Link href="/contact">
+                <GridCard className="cursor-pointer hover:border-[#00B8FF]/40 hover:shadow-md transition-all h-full bg-gradient-to-br from-slate-50 to-[#0090c8]/5 border-dashed flex flex-col items-center justify-center text-center group">
+                  <div className="w-10 h-10 rounded-full bg-white shadow-sm flex items-center justify-center group-hover:scale-110 transition-transform mb-2">
+                    <ArrowRight className="text-[#0090c8] w-5 h-5" />
+                  </div>
+                  <span className="text-[#0090c8] text-sm font-bold block">Need a Custom Plan?</span>
+                  <p className="text-slate-500 mt-1 text-[11px]">Request a free on-site assessment.</p>
+                </GridCard>
+              </Link>
+            </div>
+          </div>
+        )}
+      </div>
+
+      {/* Industries Dropdown */}
+      <div className="relative">
+        <button
+          onClick={() => setOpenDropdown((v) => v === "industries" ? null : "industries")}
+          className={cn(navLinkClass, "gap-1", openDropdown === "industries" && "bg-accent text-accent-foreground")}
+          aria-expanded={openDropdown === "industries"}
+        >
+          Industries We Serve
+          <ChevronDown className={cn("size-3.5 transition-transform duration-200", openDropdown === "industries" && "rotate-180")} />
+        </button>
+
+        {openDropdown === "industries" && (
+          <div className="absolute left-1/2 -translate-x-1/2 top-full mt-2 z-50 w-[700px] rounded-2xl border bg-background/95 backdrop-blur-xl shadow-2xl p-6"
+            onClick={() => setOpenDropdown(null)}
+          >
+            <h3 className="text-xs font-black uppercase tracking-widest text-[#E31837] mb-4 flex items-center gap-2">
+              Industries We Serve
+            </h3>
+            <div className="grid grid-cols-2 gap-4">
+              {industryPages.map((project) => (
+                <Link key={project.title} href={project.href}>
+                  <GridCard className="cursor-pointer hover:border-[#E31837]/40 hover:shadow-md transition-all h-full py-4 px-4 flex flex-row items-center gap-4">
+                    <div className="w-10 h-10 rounded-lg bg-slate-50 flex items-center justify-center shrink-0">
+                      <project.icon className="text-[#E31837] relative size-5" />
+                    </div>
+                    <span className="text-foreground/90 text-sm font-bold leading-tight">{project.title}</span>
+                  </GridCard>
+                </Link>
+              ))}
+            </div>
+            
+            {/* Promo Card at bottom of industries */}
+            <div className="mt-6 rounded-xl bg-gradient-to-r from-slate-900 to-[#003057] p-4 text-white flex justify-between items-center shadow-lg">
+              <p className="text-sm font-medium text-white/90">Need a tailored cleaning plan for your facility?</p>
+              <Link href="/contact" className="text-sm font-bold bg-[#FFE800] text-slate-900 px-5 py-2.5 rounded-lg hover:bg-yellow-400 transition-colors flex items-center gap-2">
+                Request Quote <ArrowRight className="w-4 h-4" />
+              </Link>
             </div>
           </div>
         )}
@@ -254,6 +289,7 @@ function MobileNav() {
                 Home
               </Link>
             </AccordionItem>
+            
             <AccordionItem value="services" className="border-b-0">
               <AccordionTrigger className="capitalize hover:no-underline">Our Services</AccordionTrigger>
               <AccordionContent className="space-y-1">
@@ -263,17 +299,23 @@ function MobileNav() {
                       <NavItemMobile item={link} href={link.href} />
                     </li>
                   ))}
-                  <div className="px-2 py-2 mt-2 border-t">
-                    <span className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-2 block">Industries We Serve</span>
-                    {industryPages.map((link) => (
-                      <li key={link.title} className="mb-1 list-none" onClick={close}>
-                        <NavItemMobile item={link} href={link.href} />
-                      </li>
-                    ))}
-                  </div>
                 </ul>
               </AccordionContent>
             </AccordionItem>
+
+            <AccordionItem value="industries" className="border-b-0">
+              <AccordionTrigger className="capitalize hover:no-underline">Industries We Serve</AccordionTrigger>
+              <AccordionContent className="space-y-1">
+                <ul className="grid gap-1">
+                  {industryPages.map((link) => (
+                    <li key={link.title} onClick={close}>
+                      <NavItemMobile item={link} href={link.href} />
+                    </li>
+                  ))}
+                </ul>
+              </AccordionContent>
+            </AccordionItem>
+
             <AccordionItem value="about" className="border-b-0">
               <Link href="/about" onClick={close} className="flex flex-1 items-center justify-between py-4 font-medium transition-all hover:underline">
                 About Us
