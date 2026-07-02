@@ -3,24 +3,24 @@ import Image from "next/image";
 import Link from "next/link";
 import { 
   ChevronRight, PhoneCall, ShieldCheck, Clock, 
-  ArrowRight, HardHat, Factory, Users, 
-  Trophy, Settings, AlertTriangle, BadgeCheck, 
-  MapPin, CheckCircle2, ShieldAlert
+  ArrowRight, Stethoscope, Activity, HeartPulse,
+  Syringe, Users, Trophy, Trash2, Droplets, SprayCan, CheckCircle2, FileText,
+  MapPin, ShieldAlert, Sparkles
 } from "lucide-react";
 import { CTASection } from "@/components/blocks/cta-with-glow";
 
 export const metadata: Metadata = {
-  title: "Manufacturing & Industrial Cleaning Worcester MA",
-  description: "Specialized commercial cleaning for manufacturing plants and industrial facilities across Worcester and Central Massachusetts. Safety-focused, 97% retention.",
+  title: "Medical & Healthcare Cleaning Worcester MA",
+  description: "Healthcare-grade cleaning and disinfection for medical offices, clinics, and labs across Worcester and Central Massachusetts. Compliance-focused, 97% retention.",
   alternates: {
-    canonical: "https://enterprisecleaningcorp.com/manufacturing-industrial-cleaning-central-ma"
+    canonical: "https://enterprisecleaningcorp.com/medical-healthcare-cleaning-central-ma"
   }
 };
 
 const structuredDataService = {
   "@context": "https://schema.org",
   "@type": "Service",
-  "name": "Manufacturing & Industrial Facilities — Enterprise Cleaning Corporation",
+  "name": "Medical & Healthcare Facilities — Enterprise Cleaning Corporation",
   "provider": {
     "@type": "LocalBusiness",
     "name": "Enterprise Cleaning Corporation",
@@ -41,7 +41,7 @@ const structuredDataService = {
     "Rhode Island",
     "New Hampshire"
   ],
-  "url": "https://enterprisecleaningcorp.com/manufacturing-industrial-cleaning-central-ma"
+  "url": "https://enterprisecleaningcorp.com/medical-healthcare-cleaning-central-ma"
 };
 
 const structuredDataFAQ = {
@@ -50,48 +50,48 @@ const structuredDataFAQ = {
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "Do you clean active manufacturing and production floors?",
+      "name": "Do you provide disinfection for medical and healthcare facilities?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes. We build cleaning programs around your production schedule and safety protocols, working around active areas and on the shifts that work best for your operation."
+        "text": "Yes. Disinfection of high-touch surfaces, exam rooms, and patient areas is central to our healthcare cleaning programs, using procedures designed to reduce cross-contamination."
       }
     },
     {
       "@type": "Question",
-      "name": "Can you work around our shift schedule?",
+      "name": "Can you clean during and after patient hours?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Absolutely. We schedule industrial cleaning around your shifts — nights, weekends, or between production runs — so cleaning never slows your output."
+        "text": "Yes. We provide day porter coverage to maintain waiting rooms and restrooms during patient hours, and after-hours deep cleaning so the facility is ready each morning."
       }
     },
     {
       "@type": "Question",
-      "name": "Do you follow site-specific safety requirements?",
+      "name": "Do you serve dental offices, clinics, and labs as well as medical offices?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes. Our crews follow your facility’s safety protocols and site rules, and our managed model ensures consistent supervision and accountability on every visit."
+        "text": "Yes. We clean a full range of healthcare environments, including medical offices, dental practices, outpatient clinics, and laboratories across Central Massachusetts."
       }
     },
     {
       "@type": "Question",
-      "name": "Which Central Massachusetts areas do you serve for industrial cleaning?",
+      "name": "Which areas do you cover for healthcare cleaning?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "We serve manufacturing and industrial facilities throughout Worcester County and Central Massachusetts, including Shrewsbury, Auburn, Holden, Westborough, Marlborough, Leominster, and Fitchburg, plus Rhode Island and New Hampshire."
+        "text": "We serve medical and healthcare facilities throughout Worcester and Central Massachusetts, and across Rhode Island and New Hampshire."
       }
     },
     {
       "@type": "Question",
-      "name": "How do I get an industrial cleaning quote?",
+      "name": "How do I get a quote for medical facility cleaning?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Call (508) 890-1000 or request a free on-site assessment. We will tour your facility, learn your requirements, and provide a customized proposal."
+        "text": "Call (508) 890-1000 or request a free on-site assessment, and we will design a healthcare cleaning program for your facility."
       }
     }
   ]
 };
 
-export default function IndustrialCleaningPage() {
+export default function MedicalCleaningPage() {
   return (
     <>
       <script
@@ -103,9 +103,9 @@ export default function IndustrialCleaningPage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredDataFAQ) }}
       />
 
-      {/* Hero Section - Soft UI Style matching Medical */}
+      {/* Hero Section - Medical/Clean Style with Brand Blue */}
       <section className="relative pt-24 pb-20 lg:pt-32 lg:pb-32 overflow-hidden bg-slate-50">
-        {/* Abstract shapes for a soft feel */}
+        {/* Abstract shapes for a soft, sterile feel */}
         <div className="absolute top-0 right-0 w-[800px] h-[800px] bg-[#0090c8]/5 rounded-full blur-3xl -translate-y-1/2 translate-x-1/3" />
         <div className="absolute bottom-0 left-0 w-[600px] h-[600px] bg-[#00B8FF]/10 rounded-full blur-3xl translate-y-1/3 -translate-x-1/4" />
         
@@ -115,21 +115,21 @@ export default function IndustrialCleaningPage() {
             {/* Left Content */}
             <div className="flex-1 space-y-8 max-w-2xl">
               <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white shadow-sm border border-[#0090c8]/20 text-sm font-bold tracking-wide text-[#0090c8]">
-                <HardHat className="w-4 h-4 text-[#E31837]" />
+                <Stethoscope className="w-4 h-4 text-[#E31837]" />
                 INDUSTRIES WE SERVE
               </div>
               
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-black tracking-tight leading-[1.1] text-slate-900">
-                Manufacturing & Industrial<br/>
+                Medical & Healthcare<br/>
                 <span className="text-[#0090c8]">Facility Cleaning</span>
               </h1>
               
               <p className="text-lg text-slate-600 font-medium leading-relaxed text-justify">
-                Manufacturing and industrial facilities are unlike any other commercial environment. Production floors, machinery, warehousing, breakrooms, offices, and restrooms all sit under one roof, each with its own cleaning demands and safety considerations. Enterprise Cleaning Corporation has spent more than two decades cleaning complex commercial environments across Central Massachusetts — and industrial facilities are exactly the kind of demanding, high-standards work we do best.
+                In a healthcare environment, cleaning is a matter of patient safety. Medical offices, clinics, dental practices, outpatient centers, and laboratories require disinfection standards and attention to detail that go far beyond ordinary commercial cleaning. Enterprise Cleaning Corporation provides healthcare-focused cleaning across Central Massachusetts, helping medical facilities maintain the sanitary, compliant, and welcoming environment their patients deserve.
               </p>
 
               <p className="text-lg text-slate-600 font-medium leading-relaxed text-justify">
-                We understand that in a plant, cleanliness is not cosmetic — it is tied to safety, compliance, productivity, and the impression you make on the customers and auditors who walk your floor. We build a cleaning program around your operation, your shifts, and your safety requirements.
+                We understand the stakes. A waiting room must look immaculate and feel safe. Exam rooms and high-touch surfaces must be properly disinfected. Restrooms must be maintained throughout patient hours. We build programs that meet these demands consistently, every day.
               </p>
               
               <div className="flex flex-col sm:flex-row gap-4 pt-4">
@@ -143,13 +143,13 @@ export default function IndustrialCleaningPage() {
               </div>
             </div>
 
-            {/* Right Image Feature - Soft clinical/modern style */}
+            {/* Right Image Feature - Soft clinical style */}
             <div className="flex-1 w-full max-w-lg lg:max-w-none relative">
               <div className="absolute inset-0 bg-gradient-to-br from-[#0090c8] to-[#00B8FF] rounded-[3rem] rotate-3 opacity-20 scale-105" />
               <div className="relative rounded-[3rem] overflow-hidden shadow-2xl border-[10px] border-white aspect-[4/5] lg:aspect-square">
                 <Image 
-                  src="/images/industrial_cleaning_hero.png" 
-                  alt="Professional industrial cleaning in a modern manufacturing plant in Central MA" 
+                  src="/images/medical_cleaning_hero.png" 
+                  alt="Professional medical cleaning in a bright, modern healthcare waiting room in Central MA" 
                   fill
                   sizes="(max-width: 1024px) 100vw, 50vw"
                   className="object-cover object-center"
@@ -163,8 +163,8 @@ export default function IndustrialCleaningPage() {
                   <ShieldAlert className="w-6 h-6 text-[#E31837]" />
                 </div>
                 <div>
-                  <div className="text-slate-900 font-extrabold">Safety-Focused</div>
-                  <div className="text-slate-500 text-xs font-medium">OSHA-compliant programs</div>
+                  <div className="text-slate-900 font-extrabold">Infection Control</div>
+                  <div className="text-slate-500 text-xs font-medium">Compliance-focused</div>
                 </div>
               </div>
             </div>
@@ -173,26 +173,26 @@ export default function IndustrialCleaningPage() {
         </div>
       </section>
 
-      {/* Cleaning Built for Industrial Environments (Services List - Soft Style) */}
+      {/* Healthcare Cleaning Done Right (Services List - Clinical Style) */}
       <section className="py-24 bg-white">
         <div className="container mx-auto px-4 md:px-6">
           <div className="text-center max-w-3xl mx-auto mb-16">
-            <h2 className="text-3xl md:text-4xl font-extrabold text-[#0090c8] mb-6">Cleaning Built for Industrial Environments</h2>
+            <h2 className="text-3xl md:text-4xl font-extrabold text-[#0090c8] mb-6">Healthcare Cleaning Done Right</h2>
             <p className="text-lg text-slate-600 font-medium leading-relaxed">
-              A manufacturing facility needs a partner who can move between very different spaces without missing a standard. Our industrial cleaning programs typically cover:
+              Our medical and healthcare cleaning programs are designed around infection control and the realities of a patient-facing facility:
             </p>
           </div>
 
           <div className="grid md:grid-cols-2 gap-x-12 gap-y-8 max-w-6xl mx-auto">
             {[
-              { icon: Settings, text: "Production and plant-floor cleaning around equipment and workflow." },
-              { icon: Factory, text: "Warehouse and storage-area cleaning and dust control." },
-              { icon: Users, text: "Office, administrative, and conference-area janitorial." },
-              { icon: ShieldCheck, text: "Breakroom, cafeteria, and locker-room cleaning and sanitizing." },
-              { icon: BadgeCheck, text: "Restroom cleaning, sanitizing, and restocking." },
-              { icon: MapPin, text: "Hard-floor care — scrubbing, sweeping, and degreasing." },
-              { icon: ArrowRight, text: "High dusting of rafters, vents, and overhead structures." },
-              { icon: Clock, text: "Day porter coverage for high-traffic shift environments." },
+              { icon: ShieldCheck, text: "Disinfection of high-touch surfaces — door handles, light switches, counters, and shared equipment." },
+              { icon: Activity, text: "Exam room, treatment room, and waiting room cleaning and sanitizing." },
+              { icon: Droplets, text: "Restroom cleaning, sanitizing, and restocking throughout the day." },
+              { icon: Trash2, text: "Proper handling and disposal of general waste streams per facility protocol." },
+              { icon: Sparkles, text: "Floor care suited to medical environments." },
+              { icon: Users, text: "Reception and administrative area janitorial." },
+              { icon: Clock, text: "Day porter coverage to maintain waiting rooms and restrooms during patient hours." },
+              { icon: SprayCan, text: "Color-coded tools and procedures to reduce cross-contamination." },
             ].map((item, idx) => (
               <div key={idx} className="flex items-start gap-4 p-6 rounded-2xl bg-slate-50 hover:bg-[#0090c8]/5 transition-colors border border-slate-100 hover:border-[#0090c8]/30 group">
                 <div className="w-14 h-14 rounded-full bg-white shadow-sm flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform">
@@ -207,7 +207,7 @@ export default function IndustrialCleaningPage() {
         </div>
       </section>
 
-      {/* Detailed Content - Side-by-Side Soft Blocks */}
+      {/* Detailed Content - Side-by-Side Clinical Blocks */}
       <section className="py-24 bg-slate-50 border-y border-slate-200">
         <div className="container mx-auto px-4 md:px-6">
           <div className="space-y-24 max-w-7xl mx-auto">
@@ -216,14 +216,14 @@ export default function IndustrialCleaningPage() {
             <div className="grid lg:grid-cols-2 gap-16 items-center">
               <div>
                 <h2 className="text-3xl font-extrabold text-slate-900 leading-tight mb-6">
-                  Safety and Reliability <span className="text-[#0090c8]">You Can Count On</span>
+                  Consistency and Accountability <span className="text-[#0090c8]">Patients Can Feel</span>
                 </h2>
                 <div className="prose prose-lg text-slate-600 prose-p:leading-relaxed text-justify">
                   <p>
-                    Industrial clients need a cleaning partner who respects the safety culture of a plant — crews who follow site protocols, stay clear of active production, and work cleanly and predictably. Our managed model means real supervision and accountability on every account, so standards hold shift after shift.
+                    Healthcare facilities cannot afford an unreliable cleaning vendor. Standards must hold every single day, with no exceptions. Our managed model delivers exactly that: trained crews, real supervision, and direct owner-level accountability. When a practice manager needs something addressed, they reach a local team that responds — not a distant call center.
                   </p>
                   <p>
-                    Reliability is non-negotiable in manufacturing, and it is our strongest trait. Our 97% client retention rate reflects exactly that: when an industrial client brings us in, they keep us. Many start with nightly cleaning and expand into floor degreasing, high dusting, and specialty projects over time.
+                    That dependability is why our clients stay. A 97% client retention rate is a powerful signal in healthcare, where trust and consistency matter more than anything. Many medical clients expand from nightly cleaning into floor care and specialty disinfection projects as their relationship with us grows.
                   </p>
                 </div>
               </div>
@@ -236,16 +236,16 @@ export default function IndustrialCleaningPage() {
                   </div>
                   <div>
                     <h3 className="text-xl font-bold text-slate-900">Client Retention</h3>
-                    <p className="text-slate-500 font-medium">Built on safety and reliability</p>
+                    <p className="text-slate-500 font-medium">Built on trust and consistency</p>
                   </div>
                 </div>
                 <div className="flex items-center gap-5">
                   <div className="w-16 h-16 rounded-2xl bg-[#E31837] flex items-center justify-center text-white">
-                    <Factory className="w-8 h-8" />
+                    <HeartPulse className="w-8 h-8" />
                   </div>
                   <div>
-                    <h3 className="text-xl font-bold text-slate-900">Shift-Friendly</h3>
-                    <p className="text-slate-500 font-medium">We work around your production schedules</p>
+                    <h3 className="text-xl font-bold text-slate-900">Direct Accountability</h3>
+                    <p className="text-slate-500 font-medium">Owner-level supervision on every account</p>
                   </div>
                 </div>
               </div>
@@ -255,24 +255,24 @@ export default function IndustrialCleaningPage() {
             <div className="grid lg:grid-cols-2 gap-16 items-center">
               <div className="order-2 lg:order-1 bg-[#0090c8] text-white p-10 rounded-3xl shadow-xl border-l-8 border-[#E31837]">
                 <div className="flex items-center gap-4 mb-6">
-                  <AlertTriangle className="w-10 h-10 text-[#FFE800]" />
-                  <h3 className="text-2xl font-bold">Productivity & Compliance</h3>
+                  <ShieldCheck className="w-10 h-10 text-[#FFE800]" />
+                  <h3 className="text-2xl font-bold">Standard, Not Exception</h3>
                 </div>
                 <p className="text-white/90 leading-relaxed text-lg font-medium text-justify">
-                  We approach industrial cleaning as a program, not a task list. That means understanding your production flow, your shift patterns, your safety culture, and the specific challenges of your facility, then building a routine that holds to a consistent standard without ever interfering with output. Our managed model provides the supervision and accountability that large, complex facilities require.
+                  We use procedures designed for healthcare settings — including measures to reduce cross-contamination between areas — and we hold to them consistently. Consistency is the entire point: a facility that is properly disinfected most days but not all days has not solved the problem. Our managed model, with trained crews and real supervision, exists precisely to deliver the day-in, day-out reliability that infection control requires.
                 </p>
               </div>
 
               <div className="order-1 lg:order-2">
                 <h2 className="text-3xl font-extrabold text-slate-900 leading-tight mb-6">
-                  Cleaning That Supports <span className="text-[#E31837]">Productivity</span>
+                  Infection Control Is the <span className="text-[#E31837]">Standard</span>
                 </h2>
                 <div className="prose prose-lg text-slate-600 prose-p:leading-relaxed text-justify">
                   <p>
-                    In a manufacturing environment, cleanliness is connected to far more than appearance. Clean floors and controlled dust reduce slip-and-fall hazards and protect equipment. Well-maintained breakrooms and restrooms support employee morale and health. And a clean, organized facility makes a strong impression on the customers, auditors, and regulators who tour your plant — an impression that can directly affect contracts and certifications.
+                    Healthcare cleaning is fundamentally different from ordinary commercial cleaning because the consequences of getting it wrong are so much higher. Patients, many of them already vulnerable, pass through your facility every day. Proper disinfection of exam rooms, waiting areas, restrooms, and high-touch surfaces is essential to reducing the spread of infection and maintaining the safe, sanitary environment that patients and regulators expect.
                   </p>
                   <p>
-                    Manufacturing and industrial work is precisely the kind of demanding, high-standards cleaning that has anchored our business for more than two decades. We are comfortable in complex environments, we respect the realities of a working plant, and we deliver the reliability that operations managers cannot compromise on.
+                    We also recognize that a medical facility is a place of care, and its cleanliness shapes how patients feel the moment they walk in. A spotless, well-maintained waiting room signals competence and safety before a patient ever sees a provider. We help medical practices across Central Massachusetts present that standard every day, protecting both patient health and the reputation of the practice.
                   </p>
                 </div>
               </div>
@@ -282,12 +282,13 @@ export default function IndustrialCleaningPage() {
         </div>
       </section>
 
-      {/* Trust Banner — Full Image Style */}
+      {/* Trust Banner — Custom Medical Image */}
       <section className="relative py-24 overflow-hidden">
+        {/* Full Image Background instead of Skyline */}
         <div className="absolute inset-0 z-0">
           <Image
-            src="/images/worcester_skyline_banner.png"
-            alt="Central Massachusetts manufacturing and industrial facilities"
+            src="/images/medical_cleaning_banner.png"
+            alt="High-end modern medical laboratory or exam room in Central Massachusetts"
             fill
             className="object-cover object-center"
           />
@@ -298,19 +299,19 @@ export default function IndustrialCleaningPage() {
         <div className="container mx-auto px-4 md:px-6 relative z-10">
           <div className="text-center max-w-3xl mx-auto mb-16">
             <span className="inline-block px-4 py-1.5 rounded-full bg-white/10 border border-white/20 text-[#FFE800] font-bold tracking-widest uppercase text-sm mb-6 backdrop-blur-md">
-              Serving Industrial Facilities Across Central MA
+              Serving Medical Facilities Across Central MA
             </span>
             <h2 className="text-3xl md:text-5xl font-extrabold text-white leading-tight mb-6 drop-shadow-lg">
-              Proven Industrial Cleaners
+              Healthcare-Grade Cleaning You Can Trust
             </h2>
             <p className="text-lg text-white/90 font-medium leading-relaxed max-w-4xl mx-auto text-justify drop-shadow-md">
-              Central Massachusetts has a deep manufacturing and industrial base, and we serve it. From Worcester to Shrewsbury, Auburn, Holden, Westborough, Marlborough, Leominster, and Fitchburg, we keep plants and industrial buildings clean, safe, and audit-ready. We bring 97% client retention, four Worcester Business Journal “Best of Business” awards, and BBB accreditation since 2007 to every industrial contract and serve Massachusetts, Rhode Island, and New Hampshire.
+              Worcester is a growing healthcare and life-sciences hub, and we are proud to serve medical practices throughout the region. From Worcester and Shrewsbury to Auburn, Holden, Westborough, and across Central MA, we keep medical and healthcare facilities clean, sanitary, and compliant. We bring 97% client retention, four Worcester Business Journal “Best of Business” awards, and BBB accreditation since 2007 to every healthcare contract and serve Massachusetts, Rhode Island, and New Hampshire.
             </p>
           </div>
 
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 max-w-5xl mx-auto">
             {[
-              { icon: ShieldCheck, stat: "Compliance", label: "OSHA Focused", sub: "Safety-first cleaning" },
+              { icon: ShieldCheck, stat: "Compliance", label: "Infection Control", sub: "Healthcare focus" },
               { icon: Trophy, stat: "4×", label: "Best of Business", sub: "Worcester Business Journal" },
               { icon: Users, stat: "97%", label: "Client Retention Rate", sub: "Industry-leading" },
               { icon: MapPin, stat: "Central MA", label: "Local Partner", sub: "Rapid response" },
@@ -335,7 +336,7 @@ export default function IndustrialCleaningPage() {
           <div className="max-w-3xl mx-auto">
             <div className="text-center mb-12">
               <h2 className="text-3xl md:text-4xl font-bold text-[#0090c8] mb-4">Frequently Asked Questions</h2>
-              <p className="text-slate-600 font-medium">Common questions about our industrial and manufacturing cleaning services.</p>
+              <p className="text-slate-600 font-medium">Common questions about our medical and healthcare cleaning services.</p>
             </div>
             
             <div className="space-y-6">
@@ -358,7 +359,7 @@ export default function IndustrialCleaningPage() {
       
       <CTASection
         className="bg-slate-50 border-t border-slate-200"
-        title="Ready for a Safety-Focused Cleaning Partner?"
+        title="Ready to Elevate Your Facility's Standard of Care?"
         action={{
           text: "Request On-Site Assessment",
           href: "/contact",
@@ -367,12 +368,12 @@ export default function IndustrialCleaningPage() {
       >
         <div className="flex flex-col items-center gap-6">
           <p className="text-lg text-slate-600 max-w-2xl font-medium leading-relaxed text-justify">
-            We will tour your facility, learn your requirements, and provide a customized proposal designed around your shifts and safety protocols. Call (508) 890-1000 today.
+            Call (508) 890-1000 today, and we will design a healthcare cleaning program specifically for your medical office, clinic, or laboratory.
           </p>
           <div className="flex flex-wrap justify-center gap-3 pt-2 animate-appear delay-100">
             {[
-              { icon: ShieldCheck, text: "OSHA Compliant" },
-              { icon: Factory, text: "Shift-Friendly Scheduling" },
+              { icon: ShieldCheck, text: "Infection Control" },
+              { icon: Activity, text: "Cross-Contamination Prevention" },
               { icon: CheckCircle2, text: "Fully Managed Crews" },
             ].map((chip, i) => (
               <div
