@@ -1,5 +1,5 @@
 "use client"
-import React, { useRef, useContext } from "react"
+import React, { useRef, useContext, useState } from "react"
 import { useScroll, useTransform, useSpring, motion, MotionValue } from "framer-motion"
 import { cn } from "@/lib/utils"
 
@@ -91,16 +91,40 @@ export const ContainerInset = ({ children, className }: any) => {
 }
 
 export const HeroVideo = ({ src, 'data-src': dataSrc, className }: any) => {
+  const videoRef = useRef<HTMLVideoElement>(null);
+  const [isPlaying, setIsPlaying] = useState(false);
+
+  const handlePlay = () => {
+    if (videoRef.current) {
+      videoRef.current.play();
+      setIsPlaying(true);
+    }
+  };
+
   return (
-    <video
-      autoPlay
-      loop
-      muted
-      playsInline
-      className={cn("w-full h-[60vh] md:h-[75vh] object-cover scale-[1.03] transform group-hover:scale-100 transition-transform duration-1000 ease-out", className)}
-      src={src}
-      data-src={dataSrc}
-    />
+    <div className="relative w-full h-full">
+      <video
+        ref={videoRef}
+        poster="/images/hero-banner.png"
+        loop
+        muted
+        playsInline
+        className={cn("w-full aspect-video object-contain scale-[1.03] transform group-hover:scale-100 transition-transform duration-1000 ease-out", className)}
+        src={src}
+        data-src={dataSrc}
+      />
+      {!isPlaying && (
+        <button
+          onClick={handlePlay}
+          className="absolute bottom-6 right-6 z-30 flex h-14 w-14 items-center justify-center rounded-full bg-brand-red text-white shadow-xl transition-all hover:scale-110 hover:shadow-[0_0_20px_rgba(227,24,55,0.6)]"
+          aria-label="Play video"
+        >
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-8 h-8 ml-1">
+            <path fillRule="evenodd" d="M4.5 5.653c0-1.426 1.529-2.33 2.779-1.643l11.54 6.348c1.295.712 1.295 2.573 0 3.285L7.28 19.991c-1.25.687-2.779-.217-2.779-1.643V5.653z" clipRule="evenodd" />
+          </svg>
+        </button>
+      )}
+    </div>
   )
 }
 
