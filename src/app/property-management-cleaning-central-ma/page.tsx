@@ -70,7 +70,7 @@ const structuredDataFAQ = {
       "name": "What if there is an after-hours emergency at one of my buildings?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "We have a full restoration division and a 24/7 emergency line (888-76-FLOOD) for water, fire, and storm damage, so you have one trusted partner for both routine cleaning and emergencies."
+        "text": "We have a full restoration division and a 24/7 emergency line (508-890-1000) for water, fire, and storm damage, so you have one trusted partner for both routine cleaning and emergencies."
       }
     },
     {

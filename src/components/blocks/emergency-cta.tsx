@@ -20,7 +20,7 @@ export function EmergencyCTA() {
               </span>
             </div>
             <h2 className="text-xl md:text-2xl lg:text-3xl font-extrabold text-white mb-2 leading-tight">
-              Water, Fire, Mold & Biohazard — <span className="text-[#FFE800]">We Respond When It Matters</span>
+              Water, Mold & Emergency Cleanup — <span className="text-[#FFE800]">We Respond When It Matters</span>
             </h2>
             <p className="text-sm md:text-base text-white/90 max-w-3xl font-medium leading-relaxed">
               Certified technicians for flood, fire, mold, and disaster cleanup. We work directly with your insurance, so recovery starts immediately.
@@ -29,9 +29,9 @@ export function EmergencyCTA() {
 
           {/* Action Buttons */}
           <div className="flex flex-col sm:flex-row items-center gap-4 w-full lg:w-auto shrink-0">
-            <a href="tel:8887635663" className="flex items-center justify-center gap-2 px-6 py-3.5 rounded-xl bg-black/10 border border-white/20 backdrop-blur-md text-xl md:text-2xl font-black text-white hover:bg-black/20 hover:text-[#FFE800] transition-colors w-full sm:w-auto">
+            <a href="tel:5088901000" className="flex items-center justify-center gap-2 px-6 py-3.5 rounded-xl bg-black/10 border border-white/20 backdrop-blur-md text-xl md:text-2xl font-black text-white hover:bg-black/20 hover:text-[#FFE800] transition-colors w-full sm:w-auto">
               <Phone className="size-5 md:size-6 shrink-0" />
-              888-76-FLOOD
+              508-890-1000
             </a>
 
             <Link href="/contact" className="inline-flex items-center justify-center px-6 py-3.5 text-base md:text-lg font-bold text-[#E31837] bg-white rounded-xl shadow-lg hover:bg-slate-50 transition-all hover:scale-105 active:scale-95 w-full sm:w-auto whitespace-nowrap">

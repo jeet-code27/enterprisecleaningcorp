@@ -33,7 +33,7 @@ const testimonials = [
   },
   {
     tempId: 4,
-    testimonial: "Enterprise Crew, you all were amazing and the homeowners were absolutely astounded by the transformation from a attacking a dust disaster ..",
+    testimonial: "Enterprise Crew, you all were amazing and the property owners were absolutely astounded by the transformation from a attacking a dust disaster ..",
     by: "D Pierce dpi Denise Pierce I 12/2/2018",
     imgSrc: "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=150&h=150&fit=crop&crop=face"
   },
@@ -176,7 +176,7 @@ export const StaggerTestimonials: React.FC = () => {
            Don't just take <span style={{ color: "#00B8FF" }}>our word for it</span>
         </h2>
         <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-           Join thousands of businesses and homeowners who trust Enterprise Cleaning for their toughest jobs.
+           Join thousands of businesses and facilities who trust Enterprise Cleaning for their toughest jobs.
         </p>
       </div>
 

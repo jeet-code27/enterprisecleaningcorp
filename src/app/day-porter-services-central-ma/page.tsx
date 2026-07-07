@@ -146,7 +146,7 @@ export default function DayPorterPage() {
                 <div className="flex items-center gap-3">
                   <Clock className="w-8 h-8 text-[#FFE800]" />
                   <div>
-                    <div className="font-bold text-lg">22+</div>
+                    <div className="font-bold text-lg">23+</div>
                     <div className="text-xs text-white/90">Years in Business</div>
                   </div>
                 </div>
@@ -372,7 +372,7 @@ export default function DayPorterPage() {
               { icon: Users, stat: "97%", label: "Client Retention Rate", sub: "Industry-leading" },
               { icon: Trophy, stat: "4×", label: "Best of Business", sub: "Worcester Business Journal" },
               { icon: ShieldCheck, stat: "2007", label: "BBB Accredited Since", sub: "Verified accountability" },
-              { icon: Clock, stat: "22+", label: "Years in Business", sub: "Central Massachusetts" },
+              { icon: Clock, stat: "23+", label: "Years in Business", sub: "Central Massachusetts" },
             ].map((item, i) => (
               <div
                 key={i}
@@ -450,7 +450,7 @@ export default function DayPorterPage() {
       >
         <div className="flex flex-col items-center gap-6">
           <p className="text-lg text-slate-600 max-w-2xl font-medium leading-relaxed">
-            Get a customized day porter or matron service plan designed specifically for your building's traffic and schedule. Call (508) 890-1000 or request a free quote online.
+            Get a comprehensive day porter or matron service plan designed specifically for your building's traffic and schedule. Call (508) 890-1000 or request a free quote online.
           </p>
           <div className="flex flex-wrap justify-center gap-3 pt-2 animate-appear delay-100">
             {[

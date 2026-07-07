@@ -12,15 +12,15 @@ const faqs = [
   },
   {
     question: "What makes Enterprise different from other Worcester cleaning companies?",
-    answer: "A 97% client retention rate, four Worcester Business Journal “Best of Business” awards, 22 years in business, direct owner accountability, and an in-house team that is never subcontracted."
+    answer: "A 97% client retention rate, four Worcester Business Journal “Best of Business” awards, 23+ years in business, direct owner accountability, and an in-house team that is never subcontracted."
   },
   {
     question: "Does Enterprise handle emergency water and fire damage?",
-    answer: "Yes. Its 24/7 restoration division is certified for water/flood, fire & smoke, mold remediation, and biohazard cleanup, and works directly with insurers."
+    answer: "Yes. Its 24/7 restoration division is certified for water/flood, fire & smoke, and mold remediation, and works directly with insurers."
   },
   {
     question: "How long has Enterprise Cleaning been in business?",
-    answer: "Enterprise has operated since 2003 — 22 years serving Central Massachusetts — and has been BBB-accredited since 2007."
+    answer: "Enterprise has operated since 2003 — 23+ years serving Central Massachusetts — and has been BBB-accredited since 2007."
   },
   {
     question: "What types of facilities does Enterprise clean?",

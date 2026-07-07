@@ -76,8 +76,8 @@ export function WhyEnterprise() {
             {/* Image Wrapper */}
             <div className="relative rounded-3xl overflow-hidden shadow-2xl ring-4 ring-white w-full">
               <img 
-                src="/images/onwer.jpg" 
-                alt="Steve Buchalter & Julio Biage - Owners" 
+                src="/images/office_cleaning_hero.png" 
+                alt="Enterprise Commercial Cleaning" 
                 className="w-full h-auto object-cover transition-transform duration-700 hover:scale-105"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-slate-900/40 via-transparent to-transparent pointer-events-none"></div>

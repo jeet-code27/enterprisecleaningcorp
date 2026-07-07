@@ -20,7 +20,7 @@ export default function ContactPage() {
       <div className="w-full">
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img 
-          src="/images/cover.jpeg" 
+          src="/images/cover-new.jpeg" 
           alt="Enterprise Cleaning Cover" 
           className="w-full h-auto object-cover shadow-md"
         />
@@ -77,8 +77,8 @@ export default function ContactPage() {
                   </div>
                   <div>
                     <h3 className="text-lg font-bold text-slate-900 mb-1">Email Us</h3>
-                    <a href="mailto:info@enterprisecleaningcorp.com" className="text-slate-600 hover:text-[#00B8FF] font-medium transition-colors text-lg">
-                      info@enterprisecleaningcorp.com
+                    <a href="mailto:customerservice@enterprisecleaningcorp.com" className="text-slate-600 hover:text-[#00B8FF] font-medium transition-colors text-lg">
+                      customerservice@enterprisecleaningcorp.com
                     </a>
                   </div>
                 </div>

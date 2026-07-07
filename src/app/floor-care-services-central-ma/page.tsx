@@ -146,7 +146,7 @@ export default function FloorCarePage() {
                 <div className="flex items-center gap-3">
                   <Clock className="w-8 h-8 text-[#FFE800]" />
                   <div>
-                    <div className="font-bold text-lg">22+</div>
+                    <div className="font-bold text-lg">23+</div>
                     <div className="text-xs text-white/90">Years in Business</div>
                   </div>
                 </div>
@@ -274,7 +274,7 @@ export default function FloorCarePage() {
               <div className="mx-auto w-16 h-16 rounded-2xl bg-white/10 flex items-center justify-center mb-6">
                 <CheckCircle2 className="w-8 h-8 text-[#FFE800]" strokeWidth={1.5} />
               </div>
-              <h3 className="text-lg font-bold text-white mb-3">Custom Programs</h3>
+              <h3 className="text-lg font-bold text-white mb-3">Comprehensive Programs</h3>
               <p className="text-sm text-white/80 leading-relaxed">We match the right process and finish to your unique environment.</p>
             </div>
           </div>
@@ -375,7 +375,7 @@ export default function FloorCarePage() {
               { icon: Users, stat: "97%", label: "Client Retention Rate", sub: "Industry-leading" },
               { icon: Trophy, stat: "4×", label: "Best of Business", sub: "Worcester Business Journal" },
               { icon: ShieldCheck, stat: "2007", label: "BBB Accredited Since", sub: "Verified accountability" },
-              { icon: Clock, stat: "22+", label: "Years in Business", sub: "Central Massachusetts" },
+              { icon: Clock, stat: "23+", label: "Years in Business", sub: "Central Massachusetts" },
             ].map((item, i) => (
               <div
                 key={i}
@@ -453,7 +453,7 @@ export default function FloorCarePage() {
       >
         <div className="flex flex-col items-center gap-6">
           <p className="text-lg text-slate-600 max-w-2xl font-medium leading-relaxed text-justify">
-            Get a customized floor care plan designed specifically for your facility's traffic and flooring type. Call (508) 890-1000 or request a free quote online.
+            Get a comprehensive floor care plan designed specifically for your facility's traffic and flooring type. Call (508) 890-1000 or request a free quote online.
           </p>
           <div className="flex flex-wrap justify-center gap-3 pt-2 animate-appear delay-100">
             {[

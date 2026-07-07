@@ -18,7 +18,7 @@ export function Footer() {
               style={{ width: "auto", height: "auto" }}
             />
             <p className="text-white/80 text-sm leading-relaxed mt-4">
-              There's clean, and then there's ENTERPRISE clean. Specializing in Commercial and Residential Emergency Cleaning.
+              There's clean, and then there's ENTERPRISE clean. Specializing in Commercial Cleaning and Emergency Restoration.
             </p>
           </div>
 
@@ -91,10 +91,7 @@ export function Footer() {
                   <Phone className="size-5 shrink-0 text-white" />
                   <span>Serving New England: <strong className="text-[#FFE800]">508-890-1000</strong></span>
                 </div>
-                <div className="flex items-center gap-3">
-                  <Phone className="size-5 shrink-0 text-[#E31837]" />
-                  <span>Emergency: <strong className="text-[#E31837]">888-76-FLOOD</strong></span>
-                </div>
+
               </li>
               <li className="flex items-center gap-3">
                 <Mail className="size-5 shrink-0 text-white" />

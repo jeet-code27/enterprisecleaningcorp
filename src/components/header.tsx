@@ -14,7 +14,7 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/
 
 const coreServices = [
   {
-    title: "Nightly Janitorial Cleaning",
+    title: "Nightly Cleaning",
     description: "Consistent nightly cleaning for professional environments.",
     href: "/nightly-janitorial-cleaning-central-ma",
     icon: Building2,
@@ -33,7 +33,7 @@ const coreServices = [
   },
   {
     title: "Specialty Cleaning",
-    description: "Window cleaning, pressure washing, and deep cleaning.",
+    description: "Window cleaning, pressure washing, water and mold.",
     href: "/specialty-cleaning-services-central-ma",
     icon: SprayCan,
   },
@@ -42,6 +42,12 @@ const coreServices = [
     description: "24/7 response for water, fire, and storm damage.",
     href: "/emergency-restoration-services-central-ma",
     icon: Wind,
+  },
+  {
+    title: "Deep Cleaning Services",
+    description: "Thorough, restorative cleaning to revitalize your facility.",
+    href: "/deep-cleaning-services-central-ma",
+    icon: Sparkles,
   },
 ]
 
@@ -52,6 +58,7 @@ const industryPages = [
   { title: "Educational & Municipal", href: "/school-municipal-cleaning-central-ma", icon: GraduationCap },
   { title: "Property Management", href: "/property-management-cleaning-central-ma", icon: Building2 },
   { title: "Warehouses & Distribution", href: "/warehouse-distribution-cleaning-central-ma", icon: Package },
+  { title: "Real Estate", href: "/real-estate-cleaning-central-ma", icon: Building2 },
 ]
 
 export function Header() {
@@ -66,12 +73,12 @@ export function Header() {
               <span className="flex items-center gap-1.5 shrink-0"><MapPin className="size-3.5 text-white" />99 Hartwell Street, West Boylston, MA 01583</span>
               <span className="flex items-center gap-1.5 shrink-0"><Clock className="size-3.5 text-white" />24 hrs / 7 Days</span>
               <span className="flex items-center gap-1.5 font-bold shrink-0"><Phone className="size-3.5 text-[#FFE800]" />Serving New England: 508-890-1000</span>
-              <span className="flex items-center gap-1.5 font-bold text-[#E31837] shrink-0"><Phone className="size-3.5 text-[#E31837]" />Emergency: 888-76-FLOOD</span>
+
               <span className="flex items-center gap-1.5 shrink-0"><Mail className="size-3.5 text-white" />customerservice@enterprisecleaningcorp.com</span>
               <span className="flex items-center gap-1.5 shrink-0"><MapPin className="size-3.5 text-white" />99 Hartwell Street, West Boylston, MA 01583</span>
               <span className="flex items-center gap-1.5 shrink-0"><Clock className="size-3.5 text-white" />24 hrs / 7 Days</span>
               <span className="flex items-center gap-1.5 font-bold shrink-0"><Phone className="size-3.5 text-[#FFE800]" />Serving New England: 508-890-1000</span>
-              <span className="flex items-center gap-1.5 font-bold text-[#E31837] shrink-0"><Phone className="size-3.5 text-[#E31837]" />Emergency: 888-76-FLOOD</span>
+
               <span className="flex items-center gap-1.5 shrink-0"><Mail className="size-3.5 text-white" />customerservice@enterprisecleaningcorp.com</span>
             </div>
           </div>
@@ -86,7 +93,7 @@ export function Header() {
             </div>
             <div className="flex items-center gap-4">
               <div className="flex items-center gap-1.5 font-bold"><Phone className="size-3.5 text-[#FFE800]" />Serving New England: 508-890-1000</div>
-              <div className="flex items-center gap-1.5 font-bold text-[#E31837]"><Phone className="size-3.5 text-[#E31837]" />Emergency: 888-76-FLOOD</div>
+
             </div>
           </div>
         </div>
@@ -181,16 +188,7 @@ function DesktopMenu() {
                 </Link>
               ))}
               
-              {/* 6th Card to balance grid */}
-              <Link href="/contact">
-                <GridCard className="cursor-pointer hover:border-[#00B8FF]/40 hover:shadow-md transition-all h-full bg-gradient-to-br from-slate-50 to-[#0090c8]/5 border-dashed flex flex-col items-center justify-center text-center group">
-                  <div className="w-10 h-10 rounded-full bg-white shadow-sm flex items-center justify-center group-hover:scale-110 transition-transform mb-2">
-                    <ArrowRight className="text-[#0090c8] w-5 h-5" />
-                  </div>
-                  <span className="text-[#0090c8] text-sm font-bold block">Need a Custom Plan?</span>
-                  <p className="text-slate-500 mt-1 text-[11px]">Request a free on-site assessment.</p>
-                </GridCard>
-              </Link>
+
             </div>
           </div>
         )}
@@ -239,6 +237,7 @@ function DesktopMenu() {
       </div>
 
       <Link href="/about" className={navLinkClass}>About Us</Link>
+      <Link href="/blog" className={navLinkClass}>Blog</Link>
       <Link href="/contact" className={navLinkClass}>Contact</Link>
     </nav>
   )
@@ -319,6 +318,11 @@ function MobileNav() {
             <AccordionItem value="about" className="border-b-0">
               <Link href="/about" onClick={close} className="flex flex-1 items-center justify-between py-4 font-medium transition-all hover:underline">
                 About Us
+              </Link>
+            </AccordionItem>
+            <AccordionItem value="blog" className="border-b-0">
+              <Link href="/blog" onClick={close} className="flex flex-1 items-center justify-between py-4 font-medium transition-all hover:underline">
+                Blog
               </Link>
             </AccordionItem>
             <AccordionItem value="contact" className="border-b-0">

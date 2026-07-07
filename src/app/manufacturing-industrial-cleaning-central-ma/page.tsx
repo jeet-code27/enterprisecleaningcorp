@@ -85,7 +85,7 @@ const structuredDataFAQ = {
       "name": "How do I get an industrial cleaning quote?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Call (508) 890-1000 or request a free on-site assessment. We will tour your facility, learn your requirements, and provide a customized proposal."
+        "text": "Call (508) 890-1000 or request a free on-site assessment. We will tour your facility, learn your requirements, and provide a comprehensive proposal."
       }
     }
   ]
@@ -367,7 +367,7 @@ export default function IndustrialCleaningPage() {
       >
         <div className="flex flex-col items-center gap-6">
           <p className="text-lg text-slate-600 max-w-2xl font-medium leading-relaxed text-justify">
-            We will tour your facility, learn your requirements, and provide a customized proposal designed around your shifts and safety protocols. Call (508) 890-1000 today.
+            We will tour your facility, learn your requirements, and provide a comprehensive proposal designed around your shifts and safety protocols. Call (508) 890-1000 today.
           </p>
           <div className="flex flex-wrap justify-center gap-3 pt-2 animate-appear delay-100">
             {[

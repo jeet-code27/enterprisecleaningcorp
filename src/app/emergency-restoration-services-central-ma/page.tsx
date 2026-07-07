@@ -10,7 +10,7 @@ import { CTASection } from "@/components/blocks/cta-with-glow";
 
 export const metadata: Metadata = {
   title: "24/7 Water & Fire Restoration Worcester MA",
-  description: "24/7 emergency water, flood, fire, and mold restoration across Worcester and Central Massachusetts. Call 888-76-FLOOD for rapid response.",
+  description: "24/7 emergency water, flood, fire, and mold restoration across Worcester and Central Massachusetts. Call (508) 890-1000 for rapid response.",
   alternates: {
     canonical: "https://enterprisecleaningcorp.com/emergency-restoration-services-central-ma"
   }
@@ -52,7 +52,7 @@ const structuredDataFAQ = {
       "name": "What number do I call for a cleaning or restoration emergency?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "For 24/7 emergency water, flood, fire, and restoration response, call 888-76-FLOOD. For all other inquiries, call (508) 890-1000."
+        "text": "For 24/7 emergency water, flood, fire, and restoration response, call (508) 890-1000."
       }
     },
     {
@@ -188,9 +188,9 @@ export default function EmergencyRestorationPage() {
                   Call our dedicated emergency line for immediate assistance.
                 </p>
                 <div className="pt-4 border-t border-slate-100">
-                  <a href="tel:8887635663" className="inline-flex items-center justify-center w-full bg-[#E31837] text-white font-extrabold text-xl py-4 rounded-xl hover:bg-red-700 transition-colors shadow-lg">
+                  <a href="tel:5088901000" className="inline-flex items-center justify-center w-full bg-[#E31837] text-white font-extrabold text-xl py-4 rounded-xl hover:bg-red-700 transition-colors shadow-lg">
                     <PhoneCall className="w-5 h-5 mr-3" />
-                    888-76-FLOOD
+                    508-890-1000
                   </a>
                 </div>
               </div>
@@ -238,14 +238,6 @@ export default function EmergencyRestorationPage() {
               <p className="text-sm text-slate-600 leading-relaxed text-justify">Mold remediation and moisture control to eliminate hazards and prevent recurrence.</p>
             </div>
 
-            {/* Card 4 */}
-            <div className="bg-white p-8 rounded-3xl shadow-sm border border-slate-100 text-center hover:shadow-xl hover:border-[#00B8FF]/30 transition-all duration-300 group">
-              <div className="mx-auto w-16 h-16 rounded-2xl bg-slate-50 group-hover:bg-[#00B8FF]/10 transition-colors flex items-center justify-center mb-6">
-                <AlertTriangle className="w-8 h-8 text-[#00B8FF]" strokeWidth={1.5} />
-              </div>
-              <h3 className="text-lg font-bold text-slate-900 mb-3">Biohazard Cleanup</h3>
-              <p className="text-sm text-slate-600 leading-relaxed text-justify">Sewage and biohazard cleanup conducted with strict adherence to safety and health protocols.</p>
-            </div>
 
             {/* Card 5 */}
             <div className="bg-white p-8 rounded-3xl shadow-sm border border-slate-100 text-center hover:shadow-xl hover:border-[#00B8FF]/30 transition-all duration-300 group">
@@ -410,9 +402,9 @@ export default function EmergencyRestorationPage() {
                 </div>
                 <p className="text-white font-bold text-lg md:text-2xl leading-snug">Worcester &amp; Central MA · Rhode Island · New Hampshire</p>
               </div>
-              <a href="tel:8887635663" className="shrink-0 inline-flex items-center gap-2 bg-[#E31837] text-white font-extrabold px-6 py-3 rounded-full hover:bg-red-700 transition-colors shadow-lg text-sm">
+              <a href="tel:5088901000" className="shrink-0 inline-flex items-center gap-2 bg-[#E31837] text-white font-extrabold px-6 py-3 rounded-full hover:bg-red-700 transition-colors shadow-lg text-sm">
                 <PhoneCall className="w-4 h-4" />
-                888-76-FLOOD
+                508-890-1000
               </a>
             </div>
           </div>
@@ -450,8 +442,8 @@ export default function EmergencyRestorationPage() {
         className="bg-white border-t border-slate-100"
         title="Experiencing an Emergency?"
         action={{
-          text: "Call 888-76-FLOOD",
-          href: "tel:8887635663",
+          text: "Call (508) 890-1000",
+          href: "tel:5088901000",
           variant: "destructive",
         }}
       >

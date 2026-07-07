@@ -46,7 +46,7 @@ export default function Home() {
                 </h1>
                 
                 <p className="mx-auto max-w-[65ch] text-base md:text-lg text-white/90 font-medium leading-relaxed mb-8">
-                  For 22 years, facility and property managers across Central Massachusetts have trusted Enterprise to keep their buildings spotless, compliant, and worry-free — backed by a 97% client retention rate no competitor can match.
+                  For 23+ years, facility and property managers across Central Massachusetts have trusted Enterprise to keep their buildings spotless, compliant, and worry-free — backed by a 97% client retention rate no competitor can match.
                 </p>
                 
                 <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mt-4 md:mt-8">

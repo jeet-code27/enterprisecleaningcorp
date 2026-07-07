@@ -2,8 +2,8 @@ import React from "react"
 
 const STATS = [
   { value: "97%", label: "Client retention", description: "your cleaning team stays consistent, year after year" },
-  { value: "22 yrs", label: "Serving Central MA since 2003", description: "owner-accountable, never outsourced" },
-  { value: "24/7", label: "Emergency Response", description: "water, fire, mold & biohazard restoration division" },
+  { value: "23+ yrs", label: "Serving Central MA since 2003", description: "owner-accountable, never outsourced" },
+  { value: "24/7", label: "Emergency Response", description: "water, mold & emergency cleanup division" },
   { value: "BBB", label: "Accredited since 2007", description: "18+ years of verified trust" },
   { value: "In-house", label: "Dedicated Teams", description: "No subcontractors used" },
 ]

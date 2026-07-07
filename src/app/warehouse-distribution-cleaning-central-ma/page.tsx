@@ -85,7 +85,7 @@ const structuredDataFAQ = {
       "name": "How do I get a warehouse cleaning quote?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Call (508) 890-1000 or request a free on-site assessment, and we will scope your facility and provide a customized proposal."
+        "text": "Call (508) 890-1000 or request a free on-site assessment, and we will scope your facility and provide a comprehensive proposal."
       }
     }
   ]
@@ -367,7 +367,7 @@ export default function WarehouseCleaningPage() {
       >
         <div className="flex flex-col items-center gap-6">
           <p className="text-lg text-slate-600 max-w-2xl font-medium leading-relaxed text-justify">
-            Call (508) 890-1000 today, and we will scope your facility and provide a customized proposal designed around your logistics operations.
+            Call (508) 890-1000 today, and we will scope your facility and provide a comprehensive proposal designed around your logistics operations.
           </p>
           <div className="flex flex-wrap justify-center gap-3 pt-2 animate-appear delay-100">
             {[

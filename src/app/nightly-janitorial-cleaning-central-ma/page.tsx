@@ -146,7 +146,7 @@ export default function NightlyJanitorialPage() {
                 <div className="flex items-center gap-3">
                   <Clock className="w-8 h-8 text-[#FFE800]" />
                   <div>
-                    <div className="font-bold text-lg">22+</div>
+                    <div className="font-bold text-lg">23+</div>
                     <div className="text-xs text-white/90">Years in Business</div>
                   </div>
                 </div>
@@ -208,7 +208,7 @@ export default function NightlyJanitorialPage() {
           <div className="text-center max-w-4xl mx-auto mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-[#0090c8] mb-6">What Our Nightly Janitorial Service Includes</h2>
             <p className="text-lg text-slate-600 font-medium leading-relaxed">
-              Every nightly cleaning program is customized to your building, but a standard scope typically covers all the high-touch and high-traffic areas that keep a workplace healthy and professional.
+              Every nightly cleaning program is built for your building, but a standard scope typically covers all the high-touch and high-traffic areas that keep a workplace healthy and professional.
             </p>
           </div>
 
@@ -282,7 +282,7 @@ export default function NightlyJanitorialPage() {
                 <CheckCircle2 className="w-8 h-8 text-[#FFE800]" strokeWidth={1.5} />
               </div>
               <h3 className="text-lg font-bold text-white mb-3">And Much More</h3>
-              <p className="text-sm text-white/80 leading-relaxed">Every nightly cleaning program is fully customized to your building.</p>
+              <p className="text-sm text-white/80 leading-relaxed">Every nightly cleaning program is fully structured for your building.</p>
             </div>
           </div>
         </div>
@@ -382,7 +382,7 @@ export default function NightlyJanitorialPage() {
               { icon: Users, stat: "97%", label: "Client Retention Rate", sub: "Industry-leading" },
               { icon: Trophy, stat: "4×", label: "Best of Business", sub: "Worcester Business Journal" },
               { icon: ShieldCheck, stat: "2007", label: "BBB Accredited Since", sub: "Verified accountability" },
-              { icon: Clock, stat: "22+", label: "Years in Business", sub: "Central Massachusetts" },
+              { icon: Clock, stat: "23+", label: "Years in Business", sub: "Central Massachusetts" },
             ].map((item, i) => (
               <div
                 key={i}
@@ -460,14 +460,14 @@ export default function NightlyJanitorialPage() {
       >
         <div className="flex flex-col items-center gap-6">
           <p className="text-lg text-slate-600 max-w-2xl font-medium leading-relaxed">
-            Get a customized nightly janitorial service plan designed specifically for your facility's needs and schedule. No obligations — just results.
+            Get a comprehensive nightly janitorial service plan designed specifically for your facility's needs and schedule. No obligations — just results.
           </p>
           <div className="flex flex-wrap justify-center gap-3 pt-2 animate-appear delay-100">
             {[
               { icon: ShieldCheck, text: "Fully Insured & Bonded" },
               { icon: Users, text: "97% Client Retention" },
               { icon: Trophy, text: "4× WBJ Best of Business" },
-              { icon: Clock, text: "22+ Years Experience" },
+              { icon: Clock, text: "23+ Years Experience" },
             ].map((chip, i) => (
               <div
                 key={i}

@@ -147,7 +147,7 @@ export default function SpecialtyCleaningPage() {
                 <div className="flex items-center gap-3">
                   <Clock className="w-8 h-8 text-[#FFE800]" />
                   <div>
-                    <div className="font-bold text-lg">22+</div>
+                    <div className="font-bold text-lg">23+</div>
                     <div className="text-xs text-white/90">Years in Business</div>
                   </div>
                 </div>
@@ -364,7 +364,7 @@ export default function SpecialtyCleaningPage() {
               { icon: Users, stat: "97%", label: "Client Retention Rate", sub: "Industry-leading" },
               { icon: Trophy, stat: "4×", label: "Best of Business", sub: "Worcester Business Journal" },
               { icon: ShieldCheck, stat: "2007", label: "BBB Accredited Since", sub: "Verified accountability" },
-              { icon: Clock, stat: "22+", label: "Years in Business", sub: "Central Massachusetts" },
+              { icon: Clock, stat: "23+", label: "Years in Business", sub: "Central Massachusetts" },
             ].map((item, i) => (
               <div
                 key={i}

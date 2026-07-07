@@ -367,7 +367,7 @@ export default function OfficeCleaningPage() {
       >
         <div className="flex flex-col items-center gap-6">
           <p className="text-lg text-slate-600 max-w-2xl font-medium leading-relaxed text-justify">
-            Call (508) 890-1000 today, and we will design a customized cleaning program that reflects the professionalism of your brand.
+            Call (508) 890-1000 today, and we will design a comprehensive cleaning program that reflects the professionalism of your brand.
           </p>
           <div className="flex flex-wrap justify-center gap-3 pt-2 animate-appear delay-100">
             {[

@@ -4,13 +4,13 @@ import { ContainerScroll, CardSticky } from "@/components/ui/cards-stack";
 const PROCESS_PHASES = [
   {
     id: "process-1",
-    title: "Keep Your Business Clean With Our Updated Steam Cleaning Process",
+    title: "Keep Your Business Clean With Our Floor care process",
     description:
       "We use the best methods and products to ensure a clean and healthy environment for your employees, customers and guests.",
   },
   {
     id: "process-2",
-    title: "Flood Clean-up",
+    title: "Restoration",
     description:
       "We hold a successful track record of satisfying our customers and getting back their bond money.",
   },
@@ -25,6 +25,12 @@ const PROCESS_PHASES = [
     title: "Daily & Nightly Janitorial Services",
     description:
       "We use biodegradable products which do not harm the environment, pets or humans in any way.",
+  },
+  {
+    id: "process-5",
+    title: "Restoration and turnover",
+    description:
+      "Comprehensive restoration and efficient turnover services to get your space ready quickly and professionally.",
   },
 ];
 

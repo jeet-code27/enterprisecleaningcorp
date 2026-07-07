@@ -47,29 +47,15 @@ export default function AboutPage() {
         <Floating sensitivity={-0.5} className="h-full z-0">
           <FloatingElement
             depth={0.5}
-            className="top-[5%] left-[2%] md:top-[25%] md:left-[5%]"
+            className="top-[5%] left-[2%] md:top-[20%] md:left-[8%]"
           >
             <motion.img
               src={aboutImages[0].url}
               alt={aboutImages[0].title}
-              className="w-16 h-12 sm:w-24 sm:h-16 md:w-32 md:h-24 lg:w-40 lg:h-32 object-cover hover:scale-105 duration-200 cursor-pointer transition-transform -rotate-[3deg] shadow-2xl rounded-xl md:rounded-2xl border-2 md:border-4 border-white opacity-60 md:opacity-100"
+              className="w-24 h-16 sm:w-32 sm:h-24 md:w-48 md:h-36 lg:w-56 lg:h-40 object-cover hover:scale-105 duration-200 cursor-pointer transition-transform -rotate-[3deg] shadow-2xl rounded-xl md:rounded-2xl border-2 md:border-4 border-white opacity-60 md:opacity-100"
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 0.5 }}
-            />
-          </FloatingElement>
-
-          <FloatingElement
-            depth={1}
-            className="top-[10%] left-[60%] md:top-[10%] md:left-[15%]"
-          >
-            <motion.img
-              src={aboutImages[1].url}
-              alt={aboutImages[1].title}
-              className="w-20 h-20 sm:w-48 sm:h-36 md:w-64 md:h-48 lg:w-72 lg:h-56 object-cover hover:scale-105 duration-200 cursor-pointer transition-transform rotate-12 md:-rotate-12 shadow-2xl rounded-xl md:rounded-2xl border-2 md:border-4 border-white opacity-60 md:opacity-100"
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ delay: 0.7 }}
             />
           </FloatingElement>
 
@@ -118,14 +104,14 @@ export default function AboutPage() {
 
         <div className="flex flex-col justify-center items-center w-[90%] sm:w-[80%] md:w-[700px] lg:w-[900px] relative z-10 pointer-events-auto bg-white/70 md:bg-transparent backdrop-blur-xl md:backdrop-blur-none p-8 md:p-0 md:pt-8 rounded-[2rem] md:rounded-none shadow-[0_20px_60px_rgba(0,144,200,0.1)] md:shadow-none border border-white md:border-none">
           <motion.h1
-            className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl text-center w-full justify-center items-center flex-col flex whitespace-pre leading-[1.1] font-extrabold tracking-tight space-y-2 md:space-y-4 text-slate-900"
+            className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl text-center w-full justify-center items-center flex-col flex whitespace-normal md:whitespace-pre leading-[1.1] font-extrabold tracking-tight space-y-2 md:space-y-4 text-slate-900"
             animate={{ opacity: 1, y: 0 }}
             initial={{ opacity: 0, y: 20 }}
             transition={{ duration: 0.2, ease: "easeOut", delay: 0.3 }}
           >
             <span>Make your facility</span>
             <LayoutGroup>
-              <motion.span layout className="flex whitespace-pre mt-2">
+              <motion.span layout className="flex flex-wrap justify-center items-center mt-2">
                 <TextRotate
                   texts={[
                     "spotless ✨",
@@ -152,7 +138,7 @@ export default function AboutPage() {
             initial={{ opacity: 0, y: 20 }}
             transition={{ duration: 0.2, ease: "easeOut", delay: 0.5 }}
           >
-            For over 22 years, we've set the standard for commercial cleaning in Central Massachusetts, delivering uncompromising quality and reliability to businesses that demand the best.
+            For over 23+ years, we've set the standard for commercial cleaning in Central Massachusetts, delivering uncompromising quality and reliability to businesses that demand the best.
           </motion.p>
 
           <div className="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4 items-center mt-8 sm:mt-12 w-full sm:w-auto">
@@ -205,7 +191,7 @@ export default function AboutPage() {
             <div className="space-y-8">
               <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[#0090c8]/10 border border-[#0090c8]/20">
                 <span className="flex h-2.5 w-2.5 rounded-full bg-[#0090c8] animate-pulse"></span>
-                <span className="text-sm font-bold text-[#0090c8] tracking-[0.1em] uppercase">History of Cleaning Company</span>
+                <span className="text-sm font-bold text-[#0090c8] tracking-[0.1em] uppercase">History of Enterprise Cleaning</span>
               </div>
               <h2 className="text-3xl md:text-4xl font-extrabold text-slate-900 leading-tight">
                 More than 20 years of <span className="text-[#0090c8]">cleaning experience</span>
@@ -240,7 +226,7 @@ export default function AboutPage() {
                 <div className="absolute bottom-0 left-0 w-full p-8 text-white">
                   <h3 className="font-extrabold text-2xl mb-2">Stephen Buchalter</h3>
                   <p className="font-medium text-white/90 text-sm leading-relaxed">
-                    Stephen founded Enterprise Cleaning and Restoration Corporation over 20 years ago. From starting with just one employee, he has grown the company to over 150 team members, reaching multiple 7-figures in annual revenue by focusing on uncompromising quality and dedicated partnerships.
+                    Stephen founded Enterprise Cleaning and Restoration Corporation over 20 years ago. From starting with just one employee, he has grown the company to over 150 team members, becoming one of the well respected companies in Massachusetts.
                   </p>
                 </div>
               </div>
@@ -250,18 +236,18 @@ export default function AboutPage() {
       </section>
 
       {/* Testimonial Section */}
-      <section className="py-24 bg-slate-50 border-y border-slate-200">
+      <section className="py-16 md:py-24 bg-slate-50 border-y border-slate-200 overflow-hidden">
         <div className="container mx-auto px-4 md:px-6">
           <div className="max-w-4xl mx-auto text-center space-y-10">
             <h2 className="text-3xl md:text-4xl font-extrabold text-slate-900">
               Satisfaction <span className="text-[#FFE800] bg-slate-900 px-4 py-1 rounded-lg inline-block rotate-2">Guaranteed!</span>
             </h2>
             <div className="relative">
-              <span className="absolute -top-10 -left-10 text-8xl text-[#0090c8]/20 font-serif">"</span>
-              <p className="text-lg md:text-xl lg:text-2xl text-slate-700 font-medium leading-relaxed italic relative z-10">
+              <span className="absolute -top-8 -left-2 md:-top-10 md:-left-10 text-6xl md:text-8xl text-[#0090c8]/20 font-serif">"</span>
+              <p className="text-lg md:text-xl lg:text-2xl text-slate-700 font-medium leading-relaxed italic relative z-10 px-4 md:px-0">
                 I have been the Facilities Manager at Millbury Federal Credit Union for nearly a decade. I take care of the main office in Millbury plus 4 branches... anytime I can get some help is greatly appreciated. One of the first things I learned at MCU was that you're only as good as your vendors. I had gone through a few cleaning companies before Steve Buchalter of Enterprise Cleaning Corporation showed up at my office one day... The aspect of his business that caught my attention was the regional managers that would visit the branches on a regular basis, get to know our employees, and assure that the cleaners were doing everything that was expected of them. This was the personal touch the other companies weren't giving... I am very pleased with Enterprise operation from top to bottom.
               </p>
-              <span className="absolute -bottom-10 -right-10 text-8xl text-[#0090c8]/20 font-serif rotate-180">"</span>
+              <span className="absolute -bottom-8 -right-2 md:-bottom-10 md:-right-10 text-6xl md:text-8xl text-[#0090c8]/20 font-serif rotate-180">"</span>
             </div>
             <div className="pt-8">
               <p className="font-extrabold text-slate-900 text-lg">Wayne Cormier</p>
