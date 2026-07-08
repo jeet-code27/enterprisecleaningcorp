@@ -38,8 +38,8 @@ const coreServices = [
     icon: SprayCan,
   },
   {
-    title: "Emergency & Restoration",
-    description: "24/7 response for water, fire, and storm damage.",
+    title: "Flood & Water Cleanup",
+    description: "24/7 response for water, flood, and storm damage.",
     href: "/emergency-restoration-services-central-ma",
     icon: Wind,
   },
@@ -116,9 +116,18 @@ export function Header() {
         <DesktopMenu />
 
         <div className="flex items-center gap-2">
+          {/* Desktop CTA */}
           <Button asChild className="hidden md:inline-flex shadow transition-colors text-white font-semibold" style={{ background: "#E31837" }}>
-            <Link href="/quote">Get a Free Quote</Link>
+            <Link href="/contact">Get a Free Quote</Link>
           </Button>
+          {/* Mobile CTA — compact, stays in sticky header */}
+          <Link
+            href="/contact"
+            className="inline-flex md:hidden items-center gap-1.5 px-3 py-2 rounded-lg text-white text-xs font-bold shadow-md active:scale-95 transition-transform"
+            style={{ background: "#E31837" }}
+          >
+            Free Quote
+          </Link>
           <MobileNav />
         </div>
       </div>

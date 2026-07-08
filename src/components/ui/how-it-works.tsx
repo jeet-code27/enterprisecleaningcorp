@@ -4,33 +4,39 @@ import { ContainerScroll, CardSticky } from "@/components/ui/cards-stack";
 const PROCESS_PHASES = [
   {
     id: "process-1",
-    title: "Keep Your Business Clean With Our Floor care process",
+    title: "Night & Day Cleaning",
     description:
-      "We use the best methods and products to ensure a clean and healthy environment for your employees, customers and guests.",
+      "Round-the-clock cleaning solutions tailored to your schedule — whether you need daytime maintenance or thorough nightly janitorial services.",
   },
   {
     id: "process-2",
-    title: "Restoration",
+    title: "Floor Care Services",
     description:
-      "We hold a successful track record of satisfying our customers and getting back their bond money.",
+      "Professional floor stripping, waxing, buffing, and maintenance using best-in-class methods to keep every surface spotless and long-lasting.",
   },
   {
     id: "process-3",
-    title: "Special Cleaning",
+    title: "Deep Cleaning",
     description:
-      "We use the most excellent quality tools and equipment to get all the dust and dirt out of your premises.",
+      "Thorough, top-to-bottom deep cleans using the most excellent quality tools and equipment to eliminate all dust, dirt, and buildup from your premises.",
   },
   {
     id: "process-4",
-    title: "Daily & Nightly Janitorial Services",
+    title: "Flood Cleanup",
     description:
-      "We use biodegradable products which do not harm the environment, pets or humans in any way.",
+      "Rapid-response water damage cleanup and remediation to protect your property, remove moisture, and restore your space as quickly as possible.",
   },
   {
     id: "process-5",
-    title: "Restoration and turnover",
+    title: "Restoration & Turnover Cleaning",
     description:
-      "Comprehensive restoration and efficient turnover services to get your space ready quickly and professionally.",
+      "Comprehensive restoration and efficient turnover services to get your space ready quickly and professionally — every time.",
+  },
+  {
+    id: "process-6",
+    title: "Post Construction",
+    description:
+      "Specialized post-construction cleanup removing debris, dust, and residues so your newly built or renovated space is move-in ready from day one.",
   },
 ];
 

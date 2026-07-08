@@ -25,7 +25,17 @@ export function GallerySection() {
     return () => window.removeEventListener("resize", updateSize);
   }, []);
 
-  const imageUrls = "/images/1.jpeg,/images/2.jpeg,/images/3.jpeg,/images/4.jpeg,/images/5.jpeg,/images/6.jpeg,/images/7.jpeg,/images/8.jpeg,/images/9.jpeg";
+  const imageUrls = [
+    "/images/2.jpeg",                        // Fleet
+    "/images/3.jpeg",                        // Fleet
+    "/images/service_commercial.png",        // Commercial Cleaning
+    "/images/nightly_janitorial_hero.png",   // Nightly Janitorial
+    "/images/service_porter.png",            // Day Porter
+    "/images/floor_care_hero.png",           // Floor Care
+    "/images/service_turnover.png",          // Turnover Cleaning
+    "/images/service_post_construction.png", // Post Construction
+    "/images/specialty_cleaning_hero.png",   // Specialty Cleaning
+  ].join(",");
 
   return (
     <section className="py-16 md:py-24 px-4 sm:px-6 md:px-12 w-full overflow-hidden relative" style={{ background: "#00B8FF" }}>

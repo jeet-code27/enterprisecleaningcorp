@@ -18,6 +18,7 @@ import { WhyEnterprise } from "@/components/blocks/why-enterprise";
 import { ServiceAreas } from "@/components/blocks/service-areas";
 import { GoogleMapSection } from "@/components/blocks/google-map";
 import { FAQSection } from "@/components/blocks/faq-section";
+import { TrustedByMarquee } from "@/components/ui/trusted-by-marquee";
 
 export default function Home() {
   return (
@@ -57,7 +58,7 @@ export default function Home() {
                 </div>
                 
                 <p className="mt-6 text-sm text-white/80 font-medium tracking-wide">
-                  Trusted by WBZ-TV, the Worcester Club, MacIntire Insurance & 110+ Central MA businesses
+                  Trusted by Hanover Insurance, Workers Credit Union, Shields Healthcare, Capital Group, Millbury Credit Union & 140+ Central MA businesses
                 </p>
               </ContainerAnimated>
 
@@ -73,6 +74,7 @@ export default function Home() {
           </ContainerScroll>
         </section>
 
+        <TrustedByMarquee />
         <StatsBanner />
         <ServicesSlideshow />
         <EmergencyCTA />

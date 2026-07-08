@@ -15,8 +15,8 @@ const faqs = [
     answer: "A 97% client retention rate, four Worcester Business Journal “Best of Business” awards, 23+ years in business, direct owner accountability, and an in-house team that is never subcontracted."
   },
   {
-    question: "Does Enterprise handle emergency water and fire damage?",
-    answer: "Yes. Its 24/7 restoration division is certified for water/flood, fire & smoke, and mold remediation, and works directly with insurers."
+    question: "Does Enterprise handle emergency water and flood damage?",
+    answer: "Yes. Its 24/7 restoration division is certified for water/flood and mold remediation, and works directly with insurers for rapid recovery."
   },
   {
     question: "How long has Enterprise Cleaning been in business?",

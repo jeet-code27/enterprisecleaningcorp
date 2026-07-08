@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import { motion } from "framer-motion";
 import { Handshake, RefreshCw, HardHat, Siren, ArrowRight } from "lucide-react";
@@ -8,12 +8,12 @@ const features = [
   {
     icon: Handshake,
     title: "Owner accountability",
-    description: "When something needs attention, you reach Steve and Julio directly — not a franchise ticket number or a call center.",
+    description: "When something needs attention, you reach Alex or Julio directly â€” not a franchise ticket number or a call center.",
   },
   {
     icon: RefreshCw,
     title: "97% retention means consistency",
-    description: "Our clients don’t leave — so you’re never retraining a new crew on your building every six months.",
+    description: "Our clients donâ€™t leave â€” so youâ€™re never retraining a new crew on your building every six months.",
   },
   {
     icon: HardHat,
@@ -23,7 +23,7 @@ const features = [
   {
     icon: Siren,
     title: "Full restoration capability",
-    description: "One vendor for routine cleaning and 24/7 emergency restoration — a single number when disaster strikes.",
+    description: "One vendor for routine cleaning and 24/7 emergency restoration â€” a single number when disaster strikes.",
   }
 ];
 
@@ -95,11 +95,11 @@ export function WhyEnterprise() {
                 <path d="M10 8c-3.3 0-6 2.7-6 6v10h10V14H8c0-1.1.9-2 2-2h4V8h-4zm16 0c-3.3 0-6 2.7-6 6v10h10V14h-6c0-1.1.9-2 2-2h4V8h-4z" />
               </svg>
               <p className="text-base sm:text-lg md:text-xl font-medium text-slate-700 italic leading-relaxed mb-6 md:mb-8">
-                “We pioneered the managed model in Worcester. Four WBJ awards and a 97% retention rate prove it works — and you’ll always have our cell numbers.”
+                â€œWe pioneered the managed model in Worcester. Four WBT Awards and a 99% retention rate prove it works!â€
               </p>
               <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-6">
                 <div>
-                  <h4 className="font-bold text-slate-900 text-lg">Steve & Julio</h4>
+                  <h4 className="font-bold text-slate-900 text-lg">Alex & Julio</h4>
                   <p className="text-xs sm:text-sm font-bold text-slate-400 uppercase tracking-wider">Owners, Enterprise</p>
                 </div>
                 <Link href="#" className="inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-full bg-[#E31837] text-white font-bold text-sm hover:bg-red-700 transition-colors shadow-lg hover:shadow-red-700/30 shrink-0">
@@ -115,3 +115,5 @@ export function WhyEnterprise() {
     </section>
   );
 }
+
+

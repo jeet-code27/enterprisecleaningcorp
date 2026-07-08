@@ -30,19 +30,22 @@ export function Footer() {
             </h4>
             <ul className="space-y-3 text-sm text-slate-200">
               <li>
-                <Link href="/nightly-janitorial-cleaning-central-ma" className="hover:text-white/60 transition-colors">Nightly Janitorial</Link>
+                <Link href="/nightly-janitorial-cleaning-central-ma" className="hover:text-white/60 transition-colors">Night & Day Cleaning</Link>
               </li>
               <li>
-                <Link href="/day-porter-services-central-ma" className="hover:text-white/60 transition-colors">Day Porter Services</Link>
+                <Link href="/floor-care-services-central-ma" className="hover:text-white/60 transition-colors">Floor Care Services</Link>
               </li>
               <li>
-                <Link href="/floor-care-services-central-ma" className="hover:text-white/60 transition-colors">Floor Care</Link>
+                <Link href="/specialty-cleaning-services-central-ma" className="hover:text-white/60 transition-colors">Deep Cleaning</Link>
               </li>
               <li>
-                <Link href="/specialty-cleaning-services-central-ma" className="hover:text-white/60 transition-colors">Specialty Cleaning</Link>
+                <Link href="/emergency-restoration-services-central-ma" className="hover:text-white/60 transition-colors">Flood Cleanup</Link>
               </li>
               <li>
-                <Link href="/emergency-restoration-services-central-ma" className="hover:text-white/60 transition-colors">Emergency & Restoration</Link>
+                <Link href="/emergency-restoration-services-central-ma" className="hover:text-white/60 transition-colors">Restoration & Turnover Cleaning</Link>
+              </li>
+              <li>
+                <Link href="/specialty-cleaning-services-central-ma" className="hover:text-white/60 transition-colors">Post Construction</Link>
               </li>
             </ul>
           </div>

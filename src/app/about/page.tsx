@@ -200,9 +200,7 @@ export default function AboutPage() {
                 <p>
                   Locally owned, Enterprise Cleaning Corporation has over 20 years of experience to tackle any commercial cleaning need you have. Every employee is trained specifically for the job they'll perform.
                 </p>
-                <p>
-                  We recognize the importance of Flood and Fire emergencies and the issues that come from them. As of 2018, we have opened our Flood Clean-up & Emergency Services Division. Our team of technicians have certifications in Flood, Mold Remediation, Crime Scene Clean-up, Disaster Clean-up and Lead Paint Removal.
-                </p>
+
                 <p>
                   There are always nuances that need to be taken into account for different spaces. For example, those assigned to clean a manufacturing site will be educated in the appropriate methods and products for that facility that may differ from those needed to clean offices or residences. We pay attention to all the details including traffic flow and work schedules to address anything that might affect a job when creating your service schedule. Once cleaners are on the job, they receive periodic evaluations to make sure their work meets the high standards set by us and that you expect. We manage our cleaners so that you won't have to.
                 </p>

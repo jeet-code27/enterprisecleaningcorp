@@ -11,43 +11,36 @@ const testimonials = [
     tempId: 0,
     testimonial: "In this day and economy, we are extremely focused on making sure that we provide a measurable value to our customers. I can tell you from experience that Enterprise Cleaning Corporation delivers that value to our company through their service, quality, and attention to detail. The team at Enterprise consistently exceeds our expectations. I would never switch to another cleaning company!",
     by: "Bob Macintire, President Mackintire Insurance Agency",
-    imgSrc: "https://images.unsplash.com/photo-1560250097-0b93528c311a?w=150&h=150&fit=crop&crop=face"
   },
   {
     tempId: 1,
     testimonial: "We are extremely happy with their performance. Many of our tenants have called to express their satisfaction with their level of service and honesty by its workers. Their communication and response time is excellent. Not only does Enterprise Cleaning respond quickly to routine requests, they are extremely efficient in emergency clean-up situations.",
     by: "Katheryn Krock, Property Manager Commerce Associates",
-    imgSrc: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=150&h=150&fit=crop&crop=face"
   },
   {
     tempId: 2,
     testimonial: "We are very, very, very happy with the cleaning of their facility. The crew is great and professional and polite and place even smells clean.",
-    by: "Chief Jeffrey Lourie Uxbridge Police Department",
-    imgSrc: "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=150&h=150&fit=crop&crop=face"
+    by: "Chief Jeffrey Lourie, Uxbridge Police Department",
   },
   {
     tempId: 3,
-    testimonial: "I can't even tell you how happy I am with the job the crew form Enterprise did for me. My attic was filthy with 27 years of dust and dirt from a ro...",
-    by: "Paula J 12/17/2018",
-    imgSrc: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&h=150&fit=crop&crop=face"
+    testimonial: "I can't even tell you how happy I am with the job the crew from Enterprise did for me. My attic was filthy with 27 years of dust and dirt from a ro...",
+    by: "Paula J.",
   },
   {
     tempId: 4,
-    testimonial: "Enterprise Crew, you all were amazing and the property owners were absolutely astounded by the transformation from a attacking a dust disaster ..",
-    by: "D Pierce dpi Denise Pierce I 12/2/2018",
-    imgSrc: "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=150&h=150&fit=crop&crop=face"
+    testimonial: "Enterprise Crew, you all were amazing and the property owners were absolutely astounded by the transformation from attacking a dust disaster ..",
+    by: "Denise Pierce",
   },
   {
     tempId: 5,
     testimonial: "Outstanding service! They responded to our flood emergency immediately and saved the day.",
     by: "Retail Store Owner",
-    imgSrc: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=150&h=150&fit=crop&crop=face"
   },
   {
     tempId: 6,
     testimonial: "Consistent, reliable, and thorough. They truly are the gold standard.",
     by: "Corporate Client",
-    imgSrc: "https://images.unsplash.com/photo-1531427186611-ecfd6d936c79?w=150&h=150&fit=crop&crop=face"
   }
 ];
 
@@ -100,14 +93,7 @@ const TestimonialCard: React.FC<TestimonialCardProps> = ({
           height: 2
         }}
       />
-      <img
-        src={testimonial.imgSrc}
-        alt={`${testimonial.by.split(',')[0]}`}
-        className="mb-4 h-12 w-12 sm:h-16 sm:w-16 rounded-full border-2 border-background object-cover object-top shrink-0"
-        style={{
-          boxShadow: "3px 3px 0px rgba(0,0,0,0.1)"
-        }}
-      />
+
       <div 
         className="flex-1 overflow-y-auto pr-2 mb-2"
         style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}
