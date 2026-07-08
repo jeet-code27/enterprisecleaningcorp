@@ -2,10 +2,11 @@ import Image from "next/image";
 
 const logos = [
   {
-    name: "Avidia Bank",
-    src: "/logos/avidia-bank.svg",
+    name: "APDerm",
+    src: "/logos/apderm-logo.svg",
     width: 130,
     height: 48,
+    darkBg: true,
   },
   {
     name: "The Hanover Insurance Group",
@@ -67,13 +68,15 @@ export function TrustedByMarquee() {
               className="flex-shrink-0 flex items-center justify-center px-4 grayscale hover:grayscale-0 transition-all duration-300 opacity-60 hover:opacity-100"
               style={{ minWidth: "120px" }}
             >
-              <Image
-                src={logo.src}
-                alt={logo.name}
-                width={logo.width}
-                height={logo.height}
-                className="object-contain max-h-[48px] w-auto"
-              />
+              <div className={logo.darkBg ? "bg-slate-800 rounded-lg px-3 py-2" : ""}>
+                <Image
+                  src={logo.src}
+                  alt={logo.name}
+                  width={logo.width}
+                  height={logo.height}
+                  className="object-contain max-h-[48px] w-auto"
+                />
+              </div>
             </div>
           ))}
         </div>

@@ -191,8 +191,76 @@ export default function ContactPage() {
           </div>
         </div>
       </section>
-      
-      {/* Map Section */}
+
+      {/* Meet the Team Section */}
+      <section className="py-16 md:py-20 bg-white border-t border-slate-100">
+        <div className="container mx-auto px-4 md:px-6 max-w-5xl">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-extrabold text-slate-900 tracking-tight">
+              Reach Out <span className="text-[#00B8FF]">Directly</span>
+            </h2>
+            <p className="mt-3 text-slate-500 font-medium">
+              No call centers. No ticket numbers. Real people who know your account.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+
+            {/* Stephen — Owner */}
+            <div className="flex flex-col items-center text-center bg-slate-50 rounded-3xl p-8 border border-slate-100 hover:shadow-xl transition-shadow duration-300">
+              <div className="w-28 h-28 rounded-full overflow-hidden ring-4 ring-[#E31837]/20 mb-5 shadow-lg">
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img src="/images/stephon.png" alt="Stephen Buchalter" className="w-full h-full object-cover object-top" />
+              </div>
+              <h3 className="text-xl font-extrabold text-slate-900">Stephen Buchalter</h3>
+              <span className="mt-1 mb-4 inline-block text-xs font-bold uppercase tracking-widest text-[#E31837] bg-red-50 px-3 py-1 rounded-full">Owner</span>
+              <a
+                href="mailto:customerservice@enterprisecleaningcorp.com"
+                className="flex items-center gap-2 text-sm font-semibold text-slate-600 hover:text-[#00B8FF] transition-colors break-all"
+              >
+                <Mail className="w-4 h-4 shrink-0 text-[#00B8FF]" />
+                customerservice@enterprisecleaningcorp.com
+              </a>
+            </div>
+
+            {/* Alex — Team Member */}
+            <div className="flex flex-col items-center text-center bg-slate-50 rounded-3xl p-8 border border-slate-100 hover:shadow-xl transition-shadow duration-300">
+              <div className="w-28 h-28 rounded-full overflow-hidden ring-4 ring-[#00B8FF]/20 mb-5 shadow-lg">
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img src="/images/alex-new.jpeg" alt="Alex" className="w-full h-full object-cover object-top" />
+              </div>
+              <h3 className="text-xl font-extrabold text-slate-900">Alex</h3>
+              <span className="mt-1 mb-4 inline-block text-xs font-bold uppercase tracking-widest text-[#00B8FF] bg-blue-50 px-3 py-1 rounded-full">Team Member</span>
+              <a
+                href="mailto:alex@enterprisecleaningcorp.com"
+                className="flex items-center gap-2 text-sm font-semibold text-slate-600 hover:text-[#00B8FF] transition-colors break-all"
+              >
+                <Mail className="w-4 h-4 shrink-0 text-[#00B8FF]" />
+                alex@enterprisecleaningcorp.com
+              </a>
+            </div>
+
+            {/* Julio — Team Member */}
+            <div className="flex flex-col items-center text-center bg-slate-50 rounded-3xl p-8 border border-slate-100 hover:shadow-xl transition-shadow duration-300">
+              <div className="w-28 h-28 rounded-full overflow-hidden ring-4 ring-[#00B8FF]/20 mb-5 shadow-lg">
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img src="/images/julio.png" alt="Julio" className="w-full h-full object-cover object-top" />
+              </div>
+              <h3 className="text-xl font-extrabold text-slate-900">Julio</h3>
+              <span className="mt-1 mb-4 inline-block text-xs font-bold uppercase tracking-widest text-[#00B8FF] bg-blue-50 px-3 py-1 rounded-full">Team Member</span>
+              <a
+                href="mailto:customerservice@enterprisecleaningcorp.com"
+                className="flex items-center gap-2 text-sm font-semibold text-slate-600 hover:text-[#00B8FF] transition-colors break-all"
+              >
+                <Mail className="w-4 h-4 shrink-0 text-[#00B8FF]" />
+                customerservice@enterprisecleaningcorp.com
+              </a>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
       <section className="h-[400px] w-full relative">
         <iframe 
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2949.241779976411!2d-71.77732379999999!3d42.3373683!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e3f9e82349f5d1%3A0x548a39c70a7955f9!2sEnterprise%20Cleaning%20and%20Restoration%20Corporation!5e0!3m2!1sen!2sin!4v1783163312743!5m2!1sen!2sin" 

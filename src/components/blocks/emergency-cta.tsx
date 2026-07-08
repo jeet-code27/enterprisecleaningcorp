@@ -23,7 +23,7 @@ export function EmergencyCTA() {
               Water, Mold & Emergency Cleanup — <span className="text-[#FFE800]">We Respond When It Matters</span>
             </h2>
             <p className="text-sm md:text-base text-white/90 max-w-3xl font-medium leading-relaxed">
-              Certified technicians for flood, water damage, and mold cleanup. We work directly with your insurance, so recovery starts immediately.
+              Technicians for flood, water damage, and mold cleanup. We work directly with your insurance, so recovery starts immediately.
             </p>
           </div>
 

@@ -14,7 +14,7 @@ export function GoogleMapSection() {
             </h2>
           </div>
           <p className="text-slate-500 max-w-2xl mx-auto font-medium">
-            Visit our headquarters in Worcester or contact us for on-site services across Central Massachusetts.
+            Visit our headquarters at West Boylston, MA — proudly serving MA, RI and Southern NH.
           </p>
         </div>
 
