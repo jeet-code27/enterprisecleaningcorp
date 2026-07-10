@@ -54,7 +54,7 @@ const structuredDataFAQ = {
       "name": "Can you handle all the cleaning needs across a property portfolio?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes. We provide janitorial, common-area cleaning, floor care, window cleaning, tenant turnover, and emergency restoration under one point of contact — so you manage one vendor instead of many."
+        "text": "Yes. We provide janitorial, common-area cleaning, floor care, window cleaning, tenant turnover, and emergency cleanup under one point of contact — so you manage one vendor instead of many."
       }
     },
     {
@@ -70,7 +70,7 @@ const structuredDataFAQ = {
       "name": "What if there is an after-hours emergency at one of my buildings?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "We have a full restoration division and a 24/7 emergency line (508-890-1000) for water, fire, and storm damage, so you have one trusted partner for both routine cleaning and emergencies."
+        "text": "We have a full emergency division and a 24/7 emergency line (508-890-1000) for water, fire, and storm damage, so you have one trusted partner for both routine cleaning and emergencies."
       }
     },
     {
@@ -130,7 +130,7 @@ export default function PropertyManagementPage() {
               </p>
 
               <p className="text-lg text-slate-600 font-medium leading-relaxed text-justify">
-                We know property managers juggle dozens of responsibilities and vendors. Our goal is to be the one cleaning partner you never have to think about: reliable, accountable, and able to handle everything from nightly janitorial to floor care, window cleaning, tenant turnover, and emergency restoration under a single point of contact.
+                We know property managers juggle dozens of responsibilities and vendors. Our goal is to be the one cleaning partner you never have to think about: reliable, accountable, and able to handle everything from nightly janitorial to floor care, window cleaning, tenant turnover, and emergency cleanup under a single point of contact.
               </p>
               
               <div className="flex flex-col sm:flex-row gap-4 pt-4">
@@ -193,7 +193,7 @@ export default function PropertyManagementPage() {
               { icon: CheckCircle2, text: "Floor care — carpet, hard-surface, and entryway maintenance." },
               { icon: SprayCan, text: "Window cleaning and pressure washing for curb appeal." },
               { icon: DoorOpen, text: "Move-in and move-out / tenant turnover cleaning." },
-              { icon: ShieldAlert, text: "Emergency water, fire, and restoration response." },
+              { icon: ShieldAlert, text: "Emergency water, fire, and cleanup response." },
             ].map((item, idx) => (
               <div key={idx} className="flex items-start gap-4 p-6 rounded-2xl bg-slate-50 hover:bg-[#0090c8]/5 transition-colors border border-slate-100 hover:border-[#0090c8]/30 group">
                 <div className="w-14 h-14 rounded-full bg-white shadow-sm flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform">
@@ -224,7 +224,7 @@ export default function PropertyManagementPage() {
                     The biggest advantage we offer property managers is consolidation. Instead of coordinating separate vendors for janitorial, floors, windows, turnovers, and emergencies, you have one accountable partner who knows your portfolio. That simplifies your life, ensures consistent standards across the property, and gives you a single number to call when something needs attention.
                   </p>
                   <p>
-                    Property managers are some of our longest-tenured clients precisely because of this. Our 97% client retention rate reflects how much value managers place on a partner who simply handles it. And because we have a full restoration division, we are also the partner you call when a pipe bursts at 2 a.m.
+                    Property managers are some of our longest-tenured clients precisely because of this. Our 97% client retention rate reflects how much value managers place on a partner who simply handles it. And because we have a full emergency division, we are also the partner you call when a pipe bursts at 2 a.m.
                   </p>
                 </div>
               </div>
@@ -273,7 +273,7 @@ export default function PropertyManagementPage() {
                     For a property manager, cleanliness is directly tied to two things that matter most: tenant satisfaction and asset value. Tenants judge a building by its common areas — the lobby they walk through, the restroom they use, the elevator they ride. A consistently clean, well-maintained property keeps existing tenants happy and renewing, and it makes vacant space far easier to lease. A neglected one does the opposite, quietly eroding both occupancy and value.
                   </p>
                   <p>
-                    Because we offer the full range of services — janitorial, floor care, window cleaning, pressure washing, tenant turnover, and emergency restoration — we can scale with your portfolio and handle whatever a property throws at you. That breadth, combined with our reliability, is why property managers are among our longest-tenured clients across Central Massachusetts.
+                    Because we offer the full range of services — janitorial, floor care, window cleaning, pressure washing, tenant turnover, and emergency cleanup — we can scale with your portfolio and handle whatever a property throws at you. That breadth, combined with our reliability, is why property managers are among our longest-tenured clients across Central Massachusetts.
                   </p>
                 </div>
               </div>

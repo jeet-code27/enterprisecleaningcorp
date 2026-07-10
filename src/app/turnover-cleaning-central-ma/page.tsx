@@ -6,22 +6,23 @@ import {
   Trash2, Droplets, Sparkles, SprayCan, Coffee, Wind, MapPin, Trophy, Users,
   Leaf, ArrowRight, CheckCircle2,
   CalendarCheck,
-  Briefcase
+  Briefcase,
+  Key
 } from "lucide-react";
 import { CTASection } from "@/components/blocks/cta-with-glow";
 
 export const metadata: Metadata = {
-  title: "Day & Night Shift Cleaning | Central MA, RI & Southern NH",
-  description: "Day porter and nightly janitorial cleaning under one contract, one crew, one point of contact — for offices and facilities across Central MA, Rhode Island & Southern NH.",
+  title: "Turnover Cleaning Services | Central MA, RI & Southern NH",
+  description: "Fast move-in, move-out & tenant turnover cleaning for apartments, commercial suites & managed properties across Central MA, Rhode Island & Southern NH.",
   alternates: {
-    canonical: "https://enterprisecleaningcorp.com/nightly-janitorial-cleaning-central-ma"
+    canonical: "https://enterprisecleaningcorp.com/turnover-cleaning-central-ma"
   }
 };
 
 const structuredDataService = {
   "@context": "https://schema.org",
   "@type": "Service",
-  "serviceType": "Day & Night Shift Commercial Cleaning",
+  "serviceType": "Turnover Cleaning Services",
   "provider": {
     "@type": "ProfessionalService",
     "name": "Enterprise Cleaning Corporation",
@@ -36,8 +37,8 @@ const structuredDataService = {
     }
   },
   "areaServed": ["Central Massachusetts", "Rhode Island", "Southern New Hampshire"],
-  "description": "Combined day porter and nightly janitorial cleaning for offices, medical facilities, and commercial buildings across Central Massachusetts, Rhode Island, and Southern New Hampshire.",
-  "url": "https://enterprisecleaningcorp.com/nightly-janitorial-cleaning-central-ma"
+  "description": "Move-in, move-out, and tenant turnover cleaning for residential units, commercial suites, and managed properties across Central Massachusetts, Rhode Island, and Southern New Hampshire.",
+  "url": "https://enterprisecleaningcorp.com/turnover-cleaning-central-ma"
 };
 
 const structuredDataFAQ = {
@@ -46,88 +47,88 @@ const structuredDataFAQ = {
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "Do you provide both day shift and night shift cleaning under one contract?",
+      "name": "How fast can you turn around a vacant unit?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes. We build combined programs that pair a nightly janitorial visit with day porter coverage during business hours, all under a single contract, a single crew structure, and one point of contact."
+        "text": "Same-day and next-day turnover cleaning is available for both residential units and commercial suites, depending on the size of the space and your leasing timeline."
       }
     },
     {
       "@type": "Question",
-      "name": "What's included in day porter or day shift coverage?",
+      "name": "Do you handle both apartment and commercial suite turnovers?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Day shift coverage typically includes restroom checks and restocking, lobby and common-area upkeep, spill and mess response, conference room resets, and high-traffic trash monitoring while your building is occupied."
+        "text": "Yes. We provide turnover cleaning for residential units, commercial suites, and mixed-use properties, adjusting the scope for each type of space."
       }
     },
     {
       "@type": "Question",
-      "name": "Can I add day shift coverage to an existing nightly janitorial contract?",
+      "name": "What's included in a standard turnover clean?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes. Many of our clients start with nightly janitorial cleaning and add day porter coverage once they see how much a daytime presence improves how the building looks and feels during business hours."
+        "text": "A standard turnover includes full kitchen and bathroom cleaning, floor care, interior window and glass cleaning, dusting, trash removal, and disinfecting of high-touch surfaces, finished with a move-in-ready walk-through."
       }
     },
     {
       "@type": "Question",
-      "name": "Do you serve businesses in Rhode Island and Southern New Hampshire, or only Massachusetts?",
+      "name": "Can you coordinate turnover cleaning around a tight leasing schedule?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "We provide day and night shift cleaning throughout Central Massachusetts, all of Rhode Island, and Southern New Hampshire, including Providence, Manchester, and Nashua."
+        "text": "Yes. We work directly with property managers and leasing teams to schedule the clean within whatever window the move-out and move-in dates allow."
       }
     },
     {
       "@type": "Question",
-      "name": "How many nights per week is night shift cleaning typically provided?",
+      "name": "Do you provide turnover cleaning in Rhode Island and Southern New Hampshire?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Most clients are serviced five nights a week, but we build the schedule around your operation — nightly, several nights a week, or weekends only — always after hours so cleaning never disrupts your business day."
+        "text": "Yes. We serve property managers and landlords throughout Rhode Island, including Providence and Cranston, and Southern New Hampshire, including Manchester and Nashua, in addition to Central Massachusetts."
       }
     },
     {
       "@type": "Question",
-      "name": "Will the same crew service my building for both shifts?",
+      "name": "Is carpet cleaning included in turnover service?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes. Crew continuity across both shifts is central to how we work, and it is a major reason behind our 97% client retention rate."
+        "text": "Spot and standard carpet cleaning can be included as part of the turnover scope; deeper carpet care is available as an add-on when a unit needs more extensive care."
       }
     },
     {
       "@type": "Question",
-      "name": "Do you provide day shift cleaning for medical or retail facilities specifically?",
+      "name": "Can you clean the same day a tenant moves out?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes. Medical offices and retail locations are two of the environments that benefit most from day shift coverage, since restrooms and common areas see heavy use throughout business hours."
+        "text": "In most cases, yes. We prioritize fast turnaround on turnover requests and coordinate with property managers to clean as soon as the unit is vacated."
       }
     },
     {
       "@type": "Question",
-      "name": "How quickly can day shift staff respond to a spill or mess during business hours?",
+      "name": "Do you offer recurring turnover contracts for property management companies with multiple units?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Because your day porter is already on-site, response is typically immediate — there is no need to wait for the next scheduled visit."
+        "text": "Yes. Many property managers set up a standing turnover arrangement that activates automatically whenever a lease ends, so cleaning is never the reason a unit sits vacant."
       }
     },
     {
       "@type": "Question",
-      "name": "Is combined day and night shift cleaning available in Providence, RI and Manchester, NH?",
+      "name": "What if a unit needs extra work beyond a standard clean, such as heavy soil or damage?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes. We provide day and night shift programs throughout Rhode Island, including Providence, and Southern New Hampshire, including Manchester and Nashua, in addition to Central Massachusetts."
+        "text": "We assess the unit and quote any additional work upfront — heavy soil, odor treatment, or move-out damage does not have to become a separate vendor problem."
       }
     },
     {
       "@type": "Question",
-      "name": "How do I get a quote for a combined day and night cleaning program?",
+      "name": "How do I schedule a turnover cleaning quote?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Call (508) 890-1000 or request a free on-site assessment. We will walk your facility, learn your traffic patterns, and design a day-and-night program specific to your building."
+        "text": "Call (508) 890-1000 or request a free quote online with your move-out date, and we will confirm a cleaning window that fits your leasing schedule."
       }
     }
   ]
 };
 
-export default function NightAndDayCleaningPage() {
+export default function TurnoverCleaningPage() {
   return (
     <>
       <script
@@ -144,8 +145,8 @@ export default function NightAndDayCleaningPage() {
         {/* Background Image & Overlay */}
         <div className="absolute inset-0 z-0">
           <Image 
-            src="/images/day_night_cleaning_hero.png" 
-            alt="Day and Night Shift Cleaning for professional offices" 
+            src="/images/turnover_cleaning_hero.png" 
+            alt="Turnover cleaning for empty commercial suites and residential units" 
             fill
             className="object-cover object-center"
             priority
@@ -162,20 +163,20 @@ export default function NightAndDayCleaningPage() {
               <div className="flex items-center gap-2 text-sm text-white/90 mb-6 font-medium">
                 <Link href="/services" className="hover:text-white transition-colors">Our Services</Link>
                 <ChevronRight className="w-4 h-4 text-[#FFE800]" />
-                <span className="text-white font-bold tracking-wide">Day & Night Shift Cleaning</span>
+                <span className="text-white font-bold tracking-wide">Turnover Cleaning</span>
               </div>
               
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight leading-[1.1] drop-shadow-md">
-                Day & Night Shift Commercial Cleaning <br/>
-                <span className="text-[#FFE800] text-3xl md:text-4xl lg:text-5xl">in Central Massachusetts, Rhode Island & Southern New Hampshire</span>
+                Turnover Cleaning Services<br/>
+                <span className="text-[#FFE800] text-3xl md:text-4xl lg:text-5xl">in Central MA, RI & Southern NH</span>
               </h1>
               
               <div className="text-base md:text-lg text-white/95 font-medium max-w-2xl leading-relaxed mt-6 drop-shadow-sm space-y-4 text-justify">
                 <p>
-                  Some buildings need to be spotless before the first employee badges in. Others need a visible presence throughout the business day — restocking restrooms, resetting conference rooms, and handling the small messes that happen when a facility is full of people. Most buildings need both.
+                  Every day a unit sits vacant between tenants is a day of lost rent. For property managers, landlords, and leasing teams across Central Massachusetts, Rhode Island, and Southern New Hampshire, turnover cleaning is not a routine chore — it is the last step standing between a move-out and a move-in, and speed matters as much as quality.
                 </p>
                 <p>
-                  Enterprise Cleaning Corporation is one of the few commercial cleaning companies in the region that delivers day shift and night shift cleaning under a single contract, a single management structure, and a single point of contact.
+                  Enterprise Cleaning Corporation provides fast, thorough turnover cleaning for residential units, commercial suites, and managed properties, so vacant space gets back on the market and ready for a new tenant as quickly as possible.
                 </p>
               </div>
               
@@ -196,17 +197,17 @@ export default function NightAndDayCleaningPage() {
                   </div>
                 </div>
                 <div className="flex items-center gap-3">
-                  <ShieldCheck className="w-8 h-8 text-[#FFE800]" />
-                  <div>
-                    <div className="font-bold text-lg">BBB</div>
-                    <div className="text-xs text-white/90">Accredited Since 2007</div>
-                  </div>
-                </div>
-                <div className="flex items-center gap-3">
                   <PhoneCall className="w-8 h-8 text-[#FFE800]" />
                   <div>
                     <div className="font-bold text-lg">24/7</div>
                     <div className="text-xs text-white/90">Emergency Response</div>
+                  </div>
+                </div>
+                <div className="flex items-center gap-3">
+                  <ShieldCheck className="w-8 h-8 text-[#FFE800]" />
+                  <div>
+                    <div className="font-bold text-lg">BBB</div>
+                    <div className="text-xs text-white/90">Accredited Since 2007</div>
                   </div>
                 </div>
               </div>
@@ -216,10 +217,10 @@ export default function NightAndDayCleaningPage() {
             <div className="w-full max-w-sm lg:mb-12">
               <div className="bg-white p-8 rounded-3xl shadow-2xl text-center space-y-4 border-b-4 border-[#00B8FF]">
                 <div className="mx-auto w-14 h-14 rounded-full bg-[#00B8FF]/10 flex items-center justify-center mb-4">
-                  <ShieldCheck className="w-7 h-7 text-[#00B8FF]" />
+                  <Key className="w-7 h-7 text-[#00B8FF]" />
                 </div>
                 <h3 className="text-lg font-bold text-slate-900 leading-snug">
-                  Consistency & Accountability Shift After Shift
+                  Move-In Ready Quality & Speed
                 </h3>
                 <div className="pt-4 border-t border-slate-100">
                   <div className="text-5xl font-extrabold text-[#0090c8]">97%</div>
@@ -232,7 +233,7 @@ export default function NightAndDayCleaningPage() {
                     ))}
                   </div>
                   <p className="text-xs text-slate-400 mt-3 font-medium text-justify">
-                    Whether you need a thorough nightly clean, a day porter on-site during business hours, or both working together, the program is built around your building, not a generic template.
+                    We have spent more than two decades building the kind of managed, accountable service that property managers rely on for their toughest scheduling problems. We show up when we say we will.
                   </p>
                 </div>
               </div>
@@ -242,75 +243,32 @@ export default function NightAndDayCleaningPage() {
         </div>
       </section>
 
-      {/* Intro Context Section */}
-      <section className="py-16 bg-white border-b border-slate-100">
-        <div className="container mx-auto px-4 md:px-6">
-          <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-3xl font-extrabold text-[#003057] mb-6">Two Shifts, One Program</h2>
-            <p className="text-lg text-slate-600 leading-relaxed text-justify">
-              Night shift and day shift cleaning solve different problems, and treating them as one combined program — rather than two separate line items — is what keeps a facility consistently presentable instead of clean only right after the crew leaves. Our night shift team handles the deep, disruptive work that is best done after hours: full restroom sanitizing, floor care, trash removal, and disinfecting of high-touch surfaces throughout the building. Our day shift team, sometimes called day porter coverage, is on-site during business hours to maintain what the night crew already set up — checking restrooms between visits, keeping lobbies and common areas presentable, resetting conference rooms between meetings, and responding immediately to spills, weather tracked in from the parking lot, or anything else that would otherwise sit until the next night's visit.
-            </p>
-          </div>
-        </div>
-      </section>
-
       {/* Services Breakdown Grid */}
       <section className="py-20 bg-slate-50">
         <div className="container mx-auto px-4 md:px-6">
-          <div className="grid lg:grid-cols-2 gap-12 max-w-7xl mx-auto">
-            
-            {/* Night Shift Column */}
-            <div className="bg-white p-8 md:p-12 rounded-3xl shadow-sm border border-slate-100">
-              <div className="flex items-center gap-4 mb-8">
-                <div className="w-14 h-14 rounded-2xl bg-[#003057] flex items-center justify-center shrink-0">
-                  <Sparkles className="w-7 h-7 text-[#FFE800]" strokeWidth={1.5} />
-                </div>
-                <h3 className="text-2xl font-bold text-slate-900">What Night Shift Cleaning Covers</h3>
+          <div className="text-center max-w-3xl mx-auto mb-16">
+            <h2 className="text-3xl font-bold text-[#0090c8] mb-6">What Turnover Cleaning Includes</h2>
+            <p className="text-lg text-slate-600 font-medium leading-relaxed">
+              A turnover clean goes well beyond a standard janitorial visit — it is a full reset of the space so it shows and smells like new to the next occupant. A standard scope typically includes:
+            </p>
+          </div>
+          
+          <div className="grid lg:grid-cols-2 gap-6 max-w-5xl mx-auto">
+            {[
+              "Full kitchen cleaning, including inside and outside of appliances, cabinets, and countertops",
+              "Complete bathroom cleaning and sanitizing, including tile, grout, and fixtures",
+              "Floor cleaning appropriate to the surface — vacuuming, mopping, or spot carpet cleaning",
+              "Interior window and glass cleaning, including sills and tracks",
+              "Dusting and wipe-down of all surfaces, closets, shelving, and baseboards",
+              "Removal of all trash, debris, and items left behind by the previous occupant",
+              "Disinfecting of high-touch surfaces — light switches, door handles, and cabinet pulls",
+              "A final move-in-ready walk-through before the space is turned back over"
+            ].map((item, i) => (
+              <div key={i} className="bg-white p-6 rounded-2xl shadow-sm border border-slate-100 flex items-start gap-4">
+                <CheckCircle2 className="w-6 h-6 text-[#00B8FF] shrink-0 mt-0.5" />
+                <span className="text-slate-700 font-medium leading-relaxed">{item}</span>
               </div>
-              <ul className="space-y-5">
-                {[
-                  "Trash and recycling collection and removal from offices, common areas, and breakrooms",
-                  "Restroom cleaning, sanitizing, and restocking of paper products and soap",
-                  "Vacuuming of carpets and dust-mopping and damp-mopping of hard floors",
-                  "Disinfecting of high-touch surfaces — door handles, light switches, shared equipment",
-                  "Breakroom and kitchen cleaning, including counters, sinks, and appliance exteriors",
-                  "Dusting of desks, sills, partitions, and horizontal surfaces",
-                  "Spot-cleaning of glass, entry doors, and interior partitions"
-                ].map((item, i) => (
-                  <li key={i} className="flex items-start gap-4">
-                    <CheckCircle2 className="w-6 h-6 text-[#00B8FF] shrink-0 mt-0.5" />
-                    <span className="text-slate-700 font-medium leading-relaxed">{item}</span>
-                  </li>
-                ))}
-              </ul>
-            </div>
-
-            {/* Day Shift Column */}
-            <div className="bg-white p-8 md:p-12 rounded-3xl shadow-sm border border-slate-100">
-              <div className="flex items-center gap-4 mb-8">
-                <div className="w-14 h-14 rounded-2xl bg-[#00B8FF]/10 flex items-center justify-center shrink-0">
-                  <Building2 className="w-7 h-7 text-[#00B8FF]" strokeWidth={1.5} />
-                </div>
-                <h3 className="text-2xl font-bold text-slate-900">What Day Shift & Day Porter Covers</h3>
-              </div>
-              <ul className="space-y-5">
-                {[
-                  "Restroom checks and restocking multiple times throughout the business day",
-                  "Lobby, entryway, and common-area upkeep while the building is occupied",
-                  "Immediate response to spills, tracked-in weather, and unexpected messes",
-                  "Conference room and meeting space resets between uses",
-                  "Monitoring high-traffic trash and recycling so bins never overflow midday",
-                  "Touch-up cleaning of glass doors, elevator interiors, and reception areas",
-                  "A visible, on-site point of contact for facility staff and tenants during business hours"
-                ].map((item, i) => (
-                  <li key={i} className="flex items-start gap-4">
-                    <CheckCircle2 className="w-6 h-6 text-[#E31837] shrink-0 mt-0.5" />
-                    <span className="text-slate-700 font-medium leading-relaxed">{item}</span>
-                  </li>
-                ))}
-              </ul>
-            </div>
-
+            ))}
           </div>
         </div>
       </section>
@@ -324,14 +282,14 @@ export default function NightAndDayCleaningPage() {
             <div className="grid lg:grid-cols-2 gap-16 items-start">
               <div>
                 <h2 className="text-3xl font-extrabold text-slate-900 leading-tight mb-6">
-                  Why Some Buildings Need Both Shifts
+                  Fast Turnaround When the Calendar Is Tight
                 </h2>
                 <div className="prose prose-lg text-slate-600 prose-p:leading-relaxed text-justify">
                   <p>
-                    A single overnight visit works well for a small office with light daytime traffic. It works far less well for a corporate headquarters, a medical building, a busy retail location, or a manufacturing facility running multiple shifts, where hundreds of people move through the same restrooms, lobbies, and common areas over the course of a single day.
+                    Leasing timelines rarely leave room for delay, and a turnover clean is frequently the last item standing between a signed lease and a new tenant's key handoff. We understand that a slow turnover costs you occupied days and revenue, so we prioritize speed without cutting corners.
                   </p>
                   <p>
-                    In those environments, a building that was spotless at 7 a.m. can look neglected by 2 p.m. without a day presence to maintain it. Pairing night shift deep cleaning with day shift upkeep closes that gap, so the building looks the way you want it to look at every hour, not just first thing in the morning.
+                    Same-day and next-day turnover cleaning is available for both residential units and commercial suites, and we coordinate directly with property managers and leasing staff to fit the clean into whatever window the schedule allows.
                   </p>
                 </div>
               </div>
@@ -341,13 +299,12 @@ export default function NightAndDayCleaningPage() {
                 <div className="relative z-10">
                   <div className="flex items-center gap-4 mb-4">
                     <div className="w-12 h-12 rounded-xl bg-white/10 flex items-center justify-center">
-                      <Users className="w-6 h-6 text-[#FFE800]" />
+                      <CalendarCheck className="w-6 h-6 text-[#FFE800]" />
                     </div>
-                    <h3 className="text-xl font-bold">A Managed Model</h3>
+                    <h3 className="text-xl font-bold">Built for Property Managers</h3>
                   </div>
-                  <h4 className="font-bold text-lg mb-2">So You Do Not Have to Manage the Cleaners</h4>
                   <p className="text-white/80 leading-relaxed font-medium text-justify">
-                    Many cleaning companies hand a facility a crew and walk away. We manage our own cleaners, across both shifts, so you never have to. Every account has supervision, quality checks, and a direct line to the people who own the company — not a franchise ticket number or a national call center.
+                    Whether you manage a handful of rental units or a large multi-property portfolio, turnover cleaning is easiest when it is handled by a single, reliable partner rather than juggled between whoever is available. We work with property managers on one-off turnovers and standing contracts that activate automatically whenever a lease ends.
                   </p>
                 </div>
               </div>
@@ -358,33 +315,59 @@ export default function NightAndDayCleaningPage() {
               <div className="order-2 lg:order-1 bg-slate-50 p-8 rounded-3xl border border-slate-100 shadow-sm">
                 <div className="flex items-center gap-4 mb-4">
                   <div className="w-12 h-12 rounded-xl bg-[#0090c8]/10 flex items-center justify-center">
-                    <Briefcase className="w-6 h-6 text-[#0090c8]" />
+                    <Building2 className="w-6 h-6 text-[#0090c8]" />
                   </div>
-                  <h3 className="text-xl font-bold text-slate-900">Built Around Your Industry</h3>
+                  <h3 className="text-xl font-bold text-slate-900">Residential & Commercial</h3>
                 </div>
                 <p className="text-slate-600 leading-relaxed font-medium text-justify mb-4">
-                  No two facilities run on the same schedule, so no two day-and-night programs should look identical. A corporate office, a medical practice, a manufacturing plant, and a multi-tenant property each have different traffic patterns and priorities. Before we quote a combined program, we walk the building, learn how it is actually used throughout the day, and design shift coverage that matches.
+                  Turnover cleaning is not limited to apartments. We provide the same fast, thorough service for vacant commercial suites, office spaces between tenants, and mixed-use properties, adjusting the scope to fit the space. 
                 </p>
                 <p className="text-slate-600 leading-relaxed font-medium text-justify">
-                  Our experience spans corporate offices, financial institutions, healthcare facilities, schools, manufacturing sites, warehouses, and managed properties throughout the region. We understand the rhythm of your building type before we ever start.
+                  A vacated apartment and a vacated office suite need different attention — one is judged on kitchens and bathrooms, the other on carpets, glass, and a professional first impression for the next business moving in — and our crews are trained to handle both.
                 </p>
               </div>
 
               <div className="order-1 lg:order-2">
                 <h2 className="text-3xl font-extrabold text-slate-900 leading-tight mb-6">
-                  Quality Control Across Both Shifts
+                  Coordinating With Leasing Timelines
                 </h2>
                 <div className="prose prose-lg text-slate-600 prose-p:leading-relaxed text-justify">
                   <p>
-                    A combined day-and-night program is only as good as the oversight behind it, which is why every account gets regular quality inspections that cover both shifts, not just the overnight visit.
+                    Every property manager we work with has a slightly different process for handing units back and forth between tenants — some require a pre-move-out walkthrough, some need the clean completed before a maintenance inspection, and some are simply racing a hard move-in date on the calendar.
                   </p>
                   <p>
-                    Supervisors walk buildings on a rotating schedule to confirm restrooms, common areas, and high-traffic zones meet the standard we set at the start of the contract, and we adjust staffing or scope the moment a building's needs change — a new tenant moves in, foot traffic increases, or a department expands into unused space.
-                  </p>
-                  <p>
-                    That ongoing attention is a large part of why clients who start with either shift alone frequently add the other once they see how the two work together.
+                    Rather than forcing every client into a single fixed process, we build turnover scheduling around whatever workflow your property already uses, communicating directly with the property manager, leasing agent, or maintenance team so nobody is left guessing when the unit will be ready. For portfolios with frequent turnover, we can also set up a standing notification process so a cleaning is automatically scheduled the moment a lease-end date is confirmed.
                   </p>
                 </div>
+              </div>
+            </div>
+
+            {/* Row 3 */}
+            <div className="grid lg:grid-cols-2 gap-16 items-start">
+              <div>
+                <h2 className="text-3xl font-extrabold text-slate-900 leading-tight mb-6">
+                  A Final Quality Check Before Handoff
+                </h2>
+                <div className="prose prose-lg text-slate-600 prose-p:leading-relaxed text-justify">
+                  <p>
+                    Every turnover clean ends with a walk-through against a standard checklist before we consider the unit ready to hand back. That final check catches the details that matter most to a new tenant on their first day — a streak on a mirror, a missed light fixture, a lingering odor from the previous occupant.
+                  </p>
+                  <p>
+                    It is the same discipline that has helped us build a 97% client retention rate. Property managers do not have to re-inspect behind us; the unit is ready when we say it is ready, and if anything is flagged during a leasing walkthrough afterward, we return to correct it at no additional cost.
+                  </p>
+                </div>
+              </div>
+
+              <div className="bg-[#00B8FF]/10 text-slate-900 p-8 rounded-3xl border border-[#00B8FF]/30 shadow-sm">
+                <div className="flex items-center gap-4 mb-4">
+                  <div className="w-12 h-12 rounded-xl bg-white flex items-center justify-center shadow-sm">
+                    <ShieldCheck className="w-6 h-6 text-[#0090c8]" />
+                  </div>
+                  <h3 className="text-xl font-bold">One Vendor for Everything</h3>
+                </div>
+                <p className="text-slate-700 leading-relaxed font-medium text-justify">
+                  Because Enterprise Cleaning also provides nightly janitorial, floor care, and emergency cleanup, property managers who use us for turnover cleaning frequently consolidate their entire cleaning program under one vendor. That means one point of contact for the tenant space you are turning over today and the common areas, floors, and emergencies you will need handled tomorrow.
+                </p>
               </div>
             </div>
             
@@ -404,7 +387,7 @@ export default function NightAndDayCleaningPage() {
               Serving Central Massachusetts, Rhode Island & Southern New Hampshire
             </h2>
             <p className="text-lg text-white/80 font-medium leading-relaxed max-w-4xl mx-auto text-justify">
-              We provide combined day and night shift cleaning throughout Worcester, Shrewsbury, Auburn, Holden, Westborough, Marlborough, and the rest of Central Massachusetts, as well as across Rhode Island — including Providence, Cranston, Pawtucket, and Woonsocket — and Southern New Hampshire, including Nashua, Manchester, and Salem. Wherever your building sits, the program is built around the same 97% retention rate, four Worcester Business Journal awards, and BBB accreditation since 2007 that our clients have relied on for more than two decades.
+              We provide turnover cleaning throughout Worcester, Shrewsbury, Auburn, Holden, Westborough, Marlborough, and the surrounding Central Massachusetts region, as well as across Rhode Island — including Providence, Cranston, and Pawtucket — and Southern New Hampshire, including Nashua, Manchester, and Salem. If your portfolio spans more than one of these markets, that regional reach means you can standardize on a single turnover cleaning partner instead of managing a different local vendor in every town — one call, one standard, and one invoice, no matter where the vacancy is.
             </p>
           </div>
 
@@ -439,7 +422,7 @@ export default function NightAndDayCleaningPage() {
           <div className="max-w-3xl mx-auto">
             <div className="text-center mb-12">
               <h2 className="text-3xl md:text-4xl font-bold text-[#0090c8] mb-4">Frequently Asked Questions</h2>
-              <p className="text-slate-600 font-medium">Common questions about our day and night shift cleaning programs.</p>
+              <p className="text-slate-600 font-medium">Common questions about our turnover cleaning services.</p>
             </div>
             
             <div className="space-y-6">
@@ -462,23 +445,23 @@ export default function NightAndDayCleaningPage() {
       
       <CTASection
         className="bg-white border-t border-slate-100"
-        title="Ready for a Dependable Cleaning Partner?"
+        title="Need a Fast, Reliable Turnover?"
         action={{
-          text: "Request On-Site Assessment",
+          text: "Schedule a Turnover Clean",
           href: "/contact",
           variant: "destructive",
         }}
       >
         <div className="flex flex-col items-center gap-6">
           <p className="text-lg text-slate-600 max-w-2xl font-medium leading-relaxed text-center">
-            Get a comprehensive day and night shift cleaning program designed specifically for your facility's needs and schedule.
+            Get your vacant units and commercial suites ready for the next tenant without delays.
           </p>
           <div className="flex flex-wrap justify-center gap-3 pt-2 animate-appear delay-100">
             {[
               { icon: ShieldCheck, text: "Fully Insured & Bonded" },
               { icon: Users, text: "97% Client Retention" },
               { icon: Trophy, text: "4× WBJ Best of Business" },
-              { icon: Clock, text: "23+ Years Experience" },
+              { icon: Clock, text: "Fast Turnaround" },
             ].map((chip, i) => (
               <div
                 key={i}

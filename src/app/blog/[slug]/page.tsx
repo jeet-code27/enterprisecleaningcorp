@@ -7,6 +7,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { Calendar, TagIcon, ArrowLeft, User } from "lucide-react";
 import { Metadata } from "next";
+import { BlogFAQ } from "@/components/blog/BlogFAQ";
 
 export const revalidate = 60; // Revalidate every 60 seconds
 
@@ -89,25 +90,11 @@ export default async function BlogPostPage({ params }: { params: Params }) {
   // Parse Table of Contents and FAQ Schema
   const { headings, html: processedHtml } = extractHeadings(post.content);
   
-  // Basic FAQ extraction: look for H2/H3 containing "FAQ" or "Frequently Asked Questions"
-  const faqBlocks: any[] = [];
-  if (post.content.toLowerCase().includes("faq") || post.content.toLowerCase().includes("frequently asked questions")) {
-    const faqRegex = /<(h[23])[^>]*>([^<]*(?:faq|frequently asked questions)[^<]*)<\/\1>([\s\S]*?)(?:<h[23]|$)/gi;
-    const match = faqRegex.exec(processedHtml);
-    if (match) {
-      const faqSection = match[3];
-      const qnaRegex = /<(strong|b|h4)[^>]*>(.*?)<\/\1>([\s\S]*?)(?:<(strong|b|h4)|$)/gi;
-      let qnaMatch;
-      while ((qnaMatch = qnaRegex.exec(faqSection)) !== null) {
-        if (qnaMatch[2] && qnaMatch[3]) {
-          faqBlocks.push({
-            question: qnaMatch[2].replace(/<[^>]*>?/gm, '').trim(),
-            answer: qnaMatch[3].replace(/<[^>]*>?/gm, '').trim(),
-          });
-        }
-      }
-    }
-  }
+  // Explicit FAQs from the database (from the new Post Editor builder)
+  const explicitFaqs = (post.faqs || []).map((faq: any) => ({
+    question: faq.question,
+    answer: faq.answer
+  }));
 
   // Fetch smart related posts (matching category or tags)
   const relatedQuery: any = { status: "Published", _id: { $ne: post._id }, $or: [] };
@@ -129,24 +116,48 @@ export default async function BlogPostPage({ params }: { params: Params }) {
     recentPosts = [...recentPosts, ...fallbackPosts];
   }
 
-  const jsonLd: any[] = [{
-    "@context": "https://schema.org",
-    "@type": "BlogPosting",
-    "headline": post.title,
-    "image": post.featuredImage?.url ? [post.featuredImage.url] : [],
-    "datePublished": post.createdAt,
-    "dateModified": post.updatedAt,
-    "author": [{
-      "@type": "Person",
-      "name": post.author?.name || "Enterprise Cleaning Team"
-    }]
-  }];
+  const baseUrl = process.env.NEXT_PUBLIC_APP_URL || 'https://enterprisecleaning.com';
+  
+  // Advanced AI & Geo SEO Schema Graph
+  const jsonLdGraph: any[] = [
+    {
+      "@type": "BlogPosting",
+      "@id": `${baseUrl}/blog/${post.slug}#blogposting`,
+      "headline": post.title,
+      "image": post.featuredImage?.url ? [post.featuredImage.url] : [],
+      "datePublished": post.createdAt,
+      "dateModified": post.updatedAt,
+      "author": {
+        "@type": "Person",
+        "name": post.author?.name || "Enterprise Cleaning Team"
+      },
+      "publisher": { "@id": `${baseUrl}/#organization` },
+      "about": post.seo?.targetLocations?.length > 0 ? {
+        "@type": "Place",
+        "name": post.seo.targetLocations.join(", ")
+      } : undefined
+    },
+    {
+      "@type": "CleaningService",
+      "@id": `${baseUrl}/#organization`,
+      "name": "Enterprise Cleaning Corporation",
+      "areaServed": post.seo?.targetLocations?.length > 0 ? post.seo.targetLocations : ["Central Massachusetts", "Worcester, MA"],
+      "url": baseUrl,
+      "telephone": "+15089269411", // Add your actual phone number
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Worcester",
+        "addressRegion": "MA",
+        "addressCountry": "US"
+      }
+    }
+  ];
 
-  if (faqBlocks.length > 0) {
-    jsonLd.push({
-      "@context": "https://schema.org",
+  if (explicitFaqs.length > 0) {
+    jsonLdGraph.push({
       "@type": "FAQPage",
-      "mainEntity": faqBlocks.map(faq => ({
+      "@id": `${baseUrl}/blog/${post.slug}#faq`,
+      "mainEntity": explicitFaqs.map((faq: any) => ({
         "@type": "Question",
         "name": faq.question,
         "acceptedAnswer": {
@@ -157,13 +168,18 @@ export default async function BlogPostPage({ params }: { params: Params }) {
     });
   }
 
+  const schemaData = {
+    "@context": "https://schema.org",
+    "@graph": jsonLdGraph.filter(item => Object.keys(item).length > 0) // Remove undefined objects
+  };
+
   const shareUrl = `${process.env.NEXT_PUBLIC_APP_URL || 'https://enterprisecleaning.com'}/blog/${post.slug}`;
 
   return (
     <>
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaData) }}
       />
       <div className="bg-background pt-32 pb-24 min-h-screen">
         <div className="container mx-auto px-4 max-w-7xl">
@@ -184,8 +200,8 @@ export default async function BlogPostPage({ params }: { params: Params }) {
                   ))}
                   <div className="flex items-center text-sm text-muted-foreground gap-2">
                     <Calendar className="w-4 h-4" />
-                    <time dateTime={post.createdAt.toISOString()}>
-                      {new Date(post.createdAt).toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' })}
+                    <time dateTime={post.createdAt ? new Date(post.createdAt).toISOString() : new Date().toISOString()}>
+                      {new Date(post.createdAt || Date.now()).toLocaleDateString('en-GB')}
                     </time>
                   </div>
                 </div>
@@ -265,6 +281,9 @@ export default async function BlogPostPage({ params }: { params: Params }) {
                 className="prose prose-lg max-w-none prose-headings:text-[#0B1E36] prose-a:!text-[#00B8FF] hover:prose-a:!text-[#0B1E36] prose-img:rounded-xl prose-headings:scroll-mt-24 prose-a:!underline prose-a:!font-bold"
                 dangerouslySetInnerHTML={{ __html: processedHtml }}
               />
+
+              {/* Explicit FAQs */}
+              <BlogFAQ faqs={explicitFaqs} />
 
               {/* Tags */}
               {post.tags && post.tags.length > 0 && (

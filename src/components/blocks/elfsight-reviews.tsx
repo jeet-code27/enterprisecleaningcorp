@@ -14,7 +14,7 @@ export function ElfsightReviews() {
             Trusted by Businesses <span className="text-[#00B8FF]">Across New England</span>
           </h2>
           <p className="mt-4 text-base md:text-lg text-slate-500 max-w-2xl mx-auto leading-relaxed">
-            Don't just take our word for it. See what our satisfied clients have to say about our premium cleaning and restoration services.
+            Don't just take our word for it. See what our satisfied clients have to say about our premium cleaning and janitorial services.
           </p>
         </div>
         

@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from "react";
 import Link from "next/link";
-import { Plus, Edit, Trash2 } from "lucide-react";
+import { Plus, Edit, Trash2, Search } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 interface Post {
@@ -16,6 +16,7 @@ interface Post {
 export default function AdminPostsPage() {
   const [posts, setPosts] = useState<Post[]>([]);
   const [loading, setLoading] = useState(true);
+  const [searchQuery, setSearchQuery] = useState("");
 
   useEffect(() => {
     fetchPosts();
@@ -48,6 +49,10 @@ export default function AdminPostsPage() {
     }
   };
 
+  const filteredPosts = posts.filter(post => 
+    post.title.toLowerCase().includes(searchQuery.toLowerCase())
+  );
+
   return (
     <div className="space-y-6">
       <div className="flex justify-between items-center">
@@ -60,7 +65,20 @@ export default function AdminPostsPage() {
         </Link>
       </div>
 
-      <div className="bg-card rounded-xl shadow-sm border border-border overflow-hidden">
+      <div className="bg-card rounded-xl shadow-sm border border-border overflow-hidden flex flex-col">
+        <div className="p-4 border-b border-border bg-muted/30">
+          <div className="relative max-w-sm">
+            <Search className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-muted-foreground" />
+            <input 
+              type="text" 
+              placeholder="Search posts by title..." 
+              value={searchQuery}
+              onChange={(e) => setSearchQuery(e.target.value)}
+              className="w-full pl-9 pr-4 py-2 border border-input rounded-md bg-background text-sm focus:outline-none focus:ring-2 focus:ring-brand-blue/50"
+            />
+          </div>
+        </div>
+
         {loading ? (
           <div className="p-8 text-center text-muted-foreground">Loading posts...</div>
         ) : posts.length === 0 ? (
@@ -78,7 +96,7 @@ export default function AdminPostsPage() {
               </tr>
             </thead>
             <tbody>
-              {posts.map((post) => (
+              {filteredPosts.map((post) => (
                 <tr key={post._id} className="border-b border-border hover:bg-muted/30">
                   <td className="p-4 font-medium text-foreground">{post.title}</td>
                   <td className="p-4">
@@ -91,7 +109,7 @@ export default function AdminPostsPage() {
                     </span>
                   </td>
                   <td className="p-4 text-muted-foreground text-sm">
-                    {new Date(post.createdAt).toLocaleDateString()}
+                    {post.createdAt ? new Date(post.createdAt).toLocaleDateString('en-GB') : new Date().toLocaleDateString('en-GB')}
                   </td>
                   <td className="p-4 text-right">
                     <div className="flex justify-end gap-2">

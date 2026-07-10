@@ -66,7 +66,7 @@ export function WhyChooseUs() {
                    What We <span style={{ color: BRAND_BLUE }}>Provide</span>
                 </h2>
                 <p className="text-lg leading-relaxed" style={{ color: "#4a6178" }}>
-                   Locally owned, Enterprise Cleaning Corporation has 17 years of experience to tackle any commercial cleaning need you have. Every employee is trained specifically for the job they'll perform. Our team of technicians have certifications in Flood, Fire Restoration, Mold Remediation, Crime Scene Clean-up, Disaster Clean-up and Lead Paint Removal.
+                   Locally owned, Enterprise Cleaning Corporation has 17 years of experience to tackle any commercial cleaning need you have. Every employee is trained specifically for the job they'll perform. Our team of technicians have certifications in Flood, Fire Cleanup, Mold Remediation, Crime Scene Clean-up, Disaster Clean-up and Lead Paint Removal.
                 </p>
             </div>
 

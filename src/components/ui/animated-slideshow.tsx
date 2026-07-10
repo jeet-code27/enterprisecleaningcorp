@@ -77,50 +77,21 @@ export const TextStaggerHover = React.forwardRef<
   React.HTMLAttributes<HTMLElement> & TextStaggerHoverProps
 >(({ text, index, children, className, ...props }, ref) => {
   const { activeSlide, changeSlide } = useHoverSliderContext()
-  const { characters } = splitText(text)
   const isActive = activeSlide === index
   const handleMouse = () => changeSlide(index)
+  
   return (
     <span
       className={cn(
-        "relative inline-block origin-bottom overflow-hidden",
+        "relative inline-block transition-colors duration-300",
+        isActive ? "text-[#00B8FF]" : "",
         className
       )}
       {...props}
       ref={ref}
       onMouseEnter={handleMouse}
     >
-      {characters.map((char, index) => (
-        <span
-          key={`${char}-${index}`}
-          className="relative inline-block overflow-hidden"
-        >
-          <MotionConfig
-            transition={{
-              delay: index * 0.025,
-              duration: 0.3,
-              ease: [0.25, 0.46, 0.45, 0.94],
-            }}
-          >
-            <motion.span
-              className="inline-block opacity-40 transition-opacity"
-              initial={{ y: "0%" }}
-              animate={isActive ? { y: "-110%", opacity: 0 } : { y: "0%", opacity: 0.4 }}
-            >
-              {char}
-              {char === " " && index < characters.length - 1 && <>&nbsp;</>}
-            </motion.span>
-
-            <motion.span
-              className={cn("absolute left-0 top-0 inline-block opacity-100", isActive && "text-[#00B8FF]")}
-              initial={{ y: "110%" }}
-              animate={isActive ? { y: "0%" } : { y: "110%" }}
-            >
-              {char}
-            </motion.span>
-          </MotionConfig>
-        </span>
-      ))}
+      {text}
     </span>
   )
 })

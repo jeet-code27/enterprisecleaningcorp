@@ -14,16 +14,10 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/
 
 const coreServices = [
   {
-    title: "Nightly Cleaning",
-    description: "Consistent nightly cleaning for professional environments.",
+    title: "Night & Day Cleaning",
+    description: "Consistent cleaning for professional environments.",
     href: "/nightly-janitorial-cleaning-central-ma",
     icon: Building2,
-  },
-  {
-    title: "Day Porter Services",
-    description: "Ongoing daily maintenance to keep your facility pristine.",
-    href: "/day-porter-services-central-ma",
-    icon: Droplets,
   },
   {
     title: "Floor Care Services",
@@ -32,22 +26,28 @@ const coreServices = [
     icon: Sparkles,
   },
   {
-    title: "Specialty Cleaning",
-    description: "Window cleaning, pressure washing, water and mold.",
-    href: "/specialty-cleaning-services-central-ma",
-    icon: SprayCan,
+    title: "Deep Cleaning",
+    description: "Thorough, restorative cleaning to revitalize your facility.",
+    href: "/deep-cleaning-services-central-ma",
+    icon: Sparkles,
   },
   {
-    title: "Flood & Water Cleanup",
+    title: "Flood Cleanup",
     description: "24/7 response for water, flood, and storm damage.",
     href: "/emergency-restoration-services-central-ma",
     icon: Wind,
   },
   {
-    title: "Deep Cleaning Services",
-    description: "Thorough, restorative cleaning to revitalize your facility.",
-    href: "/deep-cleaning-services-central-ma",
-    icon: Sparkles,
+    title: "Restoration & Turnover Cleaning",
+    description: "Complete turnover cleaning for properties.",
+    href: "/turnover-cleaning-central-ma",
+    icon: Droplets,
+  },
+  {
+    title: "Post Construction",
+    description: "Detailed cleaning after construction projects.",
+    href: "/post-construction-cleaning-central-ma",
+    icon: SprayCan,
   },
 ]
 
@@ -104,7 +104,7 @@ export function Header() {
         <Link href="/" className="flex items-center">
           <Image
             src="/images/logo.png"
-            alt="Enterprise Cleaning and Restoration Corporation"
+            alt="Enterprise Cleaning Corporation"
             width={180}
             height={56}
             className="h-12 w-auto object-contain"

@@ -9,8 +9,8 @@ import {
 import { CTASection } from "@/components/blocks/cta-with-glow";
 
 export const metadata: Metadata = {
-  title: "24/7 Water & Fire Restoration Worcester MA",
-  description: "24/7 emergency water, flood, fire, and mold restoration across Worcester and Central Massachusetts. Call (508) 890-1000 for rapid response.",
+  title: "24/7 Water & Fire Cleanup Worcester MA",
+  description: "24/7 emergency water, flood, fire, and mold cleanup across Worcester and Central Massachusetts. Call (508) 890-1000 for rapid response.",
   alternates: {
     canonical: "https://enterprisecleaningcorp.com/emergency-restoration-services-central-ma"
   }
@@ -19,7 +19,7 @@ export const metadata: Metadata = {
 const structuredDataService = {
   "@context": "https://schema.org",
   "@type": "EmergencyService",
-  "name": "Emergency & Restoration Services — Enterprise Cleaning Corporation",
+  "name": "Emergency Cleanup Services — Enterprise Cleaning Corporation",
   "provider": {
     "@type": "LocalBusiness",
     "name": "Enterprise Cleaning Corporation",
@@ -49,10 +49,10 @@ const structuredDataFAQ = {
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "What number do I call for a cleaning or restoration emergency?",
+      "name": "What number do I call for a cleaning or flood emergency?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "For 24/7 emergency water, flood, fire, and restoration response, call (508) 890-1000."
+        "text": "For 24/7 emergency water, flood, fire, and cleanup response, call (508) 890-1000."
       }
     },
     {
@@ -65,7 +65,7 @@ const structuredDataFAQ = {
     },
     {
       "@type": "Question",
-      "name": "Do you handle insurance claims for restoration work?",
+      "name": "Do you handle insurance claims for emergency work?",
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "Yes. We document the damage and our work and coordinate with your insurance carrier and adjuster to help make the claims process as smooth as possible."
@@ -76,15 +76,15 @@ const structuredDataFAQ = {
       "name": "Do you provide mold remediation?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes. We provide mold remediation and moisture control as part of our restoration services across Worcester and Central Massachusetts."
+        "text": "Yes. We provide mold remediation and moisture control as part of our cleanup services across Worcester and Central Massachusetts."
       }
     },
     {
       "@type": "Question",
-      "name": "What areas do you cover for emergency restoration?",
+      "name": "What areas do you cover for emergency cleanup?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "We provide 24/7 emergency restoration throughout Worcester and Central Massachusetts, and across Rhode Island and New Hampshire."
+        "text": "We provide 24/7 emergency response throughout Worcester and Central Massachusetts, and across Rhode Island and New Hampshire."
       }
     }
   ]
@@ -108,7 +108,7 @@ export default function EmergencyRestorationPage() {
         <div className="absolute inset-0 z-0">
           <Image 
             src="/images/emergency_restoration_hero.png" 
-            alt="Professional water extraction and commercial restoration services in Worcester MA" 
+            alt="Professional water extraction and commercial cleanup services in Worcester MA" 
             fill
             className="object-cover object-center opacity-70"
             priority
@@ -125,20 +125,20 @@ export default function EmergencyRestorationPage() {
               <div className="flex items-center gap-2 text-sm text-white/90 mb-6 font-medium">
                 <Link href="/services" className="hover:text-white transition-colors">Our Services</Link>
                 <ChevronRight className="w-4 h-4 text-[#FFE800]" />
-                <span className="text-white font-bold tracking-wide">Emergency & Restoration</span>
+                <span className="text-white font-bold tracking-wide">Emergency Cleanup</span>
               </div>
               
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight leading-[1.1] drop-shadow-md">
-                24/7 Emergency & Restoration<br/>
+                24/7 Emergency Cleanup<br/>
                 <span className="text-[#FFE800]">in Worcester &<br/>Central Massachusetts</span>
               </h1>
               
               <div className="text-base md:text-lg text-white/95 font-medium max-w-2xl leading-relaxed mt-6 drop-shadow-sm space-y-4 text-justify">
                 <p>
-                  Water, fire, and mold do not wait for business hours — and neither do we. When disaster strikes your facility, every hour counts. Standing water spreads. Smoke residue sets. Mold takes hold. Enterprise Cleaning Corporation provides 24/7 emergency restoration across Central Massachusetts, with rapid response that limits damage, protects your property, and gets your building back to normal as fast as possible.
+                  Water, fire, and mold do not wait for business hours — and neither do we. When disaster strikes your facility, every hour counts. Standing water spreads. Smoke residue sets. Mold takes hold. Enterprise Cleaning Corporation provides 24/7 emergency cleanup across Central Massachusetts, with rapid response that limits damage, protects your property, and gets your building back to normal as fast as possible.
                 </p>
                 <p>
-                  Having a restoration division sets us apart from most cleaning companies. The same trusted, local team that keeps your building clean can also be the team you call when something goes wrong.
+                  Having a dedicated emergency division sets us apart from most cleaning companies. The same trusted, local team that keeps your building clean can also be the team you call when something goes wrong.
                 </p>
               </div>
               
@@ -206,7 +206,7 @@ export default function EmergencyRestorationPage() {
           <div className="text-center max-w-4xl mx-auto mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-[#0090c8] mb-6">Emergency Services We Provide</h2>
             <p className="text-lg text-slate-600 font-medium leading-relaxed">
-              Our restoration capabilities cover the full range of facility emergencies:
+              Our emergency capabilities cover the full range of facility emergencies:
             </p>
           </div>
 
@@ -325,17 +325,17 @@ export default function EmergencyRestorationPage() {
                   <h3 className="text-xl font-bold text-slate-900">Reducing Risk & Worry</h3>
                 </div>
                 <p className="text-slate-600 leading-relaxed font-medium text-justify">
-                  We also understand that an emergency is stressful and disruptive to your operation. Beyond the technical work, we help document the damage for your insurance carrier, coordinate with adjusters, and keep you informed throughout. For property managers and facility managers especially, having one partner for both routine cleaning and emergency restoration removes a major source of risk and worry.
+                  We also understand that an emergency is stressful and disruptive to your operation. Beyond the technical work, we help document the damage for your insurance carrier, coordinate with adjusters, and keep you informed throughout. For property managers and facility managers especially, having one partner for both routine cleaning and emergency cleanup removes a major source of risk and worry.
                 </p>
               </div>
 
               <div className="order-1 lg:order-2">
                 <h2 className="text-3xl font-extrabold text-slate-900 leading-tight mb-6">
-                  The Advantage of a Cleaning Partner With a Restoration Division
+                  The Advantage of a Cleaning Partner With an Emergency Division
                 </h2>
                 <div className="prose prose-lg text-slate-600 prose-p:leading-relaxed text-justify">
                   <p>
-                    Most commercial cleaning companies cannot help you when disaster strikes — they clean, and that is all. Having a full restoration division alongside our cleaning operation is a genuine differentiator, and it matters most at the worst possible moment. When a pipe bursts, a roof leaks, or a fire leaves smoke damage, you already have a trusted, local partner on call — one who knows your building and can respond fast.
+                    Most commercial cleaning companies cannot help you when disaster strikes — they clean, and that is all. Having a full emergency division alongside our cleaning operation is a genuine differentiator, and it matters most at the worst possible moment. When a pipe bursts, a roof leaks, or a fire leaves smoke damage, you already have a trusted, local partner on call — one who knows your building and can respond fast.
                   </p>
                 </div>
               </div>
@@ -356,7 +356,7 @@ export default function EmergencyRestorationPage() {
           <div className="text-center max-w-3xl mx-auto mb-16">
             <span className="inline-block text-[#FFE800] font-bold tracking-widest uppercase text-sm mb-4">Local, Around the Clock, and Accountable</span>
             <h2 className="text-3xl md:text-5xl font-extrabold text-white leading-tight mb-6">
-              Proven Restoration Experts in Central MA
+              Proven Emergency Experts in Central MA
             </h2>
             <p className="text-lg text-white/80 font-medium leading-relaxed max-w-4xl mx-auto text-justify">
               We serve Massachusetts, Rhode Island, and New Hampshire, with our core emergency-response market across Worcester and Central MA. We bring 97% client retention, four Worcester Business Journal “Best of Business” awards, and BBB accreditation since 2007 to every job, and the same owner-level accountability that defines everything we do. When you call our emergency line, you reach a company that knows the area and answers the phone.
@@ -417,7 +417,7 @@ export default function EmergencyRestorationPage() {
           <div className="max-w-3xl mx-auto">
             <div className="text-center mb-12">
               <h2 className="text-3xl md:text-4xl font-bold text-[#0090c8] mb-4">Frequently Asked Questions</h2>
-              <p className="text-slate-600 font-medium">Common questions about our 24/7 restoration capabilities.</p>
+              <p className="text-slate-600 font-medium">Common questions about our 24/7 emergency capabilities.</p>
             </div>
             
             <div className="space-y-6">
@@ -449,7 +449,7 @@ export default function EmergencyRestorationPage() {
       >
         <div className="flex flex-col items-center gap-6">
           <p className="text-lg text-slate-600 max-w-2xl font-medium leading-relaxed text-justify">
-            For non-emergency restoration inquiries, you can also request a free on-site assessment online or call (508) 890-1000 during business hours.
+            For non-emergency cleanup inquiries, you can also request a free on-site assessment online or call (508) 890-1000 during business hours.
           </p>
           <div className="flex flex-wrap justify-center gap-3 pt-2 animate-appear delay-100">
             {[

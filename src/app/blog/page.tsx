@@ -11,17 +11,19 @@ export const metadata = {
 
 export const revalidate = 60; // Revalidate every 60 seconds
 
-export default async function BlogPage({ searchParams }: { searchParams: { category?: string; page?: string } }) {
+export default async function BlogPage({ searchParams }: { searchParams: Promise<{ category?: string; page?: string }> }) {
   await dbConnect();
+
+  const { category: categoryParam, page: pageParam } = await searchParams;
   
-  const page = parseInt(searchParams.page || "1", 10);
+  const page = parseInt(pageParam || "1", 10);
   const limit = 9;
   const skip = (page - 1) * limit;
 
   let query: any = { status: "Published" };
   
-  if (searchParams.category) {
-    const category = await Category.findOne({ slug: searchParams.category });
+  if (categoryParam) {
+    const category = await Category.findOne({ slug: categoryParam });
     if (category) {
       query.category = category._id;
     }
@@ -56,7 +58,7 @@ export default async function BlogPage({ searchParams }: { searchParams: { categ
           <Link
             href="/blog"
             className={`px-4 py-2 rounded-full text-sm font-medium transition-colors ${
-              !searchParams.category
+              !categoryParam
                 ? "bg-brand-blue text-white"
                 : "bg-muted text-muted-foreground hover:bg-muted/80"
             }`}
@@ -68,7 +70,7 @@ export default async function BlogPage({ searchParams }: { searchParams: { categ
               key={cat._id.toString()}
               href={`/blog?category=${cat.slug}`}
               className={`px-4 py-2 rounded-full text-sm font-medium transition-colors ${
-                searchParams.category === cat.slug
+                categoryParam === cat.slug
                   ? "bg-brand-blue text-white"
                   : "bg-muted text-muted-foreground hover:bg-muted/80"
               }`}
@@ -114,8 +116,8 @@ export default async function BlogPage({ searchParams }: { searchParams: { categ
                 <div className="p-6 flex-1 flex flex-col">
                   <div className="flex items-center gap-2 text-xs text-muted-foreground mb-3">
                     <Calendar className="w-4 h-4" />
-                    <time dateTime={post.createdAt.toISOString()}>
-                      {new Date(post.createdAt).toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' })}
+                    <time dateTime={post.createdAt ? new Date(post.createdAt).toISOString() : new Date().toISOString()}>
+                      {new Date(post.createdAt || Date.now()).toLocaleDateString('en-GB')}
                     </time>
                   </div>
                   
@@ -146,7 +148,7 @@ export default async function BlogPage({ searchParams }: { searchParams: { categ
           <div className="flex justify-center items-center gap-2 mt-16">
             {page > 1 && (
               <Link
-                href={`/blog?page=${page - 1}${searchParams.category ? `&category=${searchParams.category}` : ''}`}
+                href={`/blog?page=${page - 1}${categoryParam ? `&category=${categoryParam}` : ''}`}
                 className="px-4 py-2 border border-border rounded-md hover:bg-muted transition-colors text-sm font-medium"
               >
                 Previous
@@ -159,7 +161,7 @@ export default async function BlogPage({ searchParams }: { searchParams: { categ
                 return (
                   <Link
                     key={p}
-                    href={`/blog?page=${p}${searchParams.category ? `&category=${searchParams.category}` : ''}`}
+                    href={`/blog?page=${p}${categoryParam ? `&category=${categoryParam}` : ''}`}
                     className={`w-10 h-10 flex items-center justify-center rounded-md text-sm font-medium transition-colors ${
                       p === page 
                         ? 'bg-brand-blue text-white' 
@@ -174,7 +176,7 @@ export default async function BlogPage({ searchParams }: { searchParams: { categ
 
             {page < totalPages && (
               <Link
-                href={`/blog?page=${page + 1}${searchParams.category ? `&category=${searchParams.category}` : ''}`}
+                href={`/blog?page=${page + 1}${categoryParam ? `&category=${categoryParam}` : ''}`}
                 className="px-4 py-2 border border-border rounded-md hover:bg-muted transition-colors text-sm font-medium"
               >
                 Next

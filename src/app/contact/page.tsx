@@ -54,7 +54,7 @@ export default function ContactPage() {
               <div>
                 <h2 className="text-3xl font-extrabold text-[#0090c8] mb-6">Get In Touch</h2>
                 <p className="text-lg text-slate-600 font-medium leading-relaxed mb-8">
-                  Whether you need nightly janitorial services, daytime porters, or emergency restoration, our Central Massachusetts team is ready to respond.
+                  Whether you need nightly janitorial services, daytime porters, or emergency cleanup, our Central Massachusetts team is ready to respond.
                 </p>
               </div>
 
@@ -168,8 +168,8 @@ export default function ContactPage() {
                     <option value="nightly">Nightly Janitorial</option>
                     <option value="day-porter">Day Porter & Matron</option>
                     <option value="floor-care">Floor & Carpet Care</option>
-                    <option value="emergency">Emergency Restoration</option>
-                    <option value="other">Other</option>
+                    <option value="emergency">Emergency Cleanup</option>
+                    <option value="other">Other Service</option>
                   </select>
                 </div>
 
@@ -263,7 +263,7 @@ export default function ContactPage() {
 
       <section className="h-[400px] w-full relative">
         <iframe 
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2949.241779976411!2d-71.77732379999999!3d42.3373683!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e3f9e82349f5d1%3A0x548a39c70a7955f9!2sEnterprise%20Cleaning%20and%20Restoration%20Corporation!5e0!3m2!1sen!2sin!4v1783163312743!5m2!1sen!2sin" 
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2949.241779976411!2d-71.77732379999999!3d42.3373683!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e3f9e82349f5d1%3A0x548a39c70a7955f9!2sEnterprise%20Cleaning%20Corporation!5e0!3m2!1sen!2sin!4v1783163312743!5m2!1sen!2sin" 
           className="absolute inset-0 w-full h-full border-0"
           allowFullScreen={false} 
           loading="lazy" 
@@ -283,7 +283,7 @@ export default function ContactPage() {
       >
         <div className="flex flex-col items-center gap-6">
           <p className="text-lg text-slate-600 max-w-2xl font-medium leading-relaxed">
-            For emergency restoration services, spills, or urgent cleaning needs, our team is available 24/7 across Central Massachusetts.
+            For emergency cleanup services, spills, or urgent cleaning needs, our team is available 24/7 across Central Massachusetts.
           </p>
         </div>
       </CTASection>

@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import { UploadCloud, Copy, CheckCircle2, Loader2, Image as ImageIcon } from "lucide-react";
+import { UploadCloud, Copy, CheckCircle2, Loader2, Image as ImageIcon, Trash2 } from "lucide-react";
 
 interface MediaItem {
   public_id: string;
@@ -14,6 +14,7 @@ export default function MediaLibraryPage() {
   const [loading, setLoading] = useState(true);
   const [uploading, setUploading] = useState(false);
   const [copiedId, setCopiedId] = useState<string | null>(null);
+  const [deletingId, setDeletingId] = useState<string | null>(null);
 
   useEffect(() => {
     fetchMedia();
@@ -59,6 +60,30 @@ export default function MediaLibraryPage() {
     setTimeout(() => setCopiedId(null), 2000);
   };
 
+  const deleteImage = async (public_id: string) => {
+    if (!confirm("Are you sure you want to delete this image from Cloudinary?")) return;
+    
+    setDeletingId(public_id);
+    try {
+      const res = await fetch("/api/media", {
+        method: "DELETE",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ public_id })
+      });
+      if (res.ok) {
+        await fetchMedia();
+      } else {
+        const data = await res.json();
+        alert(data.error || "Failed to delete image");
+      }
+    } catch (err) {
+      console.error("Delete failed", err);
+      alert("An error occurred while deleting the image.");
+    } finally {
+      setDeletingId(null);
+    }
+  };
+
   return (
     <div className="space-y-6">
       <div className="flex justify-between items-center">
@@ -90,13 +115,23 @@ export default function MediaLibraryPage() {
               <img src={img.url} alt={img.public_id} className="w-full h-full object-cover group-hover:scale-105 transition-transform" />
               
               <div className="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity flex flex-col items-center justify-center p-4">
-                <button 
-                  onClick={() => copyUrl(img.public_id, img.url)}
-                  className="bg-white text-brand-navy p-2 rounded-full hover:bg-brand-blue hover:text-white transition-colors mb-2"
-                  title="Copy URL"
-                >
-                  {copiedId === img.public_id ? <CheckCircle2 className="w-5 h-5 text-green-500" /> : <Copy className="w-5 h-5" />}
-                </button>
+                <div className="flex gap-2 mb-2">
+                  <button 
+                    onClick={() => copyUrl(img.public_id, img.url)}
+                    className="bg-white text-brand-navy p-2 rounded-full hover:bg-brand-blue hover:text-white transition-colors"
+                    title="Copy URL"
+                  >
+                    {copiedId === img.public_id ? <CheckCircle2 className="w-5 h-5 text-green-500" /> : <Copy className="w-5 h-5" />}
+                  </button>
+                  <button 
+                    onClick={() => deleteImage(img.public_id)}
+                    disabled={deletingId === img.public_id}
+                    className="bg-white text-red-500 p-2 rounded-full hover:bg-red-500 hover:text-white transition-colors disabled:opacity-50"
+                    title="Delete Image"
+                  >
+                    {deletingId === img.public_id ? <Loader2 className="w-5 h-5 animate-spin" /> : <Trash2 className="w-5 h-5" />}
+                  </button>
+                </div>
                 <div className="text-xs text-white text-center break-all line-clamp-2">
                   {img.url}
                 </div>

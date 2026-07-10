@@ -224,7 +224,7 @@ export default function AboutPage() {
                 <div className="absolute bottom-0 left-0 w-full p-8 text-white">
                   <h3 className="font-extrabold text-2xl mb-2">Stephen Buchalter</h3>
                   <p className="font-medium text-white/90 text-sm leading-relaxed">
-                    Stephen founded Enterprise Cleaning and Restoration Corporation over 20 years ago. From starting with just one employee, he has grown the company to over 150 team members, becoming one of the well respected companies in Massachusetts.
+                    Stephen founded Enterprise Cleaning Corporation over 20 years ago. From starting with just one employee, he has grown the company to over 150 team members, becoming one of the well respected companies in Massachusetts.
                   </p>
                 </div>
               </div>

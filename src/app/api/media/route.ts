@@ -32,3 +32,26 @@ export async function GET() {
     return NextResponse.json({ error: "Failed to fetch media" }, { status: 500 });
   }
 }
+
+export async function DELETE(req: Request) {
+  try {
+    const body = await req.json();
+    const { public_id } = body;
+
+    if (!public_id) {
+      return NextResponse.json({ error: "public_id is required" }, { status: 400 });
+    }
+
+    const result = await cloudinary.uploader.destroy(public_id);
+    
+    if (result.result !== "ok") {
+      console.error("Cloudinary destroy failed:", result);
+      return NextResponse.json({ error: "Failed to delete from Cloudinary" }, { status: 500 });
+    }
+
+    return NextResponse.json({ message: "Media deleted successfully", result });
+  } catch (error) {
+    console.error("Cloudinary delete error:", error);
+    return NextResponse.json({ error: "Failed to delete media" }, { status: 500 });
+  }
+}

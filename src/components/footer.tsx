@@ -11,14 +11,14 @@ export function Footer() {
           <div className="flex flex-col space-y-4">
             <Image
               src="/images/logo.png"
-              alt="Enterprise Cleaning and Restoration Corporation"
+              alt="Enterprise Cleaning Corporation"
               width={240}
               height={80}
               className="h-20 w-auto object-contain"
               style={{ width: "auto", height: "auto" }}
             />
             <p className="text-white/80 text-sm leading-relaxed mt-4">
-              There's clean, and then there's ENTERPRISE clean. Specializing in Commercial Cleaning and Emergency Restoration.
+              There's clean, and then there's ENTERPRISE clean. Specializing in Commercial Cleaning and Emergency Cleanup.
             </p>
           </div>
 
@@ -36,16 +36,16 @@ export function Footer() {
                 <Link href="/floor-care-services-central-ma" className="hover:text-white/60 transition-colors">Floor Care Services</Link>
               </li>
               <li>
-                <Link href="/specialty-cleaning-services-central-ma" className="hover:text-white/60 transition-colors">Deep Cleaning</Link>
+                <Link href="/deep-cleaning-services-central-ma" className="hover:text-white/60 transition-colors">Deep Cleaning</Link>
               </li>
               <li>
                 <Link href="/emergency-restoration-services-central-ma" className="hover:text-white/60 transition-colors">Flood Cleanup</Link>
               </li>
               <li>
-                <Link href="/emergency-restoration-services-central-ma" className="hover:text-white/60 transition-colors">Restoration & Turnover Cleaning</Link>
+                <Link href="/turnover-cleaning-central-ma" className="hover:text-white/60 transition-colors">Restoration & Turnover Cleaning</Link>
               </li>
               <li>
-                <Link href="/specialty-cleaning-services-central-ma" className="hover:text-white/60 transition-colors">Post Construction</Link>
+                <Link href="/post-construction-cleaning-central-ma" className="hover:text-white/60 transition-colors">Post Construction</Link>
               </li>
             </ul>
           </div>

@@ -20,7 +20,7 @@ export function GoogleMapSection() {
 
         <div className="w-full rounded-[2rem] overflow-hidden shadow-2xl border-4 border-white bg-slate-100 aspect-video md:aspect-[21/9]">
           <iframe 
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2949.241779976411!2d-71.77732379999999!3d42.3373683!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e3f9e82349f5d1%3A0x548a39c70a7955f9!2sEnterprise%20Cleaning%20and%20Restoration%20Corporation!5e0!3m2!1sen!2sin!4v1782374970550!5m2!1sen!2sin" 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2949.241779976411!2d-71.77732379999999!3d42.3373683!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e3f9e82349f5d1%3A0x548a39c70a7955f9!2sEnterprise%20Cleaning%20Corporation!5e0!3m2!1sen!2sin!4v1782374970550!5m2!1sen!2sin" 
             className="w-full h-full"
             style={{ border: 0 }} 
             allowFullScreen={false} 

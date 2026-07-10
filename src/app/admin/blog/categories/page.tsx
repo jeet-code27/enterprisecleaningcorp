@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
+import { Trash2, Loader2 } from "lucide-react";
 
 export default function CategoriesAndTagsPage() {
   const [categories, setCategories] = useState([]);
@@ -9,6 +10,7 @@ export default function CategoriesAndTagsPage() {
   const [newCategory, setNewCategory] = useState("");
   const [newTag, setNewTag] = useState("");
   const [loading, setLoading] = useState(false);
+  const [deletingId, setDeletingId] = useState<string | null>(null);
 
   useEffect(() => {
     fetchData();
@@ -52,6 +54,42 @@ export default function CategoriesAndTagsPage() {
     setLoading(false);
   };
 
+  const deleteCategory = async (id: string) => {
+    if (!confirm("Are you sure you want to delete this category?")) return;
+    setDeletingId(id);
+    try {
+      const res = await fetch(`/api/blog/categories/${id}`, { method: "DELETE" });
+      if (res.ok) {
+        await fetchData();
+      } else {
+        const err = await res.json();
+        alert(err.error || "Failed to delete category");
+      }
+    } catch (e) {
+      alert("Error deleting category");
+    } finally {
+      setDeletingId(null);
+    }
+  };
+
+  const deleteTag = async (id: string) => {
+    if (!confirm("Are you sure you want to delete this tag?")) return;
+    setDeletingId(id);
+    try {
+      const res = await fetch(`/api/blog/tags/${id}`, { method: "DELETE" });
+      if (res.ok) {
+        await fetchData();
+      } else {
+        const err = await res.json();
+        alert(err.error || "Failed to delete tag");
+      }
+    } catch (e) {
+      alert("Error deleting tag");
+    } finally {
+      setDeletingId(null);
+    }
+  };
+
   return (
     <div className="space-y-8">
       <h1 className="text-3xl font-bold text-brand-navy">Categories & Tags</h1>
@@ -88,11 +126,20 @@ export default function CategoriesAndTagsPage() {
           <ul className="space-y-2">
             {categories.map((c: any) => (
               <li key={c._id} className={`p-3 bg-muted rounded-md border border-border flex flex-col ${c.parent ? 'ml-6 border-l-4 border-l-brand-blue' : ''}`}>
-                <div className="flex justify-between items-center">
-                  <span className="font-medium text-brand-navy">{c.name}</span>
-                  <span className="text-xs text-muted-foreground">/{c.slug}</span>
+                <div className="flex justify-between items-center w-full">
+                  <div>
+                    <span className="font-medium text-brand-navy">{c.name}</span>
+                    <span className="text-xs text-muted-foreground ml-2">/{c.slug}</span>
+                    {c.parent && <span className="text-xs text-muted-foreground ml-2 block sm:inline">Parent: {c.parent.name}</span>}
+                  </div>
+                  <button 
+                    onClick={() => deleteCategory(c._id)}
+                    disabled={deletingId === c._id}
+                    className="text-muted-foreground hover:text-red-500 transition-colors p-2 disabled:opacity-50"
+                  >
+                    {deletingId === c._id ? <Loader2 className="w-4 h-4 animate-spin" /> : <Trash2 className="w-4 h-4" />}
+                  </button>
                 </div>
-                {c.parent && <span className="text-xs text-muted-foreground mt-1">Parent: {c.parent.name}</span>}
               </li>
             ))}
           </ul>
@@ -114,9 +161,18 @@ export default function CategoriesAndTagsPage() {
           </form>
           <ul className="space-y-2">
             {tags.map((t: any) => (
-              <li key={t._id} className="p-3 bg-muted rounded-md border border-border flex justify-between">
-                <span>{t.name}</span>
-                <span className="text-sm text-muted-foreground">#{t.slug}</span>
+              <li key={t._id} className="p-3 bg-muted rounded-md border border-border flex justify-between items-center">
+                <div>
+                  <span className="font-medium">{t.name}</span>
+                  <span className="text-sm text-muted-foreground ml-2">#{t.slug}</span>
+                </div>
+                <button 
+                  onClick={() => deleteTag(t._id)}
+                  disabled={deletingId === t._id}
+                  className="text-muted-foreground hover:text-red-500 transition-colors p-2 disabled:opacity-50"
+                >
+                  {deletingId === t._id ? <Loader2 className="w-4 h-4 animate-spin" /> : <Trash2 className="w-4 h-4" />}
+                </button>
               </li>
             ))}
           </ul>

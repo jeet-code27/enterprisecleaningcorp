@@ -9,46 +9,54 @@ import {
 } from "@/components/ui/animated-slideshow"
 import { ChevronRight } from "lucide-react"
 import { cn } from "@/lib/utils"
+import Link from "next/link"
 
 const SLIDES = [
   {
     id: "slide-1",
     title: "Night & Day Cleaning",
     imageUrl: "/images/nightly_janitorial_hero.png",
+    href: "/nightly-janitorial-cleaning-central-ma",
   },
   {
     id: "slide-2",
     title: "Floor Care Services",
     imageUrl: "/images/service_commercial.png",
+    href: "/floor-care-services-central-ma",
   },
   {
     id: "slide-3",
     title: "Deep Cleaning",
     imageUrl: "/images/service_porter.png",
+    href: "/deep-cleaning-services-central-ma",
   },
   {
     id: "slide-4",
     title: "Flood Cleanup",
     imageUrl: "/images/service_mold.png",
+    href: "/emergency-restoration-services-central-ma",
   },
   {
     id: "slide-5",
     title: "Restoration & Turnover Cleaning",
     imageUrl: "/images/service_turnover.png",
+    href: "/turnover-cleaning-central-ma",
   },
   {
     id: "slide-6",
     title: "Post Construction",
     imageUrl: "/images/service_commercial.png",
+    href: "/post-construction-cleaning-central-ma",
   },
 ]
 
-function ServiceItem({ slide, index }: { slide: { title: string }, index: number }) {
+function ServiceItem({ slide, index }: { slide: { title: string, href: string }, index: number }) {
   const { activeSlide, changeSlide } = useHoverSliderContext()
   const isActive = activeSlide === index
 
   return (
-    <div 
+    <Link
+      href={slide.href}
       className="flex items-center gap-4 cursor-pointer group"
       onMouseEnter={() => changeSlide(index)}
     >
@@ -65,7 +73,7 @@ function ServiceItem({ slide, index }: { slide: { title: string }, index: number
         className="text-xl md:text-2xl lg:text-3xl leading-tight font-extrabold tracking-tight text-slate-800 hover:text-[#00B8FF] transition-colors"
         text={slide.title}
       />
-    </div>
+    </Link>
   )
 }
 

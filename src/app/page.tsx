@@ -43,7 +43,7 @@ export default function Home() {
                 <h1 className="text-3xl font-extrabold tracking-tight md:text-4xl lg:text-5xl drop-shadow-2xl leading-[1.15] text-white">
                   Central Massachusetts’ Most Trusted<br />
                   <span style={{ color: "#FFE800" }} className="drop-shadow-[0_0_20px_rgba(255,232,0,0.5)]">Commercial Cleaning &</span><br />
-                  <span className="text-white drop-shadow-[0_2px_8px_rgba(0,0,0,0.3)]">Restoration Company</span>
+                  <span className="text-white drop-shadow-[0_2px_8px_rgba(0,0,0,0.3)]">Janitorial Company</span>
                 </h1>
                 
                 <p className="mx-auto max-w-[65ch] text-base md:text-lg text-white/90 font-medium leading-relaxed mb-8">

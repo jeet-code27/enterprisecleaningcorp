@@ -22,8 +22,8 @@ const features = [
   },
   {
     icon: Siren,
-    title: "Full restoration capability",
-    description: "One vendor for routine cleaning and 24/7 emergency restoration — a single number when disaster strikes.",
+    title: "Full emergency capability",
+    description: "One vendor for routine cleaning and 24/7 emergency cleanup — a single number when disaster strikes.",
   }
 ];
 
@@ -35,7 +35,7 @@ export function WhyEnterprise() {
           
           {/* Left Side: Features */}
           <div className="order-1">
-            <h5 className="text-[#E31837] font-bold tracking-widest uppercase text-sm mb-4">Why Enterprise Cleaning and Restoration Corporation</h5>
+            <h5 className="text-[#E31837] font-bold tracking-widest uppercase text-sm mb-4">Why Enterprise Cleaning Corporation</h5>
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-extrabold text-slate-900 leading-tight mb-12">
               The Difference Is a Clean You <br className="hidden lg:block"/>
               <span className="text-[#00B8FF]">Never Have to Think About</span>

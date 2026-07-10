@@ -59,7 +59,7 @@ const structuredDataFAQ = {
       "name": "Do you clean carpets as well as hard floors?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes. We provide carpet cleaning and hot-water extraction alongside hard-floor stripping, waxing, and restoration, so a single provider handles all your flooring."
+        "text": "Yes. We provide carpet cleaning and hot-water extraction alongside hard-floor stripping, waxing, and refinishing, so a single provider handles all your flooring."
       }
     },
     {
@@ -137,7 +137,7 @@ export default function FloorCarePage() {
                   Floors take more wear than any other surface in a commercial building — and they are the first thing a visitor notices. Dull, scuffed, or worn flooring quietly undermines an otherwise professional space. Bright, well-maintained floors do the opposite: they signal care, quality, and attention to detail.
                 </p>
                 <p>
-                  Enterprise Cleaning Corporation provides complete commercial floor care across Central Massachusetts, from routine maintenance to full restoration. Whether you manage a corporate office, a medical facility, a school, a retail space, or a warehouse, we protect your flooring investment and keep it looking its best.
+                  Enterprise Cleaning Corporation provides complete commercial floor care across Central Massachusetts, from routine maintenance to full refinishing. Whether you manage a corporate office, a medical facility, a school, a retail space, or a warehouse, we protect your flooring investment and keep it looking its best.
                 </p>
               </div>
               
@@ -248,7 +248,7 @@ export default function FloorCarePage() {
                 <Wind className="w-8 h-8 text-[#00B8FF]" strokeWidth={1.5} />
               </div>
               <h3 className="text-lg font-bold text-slate-900 mb-3">Tile & Grout</h3>
-              <p className="text-sm text-slate-600 leading-relaxed text-justify">Tile and grout deep cleaning and restoration</p>
+              <p className="text-sm text-slate-600 leading-relaxed text-justify">Tile and grout deep cleaning and refinishing</p>
             </div>
 
             {/* Card 6 */}
@@ -294,7 +294,7 @@ export default function FloorCarePage() {
                 </h2>
                 <div className="prose prose-lg text-slate-600 prose-p:leading-relaxed text-justify">
                   <p>
-                    The most cost-effective way to care for commercial flooring is a planned maintenance cycle rather than reactive cleaning. We build a schedule — daily, weekly, monthly, and periodic deep-restoration tasks — that keeps floors continuously protected and extends their useful life. That planning is part of our managed model: we track the cycle so you do not have to.
+                    The most cost-effective way to care for commercial flooring is a planned maintenance cycle rather than reactive cleaning. We build a schedule — daily, weekly, monthly, and periodic deep-cleaning tasks — that keeps floors continuously protected and extends their useful life. That planning is part of our managed model: we track the cycle so you do not have to.
                   </p>
                   <p>
                     Floor care is also one of the most common ways our nightly janitorial clients expand their service. A building we already clean every night is a building we already know — which makes adding floor care seamless.
@@ -338,7 +338,7 @@ export default function FloorCarePage() {
                 </h2>
                 <div className="prose prose-lg text-slate-600 prose-p:leading-relaxed text-justify">
                   <p>
-                    Commercial flooring is one of the largest and most visible investments in any building, and replacing it prematurely is expensive. Proper, consistent floor care dramatically extends the life of that investment. Regular maintenance removes the abrasive grit that wears finishes down, keeps protective coatings intact, and prevents the kind of deep, set-in soil and staining that eventually requires costly replacement rather than restoration.
+                    Commercial flooring is one of the largest and most visible investments in any building, and replacing it prematurely is expensive. Proper, consistent floor care dramatically extends the life of that investment. Regular maintenance removes the abrasive grit that wears finishes down, keeps protective coatings intact, and prevents the kind of deep, set-in soil and staining that eventually requires costly replacement rather than refinishing.
                   </p>
                   <p>
                     Our crews are trained, equipped, and experienced with the full range of commercial flooring across Central Massachusetts. Whether your building has acres of VCT, polished concrete, terrazzo, hardwood, or carpet — or a mix of all of them — we have the equipment and the know-how to keep every square foot looking its best while protecting it for years to come.
@@ -458,7 +458,7 @@ export default function FloorCarePage() {
           <div className="flex flex-wrap justify-center gap-3 pt-2 animate-appear delay-100">
             {[
               { icon: ShieldCheck, text: "Fully Insured & Bonded" },
-              { icon: Sparkles, text: "Complete Restoration" },
+              { icon: Sparkles, text: "Complete Refinishing" },
               { icon: Trophy, text: "4× WBJ Best of Business" },
               { icon: Clock, text: "After-Hours Scheduling" },
             ].map((chip, i) => (

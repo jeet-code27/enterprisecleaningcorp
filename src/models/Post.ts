@@ -14,6 +14,12 @@ const PostSchema = new Schema(
     author: { type: mongoose.Schema.Types.ObjectId, ref: 'Author' },
     category: [{ type: mongoose.Schema.Types.ObjectId, ref: 'Category' }],
     tags: [{ type: mongoose.Schema.Types.ObjectId, ref: 'Tag' }],
+    faqs: [
+      {
+        question: { type: String },
+        answer: { type: String }
+      }
+    ],
     status: {
       type: String,
       enum: ['Draft', 'Published'],
@@ -33,6 +39,7 @@ const PostSchema = new Schema(
         description: { type: String },
         image: { type: String },
       },
+      targetLocations: [{ type: String }],
       noIndex: { type: Boolean, default: false },
     },
     relatedPosts: [{ type: mongoose.Schema.Types.ObjectId, ref: 'Post' }],

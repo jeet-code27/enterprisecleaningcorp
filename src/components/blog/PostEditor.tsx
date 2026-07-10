@@ -7,7 +7,7 @@ import { useEditor, EditorContent } from "@tiptap/react";
 import StarterKit from "@tiptap/starter-kit";
 import Image from "@tiptap/extension-image";
 import Link from "@tiptap/extension-link";
-import { Loader2, Image as ImageIcon, Link as LinkIcon, Bold, Italic, List, ListOrdered, Quote, Heading2, Heading3, Star, X } from "lucide-react";
+import { Loader2, Image as ImageIcon, Link as LinkIcon, Bold, Italic, List, ListOrdered, Quote, Heading2, Heading3, Star, X, Trash2, Plus, Code } from "lucide-react";
 
 interface Category { _id: string; name: string; }
 interface Tag { _id: string; name: string; }
@@ -32,6 +32,7 @@ export function PostEditor({ initialData, isEdit = false }: PostEditorProps) {
   const [isMediaModalOpen, setIsMediaModalOpen] = useState(false);
   const [mediaItems, setMediaItems] = useState<MediaItem[]>([]);
   const [mediaTarget, setMediaTarget] = useState<'featured' | 'editor'>('featured');
+  const [deletingMediaId, setDeletingMediaId] = useState<string | null>(null);
 
   // Form State
   const [title, setTitle] = useState(initialData?.title || "");
@@ -61,8 +62,22 @@ export function PostEditor({ initialData, isEdit = false }: PostEditorProps) {
       title: initialData?.seo?.twitterCard?.title || "",
       description: initialData?.seo?.twitterCard?.description || "",
       image: initialData?.seo?.twitterCard?.image || ""
-    }
+    },
+    targetLocations: initialData?.seo?.targetLocations?.join(", ") || ""
   });
+
+  const [editorMode, setEditorMode] = useState<'visual' | 'html'>('visual');
+  const [rawHtml, setRawHtml] = useState(initialData?.content || "");
+
+  const [faqs, setFaqs] = useState<{question: string, answer: string}[]>(initialData?.faqs || []);
+
+  const addFaq = () => setFaqs([...faqs, { question: "", answer: "" }]);
+  const removeFaq = (index: number) => setFaqs(faqs.filter((_, i) => i !== index));
+  const updateFaq = (index: number, field: 'question'|'answer', value: string) => {
+    const newFaqs = [...faqs];
+    newFaqs[index][field] = value;
+    setFaqs(newFaqs);
+  };
 
   useEffect(() => {
     fetchData();
@@ -91,6 +106,31 @@ export function PostEditor({ initialData, isEdit = false }: PostEditorProps) {
     const data = await res.json();
     if(Array.isArray(data)) setMediaItems(data);
   }
+
+  const deleteMediaItem = async (e: React.MouseEvent, public_id: string) => {
+    e.stopPropagation();
+    if (!confirm("Are you sure you want to delete this image from Cloudinary?")) return;
+    
+    setDeletingMediaId(public_id);
+    try {
+      const res = await fetch("/api/media", {
+        method: "DELETE",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ public_id })
+      });
+      if (res.ok) {
+        await fetchMedia();
+      } else {
+        const data = await res.json();
+        alert(data.error || "Failed to delete image");
+      }
+    } catch (err) {
+      console.error("Delete failed", err);
+      alert("An error occurred while deleting the image.");
+    } finally {
+      setDeletingMediaId(null);
+    }
+  };
 
   const uploadImage = async (file: File) => {
     const formData = new FormData();
@@ -127,6 +167,15 @@ export function PostEditor({ initialData, isEdit = false }: PostEditorProps) {
     },
   });
 
+  const toggleMode = (mode: 'visual' | 'html') => {
+    if (mode === 'html') {
+      setRawHtml(editor?.getHTML() || "");
+    } else {
+      editor?.commands.setContent(rawHtml);
+    }
+    setEditorMode(mode);
+  };
+
   const insertInternalLink = (url: string, defaultTitle: string) => {
     if (!editor) return;
     const { from, to, empty } = editor.state.selection;
@@ -153,16 +202,19 @@ export function PostEditor({ initialData, isEdit = false }: PostEditorProps) {
 
   // Static core website pages for quick linking
   const servicePages = [
-    { title: "Nightly Janitorial", path: "/nightly-janitorial-cleaning-central-ma" },
-    { title: "Day Porter", path: "/day-porter-services-central-ma" },
-    { title: "Floor Care", path: "/floor-care-services-central-ma" },
+    { title: "Night & Day Cleaning", path: "/nightly-janitorial-cleaning-central-ma" },
+    { title: "Floor Care Services", path: "/floor-care-services-central-ma" },
+    { title: "Deep Cleaning", path: "/deep-cleaning-services-central-ma" },
+    { title: "Flood Cleanup", path: "/emergency-restoration-services-central-ma" },
+    { title: "Restoration & Turnover Cleaning", path: "/turnover-cleaning-central-ma" },
+    { title: "Post Construction", path: "/post-construction-cleaning-central-ma" },
     { title: "Property Management", path: "/property-management-cleaning-central-ma" },
+    { title: "Real Estate", path: "/real-estate-cleaning-central-ma" },
     { title: "Manufacturing & Industrial", path: "/manufacturing-industrial-cleaning-central-ma" },
     { title: "Medical & Healthcare", path: "/medical-healthcare-cleaning-central-ma" },
     { title: "Offices & Financial", path: "/office-financial-cleaning-central-ma" },
     { title: "Schools & Municipal", path: "/school-municipal-cleaning-central-ma" },
     { title: "Warehouses & Distribution", path: "/warehouse-distribution-cleaning-central-ma" },
-    { title: "Emergency & Restoration", path: "/emergency-restoration-services-central-ma" },
     { title: "About Us", path: "/about" },
     { title: "Contact", path: "/contact" },
   ];
@@ -194,12 +246,18 @@ export function PostEditor({ initialData, isEdit = false }: PostEditorProps) {
   const handleSave = async (e: React.FormEvent) => {
     e.preventDefault();
     setLoading(true);
+    const finalContent = editorMode === 'visual' ? editor?.getHTML() : rawHtml;
+    
     const postData = {
-      title, slug, content: editor?.getHTML(), excerpt, author: authorId || null,
+      title, slug, content: finalContent, excerpt, author: authorId || null,
       featuredImage, status, isFeatured,
       category: selectedCategory ? [selectedCategory] : [],
       tags: selectedTags,
-      seo
+      seo: {
+        ...seo,
+        targetLocations: seo.targetLocations.split(",").map((loc: string) => loc.trim()).filter(Boolean)
+      },
+      faqs
     };
 
     try {
@@ -281,22 +339,50 @@ export function PostEditor({ initialData, isEdit = false }: PostEditorProps) {
           </div>
           
           <div className="border border-border rounded-md bg-card relative">
-            <div className="flex flex-wrap gap-2 p-2 bg-muted border-b border-border items-center justify-between sticky top-0 z-20 shadow-sm rounded-t-md">
-              <div className="flex gap-1">
-                <Button type="button" variant="ghost" size="icon" onClick={() => editor?.chain().focus().toggleBold().run()} className={editor?.isActive('bold') ? 'bg-background' : ''}><Bold className="w-4 h-4" /></Button>
-                <Button type="button" variant="ghost" size="icon" onClick={() => editor?.chain().focus().toggleItalic().run()} className={editor?.isActive('italic') ? 'bg-background' : ''}><Italic className="w-4 h-4" /></Button>
-                <Button type="button" variant="ghost" size="icon" onClick={() => editor?.chain().focus().toggleHeading({ level: 2 }).run()} className={editor?.isActive('heading', { level: 2 }) ? 'bg-background' : ''}><Heading2 className="w-4 h-4" /></Button>
-                <Button type="button" variant="ghost" size="icon" onClick={() => editor?.chain().focus().toggleHeading({ level: 3 }).run()} className={editor?.isActive('heading', { level: 3 }) ? 'bg-background' : ''}><Heading3 className="w-4 h-4" /></Button>
-                <Button type="button" variant="ghost" size="icon" onClick={() => editor?.chain().focus().toggleBulletList().run()} className={editor?.isActive('bulletList') ? 'bg-background' : ''}><List className="w-4 h-4" /></Button>
-                <Button type="button" variant="ghost" size="icon" onClick={() => editor?.chain().focus().toggleOrderedList().run()} className={editor?.isActive('orderedList') ? 'bg-background' : ''}><ListOrdered className="w-4 h-4" /></Button>
-                <Button type="button" variant="ghost" size="icon" onClick={() => editor?.chain().focus().toggleBlockquote().run()} className={editor?.isActive('blockquote') ? 'bg-background' : ''}><Quote className="w-4 h-4" /></Button>
-                <Button type="button" variant="ghost" size="icon" onClick={setCustomLink} className={editor?.isActive('link') ? 'bg-background text-brand-blue' : ''} title="Insert Custom Link"><LinkIcon className="w-4 h-4" /></Button>
-              </div>
-              <Button type="button" variant="outline" size="sm" onClick={() => { setMediaTarget('editor'); setIsMediaModalOpen(true); }} className="gap-2 text-xs">
-                <ImageIcon className="w-4 h-4" /> Insert Media
-              </Button>
+            <div className="flex items-center gap-2 border-b border-border p-2 bg-muted/50 rounded-t-md">
+              <button 
+                type="button" 
+                onClick={() => toggleMode('visual')} 
+                className={`px-4 py-1.5 text-xs font-semibold rounded-md transition-colors ${editorMode === 'visual' ? 'bg-background shadow border border-border text-brand-navy' : 'text-muted-foreground hover:bg-border/50'}`}
+              >
+                Visual Editor
+              </button>
+              <button 
+                type="button" 
+                onClick={() => toggleMode('html')} 
+                className={`px-4 py-1.5 text-xs font-semibold rounded-md transition-colors flex items-center gap-1 ${editorMode === 'html' ? 'bg-background shadow border border-border text-brand-navy' : 'text-muted-foreground hover:bg-border/50'}`}
+              >
+                <Code className="w-3 h-3" /> HTML Code
+              </button>
             </div>
-            <EditorContent editor={editor} />
+
+            {editorMode === 'visual' ? (
+              <>
+                <div className="flex flex-wrap gap-2 p-2 bg-muted border-b border-border items-center justify-between sticky top-0 z-20 shadow-sm">
+                  <div className="flex gap-1">
+                    <Button type="button" variant="ghost" size="icon" onClick={() => editor?.chain().focus().toggleBold().run()} className={editor?.isActive('bold') ? 'bg-background' : ''}><Bold className="w-4 h-4" /></Button>
+                    <Button type="button" variant="ghost" size="icon" onClick={() => editor?.chain().focus().toggleItalic().run()} className={editor?.isActive('italic') ? 'bg-background' : ''}><Italic className="w-4 h-4" /></Button>
+                    <Button type="button" variant="ghost" size="icon" onClick={() => editor?.chain().focus().toggleHeading({ level: 2 }).run()} className={editor?.isActive('heading', { level: 2 }) ? 'bg-background' : ''}><Heading2 className="w-4 h-4" /></Button>
+                    <Button type="button" variant="ghost" size="icon" onClick={() => editor?.chain().focus().toggleHeading({ level: 3 }).run()} className={editor?.isActive('heading', { level: 3 }) ? 'bg-background' : ''}><Heading3 className="w-4 h-4" /></Button>
+                    <Button type="button" variant="ghost" size="icon" onClick={() => editor?.chain().focus().toggleBulletList().run()} className={editor?.isActive('bulletList') ? 'bg-background' : ''}><List className="w-4 h-4" /></Button>
+                    <Button type="button" variant="ghost" size="icon" onClick={() => editor?.chain().focus().toggleOrderedList().run()} className={editor?.isActive('orderedList') ? 'bg-background' : ''}><ListOrdered className="w-4 h-4" /></Button>
+                    <Button type="button" variant="ghost" size="icon" onClick={() => editor?.chain().focus().toggleBlockquote().run()} className={editor?.isActive('blockquote') ? 'bg-background' : ''}><Quote className="w-4 h-4" /></Button>
+                    <Button type="button" variant="ghost" size="icon" onClick={setCustomLink} className={editor?.isActive('link') ? 'bg-background text-brand-blue' : ''} title="Insert Custom Link"><LinkIcon className="w-4 h-4" /></Button>
+                  </div>
+                  <Button type="button" variant="outline" size="sm" onClick={() => { setMediaTarget('editor'); setIsMediaModalOpen(true); }} className="gap-2 text-xs">
+                    <ImageIcon className="w-4 h-4" /> Insert Media
+                  </Button>
+                </div>
+                <EditorContent editor={editor} />
+              </>
+            ) : (
+              <textarea 
+                value={rawHtml} 
+                onChange={(e) => setRawHtml(e.target.value)} 
+                placeholder="<!-- Paste your raw HTML here -->"
+                className="w-full min-h-[400px] p-4 bg-[#1e1e1e] text-[#d4d4d4] font-mono text-sm focus:outline-none rounded-b-md"
+              />
+            )}
           </div>
 
           <div className="bg-card p-4 rounded-xl border border-border space-y-4">
@@ -337,6 +423,43 @@ export function PostEditor({ initialData, isEdit = false }: PostEditorProps) {
           </div>
 
           <div className="bg-card p-5 rounded-xl border border-border space-y-4">
+            <div className="flex items-center justify-between border-b border-border pb-2">
+              <h3 className="font-bold text-lg text-brand-navy">FAQ Builder (Schema & UI)</h3>
+              <Button type="button" onClick={addFaq} variant="outline" size="sm" className="gap-2">
+                <Plus className="w-4 h-4" /> Add FAQ
+              </Button>
+            </div>
+            {faqs.length === 0 ? (
+              <p className="text-sm text-muted-foreground italic">No FAQs added. Click 'Add FAQ' to create structured Q&A.</p>
+            ) : (
+              <div className="space-y-4">
+                {faqs.map((faq, index) => (
+                  <div key={index} className="flex gap-4 items-start p-4 bg-muted/50 rounded-lg border border-border">
+                    <div className="flex-1 space-y-3">
+                      <input 
+                        type="text" 
+                        placeholder="Question" 
+                        value={faq.question}
+                        onChange={(e) => updateFaq(index, 'question', e.target.value)}
+                        className="w-full p-2 border border-input rounded-md bg-background text-sm font-medium"
+                      />
+                      <textarea 
+                        placeholder="Answer" 
+                        value={faq.answer}
+                        onChange={(e) => updateFaq(index, 'answer', e.target.value)}
+                        className="w-full p-2 border border-input rounded-md bg-background text-sm min-h-[80px]"
+                      />
+                    </div>
+                    <Button type="button" variant="ghost" size="icon" onClick={() => removeFaq(index)} className="text-red-500 hover:text-red-600 hover:bg-red-100/50 shrink-0">
+                      <Trash2 className="w-4 h-4" />
+                    </Button>
+                  </div>
+                ))}
+              </div>
+            )}
+          </div>
+
+          <div className="bg-card p-5 rounded-xl border border-border space-y-4">
             <h3 className="font-bold text-lg text-brand-navy border-b border-border pb-2">Advanced SEO Settings</h3>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               <div>
@@ -370,6 +493,17 @@ export function PostEditor({ initialData, isEdit = false }: PostEditorProps) {
             <div>
               <label className="text-xs font-medium text-muted-foreground">Canonical URL</label>
               <input type="text" value={seo.canonicalUrl} onChange={(e) => setSeo({ ...seo, canonicalUrl: e.target.value })} className="w-full p-2 mt-1 border border-input rounded-md bg-background" />
+            </div>
+            <div>
+              <label className="text-xs font-medium text-muted-foreground">Target Locations (Geo SEO) - Comma separated</label>
+              <input 
+                type="text" 
+                placeholder="e.g., Worcester, Marlborough, Central MA" 
+                value={seo.targetLocations} 
+                onChange={(e) => setSeo({ ...seo, targetLocations: e.target.value })} 
+                className="w-full p-2 mt-1 border border-input rounded-md bg-background" 
+              />
+              <p className="text-xs text-muted-foreground mt-1">These will be injected into the LocalBusiness schema for this post.</p>
             </div>
             <div className="pt-4 border-t border-border grid grid-cols-1 md:grid-cols-2 gap-6">
               <div className="space-y-4">
@@ -497,7 +631,16 @@ export function PostEditor({ initialData, isEdit = false }: PostEditorProps) {
                        }}>
                     {/* eslint-disable-next-line @next/next/no-img-element */}
                     <img src={item.url} alt="media" className="w-full h-full object-cover" />
-                    <div className="absolute inset-0 bg-brand-blue/10 opacity-0 group-hover:opacity-100 transition-opacity" />
+                    <div className="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                      <button 
+                        onClick={(e) => deleteMediaItem(e, item.public_id)}
+                        disabled={deletingMediaId === item.public_id}
+                        className="bg-white text-red-500 p-2 rounded-full hover:bg-red-500 hover:text-white transition-colors disabled:opacity-50 shadow-md"
+                        title="Delete Image"
+                      >
+                        {deletingMediaId === item.public_id ? <Loader2 className="w-4 h-4 animate-spin" /> : <Trash2 className="w-4 h-4" />}
+                      </button>
+                    </div>
                   </div>
                 ))}
               </div>
