@@ -105,7 +105,7 @@ export const HeroVideo = ({ src, 'data-src': dataSrc, className }: any) => {
     <div className="relative w-full h-full">
       <video
         ref={videoRef}
-        poster="/images/hero-new.jpeg"
+        poster="/images/hero-banner.png"
         loop
         muted
         playsInline
