@@ -38,7 +38,7 @@ const SLIDES = [
   },
   {
     id: "slide-5",
-    title: "Restoration & Turnover Cleaning",
+    title: "Turnover Cleaning",
     imageUrl: "/images/service_turnover.png",
     href: "/turnover-cleaning-central-ma",
   },

@@ -28,7 +28,7 @@ const PROCESS_PHASES = [
   },
   {
     id: "process-5",
-    title: "Restoration & Turnover Cleaning",
+    title: "Turnover Cleaning",
     description:
       "Comprehensive cleaning and efficient turnover services to get your space ready quickly and professionally — every time.",
   },

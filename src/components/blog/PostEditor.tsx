@@ -206,7 +206,7 @@ export function PostEditor({ initialData, isEdit = false }: PostEditorProps) {
     { title: "Floor Care Services", path: "/floor-care-services-central-ma" },
     { title: "Deep Cleaning", path: "/deep-cleaning-services-central-ma" },
     { title: "Flood Cleanup", path: "/emergency-restoration-services-central-ma" },
-    { title: "Restoration & Turnover Cleaning", path: "/turnover-cleaning-central-ma" },
+    { title: "Turnover Cleaning", path: "/turnover-cleaning-central-ma" },
     { title: "Post Construction", path: "/post-construction-cleaning-central-ma" },
     { title: "Property Management", path: "/property-management-cleaning-central-ma" },
     { title: "Real Estate", path: "/real-estate-cleaning-central-ma" },

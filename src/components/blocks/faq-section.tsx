@@ -75,10 +75,6 @@ const faqs = [
     answer: "Yes. We provide medical and healthcare facility cleaning with hospital-grade disinfection practices and staff trained specifically for compliance-sensitive environments."
   },
   {
-    question: "Do you clean restaurants and food service facilities?",
-    answer: "Yes. We provide commercial cleaning for restaurants and food service facilities, including kitchen, dining area, and floor care scoped around health-code requirements."
-  },
-  {
     question: "Do you provide hospital janitorial services?",
     answer: "We provide janitorial cleaning for medical offices, clinics, and healthcare-adjacent facilities as part of our medical and healthcare cleaning division, with hospital-grade disinfection standards."
   },

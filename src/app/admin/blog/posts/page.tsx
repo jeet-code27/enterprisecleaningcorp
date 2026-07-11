@@ -109,7 +109,7 @@ export default function AdminPostsPage() {
                     </span>
                   </td>
                   <td className="p-4 text-muted-foreground text-sm">
-                    {post.createdAt ? new Date(post.createdAt).toLocaleDateString('en-GB') : new Date().toLocaleDateString('en-GB')}
+                    {post.createdAt ? new Date(post.createdAt).toLocaleDateString('en-US') : new Date().toLocaleDateString('en-US')}
                   </td>
                   <td className="p-4 text-right">
                     <div className="flex justify-end gap-2">

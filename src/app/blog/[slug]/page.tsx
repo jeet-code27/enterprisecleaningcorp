@@ -201,7 +201,7 @@ export default async function BlogPostPage({ params }: { params: Params }) {
                   <div className="flex items-center text-sm text-muted-foreground gap-2">
                     <Calendar className="w-4 h-4" />
                     <time dateTime={post.createdAt ? new Date(post.createdAt).toISOString() : new Date().toISOString()}>
-                      {new Date(post.createdAt || Date.now()).toLocaleDateString('en-GB')}
+                      {new Date(post.createdAt || Date.now()).toLocaleDateString('en-US')}
                     </time>
                   </div>
                 </div>
@@ -338,7 +338,7 @@ export default async function BlogPostPage({ params }: { params: Params }) {
                             {rp.title}
                           </h4>
                           <div className="text-xs text-muted-foreground">
-                            {new Date(rp.createdAt).toLocaleDateString()}
+                            {new Date(rp.createdAt).toLocaleDateString('en-US')}
                           </div>
                         </div>
                       </Link>

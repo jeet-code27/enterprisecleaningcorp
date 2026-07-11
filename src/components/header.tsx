@@ -38,7 +38,7 @@ const coreServices = [
     icon: Wind,
   },
   {
-    title: "Restoration & Turnover Cleaning",
+    title: "Turnover Cleaning",
     description: "Complete turnover cleaning for properties.",
     href: "/turnover-cleaning-central-ma",
     icon: Droplets,

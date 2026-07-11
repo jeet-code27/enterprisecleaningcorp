@@ -42,7 +42,7 @@ export function Footer() {
                 <Link href="/emergency-restoration-services-central-ma" className="hover:text-white/60 transition-colors">Flood Cleanup</Link>
               </li>
               <li>
-                <Link href="/turnover-cleaning-central-ma" className="hover:text-white/60 transition-colors">Restoration & Turnover Cleaning</Link>
+                <Link href="/turnover-cleaning-central-ma" className="hover:text-white/60 transition-colors">Turnover Cleaning</Link>
               </li>
               <li>
                 <Link href="/post-construction-cleaning-central-ma" className="hover:text-white/60 transition-colors">Post Construction</Link>

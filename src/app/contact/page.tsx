@@ -230,7 +230,7 @@ export default function ContactPage() {
                 <img src="/images/alex-new.jpeg" alt="Alex" className="w-full h-full object-cover object-top" />
               </div>
               <h3 className="text-xl font-extrabold text-slate-900">Alex</h3>
-              <span className="mt-1 mb-4 inline-block text-xs font-bold uppercase tracking-widest text-[#00B8FF] bg-blue-50 px-3 py-1 rounded-full">Team Member</span>
+              <span className="mt-1 mb-4 inline-block text-xs font-bold uppercase tracking-widest text-[#00B8FF] bg-blue-50 px-3 py-1 rounded-full">Director of Sales & Marketing</span>
               <a
                 href="mailto:alex@enterprisecleaningcorp.com"
                 className="flex items-center gap-2 text-sm font-semibold text-slate-600 hover:text-[#00B8FF] transition-colors break-all"
@@ -247,7 +247,7 @@ export default function ContactPage() {
                 <img src="/images/julio.png" alt="Julio" className="w-full h-full object-cover object-top" />
               </div>
               <h3 className="text-xl font-extrabold text-slate-900">Julio</h3>
-              <span className="mt-1 mb-4 inline-block text-xs font-bold uppercase tracking-widest text-[#00B8FF] bg-blue-50 px-3 py-1 rounded-full">Team Member</span>
+              <span className="mt-1 mb-4 inline-block text-xs font-bold uppercase tracking-widest text-[#00B8FF] bg-blue-50 px-3 py-1 rounded-full">Director of Operations</span>
               <a
                 href="mailto:customerservice@enterprisecleaningcorp.com"
                 className="flex items-center gap-2 text-sm font-semibold text-slate-600 hover:text-[#00B8FF] transition-colors break-all"

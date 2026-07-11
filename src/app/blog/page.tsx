@@ -117,7 +117,7 @@ export default async function BlogPage({ searchParams }: { searchParams: Promise
                   <div className="flex items-center gap-2 text-xs text-muted-foreground mb-3">
                     <Calendar className="w-4 h-4" />
                     <time dateTime={post.createdAt ? new Date(post.createdAt).toISOString() : new Date().toISOString()}>
-                      {new Date(post.createdAt || Date.now()).toLocaleDateString('en-GB')}
+                      {new Date(post.createdAt || Date.now()).toLocaleDateString('en-US')}
                     </time>
                   </div>
                   
