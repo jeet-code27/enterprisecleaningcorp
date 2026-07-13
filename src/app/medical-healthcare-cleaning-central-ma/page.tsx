@@ -53,7 +53,7 @@ const structuredDataFAQ = {
       "name": "Do you provide disinfection for medical and healthcare facilities?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes. Disinfection of high-touch surfaces, exam rooms, and patient areas is central to our healthcare cleaning programs, using procedures designed to reduce cross-contamination."
+        "text": "Yes. Disinfection of high-touch surfaces and patient areas is central to our healthcare cleaning programs, using procedures designed to reduce cross-contamination."
       }
     },
     {
@@ -129,7 +129,7 @@ export default function MedicalCleaningPage() {
               </p>
 
               <p className="text-lg text-slate-600 font-medium leading-relaxed text-justify">
-                We understand the stakes. A waiting room must look immaculate and feel safe. Exam rooms and high-touch surfaces must be properly disinfected. Restrooms must be maintained throughout patient hours. We build programs that meet these demands consistently, every day.
+                We understand the stakes. A waiting room must look immaculate and feel safe. Patient areas and high-touch surfaces must be properly disinfected. Restrooms must be maintained throughout patient hours. We build programs that meet these demands consistently, every day.
               </p>
               
               <div className="flex flex-col sm:flex-row gap-4 pt-4">
@@ -186,7 +186,7 @@ export default function MedicalCleaningPage() {
           <div className="grid md:grid-cols-2 gap-x-12 gap-y-8 max-w-6xl mx-auto">
             {[
               { icon: ShieldCheck, text: "Disinfection of high-touch surfaces — door handles, light switches, counters, and shared equipment." },
-              { icon: Activity, text: "Exam room, treatment room, and waiting room cleaning and sanitizing." },
+              { icon: Activity, text: "Patient area and waiting room cleaning and sanitizing." },
               { icon: Droplets, text: "Restroom cleaning, sanitizing, and restocking throughout the day." },
               { icon: Trash2, text: "Proper handling and disposal of general waste streams per facility protocol." },
               { icon: Sparkles, text: "Floor care suited to medical environments." },
@@ -269,7 +269,7 @@ export default function MedicalCleaningPage() {
                 </h2>
                 <div className="prose prose-lg text-slate-600 prose-p:leading-relaxed text-justify">
                   <p>
-                    Healthcare cleaning is fundamentally different from ordinary commercial cleaning because the consequences of getting it wrong are so much higher. Patients, many of them already vulnerable, pass through your facility every day. Proper disinfection of exam rooms, waiting areas, restrooms, and high-touch surfaces is essential to reducing the spread of infection and maintaining the safe, sanitary environment that patients and regulators expect.
+                    Healthcare cleaning is fundamentally different from ordinary commercial cleaning because the consequences of getting it wrong are so much higher. Patients, many of them already vulnerable, pass through your facility every day. Proper disinfection of patient areas, waiting areas, restrooms, and high-touch surfaces is essential to reducing the spread of infection and maintaining the safe, sanitary environment that patients and regulators expect.
                   </p>
                   <p>
                     We also recognize that a medical facility is a place of care, and its cleanliness shapes how patients feel the moment they walk in. A spotless, well-maintained waiting room signals competence and safety before a patient ever sees a provider. We help medical practices across Central Massachusetts present that standard every day, protecting both patient health and the reputation of the practice.
