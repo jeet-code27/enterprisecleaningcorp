@@ -7,6 +7,7 @@ import {
   MapPin, Trophy, Users, Hammer, Wind, Sparkles, MoveRight, Snowflake, Handshake
 } from "lucide-react";
 import { CTASection } from "@/components/blocks/cta-with-glow";
+import { RelatedIndustries } from "@/components/ui/related-industries";
 
 export const metadata: Metadata = {
   title: "Window Cleaning & Pressure Washing Worcester MA",
@@ -432,6 +433,7 @@ export default function SpecialtyCleaningPage() {
         </div>
       </section>
       
+      <RelatedIndustries industryIds={["manufacturing", "medical", "property"]} />
       <CTASection
         className="bg-white border-t border-slate-100"
         title="Ready to Transform Your Building's Appearance?"

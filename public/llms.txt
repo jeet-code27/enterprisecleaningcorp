@@ -1,0 +1,29 @@
+# Enterprise Cleaning Corporation
+
+**Business Description:** Enterprise Cleaning Corporation is Central Massachusetts' most trusted commercial cleaning and janitorial company, providing nightly janitorial, floor care, and 24/7 emergency response services to businesses across Central MA, Rhode Island, and Southern New Hampshire.
+
+## Core Pages
+- **Home**: [https://enterprisecleaningcorp.vercel.app/](https://enterprisecleaningcorp.vercel.app/) - Our homepage outlining our 23+ years of experience, awards, and services.
+- **About Us**: [https://enterprisecleaningcorp.vercel.app/about](https://enterprisecleaningcorp.vercel.app/about) - Learn about our history, our 97% client retention rate, and our owner-operated team.
+- **Blog**: [https://enterprisecleaningcorp.vercel.app/blog](https://enterprisecleaningcorp.vercel.app/blog) - Our insights on commercial cleaning, facility management, and hygiene best practices.
+- **Contact**: [https://enterprisecleaningcorp.vercel.app/contact](https://enterprisecleaningcorp.vercel.app/contact) - Get a free quote or contact our 24/7 customer service.
+
+## Services We Provide
+- **Night & Day Cleaning**: [https://enterprisecleaningcorp.vercel.app/nightly-janitorial-cleaning-central-ma](https://enterprisecleaningcorp.vercel.app/nightly-janitorial-cleaning-central-ma) - Consistent janitorial cleaning for professional environments.
+- **Floor Care Services**: [https://enterprisecleaningcorp.vercel.app/floor-care-services-central-ma](https://enterprisecleaningcorp.vercel.app/floor-care-services-central-ma) - Specialized care for carpets, VCT, hard floors, and more.
+- **Deep Cleaning & Specialty Cleaning**: [https://enterprisecleaningcorp.vercel.app/specialty-cleaning-services-central-ma](https://enterprisecleaningcorp.vercel.app/specialty-cleaning-services-central-ma) - Thorough, restorative cleaning to revitalize facilities.
+- **Flood Cleanup & Emergency Response**: [https://enterprisecleaningcorp.vercel.app/emergency-restoration-services-central-ma](https://enterprisecleaningcorp.vercel.app/emergency-restoration-services-central-ma) - 24/7 response for water, flood, and storm damage.
+- **Turnover Cleaning**: [https://enterprisecleaningcorp.vercel.app/turnover-cleaning-central-ma](https://enterprisecleaningcorp.vercel.app/turnover-cleaning-central-ma) - Complete turnover cleaning for apartments, condos, and properties.
+- **Post Construction**: [https://enterprisecleaningcorp.vercel.app/post-construction-cleaning-central-ma](https://enterprisecleaningcorp.vercel.app/post-construction-cleaning-central-ma) - Detailed rough, final, and touch-up cleaning after construction projects.
+
+## Industries We Serve
+- **Manufacturing & Industrial**: [https://enterprisecleaningcorp.vercel.app/manufacturing-industrial-cleaning-central-ma](https://enterprisecleaningcorp.vercel.app/manufacturing-industrial-cleaning-central-ma)
+- **Medical & Healthcare**: [https://enterprisecleaningcorp.vercel.app/medical-healthcare-cleaning-central-ma](https://enterprisecleaningcorp.vercel.app/medical-healthcare-cleaning-central-ma)
+- **Offices & Financial**: [https://enterprisecleaningcorp.vercel.app/office-financial-cleaning-central-ma](https://enterprisecleaningcorp.vercel.app/office-financial-cleaning-central-ma)
+- **Educational & Municipal**: [https://enterprisecleaningcorp.vercel.app/school-municipal-cleaning-central-ma](https://enterprisecleaningcorp.vercel.app/school-municipal-cleaning-central-ma)
+- **Property Management**: [https://enterprisecleaningcorp.vercel.app/property-management-cleaning-central-ma](https://enterprisecleaningcorp.vercel.app/property-management-cleaning-central-ma)
+- **Warehouses & Distribution**: [https://enterprisecleaningcorp.vercel.app/warehouse-distribution-cleaning-central-ma](https://enterprisecleaningcorp.vercel.app/warehouse-distribution-cleaning-central-ma)
+- **Real Estate**: [https://enterprisecleaningcorp.vercel.app/real-estate-cleaning-central-ma](https://enterprisecleaningcorp.vercel.app/real-estate-cleaning-central-ma)
+
+## Service Area
+We proudly serve Central Massachusetts (including Worcester and surrounding areas), Rhode Island (including Providence), and Southern New Hampshire.

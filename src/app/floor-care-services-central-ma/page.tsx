@@ -7,6 +7,7 @@ import {
   MapPin, Trophy, Users, ShieldAlert, Sparkle
 } from "lucide-react";
 import { CTASection } from "@/components/blocks/cta-with-glow";
+import { RelatedIndustries } from "@/components/ui/related-industries";
 
 export const metadata: Metadata = {
   title: "Commercial Floor Care Central MA",
@@ -442,6 +443,7 @@ export default function FloorCarePage() {
           </div>
         </div>
       </section>
+      <RelatedIndustries industryIds={["warehouse", "property", "medical"]} />
       <CTASection
         className="bg-white border-t border-slate-100"
         title="Ready to Protect Your Flooring Investment?"

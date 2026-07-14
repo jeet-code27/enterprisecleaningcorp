@@ -5,6 +5,8 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 
+import Link from "next/link";
+
 const faqs = [
   {
     question: "What areas does Enterprise Cleaning serve?",
@@ -16,7 +18,7 @@ const faqs = [
   },
   {
     question: "Does Enterprise handle emergency water and flood damage?",
-    answer: "Yes. Its 24/7 emergency division is certified for water/flood and mold remediation, and works directly with insurers for rapid recovery."
+    answer: <>Yes. Its 24/7 <Link href="/emergency-restoration-services-central-ma" className="text-[#0090c8] font-semibold hover:underline">emergency division</Link> is certified for water/flood and mold remediation, and works directly with insurers for rapid recovery.</>
   },
   {
     question: "How long has Enterprise Cleaning been in business?",
@@ -24,11 +26,11 @@ const faqs = [
   },
   {
     question: "What types of facilities does Enterprise clean?",
-    answer: "Offices, healthcare and life-sciences facilities, schools, banks, manufacturing plants, and commercial properties / CRE managed by property and facility managers."
+    answer: <>Offices, <Link href="/medical-healthcare-cleaning-central-ma" className="text-[#0090c8] font-semibold hover:underline">healthcare and life-sciences facilities</Link>, <Link href="/school-municipal-cleaning-central-ma" className="text-[#0090c8] font-semibold hover:underline">schools</Link>, banks, <Link href="/manufacturing-industrial-cleaning-central-ma" className="text-[#0090c8] font-semibold hover:underline">manufacturing plants</Link>, and commercial properties / CRE managed by property and facility managers.</>
   },
   {
     question: "What commercial cleaning services does Enterprise Cleaning provide?",
-    answer: "We provide a full range of commercial cleaning services, including nightly and day shift janitorial, floor care, deep cleaning, disinfection, turnover cleaning, post-construction cleaning, and 24/7 emergency water and flood cleanup, across Central Massachusetts, Rhode Island, and Southern New Hampshire."
+    answer: <>We provide a full range of commercial cleaning services, including <Link href="/nightly-janitorial-cleaning-central-ma" className="text-[#0090c8] font-semibold hover:underline">nightly and day shift janitorial</Link>, <Link href="/floor-care-services-central-ma" className="text-[#0090c8] font-semibold hover:underline">floor care</Link>, <Link href="/specialty-cleaning-services-central-ma" className="text-[#0090c8] font-semibold hover:underline">deep cleaning</Link>, disinfection, <Link href="/turnover-cleaning-central-ma" className="text-[#0090c8] font-semibold hover:underline">turnover cleaning</Link>, <Link href="/post-construction-cleaning-central-ma" className="text-[#0090c8] font-semibold hover:underline">post-construction cleaning</Link>, and 24/7 emergency <Link href="/emergency-restoration-services-central-ma" className="text-[#0090c8] font-semibold hover:underline">water and flood cleanup</Link>, across Central Massachusetts, Rhode Island, and Southern New Hampshire.</>
   },
   {
     question: "What makes Enterprise a different kind of cleaning company?",
@@ -44,7 +46,7 @@ const faqs = [
   },
   {
     question: "Do you provide office cleaning for both small offices and large corporate spaces?",
-    answer: "Yes. We clean single-suite offices and large corporate headquarters alike, scaling the crew size and schedule to fit the size of the space."
+    answer: <>Yes. We clean single-suite <Link href="/office-financial-cleaning-central-ma" className="text-[#0090c8] font-semibold hover:underline">offices</Link> and large corporate headquarters alike, scaling the crew size and schedule to fit the size of the space.</>
   },
   {
     question: "How is Enterprise different from other commercial cleaning companies in the area?",
@@ -56,15 +58,15 @@ const faqs = [
   },
   {
     question: "Do you provide construction cleaning services for contractors and developers?",
-    answer: "Yes. We provide rough, final, and touch-up post-construction cleaning for contractors, developers, and building owners across the region."
+    answer: <>Yes. We provide rough, final, and touch-up <Link href="/post-construction-cleaning-central-ma" className="text-[#0090c8] font-semibold hover:underline">post-construction cleaning</Link> for contractors, developers, and building owners across the region.</>
   },
   {
     question: "Do you offer commercial floor waxing and stripping?",
-    answer: "Yes. Our floor care division handles stripping, waxing, buffing, and ongoing maintenance for VCT, hardwood, and other hard-surface flooring in commercial buildings."
+    answer: <>Yes. Our <Link href="/floor-care-services-central-ma" className="text-[#0090c8] font-semibold hover:underline">floor care division</Link> handles stripping, waxing, buffing, and ongoing maintenance for VCT, hardwood, and other hard-surface flooring in commercial buildings.</>
   },
   {
     question: "Do you provide warehouse cleaning for distribution and industrial facilities?",
-    answer: "Yes. We provide commercial cleaning for warehouses and distribution centers throughout Central Massachusetts, Rhode Island, and Southern New Hampshire, scoped around the size and traffic of each facility."
+    answer: <>Yes. We provide commercial cleaning for <Link href="/warehouse-distribution-cleaning-central-ma" className="text-[#0090c8] font-semibold hover:underline">warehouses and distribution centers</Link> throughout Central Massachusetts, Rhode Island, and Southern New Hampshire, scoped around the size and traffic of each facility.</>
   },
   {
     question: "Do you offer electrostatic disinfection services?",
@@ -72,11 +74,11 @@ const faqs = [
   },
   {
     question: "Do you provide medical office cleaning that meets healthcare standards?",
-    answer: "Yes. We provide medical and healthcare facility cleaning with hospital-grade disinfection practices and staff trained specifically for compliance-sensitive environments."
+    answer: <>Yes. We provide <Link href="/medical-healthcare-cleaning-central-ma" className="text-[#0090c8] font-semibold hover:underline">medical and healthcare facility cleaning</Link> with hospital-grade disinfection practices.</>
   },
   {
     question: "Do you provide hospital janitorial services?",
-    answer: "We provide janitorial cleaning for medical offices, clinics, and healthcare-adjacent facilities as part of our medical and healthcare cleaning division, with hospital-grade disinfection standards."
+    answer: <>We provide janitorial cleaning for medical offices, clinics, and healthcare-adjacent facilities as part of our <Link href="/medical-healthcare-cleaning-central-ma" className="text-[#0090c8] font-semibold hover:underline">medical and healthcare cleaning division</Link>, with hospital-grade disinfection standards.</>
   },
   {
     question: "Do you provide commercial cleaning services in Rhode Island?",

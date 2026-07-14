@@ -8,6 +8,7 @@ import {
   MapPin, CheckCircle2, ShieldAlert
 } from "lucide-react";
 import { CTASection } from "@/components/blocks/cta-with-glow";
+import { RelatedServices } from "@/components/ui/related-services";
 
 export const metadata: Metadata = {
   title: "Manufacturing & Industrial Cleaning Worcester MA",
@@ -356,6 +357,7 @@ export default function IndustrialCleaningPage() {
         </div>
       </section>
       
+      <RelatedServices serviceIds={["specialty", "emergency", "post-construction"]} />
       <CTASection
         className="bg-slate-50 border-t border-slate-200"
         title="Ready for a Safety-Focused Cleaning Partner?"

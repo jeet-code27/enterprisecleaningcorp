@@ -9,6 +9,7 @@ import {
   Briefcase
 } from "lucide-react";
 import { CTASection } from "@/components/blocks/cta-with-glow";
+import { RelatedIndustries } from "@/components/ui/related-industries";
 
 export const metadata: Metadata = {
   title: "Day & Night Shift Cleaning | Central MA, RI & Southern NH",
@@ -110,7 +111,7 @@ const structuredDataFAQ = {
     },
     {
       "@type": "Question",
-      "name": "Is combined day and night shift cleaning available in Providence, RI and Manchester, NH?",
+      "name": "Is combined day and night shift cleaning available in Providence, RI?",
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "Yes. We provide day and night shift programs throughout Rhode Island, including Providence, and Southern New Hampshire, including Manchester and Nashua, in addition to Central Massachusetts."
@@ -459,6 +460,8 @@ export default function NightAndDayCleaningPage() {
           </div>
         </div>
       </section>
+      
+      <RelatedIndustries industryIds={["office", "medical", "education"]} />
       
       <CTASection
         className="bg-white border-t border-slate-100"

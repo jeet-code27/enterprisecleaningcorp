@@ -12,6 +12,7 @@ import {
   Hammer
 } from "lucide-react";
 import { CTASection } from "@/components/blocks/cta-with-glow";
+import { RelatedIndustries } from "@/components/ui/related-industries";
 
 export const metadata: Metadata = {
   title: "Post-Construction Cleaning Services | Central MA, RI & Southern NH",
@@ -482,6 +483,7 @@ export default function PostConstructionCleaningPage() {
         </div>
       </section>
       
+      <RelatedIndustries industryIds={["real-estate", "property", "manufacturing"]} />
       <CTASection
         className="bg-white border-t border-slate-100"
         title="Ready to Finalize Your Project?"

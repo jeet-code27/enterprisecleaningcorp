@@ -10,6 +10,7 @@ import {
   Key
 } from "lucide-react";
 import { CTASection } from "@/components/blocks/cta-with-glow";
+import { RelatedIndustries } from "@/components/ui/related-industries";
 
 export const metadata: Metadata = {
   title: "Turnover Cleaning Services | Central MA, RI & Southern NH",
@@ -443,6 +444,7 @@ export default function TurnoverCleaningPage() {
         </div>
       </section>
       
+      <RelatedIndustries industryIds={["property", "real-estate", "office"]} />
       <CTASection
         className="bg-white border-t border-slate-100"
         title="Need a Fast, Reliable Turnover?"

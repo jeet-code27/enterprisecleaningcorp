@@ -8,6 +8,7 @@ import {
   Coffee, Sparkles, SprayCan, Laptop
 } from "lucide-react";
 import { CTASection } from "@/components/blocks/cta-with-glow";
+import { RelatedServices } from "@/components/ui/related-services";
 
 export const metadata: Metadata = {
   title: "Office & Bank Cleaning Worcester & Central MA",
@@ -356,6 +357,7 @@ export default function OfficeCleaningPage() {
         </div>
       </section>
       
+      <RelatedServices serviceIds={["nightly", "floor", "turnover"]} />
       <CTASection
         className="bg-slate-50 border-t border-slate-200"
         title="Ready to Elevate Your Workplace Environment?"

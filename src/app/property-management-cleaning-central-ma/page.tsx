@@ -9,6 +9,7 @@ import {
   DoorOpen, Activity
 } from "lucide-react";
 import { CTASection } from "@/components/blocks/cta-with-glow";
+import { RelatedServices } from "@/components/ui/related-services";
 
 export const metadata: Metadata = {
   title: "Property Management Cleaning Worcester MA",
@@ -357,6 +358,7 @@ export default function PropertyManagementPage() {
         </div>
       </section>
       
+      <RelatedServices serviceIds={["turnover", "floor", "emergency"]} />
       <CTASection
         className="bg-slate-50 border-t border-slate-200"
         title="Ready to Simplify Your Property Management?"

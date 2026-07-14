@@ -36,10 +36,12 @@ export function WhyEnterprise() {
           {/* Left Side: Features */}
           <div className="order-1">
             <h5 className="text-[#E31837] font-bold tracking-widest uppercase text-sm mb-4">Why Enterprise Cleaning Corporation</h5>
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-extrabold text-slate-900 leading-tight mb-12">
-              The Difference Is a Clean You <br className="hidden lg:block"/>
-              <span className="text-[#00B8FF]">Never Have to Think About</span>
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-extrabold text-slate-900 leading-tight mb-6">
+              Enterprise <span className="text-[#00B8FF]">redefines</span>
             </h2>
+            <p className="text-lg md:text-xl text-slate-600 font-medium leading-relaxed mb-12 text-justify">
+              what businesses expect from a commercial cleaning partner — proving that a company can operate at enterprise scale while still delivering the personal accountability, consistency, and results that make switching providers unthinkable.
+            </p>
             
             <div className="space-y-10">
               {features.map((feature, idx) => (

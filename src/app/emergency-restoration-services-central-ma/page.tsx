@@ -7,6 +7,7 @@ import {
   MapPin, Trophy, Users, Wind, AlertTriangle, FileText, Activity
 } from "lucide-react";
 import { CTASection } from "@/components/blocks/cta-with-glow";
+import { RelatedIndustries } from "@/components/ui/related-industries";
 
 export const metadata: Metadata = {
   title: "24/7 Water & Fire Cleanup Worcester MA",
@@ -438,6 +439,7 @@ export default function EmergencyRestorationPage() {
         </div>
       </section>
       
+      <RelatedIndustries industryIds={["property", "real-estate", "manufacturing"]} />
       <CTASection
         className="bg-white border-t border-slate-100"
         title="Experiencing an Emergency?"

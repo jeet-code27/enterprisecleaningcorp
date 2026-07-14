@@ -7,7 +7,7 @@ const locations = [
   "Lancaster", "Leominster", "Fitchburg", "Gardner", "Grafton",
   "Upton", "Uxbridge", "Whitinsville", "Oxford", "Charlton",
   "Sturbridge", "Webster", "Dudley", "Boylston", "Berlin",
-  "Hudson", "Framingham", "Natick", "Providence, RI", "Manchester, NH",
+  "Hudson", "Framingham", "Natick", "Providence, RI", "Lowell",
 ];
 
 export function ServiceAreas() {

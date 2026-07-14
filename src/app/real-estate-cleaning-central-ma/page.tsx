@@ -13,6 +13,7 @@ import {
   Sparkles
 } from "lucide-react";
 import { CTASection } from "@/components/blocks/cta-with-glow";
+import { RelatedServices } from "@/components/ui/related-services";
 
 export const metadata: Metadata = {
   title: "Real Estate Cleaning Services | Central MA, RI & Southern NH",
@@ -466,6 +467,7 @@ export default function RealEstateCleaningPage() {
         </div>
       </section>
       
+      <RelatedServices serviceIds={["turnover", "post-construction", "emergency"]} />
       <CTASection
         className="bg-white border-t border-slate-100"
         title="Ready to List?"

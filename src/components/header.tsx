@@ -28,7 +28,7 @@ const coreServices = [
   {
     title: "Deep Cleaning",
     description: "Thorough, restorative cleaning to revitalize your facility.",
-    href: "/deep-cleaning-services-central-ma",
+    href: "/specialty-cleaning-services-central-ma",
     icon: Sparkles,
   },
   {
