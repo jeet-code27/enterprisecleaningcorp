@@ -22,8 +22,8 @@ export default function Home() {
         <TrustedByMarquee />
         <StatsBanner />
         <ServicesSlideshow />
-        <EmergencyCTA />
         <GallerySection />
+        <EmergencyCTA />
         <HowItWorks />
         <WhyEnterprise />
         {/* <WhyChooseUs /> */}

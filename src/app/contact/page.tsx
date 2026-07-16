@@ -1,6 +1,6 @@
 import { Metadata } from "next";
 import { 
-  MapPin, PhoneCall, Mail, Clock, ArrowRight, ShieldCheck, Trophy, Users 
+  MapPin, PhoneCall, Mail, Clock, ArrowRight, ShieldCheck, Trophy, Users, Headset, UserCheck 
 } from "lucide-react";
 import Link from "next/link";
 import { CTASection } from "@/components/blocks/cta-with-glow";
@@ -194,7 +194,7 @@ export default function ContactPage() {
 
       {/* Meet the Team Section */}
       <section className="py-16 md:py-20 bg-white border-t border-slate-100">
-        <div className="container mx-auto px-4 md:px-6 max-w-5xl">
+        <div className="container mx-auto px-4 md:px-6 max-w-6xl">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-extrabold text-slate-900 tracking-tight">
               Reach Out <span className="text-[#00B8FF]">Directly</span>
@@ -204,10 +204,10 @@ export default function ContactPage() {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="flex flex-wrap justify-center gap-6 md:gap-8">
 
             {/* Stephen — Owner */}
-            <div className="flex flex-col items-center text-center bg-slate-50 rounded-3xl p-8 border border-slate-100 hover:shadow-xl transition-shadow duration-300">
+            <div className="w-full md:w-[calc(33.333%-1.34rem)] flex flex-col items-center text-center bg-slate-50 rounded-3xl p-6 lg:p-8 border border-slate-100 hover:shadow-xl transition-shadow duration-300">
               <div className="w-28 h-28 rounded-full overflow-hidden ring-4 ring-[#E31837]/20 mb-5 shadow-lg">
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img src="/images/stephon.png" alt="Stephen Buchalter" className="w-full h-full object-cover object-top" />
@@ -216,7 +216,7 @@ export default function ContactPage() {
               <span className="mt-1 mb-4 inline-block text-xs font-bold uppercase tracking-widest text-[#E31837] bg-red-50 px-3 py-1 rounded-full">Owner</span>
               <a
                 href="mailto:customerservice@enterprisecleaningcorp.com"
-                className="flex items-center gap-2 text-sm font-semibold text-slate-600 hover:text-[#00B8FF] transition-colors break-all"
+                className="flex items-center gap-1.5 text-[13px] lg:text-sm font-semibold text-slate-600 hover:text-[#00B8FF] transition-colors whitespace-nowrap"
               >
                 <Mail className="w-4 h-4 shrink-0 text-[#00B8FF]" />
                 customerservice@enterprisecleaningcorp.com
@@ -224,7 +224,7 @@ export default function ContactPage() {
             </div>
 
             {/* Alex — Team Member */}
-            <div className="flex flex-col items-center text-center bg-slate-50 rounded-3xl p-8 border border-slate-100 hover:shadow-xl transition-shadow duration-300">
+            <div className="w-full md:w-[calc(33.333%-1.34rem)] flex flex-col items-center text-center bg-slate-50 rounded-3xl p-6 lg:p-8 border border-slate-100 hover:shadow-xl transition-shadow duration-300">
               <div className="w-28 h-28 rounded-full overflow-hidden ring-4 ring-[#00B8FF]/20 mb-5 shadow-lg">
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img src="/images/alex-new.jpeg" alt="Alex" className="w-full h-full object-cover object-top" />
@@ -233,7 +233,7 @@ export default function ContactPage() {
               <span className="mt-1 mb-4 inline-block text-xs font-bold uppercase tracking-widest text-[#00B8FF] bg-blue-50 px-3 py-1 rounded-full">Director of Sales & Marketing</span>
               <a
                 href="mailto:alex@enterprisecleaningcorp.com"
-                className="flex items-center gap-2 text-sm font-semibold text-slate-600 hover:text-[#00B8FF] transition-colors break-all"
+                className="flex items-center gap-1.5 text-[13px] lg:text-sm font-semibold text-slate-600 hover:text-[#00B8FF] transition-colors whitespace-nowrap"
               >
                 <Mail className="w-4 h-4 shrink-0 text-[#00B8FF]" />
                 alex@enterprisecleaningcorp.com
@@ -241,7 +241,7 @@ export default function ContactPage() {
             </div>
 
             {/* Julio — Team Member */}
-            <div className="flex flex-col items-center text-center bg-slate-50 rounded-3xl p-8 border border-slate-100 hover:shadow-xl transition-shadow duration-300">
+            <div className="w-full md:w-[calc(33.333%-1.34rem)] flex flex-col items-center text-center bg-slate-50 rounded-3xl p-6 lg:p-8 border border-slate-100 hover:shadow-xl transition-shadow duration-300">
               <div className="w-28 h-28 rounded-full overflow-hidden ring-4 ring-[#00B8FF]/20 mb-5 shadow-lg">
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img src="/images/julio.png" alt="Julio" className="w-full h-full object-cover object-top" />
@@ -250,10 +250,42 @@ export default function ContactPage() {
               <span className="mt-1 mb-4 inline-block text-xs font-bold uppercase tracking-widest text-[#00B8FF] bg-blue-50 px-3 py-1 rounded-full">Director of Operations</span>
               <a
                 href="mailto:customerservice@enterprisecleaningcorp.com"
-                className="flex items-center gap-2 text-sm font-semibold text-slate-600 hover:text-[#00B8FF] transition-colors break-all"
+                className="flex items-center gap-1.5 text-[13px] lg:text-sm font-semibold text-slate-600 hover:text-[#00B8FF] transition-colors whitespace-nowrap"
               >
                 <Mail className="w-4 h-4 shrink-0 text-[#00B8FF]" />
                 customerservice@enterprisecleaningcorp.com
+              </a>
+            </div>
+
+            {/* Customer Service */}
+            <div className="w-full md:w-[calc(33.333%-1.34rem)] flex flex-col items-center text-center bg-slate-50 rounded-3xl p-6 lg:p-8 border border-slate-100 hover:shadow-xl transition-shadow duration-300">
+              <div className="w-28 h-28 rounded-full overflow-hidden ring-4 ring-[#00B8FF]/20 mb-5 shadow-lg bg-white flex items-center justify-center">
+                <Headset className="w-12 h-12 text-[#00B8FF]" />
+              </div>
+              <h3 className="text-xl font-extrabold text-slate-900">Customer Service</h3>
+              <span className="mt-1 mb-4 inline-block text-xs font-bold uppercase tracking-widest text-[#00B8FF] bg-blue-50 px-3 py-1 rounded-full">Support Team</span>
+              <a
+                href="mailto:customerservice@enterprisecleaningcorp.com"
+                className="flex items-center gap-1.5 text-[13px] lg:text-sm font-semibold text-slate-600 hover:text-[#00B8FF] transition-colors whitespace-nowrap"
+              >
+                <Mail className="w-4 h-4 shrink-0 text-[#00B8FF]" />
+                customerservice@enterprisecleaningcorp.com
+              </a>
+            </div>
+
+            {/* Supervisors */}
+            <div className="w-full md:w-[calc(33.333%-1.34rem)] flex flex-col items-center text-center bg-slate-50 rounded-3xl p-6 lg:p-8 border border-slate-100 hover:shadow-xl transition-shadow duration-300">
+              <div className="w-28 h-28 rounded-full overflow-hidden ring-4 ring-[#00B8FF]/20 mb-5 shadow-lg bg-white flex items-center justify-center">
+                <UserCheck className="w-12 h-12 text-[#00B8FF]" />
+              </div>
+              <h3 className="text-xl font-extrabold text-slate-900">Supervisors</h3>
+              <span className="mt-1 mb-4 inline-block text-xs font-bold uppercase tracking-widest text-[#00B8FF] bg-blue-50 px-3 py-1 rounded-full">Field Operations</span>
+              <a
+                href="mailto:supervisors@enterprisecleaningcorp.com"
+                className="flex items-center gap-1.5 text-[13px] lg:text-sm font-semibold text-slate-600 hover:text-[#00B8FF] transition-colors whitespace-nowrap"
+              >
+                <Mail className="w-4 h-4 shrink-0 text-[#00B8FF]" />
+                supervisors@enterprisecleaningcorp.com
               </a>
             </div>
 

@@ -59,10 +59,10 @@ export function FloatingContact() {
                   Contact Us
                 </button>
               </Link>
-              <a href="tel:+18001234567" className="w-full">
-                <button className="w-full bg-white hover:bg-gray-50 text-gray-700 border border-gray-200 rounded-lg py-2.5 px-4 text-sm font-semibold flex items-center justify-center gap-2 transition-colors">
-                  <Phone size={16} />
-                  Call Us
+              <a href="tel:5088901000" className="w-full">
+                <button className="w-full bg-white hover:bg-gray-50 text-gray-700 border border-gray-200 rounded-lg py-2.5 px-3 text-[13px] font-semibold flex items-center justify-center gap-2 transition-colors">
+                  <Phone size={16} className="shrink-0" />
+                  Serving New England: 508-890-1000
                 </button>
               </a>
             </div>
