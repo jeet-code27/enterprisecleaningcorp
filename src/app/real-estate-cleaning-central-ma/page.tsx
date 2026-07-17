@@ -390,7 +390,7 @@ export default function RealEstateCleaningPage() {
                   <h3 className="text-xl font-bold">Backed by a Full-Service Company</h3>
                 </div>
                 <p className="text-slate-700 leading-relaxed font-medium text-justify">
-                  Because Enterprise Cleaning also operates a full emergency response division, agents and property owners who discover water damage, mold, or fire damage during a listing preparation have a single partner who can handle both the cleaning and the cleanup, rather than scrambling to find a second vendor mid-transaction.
+                  Because Enterprise Cleaning also operates a full emergency response division, agents and property owners who discover water damage or mold during a listing preparation have a single partner who can handle both the cleaning and the cleanup, rather than scrambling to find a second vendor mid-transaction.
                 </p>
               </div>
             </div>

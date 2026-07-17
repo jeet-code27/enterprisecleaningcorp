@@ -194,11 +194,11 @@ export default function AboutPage() {
                 <span className="text-sm font-bold text-[#0090c8] tracking-[0.1em] uppercase">History of Enterprise Cleaning</span>
               </div>
               <h2 className="text-3xl md:text-4xl font-extrabold text-slate-900 leading-tight">
-                More than 20 years of <span className="text-[#0090c8]">cleaning experience</span>
+                More than 23+ years of <span className="text-[#0090c8]">cleaning experience</span>
               </h2>
               <div className="space-y-6 text-slate-600 font-medium leading-relaxed text-justify">
                 <p>
-                  Locally owned, Enterprise Cleaning Corporation has over 20 years of experience to tackle any commercial cleaning need you have. Every employee is trained specifically for the job they'll perform.
+                  Locally owned, Enterprise Cleaning Corporation has over 23+ years of experience to tackle any commercial cleaning need you have. Every employee is trained specifically for the job they'll perform.
                 </p>
 
                 <p>
@@ -218,13 +218,12 @@ export default function AboutPage() {
                 <img 
                   src="/images/onwer.jpg" 
                   alt="Stephen Buchalter - Founder of Enterprise Cleaning"
-                  className="w-full h-auto object-cover"
+                  className="w-full h-auto object-cover aspect-square md:aspect-auto"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
-                <div className="absolute bottom-0 left-0 w-full p-8 text-white">
-                  <h3 className="font-extrabold text-2xl mb-2">Stephen Buchalter</h3>
-                  <p className="font-medium text-white/90 text-sm leading-relaxed">
-                    Stephen founded Enterprise Cleaning Corporation over 20 years ago. From starting with just one employee, he has grown the company to over 150 team members, becoming one of the well respected companies in Massachusetts.
+                <div className="w-full p-8 bg-white">
+                  <h3 className="font-extrabold text-slate-900 text-2xl mb-2">Stephen Buchalter</h3>
+                  <p className="font-medium text-slate-600 text-sm leading-relaxed">
+                    Stephen founded Enterprise Cleaning Corporation over 23+ years ago. From starting with just one employee, he has grown the company to over 150 team members, becoming one of the well respected companies in Massachusetts.
                   </p>
                 </div>
               </div>

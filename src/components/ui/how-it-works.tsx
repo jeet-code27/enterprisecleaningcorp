@@ -18,7 +18,7 @@ const PROCESS_PHASES = [
     id: "process-3",
     title: "Deep Cleaning",
     description:
-      "Thorough, top-to-bottom deep cleans using the most excellent quality tools and equipment to eliminate all dust, dirt, and buildup from your premises.",
+      "Thorough, top-to-bottom deep cleans using professional-grade tools and equipment to eliminate all dust, dirt, and buildup from your premises.",
   },
   {
     id: "process-4",

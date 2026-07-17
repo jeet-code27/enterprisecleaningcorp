@@ -71,7 +71,7 @@ const structuredDataFAQ = {
       "name": "What if there is an after-hours emergency at one of my buildings?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "We have a full emergency division and a 24/7 emergency line (508-890-1000) for water, fire, and storm damage, so you have one trusted partner for both routine cleaning and emergencies."
+        "text": "We have a full emergency division and a 24/7 emergency line (508-890-1000) for water and storm damage, so you have one trusted partner for both routine cleaning and emergencies."
       }
     },
     {
@@ -194,7 +194,7 @@ export default function PropertyManagementPage() {
               { icon: CheckCircle2, text: "Floor care — carpet, hard-surface, and entryway maintenance." },
               { icon: SprayCan, text: "Window cleaning and pressure washing for curb appeal." },
               { icon: DoorOpen, text: "Move-in and move-out / tenant turnover cleaning." },
-              { icon: ShieldAlert, text: "Emergency water, fire, and cleanup response." },
+              { icon: ShieldAlert, text: "Emergency water and cleanup response." },
             ].map((item, idx) => (
               <div key={idx} className="flex items-start gap-4 p-6 rounded-2xl bg-slate-50 hover:bg-[#0090c8]/5 transition-colors border border-slate-100 hover:border-[#0090c8]/30 group">
                 <div className="w-14 h-14 rounded-full bg-white shadow-sm flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform">

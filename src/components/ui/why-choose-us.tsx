@@ -43,7 +43,7 @@ const features = [
   {
     icon: Droplets,
     title: "Flood & Emergency Response",
-    description: "We recognize the importance of Flood and Fire emergencies. As of 2018, we opened our Flood Clean-up & Emergency Services Division.",
+    description: "We recognize the importance of Flood emergencies. As of 2018, we opened our Flood Clean-up & Emergency Services Division.",
     colSpan: "md:col-span-2",
     style: { background: BRAND_BLUE, border: `1.5px solid ${BRAND_BLUE}` },
     iconStyle: { color: BRAND_BLUE, background: "#fff" },
@@ -66,7 +66,7 @@ export function WhyChooseUs() {
                    What We <span style={{ color: BRAND_BLUE }}>Provide</span>
                 </h2>
                 <p className="text-lg leading-relaxed" style={{ color: "#4a6178" }}>
-                   Locally owned, Enterprise Cleaning Corporation has 17 years of experience to tackle any commercial cleaning need you have. Every employee is trained specifically for the job they'll perform. Our team of technicians have certifications in Flood, Fire Cleanup, Mold Remediation, Crime Scene Clean-up, Disaster Clean-up and Lead Paint Removal.
+                   Locally owned, Enterprise Cleaning Corporation has over 23+ years of experience to tackle any commercial cleaning need you have. Every employee is trained specifically for the job they'll perform. Our team of technicians have certifications in Flood, Mold Remediation, Crime Scene Clean-up, Disaster Clean-up and Lead Paint Removal.
                 </p>
             </div>
 

@@ -10,8 +10,8 @@ import { CTASection } from "@/components/blocks/cta-with-glow";
 import { RelatedIndustries } from "@/components/ui/related-industries";
 
 export const metadata: Metadata = {
-  title: "24/7 Water & Fire Cleanup Worcester MA",
-  description: "24/7 emergency water, flood, fire, and mold cleanup across Worcester and Central Massachusetts. Call (508) 890-1000 for rapid response.",
+  title: "24/7 Water Cleanup Worcester MA",
+  description: "24/7 emergency water, flood, and mold cleanup across Worcester and Central Massachusetts. Call (508) 890-1000 for rapid response.",
   alternates: {
     canonical: "https://enterprisecleaningcorp.com/emergency-restoration-services-central-ma"
   }
@@ -53,7 +53,7 @@ const structuredDataFAQ = {
       "name": "What number do I call for a cleaning or flood emergency?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "For 24/7 emergency water, flood, fire, and cleanup response, call (508) 890-1000."
+        "text": "For 24/7 emergency water, flood, and cleanup response, call (508) 890-1000."
       }
     },
     {
@@ -136,7 +136,7 @@ export default function EmergencyRestorationPage() {
               
               <div className="text-base md:text-lg text-white/95 font-medium max-w-2xl leading-relaxed mt-6 drop-shadow-sm space-y-4 text-justify">
                 <p>
-                  Water, fire, and mold do not wait for business hours — and neither do we. When disaster strikes your facility, every hour counts. Standing water spreads. Smoke residue sets. Mold takes hold. Enterprise Cleaning Corporation provides 24/7 emergency cleanup across Central Massachusetts, with rapid response that limits damage, protects your property, and gets your building back to normal as fast as possible.
+                  Water and mold do not wait for business hours — and neither do we. When disaster strikes your facility, every hour counts. Standing water spreads. Mold takes hold. Enterprise Cleaning Corporation provides 24/7 emergency cleanup across Central Massachusetts, with rapid response that limits damage, protects your property, and gets your building back to normal as fast as possible.
                 </p>
                 <p>
                   Having a dedicated emergency division sets us apart from most cleaning companies. The same trusted, local team that keeps your building clean can also be the team you call when something goes wrong.
@@ -221,15 +221,6 @@ export default function EmergencyRestorationPage() {
               <p className="text-sm text-slate-600 leading-relaxed text-justify">Water and flood damage cleanup, extraction, and structural drying to stop damage in its tracks.</p>
             </div>
             
-            {/* Card 2 */}
-            <div className="bg-white p-8 rounded-3xl shadow-sm border border-slate-100 text-center hover:shadow-xl hover:border-[#00B8FF]/30 transition-all duration-300 group">
-              <div className="mx-auto w-16 h-16 rounded-2xl bg-slate-50 group-hover:bg-[#E31837]/10 transition-colors flex items-center justify-center mb-6">
-                <Flame className="w-8 h-8 text-[#E31837]" strokeWidth={1.5} />
-              </div>
-              <h3 className="text-lg font-bold text-slate-900 mb-3">Fire & Smoke</h3>
-              <p className="text-sm text-slate-600 leading-relaxed text-justify">Fire and smoke damage cleanup and odor removal to restore a healthy environment.</p>
-            </div>
-
             {/* Card 3 */}
             <div className="bg-white p-8 rounded-3xl shadow-sm border border-slate-100 text-center hover:shadow-xl hover:border-[#00B8FF]/30 transition-all duration-300 group">
               <div className="mx-auto w-16 h-16 rounded-2xl bg-slate-50 group-hover:bg-[#00B8FF]/10 transition-colors flex items-center justify-center mb-6">
@@ -310,7 +301,7 @@ export default function EmergencyRestorationPage() {
                     <h3 className="text-xl font-bold">Speed is Everything</h3>
                   </div>
                   <p className="text-white/80 leading-relaxed font-medium text-justify">
-                    Water migrates into walls, flooring, and structure within hours, and the longer it sits, the more damage it causes and the more expensive the recovery becomes. Mold can begin to develop quickly in damp conditions. Smoke and soot become harder to remove the longer they set. Our 24/7 availability and local presence mean we can begin extraction, drying, and stabilization quickly — limiting damage and lowering your total cost of recovery.
+                    Water migrates into walls, flooring, and structure within hours, and the longer it sits, the more damage it causes and the more expensive the recovery becomes. Mold can begin to develop quickly in damp conditions. Our 24/7 availability and local presence mean we can begin extraction, drying, and stabilization quickly — limiting damage and lowering your total cost of recovery.
                   </p>
                 </div>
               </div>
@@ -336,7 +327,7 @@ export default function EmergencyRestorationPage() {
                 </h2>
                 <div className="prose prose-lg text-slate-600 prose-p:leading-relaxed text-justify">
                   <p>
-                    Most commercial cleaning companies cannot help you when disaster strikes — they clean, and that is all. Having a full emergency division alongside our cleaning operation is a genuine differentiator, and it matters most at the worst possible moment. When a pipe bursts, a roof leaks, or a fire leaves smoke damage, you already have a trusted, local partner on call — one who knows your building and can respond fast.
+                    Most commercial cleaning companies cannot help you when disaster strikes — they clean, and that is all. Having a full emergency division alongside our cleaning operation is a genuine differentiator, and it matters most at the worst possible moment. When a pipe bursts or a roof leaks, you already have a trusted, local partner on call — one who knows your building and can respond fast.
                   </p>
                 </div>
               </div>
@@ -458,7 +449,6 @@ export default function EmergencyRestorationPage() {
               { icon: Clock, text: "24/7 Rapid Response" },
               { icon: ShieldCheck, text: "Direct Insurance Billing" },
               { icon: Droplets, text: "Water Extraction" },
-              { icon: Flame, text: "Fire Cleanup" },
             ].map((chip, i) => (
               <div
                 key={i}

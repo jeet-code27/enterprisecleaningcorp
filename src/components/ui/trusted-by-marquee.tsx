@@ -74,7 +74,7 @@ export function TrustedByMarquee() {
                   alt={logo.name}
                   width={logo.width}
                   height={logo.height}
-                  className="object-contain"
+                  className="object-contain w-auto h-auto"
                 />
               </div>
             </div>

@@ -7,7 +7,7 @@ import Link from "next/link";
 const features = [
   {
     icon: Handshake,
-    title: "Owner accountability",
+    title: "Organizational accountability",
     description: "When something needs attention, you reach Alex or Julio directly — not a franchise ticket number or a call center.",
   },
   {
