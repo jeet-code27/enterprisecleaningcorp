@@ -11,11 +11,23 @@ import { CTASection } from "@/components/blocks/cta-with-glow";
 import { RelatedServices } from "@/components/ui/related-services";
 
 export const metadata: Metadata = {
-  title: "Manufacturing & Industrial Cleaning Worcester MA",
+  title: { absolute: "Manufacturing & Industrial Cleaning Worcester MA" },
   description: "Specialized commercial cleaning for manufacturing plants and industrial facilities across Worcester and Central Massachusetts. Safety-focused, 97% retention.",
+  keywords: "commercial industrial cleaning Central MA, manufacturing facility janitorial, factory cleaners Worcester, industrial plant cleaning services, commercial warehouse cleaning",
   alternates: {
     canonical: "https://enterprisecleaningcorp.com/manufacturing-industrial-cleaning-central-ma"
-  }
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
 };
 
 const structuredDataService = {

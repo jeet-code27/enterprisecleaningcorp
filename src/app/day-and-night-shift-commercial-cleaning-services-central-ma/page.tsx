@@ -12,11 +12,23 @@ import { CTASection } from "@/components/blocks/cta-with-glow";
 import { RelatedIndustries } from "@/components/ui/related-industries";
 
 export const metadata: Metadata = {
-  title: "Day & Night Shift Cleaning | Central MA, RI & Southern NH",
+  title: { absolute: "Day & Night Shift Cleaning | Central MA, RI & Southern NH" },
   description: "Day porter and nightly janitorial cleaning under one contract, one crew, one point of contact — for offices and facilities across Central MA, Rhode Island & Southern NH.",
+  keywords: "commercial day porter services, night shift janitorial Central MA, 24 hour commercial cleaning Worcester, office day porter, day and night commercial cleaners",
   alternates: {
-    canonical: "https://enterprisecleaningcorp.com/nightly-janitorial-cleaning-central-ma"
-  }
+    canonical: "https://enterprisecleaningcorp.com/day-and-night-shift-commercial-cleaning-services-central-ma"
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
 };
 
 const structuredDataService = {
@@ -38,7 +50,7 @@ const structuredDataService = {
   },
   "areaServed": ["Central Massachusetts", "Rhode Island", "Southern New Hampshire"],
   "description": "Combined day porter and nightly janitorial cleaning for offices, medical facilities, and commercial buildings across Central Massachusetts, Rhode Island, and Southern New Hampshire.",
-  "url": "https://enterprisecleaningcorp.com/nightly-janitorial-cleaning-central-ma"
+  "url": "https://enterprisecleaningcorp.com/day-and-night-shift-commercial-cleaning-services-central-ma"
 };
 
 const structuredDataFAQ = {

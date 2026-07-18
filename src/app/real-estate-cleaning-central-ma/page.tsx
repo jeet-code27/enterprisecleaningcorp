@@ -16,11 +16,23 @@ import { CTASection } from "@/components/blocks/cta-with-glow";
 import { RelatedServices } from "@/components/ui/related-services";
 
 export const metadata: Metadata = {
-  title: "Real Estate Cleaning Services | Central MA, RI & Southern NH",
+  title: { absolute: "Real Estate Cleaning Services | Central MA, RI & Southern NH" },
   description: "Listing-ready cleaning for real estate agents, brokers & developers — vacant properties, staging prep, open houses & closings across Central MA, RI & NH.",
+  keywords: "commercial real estate cleaning Central MA, property showing cleaning services, real estate agency cleaners Worcester, commercial open house cleaning",
   alternates: {
     canonical: "https://enterprisecleaningcorp.com/real-estate-cleaning-central-ma"
-  }
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
 };
 
 const structuredDataService = {

@@ -8,8 +8,23 @@ import { ShieldCheck, Trophy, Users, Clock, ArrowRight } from "lucide-react";
 import { CTASection } from "@/components/blocks/cta-with-glow";
 
 export const metadata: Metadata = {
-  title: "About Us | Enterprise Cleaning Corporation",
-  description: "Learn about Enterprise Cleaning Corporation, the most trusted commercial cleaning company in Central Massachusetts since 2002.",
+  title: { absolute: "About Enterprise Cleaning │ 23+ Years Serving Central MA" },
+  description: "Meet the team behind Enterprise Cleaning Corporation — 23+ years serving Central MA, RI & Southern NH. 4x WBJ award winner, BBB accredited, 97% retention.",
+  keywords: "About Enterprise Cleaning Corporation, commercial cleaning Central MA, Stephen Buchalter, commercial cleaning team, BBB accredited cleaning company, 23 years experience, Worcester Business Journal award",
+  alternates: {
+    canonical: "https://www.enterprisecleaningcorp.com/about",
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
 };
 
 const aboutImages = [

@@ -13,11 +13,23 @@ import { CTASection } from "@/components/blocks/cta-with-glow";
 import { RelatedIndustries } from "@/components/ui/related-industries";
 
 export const metadata: Metadata = {
-  title: "Turnover Cleaning Services | Central MA, RI & Southern NH",
+  title: { absolute: "Turnover Cleaning Services | Central MA, RI & Southern NH" },
   description: "Fast move-in, move-out & tenant turnover cleaning for apartments, commercial suites & managed properties across Central MA, Rhode Island & Southern NH.",
+  keywords: "commercial turnover cleaning Central MA, apartment turnover cleaning services, commercial property turnover cleaners Worcester, tenant changeover cleaning",
   alternates: {
     canonical: "https://enterprisecleaningcorp.com/turnover-cleaning-central-ma"
-  }
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
 };
 
 const structuredDataService = {

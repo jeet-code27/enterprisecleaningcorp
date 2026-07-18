@@ -10,11 +10,23 @@ import { CTASection } from "@/components/blocks/cta-with-glow";
 import { RelatedIndustries } from "@/components/ui/related-industries";
 
 export const metadata: Metadata = {
-  title: "Window Cleaning & Pressure Washing Worcester MA",
+  title: { absolute: "Window Cleaning & Pressure Washing Worcester MA" },
   description: "Commercial window cleaning, pressure washing, and specialty services for buildings across Worcester and Central Massachusetts. Request a free quote today.",
+  keywords: "commercial window cleaning Central MA, commercial pressure washing Worcester, specialty commercial cleaning services, industrial power washing",
   alternates: {
     canonical: "https://enterprisecleaningcorp.com/specialty-cleaning-services-central-ma"
-  }
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
 };
 
 const structuredDataService = {

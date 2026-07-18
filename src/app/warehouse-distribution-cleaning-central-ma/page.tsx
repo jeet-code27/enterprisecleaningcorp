@@ -11,11 +11,23 @@ import { CTASection } from "@/components/blocks/cta-with-glow";
 import { RelatedServices } from "@/components/ui/related-services";
 
 export const metadata: Metadata = {
-  title: "Warehouse & Distribution Cleaning Worcester MA",
+  title: { absolute: "Warehouse & Distribution Cleaning Worcester MA" },
   description: "Commercial cleaning for warehouses and distribution centers across Worcester and Central Massachusetts. Safety-focused, large-scale, 97% retention.",
+  keywords: "commercial warehouse cleaning Central MA, distribution center janitorial services, industrial logistics cleaning Worcester, large scale commercial cleaners",
   alternates: {
     canonical: "https://enterprisecleaningcorp.com/warehouse-distribution-cleaning-central-ma"
-  }
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
 };
 
 const structuredDataService = {

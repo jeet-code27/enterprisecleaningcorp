@@ -16,7 +16,7 @@ export function EmergencyCTA() {
             <div className="inline-flex items-center justify-center gap-2 mb-2">
               <AlertTriangle className="size-5 text-[#FFE800] animate-pulse" />
               <span className="text-sm font-bold text-white tracking-widest uppercase drop-shadow-sm">
-                24/7 Emergency Response Division
+                24/7 Emergency Response Based Upon Availability
               </span>
             </div>
             <h2 className="text-xl md:text-2xl lg:text-3xl font-extrabold text-white mb-2 leading-tight">

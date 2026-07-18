@@ -30,7 +30,7 @@ export function Footer() {
             </h4>
             <ul className="space-y-3 text-sm text-slate-200">
               <li>
-                <Link href="/nightly-janitorial-cleaning-central-ma" className="hover:text-white/60 transition-colors">Night & Day Cleaning</Link>
+                <Link href="/day-and-night-shift-commercial-cleaning-services-central-ma" className="hover:text-white/60 transition-colors">Night & Day Cleaning</Link>
               </li>
               <li>
                 <Link href="/floor-care-services-central-ma" className="hover:text-white/60 transition-colors">Floor Care Services</Link>

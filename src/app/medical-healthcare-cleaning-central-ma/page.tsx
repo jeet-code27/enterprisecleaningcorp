@@ -11,11 +11,23 @@ import { CTASection } from "@/components/blocks/cta-with-glow";
 import { RelatedServices } from "@/components/ui/related-services";
 
 export const metadata: Metadata = {
-  title: "Medical & Healthcare Cleaning Worcester MA",
+  title: { absolute: "Medical & Healthcare Cleaning Worcester MA" },
   description: "Healthcare-grade cleaning and disinfection for medical offices, clinics, and labs across Worcester and Central Massachusetts. Compliance-focused, 97% retention.",
+  keywords: "commercial medical facility cleaning, healthcare clinic janitorial services, medical office cleaners Central MA, hospital cleaning Worcester, commercial cleaning services",
   alternates: {
     canonical: "https://enterprisecleaningcorp.com/medical-healthcare-cleaning-central-ma"
-  }
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
 };
 
 const structuredDataService = {

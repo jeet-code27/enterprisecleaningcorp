@@ -11,11 +11,23 @@ import { CTASection } from "@/components/blocks/cta-with-glow";
 import { RelatedServices } from "@/components/ui/related-services";
 
 export const metadata: Metadata = {
-  title: "Office & Bank Cleaning Worcester & Central MA",
+  title: { absolute: "Office & Bank Cleaning Worcester & Central MA" },
   description: "Professional cleaning for corporate offices, banks, and financial institutions across Worcester and Central Massachusetts. Discreet, reliable, 97% retention.",
+  keywords: "commercial office cleaning Central MA, financial institution janitorial services, bank cleaning Worcester, corporate office cleaners, commercial cleaning services",
   alternates: {
     canonical: "https://enterprisecleaningcorp.com/office-financial-cleaning-central-ma"
-  }
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
 };
 
 const structuredDataService = {

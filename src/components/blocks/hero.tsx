@@ -80,9 +80,9 @@ export const Hero = () => {
                 backgroundClip: "text",
               }}
             >
-              Commercial Cleaning &amp;
+              Commercial Cleaning,
             </span>
-            <br />Janitorial Company
+            <br />Day &amp; Night Cleaning Company
           </h1>
         </motion.div>
 

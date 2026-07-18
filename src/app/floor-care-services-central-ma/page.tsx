@@ -10,11 +10,23 @@ import { CTASection } from "@/components/blocks/cta-with-glow";
 import { RelatedIndustries } from "@/components/ui/related-industries";
 
 export const metadata: Metadata = {
-  title: "Commercial Floor Care Central MA",
+  title: { absolute: "Commercial Floor Care Central MA" },
   description: "Strip and wax, VCT, carpet care, and hard-floor maintenance for commercial buildings across Central Massachusetts. Free assessment available.",
+  keywords: "commercial floor care Central MA, VCT stripping and waxing, commercial carpet cleaning Worcester, industrial floor maintenance, commercial floor cleaning services",
   alternates: {
     canonical: "https://enterprisecleaningcorp.com/floor-care-services-central-ma"
-  }
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
 };
 
 const structuredDataService = {

@@ -202,7 +202,7 @@ export function PostEditor({ initialData, isEdit = false }: PostEditorProps) {
 
   // Static core website pages for quick linking
   const servicePages = [
-    { title: "Night & Day Cleaning", path: "/nightly-janitorial-cleaning-central-ma" },
+    { title: "Night & Day Cleaning", path: "/day-and-night-shift-commercial-cleaning-services-central-ma" },
     { title: "Floor Care Services", path: "/floor-care-services-central-ma" },
     { title: "Deep Cleaning", path: "/deep-cleaning-services-central-ma" },
     { title: "Flood Cleanup", path: "/emergency-restoration-services-central-ma" },

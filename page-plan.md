@@ -5,7 +5,7 @@
 - [x] Update Footer with new Services & Industries Links
 
 ## 2. Core Service Pages
-- [x] `Nightly Janitorial Cleaning` (/nightly-janitorial-cleaning-central-ma)
+- [x] `Nightly Janitorial Cleaning` (/day-and-night-shift-commercial-cleaning-services-central-ma)
 - [ ] `Day Porter Services` (/day-porter-services-central-ma)
 - [ ] `Floor Care Services` (/floor-care-services-central-ma)
 - [ ] `Specialty Services (Window Cleaning & Pressure Washing)` (/specialty-cleaning-services-central-ma)

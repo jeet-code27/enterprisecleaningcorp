@@ -11,11 +11,23 @@ import { CTASection } from "@/components/blocks/cta-with-glow";
 import { RelatedServices } from "@/components/ui/related-services";
 
 export const metadata: Metadata = {
-  title: "School & Municipal Cleaning Worcester MA",
+  title: { absolute: "School & Municipal Cleaning Worcester MA" },
   description: "Cleaning for schools, universities, and municipal buildings across Worcester and Central Massachusetts. Healthy environments, reliable service, 97% retention.",
+  keywords: "commercial school cleaning Central MA, municipal building janitorial services, university cleaners Worcester, educational facility commercial cleaning",
   alternates: {
     canonical: "https://enterprisecleaningcorp.com/school-municipal-cleaning-central-ma"
-  }
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
 };
 
 const structuredDataService = {

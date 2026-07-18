@@ -15,11 +15,23 @@ import { CTASection } from "@/components/blocks/cta-with-glow";
 import { RelatedIndustries } from "@/components/ui/related-industries";
 
 export const metadata: Metadata = {
-  title: "Post-Construction Cleaning Services | Central MA, RI & Southern NH",
+  title: { absolute: "Post-Construction Cleaning Services | Central MA, RI & Southern NH" },
   description: "Rough, final & touch-up post-construction cleaning for contractors, developers & building owners across Central MA, Rhode Island & Southern NH. Get a free quote.",
+  keywords: "commercial post-construction cleaning Central MA, new build cleaning services, commercial renovation cleanup Worcester, construction site final cleaning",
   alternates: {
     canonical: "https://enterprisecleaningcorp.com/post-construction-cleaning-central-ma"
-  }
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
 };
 
 const structuredDataService = {

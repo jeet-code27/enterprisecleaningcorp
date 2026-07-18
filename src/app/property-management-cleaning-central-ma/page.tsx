@@ -12,11 +12,23 @@ import { CTASection } from "@/components/blocks/cta-with-glow";
 import { RelatedServices } from "@/components/ui/related-services";
 
 export const metadata: Metadata = {
-  title: "Property Management Cleaning Worcester MA",
+  title: { absolute: "Property Management Cleaning Worcester MA" },
   description: "Janitorial, common-area, and turnover cleaning for property managers across Worcester and Central Massachusetts. One reliable partner, 97% retention.",
+  keywords: "commercial property management cleaning Central MA, multi-tenant building janitorial, common area commercial cleaning Worcester, HOA cleaning services",
   alternates: {
     canonical: "https://enterprisecleaningcorp.com/property-management-cleaning-central-ma"
-  }
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
 };
 
 const structuredDataService = {

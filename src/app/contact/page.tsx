@@ -6,11 +6,23 @@ import Link from "next/link";
 import { CTASection } from "@/components/blocks/cta-with-glow";
 
 export const metadata: Metadata = {
-  title: "Contact Us | Enterprise Cleaning Corporation",
-  description: "Get in touch with Enterprise Cleaning Corporation for a free on-site assessment and quote in Central Massachusetts.",
+  title: { absolute: "Contact Enterprise Cleaning │ Free Quote, Central MA & RI" },
+  description: "Request a free on-site quote from Enterprise Cleaning Corporation. Serving Central MA, Rhode Island & Southern NH. Call (508) 890-1000 or submit a form.",
+  keywords: "Contact Enterprise Cleaning Corporation, free commercial cleaning quote, cleaning services Central MA, janitorial quote Rhode Island",
   alternates: {
-    canonical: "https://enterprisecleaningcorp.com/contact"
-  }
+    canonical: "https://www.enterprisecleaningcorp.com/contact",
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
 };
 
 export default function ContactPage() {
@@ -35,7 +47,7 @@ export default function ContactPage() {
               <span className="text-sm font-bold text-[#0090c8] tracking-[0.1em] uppercase">We Are Here To Help</span>
             </div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight leading-[1.1] text-slate-900">
-              Contact <span className="text-[#0090c8]">Enterprise Cleaning</span>
+              Get a Free Commercial Cleaning Quote in <span className="text-[#0090c8]">Central Massachusetts</span>
             </h1>
             <p className="text-lg md:text-xl text-slate-600 font-medium leading-relaxed">
               Ready for a cleaner, safer, and more professional facility? Reach out to our team today for a free, no-obligation on-site assessment.

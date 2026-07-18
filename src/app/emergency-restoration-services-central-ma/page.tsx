@@ -10,11 +10,23 @@ import { CTASection } from "@/components/blocks/cta-with-glow";
 import { RelatedIndustries } from "@/components/ui/related-industries";
 
 export const metadata: Metadata = {
-  title: "24/7 Water Cleanup Worcester MA",
+  title: { absolute: "24/7 Water Cleanup Worcester MA" },
   description: "24/7 emergency water, flood, and mold cleanup across Worcester and Central Massachusetts. Call (508) 890-1000 for rapid response.",
+  keywords: "commercial emergency cleanup Central MA, 24/7 commercial water damage restoration, industrial flood cleanup Worcester, commercial disaster recovery cleaning",
   alternates: {
     canonical: "https://enterprisecleaningcorp.com/emergency-restoration-services-central-ma"
-  }
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
 };
 
 const structuredDataService = {

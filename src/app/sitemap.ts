@@ -8,7 +8,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   // Static Routes
   const coreRoutes = ["", "/about", "/contact", "/blog"];
   const serviceRoutes = [
-    "/nightly-janitorial-cleaning-central-ma",
+    "/day-and-night-shift-commercial-cleaning-services-central-ma",
     "/floor-care-services-central-ma",
     "/specialty-cleaning-services-central-ma",
     "/emergency-restoration-services-central-ma",
