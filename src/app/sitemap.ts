@@ -2,7 +2,7 @@ import { MetadataRoute } from "next";
 import dbConnect from "@/lib/mongoose";
 import Post from "@/models/Post";
 
-const baseUrl = process.env.NEXT_PUBLIC_APP_URL || "https://enterprisecleaningcorp.vercel.app";
+const baseUrl = process.env.NEXT_PUBLIC_APP_URL || "https://www.enterprisecleaningcorp.com";
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   // Static Routes
