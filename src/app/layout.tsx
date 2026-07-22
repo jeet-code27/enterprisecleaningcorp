@@ -2,9 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Script from "next/script";
-import { Header } from "@/components/header";
-import { Footer } from "@/components/footer";
-import { FloatingContact } from "@/components/floating-contact";
+import { LayoutWrapper } from "@/components/layout-wrapper";
 import AuthProvider from "@/components/auth-provider";
 
 const geistSans = Geist({
@@ -74,10 +72,7 @@ export default function RootLayout({
           />
         </noscript>
         <AuthProvider>
-          <Header />
-          <main className="flex-1">{children}</main>
-          <Footer />
-          <FloatingContact />
+          <LayoutWrapper>{children}</LayoutWrapper>
         </AuthProvider>
       </body>
     </html>

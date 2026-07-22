@@ -4,6 +4,7 @@ import {
 } from "lucide-react";
 import Link from "next/link";
 import { CTASection } from "@/components/blocks/cta-with-glow";
+import { ContactForm } from "@/components/forms/ContactForm";
 
 export const metadata: Metadata = {
   title: { absolute: "Contact Enterprise Cleaning │ Free Quote, Central MA & RI" },
@@ -143,62 +144,7 @@ export default function ContactPage() {
             </div>
 
             {/* Contact Form */}
-            <div className="bg-white p-8 md:p-10 rounded-3xl shadow-xl border border-slate-100">
-              <h3 className="text-2xl font-bold text-slate-900 mb-6">Request a Free Quote</h3>
-              <form className="space-y-6">
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                  <div className="space-y-2">
-                    <label htmlFor="firstName" className="text-sm font-bold text-slate-700">First Name *</label>
-                    <input type="text" id="firstName" className="w-full px-4 py-3 rounded-xl border border-slate-200 focus:outline-none focus:ring-2 focus:ring-[#00B8FF]/50 focus:border-[#00B8FF] transition-all bg-slate-50 focus:bg-white" placeholder="John" required />
-                  </div>
-                  <div className="space-y-2">
-                    <label htmlFor="lastName" className="text-sm font-bold text-slate-700">Last Name *</label>
-                    <input type="text" id="lastName" className="w-full px-4 py-3 rounded-xl border border-slate-200 focus:outline-none focus:ring-2 focus:ring-[#00B8FF]/50 focus:border-[#00B8FF] transition-all bg-slate-50 focus:bg-white" placeholder="Doe" required />
-                  </div>
-                </div>
-
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                  <div className="space-y-2">
-                    <label htmlFor="email" className="text-sm font-bold text-slate-700">Email Address *</label>
-                    <input type="email" id="email" className="w-full px-4 py-3 rounded-xl border border-slate-200 focus:outline-none focus:ring-2 focus:ring-[#00B8FF]/50 focus:border-[#00B8FF] transition-all bg-slate-50 focus:bg-white" placeholder="john@company.com" required />
-                  </div>
-                  <div className="space-y-2">
-                    <label htmlFor="phone" className="text-sm font-bold text-slate-700">Phone Number *</label>
-                    <input type="tel" id="phone" className="w-full px-4 py-3 rounded-xl border border-slate-200 focus:outline-none focus:ring-2 focus:ring-[#00B8FF]/50 focus:border-[#00B8FF] transition-all bg-slate-50 focus:bg-white" placeholder="(508) 555-0123" required />
-                  </div>
-                </div>
-
-                <div className="space-y-2">
-                  <label htmlFor="company" className="text-sm font-bold text-slate-700">Company Name</label>
-                  <input type="text" id="company" className="w-full px-4 py-3 rounded-xl border border-slate-200 focus:outline-none focus:ring-2 focus:ring-[#00B8FF]/50 focus:border-[#00B8FF] transition-all bg-slate-50 focus:bg-white" placeholder="Your Company LLC" />
-                </div>
-
-                <div className="space-y-2">
-                  <label htmlFor="service" className="text-sm font-bold text-slate-700">Service of Interest *</label>
-                  <select id="service" className="w-full px-4 py-3 rounded-xl border border-slate-200 focus:outline-none focus:ring-2 focus:ring-[#00B8FF]/50 focus:border-[#00B8FF] transition-all bg-slate-50 focus:bg-white text-slate-700" required>
-                    <option value="">Select a service...</option>
-                    <option value="nightly">Nightly Janitorial</option>
-                    <option value="day-porter">Day Porter & Matron</option>
-                    <option value="floor-care">Floor & Carpet Care</option>
-                    <option value="emergency">Emergency Cleanup</option>
-                    <option value="other">Other Service</option>
-                  </select>
-                </div>
-
-                <div className="space-y-2">
-                  <label htmlFor="message" className="text-sm font-bold text-slate-700">How can we help? *</label>
-                  <textarea id="message" rows={4} className="w-full px-4 py-3 rounded-xl border border-slate-200 focus:outline-none focus:ring-2 focus:ring-[#00B8FF]/50 focus:border-[#00B8FF] transition-all bg-slate-50 focus:bg-white resize-none" placeholder="Tell us about your facility and cleaning needs..." required></textarea>
-                </div>
-
-                <button type="submit" className="w-full bg-[#0090c8] hover:bg-[#00B8FF] text-white font-bold text-lg py-4 rounded-xl shadow-lg hover:shadow-xl transition-all flex items-center justify-center gap-2 group">
-                  Send Message
-                  <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
-                </button>
-                <p className="text-xs text-center text-slate-500 font-medium">
-                  We usually respond within 24 business hours.
-                </p>
-              </form>
-            </div>
+            <ContactForm />
             
           </div>
         </div>

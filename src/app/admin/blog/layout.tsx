@@ -4,14 +4,16 @@ import { useSession, signOut } from "next-auth/react";
 import { useRouter } from "next/navigation";
 import { useEffect } from "react";
 import Link from "next/link";
-import { LayoutDashboard, FileText, Tags, Image as ImageIcon, LogOut, Loader2 } from "lucide-react";
+import { LayoutDashboard, FileText, Tags, Image as ImageIcon, LogOut, Loader2, MessageSquare } from "lucide-react";
 import { usePathname } from "next/navigation";
+import Image from "next/image";
 
 const navigation = [
   { name: "Dashboard", href: "/admin/blog", icon: LayoutDashboard },
   { name: "Posts", href: "/admin/blog/posts", icon: FileText },
   { name: "Categories & Tags", href: "/admin/blog/categories", icon: Tags },
   { name: "Media Library", href: "/admin/blog/media", icon: ImageIcon },
+  { name: "Submissions", href: "/admin/blog/submissions", icon: MessageSquare },
 ];
 
 export default function AdminBlogLayout({
@@ -42,7 +44,15 @@ export default function AdminBlogLayout({
       {/* Sidebar */}
       <aside className="w-64 bg-card border-r border-border hidden md:flex flex-col sticky top-0 h-screen shrink-0">
         <div className="p-6 border-b border-border">
-          <h2 className="text-xl font-bold text-brand-navy">Enterprise Admin</h2>
+          <Link href="/" className="hover:opacity-80 transition-opacity block">
+            <Image 
+              src="/images/logo.png" 
+              alt="Enterprise Cleaning Corp" 
+              width={180} 
+              height={50} 
+              className="h-10 w-auto object-contain"
+            />
+          </Link>
         </div>
         <nav className="flex-1 p-4 space-y-1">
           {navigation.map((item) => {
