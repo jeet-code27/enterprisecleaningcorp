@@ -113,8 +113,8 @@ export function Footer() {
         <div className="border-t border-white/30 pt-8 flex flex-col md:flex-row items-center justify-between text-xs text-white/70">
           <p>© {new Date().getFullYear()} Enterprise Cleaning Corporation. All rights reserved.</p>
           <div className="flex items-center gap-4 mt-4 md:mt-0">
-            <Link href="#" className="hover:text-white transition-colors">Privacy Policy</Link>
-            <Link href="#" className="hover:text-white transition-colors">Terms of Service</Link>
+            <Link href="/privacy-policy" className="hover:text-white transition-colors">Privacy Policy</Link>
+            <Link href="/terms-and-conditions" className="hover:text-white transition-colors">Terms of Service</Link>
           </div>
         </div>
       </div>
