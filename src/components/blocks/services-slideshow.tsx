@@ -28,7 +28,7 @@ const SLIDES = [
     id: "slide-3",
     title: "Deep Cleaning",
     imageUrl: "/images/service_porter.png",
-    href: "/deep-cleaning-services-central-ma",
+    href: "/specialty-cleaning-services-central-ma",
   },
   {
     id: "slide-4",

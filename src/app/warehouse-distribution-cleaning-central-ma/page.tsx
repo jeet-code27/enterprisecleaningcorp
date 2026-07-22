@@ -137,11 +137,11 @@ export default function WarehouseCleaningPage() {
                 <span className="text-[#0090c8]">Center Cleaning</span>
               </h1>
               
-              <p className="text-lg text-slate-600 font-medium leading-relaxed text-justify">
+              <p className="text-lg text-slate-600 font-medium leading-relaxed text-left">
                 Warehouses and distribution centers are demanding environments — large footprints, constant movement, dust, debris, and heavy floor wear, all operating on tight logistics schedules. A clean, well-maintained facility is not just about appearance; it supports safety, protects inventory, and keeps operations running smoothly. Enterprise Cleaning Corporation provides large-scale cleaning for warehouses and distribution centers across Central Massachusetts, built around the realities of a working logistics operation.
               </p>
 
-              <p className="text-lg text-slate-600 font-medium leading-relaxed text-justify">
+              <p className="text-lg text-slate-600 font-medium leading-relaxed text-left">
                 Central MA sits at the crossroads of New England’s distribution network, and the region’s warehouses run around the clock. We build cleaning programs that fit those schedules and keep these big, busy buildings clean, safe, and efficient.
               </p>
               
@@ -211,7 +211,7 @@ export default function WarehouseCleaningPage() {
                 <div className="w-14 h-14 rounded-full bg-white shadow-sm flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform">
                   <item.icon className="w-6 h-6 text-[#0090c8]" />
                 </div>
-                <p className="text-slate-700 font-medium leading-relaxed pt-3 text-justify">
+                <p className="text-slate-700 font-medium leading-relaxed pt-3 text-left">
                   {item.text}
                 </p>
               </div>
@@ -231,7 +231,7 @@ export default function WarehouseCleaningPage() {
                 <h2 className="text-3xl font-extrabold text-slate-900 leading-tight mb-6">
                   Safety, Scale, and <span className="text-[#0090c8]">Reliability</span>
                 </h2>
-                <div className="prose prose-lg text-slate-600 prose-p:leading-relaxed text-justify">
+                <div className="prose prose-lg text-slate-600 prose-p:leading-relaxed text-left">
                   <p>
                     Cleanliness in a warehouse is directly tied to safety. Dust control, clean floors, and clear, well-maintained walkways reduce hazards in a fast-moving environment. Our crews work around your equipment and logistics flow, follow site safety protocols, and keep the facility clean without slowing the operation.
                   </p>
@@ -271,7 +271,7 @@ export default function WarehouseCleaningPage() {
                   <ShieldCheck className="w-10 h-10 text-[#FFE800]" />
                   <h3 className="text-2xl font-bold">Genuine Capacity</h3>
                 </div>
-                <p className="text-white/90 leading-relaxed text-lg font-medium text-justify">
+                <p className="text-white/90 leading-relaxed text-lg font-medium text-left">
                   Large facilities also demand a partner with genuine capacity. Cleaning an enormous footprint to a consistent standard, across multiple shifts, around active logistics, is not something every cleaning company can deliver. We have the equipment, the crews, and the operational discipline to maintain big, busy buildings reliably — and our managed model ensures the standard holds across every shift and every square foot.
                 </p>
               </div>
@@ -280,7 +280,7 @@ export default function WarehouseCleaningPage() {
                 <h2 className="text-3xl font-extrabold text-slate-900 leading-tight mb-6">
                   Cleanliness That Supports <span className="text-[#E31837]">Safety & Throughput</span>
                 </h2>
-                <div className="prose prose-lg text-slate-600 prose-p:leading-relaxed text-justify">
+                <div className="prose prose-lg text-slate-600 prose-p:leading-relaxed text-left">
                   <p>
                     In a warehouse or distribution center, cleanliness is a safety and efficiency issue first and an appearance issue second. Dust accumulation, debris, and poorly maintained floors create real hazards in an environment full of forklifts, pallet jacks, and constant movement. Clean, clear floors and well-maintained walkways reduce the risk of slips, trips, and equipment incidents — protecting both your workforce and your operation’s throughput.
                   </p>
@@ -316,7 +316,7 @@ export default function WarehouseCleaningPage() {
             <h2 className="text-3xl md:text-5xl font-extrabold text-white leading-tight mb-6 drop-shadow-lg">
               Cleaning Built For Large-Scale Logistics
             </h2>
-            <p className="text-lg text-white/90 font-medium leading-relaxed max-w-4xl mx-auto text-justify drop-shadow-md">
+            <p className="text-lg text-white/90 font-medium leading-relaxed max-w-4xl mx-auto text-left drop-shadow-md">
               From the distribution corridors around Worcester to facilities in Shrewsbury, Auburn, Westborough, Marlborough, and across Central MA, we keep warehouses and distribution centers clean, safe, and running. We bring 97% client retention, four Worcester Business Journal “Best of Business” awards, and BBB accreditation since 2007 to every facility and serve Massachusetts, Rhode Island, and New Hampshire.
             </p>
           </div>
@@ -358,7 +358,7 @@ export default function WarehouseCleaningPage() {
                     <span className="text-[#0090c8] shrink-0 mt-0.5 text-xl">Q:</span>
                     {faq.name}
                   </h3>
-                  <p className="text-slate-600 pl-8 leading-relaxed font-medium text-justify">
+                  <p className="text-slate-600 pl-8 leading-relaxed font-medium text-left">
                     <span className="font-bold text-slate-400 mr-2">A:</span>
                     {faq.acceptedAnswer.text}
                   </p>
@@ -380,7 +380,7 @@ export default function WarehouseCleaningPage() {
         }}
       >
         <div className="flex flex-col items-center gap-6">
-          <p className="text-lg text-slate-600 max-w-2xl font-medium leading-relaxed text-justify">
+          <p className="text-lg text-slate-600 max-w-2xl font-medium leading-relaxed text-left">
             Call (508) 890-1000 today, and we will scope your facility and provide a comprehensive proposal designed around your logistics operations.
           </p>
           <div className="flex flex-wrap justify-center gap-3 pt-2 animate-appear delay-100">

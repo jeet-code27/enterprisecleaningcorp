@@ -183,7 +183,7 @@ export default function NightAndDayCleaningPage() {
                 <span className="text-[#FFE800] text-3xl md:text-4xl lg:text-5xl">in Central Massachusetts, Rhode Island & Southern New Hampshire</span>
               </h1>
               
-              <div className="text-base md:text-lg text-white/95 font-medium max-w-2xl leading-relaxed mt-6 drop-shadow-sm space-y-4 text-justify">
+              <div className="text-base md:text-lg text-white/95 font-medium max-w-2xl leading-relaxed mt-6 drop-shadow-sm space-y-4 text-left">
                 <p>
                   Some buildings need to be spotless before the first employee badges in. Others need a visible presence throughout the business day — restocking restrooms, resetting conference rooms, and handling the small messes that happen when a facility is full of people. Most buildings need both.
                 </p>
@@ -244,7 +244,7 @@ export default function NightAndDayCleaningPage() {
                       </svg>
                     ))}
                   </div>
-                  <p className="text-xs text-slate-400 mt-3 font-medium text-justify">
+                  <p className="text-xs text-slate-400 mt-3 font-medium text-left">
                     Whether you need a thorough nightly clean, a day porter on-site during business hours, or both working together, the program is built around your building, not a generic template.
                   </p>
                 </div>
@@ -260,7 +260,7 @@ export default function NightAndDayCleaningPage() {
         <div className="container mx-auto px-4 md:px-6">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-3xl font-extrabold text-[#003057] mb-6">Two Shifts, One Program</h2>
-            <p className="text-lg text-slate-600 leading-relaxed text-justify">
+            <p className="text-lg text-slate-600 leading-relaxed text-left">
               Night shift and day shift cleaning solve different problems, and treating them as one combined program — rather than two separate line items — is what keeps a facility consistently presentable instead of clean only right after the crew leaves. Our night shift team handles the deep, disruptive work that is best done after hours: full restroom sanitizing, floor care, trash removal, and disinfecting of high-touch surfaces throughout the building. Our day shift team, sometimes called day porter coverage, is on-site during business hours to maintain what the night crew already set up — checking restrooms between visits, keeping lobbies and common areas presentable, resetting conference rooms between meetings, and responding immediately to spills, weather tracked in from the parking lot, or anything else that would otherwise sit until the next night's visit.
             </p>
           </div>
@@ -339,7 +339,7 @@ export default function NightAndDayCleaningPage() {
                 <h2 className="text-3xl font-extrabold text-slate-900 leading-tight mb-6">
                   Why Some Buildings Need Both Shifts
                 </h2>
-                <div className="prose prose-lg text-slate-600 prose-p:leading-relaxed text-justify">
+                <div className="prose prose-lg text-slate-600 prose-p:leading-relaxed text-left">
                   <p>
                     A single overnight visit works well for a small office with light daytime traffic. It works far less well for a corporate headquarters, a medical building, a busy retail location, or a manufacturing facility running multiple shifts, where hundreds of people move through the same restrooms, lobbies, and common areas over the course of a single day.
                   </p>
@@ -359,7 +359,7 @@ export default function NightAndDayCleaningPage() {
                     <h3 className="text-xl font-bold">A Managed Model</h3>
                   </div>
                   <h4 className="font-bold text-lg mb-2">So You Do Not Have to Manage the Cleaners</h4>
-                  <p className="text-white/80 leading-relaxed font-medium text-justify">
+                  <p className="text-white/80 leading-relaxed font-medium text-left">
                     Many cleaning companies hand a facility a crew and walk away. We manage our own cleaners, across both shifts, so you never have to. Every account has supervision, quality checks, and a direct line to the people who own the company — not a franchise ticket number or a national call center.
                   </p>
                 </div>
@@ -375,10 +375,10 @@ export default function NightAndDayCleaningPage() {
                   </div>
                   <h3 className="text-xl font-bold text-slate-900">Built Around Your Industry</h3>
                 </div>
-                <p className="text-slate-600 leading-relaxed font-medium text-justify mb-4">
+                <p className="text-slate-600 leading-relaxed font-medium text-left mb-4">
                   No two facilities run on the same schedule, so no two day-and-night programs should look identical. A corporate office, a medical practice, a manufacturing plant, and a multi-tenant property each have different traffic patterns and priorities. Before we quote a combined program, we walk the building, learn how it is actually used throughout the day, and design shift coverage that matches.
                 </p>
-                <p className="text-slate-600 leading-relaxed font-medium text-justify">
+                <p className="text-slate-600 leading-relaxed font-medium text-left">
                   Our experience spans corporate offices, financial institutions, healthcare facilities, schools, manufacturing sites, warehouses, and managed properties throughout the region. We understand the rhythm of your building type before we ever start.
                 </p>
               </div>
@@ -387,7 +387,7 @@ export default function NightAndDayCleaningPage() {
                 <h2 className="text-3xl font-extrabold text-slate-900 leading-tight mb-6">
                   Quality Control Across Both Shifts
                 </h2>
-                <div className="prose prose-lg text-slate-600 prose-p:leading-relaxed text-justify">
+                <div className="prose prose-lg text-slate-600 prose-p:leading-relaxed text-left">
                   <p>
                     A combined day-and-night program is only as good as the oversight behind it, which is why every account gets regular quality inspections that cover both shifts, not just the overnight visit.
                   </p>
@@ -416,7 +416,7 @@ export default function NightAndDayCleaningPage() {
             <h2 className="text-3xl md:text-5xl font-extrabold text-white leading-tight mb-6">
               Serving Central Massachusetts, Rhode Island & Southern New Hampshire
             </h2>
-            <p className="text-lg text-white/80 font-medium leading-relaxed max-w-4xl mx-auto text-justify">
+            <p className="text-lg text-white/80 font-medium leading-relaxed max-w-4xl mx-auto text-left">
               We provide combined day and night shift cleaning throughout Worcester, Shrewsbury, Auburn, Holden, Westborough, Marlborough, and the rest of Central Massachusetts, as well as across Rhode Island — including Providence, Cranston, Pawtucket, and Woonsocket — and Southern New Hampshire, including Nashua, Manchester, and Salem. Wherever your building sits, the program is built around the same 97% retention rate, four Worcester Business Journal awards, and BBB accreditation since 2007 that our clients have relied on for more than two decades.
             </p>
           </div>

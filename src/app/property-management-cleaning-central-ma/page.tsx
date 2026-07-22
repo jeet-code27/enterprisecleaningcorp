@@ -138,11 +138,11 @@ export default function PropertyManagementPage() {
                 <span className="text-[#0090c8]">Cleaning</span>
               </h1>
               
-              <p className="text-lg text-slate-600 font-medium leading-relaxed text-justify">
+              <p className="text-lg text-slate-600 font-medium leading-relaxed text-left">
                 For property managers, a clean building is a competitive advantage. Spotless common areas, well-maintained restrooms, and pristine lobbies keep tenants happy, protect property value, and make leasing easier. Enterprise Cleaning Corporation partners with property managers across Central Massachusetts to keep commercial, multi-tenant, and mixed-use properties looking their best — and to take cleaning off the property manager’s plate entirely.
               </p>
 
-              <p className="text-lg text-slate-600 font-medium leading-relaxed text-justify">
+              <p className="text-lg text-slate-600 font-medium leading-relaxed text-left">
                 We know property managers juggle dozens of responsibilities and vendors. Our goal is to be the one cleaning partner you never have to think about: reliable, accountable, and able to handle everything from nightly janitorial to floor care, window cleaning, tenant turnover, and emergency cleanup under a single point of contact.
               </p>
               
@@ -212,7 +212,7 @@ export default function PropertyManagementPage() {
                 <div className="w-14 h-14 rounded-full bg-white shadow-sm flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform">
                   <item.icon className="w-6 h-6 text-[#0090c8]" />
                 </div>
-                <p className="text-slate-700 font-medium leading-relaxed pt-3 text-justify">
+                <p className="text-slate-700 font-medium leading-relaxed pt-3 text-left">
                   {item.text}
                 </p>
               </div>
@@ -232,7 +232,7 @@ export default function PropertyManagementPage() {
                 <h2 className="text-3xl font-extrabold text-slate-900 leading-tight mb-6">
                   One Partner, <span className="text-[#0090c8]">One Point of Contact</span>
                 </h2>
-                <div className="prose prose-lg text-slate-600 prose-p:leading-relaxed text-justify">
+                <div className="prose prose-lg text-slate-600 prose-p:leading-relaxed text-left">
                   <p>
                     The biggest advantage we offer property managers is consolidation. Instead of coordinating separate vendors for janitorial, floors, windows, turnovers, and emergencies, you have one accountable partner who knows your portfolio. That simplifies your life, ensures consistent standards across the property, and gives you a single number to call when something needs attention.
                   </p>
@@ -272,7 +272,7 @@ export default function PropertyManagementPage() {
                   <HeartPulse className="w-10 h-10 text-[#FFE800]" />
                   <h3 className="text-2xl font-bold">Tenant Satisfaction</h3>
                 </div>
-                <p className="text-white/90 leading-relaxed text-lg font-medium text-justify">
+                <p className="text-white/90 leading-relaxed text-lg font-medium text-left">
                   We understand the property manager’s world: many buildings, many vendors, many fires to put out, and limited time. Our entire approach is designed to take cleaning off your plate completely. We hold a consistent standard across every common area, communicate proactively, and resolve issues quickly through a single point of contact — so a clean building is one less thing you ever have to manage or worry about.
                 </p>
               </div>
@@ -281,7 +281,7 @@ export default function PropertyManagementPage() {
                 <h2 className="text-3xl font-extrabold text-slate-900 leading-tight mb-6">
                   Cleanliness That Protects <span className="text-[#E31837]">Tenants & Asset Value</span>
                 </h2>
-                <div className="prose prose-lg text-slate-600 prose-p:leading-relaxed text-justify">
+                <div className="prose prose-lg text-slate-600 prose-p:leading-relaxed text-left">
                   <p>
                     For a property manager, cleanliness is directly tied to two things that matter most: tenant satisfaction and asset value. Tenants judge a building by its common areas — the lobby they walk through, the restroom they use, the elevator they ride. A consistently clean, well-maintained property keeps existing tenants happy and renewing, and it makes vacant space far easier to lease. A neglected one does the opposite, quietly eroding both occupancy and value.
                   </p>
@@ -317,7 +317,7 @@ export default function PropertyManagementPage() {
             <h2 className="text-3xl md:text-5xl font-extrabold text-white leading-tight mb-6 drop-shadow-lg">
               One Partner For Your Entire Portfolio
             </h2>
-            <p className="text-lg text-white/90 font-medium leading-relaxed max-w-4xl mx-auto text-justify drop-shadow-md">
+            <p className="text-lg text-white/90 font-medium leading-relaxed max-w-4xl mx-auto text-left drop-shadow-md">
               We work with property managers throughout Worcester and Central Massachusetts — Shrewsbury, Auburn, Holden, Westborough, Marlborough, and the surrounding region — keeping commercial and multi-tenant properties immaculate. We bring 97% client retention, four Worcester Business Journal “Best of Business” awards, and BBB accreditation since 2007 to every property and serve Massachusetts, Rhode Island, and New Hampshire.
             </p>
           </div>
@@ -359,7 +359,7 @@ export default function PropertyManagementPage() {
                     <span className="text-[#0090c8] shrink-0 mt-0.5 text-xl">Q:</span>
                     {faq.name}
                   </h3>
-                  <p className="text-slate-600 pl-8 leading-relaxed font-medium text-justify">
+                  <p className="text-slate-600 pl-8 leading-relaxed font-medium text-left">
                     <span className="font-bold text-slate-400 mr-2">A:</span>
                     {faq.acceptedAnswer.text}
                   </p>
@@ -381,7 +381,7 @@ export default function PropertyManagementPage() {
         }}
       >
         <div className="flex flex-col items-center gap-6">
-          <p className="text-lg text-slate-600 max-w-2xl font-medium leading-relaxed text-justify">
+          <p className="text-lg text-slate-600 max-w-2xl font-medium leading-relaxed text-left">
             Call (508) 890-1000 today, and we will build a cleaning and maintenance program around your property or portfolio.
           </p>
           <div className="flex flex-wrap justify-center gap-3 pt-2 animate-appear delay-100">

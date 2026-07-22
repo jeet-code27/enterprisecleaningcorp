@@ -39,7 +39,7 @@ export function WhyEnterprise() {
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-extrabold text-slate-900 leading-tight mb-6">
               Enterprise <span className="text-[#00B8FF]">redefines</span>
             </h2>
-            <p className="text-lg md:text-xl text-slate-600 font-medium leading-relaxed mb-12 text-justify">
+            <p className="text-lg md:text-xl text-slate-600 font-medium leading-relaxed mb-12 text-left">
               what businesses expect from a commercial cleaning partner — proving that a company can operate at enterprise scale while still delivering the personal accountability, consistency, and results that make switching providers unthinkable.
             </p>
             

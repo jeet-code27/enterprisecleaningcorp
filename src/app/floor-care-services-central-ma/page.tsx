@@ -145,7 +145,7 @@ export default function FloorCarePage() {
                 <span className="text-[#FFE800]">in<br/>Central Massachusetts</span>
               </h1>
               
-              <div className="text-base md:text-lg text-white/95 font-medium max-w-2xl leading-relaxed mt-6 drop-shadow-sm space-y-4 text-justify">
+              <div className="text-base md:text-lg text-white/95 font-medium max-w-2xl leading-relaxed mt-6 drop-shadow-sm space-y-4 text-left">
                 <p>
                   Floors take more wear than any other surface in a commercial building — and they are the first thing a visitor notices. Dull, scuffed, or worn flooring quietly undermines an otherwise professional space. Bright, well-maintained floors do the opposite: they signal care, quality, and attention to detail.
                 </p>
@@ -225,7 +225,7 @@ export default function FloorCarePage() {
                 <Layers className="w-8 h-8 text-[#00B8FF]" strokeWidth={1.5} />
               </div>
               <h3 className="text-lg font-bold text-slate-900 mb-3">Strip & Wax</h3>
-              <p className="text-sm text-slate-600 leading-relaxed text-justify">Strip and wax of VCT and resilient tile — removing old finish and rebuilding a deep, durable shine</p>
+              <p className="text-sm text-slate-600 leading-relaxed text-left">Strip and wax of VCT and resilient tile — removing old finish and rebuilding a deep, durable shine</p>
             </div>
             
             {/* Card 2 */}
@@ -234,7 +234,7 @@ export default function FloorCarePage() {
                 <Sparkle className="w-8 h-8 text-[#00B8FF]" strokeWidth={1.5} />
               </div>
               <h3 className="text-lg font-bold text-slate-900 mb-3">Scrub & Buff</h3>
-              <p className="text-sm text-slate-600 leading-relaxed text-justify">Floor scrubbing, buffing, and burnishing to maintain gloss between strip-and-wax cycles</p>
+              <p className="text-sm text-slate-600 leading-relaxed text-left">Floor scrubbing, buffing, and burnishing to maintain gloss between strip-and-wax cycles</p>
             </div>
 
             {/* Card 3 */}
@@ -243,7 +243,7 @@ export default function FloorCarePage() {
                 <Droplets className="w-8 h-8 text-[#00B8FF]" strokeWidth={1.5} />
               </div>
               <h3 className="text-lg font-bold text-slate-900 mb-3">Carpet Care</h3>
-              <p className="text-sm text-slate-600 leading-relaxed text-justify">Carpet cleaning, hot-water extraction, and spot treatment</p>
+              <p className="text-sm text-slate-600 leading-relaxed text-left">Carpet cleaning, hot-water extraction, and spot treatment</p>
             </div>
 
             {/* Card 4 */}
@@ -252,7 +252,7 @@ export default function FloorCarePage() {
                 <Sparkles className="w-8 h-8 text-[#00B8FF]" strokeWidth={1.5} />
               </div>
               <h3 className="text-lg font-bold text-slate-900 mb-3">Hard-Surface Care</h3>
-              <p className="text-sm text-slate-600 leading-relaxed text-justify">Hard-surface care for terrazzo, concrete, hardwood, and laminate</p>
+              <p className="text-sm text-slate-600 leading-relaxed text-left">Hard-surface care for terrazzo, concrete, hardwood, and laminate</p>
             </div>
 
             {/* Card 5 */}
@@ -261,7 +261,7 @@ export default function FloorCarePage() {
                 <Wind className="w-8 h-8 text-[#00B8FF]" strokeWidth={1.5} />
               </div>
               <h3 className="text-lg font-bold text-slate-900 mb-3">Tile & Grout</h3>
-              <p className="text-sm text-slate-600 leading-relaxed text-justify">Tile and grout deep cleaning and refinishing</p>
+              <p className="text-sm text-slate-600 leading-relaxed text-left">Tile and grout deep cleaning and refinishing</p>
             </div>
 
             {/* Card 6 */}
@@ -270,7 +270,7 @@ export default function FloorCarePage() {
                 <Users className="w-8 h-8 text-[#00B8FF]" strokeWidth={1.5} />
               </div>
               <h3 className="text-lg font-bold text-slate-900 mb-3">High-Traffic Maintenance</h3>
-              <p className="text-sm text-slate-600 leading-relaxed text-justify">High-traffic-area maintenance programs scheduled around your operations</p>
+              <p className="text-sm text-slate-600 leading-relaxed text-left">High-traffic-area maintenance programs scheduled around your operations</p>
             </div>
 
             {/* Card 7 */}
@@ -279,7 +279,7 @@ export default function FloorCarePage() {
                 <ShieldAlert className="w-8 h-8 text-[#00B8FF]" strokeWidth={1.5} />
               </div>
               <h3 className="text-lg font-bold text-slate-900 mb-3">Entryway Care</h3>
-              <p className="text-sm text-slate-600 leading-relaxed text-justify">Entryway and walk-off matting care to protect floors from tracked-in soil</p>
+              <p className="text-sm text-slate-600 leading-relaxed text-left">Entryway and walk-off matting care to protect floors from tracked-in soil</p>
             </div>
             
             {/* Card 8 (Placeholder to keep grid even) */}
@@ -305,7 +305,7 @@ export default function FloorCarePage() {
                 <h2 className="text-3xl font-extrabold text-slate-900 leading-tight mb-6">
                   A Maintenance Program, <span className="text-[#0090c8]">Not Just a One-Time Clean</span>
                 </h2>
-                <div className="prose prose-lg text-slate-600 prose-p:leading-relaxed text-justify">
+                <div className="prose prose-lg text-slate-600 prose-p:leading-relaxed text-left">
                   <p>
                     The most cost-effective way to care for commercial flooring is a planned maintenance cycle rather than reactive cleaning. We build a schedule — daily, weekly, monthly, and periodic deep-cleaning tasks — that keeps floors continuously protected and extends their useful life. That planning is part of our managed model: we track the cycle so you do not have to.
                   </p>
@@ -324,7 +324,7 @@ export default function FloorCarePage() {
                     </div>
                     <h3 className="text-xl font-bold">Planned Maintenance</h3>
                   </div>
-                  <p className="text-white/80 leading-relaxed font-medium text-justify">
+                  <p className="text-white/80 leading-relaxed font-medium text-left">
                     We track the cycle so you do not have to. Building a proper schedule keeps floors protected and dramatically extends their useful life, saving you from expensive premature replacements.
                   </p>
                 </div>
@@ -340,7 +340,7 @@ export default function FloorCarePage() {
                   </div>
                   <h3 className="text-xl font-bold text-slate-900">Right Process, Right Floor</h3>
                 </div>
-                <p className="text-slate-600 leading-relaxed font-medium text-justify">
+                <p className="text-slate-600 leading-relaxed font-medium text-left">
                   Different environments place different demands on floors. A medical facility needs sanitary, slip-resistant surfaces. A corporate lobby needs a deep, professional shine. A manufacturing plant or warehouse needs durable, degreased, safe floors. We match the right process and finish to your environment.
                 </p>
               </div>
@@ -349,7 +349,7 @@ export default function FloorCarePage() {
                 <h2 className="text-3xl font-extrabold text-slate-900 leading-tight mb-6">
                   Protecting Your Flooring Investment
                 </h2>
-                <div className="prose prose-lg text-slate-600 prose-p:leading-relaxed text-justify">
+                <div className="prose prose-lg text-slate-600 prose-p:leading-relaxed text-left">
                   <p>
                     Commercial flooring is one of the largest and most visible investments in any building, and replacing it prematurely is expensive. Proper, consistent floor care dramatically extends the life of that investment. Regular maintenance removes the abrasive grit that wears finishes down, keeps protective coatings intact, and prevents the kind of deep, set-in soil and staining that eventually requires costly replacement rather than refinishing.
                   </p>
@@ -377,7 +377,7 @@ export default function FloorCarePage() {
             <h2 className="text-3xl md:text-5xl font-extrabold text-white leading-tight mb-6">
               Proven Commercial Floor Care in Central MA
             </h2>
-            <p className="text-lg text-white/80 font-medium leading-relaxed max-w-4xl mx-auto text-justify">
+            <p className="text-lg text-white/80 font-medium leading-relaxed max-w-4xl mx-auto text-left">
               We bring 97% client retention, four Worcester Business Journal “Best of Business” awards, and BBB accreditation since 2007 to every floor care contract, and we serve Massachusetts, Rhode Island, and New Hampshire. Our crews work throughout Shrewsbury, Auburn, Holden, Westborough, and the wider Central MA region, restoring and maintaining commercial floors for offices, healthcare facilities, schools, municipal buildings, and industrial sites.
             </p>
           </div>
@@ -445,7 +445,7 @@ export default function FloorCarePage() {
                     <span className="text-[#00B8FF] shrink-0 mt-0.5 text-xl">Q:</span>
                     {faq.name}
                   </h3>
-                  <p className="text-slate-600 pl-8 leading-relaxed font-medium text-justify">
+                  <p className="text-slate-600 pl-8 leading-relaxed font-medium text-left">
                     <span className="font-bold text-slate-400 mr-2">A:</span>
                     {faq.acceptedAnswer.text}
                   </p>
@@ -466,7 +466,7 @@ export default function FloorCarePage() {
         }}
       >
         <div className="flex flex-col items-center gap-6">
-          <p className="text-lg text-slate-600 max-w-2xl font-medium leading-relaxed text-justify">
+          <p className="text-lg text-slate-600 max-w-2xl font-medium leading-relaxed text-left">
             Get a comprehensive floor care plan designed specifically for your facility's traffic and flooring type. Call (508) 890-1000 or request a free quote online.
           </p>
           <div className="flex flex-wrap justify-center gap-3 pt-2 animate-appear delay-100">

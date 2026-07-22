@@ -184,7 +184,7 @@ export default function TurnoverCleaningPage() {
                 <span className="text-[#FFE800] text-3xl md:text-4xl lg:text-5xl">in Central MA, RI & Southern NH</span>
               </h1>
               
-              <div className="text-base md:text-lg text-white/95 font-medium max-w-2xl leading-relaxed mt-6 drop-shadow-sm space-y-4 text-justify">
+              <div className="text-base md:text-lg text-white/95 font-medium max-w-2xl leading-relaxed mt-6 drop-shadow-sm space-y-4 text-left">
                 <p>
                   Every day a unit sits vacant between tenants is a day of lost rent. For property managers, landlords, and leasing teams across Central Massachusetts, Rhode Island, and Southern New Hampshire, turnover cleaning is not a routine chore — it is the last step standing between a move-out and a move-in, and speed matters as much as quality.
                 </p>
@@ -245,7 +245,7 @@ export default function TurnoverCleaningPage() {
                       </svg>
                     ))}
                   </div>
-                  <p className="text-xs text-slate-400 mt-3 font-medium text-justify">
+                  <p className="text-xs text-slate-400 mt-3 font-medium text-left">
                     We have spent more than two decades building the kind of managed, accountable service that property managers rely on for their toughest scheduling problems. We show up when we say we will.
                   </p>
                 </div>
@@ -297,7 +297,7 @@ export default function TurnoverCleaningPage() {
                 <h2 className="text-3xl font-extrabold text-slate-900 leading-tight mb-6">
                   Fast Turnaround When the Calendar Is Tight
                 </h2>
-                <div className="prose prose-lg text-slate-600 prose-p:leading-relaxed text-justify">
+                <div className="prose prose-lg text-slate-600 prose-p:leading-relaxed text-left">
                   <p>
                     Leasing timelines rarely leave room for delay, and a turnover clean is frequently the last item standing between a signed lease and a new tenant's key handoff. We understand that a slow turnover costs you occupied days and revenue, so we prioritize speed without cutting corners.
                   </p>
@@ -316,7 +316,7 @@ export default function TurnoverCleaningPage() {
                     </div>
                     <h3 className="text-xl font-bold">Built for Property Managers</h3>
                   </div>
-                  <p className="text-white/80 leading-relaxed font-medium text-justify">
+                  <p className="text-white/80 leading-relaxed font-medium text-left">
                     Whether you manage a handful of rental units or a large multi-property portfolio, turnover cleaning is easiest when it is handled by a single, reliable partner rather than juggled between whoever is available. We work with property managers on one-off turnovers and standing contracts that activate automatically whenever a lease ends.
                   </p>
                 </div>
@@ -332,10 +332,10 @@ export default function TurnoverCleaningPage() {
                   </div>
                   <h3 className="text-xl font-bold text-slate-900">Residential & Commercial</h3>
                 </div>
-                <p className="text-slate-600 leading-relaxed font-medium text-justify mb-4">
+                <p className="text-slate-600 leading-relaxed font-medium text-left mb-4">
                   Turnover cleaning is not limited to apartments. We provide the same fast, thorough service for vacant commercial suites, office spaces between tenants, and mixed-use properties, adjusting the scope to fit the space. 
                 </p>
-                <p className="text-slate-600 leading-relaxed font-medium text-justify">
+                <p className="text-slate-600 leading-relaxed font-medium text-left">
                   A vacated apartment and a vacated office suite need different attention — one is judged on kitchens and bathrooms, the other on carpets, glass, and a professional first impression for the next business moving in — and our crews are trained to handle both.
                 </p>
               </div>
@@ -344,7 +344,7 @@ export default function TurnoverCleaningPage() {
                 <h2 className="text-3xl font-extrabold text-slate-900 leading-tight mb-6">
                   Coordinating With Leasing Timelines
                 </h2>
-                <div className="prose prose-lg text-slate-600 prose-p:leading-relaxed text-justify">
+                <div className="prose prose-lg text-slate-600 prose-p:leading-relaxed text-left">
                   <p>
                     Every property manager we work with has a slightly different process for handing units back and forth between tenants — some require a pre-move-out walkthrough, some need the clean completed before a maintenance inspection, and some are simply racing a hard move-in date on the calendar.
                   </p>
@@ -361,7 +361,7 @@ export default function TurnoverCleaningPage() {
                 <h2 className="text-3xl font-extrabold text-slate-900 leading-tight mb-6">
                   A Final Quality Check Before Handoff
                 </h2>
-                <div className="prose prose-lg text-slate-600 prose-p:leading-relaxed text-justify">
+                <div className="prose prose-lg text-slate-600 prose-p:leading-relaxed text-left">
                   <p>
                     Every turnover clean ends with a walk-through against a standard checklist before we consider the unit ready to hand back. That final check catches the details that matter most to a new tenant on their first day — a streak on a mirror, a missed light fixture, a lingering odor from the previous occupant.
                   </p>
@@ -378,7 +378,7 @@ export default function TurnoverCleaningPage() {
                   </div>
                   <h3 className="text-xl font-bold">One Vendor for Everything</h3>
                 </div>
-                <p className="text-slate-700 leading-relaxed font-medium text-justify">
+                <p className="text-slate-700 leading-relaxed font-medium text-left">
                   Because Enterprise Cleaning also provides nightly janitorial, floor care, and emergency cleanup, property managers who use us for turnover cleaning frequently consolidate their entire cleaning program under one vendor. That means one point of contact for the tenant space you are turning over today and the common areas, floors, and emergencies you will need handled tomorrow.
                 </p>
               </div>
@@ -399,7 +399,7 @@ export default function TurnoverCleaningPage() {
             <h2 className="text-3xl md:text-5xl font-extrabold text-white leading-tight mb-6">
               Serving Central Massachusetts, Rhode Island & Southern New Hampshire
             </h2>
-            <p className="text-lg text-white/80 font-medium leading-relaxed max-w-4xl mx-auto text-justify">
+            <p className="text-lg text-white/80 font-medium leading-relaxed max-w-4xl mx-auto text-left">
               We provide turnover cleaning throughout Worcester, Shrewsbury, Auburn, Holden, Westborough, Marlborough, and the surrounding Central Massachusetts region, as well as across Rhode Island — including Providence, Cranston, and Pawtucket — and Southern New Hampshire, including Nashua, Manchester, and Salem. If your portfolio spans more than one of these markets, that regional reach means you can standardize on a single turnover cleaning partner instead of managing a different local vendor in every town — one call, one standard, and one invoice, no matter where the vacancy is.
             </p>
           </div>

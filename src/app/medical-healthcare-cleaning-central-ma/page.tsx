@@ -137,11 +137,11 @@ export default function MedicalCleaningPage() {
                 <span className="text-[#0090c8]">Facility Cleaning</span>
               </h1>
               
-              <p className="text-lg text-slate-600 font-medium leading-relaxed text-justify">
+              <p className="text-lg text-slate-600 font-medium leading-relaxed text-left">
                 In a healthcare environment, cleaning is a matter of patient safety. Medical offices, clinics, dental practices, outpatient centers, and laboratories require disinfection standards and attention to detail that go far beyond ordinary commercial cleaning. Enterprise Cleaning Corporation provides healthcare-focused cleaning across Central Massachusetts, helping medical facilities maintain the sanitary, compliant, and welcoming environment their patients deserve.
               </p>
 
-              <p className="text-lg text-slate-600 font-medium leading-relaxed text-justify">
+              <p className="text-lg text-slate-600 font-medium leading-relaxed text-left">
                 We understand the stakes. A waiting room must look immaculate and feel safe. Patient areas and high-touch surfaces must be properly disinfected. Restrooms must be maintained throughout patient hours. We build programs that meet these demands consistently, every day.
               </p>
               
@@ -211,7 +211,7 @@ export default function MedicalCleaningPage() {
                 <div className="w-14 h-14 rounded-full bg-white shadow-sm flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform">
                   <item.icon className="w-6 h-6 text-[#0090c8]" />
                 </div>
-                <p className="text-slate-700 font-medium leading-relaxed pt-3 text-justify">
+                <p className="text-slate-700 font-medium leading-relaxed pt-3 text-left">
                   {item.text}
                 </p>
               </div>
@@ -231,7 +231,7 @@ export default function MedicalCleaningPage() {
                 <h2 className="text-3xl font-extrabold text-slate-900 leading-tight mb-6">
                   Consistency and Accountability <span className="text-[#0090c8]">Patients Can Feel</span>
                 </h2>
-                <div className="prose prose-lg text-slate-600 prose-p:leading-relaxed text-justify">
+                <div className="prose prose-lg text-slate-600 prose-p:leading-relaxed text-left">
                   <p>
                     Healthcare facilities cannot afford an unreliable cleaning vendor. Standards must hold every single day, with no exceptions. Our managed model delivers exactly that: trained crews, real supervision, and direct owner-level accountability. When a practice manager needs something addressed, they reach a local team that responds — not a distant call center.
                   </p>
@@ -271,7 +271,7 @@ export default function MedicalCleaningPage() {
                   <ShieldCheck className="w-10 h-10 text-[#FFE800]" />
                   <h3 className="text-2xl font-bold">Standard, Not Exception</h3>
                 </div>
-                <p className="text-white/90 leading-relaxed text-lg font-medium text-justify">
+                <p className="text-white/90 leading-relaxed text-lg font-medium text-left">
                   We use procedures designed for healthcare settings — including measures to reduce cross-contamination between areas — and we hold to them consistently. Consistency is the entire point: a facility that is properly disinfected most days but not all days has not solved the problem. Our managed model, with trained crews and real supervision, exists precisely to deliver the day-in, day-out reliability that infection control requires.
                 </p>
               </div>
@@ -280,7 +280,7 @@ export default function MedicalCleaningPage() {
                 <h2 className="text-3xl font-extrabold text-slate-900 leading-tight mb-6">
                   Infection Control Is the <span className="text-[#E31837]">Standard</span>
                 </h2>
-                <div className="prose prose-lg text-slate-600 prose-p:leading-relaxed text-justify">
+                <div className="prose prose-lg text-slate-600 prose-p:leading-relaxed text-left">
                   <p>
                     Healthcare cleaning is fundamentally different from ordinary commercial cleaning because the consequences of getting it wrong are so much higher. Patients, many of them already vulnerable, pass through your facility every day. Proper disinfection of patient areas, waiting areas, restrooms, and high-touch surfaces is essential to reducing the spread of infection and maintaining the safe, sanitary environment that patients and regulators expect.
                   </p>
@@ -317,7 +317,7 @@ export default function MedicalCleaningPage() {
             <h2 className="text-3xl md:text-5xl font-extrabold text-white leading-tight mb-6 drop-shadow-lg">
               Healthcare-Grade Cleaning You Can Trust
             </h2>
-            <p className="text-lg text-white/90 font-medium leading-relaxed max-w-4xl mx-auto text-justify drop-shadow-md">
+            <p className="text-lg text-white/90 font-medium leading-relaxed max-w-4xl mx-auto text-left drop-shadow-md">
               Worcester is a growing healthcare and life-sciences hub, and we are proud to serve medical practices throughout the region. From Worcester and Shrewsbury to Auburn, Holden, Westborough, and across Central MA, we keep medical and healthcare facilities clean, sanitary, and compliant. We bring 97% client retention, four Worcester Business Journal “Best of Business” awards, and BBB accreditation since 2007 to every healthcare contract and serve Massachusetts, Rhode Island, and New Hampshire.
             </p>
           </div>
@@ -359,7 +359,7 @@ export default function MedicalCleaningPage() {
                     <span className="text-[#0090c8] shrink-0 mt-0.5 text-xl">Q:</span>
                     {faq.name}
                   </h3>
-                  <p className="text-slate-600 pl-8 leading-relaxed font-medium text-justify">
+                  <p className="text-slate-600 pl-8 leading-relaxed font-medium text-left">
                     <span className="font-bold text-slate-400 mr-2">A:</span>
                     {faq.acceptedAnswer.text}
                   </p>
@@ -381,7 +381,7 @@ export default function MedicalCleaningPage() {
         }}
       >
         <div className="flex flex-col items-center gap-6">
-          <p className="text-lg text-slate-600 max-w-2xl font-medium leading-relaxed text-justify">
+          <p className="text-lg text-slate-600 max-w-2xl font-medium leading-relaxed text-left">
             Call (508) 890-1000 today, and we will design a healthcare cleaning program specifically for your medical office, clinic, or laboratory.
           </p>
           <div className="flex flex-wrap justify-center gap-3 pt-2 animate-appear delay-100">

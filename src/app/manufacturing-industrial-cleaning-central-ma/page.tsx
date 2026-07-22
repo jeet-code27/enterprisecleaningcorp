@@ -137,11 +137,11 @@ export default function IndustrialCleaningPage() {
                 <span className="text-[#0090c8]">Facility Cleaning</span>
               </h1>
               
-              <p className="text-lg text-slate-600 font-medium leading-relaxed text-justify">
+              <p className="text-lg text-slate-600 font-medium leading-relaxed text-left">
                 Manufacturing and industrial facilities are unlike any other commercial environment. Production floors, machinery, warehousing, breakrooms, offices, and restrooms all sit under one roof, each with its own cleaning demands and safety considerations. Enterprise Cleaning Corporation has spent more than two decades cleaning complex commercial environments across Central Massachusetts — and industrial facilities are exactly the kind of demanding, high-standards work we do best.
               </p>
 
-              <p className="text-lg text-slate-600 font-medium leading-relaxed text-justify">
+              <p className="text-lg text-slate-600 font-medium leading-relaxed text-left">
                 We understand that in a plant, cleanliness is not cosmetic — it is tied to safety, compliance, productivity, and the impression you make on the customers and auditors who walk your floor. We build a cleaning program around your operation, your shifts, and your safety requirements.
               </p>
               
@@ -211,7 +211,7 @@ export default function IndustrialCleaningPage() {
                 <div className="w-14 h-14 rounded-full bg-white shadow-sm flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform">
                   <item.icon className="w-6 h-6 text-[#0090c8]" />
                 </div>
-                <p className="text-slate-700 font-medium leading-relaxed pt-3 text-justify">
+                <p className="text-slate-700 font-medium leading-relaxed pt-3 text-left">
                   {item.text}
                 </p>
               </div>
@@ -231,7 +231,7 @@ export default function IndustrialCleaningPage() {
                 <h2 className="text-3xl font-extrabold text-slate-900 leading-tight mb-6">
                   Safety and Reliability <span className="text-[#0090c8]">You Can Count On</span>
                 </h2>
-                <div className="prose prose-lg text-slate-600 prose-p:leading-relaxed text-justify">
+                <div className="prose prose-lg text-slate-600 prose-p:leading-relaxed text-left">
                   <p>
                     Industrial clients need a cleaning partner who respects the safety culture of a plant — crews who follow site protocols, stay clear of active production, and work cleanly and predictably. Our managed model means real supervision and accountability on every account, so standards hold shift after shift.
                   </p>
@@ -271,7 +271,7 @@ export default function IndustrialCleaningPage() {
                   <AlertTriangle className="w-10 h-10 text-[#FFE800]" />
                   <h3 className="text-2xl font-bold">Productivity & Compliance</h3>
                 </div>
-                <p className="text-white/90 leading-relaxed text-lg font-medium text-justify">
+                <p className="text-white/90 leading-relaxed text-lg font-medium text-left">
                   We approach industrial cleaning as a program, not a task list. That means understanding your production flow, your shift patterns, your safety culture, and the specific challenges of your facility, then building a routine that holds to a consistent standard without ever interfering with output. Our managed model provides the supervision and accountability that large, complex facilities require.
                 </p>
               </div>
@@ -280,7 +280,7 @@ export default function IndustrialCleaningPage() {
                 <h2 className="text-3xl font-extrabold text-slate-900 leading-tight mb-6">
                   Cleaning That Supports <span className="text-[#E31837]">Productivity</span>
                 </h2>
-                <div className="prose prose-lg text-slate-600 prose-p:leading-relaxed text-justify">
+                <div className="prose prose-lg text-slate-600 prose-p:leading-relaxed text-left">
                   <p>
                     In a manufacturing environment, cleanliness is connected to far more than appearance. Clean floors and controlled dust reduce slip-and-fall hazards and protect equipment. Well-maintained breakrooms and restrooms support employee morale and health. And a clean, organized facility makes a strong impression on the customers, auditors, and regulators who tour your plant — an impression that can directly affect contracts and certifications.
                   </p>
@@ -316,7 +316,7 @@ export default function IndustrialCleaningPage() {
             <h2 className="text-3xl md:text-5xl font-extrabold text-white leading-tight mb-6 drop-shadow-lg">
               Proven Industrial Cleaners
             </h2>
-            <p className="text-lg text-white/90 font-medium leading-relaxed max-w-4xl mx-auto text-justify drop-shadow-md">
+            <p className="text-lg text-white/90 font-medium leading-relaxed max-w-4xl mx-auto text-left drop-shadow-md">
               Central Massachusetts has a deep manufacturing and industrial base, and we serve it. From Worcester to Shrewsbury, Auburn, Holden, Westborough, Marlborough, Leominster, and Fitchburg, we keep plants and industrial buildings clean, safe, and audit-ready. We bring 97% client retention, four Worcester Business Journal “Best of Business” awards, and BBB accreditation since 2007 to every industrial contract and serve Massachusetts, Rhode Island, and New Hampshire.
             </p>
           </div>
@@ -358,7 +358,7 @@ export default function IndustrialCleaningPage() {
                     <span className="text-[#0090c8] shrink-0 mt-0.5 text-xl">Q:</span>
                     {faq.name}
                   </h3>
-                  <p className="text-slate-600 pl-8 leading-relaxed font-medium text-justify">
+                  <p className="text-slate-600 pl-8 leading-relaxed font-medium text-left">
                     <span className="font-bold text-slate-400 mr-2">A:</span>
                     {faq.acceptedAnswer.text}
                   </p>
@@ -380,7 +380,7 @@ export default function IndustrialCleaningPage() {
         }}
       >
         <div className="flex flex-col items-center gap-6">
-          <p className="text-lg text-slate-600 max-w-2xl font-medium leading-relaxed text-justify">
+          <p className="text-lg text-slate-600 max-w-2xl font-medium leading-relaxed text-left">
             We will tour your facility, learn your requirements, and provide a comprehensive proposal designed around your shifts and safety protocols. Call (508) 890-1000 today.
           </p>
           <div className="flex flex-wrap justify-center gap-3 pt-2 animate-appear delay-100">

@@ -146,7 +146,7 @@ export default function SpecialtyCleaningPage() {
                 <span className="text-[#FFE800]">in Worcester &<br/>Central Massachusetts</span>
               </h1>
               
-              <div className="text-base md:text-lg text-white/95 font-medium max-w-2xl leading-relaxed mt-6 drop-shadow-sm space-y-4 text-justify">
+              <div className="text-base md:text-lg text-white/95 font-medium max-w-2xl leading-relaxed mt-6 drop-shadow-sm space-y-4 text-left">
                 <p>
                   Beyond routine janitorial work, commercial buildings need periodic specialty attention — the projects that keep a property looking sharp and well-cared-for from the curb to the top floor. Enterprise Cleaning Corporation provides a full range of specialty services across Central Massachusetts, from streak-free window cleaning to high-pressure exterior washing.
                 </p>
@@ -226,7 +226,7 @@ export default function SpecialtyCleaningPage() {
                 <Droplets className="w-8 h-8 text-[#00B8FF]" strokeWidth={1.5} />
               </div>
               <h3 className="text-lg font-bold text-slate-900 mb-3">Window Cleaning</h3>
-              <p className="text-sm text-slate-600 leading-relaxed text-justify">Interior and exterior commercial window cleaning for offices, storefronts, medical buildings, and multi-tenant properties. Streak-free glass, clean frames and sills, and safe technique are standard.</p>
+              <p className="text-sm text-slate-600 leading-relaxed text-left">Interior and exterior commercial window cleaning for offices, storefronts, medical buildings, and multi-tenant properties. Streak-free glass, clean frames and sills, and safe technique are standard.</p>
             </div>
             
             {/* Card 2 */}
@@ -235,7 +235,7 @@ export default function SpecialtyCleaningPage() {
                 <SprayCan className="w-8 h-8 text-[#00B8FF]" strokeWidth={1.5} />
               </div>
               <h3 className="text-lg font-bold text-slate-900 mb-3">Pressure Washing</h3>
-              <p className="text-sm text-slate-600 leading-relaxed text-justify">Restoring sidewalks, entrances, loading docks, parking structures, dumpster areas, and building exteriors by removing grime, gum, salt, and stains to improve curb appeal and safety.</p>
+              <p className="text-sm text-slate-600 leading-relaxed text-left">Restoring sidewalks, entrances, loading docks, parking structures, dumpster areas, and building exteriors by removing grime, gum, salt, and stains to improve curb appeal and safety.</p>
             </div>
 
             {/* Card 3 */}
@@ -244,7 +244,7 @@ export default function SpecialtyCleaningPage() {
                 <Hammer className="w-8 h-8 text-[#00B8FF]" strokeWidth={1.5} />
               </div>
               <h3 className="text-lg font-bold text-slate-900 mb-3">Post-Construction</h3>
-              <p className="text-sm text-slate-600 leading-relaxed text-justify">Post-construction and post-renovation cleaning to prepare your facility for occupancy or normal operations.</p>
+              <p className="text-sm text-slate-600 leading-relaxed text-left">Post-construction and post-renovation cleaning to prepare your facility for occupancy or normal operations.</p>
             </div>
 
             {/* Card 4 */}
@@ -253,7 +253,7 @@ export default function SpecialtyCleaningPage() {
                 <Wind className="w-8 h-8 text-[#00B8FF]" strokeWidth={1.5} />
               </div>
               <h3 className="text-lg font-bold text-slate-900 mb-3">High Dusting</h3>
-              <p className="text-sm text-slate-600 leading-relaxed text-justify">High dusting of vents, fixtures, and overhead structures that are typically out of reach.</p>
+              <p className="text-sm text-slate-600 leading-relaxed text-left">High dusting of vents, fixtures, and overhead structures that are typically out of reach.</p>
             </div>
 
             {/* Card 5 */}
@@ -262,7 +262,7 @@ export default function SpecialtyCleaningPage() {
                 <Sparkles className="w-8 h-8 text-[#00B8FF]" strokeWidth={1.5} />
               </div>
               <h3 className="text-lg font-bold text-slate-900 mb-3">Zone Deep Cleaning</h3>
-              <p className="text-sm text-slate-600 leading-relaxed text-justify">Deep cleaning of breakrooms, kitchens, and high-touch zones that require extra attention.</p>
+              <p className="text-sm text-slate-600 leading-relaxed text-left">Deep cleaning of breakrooms, kitchens, and high-touch zones that require extra attention.</p>
             </div>
 
             {/* Card 6 */}
@@ -271,7 +271,7 @@ export default function SpecialtyCleaningPage() {
                 <MoveRight className="w-8 h-8 text-[#00B8FF]" strokeWidth={1.5} />
               </div>
               <h3 className="text-lg font-bold text-slate-900 mb-3">Tenant Turnover</h3>
-              <p className="text-sm text-slate-600 leading-relaxed text-justify">Move-in and move-out cleaning for tenant turnover to ensure a pristine start.</p>
+              <p className="text-sm text-slate-600 leading-relaxed text-left">Move-in and move-out cleaning for tenant turnover to ensure a pristine start.</p>
             </div>
 
             {/* Card 7 */}
@@ -280,7 +280,7 @@ export default function SpecialtyCleaningPage() {
                 <CheckCircle2 className="w-8 h-8 text-[#00B8FF]" strokeWidth={1.5} />
               </div>
               <h3 className="text-lg font-bold text-slate-900 mb-3">Seasonal Projects</h3>
-              <p className="text-sm text-slate-600 leading-relaxed text-justify">Seasonal and one-time deep-clean projects designed around your specific facility needs.</p>
+              <p className="text-sm text-slate-600 leading-relaxed text-left">Seasonal and one-time deep-clean projects designed around your specific facility needs.</p>
             </div>
             
             {/* Card 8 */}
@@ -289,7 +289,7 @@ export default function SpecialtyCleaningPage() {
                 <Snowflake className="w-8 h-8 text-[#00B8FF]" strokeWidth={1.5} />
               </div>
               <h3 className="text-lg font-bold text-slate-900 mb-3">Snow & Ice</h3>
-              <p className="text-sm text-slate-600 leading-relaxed text-justify">Snow and ice management for commercial entrances and walkways (seasonal) to maintain safety.</p>
+              <p className="text-sm text-slate-600 leading-relaxed text-left">Snow and ice management for commercial entrances and walkways (seasonal) to maintain safety.</p>
             </div>
           </div>
         </div>
@@ -306,7 +306,7 @@ export default function SpecialtyCleaningPage() {
                 <h2 className="text-3xl font-extrabold text-slate-900 leading-tight mb-6">
                   From Recurring Contract <span className="text-[#0090c8]">to Full-Service Partner</span>
                 </h2>
-                <div className="prose prose-lg text-slate-600 prose-p:leading-relaxed text-justify">
+                <div className="prose prose-lg text-slate-600 prose-p:leading-relaxed text-left">
                   <p>
                     One of our greatest strengths is providing more than traditional janitorial work. Many of our best client relationships began with a single recurring contract and grew, over time, into a full-service partnership — floor care, window cleaning, pressure washing, post-construction projects, and emergency response, all handled by one team that already knows the building. That growth happens because trust, once earned, is worth consolidating.
                   </p>
@@ -328,7 +328,7 @@ export default function SpecialtyCleaningPage() {
                     </div>
                     <h3 className="text-xl font-bold">Fewer Vendors, Better Results</h3>
                   </div>
-                  <p className="text-white/80 leading-relaxed font-medium text-justify mb-6">
+                  <p className="text-white/80 leading-relaxed font-medium text-left mb-6">
                     Instead of sourcing, vetting, and coordinating a different company for every project, you have one local partner who understands your facility and stands behind every job.
                   </p>
                   <ul className="space-y-3 text-white/90">
@@ -366,7 +366,7 @@ export default function SpecialtyCleaningPage() {
             <h2 className="text-3xl md:text-5xl font-extrabold text-white leading-tight mb-6">
               Specialty Cleaning You Can Trust
             </h2>
-            <p className="text-lg text-white/80 font-medium leading-relaxed max-w-4xl mx-auto text-justify">
+            <p className="text-lg text-white/80 font-medium leading-relaxed max-w-4xl mx-auto text-left">
               Consolidating specialty work with the company that already cleans your building means consistent standards, one point of contact, and a partner who knows your property. We bring 97% client retention, four Worcester Business Journal “Best of Business” awards, and BBB accreditation since 2007 to every specialty project, and we serve Massachusetts, Rhode Island, and New Hampshire, with our core market across Worcester and Central MA.
             </p>
           </div>
@@ -434,7 +434,7 @@ export default function SpecialtyCleaningPage() {
                     <span className="text-[#00B8FF] shrink-0 mt-0.5 text-xl">Q:</span>
                     {faq.name}
                   </h3>
-                  <p className="text-slate-600 pl-8 leading-relaxed font-medium text-justify">
+                  <p className="text-slate-600 pl-8 leading-relaxed font-medium text-left">
                     <span className="font-bold text-slate-400 mr-2">A:</span>
                     {faq.acceptedAnswer.text}
                   </p>
@@ -456,7 +456,7 @@ export default function SpecialtyCleaningPage() {
         }}
       >
         <div className="flex flex-col items-center gap-6">
-          <p className="text-lg text-slate-600 max-w-2xl font-medium leading-relaxed text-justify">
+          <p className="text-lg text-slate-600 max-w-2xl font-medium leading-relaxed text-left">
             Whether you need a one-time pressure washing project or recurring window cleaning, we provide a no-obligation proposal tailored to your property. Call (508) 890-1000 today.
           </p>
           <div className="flex flex-wrap justify-center gap-3 pt-2 animate-appear delay-100">

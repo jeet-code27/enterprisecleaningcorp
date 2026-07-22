@@ -137,11 +137,11 @@ export default function SchoolCleaningPage() {
                 <span className="text-[#0090c8]">Building Cleaning</span>
               </h1>
               
-              <p className="text-lg text-slate-600 font-medium leading-relaxed text-justify">
+              <p className="text-lg text-slate-600 font-medium leading-relaxed text-left">
                 Schools, universities, libraries, town halls, and other public buildings serve their communities every day — and they need to be clean, healthy, and welcoming for the students, staff, and residents who depend on them. Enterprise Cleaning Corporation provides cleaning for educational and municipal facilities across Central Massachusetts, maintaining the high standards these high-traffic, high-visibility buildings require.
               </p>
 
-              <p className="text-lg text-slate-600 font-medium leading-relaxed text-justify">
+              <p className="text-lg text-slate-600 font-medium leading-relaxed text-left">
                 Public and educational buildings carry heavy foot traffic and host vulnerable populations, which makes consistent sanitation essential. We build programs that keep classrooms, corridors, restrooms, and common areas clean and healthy throughout the year.
               </p>
               
@@ -211,7 +211,7 @@ export default function SchoolCleaningPage() {
                 <div className="w-14 h-14 rounded-full bg-white shadow-sm flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform">
                   <item.icon className="w-6 h-6 text-[#0090c8]" />
                 </div>
-                <p className="text-slate-700 font-medium leading-relaxed pt-3 text-justify">
+                <p className="text-slate-700 font-medium leading-relaxed pt-3 text-left">
                   {item.text}
                 </p>
               </div>
@@ -231,7 +231,7 @@ export default function SchoolCleaningPage() {
                 <h2 className="text-3xl font-extrabold text-slate-900 leading-tight mb-6">
                   Health, Consistency, and <span className="text-[#0090c8]">Accountability</span>
                 </h2>
-                <div className="prose prose-lg text-slate-600 prose-p:leading-relaxed text-justify">
+                <div className="prose prose-lg text-slate-600 prose-p:leading-relaxed text-left">
                   <p>
                     In a school or public building, cleaning directly affects the health of the people inside. Proper disinfection of high-touch surfaces helps reduce the spread of illness among students, staff, and visitors. Our managed model ensures these standards are met consistently, with real supervision and a local team that answers when administrators call.
                   </p>
@@ -271,7 +271,7 @@ export default function SchoolCleaningPage() {
                   <GraduationCap className="w-10 h-10 text-[#FFE800]" />
                   <h3 className="text-2xl font-bold">Healthy Buildings</h3>
                 </div>
-                <p className="text-white/90 leading-relaxed text-lg font-medium text-justify">
+                <p className="text-white/90 leading-relaxed text-lg font-medium text-left">
                   Educational and municipal buildings carry some of the heaviest and most diverse foot traffic of any facilities, and they serve populations that depend on them every day — students, teachers, staff, and the public. That combination makes consistent, thorough cleaning essential. Proper sanitation of restrooms, classrooms, corridors, and shared surfaces directly affects the health of everyone inside and helps limit the spread of illness through these high-contact environments.
                 </p>
               </div>
@@ -280,7 +280,7 @@ export default function SchoolCleaningPage() {
                 <h2 className="text-3xl font-extrabold text-slate-900 leading-tight mb-6">
                   Cleaning for the People <span className="text-[#E31837]">They Serve</span>
                 </h2>
-                <div className="prose prose-lg text-slate-600 prose-p:leading-relaxed text-justify">
+                <div className="prose prose-lg text-slate-600 prose-p:leading-relaxed text-left">
                   <p>
                     These facilities also operate under real constraints — tight schedules, fixed budgets, and public accountability. We build programs that respect those realities, delivering a high, consistent standard within budget and on a schedule that works around classes, events, and public hours. Our managed model ensures the work is supervised and accountable, with a local team that responds when administrators and facilities staff need them.
                   </p>
@@ -316,7 +316,7 @@ export default function SchoolCleaningPage() {
             <h2 className="text-3xl md:text-5xl font-extrabold text-white leading-tight mb-6 drop-shadow-lg">
               Reliable Care for Public Institutions
             </h2>
-            <p className="text-lg text-white/90 font-medium leading-relaxed max-w-4xl mx-auto text-justify drop-shadow-md">
+            <p className="text-lg text-white/90 font-medium leading-relaxed max-w-4xl mx-auto text-left drop-shadow-md">
               We serve educational and municipal facilities throughout Central Massachusetts, from Worcester to Shrewsbury, Auburn, Holden, Westborough, Marlborough, Leominster, and beyond. We bring 97% client retention, four Worcester Business Journal “Best of Business” awards, and BBB accreditation since 2007 to every contract and serve Massachusetts, Rhode Island, and New Hampshire. We are also proud of our history serving public institutions in the region.
             </p>
           </div>
@@ -358,7 +358,7 @@ export default function SchoolCleaningPage() {
                     <span className="text-[#0090c8] shrink-0 mt-0.5 text-xl">Q:</span>
                     {faq.name}
                   </h3>
-                  <p className="text-slate-600 pl-8 leading-relaxed font-medium text-justify">
+                  <p className="text-slate-600 pl-8 leading-relaxed font-medium text-left">
                     <span className="font-bold text-slate-400 mr-2">A:</span>
                     {faq.acceptedAnswer.text}
                   </p>
@@ -380,7 +380,7 @@ export default function SchoolCleaningPage() {
         }}
       >
         <div className="flex flex-col items-center gap-6">
-          <p className="text-lg text-slate-600 max-w-2xl font-medium leading-relaxed text-justify">
+          <p className="text-lg text-slate-600 max-w-2xl font-medium leading-relaxed text-left">
             Call (508) 890-1000 today, and we will design a program that works for your facility and your budget.
           </p>
           <div className="flex flex-wrap justify-center gap-3 pt-2 animate-appear delay-100">

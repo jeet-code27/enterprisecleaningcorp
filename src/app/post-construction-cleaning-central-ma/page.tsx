@@ -186,7 +186,7 @@ export default function PostConstructionCleaningPage() {
                 <span className="text-[#FFE800] text-3xl md:text-4xl lg:text-5xl">in Central MA, RI & Southern NH</span>
               </h1>
               
-              <div className="text-base md:text-lg text-white/95 font-medium max-w-2xl leading-relaxed mt-6 drop-shadow-sm space-y-4 text-justify">
+              <div className="text-base md:text-lg text-white/95 font-medium max-w-2xl leading-relaxed mt-6 drop-shadow-sm space-y-4 text-left">
                 <p>
                   A finished construction project is not truly finished until the dust, debris, and residue left behind by the build are gone. Contractors, developers, and building owners across Central Massachusetts, Rhode Island, and Southern New Hampshire rely on Enterprise Cleaning Corporation to turn a job site into a move-in ready space — on the timeline the project actually needs, not a generic schedule that ignores construction realities.
                 </p>
@@ -247,7 +247,7 @@ export default function PostConstructionCleaningPage() {
                       </svg>
                     ))}
                   </div>
-                  <p className="text-xs text-slate-400 mt-3 font-medium text-justify">
+                  <p className="text-xs text-slate-400 mt-3 font-medium text-left">
                     With more than two decades of experience, a 97% client retention rate, and four Worcester Business Journal "Best of Business" awards, we bring the same accountability to a construction site that we bring to every other account we service.
                   </p>
                 </div>
@@ -263,7 +263,7 @@ export default function PostConstructionCleaningPage() {
         <div className="container mx-auto px-4 md:px-6">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-3xl font-extrabold text-[#003057] mb-6">The Three Phases of Post-Construction Cleaning</h2>
-            <p className="text-lg text-slate-600 leading-relaxed text-justify mb-8">
+            <p className="text-lg text-slate-600 leading-relaxed text-left mb-8">
               Most post-construction projects move through three distinct cleaning phases, and we can be brought in for any single phase or all three as part of one continuous scope:
             </p>
             
@@ -336,7 +336,7 @@ export default function PostConstructionCleaningPage() {
                 <h2 className="text-3xl font-extrabold text-slate-900 leading-tight mb-6">
                   Built to Work Around Your Construction Timeline
                 </h2>
-                <div className="prose prose-lg text-slate-600 prose-p:leading-relaxed text-justify">
+                <div className="prose prose-lg text-slate-600 prose-p:leading-relaxed text-left">
                   <p>
                     Construction schedules shift, and a cleaning partner who cannot adapt becomes a bottleneck on move-in day. We coordinate directly with general contractors, project managers, and developers so cleaning slots into whatever window the schedule allows.
                   </p>
@@ -355,7 +355,7 @@ export default function PostConstructionCleaningPage() {
                     </div>
                     <h3 className="text-xl font-bold">Move-In Ready, Every Time</h3>
                   </div>
-                  <p className="text-white/80 leading-relaxed font-medium text-justify">
+                  <p className="text-white/80 leading-relaxed font-medium text-left">
                     The standard we hold ourselves to is simple: when the last cleaning pass is done, the space should look and feel finished, not merely swept. That standard matters most for developers and building owners handing a space over to a tenant, a buyer, or the public for the first time, where a lingering layer of construction dust or a missed detail undermines the impression the entire project was built to create.
                   </p>
                 </div>
@@ -371,10 +371,10 @@ export default function PostConstructionCleaningPage() {
                   </div>
                   <h3 className="text-xl font-bold text-slate-900">Safety & Site Protocols</h3>
                 </div>
-                <p className="text-slate-600 leading-relaxed font-medium text-justify mb-4">
+                <p className="text-slate-600 leading-relaxed font-medium text-left mb-4">
                   A construction site is not a typical cleaning environment, and our crews are trained accordingly. That means understanding which areas are cleared for cleaning versus still under active trade work, using the correct equipment and technique for surfaces that have not yet been sealed or fully cured.
                 </p>
-                <p className="text-slate-600 leading-relaxed font-medium text-justify">
+                <p className="text-slate-600 leading-relaxed font-medium text-left">
                   We follow whatever site-specific safety requirements a general contractor has in place — from personal protective equipment to sign-in procedures. Treating a job site with that level of care protects the finishes your project just paid for and keeps our crews working safely.
                 </p>
               </div>
@@ -383,7 +383,7 @@ export default function PostConstructionCleaningPage() {
                 <h2 className="text-3xl font-extrabold text-slate-900 leading-tight mb-6">
                   Coordinating With GCs & Project Managers
                 </h2>
-                <div className="prose prose-lg text-slate-600 prose-p:leading-relaxed text-justify">
+                <div className="prose prose-lg text-slate-600 prose-p:leading-relaxed text-left">
                   <p>
                     Post-construction cleaning rarely happens in isolation — it is one step in a sequence of inspections, punch-list work, furniture deliveries, and handoffs that a general contractor or project manager is juggling all at once.
                   </p>
@@ -400,7 +400,7 @@ export default function PostConstructionCleaningPage() {
                 <h2 className="text-3xl font-extrabold text-slate-900 leading-tight mb-6">
                   Commercial Builds, Renovations & Tenant Build-Outs
                 </h2>
-                <div className="prose prose-lg text-slate-600 prose-p:leading-relaxed text-justify">
+                <div className="prose prose-lg text-slate-600 prose-p:leading-relaxed text-left">
                   <p>
                     We provide post-construction cleaning for new commercial construction, ground-up developments, tenant build-outs, and renovation projects of every size across the region.
                   </p>
@@ -417,7 +417,7 @@ export default function PostConstructionCleaningPage() {
                   </div>
                   <h3 className="text-xl font-bold">A Seamless Handoff</h3>
                 </div>
-                <p className="text-slate-700 leading-relaxed font-medium text-justify">
+                <p className="text-slate-700 leading-relaxed font-medium text-left">
                   We treat every post-construction clean as the final quality checkpoint before a space goes live. We ensure that the final result reflects the hard work of all the trades that came before us, leaving a spotless environment for the new occupants.
                 </p>
               </div>
@@ -438,7 +438,7 @@ export default function PostConstructionCleaningPage() {
             <h2 className="text-3xl md:text-5xl font-extrabold text-white leading-tight mb-6">
               Serving Central Massachusetts, Rhode Island & Southern New Hampshire
             </h2>
-            <p className="text-lg text-white/80 font-medium leading-relaxed max-w-4xl mx-auto text-justify">
+            <p className="text-lg text-white/80 font-medium leading-relaxed max-w-4xl mx-auto text-left">
               We provide post-construction cleaning throughout Worcester, Shrewsbury, Auburn, Holden, Westborough, Marlborough, and the surrounding Central Massachusetts region, as well as across Rhode Island — including Providence, Cranston, and Pawtucket — and Southern New Hampshire, including Nashua, Manchester, and Salem. For contractors and developers who work across all three states, that regional coverage means one crew and one point of contact can follow the project wherever it is built, rather than sourcing a new cleaning vendor for every new site.
             </p>
           </div>

@@ -36,7 +36,7 @@ export function Footer() {
                 <Link href="/floor-care-services-central-ma" className="hover:text-white/60 transition-colors">Floor Care Services</Link>
               </li>
               <li>
-                <Link href="/deep-cleaning-services-central-ma" className="hover:text-white/60 transition-colors">Deep Cleaning</Link>
+                <Link href="/specialty-cleaning-services-central-ma" className="hover:text-white/60 transition-colors">Deep Cleaning</Link>
               </li>
               <li>
                 <Link href="/emergency-restoration-services-central-ma" className="hover:text-white/60 transition-colors">Flood Cleanup</Link>

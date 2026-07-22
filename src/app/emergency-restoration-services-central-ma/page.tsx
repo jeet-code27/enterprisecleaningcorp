@@ -146,7 +146,7 @@ export default function EmergencyRestorationPage() {
                 <span className="text-[#FFE800]">in Worcester &<br/>Central Massachusetts</span>
               </h1>
               
-              <div className="text-base md:text-lg text-white/95 font-medium max-w-2xl leading-relaxed mt-6 drop-shadow-sm space-y-4 text-justify">
+              <div className="text-base md:text-lg text-white/95 font-medium max-w-2xl leading-relaxed mt-6 drop-shadow-sm space-y-4 text-left">
                 <p>
                   Water and mold do not wait for business hours — and neither do we. When disaster strikes your facility, every hour counts. Standing water spreads. Mold takes hold. Enterprise Cleaning Corporation provides 24/7 emergency cleanup across Central Massachusetts, with rapid response that limits damage, protects your property, and gets your building back to normal as fast as possible.
                 </p>
@@ -230,7 +230,7 @@ export default function EmergencyRestorationPage() {
                 <Droplets className="w-8 h-8 text-[#00B8FF]" strokeWidth={1.5} />
               </div>
               <h3 className="text-lg font-bold text-slate-900 mb-3">Water & Flood</h3>
-              <p className="text-sm text-slate-600 leading-relaxed text-justify">Water and flood damage cleanup, extraction, and structural drying to stop damage in its tracks.</p>
+              <p className="text-sm text-slate-600 leading-relaxed text-left">Water and flood damage cleanup, extraction, and structural drying to stop damage in its tracks.</p>
             </div>
             
             {/* Card 3 */}
@@ -239,7 +239,7 @@ export default function EmergencyRestorationPage() {
                 <ShieldCheck className="w-8 h-8 text-[#00B8FF]" strokeWidth={1.5} />
               </div>
               <h3 className="text-lg font-bold text-slate-900 mb-3">Mold Remediation</h3>
-              <p className="text-sm text-slate-600 leading-relaxed text-justify">Mold remediation and moisture control to eliminate hazards and prevent recurrence.</p>
+              <p className="text-sm text-slate-600 leading-relaxed text-left">Mold remediation and moisture control to eliminate hazards and prevent recurrence.</p>
             </div>
 
 
@@ -249,7 +249,7 @@ export default function EmergencyRestorationPage() {
                 <Wind className="w-8 h-8 text-[#00B8FF]" strokeWidth={1.5} />
               </div>
               <h3 className="text-lg font-bold text-slate-900 mb-3">Storm Response</h3>
-              <p className="text-sm text-slate-600 leading-relaxed text-justify">Disaster and storm-damage response for properties hit by severe New England weather.</p>
+              <p className="text-sm text-slate-600 leading-relaxed text-left">Disaster and storm-damage response for properties hit by severe New England weather.</p>
             </div>
 
             {/* Card 6 */}
@@ -258,7 +258,7 @@ export default function EmergencyRestorationPage() {
                 <CheckCircle2 className="w-8 h-8 text-[#00B8FF]" strokeWidth={1.5} />
               </div>
               <h3 className="text-lg font-bold text-slate-900 mb-3">Post-Emergency Cleanup</h3>
-              <p className="text-sm text-slate-600 leading-relaxed text-justify">Post-emergency deep cleaning and reconstruction support to fully normalize your operations.</p>
+              <p className="text-sm text-slate-600 leading-relaxed text-left">Post-emergency deep cleaning and reconstruction support to fully normalize your operations.</p>
             </div>
 
             {/* Card 7 */}
@@ -267,7 +267,7 @@ export default function EmergencyRestorationPage() {
                 <FileText className="w-8 h-8 text-[#00B8FF]" strokeWidth={1.5} />
               </div>
               <h3 className="text-lg font-bold text-slate-900 mb-3">Insurance Claims</h3>
-              <p className="text-sm text-slate-600 leading-relaxed text-justify">We coordinate directly with insurance carriers and adjusters to make the claims process smoother.</p>
+              <p className="text-sm text-slate-600 leading-relaxed text-left">We coordinate directly with insurance carriers and adjusters to make the claims process smoother.</p>
             </div>
             
             {/* Card 8 */}
@@ -293,7 +293,7 @@ export default function EmergencyRestorationPage() {
                 <h2 className="text-3xl font-extrabold text-slate-900 leading-tight mb-6">
                   Why Rapid Response <span className="text-[#0090c8]">Matters</span>
                 </h2>
-                <div className="prose prose-lg text-slate-600 prose-p:leading-relaxed text-justify">
+                <div className="prose prose-lg text-slate-600 prose-p:leading-relaxed text-left">
                   <p>
                     In a water emergency, the first hours determine how much of your property can be saved. Fast extraction and professional drying can be the difference between a manageable cleanup and a full reconstruction. Because we are a local Central Massachusetts company — not a distant franchise dispatching from out of state — we can respond quickly when our clients need us most.
                   </p>
@@ -312,7 +312,7 @@ export default function EmergencyRestorationPage() {
                     </div>
                     <h3 className="text-xl font-bold">Speed is Everything</h3>
                   </div>
-                  <p className="text-white/80 leading-relaxed font-medium text-justify">
+                  <p className="text-white/80 leading-relaxed font-medium text-left">
                     Water migrates into walls, flooring, and structure within hours, and the longer it sits, the more damage it causes and the more expensive the recovery becomes. Mold can begin to develop quickly in damp conditions. Our 24/7 availability and local presence mean we can begin extraction, drying, and stabilization quickly — limiting damage and lowering your total cost of recovery.
                   </p>
                 </div>
@@ -328,7 +328,7 @@ export default function EmergencyRestorationPage() {
                   </div>
                   <h3 className="text-xl font-bold text-slate-900">Reducing Risk & Worry</h3>
                 </div>
-                <p className="text-slate-600 leading-relaxed font-medium text-justify">
+                <p className="text-slate-600 leading-relaxed font-medium text-left">
                   We also understand that an emergency is stressful and disruptive to your operation. Beyond the technical work, we help document the damage for your insurance carrier, coordinate with adjusters, and keep you informed throughout. For property managers and facility managers especially, having one partner for both routine cleaning and emergency cleanup removes a major source of risk and worry.
                 </p>
               </div>
@@ -337,7 +337,7 @@ export default function EmergencyRestorationPage() {
                 <h2 className="text-3xl font-extrabold text-slate-900 leading-tight mb-6">
                   The Advantage of a Cleaning Partner With an Emergency Division
                 </h2>
-                <div className="prose prose-lg text-slate-600 prose-p:leading-relaxed text-justify">
+                <div className="prose prose-lg text-slate-600 prose-p:leading-relaxed text-left">
                   <p>
                     Most commercial cleaning companies cannot help you when disaster strikes — they clean, and that is all. Having a full emergency division alongside our cleaning operation is a genuine differentiator, and it matters most at the worst possible moment. When a pipe bursts or a roof leaks, you already have a trusted, local partner on call — one who knows your building and can respond fast.
                   </p>
@@ -362,7 +362,7 @@ export default function EmergencyRestorationPage() {
             <h2 className="text-3xl md:text-5xl font-extrabold text-white leading-tight mb-6">
               Proven Emergency Experts in Central MA
             </h2>
-            <p className="text-lg text-white/80 font-medium leading-relaxed max-w-4xl mx-auto text-justify">
+            <p className="text-lg text-white/80 font-medium leading-relaxed max-w-4xl mx-auto text-left">
               We serve Massachusetts, Rhode Island, and New Hampshire, with our core emergency-response market across Worcester and Central MA. We bring 97% client retention, four Worcester Business Journal “Best of Business” awards, and BBB accreditation since 2007 to every job, and the same owner-level accountability that defines everything we do. When you call our emergency line, you reach a company that knows the area and answers the phone.
             </p>
           </div>
@@ -431,7 +431,7 @@ export default function EmergencyRestorationPage() {
                     <span className="text-[#00B8FF] shrink-0 mt-0.5 text-xl">Q:</span>
                     {faq.name}
                   </h3>
-                  <p className="text-slate-600 pl-8 leading-relaxed font-medium text-justify">
+                  <p className="text-slate-600 pl-8 leading-relaxed font-medium text-left">
                     <span className="font-bold text-slate-400 mr-2">A:</span>
                     {faq.acceptedAnswer.text}
                   </p>
@@ -453,7 +453,7 @@ export default function EmergencyRestorationPage() {
         }}
       >
         <div className="flex flex-col items-center gap-6">
-          <p className="text-lg text-slate-600 max-w-2xl font-medium leading-relaxed text-justify">
+          <p className="text-lg text-slate-600 max-w-2xl font-medium leading-relaxed text-left">
             For non-emergency cleanup inquiries, you can also request a free on-site assessment online or call (508) 890-1000 during business hours.
           </p>
           <div className="flex flex-wrap justify-center gap-3 pt-2 animate-appear delay-100">

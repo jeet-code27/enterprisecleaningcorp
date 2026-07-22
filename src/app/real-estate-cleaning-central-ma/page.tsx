@@ -187,7 +187,7 @@ export default function RealEstateCleaningPage() {
                 <span className="text-[#FFE800] text-3xl md:text-4xl lg:text-5xl">in Central MA, RI & Southern NH</span>
               </h1>
               
-              <div className="text-base md:text-lg text-white/95 font-medium max-w-2xl leading-relaxed mt-6 drop-shadow-sm space-y-4 text-justify">
+              <div className="text-base md:text-lg text-white/95 font-medium max-w-2xl leading-relaxed mt-6 drop-shadow-sm space-y-4 text-left">
                 <p>
                   In real estate, a listing is judged in the first thirty seconds a buyer walks through the door — and a dusty vacant property or a lobby that looks tired ahead of an open house can cost an agent the sale before a single word is said.
                 </p>
@@ -248,7 +248,7 @@ export default function RealEstateCleaningPage() {
                       </svg>
                     ))}
                   </div>
-                  <p className="text-xs text-slate-400 mt-3 font-medium text-justify">
+                  <p className="text-xs text-slate-400 mt-3 font-medium text-left">
                     Real estate moves on tight, often unpredictable timelines. We built our real estate cleaning program around that reality, with the same accountability that has earned us BBB accreditation since 2007.
                   </p>
                 </div>
@@ -320,7 +320,7 @@ export default function RealEstateCleaningPage() {
                 <h2 className="text-3xl font-extrabold text-slate-900 leading-tight mb-6">
                   One Partner for Agents, Brokers & Developers
                 </h2>
-                <div className="prose prose-lg text-slate-600 prose-p:leading-relaxed text-justify">
+                <div className="prose prose-lg text-slate-600 prose-p:leading-relaxed text-left">
                   <p>
                     Whether you are an individual agent preparing a single listing or a brokerage or development firm managing dozens of properties at once, coordinating cleaning across every listing can quietly eat into time that should go toward selling.
                   </p>
@@ -339,7 +339,7 @@ export default function RealEstateCleaningPage() {
                     </div>
                     <h3 className="text-xl font-bold">Fast Turnaround for Tight Deadlines</h3>
                   </div>
-                  <p className="text-white/80 leading-relaxed font-medium text-justify">
+                  <p className="text-white/80 leading-relaxed font-medium text-left">
                     Real estate rarely gives much notice. A property can go under agreement and need a move-out clean within days, or a broker can add a home to the market with a showing scheduled for the following morning. We prioritize fast turnaround for real estate requests specifically because we understand that a delayed clean can mean a delayed listing, a rescheduled showing, or a buyer walking through a space that is not ready to sell itself.
                   </p>
                 </div>
@@ -355,10 +355,10 @@ export default function RealEstateCleaningPage() {
                   </div>
                   <h3 className="text-xl font-bold text-slate-900">Coordinating Around Photography</h3>
                 </div>
-                <p className="text-slate-600 leading-relaxed font-medium text-justify mb-4">
+                <p className="text-slate-600 leading-relaxed font-medium text-left mb-4">
                   Professional listing photos and virtual tours are usually scheduled within a narrow window of a property being cleaned, staged, and ready — and a cleaning that runs late can push back the photographer, the marketing launch, and the first weekend of showings.
                 </p>
-                <p className="text-slate-600 leading-relaxed font-medium text-justify">
+                <p className="text-slate-600 leading-relaxed font-medium text-left">
                   We coordinate directly with agents and photographers to make sure the property is fully cleaned before the camera ever comes out, so the listing photos that will drive buyer interest for the life of the listing show the space at its absolute best.
                 </p>
               </div>
@@ -367,7 +367,7 @@ export default function RealEstateCleaningPage() {
                 <h2 className="text-3xl font-extrabold text-slate-900 leading-tight mb-6">
                   Listing-Ready Standards, Every Time
                 </h2>
-                <div className="prose prose-lg text-slate-600 prose-p:leading-relaxed text-justify">
+                <div className="prose prose-lg text-slate-600 prose-p:leading-relaxed text-left">
                   <p>
                     A property that is merely clean is not the same as a property that is listing-ready. Our teams are trained to catch the details that matter specifically for real estate — streak-free windows and mirrors for photography, spotless kitchens and bathrooms since buyers judge a home on both.
                   </p>
@@ -384,7 +384,7 @@ export default function RealEstateCleaningPage() {
                 <h2 className="text-3xl font-extrabold text-slate-900 leading-tight mb-6">
                   Working Alongside Home Stagers
                 </h2>
-                <div className="prose prose-lg text-slate-600 prose-p:leading-relaxed text-justify">
+                <div className="prose prose-lg text-slate-600 prose-p:leading-relaxed text-left">
                   <p>
                     When a listing is being professionally staged, cleaning has to happen on a precise schedule relative to the stager's arrival — the space needs to be spotless before furniture and decor go in, and it needs to stay that way through the first open house.
                   </p>
@@ -401,7 +401,7 @@ export default function RealEstateCleaningPage() {
                   </div>
                   <h3 className="text-xl font-bold">Backed by a Full-Service Company</h3>
                 </div>
-                <p className="text-slate-700 leading-relaxed font-medium text-justify">
+                <p className="text-slate-700 leading-relaxed font-medium text-left">
                   Because Enterprise Cleaning also operates a full emergency response division, agents and property owners who discover water damage or mold during a listing preparation have a single partner who can handle both the cleaning and the cleanup, rather than scrambling to find a second vendor mid-transaction.
                 </p>
               </div>
@@ -422,7 +422,7 @@ export default function RealEstateCleaningPage() {
             <h2 className="text-3xl md:text-5xl font-extrabold text-white leading-tight mb-6">
               Serving Central Massachusetts, Rhode Island & Southern New Hampshire
             </h2>
-            <p className="text-lg text-white/80 font-medium leading-relaxed max-w-4xl mx-auto text-justify">
+            <p className="text-lg text-white/80 font-medium leading-relaxed max-w-4xl mx-auto text-left">
               We provide real estate cleaning services throughout Worcester, Shrewsbury, Auburn, Holden, Westborough, Marlborough, and the surrounding Central Massachusetts region, as well as across Rhode Island — including Providence, Cranston, and Pawtucket — and Southern New Hampshire, including Nashua, Manchester, and Salem. For brokerages and development firms operating across all three states, that means one trusted cleaning partner can support every listing in the portfolio, regardless of which market it happens to be in.
             </p>
           </div>

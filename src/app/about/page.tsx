@@ -211,7 +211,7 @@ export default function AboutPage() {
               <h2 className="text-3xl md:text-4xl font-extrabold text-slate-900 leading-tight">
                 More than 23+ years of <span className="text-[#0090c8]">cleaning experience</span>
               </h2>
-              <div className="space-y-6 text-slate-600 font-medium leading-relaxed text-justify">
+              <div className="space-y-6 text-slate-600 font-medium leading-relaxed text-left">
                 <p>
                   Locally owned, Enterprise Cleaning Corporation has over 23+ years of experience to tackle any commercial cleaning need you have. Every employee is trained specifically for the job they'll perform.
                 </p>

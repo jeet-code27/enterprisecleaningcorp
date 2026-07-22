@@ -137,11 +137,11 @@ export default function OfficeCleaningPage() {
                 <span className="text-[#0090c8]">Financial Institution Cleaning</span>
               </h1>
               
-              <p className="text-lg text-slate-600 font-medium leading-relaxed text-justify">
+              <p className="text-lg text-slate-600 font-medium leading-relaxed text-left">
                 A clean, well-maintained office says everything about a company before a single word is spoken. For corporate offices, banks, credit unions, and financial institutions, the cleanliness of your space reflects directly on your professionalism, your attention to detail, and the trust clients place in you. Enterprise Cleaning Corporation keeps office and financial environments across Central Massachusetts looking sharp, professional, and welcoming.
               </p>
 
-              <p className="text-lg text-slate-600 font-medium leading-relaxed text-justify">
+              <p className="text-lg text-slate-600 font-medium leading-relaxed text-left">
                 We already serve respected institutions in the region — our client history includes financial and professional organizations that demand discretion and consistency. We bring that same standard to every office we clean.
               </p>
               
@@ -211,7 +211,7 @@ export default function OfficeCleaningPage() {
                 <div className="w-14 h-14 rounded-full bg-white shadow-sm flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform">
                   <item.icon className="w-6 h-6 text-[#0090c8]" />
                 </div>
-                <p className="text-slate-700 font-medium leading-relaxed pt-3 text-justify">
+                <p className="text-slate-700 font-medium leading-relaxed pt-3 text-left">
                   {item.text}
                 </p>
               </div>
@@ -231,7 +231,7 @@ export default function OfficeCleaningPage() {
                 <h2 className="text-3xl font-extrabold text-slate-900 leading-tight mb-6">
                   Discretion and Security <span className="text-[#0090c8]">Built In</span>
                 </h2>
-                <div className="prose prose-lg text-slate-600 prose-p:leading-relaxed text-justify">
+                <div className="prose prose-lg text-slate-600 prose-p:leading-relaxed text-left">
                   <p>
                     Banks and financial institutions handle sensitive information and secure areas. We staff these accounts with reliable, vetted crews and back them with supervision and accountability. Because we manage our own people, you get a consistent, trusted team — not a rotating cast of unfamiliar faces moving through your secure space.
                   </p>
@@ -271,7 +271,7 @@ export default function OfficeCleaningPage() {
                   <Briefcase className="w-10 h-10 text-[#FFE800]" />
                   <h3 className="text-2xl font-bold">Healthier Workspaces</h3>
                 </div>
-                <p className="text-white/90 leading-relaxed text-lg font-medium text-justify">
+                <p className="text-white/90 leading-relaxed text-lg font-medium text-left">
                   A clean office is also a more productive and healthier one. Employees do their best work in a clean, organized environment, and regular disinfection of shared surfaces helps reduce the illness and absenteeism that quietly cost businesses time and money. The investment in professional cleaning pays back not only in appearance, but in the wellbeing and output of the people who work there every day.
                 </p>
               </div>
@@ -280,7 +280,7 @@ export default function OfficeCleaningPage() {
                 <h2 className="text-3xl font-extrabold text-slate-900 leading-tight mb-6">
                   Cleanliness That Reflects <span className="text-[#E31837]">Your Brand</span>
                 </h2>
-                <div className="prose prose-lg text-slate-600 prose-p:leading-relaxed text-justify">
+                <div className="prose prose-lg text-slate-600 prose-p:leading-relaxed text-left">
                   <p>
                     For professional service firms, banks, and corporate offices, the workplace is part of the brand. Clients, partners, and recruits form impressions the moment they walk through the door, and a spotless, well-maintained environment communicates the same competence and attention to detail you bring to your work. A neglected one quietly undermines it. We help professional organizations across Central Massachusetts make sure their space always tells the right story.
                   </p>
@@ -316,7 +316,7 @@ export default function OfficeCleaningPage() {
             <h2 className="text-3xl md:text-5xl font-extrabold text-white leading-tight mb-6 drop-shadow-lg">
               Professional Cleaning That Tells The Right Story
             </h2>
-            <p className="text-lg text-white/90 font-medium leading-relaxed max-w-4xl mx-auto text-justify drop-shadow-md">
+            <p className="text-lg text-white/90 font-medium leading-relaxed max-w-4xl mx-auto text-left drop-shadow-md">
               From downtown Worcester office towers to suburban business parks and bank branches across Central MA, we keep professional workplaces immaculate. We serve Worcester, Shrewsbury, Auburn, Holden, Westborough, Marlborough, and the wider region. We bring 97% client retention, four Worcester Business Journal “Best of Business” awards, and BBB accreditation since 2007 to every contract and serve Massachusetts, Rhode Island, and New Hampshire.
             </p>
           </div>
@@ -358,7 +358,7 @@ export default function OfficeCleaningPage() {
                     <span className="text-[#0090c8] shrink-0 mt-0.5 text-xl">Q:</span>
                     {faq.name}
                   </h3>
-                  <p className="text-slate-600 pl-8 leading-relaxed font-medium text-justify">
+                  <p className="text-slate-600 pl-8 leading-relaxed font-medium text-left">
                     <span className="font-bold text-slate-400 mr-2">A:</span>
                     {faq.acceptedAnswer.text}
                   </p>
@@ -380,7 +380,7 @@ export default function OfficeCleaningPage() {
         }}
       >
         <div className="flex flex-col items-center gap-6">
-          <p className="text-lg text-slate-600 max-w-2xl font-medium leading-relaxed text-justify">
+          <p className="text-lg text-slate-600 max-w-2xl font-medium leading-relaxed text-left">
             Call (508) 890-1000 today, and we will design a comprehensive cleaning program that reflects the professionalism of your brand.
           </p>
           <div className="flex flex-wrap justify-center gap-3 pt-2 animate-appear delay-100">
