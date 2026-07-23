@@ -1,3 +1,4 @@
+import React from "react";
 import { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
@@ -113,15 +114,15 @@ export default function WorcesterCityPage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredDataFAQ) }} />
 
       {/* ─── HERO ─── */}
-      <section className="relative pt-28 pb-0 overflow-hidden bg-white">
+      <section className="relative overflow-hidden bg-white" style={{ paddingTop: "calc(4rem + 28px)" }}>
         {/* Decorative top stripe */}
         <div className="absolute top-0 left-0 w-full h-1" style={{ background: "linear-gradient(to right, #0090c8, #E31837, #FFE800)" }} />
 
         <div className="container mx-auto px-4 md:px-6">
-          <div className="grid lg:grid-cols-2 gap-0 items-end">
+          <div className="grid lg:grid-cols-2 gap-10 items-center min-h-[600px]">
 
             {/* Left: Copy */}
-            <div className="py-12 lg:py-20 pr-0 lg:pr-12 space-y-8">
+            <div className="py-12 lg:py-16 pr-0 lg:pr-8 space-y-7">
 
               {/* Breadcrumb pill */}
               <div className="inline-flex items-center gap-2 text-sm font-bold text-[#0090c8] bg-[#0090c8]/8 border border-[#0090c8]/20 px-4 py-1.5 rounded-full">
@@ -142,7 +143,7 @@ export default function WorcesterCityPage() {
                 Worcester is the commercial and institutional anchor of Central Massachusetts — and it's the market Enterprise Cleaning Corporation knows best. Our West Boylston headquarters puts us minutes from every major Worcester corridor.
               </p>
 
-              <div className="flex flex-wrap gap-4 pt-2">
+              <div className="flex flex-wrap gap-4">
                 <Link
                   href="/contact"
                   className="inline-flex items-center gap-2 bg-[#0090c8] text-white font-extrabold px-7 py-3.5 rounded-xl hover:bg-[#0078a8] transition-colors shadow-md shadow-[#0090c8]/25 text-base"
@@ -159,7 +160,7 @@ export default function WorcesterCityPage() {
               </div>
 
               {/* Trust chips */}
-              <div className="flex flex-wrap gap-3 pt-2">
+              <div className="flex flex-wrap gap-3">
                 {["97% Client Retention", "4× WBJ Award Winner", "BBB Accredited Since 2007", "20+ Years Local"].map(chip => (
                   <span key={chip} className="inline-flex items-center gap-1.5 text-xs font-bold text-slate-600 bg-slate-100 px-3 py-1.5 rounded-full">
                     <CheckCircle2 className="w-3.5 h-3.5 text-[#0090c8]" />
@@ -169,22 +170,21 @@ export default function WorcesterCityPage() {
               </div>
             </div>
 
-            {/* Right: Hero image flush to bottom */}
-            <div className="relative self-end hidden lg:block">
-              <div className="absolute inset-x-0 top-0 h-32 bg-gradient-to-b from-white to-transparent z-10 pointer-events-none" />
-              <div className="relative aspect-[5/6] overflow-hidden rounded-t-[2.5rem] shadow-2xl border border-slate-200">
+            {/* Right: Hero image — centered, rounded all sides */}
+            <div className="relative hidden lg:block py-10">
+              <div className="relative aspect-[4/3] overflow-hidden rounded-3xl shadow-2xl border border-slate-200">
                 <Image
                   src="/images/worcester_cleaning_hero.png"
                   alt="Commercial Cleaning in Worcester MA"
                   fill
                   sizes="50vw"
-                  className="object-cover object-top"
+                  className="object-cover object-center"
                   priority
                 />
                 {/* Floating badge */}
-                <div className="absolute bottom-6 left-6 bg-white/95 backdrop-blur-md rounded-2xl px-5 py-4 shadow-xl flex items-center gap-3 border border-slate-100">
-                  <div className="w-10 h-10 rounded-full bg-[#E31837] flex items-center justify-center shrink-0">
-                    <Trophy className="w-5 h-5 text-white" />
+                <div className="absolute bottom-5 left-5 bg-white/95 backdrop-blur-md rounded-2xl px-4 py-3 shadow-xl flex items-center gap-3 border border-slate-100">
+                  <div className="w-9 h-9 rounded-full bg-[#E31837] flex items-center justify-center shrink-0">
+                    <Trophy className="w-4 h-4 text-white" />
                   </div>
                   <div className="text-left">
                     <div className="font-extrabold text-slate-900 text-sm">4× Best of Business</div>
@@ -202,7 +202,7 @@ export default function WorcesterCityPage() {
         <div className="container mx-auto px-4 md:px-6">
           <div className="grid grid-cols-2 md:grid-cols-4 divide-x divide-white/10">
             {[
-              { val: "20+", unit: "Years", label: "Serving Central MA" },
+              { val: "23+", unit: "Years", label: "Serving Central MA" },
               { val: "97%", unit: "", label: "Client Retention Rate" },
               { val: "4×", unit: "", label: "WBJ Best of Business" },
               { val: "~4 mi", unit: "", label: "From Worcester HQ" },
@@ -218,70 +218,68 @@ export default function WorcesterCityPage() {
         </div>
       </section>
 
-      {/* ─── ABOUT WORCESTER + NEIGHBORHOODS ─── */}
-      <section className="py-20 bg-white">
+      {/* ─── ABOUT WORCESTER ─── */}
+      <section className="py-16 bg-white">
         <div className="container mx-auto px-4 md:px-6">
-          <div className="max-w-6xl mx-auto grid lg:grid-cols-2 gap-16 items-start">
-
-            {/* Text */}
-            <div className="space-y-6">
-              <div>
-                <p className="text-xs font-extrabold uppercase tracking-[0.2em] text-[#0090c8] mb-2">Built for Worcester</p>
-                <h2 className="text-3xl md:text-4xl font-extrabold text-slate-900 leading-tight">
-                  Commercial Cleaning Built for Worcester's Business Community
-                </h2>
-              </div>
-              <div className="space-y-5 text-slate-600 font-medium leading-relaxed text-[0.97rem]">
+          <div className="max-w-5xl mx-auto">
+            <div className="mb-8">
+              <p className="text-xs font-extrabold uppercase tracking-[0.2em] text-[#0090c8] mb-2">Built for Worcester</p>
+              <h2 className="text-3xl md:text-4xl font-extrabold text-slate-900 leading-tight max-w-3xl">
+                Commercial Cleaning Built for Worcester's Business Community
+              </h2>
+            </div>
+            <div className="grid lg:grid-cols-5 gap-8 items-start">
+              {/* Text — wider column */}
+              <div className="lg:col-span-3 space-y-4 text-slate-600 font-medium leading-relaxed text-[0.97rem]">
                 <p>
                   Worcester is the commercial and institutional anchor of Central Massachusetts and the second-largest city in New England, with a downtown that has been rebuilding around Polar Park, CitySquare, and a growing biotech and medical corridor built on UMass Chan Medical School, UMass Memorial Health, and Saint Vincent Hospital. Add Worcester Polytechnic Institute, Clark University, and a dense ring of manufacturing and industrial parks along I-290 and I-190, and the result is a city with an unusually wide range of commercial cleaning needs in one ZIP code radius — hospital administrative wings, biotech office suites, downtown Class A towers, and industrial floor space, often within a few miles of each other.
                 </p>
                 <p>
-                  Enterprise Cleaning Corporation is headquartered a few miles north of Worcester in West Boylston, which means Worcester is not a satellite market for us — it is the market we know best. We have served office buildings, medical facilities, and industrial accounts throughout Worcester and Worcester County for more than two decades, and our crews are on Worcester properties every night of the week.
+                  Enterprise Cleaning Corporation is headquartered a few miles north of Worcester in West Boylston, which means Worcester is not a satellite market for us — it is the market we know best. We have served{" "}
+                  <Link href="/manufacturing-industrial-cleaning-central-ma" className="text-[#0090c8] font-semibold hover:underline">industrial facilities</Link>,{" "}
+                  <Link href="/medical-healthcare-cleaning-central-ma" className="text-[#0090c8] font-semibold hover:underline">medical office buildings</Link>, and corporate accounts throughout Worcester and Worcester County for more than 23 years, and our crews are on Worcester properties every night of the week.
                 </p>
                 <p>
                   Facility and property managers in Worcester are typically balancing several buildings, several vendors, and a limited amount of time to manage any of it closely. What they need from a cleaning company is not a sales pitch — it's a crew that shows up on schedule, a point of contact who answers the phone, and a level of consistency that means they stop thinking about cleaning altogether. That consistency is reflected in our 97% client retention rate: once a Worcester account signs with us, they tend to stay.
                 </p>
                 <p>
-                  Because Worcester is where our own crews spend the most time, we've built scheduling experience across nearly every type of building the city has to offer — a downtown financial office that needs quiet, after-hours service; a hospital administrative wing that needs discretion around active clinical space; and an industrial building on Route 20 that needs a crew comfortable working around forklifts and shift changes.
+                  Because Worcester is where our own crews spend the most time, we've built scheduling experience across nearly every type of building the city has to offer — a downtown financial office that needs{" "}
+                  <Link href="/day-and-night-shift-commercial-cleaning-services-central-ma" className="text-[#0090c8] font-semibold hover:underline">quiet, after-hours service</Link>;
+                  {" "}a hospital administrative wing that needs discretion around active clinical space; and an{" "}
+                  <Link href="/manufacturing-industrial-cleaning-central-ma" className="text-[#0090c8] font-semibold hover:underline">industrial building</Link>
+                  {" "}on Route 20 that needs a crew comfortable working around forklifts and shift changes.
                 </p>
               </div>
-            </div>
 
-            {/* Neighborhoods card */}
-            <div className="space-y-4">
-              <div className="bg-slate-50 rounded-3xl p-8 border border-slate-200">
-                <div className="flex items-center gap-3 mb-6">
-                  <div className="w-10 h-10 rounded-xl bg-[#0090c8]/10 flex items-center justify-center">
-                    <Building2 className="w-5 h-5 text-[#0090c8]" />
-                  </div>
-                  <div>
-                    <p className="text-xs font-extrabold uppercase tracking-wider text-slate-400">Local Coverage</p>
-                    <h3 className="font-extrabold text-slate-900 text-lg leading-tight">Neighborhoods & Districts We Serve</h3>
-                  </div>
-                </div>
-                <p className="text-slate-500 text-sm font-medium mb-5">
-                  Enterprise Cleaning Corporation serves commercial properties throughout Worcester, including:
-                </p>
-                <div className="space-y-3">
-                  {[
-                    { area: "Downtown Worcester & CitySquare", detail: "Class A office towers, financial and legal offices, and street-level retail" },
-                    { area: "Worcester's Medical Corridor", detail: "UMass Chan Medical School and UMass Memorial Health administrative and clinical office space" },
-                    { area: "Green Island & Route 20 Industrial Area", detail: "Manufacturing, warehousing, and light-industrial tenants" },
-                    { area: "Route 9 Corridor", detail: "Retail centers, professional offices, and medical suites" },
-                    { area: "Worcester Regional Airport Business Park", detail: "Corporate and logistics tenants" },
-                  ].map((d, i) => (
-                    <div key={i} className="flex gap-3 bg-white p-4 rounded-xl border border-slate-100 shadow-sm">
-                      <MapPin className="w-4 h-4 text-[#E31837] shrink-0 mt-0.5" />
-                      <div>
-                        <div className="font-bold text-slate-800 text-sm">{d.area}</div>
-                        <div className="text-slate-500 text-xs mt-0.5 font-medium">{d.detail}</div>
-                      </div>
+              {/* Neighborhoods — narrower column, stacked compactly */}
+              <div className="lg:col-span-2">
+                <div className="bg-slate-50 rounded-3xl p-6 border border-slate-200">
+                  <div className="flex items-center gap-3 mb-4">
+                    <div className="w-9 h-9 rounded-xl bg-[#0090c8]/10 flex items-center justify-center shrink-0">
+                      <Building2 className="w-4 h-4 text-[#0090c8]" />
                     </div>
-                  ))}
+                    <h3 className="font-extrabold text-slate-900 text-base leading-tight">Neighborhoods & Districts</h3>
+                  </div>
+                  <div className="space-y-2">
+                    {[
+                      { area: "Downtown Worcester & CitySquare", detail: "Class A offices, financial & legal, retail" },
+                      { area: "Worcester's Medical Corridor", detail: "UMass Chan, UMass Memorial Health office space" },
+                      { area: "Green Island & Route 20 Industrial", detail: "Manufacturing, warehousing, light-industrial" },
+                      { area: "Route 9 Corridor", detail: "Retail, professional offices, medical suites" },
+                      { area: "Worcester Regional Airport Business Park", detail: "Corporate and logistics tenants" },
+                    ].map((d, i) => (
+                      <div key={i} className="flex gap-3 bg-white p-3 rounded-xl border border-slate-100 shadow-sm">
+                        <MapPin className="w-3.5 h-3.5 text-[#E31837] shrink-0 mt-0.5" />
+                        <div>
+                          <div className="font-bold text-slate-800 text-xs">{d.area}</div>
+                          <div className="text-slate-400 text-xs font-medium mt-0.5">{d.detail}</div>
+                        </div>
+                      </div>
+                    ))}
+                  </div>
                 </div>
               </div>
             </div>
-
           </div>
         </div>
       </section>
@@ -301,7 +299,7 @@ export default function WorcesterCityPage() {
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5">
             {[
-              { icon: Clock, title: "20+ Years Local Experience", text: "More than two decades serving Central Massachusetts, Rhode Island, and Southern New Hampshire." },
+              { icon: Clock, title: "23+ Years Local Experience", text: "More than two decades serving Central Massachusetts, Rhode Island, and Southern New Hampshire." },
               { icon: Users, title: "97% Client Retention Rate", text: "Reflecting unmatched consistency and long-term client trust — the highest in our market." },
               { icon: Trophy, title: "4× WBJ Award Winner", text: "Four-time Worcester Business Journal 'Best of Business' award winner, voted by the local community." },
               { icon: Award, title: "BBB Accredited Since 2007", text: "A track record of ethical business practices and responsive customer service spanning nearly two decades." },
@@ -334,21 +332,54 @@ export default function WorcesterCityPage() {
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5">
-            {[
-              { icon: Clock, title: "Nightly Janitorial & Office Cleaning", desc: "Recurring after-hours cleaning for offices, common areas, restrooms, and break rooms, scheduled around your business hours so cleaning never disrupts operations." },
-              { icon: Users, title: "Day Porter Services", desc: "On-site daytime staff who handle restocking, spot-cleaning, restroom checks, and light maintenance while your facility is open and in use." },
-              { icon: Sparkles, title: "Floor Care", desc: "Stripping, waxing, buffing, and polishing for VCT and hard-surface floors, plus scheduled carpet cleaning to protect flooring investments and maintain a professional appearance." },
-              { icon: Building2, title: "Specialty Exterior Cleaning", desc: "Window cleaning and pressure washing for building exteriors, walkways, loading docks, and parking areas." },
-              { icon: CalendarCheck, title: "Post-Construction Cleaning", desc: "Rough, final, and touch-up cleaning phases for contractors, developers, and property owners bringing a newly built or renovated space online." },
-              { icon: Truck, title: "Turnover Cleaning", desc: "Fast, thorough cleaning between tenants for commercial suites, apartment units, and multi-tenant properties, built around the tight timelines property managers work with." },
-            ].map((svc, idx) => (
-              <div key={idx} className="p-6 rounded-2xl border-2 border-slate-100 hover:border-[#0090c8]/30 hover:shadow-lg transition-all group text-left">
+            {([
+              {
+                icon: Clock,
+                title: "Night & Day Cleaning",
+                desc: "Recurring after-hours and daytime cleaning for offices, common areas, restrooms, and break rooms — scheduled around your business hours.",
+                href: "/day-and-night-shift-commercial-cleaning-services-central-ma"
+              },
+              {
+                icon: Sparkles,
+                title: "Floor Care Services",
+                desc: "Stripping, waxing, buffing, and polishing for VCT and hard-surface floors, plus scheduled carpet cleaning to protect flooring investments.",
+                href: "/floor-care-services-central-ma"
+              },
+              {
+                icon: Users,
+                title: "Deep Cleaning",
+                desc: "Thorough, restorative cleaning to revitalize your facility — ideal for spaces that need more than routine nightly service.",
+                href: "/specialty-cleaning-services-central-ma"
+              },
+              {
+                icon: Building2,
+                title: "Flood Cleanup",
+                desc: "24/7 emergency response for water, flood, and storm damage. Rapid mobilization to minimize disruption and restore your facility.",
+                href: "/emergency-restoration-services-central-ma"
+              },
+              {
+                icon: CalendarCheck,
+                title: "Turnover Cleaning",
+                desc: "Complete turnover cleaning for commercial suites and multi-tenant properties, built around the tight timelines property managers work with.",
+                href: "/turnover-cleaning-central-ma"
+              },
+              {
+                icon: Truck,
+                title: "Post Construction",
+                desc: "Detailed rough, final, and touch-up cleaning after construction projects — for contractors, developers, and property owners.",
+                href: "/post-construction-cleaning-central-ma"
+              },
+            ] as { icon: React.ElementType; title: string; desc: string; href: string }[]).map((svc, idx) => (
+              <Link key={idx} href={svc.href} className="p-6 rounded-2xl border-2 border-slate-100 hover:border-[#0090c8]/40 hover:shadow-lg transition-all group text-left block">
                 <div className="w-12 h-12 rounded-2xl bg-slate-50 group-hover:bg-[#0090c8]/8 flex items-center justify-center mb-5 transition-colors">
                   <svc.icon className="w-6 h-6 text-[#0090c8]" />
                 </div>
-                <h3 className="font-extrabold text-slate-900 text-base mb-2">{svc.title}</h3>
+                <h3 className="font-extrabold text-slate-900 text-base mb-2 group-hover:text-[#0090c8] transition-colors">{svc.title}</h3>
                 <p className="text-slate-500 text-sm font-medium leading-relaxed">{svc.desc}</p>
-              </div>
+                <span className="inline-flex items-center gap-1 text-xs font-bold text-[#0090c8] mt-3">
+                  Learn More <ArrowRight className="w-3 h-3" />
+                </span>
+              </Link>
             ))}
           </div>
         </div>
@@ -368,74 +399,109 @@ export default function WorcesterCityPage() {
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5">
-            {[
-              { icon: Factory, name: "Manufacturing & Industrial", desc: "Production floors, warehouses, and industrial office space that need cleaning built around shift schedules and safety requirements." },
-              { icon: Stethoscope, name: "Medical & Healthcare", desc: "Medical offices, outpatient clinics, and healthcare administrative space cleaned to the standards patients and staff expect." },
-              { icon: Briefcase, name: "Corporate Offices & Financial", desc: "Class A and Class B office space, financial and professional service offices where first impressions matter to clients and employees alike." },
-              { icon: GraduationCap, name: "Educational & Municipal", desc: "Schools, municipal buildings, and public facilities cleaned around occupied schedules and public-use requirements." },
-              { icon: Building2, name: "Property Management & Real Estate", desc: "Multi-tenant office buildings, retail centers, and mixed-use properties where property and facility managers need one accountable vendor." },
-              { icon: Truck, name: "Warehouses & Distribution", desc: "Large-footprint logistics and distribution space that needs efficient, scheduled cleaning without interrupting operations." },
-            ].map((ind, idx) => (
-              <div key={idx} className="flex gap-4 bg-white p-6 rounded-2xl border border-slate-200 hover:border-[#0090c8]/30 hover:shadow-md transition-all group text-left">
+            {([
+              {
+                icon: Factory,
+                name: "Manufacturing & Industrial",
+                desc: "Production floors, warehouses, and industrial office space that need cleaning built around shift schedules and safety requirements.",
+                href: "/manufacturing-industrial-cleaning-central-ma"
+              },
+              {
+                icon: Stethoscope,
+                name: "Medical & Healthcare",
+                desc: "Medical offices, outpatient clinics, and healthcare administrative space cleaned to the standards patients and staff expect.",
+                href: "/medical-healthcare-cleaning-central-ma"
+              },
+              {
+                icon: Briefcase,
+                name: "Corporate Offices & Financial",
+                desc: "Class A and Class B office space, financial and professional service offices where first impressions matter to clients and employees alike.",
+                href: "/office-financial-cleaning-central-ma"
+              },
+              {
+                icon: GraduationCap,
+                name: "Educational & Municipal",
+                desc: "Schools, municipal buildings, and public facilities cleaned around occupied schedules and public-use requirements.",
+                href: "/school-municipal-cleaning-central-ma"
+              },
+              {
+                icon: Building2,
+                name: "Property Management & Real Estate",
+                desc: "Multi-tenant office buildings, retail centers, and mixed-use properties where property and facility managers need one accountable vendor.",
+                href: "/property-management-cleaning-central-ma"
+              },
+              {
+                icon: Truck,
+                name: "Warehouses & Distribution",
+                desc: "Large-footprint logistics and distribution space that needs efficient, scheduled cleaning without interrupting operations.",
+                href: "/warehouse-distribution-cleaning-central-ma"
+              },
+            ] as { icon: React.ElementType; name: string; desc: string; href: string }[]).map((ind, idx) => (
+              <Link key={idx} href={ind.href} className="flex gap-4 bg-white p-6 rounded-2xl border border-slate-200 hover:border-[#0090c8]/40 hover:shadow-md transition-all group text-left">
                 <div className="w-11 h-11 rounded-xl bg-[#0090c8]/8 flex items-center justify-center shrink-0 group-hover:bg-[#0090c8]/15 transition-colors">
                   <ind.icon className="w-5 h-5 text-[#0090c8]" />
                 </div>
                 <div>
-                  <h3 className="font-extrabold text-slate-900 text-sm mb-1">{ind.name}</h3>
+                  <h3 className="font-extrabold text-slate-900 text-sm mb-1 group-hover:text-[#0090c8] transition-colors">{ind.name}</h3>
                   <p className="text-slate-500 text-xs font-medium leading-relaxed">{ind.desc}</p>
+                  <span className="inline-flex items-center gap-1 text-xs font-bold text-[#0090c8] mt-2">
+                    View Services <ArrowRight className="w-3 h-3" />
+                  </span>
                 </div>
-              </div>
+              </Link>
             ))}
           </div>
         </div>
       </section>
 
       {/* ─── HOW IT WORKS (PROCESS) ─── */}
-      <section className="py-20 bg-white">
+      <section className="py-16 bg-white">
         <div className="container mx-auto px-4 md:px-6">
-          <div className="max-w-5xl mx-auto grid lg:grid-cols-2 gap-16 items-start">
-
-            <div className="space-y-6">
-              <div>
-                <p className="text-xs font-extrabold uppercase tracking-[0.2em] text-[#0090c8] mb-2">Our Process</p>
-                <h2 className="text-3xl md:text-4xl font-extrabold text-slate-900 leading-tight">
-                  How We Build Your Cleaning Plan
-                </h2>
-              </div>
-              <div className="space-y-5 text-slate-600 font-medium leading-relaxed text-[0.97rem]">
-                <p>
-                  Every Worcester account starts the same way: a free, no-obligation walkthrough of your property with a member of our team, not a subcontractor or a franchise sales rep. We look at square footage, floor types, restroom count, tenant mix, and current pain points, then put together a written scope and price before any contract is signed.
-                </p>
-                <p>
-                  Once a schedule is set, your account gets a dedicated crew rather than a rotating pool of subcontracted labor, so the same people learn your building, your supply closets, and your particular quirks — a security system that needs a specific arm-and-disarm sequence, a floor that scuffs easily, a tenant who works late. Consistency in staffing is one of the most requested — and least delivered — things facility managers ask for from a cleaning vendor, and it's built into how we staff every Worcester account from day one.
-                </p>
-                <p>
-                  We check in regularly rather than waiting for a complaint, and because our ownership is directly reachable — not buried behind a franchise call center — issues get resolved in a conversation, not a ticket queue. That combination of a stable crew, a direct point of contact, and a willingness to actually show up when something needs attention is reflected in a 97% client retention rate across our full service area.
-                </p>
-                <p>
-                  Every Worcester crew is fully insured and bonded, trained on the equipment and cleaning chemicals used on your property, and briefed on any building-specific access, security, or safety requirements before their first shift. If your Worcester property has a facility handbook, badge-in procedure, or vendor compliance requirement, we build our onboarding around it rather than asking you to work around us.
-                </p>
-              </div>
+          <div className="max-w-5xl mx-auto">
+            <div className="mb-8">
+              <p className="text-xs font-extrabold uppercase tracking-[0.2em] text-[#0090c8] mb-2">Our Process</p>
+              <h2 className="text-3xl md:text-4xl font-extrabold text-slate-900 leading-tight">
+                How We Build Your Cleaning Plan
+              </h2>
             </div>
 
-            {/* Process steps */}
-            <div className="space-y-4">
+            {/* 4-step process row at top */}
+            <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-10">
               {[
                 { num: "01", title: "Free On-Site Walkthrough", text: "A member of our team visits your Worcester property — no subcontractors, no sales reps." },
                 { num: "02", title: "Written Scope & Proposal", text: "We deliver a detailed written scope and transparent price. No contract signed before you review it." },
-                { num: "03", title: "Dedicated Crew Assignment", text: "The same crew, every visit. They learn your building, your access needs, and your schedule." },
+                { num: "03", title: "Dedicated Crew Assignment", text: "The same crew, every visit. They learn your building, access needs, and your schedule." },
                 { num: "04", title: "Regular Check-Ins", text: "We proactively follow up — ownership is directly reachable, not buried behind a call center." },
               ].map((step, idx) => (
-                <div key={idx} className="flex gap-5 p-5 rounded-2xl bg-slate-50 border border-slate-200 hover:border-[#0090c8]/30 transition-colors text-left">
-                  <div className="text-3xl font-black text-[#0090c8]/20 leading-none shrink-0 font-mono w-10">{step.num}</div>
-                  <div>
-                    <div className="font-extrabold text-slate-900 text-sm mb-1">{step.title}</div>
-                    <div className="text-slate-500 text-xs font-medium leading-relaxed">{step.text}</div>
-                  </div>
+                <div key={idx} className="p-5 rounded-2xl bg-slate-50 border border-slate-200 hover:border-[#0090c8]/30 transition-colors text-left">
+                  <div className="text-3xl font-black text-[#0090c8]/20 leading-none font-mono mb-3">{step.num}</div>
+                  <div className="font-extrabold text-slate-900 text-sm mb-1.5">{step.title}</div>
+                  <div className="text-slate-500 text-xs font-medium leading-relaxed">{step.text}</div>
                 </div>
               ))}
             </div>
 
+            {/* Full text below, single column — no blank gaps */}
+            <div className="space-y-4 text-slate-600 font-medium leading-relaxed text-[0.97rem] border-t border-slate-100 pt-8">
+              <p>
+                Every Worcester account starts the same way: a free, no-obligation walkthrough of your property with a member of our team, not a subcontractor or a franchise sales rep. We look at square footage, floor types, restroom count, tenant mix, and current pain points, then put together a written scope and price before any contract is signed.
+              </p>
+              <p>
+                Once a schedule is set, your account gets a dedicated crew rather than a rotating pool of subcontracted labor, so the same people learn your building, your supply closets, and your particular quirks — a security system that needs a specific arm-and-disarm sequence, a{" "}
+                <Link href="/floor-care-services-central-ma" className="text-[#0090c8] font-semibold hover:underline">floor that needs specialist care</Link>,
+                {" "}a tenant who works late. Consistency in staffing is one of the most requested — and least delivered — things facility managers ask for from a cleaning vendor, and it's built into how we staff every Worcester account from day one.
+              </p>
+              <p>
+                We check in regularly rather than waiting for a complaint, and because our ownership is directly reachable — not buried behind a franchise call center — issues get resolved in a conversation, not a ticket queue. That combination of a stable crew, a direct point of contact, and a willingness to actually show up when something needs attention is reflected in a 97% client retention rate across our full service area.
+              </p>
+              <p>
+                Every Worcester crew is fully insured and bonded, trained on the equipment and cleaning chemicals used on your property, and briefed on any building-specific access, security, or safety requirements before their first shift. If your Worcester property needs{" "}
+                <Link href="/post-construction-cleaning-central-ma" className="text-[#0090c8] font-semibold hover:underline">post-construction cleanup</Link>,{" "}
+                <Link href="/turnover-cleaning-central-ma" className="text-[#0090c8] font-semibold hover:underline">turnover cleaning</Link>, or{" "}
+                <Link href="/emergency-restoration-services-central-ma" className="text-[#0090c8] font-semibold hover:underline">emergency flood response</Link>,
+                {" "}we build our onboarding around your requirements rather than asking you to work around us.
+              </p>
+            </div>
           </div>
         </div>
       </section>
@@ -464,7 +530,7 @@ export default function WorcesterCityPage() {
                   In addition to Worcester, Enterprise Cleaning Corporation regularly services commercial properties in the surrounding communities of Shrewsbury, West Boylston, Auburn, Holden, Millbury, and throughout the broader Central Massachusetts, Rhode Island, and Southern New Hampshire region.
                 </p>
                 <p>
-                  For a Worcester facility or property manager, that translates into fewer emergencies, fewer complaints from tenants or staff about a dirty restroom or a streaky lobby floor, and one less vendor relationship to manage closely. You get a crew that already knows Worcester's building stock, a schedule that fits your hours, and a company that has been answering the phone in this market for more than two decades.
+                  For a Worcester facility or property manager, that translates into fewer emergencies, fewer complaints from tenants or staff about a dirty restroom or a streaky lobby floor, and one less vendor relationship to manage closely. You get a crew that already knows Worcester's building stock, a schedule that fits your hours, and a company that has been answering the phone in this market for more than 23 years.
                 </p>
               </div>
               <div className="flex gap-4 pt-2">
@@ -480,7 +546,7 @@ export default function WorcesterCityPage() {
 
             <div className="grid grid-cols-2 gap-4">
               {[
-                { icon: ShieldCheck, stat: "20+ Yrs", label: "Local Expertise" },
+                { icon: ShieldCheck, stat: "23+ Yrs", label: "Local Expertise" },
                 { icon: Trophy, stat: "4×", label: "WBJ Best of Business" },
                 { icon: Users, stat: "97%", label: "Client Retention" },
                 { icon: MapPin, stat: "~4 mi", label: "From Worcester" },
