@@ -3,6 +3,7 @@ import { MapPin } from "lucide-react";
 
 const cityLinks: Record<string, string> = {
   "Worcester": "/commercial-cleaning-worcester-ma",
+  "Shrewsbury": "/commercial-cleaning-shrewsbury-ma",
 };
 
 const locations = [

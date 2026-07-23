@@ -27,6 +27,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
 
   const cityRoutes = [
     "/commercial-cleaning-worcester-ma",
+    "/commercial-cleaning-shrewsbury-ma",
   ];
 
   const sitemap: MetadataRoute.Sitemap = [
