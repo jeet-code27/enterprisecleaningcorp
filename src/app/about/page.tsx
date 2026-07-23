@@ -172,7 +172,7 @@ export default function AboutPage() {
                 transition: { type: "spring", damping: 30, stiffness: 400 },
               }}
             >
-              <Link href="/services">
+              <Link href="/#services">
                 Explore Services
               </Link>
             </motion.button>

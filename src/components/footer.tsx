@@ -110,9 +110,9 @@ export function Footer() {
           </div>
         </div>
 
-        <div className="border-t border-white/30 pt-8 flex flex-col md:flex-row items-center justify-between text-xs text-white/70">
+        <div className="border-t border-white/30 pt-8 flex flex-col md:flex-row items-center md:justify-start gap-4 md:gap-8 text-xs text-white/70">
           <p>© {new Date().getFullYear()} Enterprise Cleaning Corporation. All rights reserved.</p>
-          <div className="flex items-center gap-4 mt-4 md:mt-0">
+          <div className="flex items-center gap-4">
             <Link href="/privacy-policy" className="hover:text-white transition-colors">Privacy Policy</Link>
             <Link href="/terms-and-conditions" className="hover:text-white transition-colors">Terms of Service</Link>
           </div>

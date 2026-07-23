@@ -56,22 +56,23 @@ export const Hero = () => {
       <div className="relative z-10 flex flex-col justify-center flex-1 px-6 sm:px-10 lg:px-20 pt-28 pb-20 max-w-[1400px] mx-auto w-full">
 
         {/* Top badge */}
-        <motion.div {...fadeUp(0.1)} className="flex items-center gap-3 mb-8">
-          <div className="flex items-center gap-2.5 bg-white/10 border border-white/15 backdrop-blur-md rounded-lg px-4 py-2.5">
+        <motion.div {...fadeUp(0.1)} className="flex items-center gap-3 mb-6 sm:mb-8">
+          <div className="inline-flex items-center gap-2 sm:gap-2.5 bg-white/10 border border-white/15 backdrop-blur-md rounded-xl px-3.5 sm:px-4 py-2 sm:py-2.5 max-w-full">
             <span className="relative flex h-2.5 w-2.5 shrink-0">
               <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#E31837] opacity-75" />
               <span className="relative inline-flex h-2.5 w-2.5 rounded-full bg-[#E31837]" />
             </span>
-            <span className="text-xs font-semibold text-white tracking-widest uppercase">24 / 7</span>
-            <div className="w-px h-4 bg-white/20" />
-            <span className="text-xs font-medium text-white/80">Emergency Response Available</span>
+            <span className="text-xs font-extrabold text-white tracking-wider uppercase whitespace-nowrap shrink-0">24/7</span>
+            <div className="w-px h-4 bg-white/20 shrink-0" />
+            <span className="text-xs font-medium text-white/90 sm:whitespace-normal">Emergency Response Available</span>
           </div>
         </motion.div>
 
         {/* Main Headline */}
         <motion.div {...fadeUp(0.25)} className="mb-6">
-          <h1 className="text-2xl sm:text-3xl md:text-4xl font-black text-white leading-[1.2] tracking-[-0.01em] max-w-2xl">
-            Central Massachusetts&apos; Most Trusted<br />
+          <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-black text-white leading-[1.2] tracking-[-0.01em] max-w-2xl break-words">
+            Central Massachusetts&apos; Most Trusted{" "}
+            <br className="hidden sm:inline" />
             <span
               style={{
                 backgroundImage: "linear-gradient(90deg, #00B8FF 0%, #0090c8 100%)",
@@ -82,22 +83,22 @@ export const Hero = () => {
             >
               Commercial Cleaning,
             </span>
-            <br />Day &amp; Night Cleaning Company
+            <br className="hidden sm:inline" /> Day &amp; Night Cleaning Company
           </h1>
         </motion.div>
 
         {/* Sub-headline */}
-        <motion.p {...fadeUp(0.4)} className="max-w-2xl text-sm md:text-base text-white/75 mb-10 leading-relaxed">
+        <motion.p {...fadeUp(0.4)} className="max-w-2xl text-sm md:text-base text-white/75 mb-8 sm:mb-10 leading-relaxed">
           Trusted by{" "}
           <span className="text-white/90 font-medium">Hanover Insurance, Workers Credit Union, Shields Healthcare, Capital Group, Millbury Credit Union</span>{" "}
           &amp; 140+ Central MA businesses
         </motion.p>
 
         {/* CTA Buttons */}
-        <motion.div {...fadeUp(0.55)} className="flex flex-col sm:flex-row items-center gap-4 mb-14">
+        <motion.div {...fadeUp(0.55)} className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3 sm:gap-4 mb-14 w-full sm:w-auto">
           <Link
             href="/contact"
-            className="group relative inline-flex items-center justify-center gap-2 bg-[#E31837] text-white px-7 py-3.5 rounded-xl font-bold text-sm transition-all duration-300 hover:bg-[#c91530] hover:shadow-[0_8px_40px_rgba(227,24,55,0.45)] hover:-translate-y-0.5 overflow-hidden h-12"
+            className="group relative inline-flex items-center justify-center gap-2 bg-[#E31837] text-white px-6 sm:px-7 py-3.5 rounded-xl font-bold text-sm transition-all duration-300 hover:bg-[#c91530] hover:shadow-[0_8px_40px_rgba(227,24,55,0.45)] hover:-translate-y-0.5 overflow-hidden h-12 w-full sm:w-auto"
           >
             <span className="absolute inset-0 bg-gradient-to-r from-white/0 via-white/10 to-white/0 translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-700" />
             Get a Free On-Site Quote
@@ -106,7 +107,7 @@ export const Hero = () => {
 
           <a
             href="tel:5088901000"
-            className="group inline-flex items-center justify-center gap-2.5 border border-white/25 bg-white/8 backdrop-blur-md text-white px-7 py-3.5 rounded-xl font-bold text-sm transition-all duration-300 hover:border-[#00B8FF]/60 hover:bg-white/15 hover:-translate-y-0.5 h-12"
+            className="group inline-flex items-center justify-center gap-2.5 border border-white/25 bg-white/8 backdrop-blur-md text-white px-6 sm:px-7 py-3.5 rounded-xl font-bold text-sm transition-all duration-300 hover:border-[#00B8FF]/60 hover:bg-white/15 hover:-translate-y-0.5 h-12 w-full sm:w-auto"
           >
             <Phone className="w-4 h-4 text-[#00B8FF]" />
             (508) 890-1000

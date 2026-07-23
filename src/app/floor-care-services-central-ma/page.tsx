@@ -14,7 +14,7 @@ export const metadata: Metadata = {
   description: "Strip and wax, VCT, carpet care, and hard-floor maintenance for commercial buildings across Central Massachusetts. Free assessment available.",
   keywords: "commercial floor care Central MA, VCT stripping and waxing, commercial carpet cleaning Worcester, industrial floor maintenance, commercial floor cleaning services",
   alternates: {
-    canonical: "https://enterprisecleaningcorp.com/floor-care-services-central-ma"
+    canonical: "https://www.enterprisecleaningcorp.com/floor-care-services-central-ma"
   },
   robots: {
     index: true,
@@ -45,14 +45,14 @@ const structuredDataService = {
       "postalCode": "01583",
       "addressCountry": "US"
     },
-    "url": "https://enterprisecleaningcorp.com"
+    "url": "https://www.enterprisecleaningcorp.com"
   },
   "areaServed": [
     "Central Massachusetts",
     "Rhode Island",
     "New Hampshire"
   ],
-  "url": "https://enterprisecleaningcorp.com/floor-care-services-central-ma"
+  "url": "https://www.enterprisecleaningcorp.com/floor-care-services-central-ma"
 };
 
 const structuredDataFAQ = {
@@ -125,8 +125,8 @@ export default function FloorCarePage() {
             className="object-cover object-center"
             priority
           />
-          <div className="absolute inset-0 bg-[#0090c8]/80 mix-blend-multiply" />
-          <div className="absolute inset-0 bg-gradient-to-r from-[#0090c8]/95 via-[#00B8FF]/80 to-transparent" />
+          <div className="absolute inset-0 bg-slate-950/30" />
+          <div className="absolute inset-0 bg-gradient-to-r from-[#003057]/70 via-[#0090c8]/50 to-transparent" />
         </div>
         
         <div className="container relative z-10 mx-auto px-4 md:px-6">
@@ -134,9 +134,9 @@ export default function FloorCarePage() {
             
             {/* Left Content */}
             <div className="text-white space-y-6 max-w-2xl flex-1 mt-12">
-              <div className="flex items-center gap-2 text-sm text-white/90 mb-6 font-medium">
-                <Link href="/services" className="hover:text-white transition-colors">Our Services</Link>
-                <ChevronRight className="w-4 h-4 text-[#FFE800]" />
+              <div className="flex flex-wrap items-center gap-1.5 sm:gap-2 text-xs sm:text-sm text-white/90 mb-6 font-medium">
+                <Link href="/#services" className="hover:text-white transition-colors whitespace-nowrap">Our Services</Link>
+                <ChevronRight className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-[#FFE800] shrink-0" />
                 <span className="text-white font-bold tracking-wide">Floor Care Services</span>
               </div>
               

@@ -27,12 +27,12 @@ export function CTASection({ title, action, className, children }: CTAProps) {
         <Button 
           variant={action.variant || "default"} 
           size="lg" 
-          className="animate-appear delay-100 mt-4 rounded-full px-8 py-6 text-lg font-bold shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105 active:scale-95 group/btn"
+          className="animate-appear delay-100 mt-4 rounded-full px-5 sm:px-8 py-3.5 sm:py-6 h-auto text-sm sm:text-base md:text-lg font-bold shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105 active:scale-95 group/btn max-w-[calc(100vw-2rem)] whitespace-normal sm:whitespace-nowrap"
           asChild
         >
-          <a href={action.href}>
-            {action.text}
-            <ArrowRight className="ml-2 w-5 h-5 transition-transform duration-300 group-hover/btn:translate-x-1" />
+          <a href={action.href} className="inline-flex items-center justify-center gap-2">
+            <span>{action.text}</span>
+            <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5 shrink-0 transition-transform duration-300 group-hover/btn:translate-x-1" />
           </a>
         </Button>
       </div>

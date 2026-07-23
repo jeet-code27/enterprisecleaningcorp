@@ -4,16 +4,20 @@ export const metadata: Metadata = {
   title: "Privacy Policy | Enterprise Cleaning Corporation",
   description: "Read the Privacy Policy for Enterprise Cleaning Corporation. Learn how we collect, use, protect, and handle your personal information and data.",
   keywords: ["Privacy Policy", "Enterprise Cleaning Corporation", "Data Protection", "Information Collection", "Cookie Policy", "Commercial Cleaning Privacy", "Central Massachusetts"],
+  alternates: {
+    canonical: "https://www.enterprisecleaningcorp.com/privacy-policy",
+  },
 };
 
 export default function PrivacyPolicyPage() {
   return (
-    <main className="py-20 lg:py-32 bg-slate-50 min-h-screen">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl bg-white p-8 md:p-12 shadow-sm rounded-2xl border border-slate-200">
-        <h1 className="text-3xl md:text-5xl font-bold text-slate-900 mb-4">Privacy Policy</h1>
-        <p className="text-slate-600 mb-10 font-medium">Effective Date: July 22, 2026</p>
-        
-        <div className="prose prose-slate prose-lg max-w-none prose-headings:text-slate-900 prose-headings:font-bold prose-a:text-blue-600 hover:prose-a:text-blue-500">
+    <main className="py-12 md:py-20 lg:py-32 bg-gradient-to-b from-slate-50 to-slate-100 min-h-screen">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl">
+        <div className="bg-white p-6 sm:p-8 md:p-12 shadow-lg rounded-2xl border-t-4 border-t-blue-600 border-x border-b border-slate-200">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-slate-900 mb-4 break-words">Privacy Policy</h1>
+          <p className="text-slate-600 mb-8 sm:mb-10 font-medium">Effective Date: July 22, 2026</p>
+          
+          <div className="prose prose-slate prose-sm sm:prose-base md:prose-lg max-w-none prose-headings:text-slate-900 prose-headings:font-bold prose-a:text-blue-600 hover:prose-a:text-blue-500 prose-p:leading-relaxed break-words">
           <p>
             Enterprise Cleaning Corporation (“Enterprise Cleaning,” “we,” “us,” or “our”) respects your privacy and is committed to protecting the personal information of everyone who visits our website or uses our services. This Privacy Policy explains what information we collect, how we use and protect it, and the choices you have regarding your information.
           </p>
@@ -148,6 +152,7 @@ export default function PrivacyPolicyPage() {
           <p>
             We may update this Privacy Policy from time to time to reflect changes in our practices, technology, or legal requirements. The “Effective Date” at the top of this page indicates when this Policy was last revised. We encourage you to review this page periodically.
           </p>
+        </div>
         </div>
       </div>
     </main>

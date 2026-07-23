@@ -4,16 +4,20 @@ export const metadata: Metadata = {
   title: "Terms and Conditions | Enterprise Cleaning Corporation",
   description: "Review the Terms and Conditions for Enterprise Cleaning Corporation. Understand our policies on commercial cleaning services, quotes, payments, and website usage.",
   keywords: ["Terms and Conditions", "Enterprise Cleaning Corporation", "Service Agreement", "Cleaning Services Terms", "Commercial Cleaning Terms", "Central Massachusetts"],
+  alternates: {
+    canonical: "https://www.enterprisecleaningcorp.com/terms-and-conditions",
+  },
 };
 
 export default function TermsAndConditionsPage() {
   return (
-    <main className="py-20 lg:py-32 bg-slate-50 min-h-screen">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl bg-white p-8 md:p-12 shadow-sm rounded-2xl border border-slate-200">
-        <h1 className="text-3xl md:text-5xl font-bold text-slate-900 mb-4">Terms and Conditions</h1>
-        <p className="text-slate-600 mb-10 font-medium">Effective Date: July 22, 2026</p>
-        
-        <div className="prose prose-slate prose-lg max-w-none prose-headings:text-slate-900 prose-headings:font-bold prose-a:text-blue-600 hover:prose-a:text-blue-500">
+    <main className="py-12 md:py-20 lg:py-32 bg-gradient-to-b from-slate-50 to-slate-100 min-h-screen">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl">
+        <div className="bg-white p-6 sm:p-8 md:p-12 shadow-lg rounded-2xl border-t-4 border-t-blue-600 border-x border-b border-slate-200">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-slate-900 mb-4 break-words">Terms and Conditions</h1>
+          <p className="text-slate-600 mb-8 sm:mb-10 font-medium">Effective Date: July 22, 2026</p>
+          
+          <div className="prose prose-slate prose-sm sm:prose-base md:prose-lg max-w-none prose-headings:text-slate-900 prose-headings:font-bold prose-a:text-blue-600 hover:prose-a:text-blue-500 prose-p:leading-relaxed break-words">
           <p>
             These Terms and Conditions (“Terms”) govern your use of the website enterprisecleaningcorp.com (the “Site”) operated by Enterprise Cleaning Corporation (“Enterprise Cleaning,” “we,” “us,” or “our”), and your relationship with us in connection with the commercial cleaning and related services we provide. By accessing the Site or requesting a quote or service through it, you agree to be bound by these Terms.
           </p>
@@ -122,6 +126,7 @@ export default function TermsAndConditionsPage() {
           </ul>
         </div>
       </div>
+    </div>
     </main>
   );
 }

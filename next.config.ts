@@ -53,6 +53,21 @@ const nextConfig: NextConfig = {
         destination: '/',
         permanent: true,
       },
+      {
+        source: '/services',
+        destination: '/#services',
+        permanent: true,
+      },
+      {
+        source: '/commercial-cleaning-massachusetts-a-buyers-guide',
+        destination: '/blog/commercial-cleaning-massachusetts-a-buyers-guide',
+        permanent: true,
+      },
+      {
+        source: '/commercial-cleaning-massachusetts-a-buyers-guide.html',
+        destination: '/blog/commercial-cleaning-massachusetts-a-buyers-guide',
+        permanent: true,
+      },
     ];
   },
 };

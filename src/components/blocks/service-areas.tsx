@@ -1,4 +1,9 @@
+import Link from "next/link";
 import { MapPin } from "lucide-react";
+
+const cityLinks: Record<string, string> = {
+  "Worcester": "/commercial-cleaning-worcester-ma",
+};
 
 const locations = [
   "Worcester", "Shrewsbury", "Auburn", "Holden", "Westborough",
@@ -38,17 +43,34 @@ export function ServiceAreas() {
 
         {/* Grid — 2 cols mobile, 3 cols tablet, 5 cols desktop */}
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-2 md:gap-3">
-          {locations.map((loc, idx) => (
-            <div
-              key={idx}
-              className="flex items-center gap-2 px-3 py-2.5 bg-slate-50 border border-slate-100 rounded-xl hover:border-[#00B8FF]/40 hover:bg-[#00B8FF]/5 transition-all duration-200 group"
-            >
-              <span className="w-1.5 h-1.5 rounded-full bg-[#00B8FF] shrink-0 group-hover:bg-[#E31837] transition-colors" />
-              <span className="text-slate-700 font-semibold text-xs md:text-sm leading-tight truncate">
-                {loc}
-              </span>
-            </div>
-          ))}
+          {locations.map((loc, idx) => {
+            const link = cityLinks[loc];
+            if (link) {
+              return (
+                <Link
+                  key={idx}
+                  href={link}
+                  className="flex items-center gap-2 px-3 py-2.5 bg-[#0090c8]/10 border border-[#0090c8]/40 rounded-xl hover:border-[#0090c8] hover:bg-[#0090c8]/20 transition-all duration-200 group font-bold text-[#0090c8]"
+                >
+                  <span className="w-2 h-2 rounded-full bg-[#0090c8] shrink-0 group-hover:bg-[#E31837] transition-colors" />
+                  <span className="text-slate-900 font-bold text-xs md:text-sm leading-tight truncate">
+                    {loc}
+                  </span>
+                </Link>
+              );
+            }
+            return (
+              <div
+                key={idx}
+                className="flex items-center gap-2 px-3 py-2.5 bg-slate-50 border border-slate-100 rounded-xl hover:border-[#00B8FF]/40 hover:bg-[#00B8FF]/5 transition-all duration-200 group"
+              >
+                <span className="w-1.5 h-1.5 rounded-full bg-[#00B8FF] shrink-0 group-hover:bg-[#E31837] transition-colors" />
+                <span className="text-slate-700 font-semibold text-xs md:text-sm leading-tight truncate">
+                  {loc}
+                </span>
+              </div>
+            );
+          })}
         </div>
 
         {/* Bottom note */}

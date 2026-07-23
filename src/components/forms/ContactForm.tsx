@@ -65,7 +65,7 @@ export function ContactForm() {
   };
 
   return (
-    <div className="bg-white p-8 md:p-10 rounded-3xl shadow-xl border border-slate-100 relative overflow-hidden">
+    <div className="bg-white p-5 sm:p-8 md:p-10 rounded-3xl shadow-xl border border-slate-100 relative overflow-hidden">
       {submitStatus === "success" ? (
         <div className="flex flex-col items-center justify-center h-full min-h-[400px] text-center space-y-4">
           <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mb-2">

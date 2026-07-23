@@ -25,6 +25,19 @@ export const metadata: Metadata = {
   authors: [{ name: "Enterprise Cleaning Corporation" }],
   publisher: "Enterprise Cleaning Corporation",
   creator: "Enterprise Cleaning Corporation",
+  openGraph: {
+    title: "Enterprise Cleaning Corp | Commercial Cleaning Services",
+    description: "Enterprise Cleaning Corporation provides professional commercial cleaning, janitorial, and emergency cleanup services in Central MA, Rhode Island & Southern NH.",
+    url: "https://www.enterprisecleaningcorp.com",
+    siteName: "Enterprise Cleaning Corporation",
+    locale: "en_US",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Enterprise Cleaning Corp | Commercial Cleaning Services",
+    description: "Enterprise Cleaning Corporation provides professional commercial cleaning, janitorial, and emergency cleanup services in Central MA, Rhode Island & Southern NH.",
+  },
 };
 
 export default function RootLayout({

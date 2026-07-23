@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   description: "Janitorial, common-area, and turnover cleaning for property managers across Worcester and Central Massachusetts. One reliable partner, 97% retention.",
   keywords: "commercial property management cleaning Central MA, multi-tenant building janitorial, common area commercial cleaning Worcester, HOA cleaning services",
   alternates: {
-    canonical: "https://enterprisecleaningcorp.com/property-management-cleaning-central-ma"
+    canonical: "https://www.enterprisecleaningcorp.com/property-management-cleaning-central-ma"
   },
   robots: {
     index: true,
@@ -47,7 +47,7 @@ const structuredDataService = {
       "postalCode": "01583",
       "addressCountry": "US"
     },
-    "url": "https://enterprisecleaningcorp.com"
+    "url": "https://www.enterprisecleaningcorp.com"
   },
   "areaServed": [
     "Worcester MA",
@@ -55,7 +55,7 @@ const structuredDataService = {
     "Rhode Island",
     "New Hampshire"
   ],
-  "url": "https://enterprisecleaningcorp.com/property-management-cleaning-central-ma"
+  "url": "https://www.enterprisecleaningcorp.com/property-management-cleaning-central-ma"
 };
 
 const structuredDataFAQ = {
@@ -305,8 +305,8 @@ export default function PropertyManagementPage() {
             fill
             className="object-cover object-center"
           />
-          <div className="absolute inset-0 bg-[#003057]/90 mix-blend-multiply" />
-          <div className="absolute inset-0 bg-gradient-to-r from-[#0090c8]/90 via-[#003057]/80 to-[#001220]/90" />
+          <div className="absolute inset-0 bg-slate-950/40" />
+          <div className="absolute inset-0 bg-gradient-to-r from-[#003057]/60 via-[#0090c8]/40 to-[#001220]/60" />
         </div>
 
         <div className="container mx-auto px-4 md:px-6 relative z-10">

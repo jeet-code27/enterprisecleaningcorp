@@ -40,17 +40,17 @@ export default function ContactPage() {
       </div>
 
       {/* Hero Text Section Below Image */}
-      <section className="relative py-12 md:py-16 bg-white overflow-hidden border-b border-slate-100">
+      <section className="relative py-8 sm:py-12 md:py-16 bg-white overflow-hidden border-b border-slate-100">
         <div className="container relative z-10 mx-auto px-4 md:px-6 flex flex-col items-center">
-          <div className="text-center space-y-6 max-w-3xl mx-auto">
-            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[#0090c8]/10 border border-[#0090c8]/20">
+          <div className="text-center space-y-4 sm:space-y-6 max-w-3xl mx-auto">
+            <div className="inline-flex items-center gap-2 px-3 py-1.5 sm:px-4 sm:py-2 rounded-full bg-[#0090c8]/10 border border-[#0090c8]/20">
               <span className="flex h-2.5 w-2.5 rounded-full bg-[#0090c8] animate-pulse"></span>
-              <span className="text-sm font-bold text-[#0090c8] tracking-[0.1em] uppercase">We Are Here To Help</span>
+              <span className="text-xs sm:text-sm font-bold text-[#0090c8] tracking-[0.1em] uppercase">We Are Here To Help</span>
             </div>
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight leading-[1.1] text-slate-900">
+            <h1 className="text-2xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight leading-[1.15] text-slate-900 break-words">
               Get a Free Commercial Cleaning Quote in <span className="text-[#0090c8]">Central Massachusetts</span>
             </h1>
-            <p className="text-lg md:text-xl text-slate-600 font-medium leading-relaxed">
+            <p className="text-base sm:text-lg md:text-xl text-slate-600 font-medium leading-relaxed">
               Ready for a cleaner, safer, and more professional facility? Reach out to our team today for a free, no-obligation on-site assessment.
             </p>
           </div>
@@ -58,7 +58,7 @@ export default function ContactPage() {
       </section>
 
       {/* Main Content */}
-      <section className="py-20 bg-slate-50">
+      <section className="py-10 sm:py-16 md:py-20 bg-slate-50">
         <div className="container mx-auto px-4 md:px-6">
           <div className="grid lg:grid-cols-2 gap-12 max-w-6xl mx-auto">
             
@@ -76,9 +76,9 @@ export default function ContactPage() {
                   <div className="w-12 h-12 rounded-xl bg-[#00B8FF]/10 flex items-center justify-center shrink-0">
                     <PhoneCall className="w-6 h-6 text-[#00B8FF]" />
                   </div>
-                  <div>
-                    <h3 className="text-lg font-bold text-slate-900 mb-1">Call Us 24/7</h3>
-                    <a href="tel:5088901000" className="text-slate-600 hover:text-[#00B8FF] font-medium transition-colors text-lg">
+                  <div className="min-w-0 flex-1">
+                    <h3 className="text-base sm:text-lg font-bold text-slate-900 mb-1">Call Us 24/7</h3>
+                    <a href="tel:5088901000" className="text-base sm:text-lg text-slate-600 hover:text-[#00B8FF] font-medium transition-colors">
                       (508) 890-1000
                     </a>
                   </div>
@@ -88,9 +88,9 @@ export default function ContactPage() {
                   <div className="w-12 h-12 rounded-xl bg-[#00B8FF]/10 flex items-center justify-center shrink-0">
                     <Mail className="w-6 h-6 text-[#00B8FF]" />
                   </div>
-                  <div>
-                    <h3 className="text-lg font-bold text-slate-900 mb-1">Email Us</h3>
-                    <a href="mailto:customerservice@enterprisecleaningcorp.com" className="text-slate-600 hover:text-[#00B8FF] font-medium transition-colors text-lg">
+                  <div className="min-w-0 flex-1">
+                    <h3 className="text-base sm:text-lg font-bold text-slate-900 mb-1">Email Us</h3>
+                    <a href="mailto:customerservice@enterprisecleaningcorp.com" className="text-base sm:text-lg text-slate-600 hover:text-[#00B8FF] font-medium transition-colors break-all">
                       customerservice@enterprisecleaningcorp.com
                     </a>
                   </div>
@@ -100,9 +100,9 @@ export default function ContactPage() {
                   <div className="w-12 h-12 rounded-xl bg-[#00B8FF]/10 flex items-center justify-center shrink-0">
                     <MapPin className="w-6 h-6 text-[#00B8FF]" />
                   </div>
-                  <div>
-                    <h3 className="text-lg font-bold text-slate-900 mb-1">Headquarters</h3>
-                    <p className="text-slate-600 font-medium text-lg">
+                  <div className="min-w-0 flex-1">
+                    <h3 className="text-base sm:text-lg font-bold text-slate-900 mb-1">Headquarters</h3>
+                    <p className="text-base sm:text-lg text-slate-600 font-medium">
                       99 Hartwell Street<br />
                       West Boylston, MA 01583
                     </p>
@@ -113,12 +113,12 @@ export default function ContactPage() {
                   <div className="w-12 h-12 rounded-xl bg-[#00B8FF]/10 flex items-center justify-center shrink-0">
                     <Clock className="w-6 h-6 text-[#00B8FF]" />
                   </div>
-                  <div>
-                    <h3 className="text-lg font-bold text-slate-900 mb-1">Business Hours</h3>
-                    <p className="text-slate-600 font-medium text-lg">
-                      Monday - Friday: 8:00 AM - 5:00 PM<br />
-                      <span className="text-[#E31837] font-bold text-sm">24/7 Emergency Service Available</span>
+                  <div className="min-w-0 flex-1">
+                    <h3 className="text-base sm:text-lg font-bold text-slate-900 mb-1">Business Hours</h3>
+                    <p className="text-base sm:text-lg text-slate-600 font-medium">
+                      Monday - Friday: 8:00 AM - 5:00 PM
                     </p>
+                    <span className="text-xs sm:text-sm text-[#E31837] font-bold mt-1 block">24/7 Emergency Service Available</span>
                   </div>
                 </div>
               </div>
@@ -165,16 +165,16 @@ export default function ContactPage() {
           <div className="flex flex-wrap justify-center gap-6 md:gap-8">
 
             {/* Stephen — Owner */}
-            <div className="w-full md:w-[calc(33.333%-1.34rem)] flex flex-col items-center text-center bg-slate-50 rounded-3xl p-6 lg:p-8 border border-slate-100 hover:shadow-xl transition-shadow duration-300">
-              <div className="w-28 h-28 rounded-full overflow-hidden ring-4 ring-[#E31837]/20 mb-5 shadow-lg">
+            <div className="w-full sm:w-[calc(50%-0.75rem)] md:w-[calc(33.333%-1.34rem)] flex flex-col items-center text-center bg-slate-50 rounded-3xl p-5 sm:p-6 lg:p-8 border border-slate-100 hover:shadow-xl transition-shadow duration-300">
+              <div className="w-24 h-24 sm:w-28 sm:h-28 rounded-full overflow-hidden ring-4 ring-[#E31837]/20 mb-4 sm:mb-5 shadow-lg">
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img src="/images/stephon.png" alt="Stephen Buchalter" className="w-full h-full object-cover object-top" />
               </div>
-              <h3 className="text-xl font-extrabold text-slate-900">Stephen Buchalter</h3>
-              <span className="mt-1 mb-4 inline-block text-xs font-bold uppercase tracking-widest text-[#E31837] bg-red-50 px-3 py-1 rounded-full">Owner</span>
+              <h3 className="text-lg sm:text-xl font-extrabold text-slate-900">Stephen Buchalter</h3>
+              <span className="mt-1 mb-3 sm:mb-4 inline-block text-xs font-bold uppercase tracking-widest text-[#E31837] bg-red-50 px-3 py-1 rounded-full">Owner</span>
               <a
                 href="mailto:customerservice@enterprisecleaningcorp.com"
-                className="flex items-center gap-1.5 text-[13px] lg:text-sm font-semibold text-slate-600 hover:text-[#00B8FF] transition-colors whitespace-nowrap"
+                className="flex items-center gap-1.5 text-xs lg:text-sm font-semibold text-slate-600 hover:text-[#00B8FF] transition-colors break-all"
               >
                 <Mail className="w-4 h-4 shrink-0 text-[#00B8FF]" />
                 customerservice@enterprisecleaningcorp.com
@@ -182,16 +182,16 @@ export default function ContactPage() {
             </div>
 
             {/* Alex — Team Member */}
-            <div className="w-full md:w-[calc(33.333%-1.34rem)] flex flex-col items-center text-center bg-slate-50 rounded-3xl p-6 lg:p-8 border border-slate-100 hover:shadow-xl transition-shadow duration-300">
-              <div className="w-28 h-28 rounded-full overflow-hidden ring-4 ring-[#00B8FF]/20 mb-5 shadow-lg">
+            <div className="w-full sm:w-[calc(50%-0.75rem)] md:w-[calc(33.333%-1.34rem)] flex flex-col items-center text-center bg-slate-50 rounded-3xl p-5 sm:p-6 lg:p-8 border border-slate-100 hover:shadow-xl transition-shadow duration-300">
+              <div className="w-24 h-24 sm:w-28 sm:h-28 rounded-full overflow-hidden ring-4 ring-[#00B8FF]/20 mb-4 sm:mb-5 shadow-lg">
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img src="/images/alex-new.jpeg" alt="Alex" className="w-full h-full object-cover object-top" />
               </div>
-              <h3 className="text-xl font-extrabold text-slate-900">Alex</h3>
-              <span className="mt-1 mb-4 inline-block text-xs font-bold uppercase tracking-widest text-[#00B8FF] bg-blue-50 px-3 py-1 rounded-full">Director of Sales & Marketing</span>
+              <h3 className="text-lg sm:text-xl font-extrabold text-slate-900">Alex</h3>
+              <span className="mt-1 mb-3 sm:mb-4 inline-block text-xs font-bold uppercase tracking-widest text-[#00B8FF] bg-blue-50 px-3 py-1 rounded-full">Director of Sales & Marketing</span>
               <a
                 href="mailto:alex@enterprisecleaningcorp.com"
-                className="flex items-center gap-1.5 text-[13px] lg:text-sm font-semibold text-slate-600 hover:text-[#00B8FF] transition-colors whitespace-nowrap"
+                className="flex items-center gap-1.5 text-xs lg:text-sm font-semibold text-slate-600 hover:text-[#00B8FF] transition-colors break-all"
               >
                 <Mail className="w-4 h-4 shrink-0 text-[#00B8FF]" />
                 alex@enterprisecleaningcorp.com
@@ -199,16 +199,16 @@ export default function ContactPage() {
             </div>
 
             {/* Julio — Team Member */}
-            <div className="w-full md:w-[calc(33.333%-1.34rem)] flex flex-col items-center text-center bg-slate-50 rounded-3xl p-6 lg:p-8 border border-slate-100 hover:shadow-xl transition-shadow duration-300">
-              <div className="w-28 h-28 rounded-full overflow-hidden ring-4 ring-[#00B8FF]/20 mb-5 shadow-lg">
+            <div className="w-full sm:w-[calc(50%-0.75rem)] md:w-[calc(33.333%-1.34rem)] flex flex-col items-center text-center bg-slate-50 rounded-3xl p-5 sm:p-6 lg:p-8 border border-slate-100 hover:shadow-xl transition-shadow duration-300">
+              <div className="w-24 h-24 sm:w-28 sm:h-28 rounded-full overflow-hidden ring-4 ring-[#00B8FF]/20 mb-4 sm:mb-5 shadow-lg">
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img src="/images/julio.png" alt="Julio" className="w-full h-full object-cover object-top" />
               </div>
-              <h3 className="text-xl font-extrabold text-slate-900">Julio</h3>
-              <span className="mt-1 mb-4 inline-block text-xs font-bold uppercase tracking-widest text-[#00B8FF] bg-blue-50 px-3 py-1 rounded-full">Director of Operations</span>
+              <h3 className="text-lg sm:text-xl font-extrabold text-slate-900">Julio</h3>
+              <span className="mt-1 mb-3 sm:mb-4 inline-block text-xs font-bold uppercase tracking-widest text-[#00B8FF] bg-blue-50 px-3 py-1 rounded-full">Director of Operations</span>
               <a
                 href="mailto:customerservice@enterprisecleaningcorp.com"
-                className="flex items-center gap-1.5 text-[13px] lg:text-sm font-semibold text-slate-600 hover:text-[#00B8FF] transition-colors whitespace-nowrap"
+                className="flex items-center gap-1.5 text-xs lg:text-sm font-semibold text-slate-600 hover:text-[#00B8FF] transition-colors break-all"
               >
                 <Mail className="w-4 h-4 shrink-0 text-[#00B8FF]" />
                 customerservice@enterprisecleaningcorp.com
@@ -216,15 +216,15 @@ export default function ContactPage() {
             </div>
 
             {/* Customer Service */}
-            <div className="w-full md:w-[calc(33.333%-1.34rem)] flex flex-col items-center text-center bg-slate-50 rounded-3xl p-6 lg:p-8 border border-slate-100 hover:shadow-xl transition-shadow duration-300">
-              <div className="w-28 h-28 rounded-full overflow-hidden ring-4 ring-[#00B8FF]/20 mb-5 shadow-lg bg-white flex items-center justify-center">
-                <Headset className="w-12 h-12 text-[#00B8FF]" />
+            <div className="w-full sm:w-[calc(50%-0.75rem)] md:w-[calc(33.333%-1.34rem)] flex flex-col items-center text-center bg-slate-50 rounded-3xl p-5 sm:p-6 lg:p-8 border border-slate-100 hover:shadow-xl transition-shadow duration-300">
+              <div className="w-24 h-24 sm:w-28 sm:h-28 rounded-full overflow-hidden ring-4 ring-[#00B8FF]/20 mb-4 sm:mb-5 shadow-lg bg-white flex items-center justify-center">
+                <Headset className="w-10 h-10 sm:w-12 sm:h-12 text-[#00B8FF]" />
               </div>
-              <h3 className="text-xl font-extrabold text-slate-900">Customer Service</h3>
-              <span className="mt-1 mb-4 inline-block text-xs font-bold uppercase tracking-widest text-[#00B8FF] bg-blue-50 px-3 py-1 rounded-full">Support Team</span>
+              <h3 className="text-lg sm:text-xl font-extrabold text-slate-900">Customer Service</h3>
+              <span className="mt-1 mb-3 sm:mb-4 inline-block text-xs font-bold uppercase tracking-widest text-[#00B8FF] bg-blue-50 px-3 py-1 rounded-full">Support Team</span>
               <a
                 href="mailto:customerservice@enterprisecleaningcorp.com"
-                className="flex items-center gap-1.5 text-[13px] lg:text-sm font-semibold text-slate-600 hover:text-[#00B8FF] transition-colors whitespace-nowrap"
+                className="flex items-center gap-1.5 text-xs lg:text-sm font-semibold text-slate-600 hover:text-[#00B8FF] transition-colors break-all"
               >
                 <Mail className="w-4 h-4 shrink-0 text-[#00B8FF]" />
                 customerservice@enterprisecleaningcorp.com
@@ -232,15 +232,15 @@ export default function ContactPage() {
             </div>
 
             {/* Supervisors */}
-            <div className="w-full md:w-[calc(33.333%-1.34rem)] flex flex-col items-center text-center bg-slate-50 rounded-3xl p-6 lg:p-8 border border-slate-100 hover:shadow-xl transition-shadow duration-300">
-              <div className="w-28 h-28 rounded-full overflow-hidden ring-4 ring-[#00B8FF]/20 mb-5 shadow-lg bg-white flex items-center justify-center">
-                <UserCheck className="w-12 h-12 text-[#00B8FF]" />
+            <div className="w-full sm:w-[calc(50%-0.75rem)] md:w-[calc(33.333%-1.34rem)] flex flex-col items-center text-center bg-slate-50 rounded-3xl p-5 sm:p-6 lg:p-8 border border-slate-100 hover:shadow-xl transition-shadow duration-300">
+              <div className="w-24 h-24 sm:w-28 sm:h-28 rounded-full overflow-hidden ring-4 ring-[#00B8FF]/20 mb-4 sm:mb-5 shadow-lg bg-white flex items-center justify-center">
+                <UserCheck className="w-10 h-10 sm:w-12 sm:h-12 text-[#00B8FF]" />
               </div>
-              <h3 className="text-xl font-extrabold text-slate-900">Supervisors</h3>
-              <span className="mt-1 mb-4 inline-block text-xs font-bold uppercase tracking-widest text-[#00B8FF] bg-blue-50 px-3 py-1 rounded-full">Field Operations</span>
+              <h3 className="text-lg sm:text-xl font-extrabold text-slate-900">Supervisors</h3>
+              <span className="mt-1 mb-3 sm:mb-4 inline-block text-xs font-bold uppercase tracking-widest text-[#00B8FF] bg-blue-50 px-3 py-1 rounded-full">Field Operations</span>
               <a
                 href="mailto:supervisors@enterprisecleaningcorp.com"
-                className="flex items-center gap-1.5 text-[13px] lg:text-sm font-semibold text-slate-600 hover:text-[#00B8FF] transition-colors whitespace-nowrap"
+                className="flex items-center gap-1.5 text-xs lg:text-sm font-semibold text-slate-600 hover:text-[#00B8FF] transition-colors break-all"
               >
                 <Mail className="w-4 h-4 shrink-0 text-[#00B8FF]" />
                 supervisors@enterprisecleaningcorp.com
@@ -251,7 +251,7 @@ export default function ContactPage() {
         </div>
       </section>
 
-      <section className="h-[400px] w-full relative">
+      <section className="h-[280px] sm:h-[350px] md:h-[400px] w-full relative">
         <iframe 
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2949.241779976411!2d-71.77732379999999!3d42.3373683!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e3f9e82349f5d1%3A0x548a39c70a7955f9!2sEnterprise%20Cleaning%20Corporation!5e0!3m2!1sen!2sin!4v1783163312743!5m2!1sen!2sin" 
           className="absolute inset-0 w-full h-full border-0"

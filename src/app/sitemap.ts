@@ -6,7 +6,7 @@ const baseUrl = process.env.NEXT_PUBLIC_APP_URL || "https://www.enterprisecleani
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   // Static Routes
-  const coreRoutes = ["", "/about", "/contact", "/blog"];
+  const coreRoutes = ["", "/about", "/contact", "/blog", "/privacy-policy", "/terms-and-conditions"];
   const serviceRoutes = [
     "/day-and-night-shift-commercial-cleaning-services-central-ma",
     "/floor-care-services-central-ma",
@@ -23,6 +23,10 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     "/property-management-cleaning-central-ma",
     "/warehouse-distribution-cleaning-central-ma",
     "/real-estate-cleaning-central-ma",
+  ];
+
+  const cityRoutes = [
+    "/commercial-cleaning-worcester-ma",
   ];
 
   const sitemap: MetadataRoute.Sitemap = [
@@ -43,6 +47,12 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       lastModified: new Date(),
       changeFrequency: "monthly" as const,
       priority: 0.8,
+    })),
+    ...cityRoutes.map((route) => ({
+      url: `${baseUrl}${route}`,
+      lastModified: new Date(),
+      changeFrequency: "weekly" as const,
+      priority: 0.9,
     })),
   ];
 
