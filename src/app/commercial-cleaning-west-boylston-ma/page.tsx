@@ -114,7 +114,7 @@ export default function WestBoylstonCityPage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredDataFAQ) }} />
 
       {/* ─── HERO ─── */}
-      <section className="relative overflow-hidden bg-white" style={{ paddingTop: "calc(4rem + 28px)" }}>
+      <section className="relative overflow-hidden bg-white">
         <div className="absolute top-0 left-0 w-full h-1" style={{ background: "linear-gradient(to right, #0090c8, #E31837, #FFE800)" }} />
 
         <div className="container mx-auto px-4 md:px-6">
