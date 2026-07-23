@@ -136,8 +136,8 @@ export default function WestBoylstonCityPage() {
               </div>
 
               <div>
-                <p className="text-xs font-extrabold uppercase tracking-[0.2em] text-slate-400 mb-3">City Service Hub</p>
-                <h1 className="text-4xl md:text-5xl lg:text-[3.25rem] font-black leading-[1.08] tracking-tight text-slate-900">
+                <p className="text-xs font-extrabold uppercase tracking-[0.2em] text-slate-400 mb-2 sm:mb-3">City Service Hub</p>
+                <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-[3.25rem] font-black leading-[1.1] tracking-tight text-slate-900">
                   Commercial<br />
                   Cleaning Services<br />
                   <span className="text-[#0090c8]">in West Boylston, MA</span>
@@ -148,16 +148,16 @@ export default function WestBoylstonCityPage() {
                 West Boylston is home to Enterprise Cleaning Corporation&apos;s own headquarters on Hartwell Street. We know every building in this town — because we operate from one of them every day.
               </p>
 
-              <div className="flex flex-wrap gap-4">
+              <div className="flex flex-col sm:flex-row flex-wrap gap-3 sm:gap-4">
                 <Link
                   href="/contact"
-                  className="inline-flex items-center gap-2 bg-[#0090c8] text-white font-extrabold px-7 py-3.5 rounded-xl hover:bg-[#0078a8] transition-colors shadow-md shadow-[#0090c8]/25 text-base"
+                  className="inline-flex items-center justify-center gap-2 bg-[#0090c8] text-white font-extrabold px-7 py-3.5 rounded-xl hover:bg-[#0078a8] transition-colors shadow-md shadow-[#0090c8]/25 text-base w-full sm:w-auto"
                 >
                   Get a Free Quote <ArrowRight className="w-4 h-4" />
                 </Link>
                 <a
                   href="tel:5088901000"
-                  className="inline-flex items-center gap-2 text-slate-800 font-bold px-7 py-3.5 rounded-xl hover:bg-slate-50 transition-colors border border-slate-200 text-base"
+                  className="inline-flex items-center justify-center gap-2 text-slate-800 font-bold px-7 py-3.5 rounded-xl hover:bg-slate-50 transition-colors border border-slate-200 text-base w-full sm:w-auto"
                 >
                   <PhoneCall className="w-4 h-4 text-[#0090c8]" />
                   (508) 890-1000
@@ -174,25 +174,25 @@ export default function WestBoylstonCityPage() {
               </div>
             </div>
 
-            {/* Right: Hero image */}
-            <div className="relative hidden lg:block py-10">
-              <div className="relative aspect-[4/3] overflow-hidden rounded-3xl shadow-2xl border border-slate-200">
+            {/* Right: Hero image — visible on mobile & desktop */}
+            <div className="relative block pb-8 lg:py-10">
+              <div className="relative aspect-[4/3] w-full overflow-hidden rounded-2xl sm:rounded-3xl shadow-2xl border border-slate-200">
                 <Image
                   src="/images/west_boylston_cleaning_hero.png"
                   alt="Commercial Cleaning in West Boylston MA — Enterprise Cleaning Corp Headquarters"
                   fill
-                  sizes="50vw"
+                  sizes="(max-width: 1024px) 100vw, 50vw"
                   className="object-cover object-center"
                   priority
                 />
-                {/* HQ address badge — unique to West Boylston */}
-                <div className="absolute bottom-5 left-5 bg-white/95 backdrop-blur-md rounded-2xl px-4 py-3 shadow-xl flex items-center gap-3 border border-slate-100">
-                  <div className="w-9 h-9 rounded-full bg-[#0090c8] flex items-center justify-center shrink-0">
-                    <Home className="w-4 h-4 text-white" />
+                {/* HQ address badge */}
+                <div className="absolute bottom-3 left-3 sm:bottom-5 sm:left-5 bg-white/95 backdrop-blur-md rounded-xl sm:rounded-2xl px-3 py-2 sm:px-4 sm:py-3 shadow-xl flex items-center gap-2.5 sm:gap-3 border border-slate-100">
+                  <div className="w-7 h-7 sm:w-9 sm:h-9 rounded-full bg-[#0090c8] flex items-center justify-center shrink-0">
+                    <Home className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-white" />
                   </div>
                   <div className="text-left">
-                    <div className="font-extrabold text-slate-900 text-sm">Our HQ: 99 Hartwell St</div>
-                    <div className="text-slate-500 text-xs">West Boylston, MA 01583</div>
+                    <div className="font-extrabold text-slate-900 text-xs sm:text-sm">Our HQ: 99 Hartwell St</div>
+                    <div className="text-slate-500 text-[10px] sm:text-xs">West Boylston, MA 01583</div>
                   </div>
                 </div>
               </div>
