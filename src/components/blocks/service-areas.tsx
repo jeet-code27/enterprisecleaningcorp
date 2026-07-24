@@ -5,6 +5,14 @@ const cityLinks: Record<string, string> = {
   "Worcester": "/commercial-cleaning-worcester-ma",
   "Shrewsbury": "/commercial-cleaning-shrewsbury-ma",
   "West Boylston": "/commercial-cleaning-west-boylston-ma",
+  "Providence, RI": "/commercial-cleaning-providence-ri",
+  "Lowell": "/commercial-cleaning-lowell-ma",
+  "Waltham": "/commercial-cleaning-waltham-ma",
+  "Framingham": "/commercial-cleaning-framingham-ma",
+  "Leominster": "/commercial-cleaning-leominster-ma",
+  "Fitchburg": "/commercial-cleaning-fitchburg-ma",
+  "Boylston": "/commercial-cleaning-boylston-ma",
+  "Nashua, NH": "/commercial-cleaning-nashua-nh",
 };
 
 const locations = [

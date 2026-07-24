@@ -29,6 +29,14 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     "/commercial-cleaning-worcester-ma",
     "/commercial-cleaning-shrewsbury-ma",
     "/commercial-cleaning-west-boylston-ma",
+    "/commercial-cleaning-providence-ri",
+    "/commercial-cleaning-lowell-ma",
+    "/commercial-cleaning-waltham-ma",
+    "/commercial-cleaning-framingham-ma",
+    "/commercial-cleaning-leominster-ma",
+    "/commercial-cleaning-fitchburg-ma",
+    "/commercial-cleaning-boylston-ma",
+    "/commercial-cleaning-nashua-nh",
   ];
 
   const sitemap: MetadataRoute.Sitemap = [

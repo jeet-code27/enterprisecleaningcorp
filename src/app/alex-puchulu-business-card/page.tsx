@@ -4,8 +4,8 @@ import Image from "next/image";
 import Link from "next/link";
 import {
   Phone, Mail, MapPin, Download, UserPlus, Globe,
-  Building2, Sparkles, ShieldCheck, ArrowRight,
-  Clock, CheckCircle2, MessageSquare, ExternalLink
+  Building2, Sparkles, ArrowRight,
+
 } from "lucide-react";
 
 export const metadata: Metadata = {
