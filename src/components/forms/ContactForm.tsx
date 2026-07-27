@@ -30,17 +30,37 @@ export function ContactForm() {
     setErrorMessage("");
 
     try {
-      const response = await fetch("/api/contact", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(formData),
-      });
+      // Send to both internal API and Web3Forms concurrently
+      const [response, web3FormsResponse] = await Promise.all([
+        fetch("/api/contact", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(formData),
+        }),
+        fetch("https://api.web3forms.com/submit", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+            Accept: "application/json",
+          },
+          body: JSON.stringify({
+            access_key: "1bca8f56-e3ae-45a3-9639-6dad20c5c74a",
+            subject: `New Contact Request from ${formData.firstName} ${formData.lastName}`,
+            from_name: `${formData.firstName} ${formData.lastName}`,
+            email: formData.email,
+            phone: formData.phone,
+            company: formData.company || "Not provided",
+            service: formData.service,
+            message: formData.message,
+          }),
+        })
+      ]);
 
       const result = await response.json();
 
-      if (response.ok) {
+      if (response.ok && web3FormsResponse.ok) {
         setSubmitStatus("success");
         setFormData({
           firstName: "",
