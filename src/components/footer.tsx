@@ -16,19 +16,21 @@ const InstagramIcon = ({ className = "size-4" }: { className?: string }) => (
 
 export function Footer() {
   return (
-    <footer className="text-white pt-16 pb-8" style={{ background: "#00B8FF", borderTop: "4px solid #E31837" }}>
+    <footer className="bg-slate-900 text-white pt-16 pb-8 border-t-4 border-[#E31837]">
       <div className="container mx-auto px-6">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
           {/* Brand Column */}
           <div className="flex flex-col space-y-4">
-            <Image
-              src="/images/logo.png"
-              alt="Enterprise Cleaning Corporation"
-              width={240}
-              height={80}
-              className="h-20 w-auto object-contain"
-              style={{ width: "auto", height: "auto" }}
-            />
+            <div className="bg-white p-3 rounded-lg w-fit inline-block mb-1">
+              <Image
+                src="/images/logo.png"
+                alt="Enterprise Cleaning Corporation"
+                width={200}
+                height={64}
+                className="h-14 w-auto object-contain"
+                style={{ width: "auto", height: "auto" }}
+              />
+            </div>
             <p className="text-white/80 text-sm leading-relaxed mt-4">
               There's clean, and then there's ENTERPRISE clean. Specializing in Commercial Cleaning and Emergency Cleanup.
             </p>
@@ -144,7 +146,8 @@ export function Footer() {
 
         <div className="border-t border-white/30 pt-8 flex flex-col md:flex-row items-center md:justify-start gap-4 md:gap-8 text-xs text-white/70">
           <p>© {new Date().getFullYear()} Enterprise Cleaning Corporation. All rights reserved.</p>
-          <div className="flex items-center gap-4">
+          <div className="flex flex-wrap items-center gap-4 md:gap-6">
+            <Link href="/careers" className="text-[#00B8FF] font-bold hover:underline transition-colors">Careers / Join Our Team</Link>
             <Link href="/privacy-policy" className="hover:text-white transition-colors">Privacy Policy</Link>
             <Link href="/terms-and-conditions" className="hover:text-white transition-colors">Terms of Service</Link>
           </div>

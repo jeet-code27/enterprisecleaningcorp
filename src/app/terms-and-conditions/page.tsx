@@ -83,7 +83,7 @@ export default function TermsAndConditionsPage() {
 
           <h2>11. Limitation of Liability</h2>
           <p>
-            To the fullest extent permitted by law, Enterprise Cleaning Corporation, its owners, employees, and agents shall not be liable for any indirect, incidental, special, consequential, or punitive damages, or any loss of profits or revenues, arising out of or related to your use of this Site, whether based on warranty, contract, tort, or any other legal theory, even if we have been advised of the possibility of such damages.
+            To the fullest extent permitted by law, Enterprise Cleaning Corporation, its owners, employees, and agents shall not be liable for any indirect, incidental, special, consequential, or punitive damages, or any loss of profits, revenues, or business opportunities, arising out of or related to your use of this Site, whether based on warranty, contract, tort, or any other legal theory, even if we have been advised of the possibility of such damages.
           </p>
           <p>
             Our liability arising from the actual performance of cleaning or facility services is governed exclusively by the terms of the applicable written service agreement between Enterprise Cleaning Corporation and the client, including any limitation of liability, insurance, and indemnification provisions contained therein.

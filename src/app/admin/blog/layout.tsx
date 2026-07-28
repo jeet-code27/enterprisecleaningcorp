@@ -4,7 +4,7 @@ import { useSession, signOut } from "next-auth/react";
 import { useRouter } from "next/navigation";
 import { useEffect } from "react";
 import Link from "next/link";
-import { LayoutDashboard, FileText, Tags, Image as ImageIcon, LogOut, Loader2, MessageSquare } from "lucide-react";
+import { LayoutDashboard, FileText, Tags, Image as ImageIcon, LogOut, Loader2, MessageSquare, Briefcase } from "lucide-react";
 import { usePathname } from "next/navigation";
 import Image from "next/image";
 
@@ -13,7 +13,8 @@ const navigation = [
   { name: "Posts", href: "/admin/blog/posts", icon: FileText },
   { name: "Categories & Tags", href: "/admin/blog/categories", icon: Tags },
   { name: "Media Library", href: "/admin/blog/media", icon: ImageIcon },
-  { name: "Submissions", href: "/admin/blog/submissions", icon: MessageSquare },
+  { name: "Contact Forms", href: "/admin/blog/submissions", icon: MessageSquare },
+  { name: "Job Applications", href: "/admin/blog/careers", icon: Briefcase },
 ];
 
 export default function AdminBlogLayout({

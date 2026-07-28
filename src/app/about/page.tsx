@@ -217,7 +217,7 @@ export default function AboutPage() {
                 </p>
 
                 <p>
-                  There are always nuances that need to be taken into account for different spaces. For example, those assigned to clean a manufacturing site will be educated in the appropriate methods and products for that facility that may differ from those needed to clean offices or residences. We pay attention to all the details including traffic flow and work schedules to address anything that might affect a job when creating your service schedule. Once cleaners are on the job, they receive periodic evaluations to make sure their work meets the high standards set by us and that you expect. We manage our cleaners so that you won't have to.
+                  There are always nuances that need to be taken into account for different spaces. For example, those assigned to clean a manufacturing site will be educated in the appropriate methods and products for that facility that may differ from those needed to clean offices or residences. We take into account details such as traffic flow, building occupancy, and work schedules when designing a cleaning program that minimizes disruption and meets your operational needs. Once cleaners are on the job, they receive periodic evaluations to make sure their work meets the high standards set by us and that you expect. We manage our cleaners so that you won't have to.
                 </p>
                 <p>
                   Cleaners are often in a facility after the office staff has gone home. Part of our hiring process involves background checks and references. We are usually the only service that will visit every square foot of your facility on a nightly basis. If any of our cleaning technicians notice something unusual, it is reported to our management. Our entire staff wears uniforms and badges that make it easy for your staff to identify they are ours.
@@ -231,7 +231,7 @@ export default function AboutPage() {
               <div className="absolute inset-0 bg-[#0090c8] rounded-[2rem] transform translate-x-4 translate-y-4 opacity-10"></div>
               <div className="relative rounded-[2rem] overflow-hidden shadow-2xl bg-slate-100">
                 <img 
-                  src="/images/onwer.jpg" 
+                  src="/images/steve-head-shot.jpeg" 
                   alt="Stephen Buchalter - Founder of Enterprise Cleaning"
                   className="w-full h-auto object-cover aspect-square md:aspect-auto"
                 />

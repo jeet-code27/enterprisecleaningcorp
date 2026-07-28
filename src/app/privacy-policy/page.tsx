@@ -63,7 +63,7 @@ export default function PrivacyPolicyPage() {
             <li>Communicate with you about scheduling, service updates, and account matters</li>
             <li>Improve our website, services, and customer experience</li>
             <li>Send marketing communications, promotions, or newsletters (you may opt out at any time)</li>
-            <li>Measure the performance of our advertising and marketing campaigns</li>
+            <li>Measure and improve the performance of our advertising and marketing campaigns</li>
             <li>Comply with legal obligations and enforce our agreements</li>
             <li>Process employment applications submitted through our careers page</li>
           </ul>

@@ -151,7 +151,7 @@ export default function ContactPage() {
       </section>
 
       {/* Meet the Team Section */}
-      <section className="py-16 md:py-20 bg-white border-t border-slate-100">
+      <section className="pt-16 pb-8 md:pt-20 md:pb-10 bg-white border-t border-slate-100">
         <div className="container mx-auto px-4 md:px-6 max-w-6xl">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-extrabold text-slate-900 tracking-tight">
@@ -165,24 +165,24 @@ export default function ContactPage() {
           <div className="flex flex-wrap justify-center gap-6 md:gap-8">
 
             {/* Stephen — Owner */}
-            <div className="w-full sm:w-[calc(50%-0.75rem)] md:w-[calc(33.333%-1.34rem)] flex flex-col items-center text-center bg-slate-50 rounded-3xl p-5 sm:p-6 lg:p-8 border border-slate-100 hover:shadow-xl transition-shadow duration-300">
-              <div className="w-24 h-24 sm:w-28 sm:h-28 rounded-full overflow-hidden ring-4 ring-[#E31837]/20 mb-4 sm:mb-5 shadow-lg">
+            <div className="w-full sm:w-[calc(50%-0.75rem)] md:w-[calc(50%-1rem)] flex flex-col items-center text-center bg-slate-50 rounded-3xl p-5 sm:p-6 lg:p-8 border border-slate-100 hover:shadow-xl transition-shadow duration-300">
+              <div className="w-24 h-24 sm:w-28 sm:h-28 rounded-full overflow-hidden ring-4 ring-[#E31837]/20 mb-4 sm:mb-5 shadow-lg bg-white">
                 {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img src="/images/stephon.png" alt="Stephen Buchalter" className="w-full h-full object-cover object-top" />
+                <img src="/images/steve-head-shot.jpeg" alt="Stephen Buchalter" className="w-full h-full object-contain" />
               </div>
               <h3 className="text-lg sm:text-xl font-extrabold text-slate-900">Stephen Buchalter</h3>
               <span className="mt-1 mb-3 sm:mb-4 inline-block text-xs font-bold uppercase tracking-widest text-[#E31837] bg-red-50 px-3 py-1 rounded-full">Owner</span>
               <a
-                href="mailto:customerservice@enterprisecleaningcorp.com"
+                href="mailto:sbuchalter@enterprisecleaningcorp.com"
                 className="flex items-center gap-1.5 text-xs lg:text-sm font-semibold text-slate-600 hover:text-[#00B8FF] transition-colors break-all"
               >
                 <Mail className="w-4 h-4 shrink-0 text-[#00B8FF]" />
-                customerservice@enterprisecleaningcorp.com
+                sbuchalter@enterprisecleaningcorp.com
               </a>
             </div>
 
             {/* Alex — Team Member */}
-            <div className="w-full sm:w-[calc(50%-0.75rem)] md:w-[calc(33.333%-1.34rem)] flex flex-col items-center text-center bg-slate-50 rounded-3xl p-5 sm:p-6 lg:p-8 border border-slate-100 hover:shadow-xl transition-shadow duration-300">
+            <div className="w-full sm:w-[calc(50%-0.75rem)] md:w-[calc(50%-1rem)] flex flex-col items-center text-center bg-slate-50 rounded-3xl p-5 sm:p-6 lg:p-8 border border-slate-100 hover:shadow-xl transition-shadow duration-300">
               <div className="w-24 h-24 sm:w-28 sm:h-28 rounded-full overflow-hidden ring-4 ring-[#00B8FF]/20 mb-4 sm:mb-5 shadow-lg">
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img src="/images/alex-new.jpeg" alt="Alex" className="w-full h-full object-cover object-top" />
@@ -199,7 +199,7 @@ export default function ContactPage() {
             </div>
 
             {/* Julio — Team Member */}
-            <div className="w-full sm:w-[calc(50%-0.75rem)] md:w-[calc(33.333%-1.34rem)] flex flex-col items-center text-center bg-slate-50 rounded-3xl p-5 sm:p-6 lg:p-8 border border-slate-100 hover:shadow-xl transition-shadow duration-300">
+            <div className="w-full sm:w-[calc(50%-0.75rem)] md:w-[calc(50%-1rem)] flex flex-col items-center text-center bg-slate-50 rounded-3xl p-5 sm:p-6 lg:p-8 border border-slate-100 hover:shadow-xl transition-shadow duration-300">
               <div className="w-24 h-24 sm:w-28 sm:h-28 rounded-full overflow-hidden ring-4 ring-[#00B8FF]/20 mb-4 sm:mb-5 shadow-lg">
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img src="/images/julio.png" alt="Julio" className="w-full h-full object-cover object-top" />
@@ -207,16 +207,16 @@ export default function ContactPage() {
               <h3 className="text-lg sm:text-xl font-extrabold text-slate-900">Julio</h3>
               <span className="mt-1 mb-3 sm:mb-4 inline-block text-xs font-bold uppercase tracking-widest text-[#00B8FF] bg-blue-50 px-3 py-1 rounded-full">Director of Operations</span>
               <a
-                href="mailto:customerservice@enterprisecleaningcorp.com"
+                href="mailto:jbiage@enterprisecleaningcorp.com"
                 className="flex items-center gap-1.5 text-xs lg:text-sm font-semibold text-slate-600 hover:text-[#00B8FF] transition-colors break-all"
               >
                 <Mail className="w-4 h-4 shrink-0 text-[#00B8FF]" />
-                customerservice@enterprisecleaningcorp.com
+                jbiage@enterprisecleaningcorp.com
               </a>
             </div>
 
             {/* Customer Service */}
-            <div className="w-full sm:w-[calc(50%-0.75rem)] md:w-[calc(33.333%-1.34rem)] flex flex-col items-center text-center bg-slate-50 rounded-3xl p-5 sm:p-6 lg:p-8 border border-slate-100 hover:shadow-xl transition-shadow duration-300">
+            <div className="w-full sm:w-[calc(50%-0.75rem)] md:w-[calc(50%-1rem)] flex flex-col items-center text-center bg-slate-50 rounded-3xl p-5 sm:p-6 lg:p-8 border border-slate-100 hover:shadow-xl transition-shadow duration-300">
               <div className="w-24 h-24 sm:w-28 sm:h-28 rounded-full overflow-hidden ring-4 ring-[#00B8FF]/20 mb-4 sm:mb-5 shadow-lg bg-white flex items-center justify-center">
                 <Headset className="w-10 h-10 sm:w-12 sm:h-12 text-[#00B8FF]" />
               </div>
@@ -232,7 +232,7 @@ export default function ContactPage() {
             </div>
 
             {/* Supervisors */}
-            <div className="w-full sm:w-[calc(50%-0.75rem)] md:w-[calc(33.333%-1.34rem)] flex flex-col items-center text-center bg-slate-50 rounded-3xl p-5 sm:p-6 lg:p-8 border border-slate-100 hover:shadow-xl transition-shadow duration-300">
+            <div className="w-full sm:w-[calc(50%-0.75rem)] md:w-[calc(50%-1rem)] flex flex-col items-center text-center bg-slate-50 rounded-3xl p-5 sm:p-6 lg:p-8 border border-slate-100 hover:shadow-xl transition-shadow duration-300">
               <div className="w-24 h-24 sm:w-28 sm:h-28 rounded-full overflow-hidden ring-4 ring-[#00B8FF]/20 mb-4 sm:mb-5 shadow-lg bg-white flex items-center justify-center">
                 <UserCheck className="w-10 h-10 sm:w-12 sm:h-12 text-[#00B8FF]" />
               </div>

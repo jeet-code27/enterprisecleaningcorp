@@ -56,8 +56,8 @@ export const HowItWorks = () => {
             </p>
             <div className="relative w-full max-w-[400px] aspect-square rounded-3xl overflow-hidden border-8 border-white shadow-2xl">
               <img 
-                src="/images/girl-holding-bucket.png" 
-                alt="Professional cleaner holding a bucket" 
+                src="/images/commercial-cleaning-entrprice.jpeg" 
+                alt="Enterprise Commercial Cleaning" 
                 className="w-full h-full object-cover"
               />
             </div>

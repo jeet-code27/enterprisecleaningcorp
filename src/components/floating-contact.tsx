@@ -29,17 +29,17 @@ export function FloatingContact() {
               <X size={18} />
             </button>
             <div className="flex items-start gap-3 mb-4 pt-1">
-              <div className="w-12 h-12 rounded-full overflow-hidden shrink-0 bg-blue-50 border-2 border-blue-100 p-1 flex items-center justify-center">
+              <div className="w-12 h-12 rounded-full overflow-hidden shrink-0 bg-blue-50 border-2 border-blue-100 flex items-center justify-center">
                 <Image 
-                  src="/images/superman.png" 
-                  alt="Superman" 
-                  width={40} 
-                  height={40}
-                  className="w-full h-full object-contain"
+                  src="/images/support-avatar.png" 
+                  alt="Enterprise Support" 
+                  width={48} 
+                  height={48}
+                  className="w-full h-full object-cover rounded-full"
                 />
               </div>
               <div>
-                <h3 className="font-bold text-gray-800 text-sm">Super Support</h3>
+                <h3 className="font-bold text-gray-800 text-sm">Enterprise Support</h3>
                 <p className="text-xs text-green-600 font-medium flex items-center gap-1">
                   <span className="w-2 h-2 rounded-full bg-green-500 inline-block" /> Online
                 </p>
@@ -48,7 +48,7 @@ export function FloatingContact() {
             
             <div className="bg-blue-50 border border-blue-100 rounded-xl p-3 mb-4 rounded-tl-none ml-2">
               <p className="text-sm text-gray-700 font-medium leading-relaxed">
-                Hello! 👋 I'm here to save the day! How may I help you with your cleaning needs?
+                Hello! 👋 How can we help you today?
               </p>
             </div>
             
@@ -81,7 +81,7 @@ export function FloatingContact() {
               className="bg-white px-4 py-2.5 rounded-2xl shadow-xl border border-gray-100 hidden sm:flex items-center relative cursor-pointer hover:bg-gray-50 transition-colors"
               onClick={() => setIsOpen(true)}
             >
-              <span className="text-sm font-semibold text-gray-700">How may I help you? 👋</span>
+              <span className="text-sm font-semibold text-gray-700">How can we help you today? 👋</span>
               {/* Little triangle for speech bubble */}
               <div className="absolute -right-2 top-1/2 -translate-y-1/2 w-0 h-0 border-y-[6px] border-y-transparent border-l-[8px] border-l-white drop-shadow-sm" />
             </motion.div>
@@ -90,30 +90,30 @@ export function FloatingContact() {
 
         <button 
           onClick={() => setIsOpen(!isOpen)}
-          className="relative group w-[68px] h-[68px] rounded-full bg-white shadow-2xl hover:shadow-blue-500/20 transition-all duration-300 flex items-center justify-center border-2 border-blue-100 hover:border-[#003B7A] overflow-visible z-10"
+          className="relative group w-[64px] h-[64px] rounded-full bg-white shadow-2xl hover:shadow-blue-500/20 transition-all duration-300 flex items-center justify-center border-2 border-blue-100 hover:border-[#003B7A] overflow-visible z-10 p-1"
           aria-label="Toggle Contact Menu"
         >
           <div className="absolute inset-0 rounded-full animate-ping opacity-20 bg-[#003B7A]" />
           <motion.div
             animate={isOpen ? { scale: 0.9, rotate: -10 } : { scale: 1, rotate: 0 }}
-            className="relative z-10 w-full h-full flex items-center justify-center rounded-full bg-white"
+            className="relative z-10 w-full h-full flex items-center justify-center rounded-full bg-white overflow-hidden"
           >
             {isOpen ? (
               <X size={28} className="text-gray-600" />
             ) : (
               <Image 
-                src="/images/superman.png" 
-                alt="Contact Support" 
-                width={100} 
-                height={100}
-                className="w-[95px] h-[95px] absolute bottom-0 object-contain transition-transform group-hover:scale-110 duration-300 drop-shadow-md pointer-events-none"
+                src="/images/support-avatar.png" 
+                alt="Enterprise Support" 
+                width={64} 
+                height={64}
+                className="w-full h-full object-cover rounded-full transition-transform group-hover:scale-110 duration-300"
               />
             )}
           </motion.div>
           
           {/* Notification badge */}
           {!isOpen && (
-             <span className="absolute -top-1 -right-1 flex h-[18px] w-[18px]">
+             <span className="absolute top-0 right-0 z-20 flex h-[18px] w-[18px]">
                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-red-400 opacity-75"></span>
                <span className="relative inline-flex rounded-full h-[18px] w-[18px] bg-red-500 border-2 border-white"></span>
              </span>
