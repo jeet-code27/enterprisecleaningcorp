@@ -4,11 +4,11 @@ import CareerSubmission from "@/models/CareerSubmission";
 
 export async function PATCH(
   req: Request,
-  { params }: { params: { id: string } }
+  { params }: { params: Promise<{ id: string }> }
 ) {
   try {
     await dbConnect();
-    const { id } = params;
+    const { id } = await params;
     const body = await req.json();
 
     const updated = await CareerSubmission.findByIdAndUpdate(
@@ -30,11 +30,11 @@ export async function PATCH(
 
 export async function DELETE(
   req: Request,
-  { params }: { params: { id: string } }
+  { params }: { params: Promise<{ id: string }> }
 ) {
   try {
     await dbConnect();
-    const { id } = params;
+    const { id } = await params;
 
     const deleted = await CareerSubmission.findByIdAndDelete(id);
 
