@@ -5,8 +5,17 @@ import Post from "@/models/Post";
 const baseUrl = process.env.NEXT_PUBLIC_APP_URL || "https://www.enterprisecleaningcorp.com";
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
-  // Static Routes
-  const coreRoutes = ["", "/about", "/contact", "/blog", "/privacy-policy", "/terms-and-conditions", "/alex-puchulu-business-card"];
+  const coreRoutes = [
+    "",
+    "/about",
+    "/contact",
+    "/blog",
+    "/privacy-policy",
+    "/terms-and-conditions",
+    "/alex-puchulu-business-card",
+    "/juilio-biage-business-card",
+    "/stephen-buchter-business-card",
+  ];
   const serviceRoutes = [
     "/day-and-night-shift-commercial-cleaning-services-central-ma",
     "/floor-care-services-central-ma",
