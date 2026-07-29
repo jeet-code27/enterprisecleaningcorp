@@ -29,13 +29,13 @@ export function FloatingContact() {
               <X size={18} />
             </button>
             <div className="flex items-start gap-3 mb-4 pt-1">
-              <div className="w-12 h-12 rounded-full overflow-hidden shrink-0 bg-blue-50 border-2 border-blue-100 flex items-center justify-center">
+              <div className="w-12 h-12 rounded-full overflow-visible shrink-0 bg-blue-50 border-2 border-blue-100 flex items-center justify-center relative">
                 <Image 
-                  src="/images/support-avatar.png" 
+                  src="/images/superman.png" 
                   alt="Enterprise Support" 
-                  width={48} 
-                  height={48}
-                  className="w-full h-full object-cover rounded-full"
+                  width={64} 
+                  height={80}
+                  className="absolute bottom-0 left-1/2 -translate-x-1/2 h-[60px] w-auto max-w-none object-contain pointer-events-none drop-shadow-sm"
                 />
               </div>
               <div>
@@ -48,7 +48,7 @@ export function FloatingContact() {
             
             <div className="bg-blue-50 border border-blue-100 rounded-xl p-3 mb-4 rounded-tl-none ml-2">
               <p className="text-sm text-gray-700 font-medium leading-relaxed">
-                Hello! 👋 How can we help you today?
+                Hello! 🦸‍♂️ How can we save your day?
               </p>
             </div>
             
@@ -81,7 +81,7 @@ export function FloatingContact() {
               className="bg-white px-4 py-2.5 rounded-2xl shadow-xl border border-gray-100 hidden sm:flex items-center relative cursor-pointer hover:bg-gray-50 transition-colors"
               onClick={() => setIsOpen(true)}
             >
-              <span className="text-sm font-semibold text-gray-700">How can we help you today? 👋</span>
+              <span className="text-sm font-semibold text-gray-700">How can we save your day? 🦸‍♂️</span>
               {/* Little triangle for speech bubble */}
               <div className="absolute -right-2 top-1/2 -translate-y-1/2 w-0 h-0 border-y-[6px] border-y-transparent border-l-[8px] border-l-white drop-shadow-sm" />
             </motion.div>
@@ -96,18 +96,20 @@ export function FloatingContact() {
           <div className="absolute inset-0 rounded-full animate-ping opacity-20 bg-[#003B7A]" />
           <motion.div
             animate={isOpen ? { scale: 0.9, rotate: -10 } : { scale: 1, rotate: 0 }}
-            className="relative z-10 w-full h-full flex items-center justify-center rounded-full bg-white overflow-hidden"
+            className="relative z-10 w-full h-full flex items-center justify-center rounded-full bg-white overflow-visible"
           >
             {isOpen ? (
               <X size={28} className="text-gray-600" />
             ) : (
-              <Image 
-                src="/images/support-avatar.png" 
-                alt="Enterprise Support" 
-                width={64} 
-                height={64}
-                className="w-full h-full object-cover rounded-full transition-transform group-hover:scale-110 duration-300"
-              />
+              <div className="relative w-full h-full overflow-visible flex items-center justify-center">
+                <Image 
+                  src="/images/superman.png" 
+                  alt="Enterprise Support" 
+                  width={90} 
+                  height={110}
+                  className="absolute bottom-0 left-1/2 -translate-x-1/2 h-[82px] w-auto max-w-none object-contain pointer-events-none transition-transform group-hover:scale-105 duration-300 drop-shadow-md"
+                />
+              </div>
             )}
           </motion.div>
           
