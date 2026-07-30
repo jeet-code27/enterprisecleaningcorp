@@ -37,7 +37,7 @@ const structuredDataService = {
   "provider": {
     "@type": "LocalBusiness",
     "name": "Enterprise Cleaning Corporation",
-    "image": "https://www.enterprisecleaningcorp.com/images/logo.png",
+    "image": "https://www.enterprisecleaningcorp.com/images/enterprise-logo.png",
     "telephone": "508-890-1000",
     "priceRange": "$$",
     "address": {

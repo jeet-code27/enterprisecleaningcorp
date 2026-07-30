@@ -46,7 +46,7 @@ export default function AdminLogin() {
         <div className="relative z-10">
           <div className="bg-white p-4 rounded-2xl inline-block shadow-lg mb-8">
             <Image
-              src="/images/logo.png"
+              src="/images/enterprise-logo.png"
               alt="Enterprise Cleaning Corporation"
               width={240}
               height={80}
@@ -78,7 +78,7 @@ export default function AdminLogin() {
           <div className="lg:hidden flex justify-center mb-8">
              <div className="bg-slate-50 p-3 rounded-2xl border border-slate-100 shadow-sm">
               <Image
-                src="/images/logo.png"
+                src="/images/enterprise-logo.png"
                 alt="Enterprise Cleaning Corporation"
                 width={200}
                 height={60}

@@ -53,7 +53,7 @@ export default function CoghlinCompaniesSuccessStoryPage() {
             <div className="flex items-center gap-4">
               <div className="bg-white p-2 rounded-xl border border-slate-100 shadow-xs">
                 <Image
-                  src="/images/logo.png"
+                  src="/images/enterprise-logo.png"
                   alt="Enterprise Cleaning Corp"
                   width={210}
                   height={65}

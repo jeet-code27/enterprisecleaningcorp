@@ -23,7 +23,7 @@ export function Footer() {
           <div className="flex flex-col space-y-4">
             <div className="bg-white p-3 rounded-lg w-fit inline-block mb-1">
               <Image
-                src="/images/logo.png"
+                src="/images/enterprise-logo.png"
                 alt="Enterprise Cleaning Corporation"
                 width={200}
                 height={64}

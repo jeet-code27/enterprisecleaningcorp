@@ -33,7 +33,7 @@ const structuredDataService = {
   "@context": "https://schema.org",
   "@type": "EmergencyService",
   "name": "24/7 Water Cleanup Worcester MA — Enterprise Cleaning Corporation",
-  "image": "https://www.enterprisecleaningcorp.com/images/logo.png",
+  "image": "https://www.enterprisecleaningcorp.com/images/enterprise-logo.png",
   "telephone": "508-890-1000",
   "priceRange": "$$",
   "url": "https://www.enterprisecleaningcorp.com/emergency-restoration-services-central-ma",
@@ -53,7 +53,7 @@ const structuredDataService = {
   "provider": {
     "@type": "LocalBusiness",
     "name": "Enterprise Cleaning Corporation",
-    "image": "https://www.enterprisecleaningcorp.com/images/logo.png",
+    "image": "https://www.enterprisecleaningcorp.com/images/enterprise-logo.png",
     "telephone": "508-890-1000",
     "priceRange": "$$",
     "address": {

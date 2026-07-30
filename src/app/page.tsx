@@ -39,7 +39,7 @@ const businessSchema = {
   "@context": "https://schema.org",
   "@type": "CleaningService",
   "name": "Enterprise Cleaning and Restoration Corporation",
-  "image": "https://www.enterprisecleaningcorp.com/images/logo.png",
+  "image": "https://www.enterprisecleaningcorp.com/images/enterprise-logo.png",
   "url": "https://www.enterprisecleaningcorp.com/",
   "telephone": "+1 508-890-1000",
   "address": {

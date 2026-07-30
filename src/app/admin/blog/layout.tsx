@@ -47,7 +47,7 @@ export default function AdminBlogLayout({
         <div className="p-6 border-b border-border">
           <Link href="/" className="hover:opacity-80 transition-opacity block">
             <Image 
-              src="/images/logo.png" 
+              src="/images/enterprise-logo.png" 
               alt="Enterprise Cleaning Corp" 
               width={180} 
               height={50} 

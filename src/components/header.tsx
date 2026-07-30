@@ -135,12 +135,11 @@ export function Header() {
       <div className="container mx-auto flex h-16 items-center justify-between px-4">
         <Link href="/" className="flex items-center">
           <Image
-            src="/images/logo.png"
+            src="/images/enterprise-logo.png"
             alt="Enterprise Cleaning Corporation"
-            width={180}
-            height={56}
-            className="h-12 w-auto object-contain"
-            style={{ width: "auto", height: "auto" }}
+            width={150}
+            height={44}
+            className="h-9 sm:h-10 w-auto object-contain max-h-10"
             priority
           />
         </Link>
