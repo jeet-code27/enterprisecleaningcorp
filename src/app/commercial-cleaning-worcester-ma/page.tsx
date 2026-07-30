@@ -36,7 +36,9 @@ const structuredDataService = {
   "provider": {
     "@type": "ProfessionalService",
     "name": "Enterprise Cleaning Corporation",
-    "telephone": "+1-508-890-1000",
+    "image": "https://www.enterprisecleaningcorp.com/images/logo.png",
+    "telephone": "508-890-1000",
+    "priceRange": "$$",
     "address": {
       "@type": "PostalAddress",
       "streetAddress": "99 Hartwell Street, Suite B",
@@ -44,7 +46,13 @@ const structuredDataService = {
       "addressRegion": "MA",
       "postalCode": "01583",
       "addressCountry": "US"
-    }
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 42.3648,
+      "longitude": -71.7854
+    },
+    "url": "https://www.enterprisecleaningcorp.com"
   },
   "areaServed": { "@type": "City", "name": "Worcester, MA" },
   "url": "https://www.enterprisecleaningcorp.com/commercial-cleaning-worcester-ma"

@@ -41,7 +41,9 @@ const structuredDataService = {
   "provider": {
     "@type": "ProfessionalService",
     "name": "Enterprise Cleaning Corporation",
-    "telephone": "+1-508-890-1000",
+    "image": "https://www.enterprisecleaningcorp.com/images/logo.png",
+    "telephone": "508-890-1000",
+    "priceRange": "$$",
     "address": {
       "@type": "PostalAddress",
       "streetAddress": "99 Hartwell Street",
@@ -49,7 +51,13 @@ const structuredDataService = {
       "addressRegion": "MA",
       "postalCode": "01583",
       "addressCountry": "US"
-    }
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 42.3648,
+      "longitude": -71.7854
+    },
+    "url": "https://www.enterprisecleaningcorp.com"
   },
   "areaServed": ["Central Massachusetts", "Rhode Island", "Southern New Hampshire"],
   "description": "Rough, final, and touch-up post-construction cleaning for contractors, developers, and building owners across Central Massachusetts, Rhode Island, and Southern New Hampshire.",

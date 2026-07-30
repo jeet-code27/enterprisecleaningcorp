@@ -37,7 +37,9 @@ const structuredDataService = {
   "provider": {
     "@type": "LocalBusiness",
     "name": "Enterprise Cleaning Corporation",
-    "telephone": "(508) 890-1000",
+    "image": "https://www.enterprisecleaningcorp.com/images/logo.png",
+    "telephone": "508-890-1000",
+    "priceRange": "$$",
     "address": {
       "@type": "PostalAddress",
       "streetAddress": "99 Hartwell Street",
@@ -45,6 +47,11 @@ const structuredDataService = {
       "addressRegion": "MA",
       "postalCode": "01583",
       "addressCountry": "US"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 42.3648,
+      "longitude": -71.7854
     },
     "url": "https://www.enterprisecleaningcorp.com"
   },

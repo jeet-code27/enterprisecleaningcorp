@@ -207,3 +207,18 @@ button{
 .prose a:hover {
   color: var(--brand-navy) !important;
 }
+
+/* Print Styles for Success Story One-Pagers */
+@media print {
+  header, footer, nav, .print\:hidden {
+    display: none !important;
+  }
+  body {
+    background: #ffffff !important;
+    color: #000000 !important;
+  }
+  @page {
+    margin: 0.5in;
+    size: letter portrait;
+  }
+}

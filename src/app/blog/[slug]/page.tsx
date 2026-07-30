@@ -25,13 +25,31 @@ export async function generateMetadata({ params }: { params: Params }): Promise<
 
   if (!post) return { title: "Post Not Found" };
 
+  let canonicalUrl = post.seo?.canonicalUrl?.trim();
+  const isValidUrlPath = Boolean(
+    canonicalUrl && 
+    !canonicalUrl.includes(" ") && 
+    (canonicalUrl.startsWith("http://") || canonicalUrl.startsWith("https://") || canonicalUrl.startsWith("/"))
+  );
+
+  if (!isValidUrlPath) {
+    canonicalUrl = `https://www.enterprisecleaningcorp.com/blog/${slug}`;
+  } else if (canonicalUrl.startsWith("http://") || canonicalUrl.startsWith("https://")) {
+    canonicalUrl = canonicalUrl
+      .replace("https://enterprisecleaningcorp.com", "https://www.enterprisecleaningcorp.com")
+      .replace("http://enterprisecleaningcorp.com", "https://www.enterprisecleaningcorp.com")
+      .replace("http://www.enterprisecleaningcorp.com", "https://www.enterprisecleaningcorp.com");
+  } else {
+    canonicalUrl = `https://www.enterprisecleaningcorp.com${canonicalUrl.startsWith('/') ? '' : '/'}${canonicalUrl}`;
+  }
+
   return {
     title: post.seo?.metaTitle || post.title,
     description: post.seo?.metaDescription || post.excerpt,
     keywords: post.seo?.focusKeyword || (post.tags ? post.tags.map((t: any) => t.name).join(', ') : ""),
     authors: [{ name: post.author?.name || "Enterprise Cleaning Team" }],
     alternates: {
-      canonical: post.seo?.canonicalUrl,
+      canonical: canonicalUrl,
     },
     openGraph: {
       title: post.seo?.ogTitle || post.seo?.metaTitle || post.title,

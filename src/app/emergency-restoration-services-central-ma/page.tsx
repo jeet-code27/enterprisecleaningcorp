@@ -32,11 +32,30 @@ export const metadata: Metadata = {
 const structuredDataService = {
   "@context": "https://schema.org",
   "@type": "EmergencyService",
-  "name": "Emergency Cleanup Services — Enterprise Cleaning Corporation",
+  "name": "24/7 Water Cleanup Worcester MA — Enterprise Cleaning Corporation",
+  "image": "https://www.enterprisecleaningcorp.com/images/logo.png",
+  "telephone": "508-890-1000",
+  "priceRange": "$$",
+  "url": "https://www.enterprisecleaningcorp.com/emergency-restoration-services-central-ma",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "99 Hartwell Street",
+    "addressLocality": "West Boylston",
+    "addressRegion": "MA",
+    "postalCode": "01583",
+    "addressCountry": "US"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 42.3648,
+    "longitude": -71.7854
+  },
   "provider": {
     "@type": "LocalBusiness",
     "name": "Enterprise Cleaning Corporation",
-    "telephone": "(508) 890-1000",
+    "image": "https://www.enterprisecleaningcorp.com/images/logo.png",
+    "telephone": "508-890-1000",
+    "priceRange": "$$",
     "address": {
       "@type": "PostalAddress",
       "streetAddress": "99 Hartwell Street",
@@ -45,6 +64,11 @@ const structuredDataService = {
       "postalCode": "01583",
       "addressCountry": "US"
     },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 42.3648,
+      "longitude": -71.7854
+    },
     "url": "https://www.enterprisecleaningcorp.com"
   },
   "areaServed": [
@@ -52,8 +76,7 @@ const structuredDataService = {
     "Central Massachusetts",
     "Rhode Island",
     "New Hampshire"
-  ],
-  "url": "https://www.enterprisecleaningcorp.com/emergency-restoration-services-central-ma"
+  ]
 };
 
 const structuredDataFAQ = {

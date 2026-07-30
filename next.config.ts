@@ -68,6 +68,27 @@ const nextConfig: NextConfig = {
         destination: '/blog/commercial-cleaning-massachusetts-a-buyers-guide',
         permanent: true,
       },
+      // 301 Redirects for broken 404 blog links flagged in Site Audit
+      {
+        source: '/Find%20a%20Reliable%20Office%20Cleaning%20Company%20Near%20Waltham',
+        destination: '/blog/how-do-i-find-a-reliable-office-cleaning-company-near-waltham-ma',
+        permanent: true,
+      },
+      {
+        source: '/How%20to%20Hire%20&%20Screen%20Commercial%20Cleaners',
+        destination: '/blog/how-to-hire-and-screen-commercial-cleaners',
+        permanent: true,
+      },
+      {
+        source: '/How%20to%20Hire%20%26%20Screen%20Commercial%20Cleaners',
+        destination: '/blog/how-to-hire-and-screen-commercial-cleaners',
+        permanent: true,
+      },
+      {
+        source: '/Office%20Cleaning%20in%20Providence%20RI',
+        destination: '/blog/office-cleaning-in-providence',
+        permanent: true,
+      },
     ];
   },
 };

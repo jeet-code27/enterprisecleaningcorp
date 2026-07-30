@@ -10,12 +10,20 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     "/about",
     "/contact",
     "/blog",
+    "/success-stories",
     "/privacy-policy",
     "/terms-and-conditions",
     "/alex-puchulu-business-card",
     "/juilio-biage-business-card",
     "/stephen-buchter-business-card",
   ];
+  
+  const successStoryRoutes = [
+    "/success-stories/wcu-bank",
+    "/success-stories/apderm",
+    "/success-stories/coghlin-companies",
+  ];
+
   const serviceRoutes = [
     "/day-and-night-shift-commercial-cleaning-services-central-ma",
     "/floor-care-services-central-ma",
@@ -24,6 +32,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     "/turnover-cleaning-central-ma",
     "/post-construction-cleaning-central-ma",
   ];
+
   const industryRoutes = [
     "/manufacturing-industrial-cleaning-central-ma",
     "/medical-healthcare-cleaning-central-ma",
@@ -55,6 +64,12 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       changeFrequency: "weekly" as const,
       priority: route === "" ? 1.0 : 0.9,
     })),
+    ...successStoryRoutes.map((route) => ({
+      url: `${baseUrl}${route}`,
+      lastModified: new Date(),
+      changeFrequency: "monthly" as const,
+      priority: 0.85,
+    })),
     ...serviceRoutes.map((route) => ({
       url: `${baseUrl}${route}`,
       lastModified: new Date(),
@@ -78,15 +93,19 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   try {
     await dbConnect();
     const posts = await Post.find({ status: "Published" })
-      .select("slug updatedAt")
+      .select("slug updatedAt seo")
       .lean();
 
-    const postRoutes = posts.map((post: any) => ({
-      url: `${baseUrl}/blog/${post.slug}`,
-      lastModified: post.updatedAt || new Date(),
-      changeFrequency: "monthly" as const,
-      priority: 0.6,
-    }));
+    const postRoutes = posts.map((post: any) => {
+      // Ensure canonical slug match and clean URL format
+      const postSlug = post.slug?.trim();
+      return {
+        url: `${baseUrl}/blog/${postSlug}`,
+        lastModified: post.updatedAt || new Date(),
+        changeFrequency: "monthly" as const,
+        priority: 0.6,
+      };
+    });
 
     sitemap.push(...postRoutes);
   } catch (error) {
