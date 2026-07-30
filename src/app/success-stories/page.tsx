@@ -51,29 +51,9 @@ export default function SuccessStoriesPage() {
               Customer Success Stories
             </h1>
 
-            <p className="text-slate-200 text-base md:text-xl leading-relaxed max-w-2xl mx-auto mb-8 font-light">
+            <p className="text-slate-200 text-base md:text-xl leading-relaxed max-w-2xl mx-auto font-light">
               See how New England’s leading banks, healthcare networks, and manufacturing facilities trust Enterprise Cleaning Corp to keep their operations clean, safe, and welcoming.
             </p>
-
-            {/* Quick Stat Counter Bar */}
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-4 p-4 md:p-6 bg-white/10 backdrop-blur-md rounded-2xl border border-white/15 max-w-3xl mx-auto text-center">
-              <div>
-                <div className="text-2xl md:text-3xl font-black text-[#FFE800]">30+</div>
-                <div className="text-xs md:text-sm text-slate-200 font-medium mt-1">APDerm Clinics</div>
-              </div>
-              <div>
-                <div className="text-2xl md:text-3xl font-black text-[#00B8FF]">7+</div>
-                <div className="text-xs md:text-sm text-slate-200 font-medium mt-1">WCU Bank Branches</div>
-              </div>
-              <div>
-                <div className="text-2xl md:text-3xl font-black text-emerald-400">5+</div>
-                <div className="text-xs md:text-sm text-slate-200 font-medium mt-1">Manufacturing Plants</div>
-              </div>
-              <div>
-                <div className="text-2xl md:text-3xl font-black text-white">3 States</div>
-                <div className="text-xs md:text-sm text-slate-200 font-medium mt-1">MA, RI, & NH Network</div>
-              </div>
-            </div>
           </div>
         </div>
       </section>
