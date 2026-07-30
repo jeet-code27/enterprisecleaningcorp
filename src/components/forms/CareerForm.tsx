@@ -1,12 +1,27 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useRef, useEffect } from "react";
 import { Send, CheckCircle2, User, Mail, Phone, MapPin, Briefcase, Calendar, Clock, Award, ShieldCheck, FileText, AlertCircle } from "lucide-react";
 
 export function CareerForm() {
+  const containerRef = useRef<HTMLDivElement>(null);
   const [submitted, setSubmitted] = useState(false);
   const [loading, setLoading] = useState(false);
   const [errorMessage, setErrorMessage] = useState("");
+
+  useEffect(() => {
+    if (submitted && containerRef.current) {
+      const scrollToSuccess = () => {
+        const yOffset = -100;
+        const y = containerRef.current!.getBoundingClientRect().top + window.pageYOffset + yOffset;
+        window.scrollTo({ top: Math.max(0, y), behavior: "smooth" });
+      };
+
+      scrollToSuccess();
+      const timer = setTimeout(scrollToSuccess, 100);
+      return () => clearTimeout(timer);
+    }
+  }, [submitted]);
   const [formData, setFormData] = useState({
     fullName: "",
     email: "",
@@ -88,7 +103,7 @@ export function CareerForm() {
 
   if (submitted) {
     return (
-      <div className="bg-white rounded-3xl p-8 sm:p-12 shadow-xl border border-emerald-100 text-center max-w-2xl mx-auto my-8">
+      <div ref={containerRef} className="bg-white rounded-3xl p-8 sm:p-12 shadow-xl border border-emerald-100 text-center max-w-2xl mx-auto my-8">
         <div className="w-16 h-16 bg-emerald-100 rounded-full flex items-center justify-center mx-auto mb-6">
           <CheckCircle2 className="w-10 h-10 text-emerald-600" />
         </div>

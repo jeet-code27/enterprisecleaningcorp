@@ -1,12 +1,27 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useRef, useEffect } from "react";
 import { ArrowRight, Loader2, CheckCircle2, AlertCircle } from "lucide-react";
 
 export function ContactForm() {
+  const containerRef = useRef<HTMLDivElement>(null);
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitStatus, setSubmitStatus] = useState<"idle" | "success" | "error">("idle");
   const [errorMessage, setErrorMessage] = useState("");
+
+  useEffect(() => {
+    if (submitStatus === "success" && containerRef.current) {
+      const scrollToSuccess = () => {
+        const yOffset = -100;
+        const y = containerRef.current!.getBoundingClientRect().top + window.pageYOffset + yOffset;
+        window.scrollTo({ top: Math.max(0, y), behavior: "smooth" });
+      };
+
+      scrollToSuccess();
+      const timer = setTimeout(scrollToSuccess, 100);
+      return () => clearTimeout(timer);
+    }
+  }, [submitStatus]);
 
   const [formData, setFormData] = useState({
     firstName: "",
@@ -85,7 +100,7 @@ export function ContactForm() {
   };
 
   return (
-    <div className="bg-white p-5 sm:p-8 md:p-10 rounded-3xl shadow-xl border border-slate-100 relative overflow-hidden">
+    <div ref={containerRef} className="bg-white p-5 sm:p-8 md:p-10 rounded-3xl shadow-xl border border-slate-100 relative overflow-hidden">
       {submitStatus === "success" ? (
         <div className="flex flex-col items-center justify-center h-full min-h-[400px] text-center space-y-4">
           <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mb-2">
