@@ -50,41 +50,13 @@ export function CareerForm() {
     setErrorMessage("");
 
     try {
-      const [res, web3Res] = await Promise.all([
-        fetch("/api/careers", {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify(formData),
-        }),
-        fetch("https://api.web3forms.com/submit", {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-            Accept: "application/json",
-          },
-          body: JSON.stringify({
-            access_key: "9cd6a347-e4cf-4537-ba7d-58bd4298fb51",
-            subject: `New Job Application: ${formData.fullName} - ${formData.position}`,
-            from_name: formData.fullName,
-            name: formData.fullName,
-            email: formData.email,
-            phone: formData.phone,
-            city_state_zip: formData.cityStateZip,
-            position: formData.position,
-            employment_type: formData.employmentType,
-            shift_preference: formData.shiftPreference,
-            start_date: formData.startDate || "Not specified",
-            years_experience: formData.yearsExperience,
-            authorized_to_work: formData.authorizedToWork,
-            has_drivers_license: formData.hasDriversLicense,
-            has_reliable_transport: formData.hasReliableTransport,
-            work_experience: formData.workExperience || "Not provided",
-            additional_notes: formData.additionalNotes || "Not provided",
-          }),
-        }),
-      ]);
+      const res = await fetch("/api/careers", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      });
 
       const result = await res.json();
 
@@ -199,6 +171,9 @@ export function CareerForm() {
               placeholder="john@example.com"
               className="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-xl focus:ring-2 focus:ring-[#00B8FF] focus:bg-white outline-none transition-all text-slate-900 text-sm"
             />
+            <p className="text-[11px] text-slate-500 font-medium mt-1">
+              * Please ensure your email address is correct so our hiring team can reach you.
+            </p>
           </div>
 
           <div>

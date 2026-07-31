@@ -45,37 +45,17 @@ export function ContactForm() {
     setErrorMessage("");
 
     try {
-      // Send to both internal API and Web3Forms concurrently
-      const [response, web3FormsResponse] = await Promise.all([
-        fetch("/api/contact", {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify(formData),
-        }),
-        fetch("https://api.web3forms.com/submit", {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-            Accept: "application/json",
-          },
-          body: JSON.stringify({
-            access_key: "1bca8f56-e3ae-45a3-9639-6dad20c5c74a",
-            subject: `New Contact Request from ${formData.firstName} ${formData.lastName}`,
-            from_name: `${formData.firstName} ${formData.lastName}`,
-            email: formData.email,
-            phone: formData.phone,
-            company: formData.company || "Not provided",
-            service: formData.service,
-            message: formData.message,
-          }),
-        })
-      ]);
+      const response = await fetch("/api/contact", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      });
 
       const result = await response.json();
 
-      if (response.ok && web3FormsResponse.ok) {
+      if (response.ok) {
         setSubmitStatus("success");
         setFormData({
           firstName: "",
@@ -171,6 +151,9 @@ export function ContactForm() {
                   required 
                   disabled={isSubmitting}
                 />
+                <p className="text-[11px] text-slate-500 font-medium mt-1">
+                  * Please double-check your email address to ensure our reply reaches you safely.
+                </p>
               </div>
               <div className="space-y-2">
                 <label htmlFor="phone" className="text-sm font-bold text-slate-700">Phone Number *</label>
