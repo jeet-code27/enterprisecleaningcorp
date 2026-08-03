@@ -23,6 +23,9 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     "/success-stories/wcu-bank",
     "/success-stories/apderm",
     "/success-stories/coghlin-companies",
+    "/success-stories/capital-group-properties",
+    "/success-stories/west-boylston-light-department",
+    "/success-stories/st-benedict-school",
   ];
 
   const serviceRoutes = [

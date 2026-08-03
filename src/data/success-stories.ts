@@ -131,6 +131,148 @@ export const successStories: SuccessStory[] = [
       company: "Enterprise Cleaning Corporation",
       phone: "508-304-2369"
     }
+  },
+  {
+    id: "capital-group-properties",
+    slug: "capital-group-properties",
+    companyName: "Capital Group Properties",
+    industry: "Property Management & Commercial Real Estate",
+    logo: "/logos/capital-group.png",
+    headline: "Reliable Support Across More Than 10 Facilities",
+    subheading: "Providing dependable janitorial services, rapid emergency response, and dedicated cleaning staff for Capital Group Properties.",
+    testimonialText: [
+      "Managing multiple properties requires a cleaning partner that can respond quickly when unexpected needs arise.",
+      "Enterprise Cleaning Corp. provides cleaning services across more than 10 Capital Group Properties facilities, supported by a dedicated team of approximately 12 employees.",
+      "Our partnership goes beyond scheduled cleaning. In 2025 alone, Enterprise responded to 11 last-minute calls involving special cleaning requests. Our ability to mobilize quickly and respond in a timely manner helped Capital Group Properties address unexpected needs while maintaining the appearance and condition of their properties.",
+      "Whether the request is part of the regular cleaning schedule or an unexpected situation that requires immediate attention, Enterprise works to provide dependable service and a fast response."
+    ],
+    rawContent: {
+      overview: "Enterprise Cleaning Corp. provides cleaning services across more than 10 Capital Group Properties facilities.",
+      challengeAndSolution: "Managing multiple properties requires a cleaning partner that can respond quickly when unexpected needs arise.",
+      routineAndSpecial: "In 2025 alone, Enterprise responded to 11 last-minute calls involving special cleaning requests.",
+      result: "A trusted partnership built on consistency, responsiveness, and the ability to provide reliable cleaning support across a large portfolio of properties."
+    },
+    resultSummary: "A trusted partnership built on consistency, responsiveness, and the ability to provide reliable cleaning support across a large portfolio of properties.",
+    metrics: [
+      { label: "Facilities Managed", value: "10+" },
+      { label: "Dedicated Employees", value: "~12" },
+      { label: "2025 Urgent Calls", value: "11" },
+      { label: "Emergency Mobilization", value: "Fast" }
+    ],
+    keyHighlights: [
+      "Reliable cleaning services across 10+ property facilities",
+      "Dedicated team of ~12 specialized cleaning professionals",
+      "11 last-minute special cleaning calls answered in 2025 alone",
+      "Rapid mobilization and timely response for unexpected needs"
+    ],
+    signOff: {
+      name: "Property Management Team",
+      title: "Property & Facility Operations",
+      company: "Capital Group Properties",
+      date: "July 2026",
+      location: "New England Facilities",
+      signatureBadgeText: "Verified Property Partner"
+    },
+    contactPerson: {
+      name: "Alex Puchulu",
+      title: "Director of Sales & Marketing",
+      company: "Enterprise Cleaning Corporation",
+      phone: "508-304-2369"
+    }
+  },
+  {
+    id: "west-boylston-light-department",
+    slug: "west-boylston-light-department",
+    companyName: "West Boylston Light Department",
+    industry: "Municipal & Public Facilities",
+    logo: "/logos/west-boylston-light-department.png",
+    headline: "A Local Partnership That Grew Through Results and Referrals",
+    subheading: "Enterprise Cleaning Corp.’s relationship with the West Boylston Light Department is an example of how strong service can create long-term growth through trust and referrals.",
+    testimonialText: [
+      "Enterprise Cleaning Corp.’s relationship with the West Boylston Light Department is an example of how strong service can create long-term growth through trust and referrals.",
+      "After beginning our partnership with the West Boylston Light Department, Enterprise focused on delivering dependable, professional cleaning services and building a strong working relationship with the organization.",
+      "Our success with the initial account helped lead to referrals and additional opportunities to serve public and municipal facilities in the surrounding area. Today, Enterprise provides cleaning services for the West Boylston Light Department, Town Hall, and other municipal buildings in the region."
+    ],
+    rawContent: {
+      overview: "Enterprise Cleaning Corp. provides cleaning services for West Boylston Light Department, Town Hall, and regional municipal facilities.",
+      challengeAndSolution: "Delivering dependable, professional cleaning services and building a strong working relationship with public facilities.",
+      routineAndSpecial: "Our success with the initial account helped lead to referrals and additional opportunities to serve public and municipal facilities in the surrounding area.",
+      result: "One successful local partnership grew into additional opportunities through referrals, demonstrating the value of consistent service, accountability, and a commitment to the local community."
+    },
+    resultSummary: "One successful local partnership grew into additional opportunities through referrals, demonstrating the value of consistent service, accountability, and a commitment to the local community.",
+    metrics: [
+      { label: "Facilities Portfolio", value: "Municipal" },
+      { label: "Coverage", value: "Town Hall & Light Dept" },
+      { label: "Community Focus", value: "100%" },
+      { label: "Growth Model", value: "Referrals" }
+    ],
+    keyHighlights: [
+      "Dependable cleaning for West Boylston Light Department",
+      "Comprehensive janitorial services for Town Hall & public buildings",
+      "Long-term partnership built on accountability & community trust",
+      "Organic growth through client referrals in Central MA"
+    ],
+    signOff: {
+      name: "Municipal Operations Director",
+      title: "Public Facilities Management",
+      company: "West Boylston Light Department",
+      date: "July 2026",
+      location: "Central MA",
+      signatureBadgeText: "Verified Municipal Partner"
+    },
+    contactPerson: {
+      name: "Alex Puchulu",
+      title: "Director of Sales & Marketing",
+      company: "Enterprise Cleaning Corporation",
+      phone: "508-304-2369"
+    }
+  },
+  {
+    id: "st-benedict-school",
+    slug: "st-benedict-school",
+    companyName: "St. Benedict School",
+    industry: "Education & School Facilities",
+    logo: "/logos/StBenedictsWordmark.png",
+    headline: "Ready to Respond When Schools Need Us Most",
+    subheading: "Combining routine support, rapid incident response, carpet extraction equipment, and annual deep reset cleaning for St. Benedict School.",
+    testimonialText: [
+      "Schools are active environments where unexpected incidents can happen at any time. When an incident occurs, the facility needs a cleaning partner that can respond quickly and help restore the space so students and staff can safely return to their daily activities.",
+      "Enterprise Cleaning Corp. supports St. Benedict School with responsive cleaning services when incidents occur. Our team can mobilize with specialized equipment, including carpet extractors, and provide cleaning and disinfection to help restore affected areas.",
+      "Our partnership also includes an annual facility reset cleaning. Before students return from vacation, Enterprise helps prepare the school with a thorough cleaning so the facility is fresh, clean, and ready for the new school period."
+    ],
+    rawContent: {
+      overview: "Enterprise Cleaning Corp. supports St. Benedict School with responsive emergency cleaning and annual deep reset services.",
+      challengeAndSolution: "Schools need a cleaning partner that can respond quickly when incidents occur to restore space safely for students and staff.",
+      routineAndSpecial: "Mobilizing specialized carpet extractors for emergency incidents and performing an annual facility reset cleaning before school terms.",
+      result: "A dependable cleaning partnership that combines routine support, emergency response capabilities, specialized equipment, and annual deep cleaning to help keep the school ready for students and staff."
+    },
+    resultSummary: "A dependable cleaning partnership that combines routine support, emergency response capabilities, specialized equipment, and annual deep cleaning to help keep the school ready for students and staff.",
+    metrics: [
+      { label: "Incident Response", value: "Rapid" },
+      { label: "Carpet Care", value: "Extractors" },
+      { label: "Deep Reset", value: "Annual" },
+      { label: "Safety Focus", value: "100%" }
+    ],
+    keyHighlights: [
+      "Responsive emergency cleaning for unexpected school incidents",
+      "Specialized extraction equipment & carpet deep cleaning",
+      "Rapid space restoration for classroom & common area safety",
+      "Comprehensive annual facility reset deep cleaning before school terms"
+    ],
+    signOff: {
+      name: "School Administration",
+      title: "Facilities & Operations",
+      company: "St. Benedict School",
+      date: "July 2026",
+      location: "Central MA",
+      signatureBadgeText: "Verified Education Partner"
+    },
+    contactPerson: {
+      name: "Alex Puchulu",
+      title: "Director of Sales & Marketing",
+      company: "Enterprise Cleaning Corporation",
+      phone: "508-304-2369"
+    }
   }
 ];
 

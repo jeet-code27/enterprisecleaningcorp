@@ -13,7 +13,9 @@ import {
   FileText, 
   PhoneCall, 
   Award,
-  ChevronRight
+  ChevronRight,
+  Landmark,
+  GraduationCap
 } from "lucide-react";
 
 export const metadata: Metadata = {
@@ -403,6 +405,342 @@ export default function SuccessStoriesPage() {
                   <div className="flex flex-col sm:flex-row items-center justify-end gap-4 pt-6 border-t border-slate-100">
                     <Link
                       href="/success-stories/coghlin-companies"
+                      className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-3 rounded-xl bg-[#003057] text-white font-bold text-sm hover:bg-[#002244] transition-all shadow-md hover:shadow-lg group"
+                    >
+                      <FileText className="w-4 h-4 text-[#00B8FF]" />
+                      <span>Read Full Success Story</span>
+                      <ChevronRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                    </Link>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+            {/* 4. CAPITAL GROUP PROPERTIES STORY CARD */}
+            <div className="bg-white rounded-3xl shadow-xl border border-slate-200/80 overflow-hidden transition-all hover:shadow-2xl">
+              <div className="grid grid-cols-1 lg:grid-cols-12">
+                
+                {/* Left Side */}
+                <div className="lg:col-span-5 bg-gradient-to-br from-[#001a33] via-[#003057] to-[#002244] p-8 md:p-12 text-white flex flex-col justify-between relative overflow-hidden">
+                  <div className="absolute top-0 right-0 w-64 h-64 bg-[#00B8FF]/10 rounded-full blur-3xl pointer-events-none" />
+                  
+                  <div>
+                    <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/10 border border-white/20 text-sky-300 text-xs font-bold uppercase tracking-wider mb-6">
+                      <Building2 className="w-3.5 h-3.5" />
+                      <span>Property Management</span>
+                    </div>
+
+                    <div className="bg-[#001a33] border border-white/20 p-5 px-6 rounded-2xl shadow-md w-fit mb-8 flex items-center justify-center">
+                      <Image
+                        src="/logos/capital-group.png"
+                        alt="Capital Group Properties Logo"
+                        width={200}
+                        height={70}
+                        className="h-12 w-auto object-contain brightness-0 invert"
+                      />
+                    </div>
+
+                    <h3 className="text-xl md:text-2xl font-extrabold text-white mb-4 leading-snug">
+                      Reliable Support Across More Than 10 Facilities
+                    </h3>
+
+                    <p className="text-slate-300 text-sm md:text-base leading-relaxed font-light mb-8">
+                      Enterprise Cleaning Corp. provides cleaning services across 10+ Capital Group Properties facilities, supported by a dedicated team of ~12 employees.
+                    </p>
+                  </div>
+
+                  <div className="space-y-3 pt-6 border-t border-white/15">
+                    <div className="flex items-center justify-between text-xs md:text-sm">
+                      <span className="text-slate-300 font-medium">Facilities Managed:</span>
+                      <span className="text-[#FFE800] font-bold">10+ Properties</span>
+                    </div>
+                    <div className="flex items-center justify-between text-xs md:text-sm">
+                      <span className="text-slate-300 font-medium">2025 Urgent Calls:</span>
+                      <span className="text-[#FFE800] font-bold">11 Handled</span>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Right Side */}
+                <div className="lg:col-span-7 p-8 md:p-12 flex flex-col justify-between bg-white">
+                  <div>
+                    <div className="flex items-center gap-2 text-amber-500 mb-6">
+                      {[...Array(5)].map((_, i) => (
+                        <Star key={i} className="w-5 h-5 fill-amber-400 text-amber-400" />
+                      ))}
+                      <span className="text-slate-600 text-xs font-semibold ml-2">Capital Group Properties Testimonial</span>
+                    </div>
+
+                    <div className="relative mb-8 pl-6 border-l-4 border-[#00B8FF]">
+                      <Quote className="w-8 h-8 text-[#00B8FF]/20 absolute -top-3 -left-3 pointer-events-none" />
+                      <p className="text-slate-700 text-base md:text-lg italic leading-relaxed font-serif">
+                        "Managing multiple properties requires a cleaning partner that can respond quickly when unexpected needs arise. Enterprise Cleaning Corp. provides cleaning services across more than 10 Capital Group Properties facilities, supported by a dedicated team of approximately 12 employees..."
+                      </p>
+                    </div>
+
+                    <div className="mb-8">
+                      <h4 className="text-xs font-bold uppercase tracking-wider text-slate-400 mb-4">
+                        Key Deliverables
+                      </h4>
+                      <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                        <div className="flex items-start gap-2.5">
+                          <CheckCircle2 className="w-5 h-5 text-emerald-500 shrink-0 mt-0.5" />
+                          <span className="text-slate-700 text-xs md:text-sm font-medium">Reliable cleaning across 10+ facilities</span>
+                        </div>
+                        <div className="flex items-start gap-2.5">
+                          <CheckCircle2 className="w-5 h-5 text-emerald-500 shrink-0 mt-0.5" />
+                          <span className="text-slate-700 text-xs md:text-sm font-medium">Dedicated team of ~12 employees</span>
+                        </div>
+                        <div className="flex items-start gap-2.5">
+                          <CheckCircle2 className="w-5 h-5 text-emerald-500 shrink-0 mt-0.5" />
+                          <span className="text-slate-700 text-xs md:text-sm font-medium">11 last-minute calls answered in 2025</span>
+                        </div>
+                        <div className="flex items-start gap-2.5">
+                          <CheckCircle2 className="w-5 h-5 text-emerald-500 shrink-0 mt-0.5" />
+                          <span className="text-slate-700 text-xs md:text-sm font-medium">Rapid response & timely mobilization</span>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div className="p-5 rounded-2xl bg-slate-50 border border-slate-200 mb-8">
+                      <div className="flex items-center gap-2 text-xs font-black uppercase text-[#E31837] mb-2">
+                        <Sparkles className="w-4 h-4 text-[#E31837]" />
+                        <span>The Result</span>
+                      </div>
+                      <p className="text-slate-800 text-sm font-semibold leading-relaxed">
+                        A trusted partnership built on consistency, responsiveness, and the ability to provide reliable cleaning support across a large portfolio of properties.
+                      </p>
+                    </div>
+                  </div>
+
+                  <div className="flex flex-col sm:flex-row items-center justify-end gap-4 pt-6 border-t border-slate-100">
+                    <Link
+                      href="/success-stories/capital-group-properties"
+                      className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-3 rounded-xl bg-[#003057] text-white font-bold text-sm hover:bg-[#002244] transition-all shadow-md hover:shadow-lg group"
+                    >
+                      <FileText className="w-4 h-4 text-[#00B8FF]" />
+                      <span>Read Full Success Story</span>
+                      <ChevronRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                    </Link>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+            {/* 5. WEST BOYLSTON LIGHT DEPARTMENT STORY CARD */}
+            <div className="bg-white rounded-3xl shadow-xl border border-slate-200/80 overflow-hidden transition-all hover:shadow-2xl">
+              <div className="grid grid-cols-1 lg:grid-cols-12">
+                
+                {/* Left Side */}
+                <div className="lg:col-span-5 bg-gradient-to-br from-[#001a33] via-[#003057] to-[#002244] p-8 md:p-12 text-white flex flex-col justify-between relative overflow-hidden">
+                  <div className="absolute top-0 right-0 w-64 h-64 bg-[#00B8FF]/10 rounded-full blur-3xl pointer-events-none" />
+                  
+                  <div>
+                    <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/10 border border-white/20 text-sky-300 text-xs font-bold uppercase tracking-wider mb-6">
+                      <Landmark className="w-3.5 h-3.5" />
+                      <span>Municipal & Public Facilities</span>
+                    </div>
+
+                    <div className="bg-white border border-white/20 p-5 px-6 rounded-2xl shadow-md w-fit mb-8 flex items-center justify-center">
+                      <Image
+                        src="/logos/west-boylston-light-department.png"
+                        alt="West Boylston Light Department Logo"
+                        width={200}
+                        height={70}
+                        className="h-12 w-auto object-contain"
+                      />
+                    </div>
+
+                    <h3 className="text-xl md:text-2xl font-extrabold text-white mb-4 leading-snug">
+                      A Local Partnership That Grew Through Results and Referrals
+                    </h3>
+
+                    <p className="text-slate-300 text-sm md:text-base leading-relaxed font-light mb-8">
+                      Providing dependable janitorial services for West Boylston Light Department, Town Hall, and regional municipal facilities.
+                    </p>
+                  </div>
+
+                  <div className="space-y-3 pt-6 border-t border-white/15">
+                    <div className="flex items-center justify-between text-xs md:text-sm">
+                      <span className="text-slate-300 font-medium">Coverage:</span>
+                      <span className="text-[#FFE800] font-bold">Town Hall & Light Dept</span>
+                    </div>
+                    <div className="flex items-center justify-between text-xs md:text-sm">
+                      <span className="text-slate-300 font-medium">Growth Model:</span>
+                      <span className="text-[#FFE800] font-bold">Community Referrals</span>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Right Side */}
+                <div className="lg:col-span-7 p-8 md:p-12 flex flex-col justify-between bg-white">
+                  <div>
+                    <div className="flex items-center gap-2 text-amber-500 mb-6">
+                      {[...Array(5)].map((_, i) => (
+                        <Star key={i} className="w-5 h-5 fill-amber-400 text-amber-400" />
+                      ))}
+                      <span className="text-slate-600 text-xs font-semibold ml-2">West Boylston Light Dept Testimonial</span>
+                    </div>
+
+                    <div className="relative mb-8 pl-6 border-l-4 border-[#00B8FF]">
+                      <Quote className="w-8 h-8 text-[#00B8FF]/20 absolute -top-3 -left-3 pointer-events-none" />
+                      <p className="text-slate-700 text-base md:text-lg italic leading-relaxed font-serif">
+                        "Enterprise Cleaning Corp.’s relationship with the West Boylston Light Department is an example of how strong service can create long-term growth through trust and referrals. Today, Enterprise provides cleaning services for the West Boylston Light Department, Town Hall, and other municipal buildings in the region..."
+                      </p>
+                    </div>
+
+                    <div className="mb-8">
+                      <h4 className="text-xs font-bold uppercase tracking-wider text-slate-400 mb-4">
+                        Key Deliverables
+                      </h4>
+                      <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                        <div className="flex items-start gap-2.5">
+                          <CheckCircle2 className="w-5 h-5 text-emerald-500 shrink-0 mt-0.5" />
+                          <span className="text-slate-700 text-xs md:text-sm font-medium">Dependable Light Dept facility cleaning</span>
+                        </div>
+                        <div className="flex items-start gap-2.5">
+                          <CheckCircle2 className="w-5 h-5 text-emerald-500 shrink-0 mt-0.5" />
+                          <span className="text-slate-700 text-xs md:text-sm font-medium">Comprehensive Town Hall janitorial support</span>
+                        </div>
+                        <div className="flex items-start gap-2.5">
+                          <CheckCircle2 className="w-5 h-5 text-emerald-500 shrink-0 mt-0.5" />
+                          <span className="text-slate-700 text-xs md:text-sm font-medium">Community commitment & accountability</span>
+                        </div>
+                        <div className="flex items-start gap-2.5">
+                          <CheckCircle2 className="w-5 h-5 text-emerald-500 shrink-0 mt-0.5" />
+                          <span className="text-slate-700 text-xs md:text-sm font-medium">Organic growth through client referrals</span>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div className="p-5 rounded-2xl bg-slate-50 border border-slate-200 mb-8">
+                      <div className="flex items-center gap-2 text-xs font-black uppercase text-[#E31837] mb-2">
+                        <Sparkles className="w-4 h-4 text-[#E31837]" />
+                        <span>The Result</span>
+                      </div>
+                      <p className="text-slate-800 text-sm font-semibold leading-relaxed">
+                        One successful local partnership grew into additional opportunities through referrals, demonstrating the value of consistent service, accountability, and a commitment to the local community.
+                      </p>
+                    </div>
+                  </div>
+
+                  <div className="flex flex-col sm:flex-row items-center justify-end gap-4 pt-6 border-t border-slate-100">
+                    <Link
+                      href="/success-stories/west-boylston-light-department"
+                      className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-3 rounded-xl bg-[#003057] text-white font-bold text-sm hover:bg-[#002244] transition-all shadow-md hover:shadow-lg group"
+                    >
+                      <FileText className="w-4 h-4 text-[#00B8FF]" />
+                      <span>Read Full Success Story</span>
+                      <ChevronRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                    </Link>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+            {/* 6. ST. BENEDICT SCHOOL STORY CARD */}
+            <div className="bg-white rounded-3xl shadow-xl border border-slate-200/80 overflow-hidden transition-all hover:shadow-2xl">
+              <div className="grid grid-cols-1 lg:grid-cols-12">
+                
+                {/* Left Side */}
+                <div className="lg:col-span-5 bg-gradient-to-br from-[#001a33] via-[#003057] to-[#002244] p-8 md:p-12 text-white flex flex-col justify-between relative overflow-hidden">
+                  <div className="absolute top-0 right-0 w-64 h-64 bg-[#00B8FF]/10 rounded-full blur-3xl pointer-events-none" />
+                  
+                  <div>
+                    <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/10 border border-white/20 text-sky-300 text-xs font-bold uppercase tracking-wider mb-6">
+                      <GraduationCap className="w-3.5 h-3.5" />
+                      <span>Education & School Facilities</span>
+                    </div>
+
+                    <div className="bg-[#001a33] border border-white/20 p-5 px-6 rounded-2xl shadow-md w-fit mb-8 flex items-center justify-center">
+                      <Image
+                        src="/logos/StBenedictsWordmark.png"
+                        alt="St. Benedict School Logo"
+                        width={200}
+                        height={70}
+                        className="h-12 w-auto object-contain"
+                      />
+                    </div>
+
+                    <h3 className="text-xl md:text-2xl font-extrabold text-white mb-4 leading-snug">
+                      Ready to Respond When Schools Need Us Most
+                    </h3>
+
+                    <p className="text-slate-300 text-sm md:text-base leading-relaxed font-light mb-8">
+                      Supporting St. Benedict School with rapid incident response, carpet extraction equipment, and annual deep reset cleaning.
+                    </p>
+                  </div>
+
+                  <div className="space-y-3 pt-6 border-t border-white/15">
+                    <div className="flex items-center justify-between text-xs md:text-sm">
+                      <span className="text-slate-300 font-medium">Service Focus:</span>
+                      <span className="text-[#FFE800] font-bold">Emergency & Reset</span>
+                    </div>
+                    <div className="flex items-center justify-between text-xs md:text-sm">
+                      <span className="text-slate-300 font-medium">Specialized Care:</span>
+                      <span className="text-[#FFE800] font-bold">Carpet Extractors</span>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Right Side */}
+                <div className="lg:col-span-7 p-8 md:p-12 flex flex-col justify-between bg-white">
+                  <div>
+                    <div className="flex items-center gap-2 text-amber-500 mb-6">
+                      {[...Array(5)].map((_, i) => (
+                        <Star key={i} className="w-5 h-5 fill-amber-400 text-amber-400" />
+                      ))}
+                      <span className="text-slate-600 text-xs font-semibold ml-2">St. Benedict School Testimonial</span>
+                    </div>
+
+                    <div className="relative mb-8 pl-6 border-l-4 border-[#00B8FF]">
+                      <Quote className="w-8 h-8 text-[#00B8FF]/20 absolute -top-3 -left-3 pointer-events-none" />
+                      <p className="text-slate-700 text-base md:text-lg italic leading-relaxed font-serif">
+                        "Schools are active environments where unexpected incidents can happen at any time. When an incident occurs, the facility needs a cleaning partner that can respond quickly... Enterprise supports St. Benedict School with responsive cleaning services, specialized carpet extractors, and annual reset cleaning..."
+                      </p>
+                    </div>
+
+                    <div className="mb-8">
+                      <h4 className="text-xs font-bold uppercase tracking-wider text-slate-400 mb-4">
+                        Key Deliverables
+                      </h4>
+                      <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                        <div className="flex items-start gap-2.5">
+                          <CheckCircle2 className="w-5 h-5 text-emerald-500 shrink-0 mt-0.5" />
+                          <span className="text-slate-700 text-xs md:text-sm font-medium">Responsive emergency cleaning for school incidents</span>
+                        </div>
+                        <div className="flex items-start gap-2.5">
+                          <CheckCircle2 className="w-5 h-5 text-emerald-500 shrink-0 mt-0.5" />
+                          <span className="text-slate-700 text-xs md:text-sm font-medium">Specialized carpet extractor deep cleaning</span>
+                        </div>
+                        <div className="flex items-start gap-2.5">
+                          <CheckCircle2 className="w-5 h-5 text-emerald-500 shrink-0 mt-0.5" />
+                          <span className="text-slate-700 text-xs md:text-sm font-medium">Annual facility reset before new terms</span>
+                        </div>
+                        <div className="flex items-start gap-2.5">
+                          <CheckCircle2 className="w-5 h-5 text-emerald-500 shrink-0 mt-0.5" />
+                          <span className="text-slate-700 text-xs md:text-sm font-medium">Rapid space restoration for student safety</span>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div className="p-5 rounded-2xl bg-slate-50 border border-slate-200 mb-8">
+                      <div className="flex items-center gap-2 text-xs font-black uppercase text-[#E31837] mb-2">
+                        <Sparkles className="w-4 h-4 text-[#E31837]" />
+                        <span>The Result</span>
+                      </div>
+                      <p className="text-slate-800 text-sm font-semibold leading-relaxed">
+                        A dependable cleaning partnership that combines routine support, emergency response capabilities, specialized equipment, and annual deep cleaning to help keep the school ready for students and staff.
+                      </p>
+                    </div>
+                  </div>
+
+                  <div className="flex flex-col sm:flex-row items-center justify-end gap-4 pt-6 border-t border-slate-100">
+                    <Link
+                      href="/success-stories/st-benedict-school"
                       className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-3 rounded-xl bg-[#003057] text-white font-bold text-sm hover:bg-[#002244] transition-all shadow-md hover:shadow-lg group"
                     >
                       <FileText className="w-4 h-4 text-[#00B8FF]" />
