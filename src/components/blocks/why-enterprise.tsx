@@ -8,7 +8,7 @@ const features = [
   {
     icon: Handshake,
     title: "Organizational accountability",
-    description: "When something needs attention, you reach Alex or Julio directly — not a franchise ticket number or a call center.",
+    description: "When something needs attention, you can reach us directly — not a franchise ticket number or a call center.",
   },
   {
     icon: RefreshCw,
@@ -32,7 +32,7 @@ export function WhyEnterprise() {
     <section className="py-16 lg:py-24 bg-slate-50 overflow-hidden relative">
       <div className="container mx-auto px-6 lg:px-12 max-w-7xl">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24 items-center">
-          
+
           {/* Left Side: Features */}
           <div className="order-1">
             <h5 className="text-[#E31837] font-bold tracking-widest uppercase text-sm mb-4">Why Enterprise Cleaning Corporation</h5>
@@ -42,10 +42,10 @@ export function WhyEnterprise() {
             <p className="text-lg md:text-xl text-slate-600 font-medium leading-relaxed mb-12 text-left">
               what businesses expect from a commercial cleaning partner — proving that a company can operate at enterprise scale while still delivering the personal accountability, consistency, and results that make switching providers unthinkable.
             </p>
-            
+
             <div className="space-y-10">
               {features.map((feature, idx) => (
-                <motion.div 
+                <motion.div
                   key={idx}
                   initial={{ opacity: 0, x: -30 }}
                   whileInView={{ opacity: 1, x: 0 }}
@@ -68,7 +68,7 @@ export function WhyEnterprise() {
           </div>
 
           {/* Right Side: Image & Quote */}
-          <motion.div 
+          <motion.div
             initial={{ opacity: 0, scale: 0.95 }}
             whileInView={{ opacity: 1, scale: 1 }}
             viewport={{ once: true }}
@@ -77,16 +77,16 @@ export function WhyEnterprise() {
           >
             {/* Image Wrapper */}
             <div className="relative rounded-3xl overflow-hidden shadow-2xl ring-4 ring-white w-full">
-              <img 
-                src="/images/office_cleaning_hero.png" 
-                alt="Enterprise Commercial Cleaning" 
+              <img
+                src="/images/office_cleaning_hero.png"
+                alt="Enterprise Commercial Cleaning"
                 className="w-full h-auto object-cover transition-transform duration-700 hover:scale-105"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-slate-900/40 via-transparent to-transparent pointer-events-none"></div>
             </div>
 
             {/* Quote Box */}
-            <motion.div 
+            <motion.div
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
