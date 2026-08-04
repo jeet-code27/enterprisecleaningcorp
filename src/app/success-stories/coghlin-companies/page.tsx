@@ -13,15 +13,15 @@ import {
 } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: { absolute: "Coughlin Companies Success Story | Enterprise Cleaning Corp" },
-  description: "Enterprise Cleaning Corp delivers manufacturing cleaning, day & night porters, and clean room sanitation across 5+ Coughlin Companies facilities.",
-  keywords: ["Coughlin Companies cleaning case study", "manufacturing plant janitorial services", "clean room cleaning MA", "industrial day porter services", "commercial floor cleaning equipment"],
+  title: { absolute: "Coghlin Companies Success Story | Enterprise Cleaning Corp" },
+  description: "Enterprise Cleaning Corp delivers manufacturing cleaning, day & night porters, and clean room sanitation across 5+ Coghlin Companies facilities.",
+  keywords: ["Coghlin Companies cleaning case study", "manufacturing plant janitorial services", "clean room sanitation MA", "industrial day porter services", "commercial floor cleaning equipment"],
   alternates: {
     canonical: "https://www.enterprisecleaningcorp.com/success-stories/coghlin-companies",
   },
   openGraph: {
-    title: "Coughlin Companies Success Story | Enterprise Cleaning Corp",
-    description: "Enterprise Cleaning Corp delivers manufacturing cleaning, day & night porters, and clean room sanitation across 5+ Coughlin Companies facilities.",
+    title: "Coghlin Companies Success Story | Enterprise Cleaning Corp",
+    description: "Enterprise Cleaning Corp delivers manufacturing cleaning, day & night porters, and clean room sanitation across 5+ Coghlin Companies facilities.",
     url: "https://www.enterprisecleaningcorp.com/success-stories/coghlin-companies",
     type: "article",
   },
@@ -70,7 +70,7 @@ export default function CoghlinCompaniesSuccessStoryPage() {
             <div className="bg-[#003057] border border-[#002244] p-3 px-5 rounded-2xl flex items-center justify-center self-end sm:self-center shadow-xs">
               <Image
                 src="/logos/coghlin-companies.webp"
-                alt="Coughlin Companies Logo"
+                alt="Coghlin Companies Logo"
                 width={160}
                 height={55}
                 className="h-10 w-auto object-contain"
@@ -109,10 +109,10 @@ export default function CoghlinCompaniesSuccessStoryPage() {
                 Manufacturing facilities have unique cleaning requirements. The environment must remain clean and organized while supporting employees, production, and daily operations.
               </p>
               <p>
-                Enterprise Cleaning Corp. provides cleaning services across more than five Coughlin Companies facilities, with dedicated day porters and night porters helping maintain the buildings throughout the day and after operations are complete.
+                Enterprise Cleaning Corp. provides cleaning services across more than five Coghlin Companies facilities, with dedicated day porters and night porters helping maintain the buildings throughout the day and after operations are complete.
               </p>
               <p>
-                Working closely with the Coughlin Companies team, Enterprise helped develop a dedicated cleaning plan for specialized clean room areas, focusing on the standards required to support their operations and production environment.
+                Working closely with the Coghlin Companies team, Enterprise helped develop a dedicated cleaning plan for specialized clean room areas, focusing on the standards required to support their operations and production environment.
               </p>
               <p>
                 For large manufacturing spaces, Enterprise also maintains floor-cleaning equipment on site, allowing our team to efficiently care for expansive flooring areas and maintain a consistent standard of cleanliness.
@@ -199,9 +199,9 @@ export default function CoghlinCompaniesSuccessStoryPage() {
               </div>
 
               <div className="bg-slate-50 p-4 rounded-2xl border border-slate-200">
-                <div className="font-extrabold text-slate-900 text-base">Coughlin Companies Operations</div>
+                <div className="font-extrabold text-slate-900 text-base">Coghlin Companies Operations</div>
                 <div className="text-xs font-semibold text-[#003057]">Plant Facilities & Manufacturing Operations</div>
-                <div className="text-xs text-slate-500 font-medium">Coughlin Companies • 5+ Manufacturing Facilities</div>
+                <div className="text-xs text-slate-500 font-medium">Coghlin Companies • 5+ Manufacturing Facilities</div>
                 <div className="text-[11px] text-slate-400 mt-2 flex items-center gap-1">
                   <Calendar className="w-3 h-3 text-slate-400" />
                   <span>Date: July 2026</span>

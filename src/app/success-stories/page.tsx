@@ -305,7 +305,7 @@ export default function SuccessStoriesPage() {
               </div>
             </div>
 
-            {/* 3. COUGHLIN COMPANIES STORY CARD */}
+            {/* 3. COGHLIN COMPANIES STORY CARD */}
             <div className="bg-white rounded-3xl shadow-xl border border-slate-200/80 overflow-hidden transition-all hover:shadow-2xl">
               <div className="grid grid-cols-1 lg:grid-cols-12">
                 
@@ -322,7 +322,7 @@ export default function SuccessStoriesPage() {
                     <div className="bg-[#001a33] border border-white/20 p-5 px-6 rounded-2xl shadow-md w-fit mb-8 flex items-center justify-center">
                       <Image
                         src="/logos/coghlin-companies.webp"
-                        alt="Coughlin Companies Logo"
+                        alt="Coghlin Companies Logo"
                         width={200}
                         height={70}
                         className="h-12 w-auto object-contain"
@@ -334,7 +334,7 @@ export default function SuccessStoriesPage() {
                     </h3>
 
                     <p className="text-slate-300 text-sm md:text-base leading-relaxed font-light mb-8">
-                      Enterprise Cleaning Corp. provides cleaning services across more than five Coughlin Companies facilities with dedicated day and night porters.
+                      Enterprise Cleaning Corp. provides cleaning services across more than five Coghlin Companies facilities with dedicated day and night porters.
                     </p>
                   </div>
 
@@ -357,13 +357,13 @@ export default function SuccessStoriesPage() {
                       {[...Array(5)].map((_, i) => (
                         <Star key={i} className="w-5 h-5 fill-amber-400 text-amber-400" />
                       ))}
-                      <span className="text-slate-600 text-xs font-semibold ml-2">Coughlin Companies Testimonial</span>
+                      <span className="text-slate-600 text-xs font-semibold ml-2">Coghlin Companies Testimonial</span>
                     </div>
 
                     <div className="relative mb-8 pl-6 border-l-4 border-[#00B8FF]">
                       <Quote className="w-8 h-8 text-[#00B8FF]/20 absolute -top-3 -left-3 pointer-events-none" />
                       <p className="text-slate-700 text-base md:text-lg italic leading-relaxed font-serif">
-                        "Manufacturing facilities have unique cleaning requirements. The environment must remain clean and organized while supporting employees, production, and daily operations. Enterprise Cleaning Corp. provides cleaning services across more than five Coughlin Companies facilities..."
+                        "Manufacturing facilities have unique cleaning requirements. The environment must remain clean and organized while supporting employees, production, and daily operations. Enterprise Cleaning Corp. provides cleaning services across more than five Coghlin Companies facilities..."
                       </p>
                     </div>
 
@@ -772,7 +772,7 @@ export default function SuccessStoriesPage() {
                 <Image src="/logos/apderm-logo.svg" alt="APDerm" width={130} height={45} className="max-h-10 w-auto object-contain brightness-0 invert" />
               </div>
               <div className="bg-white/10 p-4 rounded-xl backdrop-blur-md border border-white/10 flex items-center justify-center h-20">
-                <Image src="/logos/coghlin-companies.webp" alt="Coughlin Companies" width={130} height={45} className="max-h-10 w-auto object-contain" />
+                <Image src="/logos/coghlin-companies.webp" alt="Coghlin Companies" width={130} height={45} className="max-h-10 w-auto object-contain" />
               </div>
               <div className="bg-white/10 p-4 rounded-xl backdrop-blur-md border border-white/10 flex items-center justify-center h-20">
                 <Image src="/logos/avidia-bank.svg" alt="Avidia Bank" width={130} height={45} className="max-h-10 w-auto object-contain brightness-0 invert" />
