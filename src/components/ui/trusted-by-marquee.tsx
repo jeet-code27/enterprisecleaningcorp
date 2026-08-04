@@ -27,7 +27,7 @@ const logos = [
     height: 48,
   },
   {
-    name: "Capital Group",
+    name: "Capital Group Properties",
     src: "/logos/capital-group.png",
     width: 130,
     height: 48,

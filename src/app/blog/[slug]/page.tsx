@@ -199,45 +199,45 @@ export default async function BlogPostPage({ params }: { params: Params }) {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaData) }}
       />
-      <div className="bg-background pt-32 pb-24 min-h-screen">
-        <div className="container mx-auto px-4 max-w-7xl">
-          <div className="flex flex-col lg:flex-row gap-12">
+      <div className="bg-background pt-20 sm:pt-28 lg:pt-32 pb-12 sm:pb-24 min-h-screen overflow-x-hidden">
+        <div className="container mx-auto px-4 sm:px-6 max-w-7xl w-full">
+          <div className="flex flex-col lg:flex-row gap-8 lg:gap-12 w-full min-w-0">
             
             {/* Main Content */}
-            <article className="flex-1 lg:max-w-[800px]">
-              <Link href="/blog" className="inline-flex items-center text-sm font-medium text-muted-foreground hover:text-brand-blue mb-8 transition-colors">
+            <article className="flex-1 w-full min-w-0 lg:max-w-[800px] overflow-hidden">
+              <Link href="/blog" className="inline-flex items-center text-sm font-medium text-muted-foreground hover:text-brand-blue mb-6 sm:mb-8 transition-colors">
                 <ArrowLeft className="w-4 h-4 mr-2" /> Back to Blog
               </Link>
               
-              <div className="space-y-6 mb-10">
-                <div className="flex items-center gap-4 flex-wrap">
+              <div className="space-y-4 sm:space-y-6 mb-8 sm:mb-10">
+                <div className="flex items-center gap-3 sm:gap-4 flex-wrap">
                   {post.category?.map((cat: any) => (
-                    <span key={cat._id.toString()} className="bg-brand-blue/10 text-brand-blue px-3 py-1 rounded-full text-sm font-semibold">
+                    <span key={cat._id.toString()} className="bg-brand-blue/10 text-brand-blue px-3 py-1 rounded-full text-xs sm:text-sm font-semibold">
                       {cat.name}
                     </span>
                   ))}
-                  <div className="flex items-center text-sm text-muted-foreground gap-2">
-                    <Calendar className="w-4 h-4" />
+                  <div className="flex items-center text-xs sm:text-sm text-muted-foreground gap-2">
+                    <Calendar className="w-4 h-4 shrink-0" />
                     <time dateTime={post.createdAt ? new Date(post.createdAt).toISOString() : new Date().toISOString()}>
                       {new Date(post.createdAt || Date.now()).toLocaleDateString('en-US')}
                     </time>
                   </div>
                 </div>
 
-                <h1 className="text-4xl md:text-5xl font-bold text-brand-navy leading-tight">
+                <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold text-brand-navy leading-snug sm:leading-tight break-words [word-break:break-word]">
                   {post.title}
                 </h1>
                 
                 {post.excerpt && (
-                  <p className="text-xl text-muted-foreground leading-relaxed">
+                  <p className="text-base sm:text-lg md:text-xl text-muted-foreground leading-relaxed break-words [word-break:break-word]">
                     {post.excerpt}
                   </p>
                 )}
                 
                 {/* Author & Share */}
-                <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 py-4 border-y border-border">
+                <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 py-4 border-y border-border flex-wrap">
                   <div className="flex items-center gap-3">
-                    <div className="w-10 h-10 rounded-full bg-muted flex items-center justify-center">
+                    <div className="w-10 h-10 rounded-full bg-muted flex items-center justify-center shrink-0">
                       <User className="w-5 h-5 text-muted-foreground" />
                     </div>
                     <div>
@@ -246,7 +246,7 @@ export default async function BlogPostPage({ params }: { params: Params }) {
                     </div>
                   </div>
                   
-                  <div className="flex items-center gap-3">
+                  <div className="flex items-center gap-3 flex-wrap">
                     <span className="text-sm font-medium text-muted-foreground">Share:</span>
                     <a href={`https://twitter.com/intent/tweet?url=${encodeURIComponent(shareUrl)}&text=${encodeURIComponent(post.title)}`} target="_blank" rel="noopener noreferrer" className="p-2 rounded-full bg-muted hover:bg-[#1DA1F2] hover:text-white transition-colors text-muted-foreground">
                       <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/></svg>
@@ -262,7 +262,7 @@ export default async function BlogPostPage({ params }: { params: Params }) {
               </div>
 
               {post.featuredImage?.url && (
-                <div className="rounded-2xl overflow-hidden mb-12 shadow-lg border border-border">
+                <div className="rounded-xl sm:rounded-2xl overflow-hidden mb-8 sm:mb-12 shadow-lg border border-border w-full">
                   {/* eslint-disable-next-line @next/next/no-img-element */}
                   <img 
                     src={post.featuredImage.url} 
@@ -270,7 +270,7 @@ export default async function BlogPostPage({ params }: { params: Params }) {
                     className="w-full h-auto object-cover max-h-[500px]"
                   />
                   {post.featuredImage.caption && (
-                    <div className="p-3 bg-muted text-center text-sm text-muted-foreground border-t border-border">
+                    <div className="p-3 bg-muted text-center text-xs sm:text-sm text-muted-foreground border-t border-border">
                       {post.featuredImage.caption}
                     </div>
                   )}
@@ -279,13 +279,13 @@ export default async function BlogPostPage({ params }: { params: Params }) {
 
               {/* Mobile ToC */}
               {headings.length > 0 && (
-                <div className="lg:hidden bg-muted/50 p-6 rounded-xl border border-border mb-8">
-                  <h3 className="font-bold text-brand-navy mb-4">Table of Contents</h3>
-                  <ul className="space-y-2 text-sm">
+                <div className="lg:hidden bg-muted/50 p-4 sm:p-6 rounded-xl border border-border mb-8 w-full overflow-hidden">
+                  <h3 className="font-bold text-brand-navy mb-3 text-base sm:text-lg">Table of Contents</h3>
+                  <ul className="space-y-2 text-xs sm:text-sm">
                     {headings.map((h) => (
-                      <li key={h.id} className={`flex gap-2 items-start ${h.level === 3 ? "ml-4" : ""}`}>
+                      <li key={h.id} className={`flex gap-2 items-start ${h.level === 3 ? "ml-3 sm:ml-4" : ""}`}>
                         <span className="text-brand-blue mt-[2px]">{h.level === 2 ? '•' : '-'}</span>
-                        <a href={`#${h.id}`} className="text-muted-foreground hover:text-brand-blue transition-colors">
+                        <a href={`#${h.id}`} className="text-muted-foreground hover:text-brand-blue transition-colors break-words">
                           {h.text}
                         </a>
                       </li>
@@ -296,7 +296,7 @@ export default async function BlogPostPage({ params }: { params: Params }) {
 
               {/* Prose Content */}
               <div 
-                className="prose prose-lg max-w-none prose-headings:text-[#0B1E36] prose-a:!text-[#00B8FF] hover:prose-a:!text-[#0B1E36] prose-img:rounded-xl prose-headings:scroll-mt-24 prose-a:!underline prose-a:!font-bold"
+                className="prose prose-base sm:prose-lg max-w-none w-full min-w-0 overflow-hidden break-words [word-break:break-word] prose-headings:text-[#0B1E36] prose-headings:font-extrabold prose-headings:tracking-tight prose-headings:break-words prose-a:!text-[#00B8FF] hover:prose-a:!text-[#0B1E36] prose-img:rounded-xl prose-img:max-w-full prose-img:h-auto prose-video:max-w-full prose-headings:scroll-mt-24 prose-a:!underline prose-a:!font-bold prose-table:block prose-table:w-full prose-table:overflow-x-auto"
                 dangerouslySetInnerHTML={{ __html: processedHtml }}
               />
 
@@ -305,10 +305,10 @@ export default async function BlogPostPage({ params }: { params: Params }) {
 
               {/* Tags */}
               {post.tags && post.tags.length > 0 && (
-                <div className="mt-12 pt-8 border-t border-border flex items-center gap-3 flex-wrap">
-                  <TagIcon className="w-5 h-5 text-muted-foreground" />
+                <div className="mt-8 sm:mt-12 pt-6 sm:pt-8 border-t border-border flex items-center gap-2 sm:gap-3 flex-wrap">
+                  <TagIcon className="w-4 h-4 sm:w-5 sm:h-5 text-muted-foreground shrink-0" />
                   {post.tags.map((tag: any) => (
-                    <span key={tag._id.toString()} className="bg-muted text-muted-foreground px-3 py-1 rounded-full text-sm">
+                    <span key={tag._id.toString()} className="bg-muted text-muted-foreground px-2.5 py-1 rounded-full text-xs sm:text-sm">
                       #{tag.name}
                     </span>
                   ))}
@@ -317,7 +317,7 @@ export default async function BlogPostPage({ params }: { params: Params }) {
             </article>
 
             {/* Sidebar */}
-            <aside className="w-full lg:w-[350px] space-y-8 lg:sticky lg:top-32 h-fit">
+            <aside className="w-full lg:w-[350px] min-w-0 space-y-6 sm:space-y-8 lg:sticky lg:top-32 h-fit">
               {/* Desktop ToC */}
               {headings.length > 0 && (
                 <div className="hidden lg:block bg-card rounded-2xl p-6 border border-border shadow-sm mb-8">
@@ -337,25 +337,25 @@ export default async function BlogPostPage({ params }: { params: Params }) {
                 </div>
               )}
 
-              <div className="bg-card rounded-2xl p-6 border border-border shadow-sm">
-                <h3 className="text-xl font-bold text-brand-navy mb-6 pb-4 border-b border-border">
+              <div className="bg-card rounded-2xl p-4 sm:p-6 border border-border shadow-sm">
+                <h3 className="text-lg sm:text-xl font-bold text-brand-navy mb-4 sm:mb-6 pb-3 sm:pb-4 border-b border-border">
                   You Might Also Like
                 </h3>
-                <div className="space-y-6">
+                <div className="space-y-4 sm:space-y-6">
                   {recentPosts.map((rp: any) => (
                     <div key={rp._id.toString()} className="group">
-                      <Link href={`/blog/${rp.slug}`} className="flex gap-4">
+                      <Link href={`/blog/${rp.slug}`} className="flex gap-3 sm:gap-4">
                         {rp.featuredImage?.url ? (
-                          <div className="shrink-0 w-20 h-20 rounded-lg overflow-hidden bg-muted">
+                          <div className="shrink-0 w-16 h-16 sm:w-20 sm:h-20 rounded-lg overflow-hidden bg-muted">
                             {/* eslint-disable-next-line @next/next/no-img-element */}
-                            <img src={rp.featuredImage.url} alt={rp.title} className="w-full h-full object-cover group-hover:scale-110 transition-transform" />
+                            <img src={rp.featuredImage.url} alt={rp.title} className="w-full h-full object-cover group-hover:scale-105 transition-transform" />
                           </div>
                         ) : null}
-                        <div>
-                          <h4 className="font-bold text-brand-navy text-sm line-clamp-2 group-hover:text-brand-blue transition-colors mb-1">
+                        <div className="min-w-0 flex-1">
+                          <h4 className="font-bold text-brand-navy text-xs sm:text-sm line-clamp-2 group-hover:text-brand-blue transition-colors mb-1">
                             {rp.title}
                           </h4>
-                          <div className="text-xs text-muted-foreground">
+                          <div className="text-[11px] sm:text-xs text-muted-foreground">
                             {new Date(rp.createdAt).toLocaleDateString('en-US')}
                           </div>
                         </div>

@@ -56,6 +56,65 @@ export default function JulioBiageBusinessCardPage() {
           </p>
         </div>
 
+        {/* Quick Action Buttons Grid */}
+        <div className="grid grid-cols-1 xs:grid-cols-2 sm:grid-cols-4 gap-3 sm:gap-4">
+          <a
+            href={vCardDataUri}
+            download="Julio_Biage_Enterprise_Cleaning.vcf"
+            className="flex sm:flex-col items-center justify-start sm:justify-center gap-3 sm:gap-2 bg-[#E31837] hover:bg-[#c1122c] text-white p-3.5 sm:p-4 rounded-2xl font-bold shadow-lg shadow-[#E31837]/25 transition-all group active:scale-95 text-left sm:text-center"
+          >
+            <div className="w-10 h-10 rounded-full bg-white/20 flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform">
+              <UserPlus className="w-5 h-5" />
+            </div>
+            <div className="flex flex-col">
+              <span className="text-sm">Save Contact</span>
+              <span className="text-xs text-white/80 font-normal">Add to Phone</span>
+            </div>
+          </a>
+
+          <a
+            href="tel:5086881437"
+            className="flex sm:flex-col items-center justify-start sm:justify-center gap-3 sm:gap-2 bg-[#0090c8] hover:bg-[#0078a8] text-white p-3.5 sm:p-4 rounded-2xl font-bold shadow-lg shadow-[#0090c8]/25 transition-all group active:scale-95 text-left sm:text-center"
+          >
+            <div className="w-10 h-10 rounded-full bg-white/20 flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform">
+              <Phone className="w-5 h-5" />
+            </div>
+            <div className="flex flex-col">
+              <span className="text-sm">Call Direct</span>
+              <span className="text-xs text-white/80 font-normal">508-688-1437</span>
+            </div>
+          </a>
+
+          <a
+            href="mailto:enterprisejuliob@gmail.com"
+            className="flex sm:flex-col items-center justify-start sm:justify-center gap-3 sm:gap-2 bg-slate-800 hover:bg-slate-700 text-white p-3.5 sm:p-4 rounded-2xl font-bold border border-slate-700 transition-all group active:scale-95 text-left sm:text-center min-w-0"
+          >
+            <div className="w-10 h-10 rounded-full bg-[#0090c8]/20 text-[#0090c8] flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform">
+              <Mail className="w-5 h-5" />
+            </div>
+            <div className="flex flex-col min-w-0">
+              <span className="text-sm">Send Email</span>
+              <span className="text-[11px] text-slate-400 font-normal truncate max-w-full">enterprisejuliob@gmail.com</span>
+            </div>
+          </a>
+
+          <a
+            href="/juilio-biage-business-card/Julio Business Card.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            download="Julio-Biage-Business-Card.pdf"
+            className="flex sm:flex-col items-center justify-start sm:justify-center gap-3 sm:gap-2 bg-slate-800 hover:bg-slate-700 text-white p-3.5 sm:p-4 rounded-2xl font-bold border border-slate-700 transition-all group active:scale-95 text-left sm:text-center"
+          >
+            <div className="w-10 h-10 rounded-full bg-[#0090c8]/20 text-[#0090c8] flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform">
+              <Download className="w-5 h-5" />
+            </div>
+            <div className="flex flex-col">
+              <span className="text-sm">Download PDF</span>
+              <span className="text-xs text-slate-400 font-normal">Business Card</span>
+            </div>
+          </a>
+        </div>
+
         {/* Business Card Display Section */}
         <div className="bg-slate-800/80 backdrop-blur-xl border border-slate-700/80 rounded-2xl sm:rounded-3xl p-4 sm:p-8 space-y-6 sm:space-y-8 shadow-2xl">
           <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 border-b border-slate-700 pb-4 sm:pb-6">
@@ -111,65 +170,6 @@ export default function JulioBiageBusinessCardPage() {
               </div>
             </div>
           </div>
-        </div>
-
-        {/* Quick Action Buttons Grid */}
-        <div className="grid grid-cols-1 xs:grid-cols-2 sm:grid-cols-4 gap-3 sm:gap-4">
-          <a
-            href="tel:5086881437"
-            className="flex sm:flex-col items-center justify-start sm:justify-center gap-3 sm:gap-2 bg-[#0090c8] hover:bg-[#0078a8] text-white p-3.5 sm:p-4 rounded-2xl font-bold shadow-lg shadow-[#0090c8]/25 transition-all group active:scale-95 text-left sm:text-center"
-          >
-            <div className="w-10 h-10 rounded-full bg-white/20 flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform">
-              <Phone className="w-5 h-5" />
-            </div>
-            <div className="flex flex-col">
-              <span className="text-sm">Call Direct</span>
-              <span className="text-xs text-white/80 font-normal">508-688-1437</span>
-            </div>
-          </a>
-
-          <a
-            href="mailto:enterprisejuliob@gmail.com"
-            className="flex sm:flex-col items-center justify-start sm:justify-center gap-3 sm:gap-2 bg-slate-800 hover:bg-slate-700 text-white p-3.5 sm:p-4 rounded-2xl font-bold border border-slate-700 transition-all group active:scale-95 text-left sm:text-center min-w-0"
-          >
-            <div className="w-10 h-10 rounded-full bg-[#0090c8]/20 text-[#0090c8] flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform">
-              <Mail className="w-5 h-5" />
-            </div>
-            <div className="flex flex-col min-w-0">
-              <span className="text-sm">Send Email</span>
-              <span className="text-[11px] text-slate-400 font-normal truncate max-w-full">enterprisejuliob@gmail.com</span>
-            </div>
-          </a>
-
-          <a
-            href={vCardDataUri}
-            download="Julio_Biage_Enterprise_Cleaning.vcf"
-            className="flex sm:flex-col items-center justify-start sm:justify-center gap-3 sm:gap-2 bg-slate-800 hover:bg-slate-700 text-white p-3.5 sm:p-4 rounded-2xl font-bold border border-slate-700 transition-all group active:scale-95 text-left sm:text-center"
-          >
-            <div className="w-10 h-10 rounded-full bg-[#E31837]/20 text-[#E31837] flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform">
-              <UserPlus className="w-5 h-5" />
-            </div>
-            <div className="flex flex-col">
-              <span className="text-sm">Save Contact</span>
-              <span className="text-xs text-slate-400 font-normal">Add to Phone</span>
-            </div>
-          </a>
-
-          <a
-            href="/juilio-biage-business-card/Julio Business Card.pdf"
-            target="_blank"
-            rel="noopener noreferrer"
-            download="Julio-Biage-Business-Card.pdf"
-            className="flex sm:flex-col items-center justify-start sm:justify-center gap-3 sm:gap-2 bg-[#E31837] hover:bg-[#c1122c] text-white p-3.5 sm:p-4 rounded-2xl font-bold shadow-lg shadow-[#E31837]/25 transition-all group active:scale-95 text-left sm:text-center"
-          >
-            <div className="w-10 h-10 rounded-full bg-white/20 flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform">
-              <Download className="w-5 h-5" />
-            </div>
-            <div className="flex flex-col">
-              <span className="text-sm">Download PDF</span>
-              <span className="text-xs text-white/80 font-normal">Business Card</span>
-            </div>
-          </a>
         </div>
 
         {/* Direct Contact Info Card */}

@@ -1,6 +1,6 @@
 import { Metadata } from "next";
 import { 
-  MapPin, PhoneCall, Mail, Clock, ArrowRight, ShieldCheck, Trophy, Users, Headset, UserCheck 
+  MapPin, PhoneCall, Mail, Clock, ArrowRight, ShieldCheck, Trophy, Users, Headset 
 } from "lucide-react";
 import Link from "next/link";
 import { CTASection } from "@/components/blocks/cta-with-glow";
@@ -228,22 +228,6 @@ export default function ContactPage() {
               >
                 <Mail className="w-4 h-4 shrink-0 text-[#00B8FF]" />
                 customerservice@enterprisecleaningcorp.com
-              </a>
-            </div>
-
-            {/* Supervisors */}
-            <div className="w-full sm:w-[calc(50%-0.75rem)] md:w-[calc(50%-1rem)] flex flex-col items-center text-center bg-slate-50 rounded-3xl p-5 sm:p-6 lg:p-8 border border-slate-100 hover:shadow-xl transition-shadow duration-300">
-              <div className="w-24 h-24 sm:w-28 sm:h-28 rounded-full overflow-hidden ring-4 ring-[#00B8FF]/20 mb-4 sm:mb-5 shadow-lg bg-white flex items-center justify-center">
-                <UserCheck className="w-10 h-10 sm:w-12 sm:h-12 text-[#00B8FF]" />
-              </div>
-              <h3 className="text-lg sm:text-xl font-extrabold text-slate-900">Supervisors</h3>
-              <span className="mt-1 mb-3 sm:mb-4 inline-block text-xs font-bold uppercase tracking-widest text-[#00B8FF] bg-blue-50 px-3 py-1 rounded-full">Field Operations</span>
-              <a
-                href="mailto:supervisors@enterprisecleaningcorp.com"
-                className="flex items-center gap-1.5 text-xs lg:text-sm font-semibold text-slate-600 hover:text-[#00B8FF] transition-colors break-all"
-              >
-                <Mail className="w-4 h-4 shrink-0 text-[#00B8FF]" />
-                supervisors@enterprisecleaningcorp.com
               </a>
             </div>
 

@@ -90,7 +90,7 @@ export const Hero = () => {
         {/* Sub-headline */}
         <motion.p {...fadeUp(0.4)} className="max-w-2xl text-xs sm:text-sm md:text-base text-white/75 mb-8 sm:mb-10 leading-relaxed">
           Trusted by{" "}
-          <span className="text-white/90 font-medium">Hanover Insurance, Workers Credit Union, Shields Healthcare, Capital Group, Millbury Credit Union</span>{" "}
+          <span className="text-white/90 font-medium">Hanover Insurance, Workers Credit Union, Shields Healthcare, Capital Group Properties, Millbury Credit Union</span>{" "}
           &amp; 140+ Central MA businesses
         </motion.p>
 

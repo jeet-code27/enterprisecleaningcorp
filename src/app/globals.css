@@ -198,6 +198,41 @@ button{
 }
 
 /* Force TipTap and Markdown links to use Brand Blue and Underline */
+.prose {
+  max-width: 100% !important;
+  overflow-wrap: break-word !important;
+  word-break: break-word !important;
+}
+
+.prose img,
+.prose video,
+.prose iframe,
+.prose embed,
+.prose object {
+  max-width: 100% !important;
+  height: auto !important;
+}
+
+.prose table {
+  display: block !important;
+  width: 100% !important;
+  overflow-x: auto !important;
+  -webkit-overflow-scrolling: touch !important;
+}
+
+.prose pre,
+.prose code {
+  max-width: 100% !important;
+  overflow-x: auto !important;
+  white-space: pre-wrap !important;
+  word-break: break-all !important;
+}
+
+.prose h1, .prose h2, .prose h3, .prose h4, .prose h5, .prose h6 {
+  overflow-wrap: break-word !important;
+  word-break: break-word !important;
+}
+
 .prose a {
   color: var(--brand-blue) !important;
   text-decoration: underline !important;
