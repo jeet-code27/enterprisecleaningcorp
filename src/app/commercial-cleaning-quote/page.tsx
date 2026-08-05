@@ -43,7 +43,7 @@ const CORE_SERVICES = [
     title: "Night & Day Shift Commercial Cleaning",
     icon: Building2,
     image: "/images/day_night_cleaning_hero.png",
-    description: "Consistent nightly janitorial routines, high-touch disinfection, and dedicated day & night porters tailored to your facility's operational hours.",
+    description: "Consistent nightly commercial cleaning routines, high-touch disinfection, and dedicated day & night porters tailored to your facility's operational hours.",
     badge: "Day & Night Shifts"
   },
   {
@@ -75,7 +75,7 @@ const CORE_SERVICES = [
     title: "Turnover Cleaning Services",
     icon: Droplets,
     image: "/images/turnover_cleaning_hero.png",
-    description: "Complete turnover janitorial services for commercial real estate, multi-family communities, and corporate property transitions.",
+    description: "Complete turnover cleaning services for commercial real estate, multi-family communities, and corporate property transitions.",
     badge: "Turnkey Property Reset"
   },
   {
@@ -118,7 +118,7 @@ const INDUSTRIES_SERVED = [
     title: "Educational & Municipal Buildings",
     icon: GraduationCap,
     image: "/images/school_cleaning_hero.png",
-    desc: "Dependable janitorial routines, emergency incident response, and annual deep resets for schools, town halls, and light departments."
+    desc: "Dependable facility cleaning, emergency incident response, and annual deep resets for schools, town halls, and light departments."
   },
   {
     title: "Warehouses & Distribution Centers",
@@ -211,7 +211,7 @@ const LP_SUCCESS_STORIES = [
     logoBg: "bg-[#001a33] border border-white/20",
     tagline: "Responsive Incident Care and Annual Facility Reset Services",
     quote: "Schools need a partner that responds fast when unexpected incidents occur. Enterprise supports St. Benedict with carpet extractors, rapid incident response, and annual deep resets.",
-    result: "Dependable school janitorial partnership combining daily care, carpet extraction, and annual term resets.",
+    result: "Dependable school facility cleaning partnership combining daily care, carpet extraction, and annual term resets.",
     badgeText: "Incident Response & Annual Reset",
     rating: 5
   }
@@ -342,7 +342,7 @@ export default function CommercialCleaningLandingPage() {
               </div>
 
               <h1 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight leading-tight text-white">
-                Commercial Cleaning & Janitorial Services <span className="text-[#00B8FF]">Built Around Your Business</span>
+                Commercial Cleaning Services <span className="text-[#00B8FF]">Built Around Your Business</span>
               </h1>
 
               <p className="text-slate-200 text-base sm:text-lg leading-relaxed font-light max-w-2xl">
@@ -535,7 +535,7 @@ export default function CommercialCleaningLandingPage() {
               Our Core Services
             </span>
             <h2 className="text-3xl md:text-4xl font-extrabold text-slate-900 tracking-tight">
-              Commercial Janitorial & Special Cleaning Solutions
+              Commercial Cleaning & Facility Solutions
             </h2>
             <p className="text-slate-600 text-base md:text-lg mt-3 font-light">
               From nightly office maintenance to emergency flood extraction, Enterprise delivers consistent, high-standard commercial cleaning tailored to your building.
