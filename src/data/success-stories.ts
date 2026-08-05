@@ -273,6 +273,53 @@ export const successStories: SuccessStory[] = [
       company: "Enterprise Cleaning Corporation",
       phone: "508-304-2369"
     }
+  },
+  {
+    id: "fremont-lofts-condominium",
+    slug: "fremont-lofts-condominium",
+    companyName: "Fremont Lofts Condominium",
+    industry: "Condominium & Community Living",
+    logo: "/logos/fremont-condo-association.png",
+    headline: "Keeping a Large Community Clean, Safe, and Welcoming",
+    subheading: "Maintaining shared living spaces, gym, storage rooms, and club room across a 97-unit residential community with 4x/week cleaning and annual carpet resets.",
+    testimonialText: [
+      "Large residential communities require consistent attention to common areas, trash management, and high-traffic spaces. Fremont Lofts Condominium partnered with Enterprise Cleaning Corp. to help maintain a clean and welcoming environment for its 97-unit community.",
+      "Enterprise is proud to provide service four times per week, with our team responsible for trash management, cleaning, and disinfection throughout the community’s shared living spaces, including the resident gym, storage rooms, and club room.",
+      "To complement the regular cleaning program, Enterprise also provides a major carpet cleaning reset once a year. This additional service helps refresh the community’s carpeted areas and maintain a higher standard of appearance throughout the property."
+    ],
+    rawContent: {
+      overview: "Fremont Lofts Condominium partnered with Enterprise Cleaning Corp. to help maintain a clean and welcoming environment for its 97-unit community, including common areas, gym, storage rooms, and club room.",
+      challengeAndSolution: "Large residential communities require consistent attention to common areas, trash management, and high-traffic spaces. Fremont Lofts Condominium partnered with Enterprise Cleaning Corp. to maintain shared living spaces to the highest standard.",
+      routineAndSpecial: "Enterprise provides service four times per week for trash management, cleaning, and disinfection across shared living spaces—including the 97-unit community's gym, storage rooms, and club room. Additionally, Enterprise conducts an annual major carpet cleaning reset.",
+      result: "A consistent, year-round cleaning program that combines frequent service, trash management, disinfection, and annual carpet cleaning to help keep a large 97-unit residential community clean and comfortable for its residents."
+    },
+    resultSummary: "A consistent, year-round cleaning program that combines frequent service, trash management, disinfection, and annual carpet cleaning to help keep a large 97-unit residential community clean and comfortable for its residents.",
+    metrics: [
+      { label: "Community Size", value: "97 Units" },
+      { label: "Service Frequency", value: "4x Per Week" },
+      { label: "Amenities Managed", value: "Gym, Storage & Club Room" },
+      { label: "Carpet Maintenance", value: "Annual Reset" }
+    ],
+    keyHighlights: [
+      "Consistent 4x weekly cleaning & trash management",
+      "Disinfection of shared spaces including gym, storage rooms & club room",
+      "Major annual carpet cleaning reset for all carpeted common areas",
+      "Tailored maintenance for a high-traffic 97-unit residential community"
+    ],
+    signOff: {
+      name: "Fremont Lofts Community Board",
+      title: "Condo Association Management",
+      company: "Fremont Lofts Condominium",
+      date: "August 2026",
+      location: "Fremont Community",
+      signatureBadgeText: "Verified Residential Partner"
+    },
+    contactPerson: {
+      name: "Alex Puchulu",
+      title: "Director of Sales & Marketing",
+      company: "Enterprise Cleaning Corporation",
+      phone: "508-304-2369"
+    }
   }
 ];
 

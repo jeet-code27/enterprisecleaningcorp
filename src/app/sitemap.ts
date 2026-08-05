@@ -14,6 +14,8 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     "/success-stories",
     "/privacy-policy",
     "/terms-and-conditions",
+    "/commercial-cleaning-quote",
+    "/commercial-cleaning-quote/thank-you",
     "/alex-puchulu-business-card",
     "/juilio-biage-business-card",
     "/stephen-buchter-business-card",
@@ -26,6 +28,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     "/success-stories/capital-group-properties",
     "/success-stories/west-boylston-light-department",
     "/success-stories/st-benedict-school",
+    "/success-stories/fremont-lofts-condominium",
   ];
 
   const serviceRoutes = [

@@ -15,7 +15,8 @@ import {
   Award,
   ChevronRight,
   Landmark,
-  GraduationCap
+  GraduationCap,
+  Home
 } from "lucide-react";
 
 export const metadata: Metadata = {
@@ -753,6 +754,118 @@ export default function SuccessStoriesPage() {
               </div>
             </div>
 
+            {/* 7. FREMONT LOFTS CONDOMINIUM STORY CARD */}
+            <div className="bg-white rounded-3xl shadow-xl border border-slate-200/80 overflow-hidden transition-all hover:shadow-2xl">
+              <div className="grid grid-cols-1 lg:grid-cols-12">
+                
+                {/* Left Side */}
+                <div className="lg:col-span-5 bg-gradient-to-br from-[#001a33] via-[#003057] to-[#002244] p-8 md:p-12 text-white flex flex-col justify-between relative overflow-hidden">
+                  <div className="absolute top-0 right-0 w-64 h-64 bg-[#00B8FF]/10 rounded-full blur-3xl pointer-events-none" />
+                  
+                  <div>
+                    <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/10 border border-white/20 text-sky-300 text-xs font-bold uppercase tracking-wider mb-6">
+                      <Home className="w-3.5 h-3.5" />
+                      <span>Condominium & Community Living</span>
+                    </div>
+
+                    <div className="bg-white border border-white/20 p-5 px-6 rounded-2xl shadow-md w-fit mb-8 flex items-center justify-center">
+                      <Image
+                        src="/logos/fremont-condo-association.png"
+                        alt="Fremont Lofts Condominium Logo"
+                        width={280}
+                        height={90}
+                        className="h-16 md:h-20 w-auto object-contain"
+                      />
+                    </div>
+
+                    <h3 className="text-xl md:text-2xl font-extrabold text-white mb-4 leading-snug">
+                      Keeping a Large Community Clean, Safe, and Welcoming
+                    </h3>
+
+                    <p className="text-slate-300 text-sm md:text-base leading-relaxed font-light mb-8">
+                      Maintaining shared living spaces, gym, storage rooms, and club room for Fremont Lofts Condominium with 4x/week service and annual carpet resets across 97 units.
+                    </p>
+                  </div>
+
+                  <div className="space-y-3 pt-6 border-t border-white/15">
+                    <div className="flex items-center justify-between text-xs md:text-sm">
+                      <span className="text-slate-300 font-medium">Community Size:</span>
+                      <span className="text-[#FFE800] font-bold">97 Units</span>
+                    </div>
+                    <div className="flex items-center justify-between text-xs md:text-sm">
+                      <span className="text-slate-300 font-medium">Service Frequency:</span>
+                      <span className="text-[#FFE800] font-bold">4x Per Week</span>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Right Side */}
+                <div className="lg:col-span-7 p-8 md:p-12 flex flex-col justify-between bg-white">
+                  <div>
+                    <div className="flex items-center gap-2 text-amber-500 mb-6">
+                      {[...Array(5)].map((_, i) => (
+                        <Star key={i} className="w-5 h-5 fill-amber-400 text-amber-400" />
+                      ))}
+                      <span className="text-slate-600 text-xs font-semibold ml-2">Fremont Lofts Condominium Testimonial</span>
+                    </div>
+
+                    <div className="relative mb-8 pl-6 border-l-4 border-[#00B8FF]">
+                      <Quote className="w-8 h-8 text-[#00B8FF]/20 absolute -top-3 -left-3 pointer-events-none" />
+                      <p className="text-slate-700 text-base md:text-lg italic leading-relaxed font-serif">
+                        "Large residential communities require consistent attention to common areas, trash management, and high-traffic spaces. Fremont Lofts Condominium partnered with Enterprise Cleaning Corp. to help maintain a clean and welcoming environment for its 97-unit community..."
+                      </p>
+                    </div>
+
+                    <div className="mb-8">
+                      <h4 className="text-xs font-bold uppercase tracking-wider text-slate-400 mb-4">
+                        Key Deliverables
+                      </h4>
+                      <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                        <div className="flex items-start gap-2.5">
+                          <CheckCircle2 className="w-5 h-5 text-emerald-500 shrink-0 mt-0.5" />
+                          <span className="text-slate-700 text-xs md:text-sm font-medium">Consistent 4x weekly cleaning & trash management</span>
+                        </div>
+                        <div className="flex items-start gap-2.5">
+                          <CheckCircle2 className="w-5 h-5 text-emerald-500 shrink-0 mt-0.5" />
+                          <span className="text-slate-700 text-xs md:text-sm font-medium">Cleaning & disinfection for gym, storage & club room</span>
+                        </div>
+                        <div className="flex items-start gap-2.5">
+                          <CheckCircle2 className="w-5 h-5 text-emerald-500 shrink-0 mt-0.5" />
+                          <span className="text-slate-700 text-xs md:text-sm font-medium">Shared living space maintenance across 97 units</span>
+                        </div>
+                        <div className="flex items-start gap-2.5">
+                          <CheckCircle2 className="w-5 h-5 text-emerald-500 shrink-0 mt-0.5" />
+                          <span className="text-slate-700 text-xs md:text-sm font-medium">Annual major carpet cleaning reset</span>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div className="p-5 rounded-2xl bg-slate-50 border border-slate-200 mb-8">
+                      <div className="flex items-center gap-2 text-xs font-black uppercase text-[#E31837] mb-2">
+                        <Sparkles className="w-4 h-4 text-[#E31837]" />
+                        <span>The Result</span>
+                      </div>
+                      <p className="text-slate-800 text-sm font-semibold leading-relaxed">
+                        A consistent, year-round cleaning program that combines frequent service, trash management, disinfection, and annual carpet cleaning to help keep a large 97-unit residential community clean and comfortable for its residents.
+                      </p>
+                    </div>
+                  </div>
+
+                  <div className="flex flex-col sm:flex-row items-center justify-end gap-4 pt-6 border-t border-slate-100">
+                    <Link
+                      href="/success-stories/fremont-lofts-condominium"
+                      className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-3 rounded-xl bg-[#003057] text-white font-bold text-sm hover:bg-[#002244] transition-all shadow-md hover:shadow-lg group"
+                    >
+                      <FileText className="w-4 h-4 text-[#00B8FF]" />
+                      <span>Read Full Success Story</span>
+                      <ChevronRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                    </Link>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
           </div>
 
           {/* Client Logos Wall */}
@@ -764,23 +877,26 @@ export default function SuccessStoriesPage() {
               From multi-branch financial institutions to medical networks and manufacturing facilities, Enterprise Cleaning Corp is the premier choice for commercial cleaning.
             </p>
 
-            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-6 items-center justify-center">
-              <div className="bg-white/10 p-4 rounded-xl backdrop-blur-md border border-white/10 flex items-center justify-center h-20">
+            <div className="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-7 gap-4 items-center justify-center">
+              <div className="bg-white/10 p-3 rounded-xl backdrop-blur-md border border-white/10 flex items-center justify-center h-20">
                 <Image src="/logos/wcu-logo.svg" alt="WCU Bank" width={130} height={45} className="max-h-10 w-auto object-contain brightness-0 invert" />
               </div>
-              <div className="bg-white/10 p-4 rounded-xl backdrop-blur-md border border-white/10 flex items-center justify-center h-20">
+              <div className="bg-white/10 p-3 rounded-xl backdrop-blur-md border border-white/10 flex items-center justify-center h-20">
                 <Image src="/logos/apderm-logo.svg" alt="APDerm" width={130} height={45} className="max-h-10 w-auto object-contain brightness-0 invert" />
               </div>
-              <div className="bg-white/10 p-4 rounded-xl backdrop-blur-md border border-white/10 flex items-center justify-center h-20">
+              <div className="bg-white/10 p-3 rounded-xl backdrop-blur-md border border-white/10 flex items-center justify-center h-20">
                 <Image src="/logos/coghlin-companies.webp" alt="Coghlin Companies" width={130} height={45} className="max-h-10 w-auto object-contain" />
               </div>
-              <div className="bg-white/10 p-4 rounded-xl backdrop-blur-md border border-white/10 flex items-center justify-center h-20">
+              <div className="bg-white hover:bg-white p-3 rounded-xl border border-white/10 flex items-center justify-center h-20">
+                <Image src="/logos/fremont-condo-association.png" alt="Fremont Lofts Condominium" width={140} height={50} className="max-h-12 w-auto object-contain" />
+              </div>
+              <div className="bg-white/10 p-3 rounded-xl backdrop-blur-md border border-white/10 flex items-center justify-center h-20">
                 <Image src="/logos/avidia-bank.svg" alt="Avidia Bank" width={130} height={45} className="max-h-10 w-auto object-contain brightness-0 invert" />
               </div>
-              <div className="bg-white/10 p-4 rounded-xl backdrop-blur-md border border-white/10 flex items-center justify-center h-20">
+              <div className="bg-white/10 p-3 rounded-xl backdrop-blur-md border border-white/10 flex items-center justify-center h-20">
                 <Image src="/logos/capital-group.png" alt="Capital Group" width={130} height={45} className="max-h-10 w-auto object-contain brightness-0 invert" />
               </div>
-              <div className="bg-white/10 p-4 rounded-xl backdrop-blur-md border border-white/10 flex items-center justify-center h-20">
+              <div className="bg-white/10 p-3 rounded-xl backdrop-blur-md border border-white/10 flex items-center justify-center h-20">
                 <Image src="/logos/shields-health.svg" alt="Shields Health" width={130} height={45} className="max-h-10 w-auto object-contain brightness-0 invert" />
               </div>
             </div>
