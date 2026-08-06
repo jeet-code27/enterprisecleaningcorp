@@ -17,17 +17,29 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.enterprisecleaningcorp.com"),
-  title: {
-    default: "Enterprise Cleaning Corp | Commercial Cleaning Services",
-    template: "%s | Enterprise Cleaning Corp",
-  },
-  description: "Enterprise Cleaning Corporation provides professional commercial cleaning, janitorial, and emergency cleanup services in Central MA, Rhode Island & Southern NH.",
+  title: "Enterprise Cleaning Corp | Commercial Cleaning Services",
+  description: "Enterprise Cleaning Corporation provides professional commercial cleaning, janitorial, and emergency cleanup services across Central MA, Rhode Island & Southern NH.",
+  keywords: "Commercial Cleaning, Janitorial Services, Office Cleaning Central MA, Facility Maintenance, Floor Care, Water Damage Cleanup, Enterprise Cleaning Corp",
   authors: [{ name: "Enterprise Cleaning Corporation" }],
   publisher: "Enterprise Cleaning Corporation",
   creator: "Enterprise Cleaning Corporation",
+  alternates: {
+    canonical: "./",
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
   openGraph: {
     title: "Enterprise Cleaning Corp | Commercial Cleaning Services",
-    description: "Enterprise Cleaning Corporation provides professional commercial cleaning, janitorial, and emergency cleanup services in Central MA, Rhode Island & Southern NH.",
+    description: "Enterprise Cleaning Corporation provides professional commercial cleaning, janitorial, and emergency cleanup services across Central MA, Rhode Island & Southern NH.",
     url: "https://www.enterprisecleaningcorp.com",
     siteName: "Enterprise Cleaning Corporation",
     locale: "en_US",
@@ -36,7 +48,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Enterprise Cleaning Corp | Commercial Cleaning Services",
-    description: "Enterprise Cleaning Corporation provides professional commercial cleaning, janitorial, and emergency cleanup services in Central MA, Rhode Island & Southern NH.",
+    description: "Enterprise Cleaning Corporation provides professional commercial cleaning, janitorial, and emergency cleanup services across Central MA, Rhode Island & Southern NH.",
   },
 };
 

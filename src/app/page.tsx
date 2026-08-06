@@ -16,7 +16,7 @@ import { TrustedByMarquee } from "@/components/ui/trusted-by-marquee";
 import Script from "next/script";
 
 export const metadata: Metadata = {
-  title: { absolute: "Commercial Cleaning Worcester, MA │ Enterprise Cleaning Corp" },
+  title: { absolute: "Commercial Cleaning & Janitorial Services │ Enterprise Cleaning Corp" },
   description: "Commercial cleaning & janitorial services for Central MA, Rhode Island & Southern NH. 97% client retention, 23+ years in business. Get a free quote.",
   keywords: "Commercial cleaning Worcester MA, Enterprise Cleaning Corp, janitorial services Central MA, Rhode Island, Southern NH, commercial cleaners, office cleaning",
   alternates: {

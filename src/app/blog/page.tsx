@@ -4,10 +4,48 @@ import Category from "@/models/Category";
 import Link from "next/link";
 import { ArrowRight, Calendar } from "lucide-react";
 
-export const metadata = {
-  title: "Blog | Enterprise Cleaning",
-  description: "Read the latest news, tips, and updates from Enterprise Cleaning.",
-};
+import { Metadata } from "next";
+
+export async function generateMetadata({ searchParams }: { searchParams: Promise<{ category?: string; page?: string }> }): Promise<Metadata> {
+  const { category: categoryParam } = await searchParams;
+
+  if (categoryParam) {
+    try {
+      await dbConnect();
+      const category = await Category.findOne({ slug: categoryParam }).lean() as any;
+
+      if (category) {
+        return {
+          title: `${category.name} Articles | Enterprise Cleaning Corp`,
+          description: `Explore expert commercial cleaning articles, maintenance tips, and industry insights about ${category.name} from Enterprise Cleaning Corp.`,
+          keywords: `${category.name.toLowerCase()} commercial cleaning, facility maintenance, janitorial tips, Enterprise Cleaning Corp`,
+          alternates: {
+            canonical: `https://www.enterprisecleaningcorp.com/blog?category=${categoryParam}`,
+          },
+          robots: {
+            index: true,
+            follow: true,
+          },
+        };
+      }
+    } catch (e) {
+      console.error("Error generating metadata for category blog page:", e);
+    }
+  }
+
+  return {
+    title: "Commercial Cleaning Blog & Insights | Enterprise Cleaning Corp",
+    description: "Read the latest news, commercial cleaning tips, facility maintenance guides, and updates from Enterprise Cleaning Corporation.",
+    keywords: "commercial cleaning blog, facility management tips, janitorial insights, office cleaning guide, Enterprise Cleaning Corp",
+    alternates: {
+      canonical: "https://www.enterprisecleaningcorp.com/blog",
+    },
+    robots: {
+      index: true,
+      follow: true,
+    },
+  };
+}
 
 export const revalidate = 60; // Revalidate every 60 seconds
 

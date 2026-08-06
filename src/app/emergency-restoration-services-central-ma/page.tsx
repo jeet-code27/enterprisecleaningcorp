@@ -31,31 +31,18 @@ export const metadata: Metadata = {
 
 const structuredDataService = {
   "@context": "https://schema.org",
-  "@type": "EmergencyService",
+  "@type": "Service",
+  "serviceType": "Emergency Water Cleanup & Flood Restoration",
   "name": "24/7 Water Cleanup Worcester MA — Enterprise Cleaning Corporation",
-  "image": "https://www.enterprisecleaningcorp.com/images/enterprise-logo.png",
-  "telephone": "508-890-1000",
-  "priceRange": "$$",
+  "description": "24/7 emergency water, flood, and mold cleanup across Worcester and Central Massachusetts. Call (508) 890-1000 for rapid response.",
   "url": "https://www.enterprisecleaningcorp.com/emergency-restoration-services-central-ma",
-  "address": {
-    "@type": "PostalAddress",
-    "streetAddress": "99 Hartwell Street",
-    "addressLocality": "West Boylston",
-    "addressRegion": "MA",
-    "postalCode": "01583",
-    "addressCountry": "US"
-  },
-  "geo": {
-    "@type": "GeoCoordinates",
-    "latitude": 42.3648,
-    "longitude": -71.7854
-  },
   "provider": {
-    "@type": "LocalBusiness",
+    "@type": "EmergencyService",
     "name": "Enterprise Cleaning Corporation",
     "image": "https://www.enterprisecleaningcorp.com/images/enterprise-logo.png",
     "telephone": "508-890-1000",
     "priceRange": "$$",
+    "url": "https://www.enterprisecleaningcorp.com",
     "address": {
       "@type": "PostalAddress",
       "streetAddress": "99 Hartwell Street",
@@ -68,8 +55,7 @@ const structuredDataService = {
       "@type": "GeoCoordinates",
       "latitude": 42.3648,
       "longitude": -71.7854
-    },
-    "url": "https://www.enterprisecleaningcorp.com"
+    }
   },
   "areaServed": [
     "Worcester MA",
