@@ -43,8 +43,17 @@ export async function generateMetadata({ params }: { params: Params }): Promise<
     canonicalUrl = `https://www.enterprisecleaningcorp.com${canonicalUrl.startsWith('/') ? '' : '/'}${canonicalUrl}`;
   }
 
+  const rawMetaTitle = post.seo?.metaTitle?.trim();
+  const rawTitle = post.title?.trim() || "Blog Article";
+  const siteBrand = "Enterprise Cleaning Corp";
+
+  let metaTitle = rawMetaTitle || rawTitle;
+  if (!metaTitle.includes("Enterprise Cleaning")) {
+    metaTitle = `${metaTitle} | ${siteBrand}`;
+  }
+
   return {
-    title: post.seo?.metaTitle || post.title,
+    title: metaTitle,
     description: post.seo?.metaDescription || post.excerpt,
     keywords: post.seo?.focusKeyword || (post.tags ? post.tags.map((t: any) => t.name).join(', ') : ""),
     authors: [{ name: post.author?.name || "Enterprise Cleaning Team" }],
@@ -52,13 +61,13 @@ export async function generateMetadata({ params }: { params: Params }): Promise<
       canonical: canonicalUrl,
     },
     openGraph: {
-      title: post.seo?.ogTitle || post.seo?.metaTitle || post.title,
+      title: post.seo?.ogTitle || metaTitle,
       description: post.seo?.ogDescription || post.seo?.metaDescription || post.excerpt,
       images: post.seo?.ogImage || post.featuredImage?.url ? [{ url: post.seo?.ogImage || post.featuredImage?.url }] : [],
     },
     twitter: {
       card: 'summary_large_image',
-      title: post.seo?.twitterCard?.title || post.seo?.metaTitle || post.title,
+      title: post.seo?.twitterCard?.title || metaTitle,
       description: post.seo?.twitterCard?.description || post.seo?.metaDescription || post.excerpt,
       images: post.seo?.twitterCard?.image || post.featuredImage?.url ? [post.seo?.twitterCard?.image || post.featuredImage?.url] : [],
     },
@@ -69,11 +78,11 @@ export async function generateMetadata({ params }: { params: Params }): Promise<
   };
 }
 
-function extractHeadings(html: string) {
+function extractHeadings(html: string, fallbackAlt: string = "Enterprise Cleaning") {
   const regex = /<(h[23])>(.*?)<\/\1>/gi;
   const headings = [];
   let match;
-  let modifiedHtml = html;
+  let modifiedHtml = html || "";
 
   while ((match = regex.exec(html)) !== null) {
     const level = parseInt(match[1].replace('h', ''), 10);
@@ -84,6 +93,20 @@ function extractHeadings(html: string) {
     const replaceStr = `<${match[1]} id="${id}">${match[2]}</${match[1]}>`;
     modifiedHtml = modifiedHtml.replace(match[0], replaceStr);
   }
+
+  // Automatically add alt attributes to any <img> tags missing alt or having empty alt
+  const cleanAlt = fallbackAlt.replace(/"/g, '&quot;');
+  
+  // 1. Add alt attribute if missing completely
+  modifiedHtml = modifiedHtml.replace(/<img\b(?![^>]*\balt=)[^>]*>/gi, (imgTag) => {
+    return imgTag.replace(/<img/i, `<img alt="${cleanAlt}"`);
+  });
+
+  // 2. Replace empty alt="" or alt='' with descriptive alt
+  modifiedHtml = modifiedHtml.replace(/<img\b[^>]*\balt=["']\s*["'][^>]*>/gi, (imgTag) => {
+    return imgTag.replace(/alt=["']\s*["']/i, `alt="${cleanAlt}"`);
+  });
+
   return { headings, html: modifiedHtml };
 }
 
@@ -105,8 +128,8 @@ export default async function BlogPostPage({ params }: { params: Params }) {
     notFound();
   }
 
-  // Parse Table of Contents and FAQ Schema
-  const { headings, html: processedHtml } = extractHeadings(post.content);
+  // Parse Table of Contents, FAQ Schema, and ensure all images have alt attributes
+  const { headings, html: processedHtml } = extractHeadings(post.content, post.title);
   
   // Explicit FAQs from the database (from the new Post Editor builder)
   const explicitFaqs = (post.faqs || []).map((faq: any) => ({
