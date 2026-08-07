@@ -4,6 +4,7 @@ import "./globals.css";
 import Script from "next/script";
 import { LayoutWrapper } from "@/components/layout-wrapper";
 import AuthProvider from "@/components/auth-provider";
+import { MetaPixel } from "@/components/analytics/MetaPixel";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -63,6 +64,7 @@ export default function RootLayout({
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
       <head>
+        <MetaPixel />
         {/* Google Analytics */}
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-F9TDR10JGE"
