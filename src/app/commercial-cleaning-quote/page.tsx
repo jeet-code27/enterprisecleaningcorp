@@ -293,7 +293,7 @@ export default function CommercialCleaningLandingPage() {
           {/* Logo with Original Colors (NO INVERT FILTER) */}
           <div className="flex items-center gap-3">
             <Image
-              src="/images/enterprise-logo.png"
+              src="/images/ecc-new-logo.png"
               alt="Enterprise Cleaning Corporation"
               width={210}
               height={58}
@@ -868,7 +868,7 @@ export default function CommercialCleaningLandingPage() {
               {/* Logo in Clean Container */}
               <div className="bg-white p-2 rounded-xl">
                 <Image
-                  src="/images/enterprise-logo.png"
+                  src="/images/ecc-new-logo.png"
                   alt="Enterprise Cleaning Corporation"
                   width={150}
                   height={42}

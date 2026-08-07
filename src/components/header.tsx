@@ -132,14 +132,14 @@ export function Header() {
       </div>
 
       {/* Main Navigation Bar */}
-      <div className="container mx-auto flex h-16 items-center justify-between px-4">
+      <div className="container mx-auto flex h-16 sm:h-20 items-center justify-between px-4">
         <Link href="/" className="flex items-center">
           <Image
-            src="/images/enterprise-logo.png"
+            src="/images/ecc-new-logo.png"
             alt="Enterprise Cleaning Corporation"
-            width={150}
-            height={44}
-            className="h-9 sm:h-10 w-auto object-contain max-h-10"
+            width={220}
+            height={64}
+            className="h-11 sm:h-14 w-auto object-contain max-h-14"
             priority
           />
         </Link>

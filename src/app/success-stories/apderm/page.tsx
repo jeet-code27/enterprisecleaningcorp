@@ -52,7 +52,7 @@ export default function ApdermSuccessStoryPage() {
             <div className="flex items-center gap-4">
               <div className="bg-white p-2 rounded-xl border border-slate-100 shadow-xs">
                 <Image
-                  src="/images/enterprise-logo.png"
+                  src="/images/ecc-new-logo.png"
                   alt="Enterprise Cleaning Corp"
                   width={210}
                   height={65}

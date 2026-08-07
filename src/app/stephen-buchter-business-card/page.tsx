@@ -99,7 +99,7 @@ export default function StephenBuchterBusinessCardPage() {
           </a>
 
           <a
-            href="/stephen-buchter-business-card/Stephen Business Card.pdf"
+            href="/stephen-buchter-business-card/stephen-business-card-new.pdf"
             target="_blank"
             rel="noopener noreferrer"
             download="Stephen-Buchalter-Business-Card.pdf"
@@ -123,7 +123,7 @@ export default function StephenBuchterBusinessCardPage() {
               <p className="text-slate-400 text-xs mt-0.5">Official credentials &amp; contact card</p>
             </div>
             <a
-              href="/stephen-buchter-business-card/Stephen Business Card.pdf"
+              href="/stephen-buchter-business-card/stephen-business-card-new.pdf"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 bg-slate-700 hover:bg-slate-600 text-white text-xs font-bold px-3.5 py-2 rounded-xl transition-colors w-full sm:w-auto justify-center"
@@ -143,7 +143,7 @@ export default function StephenBuchterBusinessCardPage() {
               </div>
               <div className="relative aspect-[1.75/1] w-full rounded-xl sm:rounded-2xl overflow-hidden shadow-2xl border border-slate-600">
                 <Image
-                  src="/stephen-buchter-business-card/5.jpg.jpeg"
+                  src="/stephen-buchter-business-card/stephen-front.jpeg"
                   alt="Stephen Buchalter Business Card Front"
                   fill
                   sizes="(max-width: 768px) 100vw, 800px"
@@ -161,7 +161,7 @@ export default function StephenBuchterBusinessCardPage() {
               </div>
               <div className="relative aspect-[1.75/1] w-full rounded-xl sm:rounded-2xl overflow-hidden shadow-2xl border border-slate-600">
                 <Image
-                  src="/stephen-buchter-business-card/6.jpg.jpeg"
+                  src="/stephen-buchter-business-card/stephon-back.jpeg"
                   alt="Stephen Buchalter Business Card Back"
                   fill
                   sizes="(max-width: 768px) 100vw, 800px"

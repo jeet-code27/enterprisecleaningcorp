@@ -33,7 +33,7 @@ export default function ContactPage() {
       <div className="w-full">
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img 
-          src="/images/cover.png" 
+          src="/images/ecc-cover.jpeg" 
           alt="Enterprise Cleaning Cover" 
           className="w-full h-auto object-cover shadow-md"
         />

@@ -99,7 +99,7 @@ export default function JulioBiageBusinessCardPage() {
           </a>
 
           <a
-            href="/juilio-biage-business-card/Julio Business Card.pdf"
+            href="/juilio-biage-business-card/julio-business-card-new.pdf"
             target="_blank"
             rel="noopener noreferrer"
             download="Julio-Biage-Business-Card.pdf"
@@ -123,7 +123,7 @@ export default function JulioBiageBusinessCardPage() {
               <p className="text-slate-400 text-xs mt-0.5">Official credentials &amp; contact card</p>
             </div>
             <a
-              href="/juilio-biage-business-card/Julio Business Card.pdf"
+              href="/juilio-biage-business-card/julio-business-card-new.pdf"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 bg-slate-700 hover:bg-slate-600 text-white text-xs font-bold px-3.5 py-2 rounded-xl transition-colors w-full sm:w-auto justify-center"
@@ -143,7 +143,7 @@ export default function JulioBiageBusinessCardPage() {
               </div>
               <div className="relative aspect-[1.75/1] w-full rounded-xl sm:rounded-2xl overflow-hidden shadow-2xl border border-slate-600">
                 <Image
-                  src="/juilio-biage-business-card/3.jpg.jpeg"
+                  src="/juilio-biage-business-card/julio-front.jpeg"
                   alt="Julio Biage Business Card Front"
                   fill
                   sizes="(max-width: 768px) 100vw, 800px"
@@ -161,7 +161,7 @@ export default function JulioBiageBusinessCardPage() {
               </div>
               <div className="relative aspect-[1.75/1] w-full rounded-xl sm:rounded-2xl overflow-hidden shadow-2xl border border-slate-600">
                 <Image
-                  src="/juilio-biage-business-card/4.jpg (1).jpeg"
+                  src="/juilio-biage-business-card/julio-back.jpeg"
                   alt="Julio Biage Business Card Back"
                   fill
                   sizes="(max-width: 768px) 100vw, 800px"

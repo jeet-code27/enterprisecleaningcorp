@@ -21,7 +21,7 @@ export default function CommercialCleaningThankYouPage() {
         <div className="container mx-auto px-4 py-3 flex items-center justify-between">
           <div className="flex items-center gap-3">
             <Image
-              src="/images/enterprise-logo.png"
+              src="/images/ecc-new-logo.png"
               alt="Enterprise Cleaning Corp"
               width={200}
               height={55}
@@ -131,7 +131,7 @@ export default function CommercialCleaningThankYouPage() {
           <div className="flex items-center gap-3">
             <div className="bg-white p-2 rounded-xl">
               <Image
-                src="/images/enterprise-logo.png"
+                src="/images/ecc-new-logo.png"
                 alt="Enterprise Cleaning Corporation"
                 width={150}
                 height={42}
