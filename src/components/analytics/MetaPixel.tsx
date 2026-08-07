@@ -1,10 +1,8 @@
 "use client";
 
 import Script from "next/script";
-import { usePathname } from "next/navigation";
-import { useEffect, useRef } from "react";
 
-export const META_PIXEL_ID = "1678012113285850";
+export const META_PIXEL_ID = "1566283411954729";
 
 declare global {
   interface Window {
@@ -13,30 +11,12 @@ declare global {
   }
 }
 
-function MetaPixelTracker() {
-  const pathname = usePathname();
-  const isFirstRender = useRef(true);
-
-  useEffect(() => {
-    if (isFirstRender.current) {
-      isFirstRender.current = false;
-      return;
-    }
-    if (typeof window !== "undefined" && window.fbq) {
-      window.fbq("track", "PageView");
-    }
-  }, [pathname]);
-
-  return null;
-}
-
 /**
  * Meta Pixel Component for tracking PageView and Custom Events
  */
 export function MetaPixel() {
   return (
     <>
-      <MetaPixelTracker />
       <Script
         id="meta-pixel"
         strategy="afterInteractive"
@@ -106,4 +86,3 @@ export function trackCTAButtonClick(buttonName: string) {
 export function trackLeadSubmission(service?: string) {
   trackMetaEvent("Lead", { content_name: "Commercial Cleaning Quote Lead", service });
 }
-
