@@ -38,6 +38,13 @@ const logos = [
     width: 130,
     height: 48,
   },
+  {
+    name: "Worcester Business Journal",
+    src: "/logos/wbj-logo.png",
+    width: 140,
+    height: 48,
+    darkBg: true,
+  },
 ];
 
 export function TrustedByMarquee() {

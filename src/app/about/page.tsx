@@ -6,6 +6,7 @@ import { TextRotate } from "@/components/ui/text-rotate";
 import Floating, { FloatingElement } from "@/components/ui/parallax-floating";
 import { ShieldCheck, Trophy, Users, Clock, ArrowRight } from "lucide-react";
 import { CTASection } from "@/components/blocks/cta-with-glow";
+import { AwardsSection } from "@/components/blocks/awards-section";
 
 export const metadata: Metadata = {
   title: { absolute: "About Enterprise Cleaning │ 23+ Years Serving Central MA" },
@@ -313,6 +314,8 @@ export default function AboutPage() {
           </div>
         </div>
       </section>
+
+      <AwardsSection />
 
       <CTASection
         className="bg-white"

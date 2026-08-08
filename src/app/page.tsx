@@ -13,6 +13,7 @@ import { ServiceAreas } from "@/components/blocks/service-areas";
 import { GoogleMapSection } from "@/components/blocks/google-map";
 import { FAQSection } from "@/components/blocks/faq-section";
 import { TrustedByMarquee } from "@/components/ui/trusted-by-marquee";
+import { AwardsSection } from "@/components/blocks/awards-section";
 import Script from "next/script";
 
 export const metadata: Metadata = {
@@ -141,6 +142,7 @@ export default function Home() {
         <EmergencyCTA />
         <HowItWorks />
         <WhyEnterprise />
+        <AwardsSection />
         {/* <WhyChooseUs /> */}
         <StaggerTestimonials />
         {/* <ElfsightReviews /> */}
