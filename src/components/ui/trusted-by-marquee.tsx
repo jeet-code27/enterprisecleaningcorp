@@ -9,9 +9,9 @@ const logos = [
     darkBg: true,
   },
   {
-    name: "The Hanover Insurance Group",
-    src: "/logos/the-hanover-insurance-group.svg",
-    width: 150,
+    name: "Coghlin Companies",
+    src: "/logos/coghlin-companies.webp",
+    width: 130,
     height: 48,
   },
   {
@@ -29,6 +29,12 @@ const logos = [
   {
     name: "Capital Group Properties",
     src: "/logos/capital-group.png",
+    width: 130,
+    height: 48,
+  },
+  {
+    name: "Avidia Bank",
+    src: "/logos/avidia-bank.svg",
     width: 130,
     height: 48,
   },
