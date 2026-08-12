@@ -235,6 +235,7 @@ export function CareerApplicationsClient({ initialApplications }: { initialAppli
               className="text-xs font-semibold bg-slate-50 border border-slate-200 rounded-lg px-2.5 py-1.5 focus:outline-none focus:ring-2 focus:ring-[#00B8FF] text-slate-800 max-w-[200px] truncate"
             >
               <option value="All">All Positions ({applications.length})</option>
+              <option value="Cleaning Technician – Derm Clinic (Concord, NH)">Cleaning Technician – Derm Clinic (Concord, NH)</option>
               <option value="Commercial Cleaning Technician">Commercial Cleaning Technician</option>
               <option value="Day Porter">Day Porter</option>
               <option value="Floor Care Specialist (Stripping & Waxing)">Floor Care Specialist</option>

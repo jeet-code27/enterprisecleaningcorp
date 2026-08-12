@@ -1,6 +1,6 @@
 import { Metadata } from "next";
 import { CareerForm } from "@/components/forms/CareerForm";
-import { CheckCircle2, ShieldCheck, Award, Users, Clock, DollarSign, TrendingUp, Sparkles, HeartHandshake, ArrowRight } from "lucide-react";
+import { CheckCircle2, ShieldCheck, Award, Users, Clock, DollarSign, TrendingUp, Sparkles, HeartHandshake, ArrowRight, MapPin, Calendar, Phone } from "lucide-react";
 import Link from "next/link";
 
 export const metadata: Metadata = {
@@ -165,8 +165,115 @@ export default function CareersPage() {
               Current Job Openings
             </h2>
             <p className="text-slate-600 font-medium">
-              We have immediate openings for motivated individuals in Central Massachusetts and surrounding areas.
+              We have immediate openings for motivated individuals in Central Massachusetts, New Hampshire, and surrounding areas.
             </p>
+          </div>
+
+          {/* Highlighted Top Job Card */}
+          <div className="mb-12 bg-gradient-to-br from-slate-900 via-slate-900 to-[#003B7A] rounded-3xl p-6 sm:p-10 text-white shadow-2xl border-2 border-[#00B8FF]/40 relative overflow-hidden">
+            {/* Background Glows */}
+            <div className="absolute -top-24 -right-24 w-72 h-72 bg-[#E31837]/20 rounded-full blur-3xl pointer-events-none" />
+            <div className="absolute -bottom-24 -left-24 w-72 h-72 bg-[#00B8FF]/20 rounded-full blur-3xl pointer-events-none" />
+
+            <div className="relative z-10">
+              {/* Header Badges */}
+              <div className="flex flex-wrap items-center justify-between gap-3 mb-6">
+                <div className="flex flex-wrap items-center gap-2">
+                  <span className="inline-flex items-center gap-1.5 text-xs uppercase tracking-widest font-extrabold text-white bg-[#E31837] px-3.5 py-1.5 rounded-full shadow-lg shadow-red-900/30">
+                    <Sparkles className="w-3.5 h-3.5" /> Featured Opening — Immediate Hiring
+                  </span>
+                  <span className="inline-flex items-center gap-1 text-xs font-bold uppercase tracking-wider text-[#00B8FF] bg-[#00B8FF]/10 px-3 py-1 rounded-full border border-[#00B8FF]/30">
+                    <MapPin className="w-3.5 h-3.5" /> Concord, NH
+                  </span>
+                </div>
+                <span className="text-sm font-extrabold text-emerald-400 bg-emerald-950/60 border border-emerald-500/30 px-4 py-1.5 rounded-full flex items-center gap-1.5 shadow-inner">
+                  <DollarSign className="w-4 h-4 text-emerald-400" /> $17.00 / Hour
+                </span>
+              </div>
+
+              {/* Title & Main Overview */}
+              <div className="mb-6">
+                <h3 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-white mb-3 tracking-tight flex items-center gap-2 flex-wrap">
+                  📢 CLEANING JOB OPENING – Derm Clinic 🫧🧹
+                </h3>
+                <p className="text-slate-200 text-base sm:text-lg font-medium leading-relaxed max-w-3xl">
+                  We are hiring for a cleaning position at a Derm Clinic in Concord, New Hampshire! ✨ Great opportunity for anyone looking for extra income with an evening schedule!
+                </p>
+              </div>
+
+              {/* Details Grid */}
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-8">
+                <div className="bg-white/5 border border-white/10 rounded-2xl p-4 flex items-center gap-3">
+                  <div className="w-10 h-10 rounded-xl bg-[#00B8FF]/20 text-[#00B8FF] flex items-center justify-center shrink-0">
+                    <MapPin className="w-5 h-5" />
+                  </div>
+                  <div>
+                    <div className="text-[11px] font-bold text-slate-400 uppercase tracking-wider">Location</div>
+                    <div className="text-sm font-extrabold text-white">CONCORD, NH</div>
+                  </div>
+                </div>
+
+                <div className="bg-white/5 border border-white/10 rounded-2xl p-4 flex items-center gap-3">
+                  <div className="w-10 h-10 rounded-xl bg-[#00B8FF]/20 text-[#00B8FF] flex items-center justify-center shrink-0">
+                    <Clock className="w-5 h-5" />
+                  </div>
+                  <div>
+                    <div className="text-[11px] font-bold text-slate-400 uppercase tracking-wider">Schedule</div>
+                    <div className="text-sm font-extrabold text-white">After 6:00 PM</div>
+                  </div>
+                </div>
+
+                <div className="bg-white/5 border border-white/10 rounded-2xl p-4 flex items-center gap-3">
+                  <div className="w-10 h-10 rounded-xl bg-[#00B8FF]/20 text-[#00B8FF] flex items-center justify-center shrink-0">
+                    <Calendar className="w-5 h-5" />
+                  </div>
+                  <div>
+                    <div className="text-[11px] font-bold text-slate-400 uppercase tracking-wider">Days</div>
+                    <div className="text-sm font-extrabold text-white">Monday – Friday</div>
+                  </div>
+                </div>
+
+                <div className="bg-white/5 border border-white/10 rounded-2xl p-4 flex items-center gap-3">
+                  <div className="w-10 h-10 rounded-xl bg-emerald-500/20 text-emerald-400 flex items-center justify-center shrink-0">
+                    <DollarSign className="w-5 h-5" />
+                  </div>
+                  <div>
+                    <div className="text-[11px] font-bold text-slate-400 uppercase tracking-wider">Hours & Pay</div>
+                    <div className="text-sm font-extrabold text-white">3 hrs/day (15 hrs/wk) • $17/hr</div>
+                  </div>
+                </div>
+              </div>
+
+              {/* Direct Phone & Action Buttons */}
+              <div className="pt-6 border-t border-white/10 flex flex-col lg:flex-row items-stretch lg:items-center justify-between gap-6">
+                <div className="flex flex-col sm:flex-row items-start sm:items-center gap-3 text-sm font-semibold">
+                  <span className="text-slate-300 font-bold flex items-center gap-1.5 shrink-0">
+                    <Phone className="w-4 h-4 text-[#00B8FF]" /> Interested? Contact Us:
+                  </span>
+                  <div className="flex flex-wrap gap-2">
+                    <a
+                      href="tel:5083044094"
+                      className="px-3.5 py-2 bg-white/10 hover:bg-white/20 text-white rounded-xl border border-white/20 transition-colors flex items-center gap-1.5 font-extrabold text-sm"
+                    >
+                      <Phone className="w-3.5 h-3.5 text-emerald-400" /> 508-304-4094
+                    </a>
+                    <a
+                      href="tel:5088014129"
+                      className="px-3.5 py-2 bg-white/10 hover:bg-white/20 text-white rounded-xl border border-white/20 transition-colors flex items-center gap-1.5 font-extrabold text-sm"
+                    >
+                      <Phone className="w-3.5 h-3.5 text-emerald-400" /> 508-801-4129
+                    </a>
+                  </div>
+                </div>
+
+                <a
+                  href="#apply-form"
+                  className="px-8 py-3.5 bg-[#E31837] hover:bg-red-600 text-white font-extrabold text-sm rounded-xl shadow-lg hover:shadow-red-600/40 transition-all text-center flex items-center justify-center gap-2 shrink-0 uppercase tracking-wider"
+                >
+                  Apply For Derm Clinic Job <ArrowRight className="w-4 h-4" />
+                </a>
+              </div>
+            </div>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">

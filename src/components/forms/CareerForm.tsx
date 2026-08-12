@@ -224,6 +224,7 @@ export function CareerForm() {
               onChange={handleChange}
               className="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-xl focus:ring-2 focus:ring-[#00B8FF] focus:bg-white outline-none transition-all text-slate-900 text-sm font-medium"
             >
+              <option value="Cleaning Technician – Derm Clinic (Concord, NH)">🔥 Featured: Cleaning Technician – Derm Clinic (Concord, NH)</option>
               <option value="Commercial Cleaning Technician">Commercial Cleaning Technician</option>
               <option value="Day Porter">Day Porter</option>
               <option value="Floor Care Specialist (Stripping & Waxing)">Floor Care Specialist (Stripping & Waxing)</option>
