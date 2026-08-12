@@ -31,12 +31,5 @@ export const authOptions: NextAuthOptions = {
 
 const handler = NextAuth(authOptions);
 
-async function authHandler(
-  req: Request,
-  ctx: { params: Promise<{ nextauth?: string[] }> | { nextauth?: string[] } }
-) {
-  const params = await ctx.params;
-  return handler(req, { params });
-}
+export { handler as GET, handler as POST };
 
-export { authHandler as GET, authHandler as POST };
