@@ -97,7 +97,7 @@ const faqSchema = {
       "name": "Does Enterprise handle emergency water and flood damage?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes. Its 24/7 emergency division is certified for water/flood and mold remediation, and works directly with insurers for rapid recovery."
+        "text": "Yes. We provide emergency water/flood and mold services. We also work directly with the insurance company."
       }
     },
     {

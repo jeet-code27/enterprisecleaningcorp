@@ -18,7 +18,7 @@ const faqs = [
   },
   {
     question: "Does Enterprise handle emergency water and flood damage?",
-    answer: <>Yes. Its 24/7 <Link href="/emergency-restoration-services-central-ma" className="text-[#0090c8] font-semibold hover:underline">emergency division</Link> is certified for water/flood and mold remediation, and works directly with insurers for rapid recovery.</>
+    answer: <>Yes. We provide <Link href="/emergency-restoration-services-central-ma" className="text-[#0090c8] font-semibold hover:underline">emergency water/flood and mold services</Link>. We also work directly with the insurance company.</>
   },
   {
     question: "How long has Enterprise Cleaning been in business?",

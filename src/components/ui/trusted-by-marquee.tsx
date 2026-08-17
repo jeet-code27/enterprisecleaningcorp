@@ -13,6 +13,7 @@ const logos = [
     src: "/logos/coghlin-companies.webp",
     width: 130,
     height: 48,
+    darkBg: true,
   },
   {
     name: "Workers Credit Union",
@@ -78,7 +79,7 @@ export function TrustedByMarquee() {
           {doubled.map((logo, i) => (
             <div
               key={`${logo.name}-${i}`}
-              className="flex-shrink-0 flex items-center justify-center px-4 grayscale hover:grayscale-0 transition-all duration-300 opacity-60 hover:opacity-100"
+              className="flex-shrink-0 flex items-center justify-center px-4 transition-all duration-300 opacity-90 hover:opacity-100 hover:scale-105"
               style={{ minWidth: "120px" }}
             >
               <div className={logo.darkBg ? "bg-slate-800 rounded-lg px-3 py-2" : ""}>
