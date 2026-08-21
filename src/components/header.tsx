@@ -117,7 +117,7 @@ export function Header() {
                   <FacebookIcon className="size-4" />
                 </a>
                 <a
-                  href="https://www.instagram.com/enterprise_.cleaning"
+                  href="https://www.instagram.com/enterprisecleaningcorporation"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="hover:text-[#FFE800] transition-colors p-0.5"
@@ -386,7 +386,7 @@ function MobileNav() {
                 <FacebookIcon className="size-5" />
               </a>
               <a
-                href="https://www.instagram.com/enterprise_.cleaning"
+                href="https://www.instagram.com/enterprisecleaningcorporation"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-10 h-10 rounded-full bg-slate-100 flex items-center justify-center text-slate-700 hover:bg-[#0090c8] hover:text-white transition-colors"

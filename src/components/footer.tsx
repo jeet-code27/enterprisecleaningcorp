@@ -45,7 +45,7 @@ export function Footer() {
                 <FacebookIcon className="size-4" />
               </a>
               <a
-                href="https://www.instagram.com/enterprise_.cleaning"
+                href="https://www.instagram.com/enterprisecleaningcorporation"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-9 h-9 rounded-full bg-white/10 hover:bg-[#E31837] flex items-center justify-center text-white transition-colors"
