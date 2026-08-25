@@ -1,6 +1,6 @@
 import { Metadata } from "next";
 import { CareerForm } from "@/components/forms/CareerForm";
-import { CheckCircle2, ShieldCheck, Award, Users, Clock, DollarSign, TrendingUp, Sparkles, HeartHandshake, ArrowRight, MapPin, Calendar, Phone } from "lucide-react";
+import { CheckCircle2, ShieldCheck, Award, Users, Clock, DollarSign, TrendingUp, Sparkles, HeartHandshake, ArrowRight, MapPin, Calendar, Phone, PartyPopper } from "lucide-react";
 import Link from "next/link";
 
 export const metadata: Metadata = {
@@ -150,6 +150,109 @@ export default function CareersPage() {
                 </div>
               );
             })}
+          </div>
+        </div>
+      </section>
+
+      {/* Life at Enterprise / Culture Section */}
+      <section className="py-16 md:py-24 bg-gradient-to-b from-white via-slate-50 to-slate-50 border-b border-slate-200 overflow-hidden">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-6xl">
+          <div className="text-center max-w-2xl mx-auto mb-14">
+            <span className="inline-flex items-center gap-1.5 text-xs uppercase tracking-widest font-extrabold text-[#003B7A] bg-blue-50 px-4 py-1.5 rounded-full border border-blue-200 mb-4">
+              <PartyPopper className="w-3.5 h-3.5 text-[#0090c8]" /> Life at Enterprise
+            </span>
+            <h2 className="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight mb-4">
+              Work Hard, <span className="text-[#0090c8]">Celebrate Together</span>
+            </h2>
+            <p className="text-slate-600 font-medium text-base sm:text-lg leading-relaxed">
+              We believe great cleaning starts with a supported, appreciated team. At Enterprise Cleaning Corporation, you're not just another employee — you're part of a 150+ member strong family.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center bg-white rounded-3xl p-6 sm:p-8 md:p-10 border border-slate-200 shadow-xl">
+            {/* Left: Image Showcase */}
+            <div className="lg:col-span-7 relative">
+              <div className="relative rounded-2xl overflow-hidden shadow-xl border-2 border-slate-100 group">
+                <img
+                  src="/images/team-bi-annual-party.jpeg"
+                  alt="Enterprise Cleaning Corporation Team Gathering & Bi-Annual Celebration"
+                  className="w-full h-full object-cover aspect-[4/3] group-hover:scale-105 transition-transform duration-500"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent pointer-events-none" />
+                
+                {/* Floating Badge */}
+                <div className="absolute bottom-4 left-4 right-4 text-white">
+                  <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#FFE800] text-slate-900 font-black text-xs uppercase tracking-wider mb-1.5 shadow-md">
+                    🎉 Bi-Annual Team Party
+                  </span>
+                  <p className="text-xs sm:text-sm font-semibold text-slate-100 drop-shadow">
+                    Recognizing hard work, sharing meals, and celebrating our team milestones together!
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            {/* Right: Culture Features */}
+            <div className="lg:col-span-5 space-y-6">
+              <div className="space-y-4">
+                <div className="flex items-start gap-3.5">
+                  <div className="w-10 h-10 rounded-xl bg-emerald-50 text-emerald-600 flex items-center justify-center shrink-0 border border-emerald-100 font-bold">
+                    <PartyPopper className="w-5 h-5" />
+                  </div>
+                  <div>
+                    <h3 className="text-base font-extrabold text-slate-900">Bi-Annual Celebrations</h3>
+                    <p className="text-xs sm:text-sm text-slate-600 font-medium leading-relaxed">
+                      We host regular company gatherings with good food and fun to thank our staff for their dedication.
+                    </p>
+                  </div>
+                </div>
+
+                <div className="flex items-start gap-3.5">
+                  <div className="w-10 h-10 rounded-xl bg-[#00B8FF]/10 text-[#0090c8] flex items-center justify-center shrink-0 border border-[#00B8FF]/20">
+                    <Award className="w-5 h-5" />
+                  </div>
+                  <div>
+                    <h3 className="text-base font-extrabold text-slate-900">Recognition & Growth</h3>
+                    <p className="text-xs sm:text-sm text-slate-600 font-medium leading-relaxed">
+                      Top performers are celebrated with awards, bonuses, and priority opportunities for supervisor roles.
+                    </p>
+                  </div>
+                </div>
+
+                <div className="flex items-start gap-3.5">
+                  <div className="w-10 h-10 rounded-xl bg-purple-50 text-purple-600 flex items-center justify-center shrink-0 border border-purple-100">
+                    <HeartHandshake className="w-5 h-5" />
+                  </div>
+                  <div>
+                    <h3 className="text-base font-extrabold text-slate-900">Supportive Leadership</h3>
+                    <p className="text-xs sm:text-sm text-slate-600 font-medium leading-relaxed">
+                      Our supervisors and management are in the field daily to guide you, answer questions, and support you.
+                    </p>
+                  </div>
+                </div>
+
+                <div className="flex items-start gap-3.5">
+                  <div className="w-10 h-10 rounded-xl bg-amber-50 text-amber-600 flex items-center justify-center shrink-0 border border-amber-100">
+                    <Users className="w-5 h-5" />
+                  </div>
+                  <div>
+                    <h3 className="text-base font-extrabold text-slate-900">A Close-Knit Family</h3>
+                    <p className="text-xs sm:text-sm text-slate-600 font-medium leading-relaxed">
+                      Work alongside friendly colleagues who take pride in keeping New England facilities pristine.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div className="pt-2">
+                <a
+                  href="#apply-form"
+                  className="w-full py-3.5 px-6 bg-[#003B7A] hover:bg-slate-900 text-white font-extrabold text-xs uppercase tracking-wider rounded-xl text-center transition-colors flex items-center justify-center gap-2 shadow-md hover:shadow-lg"
+                >
+                  Join Our Friendly Team <ArrowRight className="w-4 h-4" />
+                </a>
+              </div>
+            </div>
           </div>
         </div>
       </section>

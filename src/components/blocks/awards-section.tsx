@@ -6,41 +6,41 @@ import { ExternalLink, TrendingUp, Medal, Trophy } from "lucide-react";
 
 const bobYears = ["2014", "2015", "2016", "2021"];
 
-export function AwardsSection() {
-  return (
-    <section className="py-12 md:py-16 bg-slate-900 text-white relative overflow-hidden">
-      {/* Ambient background glows */}
-      <div className="absolute top-0 left-1/4 w-[400px] h-[400px] bg-[#0090c8]/15 rounded-full blur-[120px] pointer-events-none" />
-      <div className="absolute bottom-0 right-1/4 w-[350px] h-[350px] bg-[#E31837]/10 rounded-full blur-[120px] pointer-events-none" />
+interface AwardsSectionProps {
+  embedded?: boolean;
+  className?: string;
+}
 
-      <div className="container mx-auto px-4 lg:px-8 max-w-7xl relative z-10">
-        {/* Section Header */}
-        <div className="text-center max-w-2xl mx-auto mb-10 md:mb-12">
-          <motion.div
-            initial={{ opacity: 0, y: 15 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.4 }}
-            className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/10 border border-white/15 backdrop-blur-md mb-3"
-          >
-            <Trophy className="w-4 h-4 text-[#FFE800]" />
-            <span className="text-xs font-extrabold uppercase tracking-widest text-[#FFE800]">
-              Worcester Business Journal Accolades
-            </span>
-          </motion.div>
+export function AwardsSection({ embedded = false, className = "" }: AwardsSectionProps) {
+  const content = (
+    <div className={embedded ? "w-full" : "container mx-auto px-4 lg:px-8 max-w-7xl relative z-10"}>
+      {/* Section Header */}
+      <div className="text-center max-w-2xl mx-auto mb-10 md:mb-12">
+        <motion.div
+          initial={{ opacity: 0, y: 15 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.4 }}
+          className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/10 border border-white/15 backdrop-blur-md mb-3"
+        >
+          <Trophy className="w-4 h-4 text-[#FFE800]" />
+          <span className="text-xs font-extrabold uppercase tracking-widest text-[#FFE800]">
+            Worcester Business Journal Accolades
+          </span>
+        </motion.div>
 
-          <motion.h2
-            initial={{ opacity: 0, y: 15 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.4, delay: 0.1 }}
-            className="text-2xl md:text-3xl lg:text-4xl font-extrabold tracking-tight"
-          >
-            Recognized for <span className="text-[#00B8FF]">Excellence</span> & Leadership
-          </motion.h2>
-        </div>
+        <motion.h2
+          initial={{ opacity: 0, y: 15 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.4, delay: 0.1 }}
+          className="text-2xl md:text-3xl lg:text-4xl font-extrabold tracking-tight"
+        >
+          Recognized for <span className="text-[#00B8FF]">Excellence</span> & Leadership
+        </motion.h2>
+      </div>
 
-        {/* Awards Grid */}
+      {/* Awards Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
           
           {/* Award Card 1: WBJ BOB Award */}
@@ -222,7 +222,19 @@ export function AwardsSection() {
           </motion.div>
 
         </div>
-      </div>
+    </div>
+  );
+
+  if (embedded) {
+    return <div className={`relative w-full ${className}`}>{content}</div>;
+  }
+
+  return (
+    <section className={`py-12 md:py-16 bg-slate-900 text-white relative overflow-hidden ${className}`}>
+      {/* Ambient background glows */}
+      <div className="absolute top-0 left-1/4 w-[400px] h-[400px] bg-[#0090c8]/15 rounded-full blur-[120px] pointer-events-none" />
+      <div className="absolute bottom-0 right-1/4 w-[350px] h-[350px] bg-[#E31837]/10 rounded-full blur-[120px] pointer-events-none" />
+      {content}
     </section>
   );
 }
