@@ -273,33 +273,33 @@ export default function AboutPage() {
           </div>
 
           {/* Team Photo Showcase Card */}
-          <div className="bg-white/5 backdrop-blur-xl border border-white/15 rounded-3xl p-4 sm:p-8 md:p-10 shadow-2xl mb-12">
+          <div className="bg-white/5 backdrop-blur-xl border border-white/15 rounded-3xl p-4 sm:p-8 md:p-8 shadow-2xl mb-12 space-y-6">
+            {/* Info Row (Header) */}
+            <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 pb-2 border-b border-white/10">
+              <div className="space-y-2">
+                <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#FFE800] text-slate-950 font-black text-xs uppercase tracking-wider shadow-md">
+                  <PartyPopper className="w-3.5 h-3.5" /> Bi-Annual Team Celebration
+                </div>
+                <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-white">
+                  United by Excellence, Powered by Family Culture
+                </h3>
+                <p className="text-xs sm:text-sm text-slate-300 font-medium max-w-2xl">
+                  Bringing our entire regional staff together to celebrate milestones, recognize top-performing technicians, and strengthen our team bond.
+                </p>
+              </div>
+              <div className="bg-slate-900/90 backdrop-blur-md border border-white/20 px-5 py-3 rounded-2xl text-center shrink-0 self-start md:self-auto shadow-lg">
+                <div className="text-3xl font-black text-[#00B8FF]">150+</div>
+                <div className="text-[10px] font-bold text-slate-300 uppercase tracking-widest">Team Members</div>
+              </div>
+            </div>
+
+            {/* Photo Container - Completely clean and unobstructed */}
             <div className="relative rounded-2xl overflow-hidden shadow-2xl border-2 border-white/20">
               <img
                 src="/images/team-bi-annual-party-new.jpeg"
                 alt="Enterprise Cleaning Corporation Bi-Annual Team Party & Celebration"
-                className="w-full h-auto object-cover max-h-[580px] w-full"
+                className="w-full h-auto object-cover"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-slate-950/85 via-transparent to-black/20 pointer-events-none" />
-
-              {/* Overlay Content */}
-              <div className="absolute bottom-0 left-0 right-0 p-4 sm:p-6 md:p-8 flex flex-col sm:flex-row items-start sm:items-end justify-between gap-4">
-                <div className="space-y-1">
-                  <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#FFE800] text-slate-950 font-black text-xs uppercase tracking-wider shadow-md">
-                    <PartyPopper className="w-3.5 h-3.5" /> Bi-Annual Team Celebration
-                  </div>
-                  <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-white">
-                    United by Excellence, Powered by Family Culture
-                  </h3>
-                  <p className="text-xs sm:text-sm text-slate-200 font-medium max-w-2xl hidden sm:block">
-                    Bringing our entire regional staff together to celebrate milestones, recognize top-performing technicians, and strengthen our team bond.
-                  </p>
-                </div>
-                <div className="bg-slate-900/90 backdrop-blur-md border border-white/20 px-4 py-2.5 rounded-2xl text-center shrink-0">
-                  <div className="text-2xl font-black text-[#00B8FF]">150+</div>
-                  <div className="text-[10px] font-bold text-slate-300 uppercase tracking-widest">Team Members</div>
-                </div>
-              </div>
             </div>
           </div>
 

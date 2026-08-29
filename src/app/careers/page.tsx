@@ -171,24 +171,23 @@ export default function CareersPage() {
 
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center bg-white rounded-3xl p-6 sm:p-8 md:p-10 border border-slate-200 shadow-xl">
             {/* Left: Image Showcase */}
-            <div className="lg:col-span-7 relative">
+            <div className="lg:col-span-7 space-y-3">
               <div className="relative rounded-2xl overflow-hidden shadow-xl border-2 border-slate-100 group">
                 <img
                   src="/images/team-bi-annual-party-new.jpeg"
                   alt="Enterprise Cleaning Corporation Team Gathering & Bi-Annual Celebration"
-                  className="w-full h-full object-cover aspect-[4/3] group-hover:scale-105 transition-transform duration-500"
+                  className="w-full h-auto object-cover group-hover:scale-[1.02] transition-transform duration-500"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent pointer-events-none" />
+              </div>
 
-                {/* Floating Badge */}
-                <div className="absolute bottom-4 left-4 right-4 text-white">
-                  <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#FFE800] text-slate-900 font-black text-xs uppercase tracking-wider mb-1.5 shadow-md">
-                    🎉 Bi-Annual Team Party
-                  </span>
-                  <p className="text-xs sm:text-sm font-semibold text-slate-100 drop-shadow">
-                    Recognizing hard work, sharing meals, and celebrating our team milestones together!
-                  </p>
-                </div>
+              {/* Caption Bar */}
+              <div className="p-3.5 bg-slate-50 border border-slate-200 rounded-xl flex flex-col sm:flex-row items-start sm:items-center justify-between gap-2.5">
+                <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#FFE800] text-slate-900 font-black text-xs uppercase tracking-wider shrink-0 shadow-sm">
+                  <PartyPopper className="w-3.5 h-3.5" /> Bi-Annual Team Celebration
+                </span>
+                <p className="text-xs font-semibold text-slate-600">
+                  Recognizing hard work, sharing meals, and celebrating team milestones together!
+                </p>
               </div>
             </div>
 
