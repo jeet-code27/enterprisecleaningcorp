@@ -174,12 +174,12 @@ export default function CareersPage() {
             <div className="lg:col-span-7 relative">
               <div className="relative rounded-2xl overflow-hidden shadow-xl border-2 border-slate-100 group">
                 <img
-                  src="/images/team-bi-annual-party.jpeg"
+                  src="/images/team-bi-annual-party-new.jpeg"
                   alt="Enterprise Cleaning Corporation Team Gathering & Bi-Annual Celebration"
                   className="w-full h-full object-cover aspect-[4/3] group-hover:scale-105 transition-transform duration-500"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent pointer-events-none" />
-                
+
                 {/* Floating Badge */}
                 <div className="absolute bottom-4 left-4 right-4 text-white">
                   <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#FFE800] text-slate-900 font-black text-xs uppercase tracking-wider mb-1.5 shadow-md">

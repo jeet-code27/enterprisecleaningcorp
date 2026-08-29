@@ -56,7 +56,7 @@ export default function AboutPage() {
     <>
       {/* Interactive Hero Section */}
       <section className="w-full min-h-[620px] md:h-[90vh] md:min-h-[660px] max-h-[880px] overflow-hidden flex flex-col items-center justify-center relative bg-slate-50 pt-20 pb-12 md:py-0">
-        
+
         {/* Subtle Background Pattern */}
         <div className="absolute inset-0 bg-[linear-gradient(rgba(0,144,200,0.03)_1px,transparent_1px),linear-gradient(90deg,rgba(0,144,200,0.03)_1px,transparent_1px)] bg-[size:64px_64px] [mask-image:radial-gradient(ellipse_60%_60%_at_50%_50%,#000_20%,transparent_100%)] pointer-events-none" />
 
@@ -151,7 +151,7 @@ export default function AboutPage() {
               </motion.span>
             </LayoutGroup>
           </motion.h1>
-          
+
           <motion.p
             className="text-base sm:text-lg md:text-xl text-center text-slate-600 font-medium pt-6 sm:pt-8 md:pt-10 max-w-2xl leading-relaxed"
             animate={{ opacity: 1, y: 0 }}
@@ -235,8 +235,8 @@ export default function AboutPage() {
             <div className="relative sticky top-32">
               <div className="absolute inset-0 bg-[#0090c8] rounded-[2rem] transform translate-x-4 translate-y-4 opacity-10"></div>
               <div className="relative rounded-[2rem] overflow-hidden shadow-2xl bg-slate-100">
-                <img 
-                  src="/images/steve-head-shot.jpeg" 
+                <img
+                  src="/images/steve-head-shot.jpeg"
                   alt="Stephen Buchalter - Founder of Enterprise Cleaning"
                   className="w-full h-auto object-cover aspect-square md:aspect-auto"
                 />
@@ -276,12 +276,12 @@ export default function AboutPage() {
           <div className="bg-white/5 backdrop-blur-xl border border-white/15 rounded-3xl p-4 sm:p-8 md:p-10 shadow-2xl mb-12">
             <div className="relative rounded-2xl overflow-hidden shadow-2xl border-2 border-white/20">
               <img
-                src="/images/team-bi-annual-party.jpeg"
+                src="/images/team-bi-annual-party-new.jpeg"
                 alt="Enterprise Cleaning Corporation Bi-Annual Team Party & Celebration"
                 className="w-full h-auto object-cover max-h-[580px] w-full"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-slate-950/85 via-transparent to-black/20 pointer-events-none" />
-              
+
               {/* Overlay Content */}
               <div className="absolute bottom-0 left-0 right-0 p-4 sm:p-6 md:p-8 flex flex-col sm:flex-row items-start sm:items-end justify-between gap-4">
                 <div className="space-y-1">
@@ -372,9 +372,9 @@ export default function AboutPage() {
         <div className="absolute top-0 right-1/4 w-[500px] h-[500px] bg-[#0090c8]/15 rounded-full blur-[140px] pointer-events-none" />
         <div className="absolute top-1/2 left-10 w-[400px] h-[400px] bg-[#FFE800]/08 rounded-full blur-[140px] pointer-events-none" />
         <div className="absolute bottom-0 right-10 w-[450px] h-[450px] bg-[#00B8FF]/10 rounded-full blur-[140px] pointer-events-none" />
-        
+
         <div className="container mx-auto px-4 md:px-6 lg:px-8 max-w-7xl relative z-10">
-          
+
           {/* Part 1: The Enterprise Difference Header */}
           <div className="text-center max-w-3xl mx-auto mb-14">
             <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/10 border border-white/15 backdrop-blur-md mb-4">
@@ -395,7 +395,7 @@ export default function AboutPage() {
               <h3 className="text-base font-bold mb-2 text-[#00B8FF]">Client Retention</h3>
               <p className="text-xs sm:text-sm text-slate-300 font-medium leading-relaxed">Our clients stay with us because we deliver consistent results year after year.</p>
             </div>
-            
+
             <div className="bg-white/[0.04] backdrop-blur-md border border-white/10 p-6 sm:p-8 rounded-2xl text-center hover:bg-white/[0.08] hover:border-[#00B8FF]/40 transition-all duration-300 shadow-xl group">
               <Trophy className="w-10 h-10 text-[#FFE800] mx-auto mb-4 group-hover:scale-110 transition-transform duration-300" />
               <div className="text-4xl font-black mb-2 text-white">4×</div>
