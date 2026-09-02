@@ -15,7 +15,6 @@ import {
   Building2, 
   Stethoscope, 
   HardHat, 
-  Home, 
   Award, 
   Clock, 
   Users, 
@@ -75,7 +74,7 @@ const CORE_SERVICES = [
     title: "Turnover Cleaning Services",
     icon: Droplets,
     image: "/images/turnover_cleaning_hero.png",
-    description: "Complete turnover cleaning services for commercial real estate, multi-family communities, and corporate property transitions.",
+    description: "Complete turnover cleaning services for commercial real estate, corporate offices, and property management suites.",
     badge: "Turnkey Property Reset"
   },
   {
@@ -109,10 +108,10 @@ const INDUSTRIES_SERVED = [
     desc: "Heavy industrial floor maintenance, clean room cleaning, and dedicated porters across 5+ manufacturing plants."
   },
   {
-    title: "Condominium & Community Living",
-    icon: Home,
+    title: "Property Management & Multi-Tenant Facilities",
+    icon: Building2,
     image: "/images/property_management_hero.png",
-    desc: "4x weekly cleaning, trash management, gym, storage rooms, and club room maintenance for 97-unit residential communities."
+    desc: "4x weekly cleaning, trash management, gym, storage rooms, and amenity space maintenance for commercial complexes and managed properties."
   },
   {
     title: "Educational & Municipal Buildings",
@@ -133,13 +132,13 @@ const LP_SUCCESS_STORIES = [
   {
     id: "fremont-lofts",
     company: "Fremont Lofts Condominium",
-    industry: "Condominium & Community Living",
+    industry: "Property Management & HOA Common Areas",
     logo: "/logos/fremont-condo-association.png",
     logoBg: "bg-white border border-slate-200",
-    tagline: "Keeping a 97-Unit Community Clean, Safe, and Welcoming",
-    quote: "Enterprise provides service 4x per week for trash management, cleaning, and disinfection throughout our shared living spaces, gym, storage rooms, and club room—plus an annual carpet reset.",
+    tagline: "Keeping a 97-Unit Property Common Area Clean, Safe, and Welcoming",
+    quote: "Enterprise provides service 4x per week for trash management, cleaning, and disinfection throughout our common areas, gym, storage rooms, and club room—plus an annual carpet reset.",
     result: "A consistent, year-round cleaning program combining frequent service, trash management, amenity disinfection, and annual carpet care.",
-    badgeText: "97 Units • 4x Weekly Service",
+    badgeText: "97-Unit Complex • 4x Weekly Service",
     rating: 5
   },
   {
@@ -377,7 +376,7 @@ export default function CommercialCleaningLandingPage() {
                   ))}
                 </div>
                 <p className="text-xs text-slate-200 font-medium italic">
-                  "Enterprise keeps our 30+ medical clinics, 7+ bank branches, and 97-unit communities immaculate."
+                  "Enterprise keeps our 30+ medical clinics, 7+ bank branches, and commercial property facilities immaculate."
                 </p>
               </div>
             </div>
@@ -479,7 +478,7 @@ export default function CommercialCleaningLandingPage() {
                       <option value="Floor Care Services (Carpet/VCT)">Floor Care Services (Carpet/VCT/Waxing)</option>
                       <option value="Specialty Deep Cleaning">Specialty & Deep Cleaning Services</option>
                       <option value="Emergency Flood & Water Cleanup">Emergency Flood Cleanup & Restoration</option>
-                      <option value="Turnover Cleaning Services">Turnover Cleaning (Commercial/Residential)</option>
+                      <option value="Turnover Cleaning Services">Turnover Cleaning Services (Commercial Suites & Facilities)</option>
                       <option value="Post-Construction Cleaning">Post-Construction Cleaning</option>
                     </select>
                   </div>
