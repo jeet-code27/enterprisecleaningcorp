@@ -13,6 +13,18 @@ import Link from "next/link"
 
 const SLIDES = [
   {
+    id: "slide-janitorial",
+    title: "Janitorial Services",
+    imageUrl: "/images/janitorial_services_hero.jpg",
+    href: "/janitorial-services",
+  },
+  {
+    id: "slide-medical",
+    title: "Medical Office Cleaning",
+    imageUrl: "/images/medical_office_cleaning_hero.jpg",
+    href: "/medical-office-cleaning",
+  },
+  {
     id: "slide-1",
     title: "Night & Day Cleaning",
     imageUrl: "/images/nightly_janitorial_hero.png",
@@ -86,12 +98,12 @@ export function ServicesSlideshow() {
           Our Services
         </h3>
         <div className="flex flex-col lg:flex-row items-start justify-between gap-12 lg:gap-16">
-          <div className="flex flex-col space-y-6 md:space-y-8 w-full lg:w-[55%]">
+          <div className="flex flex-col space-y-4 md:space-y-5 w-full lg:w-[55%]">
             {SLIDES.map((slide, index) => (
               <ServiceItem key={slide.id} slide={slide} index={index} />
             ))}
           </div>
-          <HoverSliderImageWrap className="w-full lg:w-[40%] max-w-xl rounded-2xl aspect-[4/3] bg-muted/20 shadow-xl border border-slate-100">
+          <HoverSliderImageWrap className="w-full lg:w-[40%] max-w-xl rounded-2xl aspect-[4/3] bg-muted/20 shadow-xl border border-slate-100 lg:sticky lg:top-28">
             {SLIDES.map((slide, index) => (
               <div key={slide.id} className="size-full">
                 <HoverSliderImage

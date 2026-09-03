@@ -54,6 +54,16 @@ const nextConfig: NextConfig = {
         permanent: true,
       },
       {
+        source: '/services/janitorial-services',
+        destination: '/janitorial-services',
+        permanent: true,
+      },
+      {
+        source: '/services/medical-office-cleaning',
+        destination: '/medical-office-cleaning',
+        permanent: true,
+      },
+      {
         source: '/services',
         destination: '/#services',
         permanent: true,

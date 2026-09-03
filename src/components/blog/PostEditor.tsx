@@ -202,6 +202,8 @@ export function PostEditor({ initialData, isEdit = false }: PostEditorProps) {
 
   // Static core website pages for quick linking
   const servicePages = [
+    { title: "Janitorial Services", path: "/janitorial-services" },
+    { title: "Medical Office Cleaning", path: "/medical-office-cleaning" },
     { title: "Night & Day Cleaning", path: "/day-and-night-shift-commercial-cleaning-services-central-ma" },
     { title: "Floor Care Services", path: "/floor-care-services-central-ma" },
     { title: "Deep Cleaning", path: "/specialty-cleaning-services-central-ma" },

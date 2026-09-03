@@ -2,6 +2,8 @@ import Link from "next/link";
 import { Sparkles, Building2, Droplets, SprayCan, Wind, ArrowRight } from "lucide-react";
 
 export const ALL_SERVICES = [
+  { id: "janitorial", title: "Janitorial Services", href: "/janitorial-services", icon: Building2 },
+  { id: "medical", title: "Medical Office Cleaning", href: "/medical-office-cleaning", icon: Building2 },
   { id: "nightly", title: "Night & Day Cleaning", href: "/day-and-night-shift-commercial-cleaning-services-central-ma", icon: Building2 },
   { id: "floor", title: "Floor Care Services", href: "/floor-care-services-central-ma", icon: Sparkles },
   { id: "specialty", title: "Deep Cleaning", href: "/specialty-cleaning-services-central-ma", icon: Sparkles },

@@ -64,6 +64,12 @@ export function Footer() {
             </h4>
             <ul className="space-y-3 text-sm text-slate-200">
               <li>
+                <Link href="/janitorial-services" className="hover:text-white/60 transition-colors">Janitorial Services</Link>
+              </li>
+              <li>
+                <Link href="/medical-office-cleaning" className="hover:text-white/60 transition-colors">Medical Office Cleaning</Link>
+              </li>
+              <li>
                 <Link href="/day-and-night-shift-commercial-cleaning-services-central-ma" className="hover:text-white/60 transition-colors">Night & Day Cleaning</Link>
               </li>
               <li>

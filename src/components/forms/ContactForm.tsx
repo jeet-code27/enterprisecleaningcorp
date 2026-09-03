@@ -194,6 +194,8 @@ export function ContactForm() {
                 disabled={isSubmitting}
               >
                 <option value="">Select a service...</option>
+                <option value="Janitorial Services">Janitorial Services</option>
+                <option value="Medical Office Cleaning">Medical Office Cleaning</option>
                 <option value="Night & Day Cleaning">Night & Day Cleaning</option>
                 <option value="Floor Care Services">Floor Care Services</option>
                 <option value="Deep Cleaning">Deep Cleaning</option>

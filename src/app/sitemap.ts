@@ -32,6 +32,8 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   ];
 
   const serviceRoutes = [
+    "/janitorial-services",
+    "/medical-office-cleaning",
     "/day-and-night-shift-commercial-cleaning-services-central-ma",
     "/floor-care-services-central-ma",
     "/specialty-cleaning-services-central-ma",

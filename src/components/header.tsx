@@ -26,6 +26,18 @@ const InstagramIcon = ({ className = "size-3.5" }: { className?: string }) => (
 
 const coreServices = [
   {
+    title: "Janitorial Services",
+    description: "Recurring cleaning with restroom care built into every route.",
+    href: "/janitorial-services",
+    icon: Building2,
+  },
+  {
+    title: "Medical Office Cleaning",
+    description: "Clinical-grade cleaning and hospital-standard disinfection.",
+    href: "/medical-office-cleaning",
+    icon: Stethoscope,
+  },
+  {
     title: "Night & Day Cleaning",
     description: "Consistent cleaning for professional environments.",
     href: "/day-and-night-shift-commercial-cleaning-services-central-ma",
