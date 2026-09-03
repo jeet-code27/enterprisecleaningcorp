@@ -246,7 +246,7 @@ export default function ProvidenceCityPage() {
                 </p>
                 <p>
                   Enterprise Cleaning Corporation has extended its Massachusetts service area into Rhode Island, with Providence as a primary focus. We bring the same{" "}
-                  <Link href="/day-and-night-shift-commercial-cleaning-services-central-ma" className="text-[#0090c8] font-semibold hover:underline">nightly janitorial, day porter</Link>, and{" "}
+                  <Link href="/office-cleaning" className="text-[#0090c8] font-semibold hover:underline">nightly janitorial, day porter</Link>, and{" "}
                   <Link href="/floor-care-services-central-ma" className="text-[#0090c8] font-semibold hover:underline">floor care standards</Link>
                   {" "}we&apos;ve built our reputation on in Central Massachusetts to Providence offices,{" "}
                   <Link href="/medical-healthcare-cleaning-central-ma" className="text-[#0090c8] font-semibold hover:underline">medical facilities</Link>, and mixed-use commercial buildings, backed by the same 97% client retention rate and direct owner access that differentiate us from national franchise cleaning companies operating in Rhode Island.
@@ -340,15 +340,15 @@ export default function ProvidenceCityPage() {
             {(([
               {
                 icon: Clock,
-                title: "Night & Day Cleaning",
+                title: "Office Cleaning",
                 desc: "Recurring after-hours cleaning for offices, common areas, restrooms, and break rooms, scheduled around your business hours so cleaning never disrupts operations.",
-                href: "/day-and-night-shift-commercial-cleaning-services-central-ma"
+                href: "/office-cleaning"
               },
               {
                 icon: Users,
                 title: "Day Porter Services",
                 desc: "On-site daytime staff who handle restocking, spot-cleaning, restroom checks, and light maintenance while your facility is open and in use.",
-                href: "/day-and-night-shift-commercial-cleaning-services-central-ma"
+                href: "/office-cleaning"
               },
               {
                 icon: Sparkles,

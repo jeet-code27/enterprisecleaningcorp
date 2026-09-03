@@ -4,9 +4,9 @@ import { ContainerScroll, CardSticky } from "@/components/ui/cards-stack";
 const PROCESS_PHASES = [
   {
     id: "process-1",
-    title: "Night & Day Cleaning",
+    title: "Office Cleaning",
     description:
-      "Round-the-clock cleaning solutions tailored to your schedule — whether you need daytime maintenance or thorough nightly janitorial services.",
+      "Tailored workplace cleaning built around your schedule — including dedicated daytime porters and thorough nightly office cleaning crews.",
   },
   {
     id: "process-2",

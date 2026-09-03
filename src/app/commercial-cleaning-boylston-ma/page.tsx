@@ -245,7 +245,7 @@ export default function BoylstonCityPage() {
                 </p>
                 <p>
                   Enterprise Cleaning Corporation is headquartered in neighboring West Boylston, just a few minutes from Boylston&apos;s Route 140 corridor, and we bring the same 97% client retention standard and owner-accessible service model offering{" "}
-                  <Link href="/day-and-night-shift-commercial-cleaning-services-central-ma" className="text-[#0090c8] font-semibold hover:underline">nightly janitorial, day porter</Link>, and{" "}
+                  <Link href="/office-cleaning" className="text-[#0090c8] font-semibold hover:underline">nightly janitorial, day porter</Link>, and{" "}
                   <Link href="/floor-care-services-central-ma" className="text-[#0090c8] font-semibold hover:underline">floor care cleaning</Link>
                   {" "}to Boylston&apos;s small businesses and light-industrial tenants that we apply to our largest accounts.
                 </p>
@@ -338,15 +338,15 @@ export default function BoylstonCityPage() {
             {(([
               {
                 icon: Clock,
-                title: "Night & Day Cleaning",
+                title: "Office Cleaning",
                 desc: "Recurring after-hours cleaning for offices, common areas, restrooms, and break rooms, scheduled around your business hours so cleaning never disrupts operations.",
-                href: "/day-and-night-shift-commercial-cleaning-services-central-ma"
+                href: "/office-cleaning"
               },
               {
                 icon: Users,
                 title: "Day Porter Services",
                 desc: "On-site daytime staff who handle restocking, spot-cleaning, restroom checks, and light maintenance while your facility is open and in use.",
-                href: "/day-and-night-shift-commercial-cleaning-services-central-ma"
+                href: "/office-cleaning"
               },
               {
                 icon: Sparkles,

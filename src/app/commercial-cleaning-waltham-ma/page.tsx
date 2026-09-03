@@ -245,7 +245,7 @@ export default function WalthamCityPage() {
                 </p>
                 <p>
                   Enterprise Cleaning Corporation brings the same reliability standards that have earned us a 97% client retention rate in Central Massachusetts to Waltham&apos;s biotech, corporate, and downtown business community, with{" "}
-                  <Link href="/day-and-night-shift-commercial-cleaning-services-central-ma" className="text-[#0090c8] font-semibold hover:underline">nightly janitorial, day porter</Link>, and{" "}
+                  <Link href="/office-cleaning" className="text-[#0090c8] font-semibold hover:underline">nightly janitorial, day porter</Link>, and{" "}
                   <Link href="/floor-care-services-central-ma" className="text-[#0090c8] font-semibold hover:underline">floor care cleaning schedules</Link>
                   {" "}built around the specific compliance and appearance expectations of each building type.
                 </p>
@@ -338,15 +338,15 @@ export default function WalthamCityPage() {
             {(([
               {
                 icon: Clock,
-                title: "Night & Day Cleaning",
+                title: "Office Cleaning",
                 desc: "Recurring after-hours cleaning for offices, common areas, restrooms, and break rooms, scheduled around your business hours so cleaning never disrupts operations.",
-                href: "/day-and-night-shift-commercial-cleaning-services-central-ma"
+                href: "/office-cleaning"
               },
               {
                 icon: Users,
                 title: "Day Porter Services",
                 desc: "On-site daytime staff who handle restocking, spot-cleaning, restroom checks, and light maintenance while your facility is open and in use.",
-                href: "/day-and-night-shift-commercial-cleaning-services-central-ma"
+                href: "/office-cleaning"
               },
               {
                 icon: Sparkles,

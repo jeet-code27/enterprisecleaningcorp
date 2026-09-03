@@ -64,6 +64,16 @@ const nextConfig: NextConfig = {
         permanent: true,
       },
       {
+        source: '/services/office-cleaning',
+        destination: '/office-cleaning',
+        permanent: true,
+      },
+      {
+        source: '/day-and-night-shift-commercial-cleaning-services-central-ma',
+        destination: '/office-cleaning',
+        permanent: true,
+      },
+      {
         source: '/services',
         destination: '/#services',
         permanent: true,

@@ -38,10 +38,10 @@ const coreServices = [
     icon: Stethoscope,
   },
   {
-    title: "Night & Day Cleaning",
-    description: "Consistent cleaning for professional environments.",
-    href: "/day-and-night-shift-commercial-cleaning-services-central-ma",
-    icon: Building2,
+    title: "Office Cleaning",
+    description: "Tailored daytime porters and nightly crews for corporate workplaces.",
+    href: "/office-cleaning",
+    icon: Briefcase,
   },
   {
     title: "Floor Care Services",

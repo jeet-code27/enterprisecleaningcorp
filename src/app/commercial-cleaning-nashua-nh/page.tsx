@@ -245,7 +245,7 @@ export default function NashuaCityPage() {
                 </p>
                 <p>
                   Enterprise Cleaning Corporation has extended its Massachusetts service standards north across the border into Southern New Hampshire, with Nashua as a primary focus. We bring the same{" "}
-                  <Link href="/day-and-night-shift-commercial-cleaning-services-central-ma" className="text-[#0090c8] font-semibold hover:underline">nightly janitorial, day porter</Link>, and{" "}
+                  <Link href="/office-cleaning" className="text-[#0090c8] font-semibold hover:underline">nightly janitorial, day porter</Link>, and{" "}
                   <Link href="/floor-care-services-central-ma" className="text-[#0090c8] font-semibold hover:underline">floor care services</Link>
                   {" "}— along with the same 97% client retention rate and owner-accessible service model — to Nashua&apos;s technology, defense, and corporate office tenants that we&apos;ve built our reputation on throughout Central Massachusetts.
                 </p>
@@ -338,15 +338,15 @@ export default function NashuaCityPage() {
             {(([
               {
                 icon: Clock,
-                title: "Night & Day Cleaning",
+                title: "Office Cleaning",
                 desc: "Recurring after-hours cleaning for offices, common areas, restrooms, and break rooms, scheduled around your business hours so cleaning never disrupts operations.",
-                href: "/day-and-night-shift-commercial-cleaning-services-central-ma"
+                href: "/office-cleaning"
               },
               {
                 icon: Users,
                 title: "Day Porter Services",
                 desc: "On-site daytime staff who handle restocking, spot-cleaning, restroom checks, and light maintenance while your facility is open and in use.",
-                href: "/day-and-night-shift-commercial-cleaning-services-central-ma"
+                href: "/office-cleaning"
               },
               {
                 icon: Sparkles,

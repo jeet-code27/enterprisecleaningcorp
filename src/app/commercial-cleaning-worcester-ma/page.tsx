@@ -252,7 +252,7 @@ export default function WorcesterCityPage() {
                 </p>
                 <p>
                   Because Worcester is where our own crews spend the most time, we've built scheduling experience across nearly every type of building the city has to offer — a downtown financial office that needs{" "}
-                  <Link href="/day-and-night-shift-commercial-cleaning-services-central-ma" className="text-[#0090c8] font-semibold hover:underline">quiet, after-hours service</Link>;
+                  <Link href="/office-cleaning" className="text-[#0090c8] font-semibold hover:underline">quiet, after-hours service</Link>;
                   {" "}a hospital administrative wing that needs discretion around active clinical space; and an{" "}
                   <Link href="/manufacturing-industrial-cleaning-central-ma" className="text-[#0090c8] font-semibold hover:underline">industrial building</Link>
                   {" "}on Route 20 that needs a crew comfortable working around forklifts and shift changes.
@@ -343,9 +343,9 @@ export default function WorcesterCityPage() {
             {([
               {
                 icon: Clock,
-                title: "Night & Day Cleaning",
+                title: "Office Cleaning",
                 desc: "Recurring after-hours and daytime cleaning for offices, common areas, restrooms, and break rooms — scheduled around your business hours.",
-                href: "/day-and-night-shift-commercial-cleaning-services-central-ma"
+                href: "/office-cleaning"
               },
               {
                 icon: Sparkles,

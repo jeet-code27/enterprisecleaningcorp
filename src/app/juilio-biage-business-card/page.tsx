@@ -242,7 +242,9 @@ export default function JulioBiageBusinessCardPage() {
 
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3 sm:gap-4">
             {[
-              { title: "Night & Day Cleaning", href: "/day-and-night-shift-commercial-cleaning-services-central-ma" },
+              { title: "Janitorial Services", href: "/janitorial-services" },
+              { title: "Office Cleaning", href: "/office-cleaning" },
+              { title: "Medical Office Cleaning", href: "/medical-office-cleaning" },
               { title: "Floor Care Services", href: "/floor-care-services-central-ma" },
               { title: "Deep Cleaning", href: "/specialty-cleaning-services-central-ma" },
               { title: "Flood Cleanup", href: "/emergency-restoration-services-central-ma" },

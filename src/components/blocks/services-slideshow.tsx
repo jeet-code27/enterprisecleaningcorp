@@ -26,9 +26,9 @@ const SLIDES = [
   },
   {
     id: "slide-1",
-    title: "Night & Day Cleaning",
-    imageUrl: "/images/nightly_janitorial_hero.png",
-    href: "/day-and-night-shift-commercial-cleaning-services-central-ma",
+    title: "Office Cleaning",
+    imageUrl: "/images/office_cleaning_services_hero.jpg",
+    href: "/office-cleaning",
   },
   {
     id: "slide-2",

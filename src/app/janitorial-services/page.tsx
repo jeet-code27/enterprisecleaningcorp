@@ -469,8 +469,8 @@ export default function JanitorialServicesPage() {
           <div className="mt-10 text-center max-w-3xl mx-auto">
             <p className="text-sm md:text-base text-slate-600 font-medium">
               Need dedicated daytime upkeep alongside nightly cleans? Explore our integrated{" "}
-              <Link href="/day-and-night-shift-commercial-cleaning-services-central-ma" className="text-[#0090c8] font-bold hover:underline">
-                day and night shift cleaning services
+              <Link href="/office-cleaning" className="text-[#0090c8] font-bold hover:underline">
+                office cleaning services
               </Link>{" "}
               or inquire about <strong>day porter services near me</strong> for real-time facility support.
             </p>

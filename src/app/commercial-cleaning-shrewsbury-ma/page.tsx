@@ -248,7 +248,7 @@ export default function ShrewsburyCityPage() {
                 </p>
                 <p>
                   Shrewsbury&apos;s growth along Route 9 has been steady rather than explosive, which means most of the buildings we clean here are established, occupied properties rather than brand-new construction. That matters for cleaning: an occupied medical suite or a long-tenured office needs a crew that can work quietly and efficiently around existing staff and patients, not just a one-time deep clean. Our Shrewsbury accounts are built around that kind of ongoing,{" "}
-                  <Link href="/day-and-night-shift-commercial-cleaning-services-central-ma" className="text-[#0090c8] font-semibold hover:underline">low-disruption service</Link>.
+                  <Link href="/office-cleaning" className="text-[#0090c8] font-semibold hover:underline">low-disruption service</Link>.
                 </p>
               </div>
 
@@ -336,15 +336,15 @@ export default function ShrewsburyCityPage() {
             {(([
               {
                 icon: Clock,
-                title: "Night & Day Cleaning",
+                title: "Office Cleaning",
                 desc: "Recurring after-hours cleaning for offices, common areas, restrooms, and break rooms, scheduled around your business hours so cleaning never disrupts operations.",
-                href: "/day-and-night-shift-commercial-cleaning-services-central-ma"
+                href: "/office-cleaning"
               },
               {
                 icon: Users,
                 title: "Day Porter Services",
                 desc: "On-site daytime staff who handle restocking, spot-cleaning, restroom checks, and light maintenance while your facility is open and in use.",
-                href: "/day-and-night-shift-commercial-cleaning-services-central-ma"
+                href: "/office-cleaning"
               },
               {
                 icon: Sparkles,

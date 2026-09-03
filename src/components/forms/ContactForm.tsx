@@ -195,8 +195,8 @@ export function ContactForm() {
               >
                 <option value="">Select a service...</option>
                 <option value="Janitorial Services">Janitorial Services</option>
+                <option value="Office Cleaning">Office Cleaning</option>
                 <option value="Medical Office Cleaning">Medical Office Cleaning</option>
-                <option value="Night & Day Cleaning">Night & Day Cleaning</option>
                 <option value="Floor Care Services">Floor Care Services</option>
                 <option value="Deep Cleaning">Deep Cleaning</option>
                 <option value="Flood Cleanup">Flood Cleanup</option>
