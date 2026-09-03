@@ -4,7 +4,7 @@ const STATS = [
   { value: "97%", label: "Client retention", description: "your cleaning team stays consistent, year after year" },
   { value: "23+ yrs", label: "Serving Central MA since 2003", description: "owner-accountable, never outsourced" },
   { value: "24/7", label: "Emergency Response", description: "water, mold & emergency cleanup division" },
-  { value: "BBB", label: "Accredited since 2007", description: "18+ years of verified trust" },
+  { value: "BBB - A+ Rating", label: "Accredited since 2007", description: "18+ years of verified trust" },
   { value: "In-house", label: "Dedicated Teams", description: "No subcontractors used" },
 ]
 
@@ -21,7 +21,14 @@ export function StatsBanner() {
         <div className="grid grid-cols-2 lg:grid-cols-5 gap-8 md:gap-6">
           {STATS.map((stat, idx) => (
             <div key={idx} className="flex flex-col items-center justify-start text-center space-y-2">
-              <span className="text-3xl md:text-4xl font-black tracking-tight" style={{ color: "#00B8FF" }}>
+              <span 
+                className={`font-black tracking-tight whitespace-nowrap ${
+                  stat.value.length > 8 
+                    ? "text-xl sm:text-2xl lg:text-3xl" 
+                    : "text-3xl md:text-4xl"
+                }`} 
+                style={{ color: "#00B8FF" }}
+              >
                 {stat.value}
               </span>
               <div className="flex flex-col gap-1">

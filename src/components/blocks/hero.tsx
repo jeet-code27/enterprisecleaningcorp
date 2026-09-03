@@ -81,9 +81,8 @@ export const Hero = () => {
                 backgroundClip: "text",
               }}
             >
-              Commercial Cleaning Services,
+              Commercial Cleaning Company
             </span>
-            <br className="hidden sm:inline" /> Day &amp; Night Cleaning Company
           </h1>
         </motion.div>
 
