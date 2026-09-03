@@ -19,16 +19,16 @@ const SLIDES = [
     href: "/janitorial-services",
   },
   {
+    id: "slide-office",
+    title: "Office Cleaning",
+    imageUrl: "/images/office_cleaning_services_hero.jpg",
+    href: "/office-cleaning",
+  },
+  {
     id: "slide-medical",
     title: "Medical Office Cleaning",
     imageUrl: "/images/medical_office_cleaning_hero.jpg",
     href: "/medical-office-cleaning",
-  },
-  {
-    id: "slide-1",
-    title: "Office Cleaning",
-    imageUrl: "/images/office_cleaning_services_hero.jpg",
-    href: "/office-cleaning",
   },
   {
     id: "slide-2",

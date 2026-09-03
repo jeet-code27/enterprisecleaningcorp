@@ -3,9 +3,9 @@ import { Sparkles, Building2, Droplets, SprayCan, Wind, ArrowRight } from "lucid
 
 export const ALL_SERVICES = [
   { id: "janitorial", title: "Janitorial Services", href: "/janitorial-services", icon: Building2 },
-  { id: "medical", title: "Medical Office Cleaning", href: "/medical-office-cleaning", icon: Building2 },
   { id: "office", title: "Office Cleaning", href: "/office-cleaning", icon: Building2 },
   { id: "nightly", title: "Office Cleaning", href: "/office-cleaning", icon: Building2 },
+  { id: "medical", title: "Medical Office Cleaning", href: "/medical-office-cleaning", icon: Building2 },
   { id: "floor", title: "Floor Care Services", href: "/floor-care-services-central-ma", icon: Sparkles },
   { id: "specialty", title: "Deep Cleaning", href: "/specialty-cleaning-services-central-ma", icon: Sparkles },
   { id: "emergency", title: "Flood Cleanup", href: "/emergency-restoration-services-central-ma", icon: Wind },

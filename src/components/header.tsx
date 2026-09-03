@@ -32,16 +32,16 @@ const coreServices = [
     icon: Building2,
   },
   {
-    title: "Medical Office Cleaning",
-    description: "Clinical-grade cleaning and hospital-standard disinfection.",
-    href: "/medical-office-cleaning",
-    icon: Stethoscope,
-  },
-  {
     title: "Office Cleaning",
     description: "Tailored daytime porters and nightly crews for corporate workplaces.",
     href: "/office-cleaning",
     icon: Briefcase,
+  },
+  {
+    title: "Medical Office Cleaning",
+    description: "Clinical-grade cleaning and hospital-standard disinfection.",
+    href: "/medical-office-cleaning",
+    icon: Stethoscope,
   },
   {
     title: "Floor Care Services",

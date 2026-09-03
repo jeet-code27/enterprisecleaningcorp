@@ -67,10 +67,10 @@ export function Footer() {
                 <Link href="/janitorial-services" className="hover:text-white/60 transition-colors">Janitorial Services</Link>
               </li>
               <li>
-                <Link href="/medical-office-cleaning" className="hover:text-white/60 transition-colors">Medical Office Cleaning</Link>
+                <Link href="/office-cleaning" className="hover:text-white/60 transition-colors">Office Cleaning</Link>
               </li>
               <li>
-                <Link href="/office-cleaning" className="hover:text-white/60 transition-colors">Office Cleaning</Link>
+                <Link href="/medical-office-cleaning" className="hover:text-white/60 transition-colors">Medical Office Cleaning</Link>
               </li>
               <li>
                 <Link href="/floor-care-services-central-ma" className="hover:text-white/60 transition-colors">Floor Care Services</Link>
