@@ -415,52 +415,80 @@ export default function JanitorialServicesPage() {
               {
                 icon: Droplets,
                 title: "Restroom Care",
-                desc: "Restroom cleaning, disinfecting, and consumable restocking built into every route."
+                desc: "Restroom cleaning, disinfecting, and consumable restocking built into every route.",
+                blogUrl: "/blog/commercial-restroom-cleaning-massachusetts-businesses",
+                blogLabel: "Read Restroom Guide"
               },
               {
                 icon: Trash2,
                 title: "Trash & Recycling",
-                desc: "Trash and recycling removal from offices, break rooms, and common areas."
+                desc: "Trash and recycling removal from offices, break rooms, and common areas.",
+                blogUrl: "/blog/workplace-trash-recycling-services-massachusetts",
+                blogLabel: "Read Recycling Guide"
               },
               {
                 icon: SprayCan,
                 title: "High-Touch Disinfection",
-                desc: "High touch point disinfection on handles, switches, rails, and shared surfaces."
+                desc: "High touch point disinfection on handles, switches, rails, and shared surfaces.",
+                blogUrl: "/blog/high-touch-disinfecting-services-massachusetts",
+                blogLabel: "Read Disinfection Guide"
               },
               {
                 icon: Sparkles,
                 title: "Floor Maintenance",
-                desc: "Vacuuming, sweeping, and damp mopping with fresh solution every time."
+                desc: "Vacuuming, sweeping, and damp mopping with fresh solution every time.",
+                blogUrl: "/blog/commercial-carpet-cleaning-worcester-ma",
+                blogLabel: "Read Carpet & Floor Guide"
               },
               {
                 icon: Building2,
                 title: "Break Rooms & Kitchens",
-                desc: "Break room and kitchen sanitation, sanitizing counters, sinks, and appliance exteriors."
+                desc: "Break room and kitchen sanitation, sanitizing counters, sinks, and appliance exteriors.",
+                blogUrl: "/blog/commercial-breakroom-workplace-kitchen-cleaning-massachusetts",
+                blogLabel: "Read Breakroom Guide"
               },
               {
                 icon: ShieldCheck,
                 title: "Entryway & Lobby Care",
-                desc: "Entryway and lobby care, including matting, glass detailing, and first-impression zones."
+                desc: "Entryway and lobby care, including matting, glass detailing, and first-impression zones.",
+                blogUrl: "/blog/commercial-entryway-lobby-cleaning-massachusetts",
+                blogLabel: "Read Lobby Care Guide"
               },
               {
                 icon: Users,
                 title: "Day Porter Coverage",
-                desc: "Day porter coverage during business hours where the building needs it for high-traffic daytime support."
+                desc: "Day porter coverage during business hours where the building needs it for high-traffic daytime support.",
+                blogUrl: "/blog/day-porter-services",
+                blogLabel: "Read Day Porter Guide"
               },
               {
                 icon: CalendarCheck,
                 title: "Periodic Floor Care",
-                desc: "Periodic floor care: stripping, waxing, buffing, and carpet extraction on an established schedule."
+                desc: "Periodic floor care: stripping, waxing, buffing, and carpet extraction on an established schedule.",
+                blogUrl: "/blog/vct-floor-stripping-and-waxing",
+                blogLabel: "Read VCT Strip & Wax Guide"
               }
             ].map((service, index) => {
               const Icon = service.icon;
               return (
-                <div key={index} className="bg-white p-6 rounded-2xl shadow-sm border border-slate-100 hover:shadow-md hover:border-[#00B8FF]/40 transition-all">
-                  <div className="w-12 h-12 rounded-xl bg-[#0090c8]/10 flex items-center justify-center mb-4 text-[#0090c8]">
-                    <Icon className="w-6 h-6" />
+                <div key={index} className="bg-white p-6 rounded-2xl shadow-sm border border-slate-100 hover:shadow-md hover:border-[#00B8FF]/40 transition-all flex flex-col justify-between group">
+                  <div>
+                    <div className="w-12 h-12 rounded-xl bg-[#0090c8]/10 flex items-center justify-center mb-4 text-[#0090c8]">
+                      <Icon className="w-6 h-6" />
+                    </div>
+                    <h3 className="text-lg font-bold text-slate-900 mb-2">{service.title}</h3>
+                    <p className="text-sm text-slate-600 leading-relaxed font-medium">{service.desc}</p>
                   </div>
-                  <h3 className="text-lg font-bold text-slate-900 mb-2">{service.title}</h3>
-                  <p className="text-sm text-slate-600 leading-relaxed font-medium">{service.desc}</p>
+                  {service.blogUrl && (
+                    <div className="pt-4 mt-3 border-t border-slate-100">
+                      <Link 
+                        href={service.blogUrl}
+                        className="inline-flex items-center gap-1 text-xs font-bold text-[#0090c8] hover:text-[#003057] transition-colors group-hover:translate-x-1 duration-200"
+                      >
+                        {service.blogLabel} <ArrowRight className="w-3.5 h-3.5" />
+                      </Link>
+                    </div>
+                  )}
                 </div>
               );
             })}

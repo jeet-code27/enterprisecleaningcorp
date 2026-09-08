@@ -205,22 +205,75 @@ export default function OfficeCleaningPage() {
 
           <div className="grid md:grid-cols-2 gap-x-12 gap-y-8 max-w-6xl mx-auto">
             {[
-              { icon: Laptop, text: "Workstation, office, and cubicle cleaning and dusting." },
-              { icon: Users, text: "Conference and meeting room cleaning and reset." },
-              { icon: Building2, text: "Reception, lobby, and client-facing area detailing." },
-              { icon: ShieldCheck, text: "Restroom cleaning, sanitizing, and restocking." },
-              { icon: Coffee, text: "Breakroom and kitchen cleaning." },
-              { icon: SprayCan, text: "Disinfecting of high-touch surfaces and shared equipment." },
-              { icon: Sparkles, text: "Carpet and hard-floor care." },
-              { icon: Clock, text: "Day porter coverage for client-facing financial branches." },
+              { 
+                icon: Laptop, 
+                text: "Workstation, office, and cubicle cleaning and surface dusting.",
+                blogUrl: "/blog/commercial-surface-dusting-massachusetts",
+                blogLabel: "Surface Dusting Guide"
+              },
+              { 
+                icon: Users, 
+                text: "Conference and meeting room cleaning, trash removal, and reset.",
+                blogUrl: "/blog/office-cleaning-services-massachusetts-rhode-island-new-hampshire",
+                blogLabel: "Office Cleaning Guide"
+              },
+              { 
+                icon: Building2, 
+                text: "Reception, lobby, and client-facing area detailing and glass cleaning.",
+                blogUrl: "/blog/commercial-entryway-lobby-cleaning-massachusetts",
+                blogLabel: "Lobby & Glass Guide"
+              },
+              { 
+                icon: ShieldCheck, 
+                text: "Restroom cleaning, sanitizing, and consumable restocking.",
+                blogUrl: "/blog/commercial-restroom-cleaning-massachusetts-businesses",
+                blogLabel: "Restroom Care Guide"
+              },
+              { 
+                icon: Coffee, 
+                text: "Breakroom and workplace kitchen cleaning and appliance care.",
+                blogUrl: "/blog/commercial-breakroom-workplace-kitchen-cleaning-massachusetts",
+                blogLabel: "Breakroom Guide"
+              },
+              { 
+                icon: SprayCan, 
+                text: "Disinfecting of high-touch surfaces, door handles, and shared equipment.",
+                blogUrl: "/blog/high-touch-disinfecting-services-massachusetts",
+                blogLabel: "Disinfection Guide"
+              },
+              { 
+                icon: Sparkles, 
+                text: "Carpet steam extraction and resilient hard-floor maintenance.",
+                blogUrl: "/blog/commercial-carpet-cleaning-worcester-ma",
+                blogLabel: "Carpet & Floor Guide"
+              },
+              { 
+                icon: Clock, 
+                text: "Day porter coverage for client-facing financial branches and corporate suites.",
+                blogUrl: "/blog/day-porter-services",
+                blogLabel: "Day Porter Guide"
+              },
             ].map((item, idx) => (
-              <div key={idx} className="flex items-start gap-4 p-6 rounded-2xl bg-slate-50 hover:bg-[#0090c8]/5 transition-colors border border-slate-100 hover:border-[#0090c8]/30 group">
-                <div className="w-14 h-14 rounded-full bg-white shadow-sm flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform">
-                  <item.icon className="w-6 h-6 text-[#0090c8]" />
+              <div key={idx} className="flex flex-col justify-between p-6 rounded-2xl bg-slate-50 hover:bg-[#0090c8]/5 transition-colors border border-slate-100 hover:border-[#0090c8]/30 group">
+                <div className="flex items-start gap-4">
+                  <div className="w-14 h-14 rounded-full bg-white shadow-sm flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform">
+                    <item.icon className="w-6 h-6 text-[#0090c8]" />
+                  </div>
+                  <p className="text-slate-700 font-medium leading-relaxed pt-2 text-left">
+                    {item.text}
+                  </p>
                 </div>
-                <p className="text-slate-700 font-medium leading-relaxed pt-3 text-left">
-                  {item.text}
-                </p>
+                {item.blogUrl && (
+                  <div className="pt-3 mt-3 border-t border-slate-200/60 ml-[72px]">
+                    <Link
+                      href={item.blogUrl}
+                      className="inline-flex items-center text-xs font-bold text-[#0090c8] hover:text-[#003057] transition-colors gap-1.5"
+                    >
+                      <span>{item.blogLabel}</span>
+                      <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform" />
+                    </Link>
+                  </div>
+                )}
               </div>
             ))}
           </div>

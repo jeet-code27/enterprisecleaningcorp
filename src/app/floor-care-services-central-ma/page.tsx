@@ -160,9 +160,25 @@ export default function FloorCarePage() {
                   Enterprise Cleaning Corporation provides complete commercial floor care across Central Massachusetts, from routine maintenance to full refinishing. Whether you manage a corporate office, a medical facility, a school, a retail space, or a warehouse, we protect your flooring investment and keep it looking its best.
                 </p>
               </div>
+
+              {/* Action Buttons */}
+              <div className="flex flex-wrap items-center gap-4 pt-2">
+                <Link 
+                  href="/contact" 
+                  className="inline-flex items-center gap-2 bg-[#FFE800] text-slate-900 font-extrabold px-7 py-3.5 rounded-full hover:bg-yellow-300 transition-all shadow-xl hover:scale-105 text-sm md:text-base"
+                >
+                  Book a Walkthrough <ArrowRight className="w-4 h-4" />
+                </Link>
+                <a 
+                  href="tel:5088901000" 
+                  className="inline-flex items-center gap-2 bg-white/15 hover:bg-white/25 backdrop-blur-md text-white font-bold px-6 py-3.5 rounded-full border border-white/30 transition-all text-sm md:text-base"
+                >
+                  <PhoneCall className="w-4 h-4 text-[#FFE800]" /> (508) 890-1000
+                </a>
+              </div>
               
               {/* Bottom Stats Row */}
-              <div className="grid grid-cols-2 md:grid-cols-4 gap-6 pt-12 mt-auto border-t border-white/30">
+              <div className="grid grid-cols-2 md:grid-cols-4 gap-6 pt-8 mt-auto border-t border-white/30">
                 <div className="flex items-center gap-3">
                   <Clock className="w-8 h-8 text-[#FFE800]" />
                   <div>
@@ -227,30 +243,63 @@ export default function FloorCarePage() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-7xl mx-auto">
             {/* Card 1 */}
-            <div className="bg-white p-8 rounded-3xl shadow-sm border border-slate-100 text-center hover:shadow-xl hover:border-[#00B8FF]/30 transition-all duration-300 group">
-              <div className="mx-auto w-16 h-16 rounded-2xl bg-slate-50 group-hover:bg-[#00B8FF]/10 transition-colors flex items-center justify-center mb-6">
-                <Layers className="w-8 h-8 text-[#00B8FF]" strokeWidth={1.5} />
+            <div className="bg-white p-8 rounded-3xl shadow-sm border border-slate-100 text-center hover:shadow-xl hover:border-[#00B8FF]/30 transition-all duration-300 group flex flex-col justify-between">
+              <div>
+                <div className="mx-auto w-16 h-16 rounded-2xl bg-slate-50 group-hover:bg-[#00B8FF]/10 transition-colors flex items-center justify-center mb-6">
+                  <Layers className="w-8 h-8 text-[#00B8FF]" strokeWidth={1.5} />
+                </div>
+                <h3 className="text-lg font-bold text-slate-900 mb-3">Strip & Wax</h3>
+                <p className="text-sm text-slate-600 leading-relaxed text-left mb-4">Strip and wax of VCT and resilient tile — removing old finish and rebuilding a deep, durable shine.</p>
               </div>
-              <h3 className="text-lg font-bold text-slate-900 mb-3">Strip & Wax</h3>
-              <p className="text-sm text-slate-600 leading-relaxed text-left">Strip and wax of VCT and resilient tile — removing old finish and rebuilding a deep, durable shine</p>
+              <div className="pt-4 border-t border-slate-100 text-left">
+                <Link
+                  href="/blog/vct-floor-stripping-and-waxing"
+                  className="inline-flex items-center text-xs font-bold text-[#0090c8] hover:text-[#003057] transition-colors gap-1.5"
+                >
+                  <span>Strip & Wax Guide</span>
+                  <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform" />
+                </Link>
+              </div>
             </div>
             
             {/* Card 2 */}
-            <div className="bg-white p-8 rounded-3xl shadow-sm border border-slate-100 text-center hover:shadow-xl hover:border-[#00B8FF]/30 transition-all duration-300 group">
-              <div className="mx-auto w-16 h-16 rounded-2xl bg-slate-50 group-hover:bg-[#00B8FF]/10 transition-colors flex items-center justify-center mb-6">
-                <Sparkle className="w-8 h-8 text-[#00B8FF]" strokeWidth={1.5} />
+            <div className="bg-white p-8 rounded-3xl shadow-sm border border-slate-100 text-center hover:shadow-xl hover:border-[#00B8FF]/30 transition-all duration-300 group flex flex-col justify-between">
+              <div>
+                <div className="mx-auto w-16 h-16 rounded-2xl bg-slate-50 group-hover:bg-[#00B8FF]/10 transition-colors flex items-center justify-center mb-6">
+                  <Sparkle className="w-8 h-8 text-[#00B8FF]" strokeWidth={1.5} />
+                </div>
+                <h3 className="text-lg font-bold text-slate-900 mb-3">Scrub & Buff</h3>
+                <p className="text-sm text-slate-600 leading-relaxed text-left mb-4">Floor scrubbing, buffing, and burnishing to maintain gloss between strip-and-wax cycles.</p>
               </div>
-              <h3 className="text-lg font-bold text-slate-900 mb-3">Scrub & Buff</h3>
-              <p className="text-sm text-slate-600 leading-relaxed text-left">Floor scrubbing, buffing, and burnishing to maintain gloss between strip-and-wax cycles</p>
+              <div className="pt-4 border-t border-slate-100 text-left">
+                <Link
+                  href="/blog/vct-floor-stripping-and-waxing"
+                  className="inline-flex items-center text-xs font-bold text-[#0090c8] hover:text-[#003057] transition-colors gap-1.5"
+                >
+                  <span>Maintenance Guide</span>
+                  <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform" />
+                </Link>
+              </div>
             </div>
 
             {/* Card 3 */}
-            <div className="bg-white p-8 rounded-3xl shadow-sm border border-slate-100 text-center hover:shadow-xl hover:border-[#00B8FF]/30 transition-all duration-300 group">
-              <div className="mx-auto w-16 h-16 rounded-2xl bg-slate-50 group-hover:bg-[#00B8FF]/10 transition-colors flex items-center justify-center mb-6">
-                <Droplets className="w-8 h-8 text-[#00B8FF]" strokeWidth={1.5} />
+            <div className="bg-white p-8 rounded-3xl shadow-sm border border-slate-100 text-center hover:shadow-xl hover:border-[#00B8FF]/30 transition-all duration-300 group flex flex-col justify-between">
+              <div>
+                <div className="mx-auto w-16 h-16 rounded-2xl bg-slate-50 group-hover:bg-[#00B8FF]/10 transition-colors flex items-center justify-center mb-6">
+                  <Droplets className="w-8 h-8 text-[#00B8FF]" strokeWidth={1.5} />
+                </div>
+                <h3 className="text-lg font-bold text-slate-900 mb-3">Carpet Care</h3>
+                <p className="text-sm text-slate-600 leading-relaxed text-left mb-4">Carpet cleaning, hot-water extraction, and spot treatment for high-traffic facilities.</p>
               </div>
-              <h3 className="text-lg font-bold text-slate-900 mb-3">Carpet Care</h3>
-              <p className="text-sm text-slate-600 leading-relaxed text-left">Carpet cleaning, hot-water extraction, and spot treatment</p>
+              <div className="pt-4 border-t border-slate-100 text-left">
+                <Link
+                  href="/blog/commercial-carpet-cleaning-worcester-ma"
+                  className="inline-flex items-center text-xs font-bold text-[#0090c8] hover:text-[#003057] transition-colors gap-1.5"
+                >
+                  <span>Carpet Cleaning Guide</span>
+                  <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform" />
+                </Link>
+              </div>
             </div>
 
             {/* Card 4 */}
@@ -281,12 +330,23 @@ export default function FloorCarePage() {
             </div>
 
             {/* Card 7 */}
-            <div className="bg-white p-8 rounded-3xl shadow-sm border border-slate-100 text-center hover:shadow-xl hover:border-[#00B8FF]/30 transition-all duration-300 group">
-              <div className="mx-auto w-16 h-16 rounded-2xl bg-slate-50 group-hover:bg-[#00B8FF]/10 transition-colors flex items-center justify-center mb-6">
-                <ShieldAlert className="w-8 h-8 text-[#00B8FF]" strokeWidth={1.5} />
+            <div className="bg-white p-8 rounded-3xl shadow-sm border border-slate-100 text-center hover:shadow-xl hover:border-[#00B8FF]/30 transition-all duration-300 group flex flex-col justify-between">
+              <div>
+                <div className="mx-auto w-16 h-16 rounded-2xl bg-slate-50 group-hover:bg-[#00B8FF]/10 transition-colors flex items-center justify-center mb-6">
+                  <ShieldAlert className="w-8 h-8 text-[#00B8FF]" strokeWidth={1.5} />
+                </div>
+                <h3 className="text-lg font-bold text-slate-900 mb-3">Entryway Care</h3>
+                <p className="text-sm text-slate-600 leading-relaxed text-left mb-4">Entryway and walk-off matting care to protect floors from tracked-in soil and New England salt.</p>
               </div>
-              <h3 className="text-lg font-bold text-slate-900 mb-3">Entryway Care</h3>
-              <p className="text-sm text-slate-600 leading-relaxed text-left">Entryway and walk-off matting care to protect floors from tracked-in soil</p>
+              <div className="pt-4 border-t border-slate-100 text-left">
+                <Link
+                  href="/blog/commercial-entryway-lobby-cleaning-massachusetts"
+                  className="inline-flex items-center text-xs font-bold text-[#0090c8] hover:text-[#003057] transition-colors gap-1.5"
+                >
+                  <span>Entryway Care Guide</span>
+                  <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform" />
+                </Link>
+              </div>
             </div>
             
             {/* Card 8 (Placeholder to keep grid even) */}

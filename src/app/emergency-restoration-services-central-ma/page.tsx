@@ -163,9 +163,25 @@ export default function EmergencyRestorationPage() {
                   Having a dedicated emergency division sets us apart from most cleaning companies. The same trusted, local team that keeps your building clean can also be the team you call when something goes wrong.
                 </p>
               </div>
+
+              {/* Action Buttons */}
+              <div className="flex flex-wrap items-center gap-4 pt-2">
+                <Link 
+                  href="/contact" 
+                  className="inline-flex items-center gap-2 bg-[#FFE800] text-slate-900 font-extrabold px-7 py-3.5 rounded-full hover:bg-yellow-300 transition-all shadow-xl hover:scale-105 text-sm md:text-base"
+                >
+                  Request Emergency Service <ArrowRight className="w-4 h-4" />
+                </Link>
+                <a 
+                  href="tel:5088901000" 
+                  className="inline-flex items-center gap-2 bg-white/15 hover:bg-white/25 backdrop-blur-md text-white font-bold px-6 py-3.5 rounded-full border border-white/30 transition-all text-sm md:text-base"
+                >
+                  <PhoneCall className="w-4 h-4 text-[#FFE800]" /> 24/7 Hotline: (508) 890-1000
+                </a>
+              </div>
               
               {/* Bottom Stats Row */}
-              <div className="grid grid-cols-2 md:grid-cols-4 gap-6 pt-12 mt-auto border-t border-white/30">
+              <div className="grid grid-cols-2 md:grid-cols-4 gap-6 pt-8 mt-auto border-t border-white/30">
                 <div className="flex items-center gap-3">
                   <Activity className="w-8 h-8 text-[#E31837]" />
                   <div>
@@ -234,12 +250,23 @@ export default function EmergencyRestorationPage() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-7xl mx-auto">
             {/* Card 1 */}
-            <div className="bg-white p-8 rounded-3xl shadow-sm border border-slate-100 text-center hover:shadow-xl hover:border-[#00B8FF]/30 transition-all duration-300 group">
-              <div className="mx-auto w-16 h-16 rounded-2xl bg-slate-50 group-hover:bg-[#00B8FF]/10 transition-colors flex items-center justify-center mb-6">
-                <Droplets className="w-8 h-8 text-[#00B8FF]" strokeWidth={1.5} />
+            <div className="bg-white p-8 rounded-3xl shadow-sm border border-slate-100 text-center hover:shadow-xl hover:border-[#00B8FF]/30 transition-all duration-300 group flex flex-col justify-between">
+              <div>
+                <div className="mx-auto w-16 h-16 rounded-2xl bg-slate-50 group-hover:bg-[#00B8FF]/10 transition-colors flex items-center justify-center mb-6">
+                  <Droplets className="w-8 h-8 text-[#00B8FF]" strokeWidth={1.5} />
+                </div>
+                <h3 className="text-lg font-bold text-slate-900 mb-3">Water & Flood</h3>
+                <p className="text-sm text-slate-600 leading-relaxed text-left mb-4">Water and flood damage cleanup, extraction, and structural drying to stop damage in its tracks.</p>
               </div>
-              <h3 className="text-lg font-bold text-slate-900 mb-3">Water & Flood</h3>
-              <p className="text-sm text-slate-600 leading-relaxed text-left">Water and flood damage cleanup, extraction, and structural drying to stop damage in its tracks.</p>
+              <div className="pt-4 border-t border-slate-100 text-left">
+                <Link
+                  href="/blog/commercial-carpet-cleaning-worcester-ma"
+                  className="inline-flex items-center text-xs font-bold text-[#0090c8] hover:text-[#003057] transition-colors gap-1.5"
+                >
+                  <span>Water Extraction Guide</span>
+                  <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform" />
+                </Link>
+              </div>
             </div>
             
             {/* Card 3 */}
@@ -262,12 +289,23 @@ export default function EmergencyRestorationPage() {
             </div>
 
             {/* Card 6 */}
-            <div className="bg-white p-8 rounded-3xl shadow-sm border border-slate-100 text-center hover:shadow-xl hover:border-[#00B8FF]/30 transition-all duration-300 group">
-              <div className="mx-auto w-16 h-16 rounded-2xl bg-slate-50 group-hover:bg-[#00B8FF]/10 transition-colors flex items-center justify-center mb-6">
-                <CheckCircle2 className="w-8 h-8 text-[#00B8FF]" strokeWidth={1.5} />
+            <div className="bg-white p-8 rounded-3xl shadow-sm border border-slate-100 text-center hover:shadow-xl hover:border-[#00B8FF]/30 transition-all duration-300 group flex flex-col justify-between">
+              <div>
+                <div className="mx-auto w-16 h-16 rounded-2xl bg-slate-50 group-hover:bg-[#00B8FF]/10 transition-colors flex items-center justify-center mb-6">
+                  <CheckCircle2 className="w-8 h-8 text-[#00B8FF]" strokeWidth={1.5} />
+                </div>
+                <h3 className="text-lg font-bold text-slate-900 mb-3">Post-Emergency Cleanup</h3>
+                <p className="text-sm text-slate-600 leading-relaxed text-left mb-4">Post-emergency deep cleaning, high-touch disinfection, and sanitization to fully normalize operations.</p>
               </div>
-              <h3 className="text-lg font-bold text-slate-900 mb-3">Post-Emergency Cleanup</h3>
-              <p className="text-sm text-slate-600 leading-relaxed text-left">Post-emergency deep cleaning and reconstruction support to fully normalize your operations.</p>
+              <div className="pt-4 border-t border-slate-100 text-left">
+                <Link
+                  href="/blog/high-touch-disinfecting-services-massachusetts"
+                  className="inline-flex items-center text-xs font-bold text-[#0090c8] hover:text-[#003057] transition-colors gap-1.5"
+                >
+                  <span>Disinfection Guide</span>
+                  <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform" />
+                </Link>
+              </div>
             </div>
 
             {/* Card 7 */}

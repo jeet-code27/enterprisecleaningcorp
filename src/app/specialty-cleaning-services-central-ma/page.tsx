@@ -161,9 +161,25 @@ export default function SpecialtyCleaningPage() {
                   One of our greatest strengths is doing more than traditional janitorial work. Many of our best clients began with a recurring cleaning contract and later expanded into specialty projects — because once you have a cleaning partner you trust, it makes sense to give them everything. Our specialty division means you do not have to source, vet, and schedule a separate vendor for every project.
                 </p>
               </div>
+
+              {/* Action Buttons */}
+              <div className="flex flex-wrap items-center gap-4 pt-2">
+                <Link 
+                  href="/contact" 
+                  className="inline-flex items-center gap-2 bg-[#FFE800] text-slate-900 font-extrabold px-7 py-3.5 rounded-full hover:bg-yellow-300 transition-all shadow-xl hover:scale-105 text-sm md:text-base"
+                >
+                  Book a Walkthrough <ArrowRight className="w-4 h-4" />
+                </Link>
+                <a 
+                  href="tel:5088901000" 
+                  className="inline-flex items-center gap-2 bg-white/15 hover:bg-white/25 backdrop-blur-md text-white font-bold px-6 py-3.5 rounded-full border border-white/30 transition-all text-sm md:text-base"
+                >
+                  <PhoneCall className="w-4 h-4 text-[#FFE800]" /> (508) 890-1000
+                </a>
+              </div>
               
               {/* Bottom Stats Row */}
-              <div className="grid grid-cols-2 md:grid-cols-4 gap-6 pt-12 mt-auto border-t border-white/30">
+              <div className="grid grid-cols-2 md:grid-cols-4 gap-6 pt-8 mt-auto border-t border-white/30">
                 <div className="flex items-center gap-3">
                   <Clock className="w-8 h-8 text-[#FFE800]" />
                   <div>
@@ -228,12 +244,23 @@ export default function SpecialtyCleaningPage() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-7xl mx-auto">
             {/* Card 1 */}
-            <div className="bg-white p-8 rounded-3xl shadow-sm border border-slate-100 text-center hover:shadow-xl hover:border-[#00B8FF]/30 transition-all duration-300 group">
-              <div className="mx-auto w-16 h-16 rounded-2xl bg-slate-50 group-hover:bg-[#00B8FF]/10 transition-colors flex items-center justify-center mb-6">
-                <Droplets className="w-8 h-8 text-[#00B8FF]" strokeWidth={1.5} />
+            <div className="bg-white p-8 rounded-3xl shadow-sm border border-slate-100 text-center hover:shadow-xl hover:border-[#00B8FF]/30 transition-all duration-300 group flex flex-col justify-between">
+              <div>
+                <div className="mx-auto w-16 h-16 rounded-2xl bg-slate-50 group-hover:bg-[#00B8FF]/10 transition-colors flex items-center justify-center mb-6">
+                  <Droplets className="w-8 h-8 text-[#00B8FF]" strokeWidth={1.5} />
+                </div>
+                <h3 className="text-lg font-bold text-slate-900 mb-3">Window Cleaning</h3>
+                <p className="text-sm text-slate-600 leading-relaxed text-left mb-4">Interior and exterior commercial window cleaning for offices, storefronts, medical buildings, and multi-tenant properties. Streak-free glass, clean frames and sills, and safe technique are standard.</p>
               </div>
-              <h3 className="text-lg font-bold text-slate-900 mb-3">Window Cleaning</h3>
-              <p className="text-sm text-slate-600 leading-relaxed text-left">Interior and exterior commercial window cleaning for offices, storefronts, medical buildings, and multi-tenant properties. Streak-free glass, clean frames and sills, and safe technique are standard.</p>
+              <div className="pt-4 border-t border-slate-100 text-left">
+                <Link
+                  href="/blog/commercial-window-cleaning-massachusetts"
+                  className="inline-flex items-center text-xs font-bold text-[#0090c8] hover:text-[#003057] transition-colors gap-1.5"
+                >
+                  <span>Window Cleaning Guide</span>
+                  <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform" />
+                </Link>
+              </div>
             </div>
             
             {/* Card 2 */}
@@ -246,30 +273,63 @@ export default function SpecialtyCleaningPage() {
             </div>
 
             {/* Card 3 */}
-            <div className="bg-white p-8 rounded-3xl shadow-sm border border-slate-100 text-center hover:shadow-xl hover:border-[#00B8FF]/30 transition-all duration-300 group">
-              <div className="mx-auto w-16 h-16 rounded-2xl bg-slate-50 group-hover:bg-[#00B8FF]/10 transition-colors flex items-center justify-center mb-6">
-                <Hammer className="w-8 h-8 text-[#00B8FF]" strokeWidth={1.5} />
+            <div className="bg-white p-8 rounded-3xl shadow-sm border border-slate-100 text-center hover:shadow-xl hover:border-[#00B8FF]/30 transition-all duration-300 group flex flex-col justify-between">
+              <div>
+                <div className="mx-auto w-16 h-16 rounded-2xl bg-slate-50 group-hover:bg-[#00B8FF]/10 transition-colors flex items-center justify-center mb-6">
+                  <Hammer className="w-8 h-8 text-[#00B8FF]" strokeWidth={1.5} />
+                </div>
+                <h3 className="text-lg font-bold text-slate-900 mb-3">Post-Construction</h3>
+                <p className="text-sm text-slate-600 leading-relaxed text-left mb-4">Post-construction and post-renovation cleaning to prepare your facility for occupancy or normal operations.</p>
               </div>
-              <h3 className="text-lg font-bold text-slate-900 mb-3">Post-Construction</h3>
-              <p className="text-sm text-slate-600 leading-relaxed text-left">Post-construction and post-renovation cleaning to prepare your facility for occupancy or normal operations.</p>
+              <div className="pt-4 border-t border-slate-100 text-left">
+                <Link
+                  href="/blog/post-construction-cleaning-marlborough-495-corridor"
+                  className="inline-flex items-center text-xs font-bold text-[#0090c8] hover:text-[#003057] transition-colors gap-1.5"
+                >
+                  <span>Construction Cleaning Guide</span>
+                  <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform" />
+                </Link>
+              </div>
             </div>
 
             {/* Card 4 */}
-            <div className="bg-white p-8 rounded-3xl shadow-sm border border-slate-100 text-center hover:shadow-xl hover:border-[#00B8FF]/30 transition-all duration-300 group">
-              <div className="mx-auto w-16 h-16 rounded-2xl bg-slate-50 group-hover:bg-[#00B8FF]/10 transition-colors flex items-center justify-center mb-6">
-                <Wind className="w-8 h-8 text-[#00B8FF]" strokeWidth={1.5} />
+            <div className="bg-white p-8 rounded-3xl shadow-sm border border-slate-100 text-center hover:shadow-xl hover:border-[#00B8FF]/30 transition-all duration-300 group flex flex-col justify-between">
+              <div>
+                <div className="mx-auto w-16 h-16 rounded-2xl bg-slate-50 group-hover:bg-[#00B8FF]/10 transition-colors flex items-center justify-center mb-6">
+                  <Wind className="w-8 h-8 text-[#00B8FF]" strokeWidth={1.5} />
+                </div>
+                <h3 className="text-lg font-bold text-slate-900 mb-3">High Dusting</h3>
+                <p className="text-sm text-slate-600 leading-relaxed text-left mb-4">High dusting of vents, fixtures, and overhead structures that are typically out of reach.</p>
               </div>
-              <h3 className="text-lg font-bold text-slate-900 mb-3">High Dusting</h3>
-              <p className="text-sm text-slate-600 leading-relaxed text-left">High dusting of vents, fixtures, and overhead structures that are typically out of reach.</p>
+              <div className="pt-4 border-t border-slate-100 text-left">
+                <Link
+                  href="/blog/commercial-surface-dusting-massachusetts"
+                  className="inline-flex items-center text-xs font-bold text-[#0090c8] hover:text-[#003057] transition-colors gap-1.5"
+                >
+                  <span>Surface Dusting Guide</span>
+                  <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform" />
+                </Link>
+              </div>
             </div>
 
             {/* Card 5 */}
-            <div className="bg-white p-8 rounded-3xl shadow-sm border border-slate-100 text-center hover:shadow-xl hover:border-[#00B8FF]/30 transition-all duration-300 group">
-              <div className="mx-auto w-16 h-16 rounded-2xl bg-slate-50 group-hover:bg-[#00B8FF]/10 transition-colors flex items-center justify-center mb-6">
-                <Sparkles className="w-8 h-8 text-[#00B8FF]" strokeWidth={1.5} />
+            <div className="bg-white p-8 rounded-3xl shadow-sm border border-slate-100 text-center hover:shadow-xl hover:border-[#00B8FF]/30 transition-all duration-300 group flex flex-col justify-between">
+              <div>
+                <div className="mx-auto w-16 h-16 rounded-2xl bg-slate-50 group-hover:bg-[#00B8FF]/10 transition-colors flex items-center justify-center mb-6">
+                  <Sparkles className="w-8 h-8 text-[#00B8FF]" strokeWidth={1.5} />
+                </div>
+                <h3 className="text-lg font-bold text-slate-900 mb-3">Zone Deep Cleaning</h3>
+                <p className="text-sm text-slate-600 leading-relaxed text-left mb-4">Deep cleaning of breakrooms, kitchens, and high-touch zones that require extra attention.</p>
               </div>
-              <h3 className="text-lg font-bold text-slate-900 mb-3">Zone Deep Cleaning</h3>
-              <p className="text-sm text-slate-600 leading-relaxed text-left">Deep cleaning of breakrooms, kitchens, and high-touch zones that require extra attention.</p>
+              <div className="pt-4 border-t border-slate-100 text-left">
+                <Link
+                  href="/blog/commercial-breakroom-workplace-kitchen-cleaning-massachusetts"
+                  className="inline-flex items-center text-xs font-bold text-[#0090c8] hover:text-[#003057] transition-colors gap-1.5"
+                >
+                  <span>Breakroom & Kitchen Guide</span>
+                  <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform" />
+                </Link>
+              </div>
             </div>
 
             {/* Card 6 */}

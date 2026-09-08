@@ -205,22 +205,75 @@ export default function MedicalCleaningPage() {
 
           <div className="grid md:grid-cols-2 gap-x-12 gap-y-8 max-w-6xl mx-auto">
             {[
-              { icon: ShieldCheck, text: "Disinfection of high-touch surfaces — door handles, light switches, counters, and shared equipment." },
-              { icon: Activity, text: "Patient area and waiting room cleaning and sanitizing." },
-              { icon: Droplets, text: "Restroom cleaning, sanitizing, and restocking throughout the day." },
-              { icon: Trash2, text: "Proper handling and disposal of general waste streams per facility protocol." },
-              { icon: Sparkles, text: "Floor care suited to medical environments." },
-              { icon: Users, text: "Reception and administrative area janitorial." },
-              { icon: Clock, text: "Day porter coverage to maintain waiting rooms and restrooms during patient hours." },
-              { icon: SprayCan, text: "Color-coded tools and procedures to reduce cross-contamination." },
+              { 
+                icon: ShieldCheck, 
+                text: "Disinfection of high-touch surfaces — door handles, light switches, counters, and shared equipment.",
+                blogUrl: "/blog/high-touch-disinfecting-services-massachusetts",
+                blogLabel: "Disinfection Guide"
+              },
+              { 
+                icon: Activity, 
+                text: "Patient area and waiting room cleaning, air quality, and surface sanitizing.",
+                blogUrl: "/blog/commercial-entryway-lobby-cleaning-massachusetts",
+                blogLabel: "Waiting Area Guide"
+              },
+              { 
+                icon: Droplets, 
+                text: "Restroom cleaning, sanitizing, and restocking throughout the day.",
+                blogUrl: "/blog/commercial-restroom-cleaning-massachusetts-businesses",
+                blogLabel: "Restroom Care Guide"
+              },
+              { 
+                icon: Trash2, 
+                text: "Proper handling and disposal of general waste streams per facility protocol.",
+                blogUrl: "/blog/workplace-trash-recycling-services-massachusetts",
+                blogLabel: "Waste Handling Guide"
+              },
+              { 
+                icon: Sparkles, 
+                text: "Floor care suited to medical environments — scrubbing and sanitization.",
+                blogUrl: "/blog/vct-floor-stripping-and-waxing",
+                blogLabel: "Floor Care Guide"
+              },
+              { 
+                icon: Users, 
+                text: "Reception and administrative area janitorial and surface dusting.",
+                blogUrl: "/blog/commercial-surface-dusting-massachusetts",
+                blogLabel: "Surface Dusting Guide"
+              },
+              { 
+                icon: Clock, 
+                text: "Day porter coverage to maintain waiting rooms and restrooms during patient hours.",
+                blogUrl: "/blog/day-porter-services",
+                blogLabel: "Day Porter Guide"
+              },
+              { 
+                icon: SprayCan, 
+                text: "Color-coded tools and procedures to reduce cross-contamination.",
+                blogUrl: null,
+                blogLabel: null
+              },
             ].map((item, idx) => (
-              <div key={idx} className="flex items-start gap-4 p-6 rounded-2xl bg-slate-50 hover:bg-[#0090c8]/5 transition-colors border border-slate-100 hover:border-[#0090c8]/30 group">
-                <div className="w-14 h-14 rounded-full bg-white shadow-sm flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform">
-                  <item.icon className="w-6 h-6 text-[#0090c8]" />
+              <div key={idx} className="flex flex-col justify-between p-6 rounded-2xl bg-slate-50 hover:bg-[#0090c8]/5 transition-colors border border-slate-100 hover:border-[#0090c8]/30 group">
+                <div className="flex items-start gap-4">
+                  <div className="w-14 h-14 rounded-full bg-white shadow-sm flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform">
+                    <item.icon className="w-6 h-6 text-[#0090c8]" />
+                  </div>
+                  <p className="text-slate-700 font-medium leading-relaxed pt-2 text-left">
+                    {item.text}
+                  </p>
                 </div>
-                <p className="text-slate-700 font-medium leading-relaxed pt-3 text-left">
-                  {item.text}
-                </p>
+                {item.blogUrl && (
+                  <div className="pt-3 mt-3 border-t border-slate-200/60 ml-[72px]">
+                    <Link
+                      href={item.blogUrl}
+                      className="inline-flex items-center text-xs font-bold text-[#0090c8] hover:text-[#003057] transition-colors gap-1.5"
+                    >
+                      <span>{item.blogLabel}</span>
+                      <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform" />
+                    </Link>
+                  </div>
+                )}
               </div>
             ))}
           </div>

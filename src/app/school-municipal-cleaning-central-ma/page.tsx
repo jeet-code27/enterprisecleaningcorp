@@ -205,22 +205,75 @@ export default function SchoolCleaningPage() {
 
           <div className="grid md:grid-cols-2 gap-x-12 gap-y-8 max-w-6xl mx-auto">
             {[
-              { icon: Users, text: "Classroom, lecture-hall, and office cleaning and dusting." },
-              { icon: ShieldCheck, text: "Restroom cleaning, sanitizing, and restocking — throughout the day and after hours." },
-              { icon: Building2, text: "Corridor, lobby, and common-area maintenance." },
-              { icon: Coffee, text: "Cafeteria, breakroom, and kitchen cleaning." },
-              { icon: Trophy, text: "Gymnasium, auditorium, and event-space cleaning." },
-              { icon: SprayCan, text: "Disinfecting of high-touch surfaces to limit the spread of illness." },
-              { icon: Sparkles, text: "Floor care for classrooms, hallways, and high-traffic areas." },
-              { icon: Clock, text: "Day porter coverage for restrooms and common areas during operating hours." },
+              { 
+                icon: Users, 
+                text: "Classroom, lecture-hall, and administrative office cleaning and surface dusting.",
+                blogUrl: "/blog/commercial-surface-dusting-massachusetts",
+                blogLabel: "Surface Dusting Guide"
+              },
+              { 
+                icon: ShieldCheck, 
+                text: "Restroom cleaning, sanitizing, and restocking — throughout the day and after hours.",
+                blogUrl: "/blog/commercial-restroom-cleaning-massachusetts-businesses",
+                blogLabel: "Restroom Care Guide"
+              },
+              { 
+                icon: Building2, 
+                text: "Corridor, lobby, and common-area matting and entryway maintenance.",
+                blogUrl: "/blog/commercial-entryway-lobby-cleaning-massachusetts",
+                blogLabel: "Entryway & Lobby Guide"
+              },
+              { 
+                icon: Coffee, 
+                text: "Cafeteria, breakroom, and kitchen sanitization and food-area hygiene.",
+                blogUrl: "/blog/commercial-breakroom-workplace-kitchen-cleaning-massachusetts",
+                blogLabel: "Cafeteria & Kitchen Guide"
+              },
+              { 
+                icon: Trophy, 
+                text: "Gymnasium, auditorium, and event-space cleaning and floor care.",
+                blogUrl: "/blog/vct-floor-stripping-and-waxing",
+                blogLabel: "Floor Maintenance Guide"
+              },
+              { 
+                icon: SprayCan, 
+                text: "Disinfecting of high-touch surfaces, handrails, and desks to limit the spread of illness.",
+                blogUrl: "/blog/high-touch-disinfecting-services-massachusetts",
+                blogLabel: "Disinfection Guide"
+              },
+              { 
+                icon: Sparkles, 
+                text: "Carpet extraction and VCT stripping and waxing for classrooms and hallways.",
+                blogUrl: "/blog/commercial-carpet-cleaning-worcester-ma",
+                blogLabel: "Carpet & Floor Guide"
+              },
+              { 
+                icon: Clock, 
+                text: "Day porter coverage for restrooms, spills, and common areas during school hours.",
+                blogUrl: "/blog/day-porter-services",
+                blogLabel: "Day Porter Guide"
+              },
             ].map((item, idx) => (
-              <div key={idx} className="flex items-start gap-4 p-6 rounded-2xl bg-slate-50 hover:bg-[#0090c8]/5 transition-colors border border-slate-100 hover:border-[#0090c8]/30 group">
-                <div className="w-14 h-14 rounded-full bg-white shadow-sm flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform">
-                  <item.icon className="w-6 h-6 text-[#0090c8]" />
+              <div key={idx} className="flex flex-col justify-between p-6 rounded-2xl bg-slate-50 hover:bg-[#0090c8]/5 transition-colors border border-slate-100 hover:border-[#0090c8]/30 group">
+                <div className="flex items-start gap-4">
+                  <div className="w-14 h-14 rounded-full bg-white shadow-sm flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform">
+                    <item.icon className="w-6 h-6 text-[#0090c8]" />
+                  </div>
+                  <p className="text-slate-700 font-medium leading-relaxed pt-2 text-left">
+                    {item.text}
+                  </p>
                 </div>
-                <p className="text-slate-700 font-medium leading-relaxed pt-3 text-left">
-                  {item.text}
-                </p>
+                {item.blogUrl && (
+                  <div className="pt-3 mt-3 border-t border-slate-200/60 ml-[72px]">
+                    <Link
+                      href={item.blogUrl}
+                      className="inline-flex items-center text-xs font-bold text-[#0090c8] hover:text-[#003057] transition-colors gap-1.5"
+                    >
+                      <span>{item.blogLabel}</span>
+                      <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform" />
+                    </Link>
+                  </div>
+                )}
               </div>
             ))}
           </div>

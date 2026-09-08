@@ -423,20 +423,70 @@ export default function MedicalOfficeCleaningPage() {
 
               <ul className="space-y-4">
                 {[
-                  "Waiting rooms and reception: chairs, arms, check in counters, kiosks, magazine racks, door handles, and pens",
-                  "Exam rooms: floors, sinks, counters, cabinet fronts, chairs, stools, light switches, and non clinical equipment exteriors between patient days",
-                  "Restrooms: full disinfection, descaling, floor scrubbing, and consumable restocking",
-                  "Corridors, stairwells, elevators, and shared common areas",
-                  "Break rooms, staff kitchens, and administrative offices",
-                  "High touch point disinfection with EPA registered products used at their labeled dwell time",
-                  "Floor care: vacuuming, damp mopping, machine scrubbing, and periodic stripping and waxing of vinyl and tile",
-                  "Interior glass, window cleaning, and entryway matting",
-                  "General waste and recycling removal from non regulated areas",
-                  "Day porter coverage during patient hours for restroom restocking, spill response, and waiting room resets"
+                  {
+                    text: "Waiting rooms and reception: chairs, arms, check in counters, kiosks, magazine racks, door handles, and pens",
+                    blogUrl: "/blog/commercial-entryway-lobby-cleaning-massachusetts",
+                    blogText: "Lobby Guide"
+                  },
+                  {
+                    text: "Exam rooms: floors, sinks, counters, cabinet fronts, chairs, stools, light switches, and non clinical equipment exteriors between patient days",
+                    blogUrl: null,
+                    blogText: null
+                  },
+                  {
+                    text: "Restrooms: full disinfection, descaling, floor scrubbing, and consumable restocking",
+                    blogUrl: "/blog/commercial-restroom-cleaning-massachusetts-businesses",
+                    blogText: "Restroom Guide"
+                  },
+                  {
+                    text: "Corridors, stairwells, elevators, and shared common areas",
+                    blogUrl: null,
+                    blogText: null
+                  },
+                  {
+                    text: "Break rooms, staff kitchens, and administrative offices",
+                    blogUrl: "/blog/commercial-breakroom-workplace-kitchen-cleaning-massachusetts",
+                    blogText: "Breakroom Guide"
+                  },
+                  {
+                    text: "High touch point disinfection with EPA registered products used at their labeled dwell time",
+                    blogUrl: "/blog/high-touch-disinfecting-services-massachusetts",
+                    blogText: "Disinfection Guide"
+                  },
+                  {
+                    text: "Floor care: vacuuming, damp mopping, machine scrubbing, and periodic stripping and waxing of vinyl and tile",
+                    blogUrl: "/blog/vct-floor-stripping-and-waxing",
+                    blogText: "Floor Care Guide"
+                  },
+                  {
+                    text: "Interior glass, window cleaning, and entryway matting",
+                    blogUrl: "/blog/commercial-window-cleaning-massachusetts",
+                    blogText: "Window Care Guide"
+                  },
+                  {
+                    text: "General waste and recycling removal from non regulated areas",
+                    blogUrl: "/blog/workplace-trash-recycling-services-massachusetts",
+                    blogText: "Waste Removal Guide"
+                  },
+                  {
+                    text: "Day porter coverage during patient hours for restroom restocking, spill response, and waiting room resets",
+                    blogUrl: "/blog/day-porter-services",
+                    blogText: "Day Porter Guide"
+                  }
                 ].map((item, i) => (
-                  <li key={i} className="flex items-start gap-3 text-sm md:text-base text-slate-700 font-medium">
-                    <CheckCircle2 className="w-5 h-5 text-emerald-600 shrink-0 mt-0.5" />
-                    <span>{item}</span>
+                  <li key={i} className="flex flex-col sm:flex-row sm:items-center justify-between gap-1 sm:gap-3 text-sm md:text-base text-slate-700 font-medium">
+                    <div className="flex items-start gap-3">
+                      <CheckCircle2 className="w-5 h-5 text-emerald-600 shrink-0 mt-0.5" />
+                      <span>{item.text}</span>
+                    </div>
+                    {item.blogUrl && (
+                      <Link
+                        href={item.blogUrl}
+                        className="shrink-0 text-xs font-bold text-[#0090c8] hover:text-[#003057] transition-colors ml-8 sm:ml-0 whitespace-nowrap"
+                      >
+                        {item.blogText} →
+                      </Link>
+                    )}
                   </li>
                 ))}
               </ul>

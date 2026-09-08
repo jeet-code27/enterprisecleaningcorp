@@ -206,22 +206,75 @@ export default function PropertyManagementPage() {
 
           <div className="grid md:grid-cols-2 gap-x-12 gap-y-8 max-w-6xl mx-auto">
             {[
-              { icon: Building2, text: "Common-area cleaning — lobbies, corridors, elevators, and stairwells." },
-              { icon: Droplets, text: "Shared restroom cleaning, sanitizing, and restocking." },
-              { icon: Sparkles, text: "Nightly janitorial for tenant spaces (where contracted)." },
-              { icon: Clock, text: "Day porter coverage for Class A and high-traffic buildings." },
-              { icon: CheckCircle2, text: "Floor care — carpet, hard-surface, and entryway maintenance." },
-              { icon: SprayCan, text: "Window cleaning and pressure washing for curb appeal." },
-              { icon: DoorOpen, text: "Move-in and move-out / tenant turnover cleaning." },
-              { icon: ShieldAlert, text: "Emergency water and cleanup response." },
+              { 
+                icon: Building2, 
+                text: "Common-area cleaning — lobbies, corridors, elevators, and stairwells.",
+                blogUrl: "/blog/commercial-entryway-lobby-cleaning-massachusetts",
+                blogLabel: "Lobby & Common Area Guide"
+              },
+              { 
+                icon: Droplets, 
+                text: "Shared restroom cleaning, sanitizing, and consumable restocking.",
+                blogUrl: "/blog/commercial-restroom-cleaning-massachusetts-businesses",
+                blogLabel: "Restroom Care Guide"
+              },
+              { 
+                icon: Sparkles, 
+                text: "Nightly janitorial and office cleaning for multi-tenant commercial suites.",
+                blogUrl: "/blog/office-cleaning-services-massachusetts-rhode-island-new-hampshire",
+                blogLabel: "Office Janitorial Guide"
+              },
+              { 
+                icon: Clock, 
+                text: "Day porter coverage for Class A properties and high-traffic commercial buildings.",
+                blogUrl: "/blog/day-porter-services",
+                blogLabel: "Day Porter Guide"
+              },
+              { 
+                icon: CheckCircle2, 
+                text: "Floor care — carpet extraction, VCT strip & wax, and winter entryway matting.",
+                blogUrl: "/blog/commercial-carpet-cleaning-worcester-ma",
+                blogLabel: "Floor Care Guide"
+              },
+              { 
+                icon: SprayCan, 
+                text: "Commercial window cleaning, glass partitions, and exterior curb appeal detailing.",
+                blogUrl: "/blog/commercial-window-cleaning-massachusetts",
+                blogLabel: "Window Cleaning Guide"
+              },
+              { 
+                icon: DoorOpen, 
+                text: "Move-in, move-out, and tenant suite turnover cleaning on tight schedules.",
+                blogUrl: "/blog/post-construction-cleaning-marlborough-495-corridor",
+                blogLabel: "Turnover Standards Guide"
+              },
+              { 
+                icon: ShieldAlert, 
+                text: "Emergency cleanup response and high-touch surface sanitization.",
+                blogUrl: "/blog/high-touch-disinfecting-services-massachusetts",
+                blogLabel: "Disinfection Guide"
+              },
             ].map((item, idx) => (
-              <div key={idx} className="flex items-start gap-4 p-6 rounded-2xl bg-slate-50 hover:bg-[#0090c8]/5 transition-colors border border-slate-100 hover:border-[#0090c8]/30 group">
-                <div className="w-14 h-14 rounded-full bg-white shadow-sm flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform">
-                  <item.icon className="w-6 h-6 text-[#0090c8]" />
+              <div key={idx} className="flex flex-col justify-between p-6 rounded-2xl bg-slate-50 hover:bg-[#0090c8]/5 transition-colors border border-slate-100 hover:border-[#0090c8]/30 group">
+                <div className="flex items-start gap-4">
+                  <div className="w-14 h-14 rounded-full bg-white shadow-sm flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform">
+                    <item.icon className="w-6 h-6 text-[#0090c8]" />
+                  </div>
+                  <p className="text-slate-700 font-medium leading-relaxed pt-2 text-left">
+                    {item.text}
+                  </p>
                 </div>
-                <p className="text-slate-700 font-medium leading-relaxed pt-3 text-left">
-                  {item.text}
-                </p>
+                {item.blogUrl && (
+                  <div className="pt-3 mt-3 border-t border-slate-200/60 ml-[72px]">
+                    <Link
+                      href={item.blogUrl}
+                      className="inline-flex items-center text-xs font-bold text-[#0090c8] hover:text-[#003057] transition-colors gap-1.5"
+                    >
+                      <span>{item.blogLabel}</span>
+                      <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform" />
+                    </Link>
+                  </div>
+                )}
               </div>
             ))}
           </div>

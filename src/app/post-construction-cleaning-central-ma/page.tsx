@@ -202,9 +202,25 @@ export default function PostConstructionCleaningPage() {
                   Post-construction cleaning is different from routine janitorial work. It requires crews who understand construction dust, know how to protect newly installed finishes, and can work around contractors, inspectors, and tight occupancy deadlines without becoming the reason a project runs late.
                 </p>
               </div>
+
+              {/* Action Buttons */}
+              <div className="flex flex-wrap items-center gap-4 pt-2">
+                <Link 
+                  href="/contact" 
+                  className="inline-flex items-center gap-2 bg-[#FFE800] text-slate-900 font-extrabold px-7 py-3.5 rounded-full hover:bg-yellow-300 transition-all shadow-xl hover:scale-105 text-sm md:text-base"
+                >
+                  Book a Walkthrough <ArrowRight className="w-4 h-4" />
+                </Link>
+                <a 
+                  href="tel:5088901000" 
+                  className="inline-flex items-center gap-2 bg-white/15 hover:bg-white/25 backdrop-blur-md text-white font-bold px-6 py-3.5 rounded-full border border-white/30 transition-all text-sm md:text-base"
+                >
+                  <PhoneCall className="w-4 h-4 text-[#FFE800]" /> (508) 890-1000
+                </a>
+              </div>
               
               {/* Bottom Stats Row */}
-              <div className="grid grid-cols-2 md:grid-cols-4 gap-6 pt-12 mt-auto border-t border-white/30">
+              <div className="grid grid-cols-2 md:grid-cols-4 gap-6 pt-8 mt-auto border-t border-white/30">
                 <div className="flex items-center gap-3">
                   <Clock className="w-8 h-8 text-[#FFE800]" />
                   <div>
@@ -316,17 +332,63 @@ export default function PostConstructionCleaningPage() {
           
           <div className="grid lg:grid-cols-2 gap-6 max-w-5xl mx-auto">
             {[
-              "Removal of construction debris, packaging, labels, and adhesive residue",
-              "Detailed dust removal from all surfaces, ledges, vents, and light fixtures",
-              "Interior window, glass, and track cleaning to remove construction film and debris",
-              "Floor cleaning appropriate to the finish — carpet, tile, hardwood, or polished concrete",
-              "Cabinet, closet, and shelving interior and exterior wipe-down",
-              "Restroom and kitchen detailing, including fixtures and appliances",
-              "Disinfecting of high-touch surfaces before occupancy"
+              {
+                text: "Removal of construction debris, packaging, labels, and adhesive residue",
+                link: null,
+                linkLabel: null
+              },
+              {
+                text: "Detailed dust removal from all surfaces, ledges, vents, and light fixtures",
+                link: "/blog/commercial-surface-dusting-massachusetts",
+                linkLabel: "Dusting Guide"
+              },
+              {
+                text: "Interior window, glass, and track cleaning to remove construction film and debris",
+                link: "/blog/commercial-window-cleaning-massachusetts",
+                linkLabel: "Window Cleaning Guide"
+              },
+              {
+                text: "Floor cleaning appropriate to the finish — carpet, tile, hardwood, or polished concrete",
+                link: "/blog/commercial-carpet-cleaning-worcester-ma",
+                linkLabel: "Floor Care Guide"
+              },
+              {
+                text: "Cabinet, closet, and shelving interior and exterior wipe-down",
+                link: null,
+                linkLabel: null
+              },
+              {
+                text: "Restroom and kitchen detailing, including fixtures and appliances",
+                link: "/blog/commercial-breakroom-workplace-kitchen-cleaning-massachusetts",
+                linkLabel: "Breakroom & Kitchen Guide"
+              },
+              {
+                text: "Disinfecting of high-touch surfaces before occupancy",
+                link: "/blog/high-touch-disinfecting-services-massachusetts",
+                linkLabel: "Disinfection Guide"
+              },
+              {
+                text: "Post-construction cleanup standards for Massachusetts commercial handovers",
+                link: "/blog/post-construction-cleaning-marlborough-495-corridor",
+                linkLabel: "Post-Construction Guide"
+              }
             ].map((item, i) => (
-              <div key={i} className="bg-white p-6 rounded-2xl shadow-sm border border-slate-100 flex items-start gap-4">
-                <CheckCircle2 className="w-6 h-6 text-[#00B8FF] shrink-0 mt-0.5" />
-                <span className="text-slate-700 font-medium leading-relaxed">{item}</span>
+              <div key={i} className="bg-white p-6 rounded-2xl shadow-sm border border-slate-100 flex flex-col justify-between group">
+                <div className="flex items-start gap-4 mb-2">
+                  <CheckCircle2 className="w-6 h-6 text-[#00B8FF] shrink-0 mt-0.5" />
+                  <span className="text-slate-700 font-medium leading-relaxed">{item.text}</span>
+                </div>
+                {item.link && (
+                  <div className="pt-3 mt-1 border-t border-slate-100 ml-10">
+                    <Link
+                      href={item.link}
+                      className="inline-flex items-center text-xs font-bold text-[#0090c8] hover:text-[#003057] transition-colors gap-1.5"
+                    >
+                      <span>{item.linkLabel}</span>
+                      <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform" />
+                    </Link>
+                  </div>
+                )}
               </div>
             ))}
           </div>

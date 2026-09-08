@@ -319,7 +319,7 @@ export default async function BlogPostPage({ params }: { params: Params }) {
 
               {/* Prose Content */}
               <div 
-                className="prose prose-base sm:prose-lg max-w-none w-full min-w-0 overflow-hidden break-words [word-break:break-word] prose-headings:text-[#0B1E36] prose-headings:font-extrabold prose-headings:tracking-tight prose-headings:break-words prose-a:!text-[#00B8FF] hover:prose-a:!text-[#0B1E36] prose-img:rounded-xl prose-img:max-w-full prose-img:h-auto prose-video:max-w-full prose-headings:scroll-mt-24 prose-a:!underline prose-a:!font-bold prose-table:block prose-table:w-full prose-table:overflow-x-auto"
+                className="prose prose-base sm:prose-lg max-w-none w-full min-w-0 overflow-hidden break-words [word-break:break-word] prose-headings:text-[#0B1E36] prose-headings:font-extrabold prose-headings:tracking-tight prose-headings:break-words prose-a:text-[#00B8FF] hover:prose-a:text-[#0B1E36] prose-img:rounded-xl prose-img:max-w-full prose-img:h-auto prose-video:max-w-full prose-headings:scroll-mt-24 prose-a:underline prose-a:font-bold prose-table:block prose-table:w-full prose-table:overflow-x-auto"
                 dangerouslySetInnerHTML={{ __html: processedHtml }}
               />
 

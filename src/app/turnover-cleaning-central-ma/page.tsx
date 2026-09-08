@@ -200,9 +200,25 @@ export default function TurnoverCleaningPage() {
                   Enterprise Cleaning Corporation provides fast, thorough turnover cleaning for residential units, commercial suites, and managed properties, so vacant space gets back on the market and ready for a new tenant as quickly as possible.
                 </p>
               </div>
+
+              {/* Action Buttons */}
+              <div className="flex flex-wrap items-center gap-4 pt-2">
+                <Link 
+                  href="/contact" 
+                  className="inline-flex items-center gap-2 bg-[#FFE800] text-slate-900 font-extrabold px-7 py-3.5 rounded-full hover:bg-yellow-300 transition-all shadow-xl hover:scale-105 text-sm md:text-base"
+                >
+                  Book a Walkthrough <ArrowRight className="w-4 h-4" />
+                </Link>
+                <a 
+                  href="tel:5088901000" 
+                  className="inline-flex items-center gap-2 bg-white/15 hover:bg-white/25 backdrop-blur-md text-white font-bold px-6 py-3.5 rounded-full border border-white/30 transition-all text-sm md:text-base"
+                >
+                  <PhoneCall className="w-4 h-4 text-[#FFE800]" /> (508) 890-1000
+                </a>
+              </div>
               
               {/* Bottom Stats Row */}
-              <div className="grid grid-cols-2 md:grid-cols-4 gap-6 pt-12 mt-auto border-t border-white/30">
+              <div className="grid grid-cols-2 md:grid-cols-4 gap-6 pt-8 mt-auto border-t border-white/30">
                 <div className="flex items-center gap-3">
                   <Clock className="w-8 h-8 text-[#FFE800]" />
                   <div>
@@ -276,18 +292,63 @@ export default function TurnoverCleaningPage() {
           
           <div className="grid lg:grid-cols-2 gap-6 max-w-5xl mx-auto">
             {[
-              "Full kitchen cleaning, including inside and outside of appliances, cabinets, and countertops",
-              "Complete bathroom cleaning and sanitizing, including tile, grout, and fixtures",
-              "Floor cleaning appropriate to the surface — vacuuming, mopping, or spot carpet cleaning",
-              "Interior window and glass cleaning, including sills and tracks",
-              "Dusting and wipe-down of all surfaces, closets, shelving, and baseboards",
-              "Removal of all trash, debris, and items left behind by the previous occupant",
-              "Disinfecting of high-touch surfaces — light switches, door handles, and cabinet pulls",
-              "A final move-in-ready walk-through before the space is turned back over"
+              {
+                text: "Full kitchen cleaning, including inside and outside of appliances, cabinets, and countertops",
+                link: "/blog/commercial-breakroom-workplace-kitchen-cleaning-massachusetts",
+                linkLabel: "Kitchen Cleaning Guide"
+              },
+              {
+                text: "Complete bathroom cleaning and sanitizing, including tile, grout, and fixtures",
+                link: "/blog/commercial-restroom-cleaning-massachusetts-businesses",
+                linkLabel: "Restroom Cleaning Guide"
+              },
+              {
+                text: "Floor cleaning appropriate to the surface — vacuuming, mopping, or spot carpet cleaning",
+                link: "/blog/commercial-carpet-cleaning-worcester-ma",
+                linkLabel: "Floor Care Guide"
+              },
+              {
+                text: "Interior window and glass cleaning, including sills and tracks",
+                link: "/blog/commercial-window-cleaning-massachusetts",
+                linkLabel: "Window Cleaning Guide"
+              },
+              {
+                text: "Dusting and wipe-down of all surfaces, closets, shelving, and baseboards",
+                link: "/blog/commercial-surface-dusting-massachusetts",
+                linkLabel: "Surface Dusting Guide"
+              },
+              {
+                text: "Removal of all trash, debris, and items left behind by the previous occupant",
+                link: "/blog/workplace-trash-recycling-services-massachusetts",
+                linkLabel: "Trash & Recycling Guide"
+              },
+              {
+                text: "Disinfecting of high-touch surfaces — light switches, door handles, and cabinet pulls",
+                link: "/blog/high-touch-disinfecting-services-massachusetts",
+                linkLabel: "Disinfection Guide"
+              },
+              {
+                text: "A final move-in-ready walk-through and inspection before the space is turned back over",
+                link: null,
+                linkLabel: null
+              }
             ].map((item, i) => (
-              <div key={i} className="bg-white p-6 rounded-2xl shadow-sm border border-slate-100 flex items-start gap-4">
-                <CheckCircle2 className="w-6 h-6 text-[#00B8FF] shrink-0 mt-0.5" />
-                <span className="text-slate-700 font-medium leading-relaxed">{item}</span>
+              <div key={i} className="bg-white p-6 rounded-2xl shadow-sm border border-slate-100 flex flex-col justify-between group">
+                <div className="flex items-start gap-4 mb-2">
+                  <CheckCircle2 className="w-6 h-6 text-[#00B8FF] shrink-0 mt-0.5" />
+                  <span className="text-slate-700 font-medium leading-relaxed">{item.text}</span>
+                </div>
+                {item.link && (
+                  <div className="pt-3 mt-1 border-t border-slate-100 ml-10">
+                    <Link
+                      href={item.link}
+                      className="inline-flex items-center text-xs font-bold text-[#0090c8] hover:text-[#003057] transition-colors gap-1.5"
+                    >
+                      <span>{item.linkLabel}</span>
+                      <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform" />
+                    </Link>
+                  </div>
+                )}
               </div>
             ))}
           </div>

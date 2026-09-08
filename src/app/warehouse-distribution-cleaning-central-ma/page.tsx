@@ -205,22 +205,75 @@ export default function WarehouseCleaningPage() {
 
           <div className="grid md:grid-cols-2 gap-x-12 gap-y-8 max-w-6xl mx-auto">
             {[
-              { icon: Sparkles, text: "Warehouse floor sweeping, scrubbing, and dust control." },
-              { icon: Truck, text: "Loading dock and shipping/receiving area cleaning." },
-              { icon: Users, text: "Office, administrative, and dispatch-area janitorial." },
-              { icon: Coffee, text: "Breakroom, cafeteria, and locker-room cleaning and sanitizing." },
-              { icon: Droplets, text: "Restroom cleaning, sanitizing, and restocking." },
-              { icon: ArrowUp, text: "High dusting of racking, rafters, and overhead structures." },
-              { icon: Factory, text: "Hard-floor care and degreasing for high-traffic areas." },
-              { icon: Clock, text: "Day porter coverage for multi-shift operations." },
+              { 
+                icon: Sparkles, 
+                text: "Warehouse concrete floor sweeping, scrubbing, and particulate dust control.",
+                blogUrl: "/blog/commercial-surface-dusting-massachusetts",
+                blogLabel: "Dust Control Guide"
+              },
+              { 
+                icon: Truck, 
+                text: "Loading dock, pallet disposal, and shipping/receiving area waste management.",
+                blogUrl: "/blog/workplace-trash-recycling-services-massachusetts",
+                blogLabel: "Waste Removal Guide"
+              },
+              { 
+                icon: Users, 
+                text: "Office, administrative, and dispatch-area janitorial routines.",
+                blogUrl: "/blog/office-cleaning-services-massachusetts-rhode-island-new-hampshire",
+                blogLabel: "Office Janitorial Guide"
+              },
+              { 
+                icon: Coffee, 
+                text: "Breakroom, cafeteria, and locker-room deep cleaning and sanitizing.",
+                blogUrl: "/blog/commercial-breakroom-workplace-kitchen-cleaning-massachusetts",
+                blogLabel: "Breakroom Guide"
+              },
+              { 
+                icon: Droplets, 
+                text: "Restroom cleaning, sanitizing, and high-volume consumable restocking.",
+                blogUrl: "/blog/commercial-restroom-cleaning-massachusetts-businesses",
+                blogLabel: "Restroom Care Guide"
+              },
+              { 
+                icon: ArrowUp, 
+                text: "High dusting of industrial racking, overhead rafters, and HVAC ventilation.",
+                blogUrl: "/blog/commercial-surface-dusting-massachusetts",
+                blogLabel: "High Dusting Guide"
+              },
+              { 
+                icon: Factory, 
+                text: "Heavy hard-floor care, machine scrubbing, and degreasing for high-traffic paths.",
+                blogUrl: "/blog/vct-floor-stripping-and-waxing",
+                blogLabel: "Floor Care Guide"
+              },
+              { 
+                icon: Clock, 
+                text: "Day porter coverage for multi-shift 24/7 logistics and fulfillment centers.",
+                blogUrl: "/blog/day-porter-services",
+                blogLabel: "Day Porter Guide"
+              },
             ].map((item, idx) => (
-              <div key={idx} className="flex items-start gap-4 p-6 rounded-2xl bg-slate-50 hover:bg-[#0090c8]/5 transition-colors border border-slate-100 hover:border-[#0090c8]/30 group">
-                <div className="w-14 h-14 rounded-full bg-white shadow-sm flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform">
-                  <item.icon className="w-6 h-6 text-[#0090c8]" />
+              <div key={idx} className="flex flex-col justify-between p-6 rounded-2xl bg-slate-50 hover:bg-[#0090c8]/5 transition-colors border border-slate-100 hover:border-[#0090c8]/30 group">
+                <div className="flex items-start gap-4">
+                  <div className="w-14 h-14 rounded-full bg-white shadow-sm flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform">
+                    <item.icon className="w-6 h-6 text-[#0090c8]" />
+                  </div>
+                  <p className="text-slate-700 font-medium leading-relaxed pt-2 text-left">
+                    {item.text}
+                  </p>
                 </div>
-                <p className="text-slate-700 font-medium leading-relaxed pt-3 text-left">
-                  {item.text}
-                </p>
+                {item.blogUrl && (
+                  <div className="pt-3 mt-3 border-t border-slate-200/60 ml-[72px]">
+                    <Link
+                      href={item.blogUrl}
+                      className="inline-flex items-center text-xs font-bold text-[#0090c8] hover:text-[#003057] transition-colors gap-1.5"
+                    >
+                      <span>{item.blogLabel}</span>
+                      <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform" />
+                    </Link>
+                  </div>
+                )}
               </div>
             ))}
           </div>

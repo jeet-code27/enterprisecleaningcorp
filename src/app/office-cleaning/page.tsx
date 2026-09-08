@@ -372,52 +372,81 @@ export default function OfficeCleaningPage() {
               {
                 icon: Trash2,
                 title: "Workstation Trash & Recycling",
-                desc: "Trash and recycling collection from every workstation, kitchen, and common area."
+                desc: "Trash and recycling collection from every workstation, kitchen, and common area.",
+                blogUrl: "/blog/workplace-trash-recycling-services-massachusetts",
+                blogLabel: "Trash & Recycling Guide"
               },
               {
                 icon: SprayCan,
                 title: "High Touch Point Disinfection",
-                desc: "Disinfecting high touch points: door handles, light switches, elevator buttons, shared keyboards, and conference room tables."
+                desc: "Disinfecting high touch points: door handles, light switches, elevator buttons, shared keyboards, and conference room tables.",
+                blogUrl: "/blog/high-touch-disinfecting-services-massachusetts",
+                blogLabel: "Disinfection Guide"
               },
               {
                 icon: Droplets,
                 title: "Restroom Detailing",
-                desc: "Restroom cleaning, disinfecting, and restocking with full dwell-time sanitization."
+                desc: "Restroom cleaning, disinfecting, and restocking with full dwell-time sanitization.",
+                blogUrl: "/blog/commercial-restroom-cleaning-massachusetts-businesses",
+                blogLabel: "Restroom Care Guide"
               },
               {
                 icon: Building2,
                 title: "Break Rooms & Kitchens",
-                desc: "Break room and kitchen cleaning, including counters, sinks, appliance exteriors, and tables."
+                desc: "Break room and kitchen cleaning, including counters, sinks, appliance exteriors, and tables.",
+                blogUrl: "/blog/commercial-breakroom-workplace-kitchen-cleaning-massachusetts",
+                blogLabel: "Breakroom Guide"
               },
               {
                 icon: Sparkles,
                 title: "Floor Maintenance",
-                desc: "Vacuuming carpet and damp mopping hard floors with fresh solution every shift."
+                desc: "Vacuuming carpet and damp mopping hard floors with fresh solution every shift.",
+                blogUrl: "/blog/commercial-carpet-cleaning-worcester-ma",
+                blogLabel: "Floor & Carpet Guide"
               },
               {
                 icon: FileText,
                 title: "Surface Dusting",
-                desc: "Dusting desks, sills, ledges, vents, and open surfaces throughout the workplace."
+                desc: "Dusting desks, sills, ledges, vents, and open surfaces throughout the workplace.",
+                blogUrl: "/blog/commercial-surface-dusting-massachusetts",
+                blogLabel: "Surface Dusting Guide"
               },
               {
                 icon: ShieldCheck,
                 title: "Glass & Partition Detailing",
-                desc: "Glass cleaning on interior partitions, entry doors, and reception glass."
+                desc: "Glass cleaning on interior partitions, entry doors, and reception glass.",
+                blogUrl: "/blog/commercial-window-cleaning-massachusetts",
+                blogLabel: "Window & Glass Guide"
               },
               {
                 icon: MapPin,
                 title: "Lobby & Entryway Care",
-                desc: "Lobby and entryway care, which matters more here than almost anywhere else because of what New England winters drag through the front door."
+                desc: "Lobby and entryway care, which matters more here than almost anywhere else because of what New England winters drag through the front door.",
+                blogUrl: "/blog/commercial-entryway-lobby-cleaning-massachusetts",
+                blogLabel: "Entryway & Lobby Guide"
               }
             ].map((service, index) => {
               const Icon = service.icon;
               return (
-                <div key={index} className="bg-white p-6 rounded-2xl shadow-sm border border-slate-100 hover:shadow-md hover:border-[#00B8FF]/40 transition-all">
-                  <div className="w-12 h-12 rounded-xl bg-[#0090c8]/10 flex items-center justify-center mb-4 text-[#0090c8]">
-                    <Icon className="w-6 h-6" />
+                <div key={index} className="bg-white p-6 rounded-2xl shadow-sm border border-slate-100 hover:shadow-md hover:border-[#00B8FF]/40 transition-all flex flex-col justify-between group">
+                  <div>
+                    <div className="w-12 h-12 rounded-xl bg-[#0090c8]/10 flex items-center justify-center mb-4 text-[#0090c8]">
+                      <Icon className="w-6 h-6" />
+                    </div>
+                    <h3 className="text-lg font-bold text-slate-900 mb-2">{service.title}</h3>
+                    <p className="text-sm text-slate-600 leading-relaxed font-medium mb-4">{service.desc}</p>
                   </div>
-                  <h3 className="text-lg font-bold text-slate-900 mb-2">{service.title}</h3>
-                  <p className="text-sm text-slate-600 leading-relaxed font-medium">{service.desc}</p>
+                  {service.blogUrl && (
+                    <div className="pt-4 border-t border-slate-100">
+                      <Link
+                        href={service.blogUrl}
+                        className="inline-flex items-center text-xs font-bold text-[#0090c8] hover:text-[#003057] transition-colors gap-1.5"
+                      >
+                        <span>{service.blogLabel}</span>
+                        <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform" />
+                      </Link>
+                    </div>
+                  )}
                 </div>
               );
             })}
@@ -426,7 +455,7 @@ export default function OfficeCleaningPage() {
           <div className="mt-12 max-w-4xl mx-auto p-6 md:p-8 rounded-3xl bg-white border border-slate-200 shadow-sm text-center">
             <h3 className="text-xl font-bold text-slate-900 mb-2">Periodic Services Scheduled Without Surprise Invoices</h3>
             <p className="text-base text-slate-600 font-medium leading-relaxed">
-              Periodic work sits on top of that. Carpet extraction, floor stripping and waxing, high dusting, and interior window washing run on a quarterly or annual schedule so your budget stays predictable instead of arriving as a surprise invoice.
+              Periodic work sits on top of that. <Link href="/blog/commercial-carpet-cleaning-worcester-ma" className="text-[#0090c8] font-bold hover:underline">Carpet extraction</Link>, <Link href="/blog/vct-floor-stripping-and-waxing" className="text-[#0090c8] font-bold hover:underline">floor stripping and waxing</Link>, <Link href="/blog/commercial-surface-dusting-massachusetts" className="text-[#0090c8] font-bold hover:underline">high dusting</Link>, and <Link href="/blog/commercial-window-cleaning-massachusetts" className="text-[#0090c8] font-bold hover:underline">interior window washing</Link> run on a quarterly or annual schedule so your budget stays predictable instead of arriving as a surprise invoice.
             </p>
           </div>
         </div>

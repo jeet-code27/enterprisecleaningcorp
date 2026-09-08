@@ -248,22 +248,75 @@ export default function RealEstateCleaningPage() {
 
           <div className="grid md:grid-cols-2 gap-x-12 gap-y-8 max-w-6xl mx-auto">
             {[
-              { icon: Home, text: "Vacant property top-to-bottom cleaning before photo shoot or listing." },
-              { icon: Sparkles, text: "Detailed staging-prep cleaning ahead of home stager & furniture delivery." },
-              { icon: Clock, text: "Pre-showing and open house quick-reset touch-ups on short notice." },
-              { icon: Key, text: "Post-closing move-out cleaning for incoming buyers or tenants." },
-              { icon: Building2, text: "New construction, condo development, and model unit cleaning." },
-              { icon: Camera, text: "Photography-prep detailing: streak-free windows, mirrors & fixtures." },
-              { icon: Briefcase, text: "Commercial real estate suite turnover and lobby detailing." },
-              { icon: SprayCan, text: "Deep sanitization of kitchens, bathrooms, and high-touch points." },
+              { 
+                icon: Home, 
+                text: "Vacant property top-to-bottom cleaning before photo shoots or MLS listing.",
+                blogUrl: "/blog/commercial-carpet-cleaning-worcester-ma",
+                blogLabel: "Floor & Carpet Guide"
+              },
+              { 
+                icon: Sparkles, 
+                text: "Detailed staging-prep cleaning and surface dusting ahead of stager furniture delivery.",
+                blogUrl: "/blog/commercial-surface-dusting-massachusetts",
+                blogLabel: "Surface Dusting Guide"
+              },
+              { 
+                icon: Clock, 
+                text: "Pre-showing and open house quick-reset touch-ups on short notice.",
+                blogUrl: null,
+                blogLabel: null
+              },
+              { 
+                icon: Key, 
+                text: "Post-closing move-out and turnover cleaning for incoming buyers or tenants.",
+                blogUrl: "/blog/post-construction-cleaning-marlborough-495-corridor",
+                blogLabel: "Turnover Standards Guide"
+              },
+              { 
+                icon: Building2, 
+                text: "New construction developments, model unit staging, and multi-family turns.",
+                blogUrl: "/blog/post-construction-cleaning-marlborough-495-corridor",
+                blogLabel: "Construction Cleaning Guide"
+              },
+              { 
+                icon: Camera, 
+                text: "Photography-prep detailing: streak-free windows, glass partitions, and fixtures.",
+                blogUrl: "/blog/commercial-window-cleaning-massachusetts",
+                blogLabel: "Window & Glass Guide"
+              },
+              { 
+                icon: Briefcase, 
+                text: "Commercial real estate suite turnover, entryway matting, and lobby detailing.",
+                blogUrl: "/blog/commercial-entryway-lobby-cleaning-massachusetts",
+                blogLabel: "Lobby Detailing Guide"
+              },
+              { 
+                icon: SprayCan, 
+                text: "Deep sanitization of kitchens, bathrooms, break areas, and high-touch points.",
+                blogUrl: "/blog/commercial-breakroom-workplace-kitchen-cleaning-massachusetts",
+                blogLabel: "Kitchen & Sanitization Guide"
+              },
             ].map((item, idx) => (
-              <div key={idx} className="flex items-start gap-4 p-6 rounded-2xl bg-slate-50 hover:bg-[#0090c8]/5 transition-colors border border-slate-100 hover:border-[#0090c8]/30 group">
-                <div className="w-14 h-14 rounded-full bg-white shadow-sm flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform">
-                  <item.icon className="w-6 h-6 text-[#0090c8]" />
+              <div key={idx} className="flex flex-col justify-between p-6 rounded-2xl bg-slate-50 hover:bg-[#0090c8]/5 transition-colors border border-slate-100 hover:border-[#0090c8]/30 group">
+                <div className="flex items-start gap-4">
+                  <div className="w-14 h-14 rounded-full bg-white shadow-sm flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform">
+                    <item.icon className="w-6 h-6 text-[#0090c8]" />
+                  </div>
+                  <p className="text-slate-700 font-medium leading-relaxed pt-2 text-left">
+                    {item.text}
+                  </p>
                 </div>
-                <p className="text-slate-700 font-medium leading-relaxed pt-3 text-left">
-                  {item.text}
-                </p>
+                {item.blogUrl && (
+                  <div className="pt-3 mt-3 border-t border-slate-200/60 ml-[72px]">
+                    <Link
+                      href={item.blogUrl}
+                      className="inline-flex items-center text-xs font-bold text-[#0090c8] hover:text-[#003057] transition-colors gap-1.5"
+                    >
+                      <span>{item.blogLabel}</span>
+                      <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform" />
+                    </Link>
+                  </div>
+                )}
               </div>
             ))}
           </div>
