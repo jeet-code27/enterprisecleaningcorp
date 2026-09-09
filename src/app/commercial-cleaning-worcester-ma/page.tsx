@@ -8,6 +8,8 @@ import {
   CalendarCheck, Briefcase, Sparkles, Factory,
   Stethoscope, GraduationCap, Truck, Award, ChevronDown
 } from "lucide-react";
+import { RailersSponsorship } from "@/components/blocks/railers-sponsorship";
+import { TrustedByMarquee } from "@/components/ui/trusted-by-marquee";
 
 export const metadata: Metadata = {
   title: { absolute: "Commercial Cleaning Worcester, MA | Enterprise Cleaning Corp" },
@@ -226,6 +228,8 @@ export default function WorcesterCityPage() {
         </div>
       </section>
 
+      <TrustedByMarquee />
+
       {/* ─── ABOUT WORCESTER ─── */}
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4 md:px-6">
@@ -325,6 +329,9 @@ export default function WorcesterCityPage() {
           </div>
         </div>
       </section>
+
+      {/* ─── WORCESTER RAILERS PREMIER SPONSORSHIP ─── */}
+      <RailersSponsorship className="!pt-16 md:!pt-20 border-y border-slate-800" />
 
       {/* ─── SERVICES ─── */}
       <section className="py-20 bg-white">

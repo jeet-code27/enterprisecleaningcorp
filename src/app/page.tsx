@@ -14,6 +14,8 @@ import { GoogleMapSection } from "@/components/blocks/google-map";
 import { FAQSection } from "@/components/blocks/faq-section";
 import { TrustedByMarquee } from "@/components/ui/trusted-by-marquee";
 import { AwardsSection } from "@/components/blocks/awards-section";
+import { RailersSponsorship } from "@/components/blocks/railers-sponsorship";
+import { SuccessStoriesSection } from "@/components/blocks/success-stories-section";
 import Script from "next/script";
 
 export const metadata: Metadata = {
@@ -143,6 +145,8 @@ export default function Home() {
         <HowItWorks />
         <WhyEnterprise />
         <AwardsSection />
+        <RailersSponsorship />
+        <SuccessStoriesSection />
         {/* <WhyChooseUs /> */}
         <StaggerTestimonials />
         {/* <ElfsightReviews /> */}

@@ -230,7 +230,7 @@ export function AwardsSection({ embedded = false, className = "" }: AwardsSectio
   }
 
   return (
-    <section className={`py-12 md:py-16 bg-slate-900 text-white relative overflow-hidden ${className}`}>
+    <section className={`pt-12 md:pt-16 pb-6 md:pb-8 bg-slate-900 text-white relative overflow-hidden ${className}`}>
       {/* Ambient background glows */}
       <div className="absolute top-0 left-1/4 w-[400px] h-[400px] bg-[#0090c8]/15 rounded-full blur-[120px] pointer-events-none" />
       <div className="absolute bottom-0 right-1/4 w-[350px] h-[350px] bg-[#E31837]/10 rounded-full blur-[120px] pointer-events-none" />
