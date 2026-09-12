@@ -58,7 +58,7 @@ const SLIDES = [
     id: "slide-6",
     title: "Post Construction",
     imageUrl: "/images/service_commercial.png",
-    href: "/post-construction-cleaning-central-ma",
+    href: "/post-construction-cleaning-massachusetts",
   },
 ]
 

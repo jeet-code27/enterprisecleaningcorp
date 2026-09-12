@@ -79,6 +79,11 @@ const nextConfig: NextConfig = {
         permanent: true,
       },
       {
+        source: '/post-construction-cleaning-central-ma',
+        destination: '/post-construction-cleaning-massachusetts',
+        permanent: true,
+      },
+      {
         source: '/commercial-cleaning-massachusetts-a-buyers-guide',
         destination: '/blog/commercial-cleaning-massachusetts-a-buyers-guide',
         permanent: true,
@@ -107,6 +112,21 @@ const nextConfig: NextConfig = {
       {
         source: '/Office%20Cleaning%20in%20Providence%20RI',
         destination: '/blog/office-cleaning-in-providence',
+        permanent: true,
+      },
+      {
+        source: '/post-construction-cleaning-mistakes-general-contractors',
+        destination: '/blog/post-construction-cleaning-mistakes-general-contractors',
+        permanent: true,
+      },
+      {
+        source: '/who-is-responsible-for-cleaning-construction-project',
+        destination: '/blog/who-is-responsible-for-cleaning-construction-project',
+        permanent: true,
+      },
+      {
+        source: '/compare-post-construction-cleaning-bids-general-contractors',
+        destination: '/blog/compare-post-construction-cleaning-bids-general-contractors',
         permanent: true,
       },
     ];

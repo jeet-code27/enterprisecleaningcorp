@@ -19,10 +19,12 @@ export async function POST(req: NextRequest) {
     const arrayBuffer = await file.arrayBuffer();
     const buffer = Buffer.from(arrayBuffer);
 
-    // Upload to Cloudinary using a Promise
+    const folder = (formData.get("folder") as string) || "enterprise_bids";
+
+    // Upload to Cloudinary using a Promise with resource_type: "auto" to support images, PDFs, DWG, and docs
     const result = await new Promise<any>((resolve, reject) => {
       const uploadStream = cloudinary.uploader.upload_stream(
-        { folder: "enterprise_blog" },
+        { folder, resource_type: "auto" },
         (error, result) => {
           if (error) reject(error);
           else resolve(result);

@@ -85,7 +85,7 @@ export function Footer() {
                 <Link href="/turnover-cleaning-central-ma" className="hover:text-white/60 transition-colors">Turnover Cleaning</Link>
               </li>
               <li>
-                <Link href="/post-construction-cleaning-central-ma" className="hover:text-white/60 transition-colors">Post Construction</Link>
+                <Link href="/post-construction-cleaning-massachusetts" className="hover:text-white/60 transition-colors">Post Construction</Link>
               </li>
             </ul>
           </div>

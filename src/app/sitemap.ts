@@ -39,7 +39,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     "/specialty-cleaning-services-central-ma",
     "/emergency-restoration-services-central-ma",
     "/turnover-cleaning-central-ma",
-    "/post-construction-cleaning-central-ma",
+    "/post-construction-cleaning-massachusetts",
   ];
 
   const industryRoutes = [

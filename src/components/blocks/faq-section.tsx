@@ -30,7 +30,7 @@ const faqs = [
   },
   {
     question: "What commercial cleaning services does Enterprise Cleaning provide?",
-    answer: <>We provide a full range of commercial cleaning services, including <Link href="/janitorial-services" className="text-[#0090c8] font-semibold hover:underline">commercial janitorial services</Link>, <Link href="/office-cleaning" className="text-[#0090c8] font-semibold hover:underline">office cleaning</Link>, <Link href="/medical-office-cleaning" className="text-[#0090c8] font-semibold hover:underline">medical office cleaning</Link>, <Link href="/floor-care-services-central-ma" className="text-[#0090c8] font-semibold hover:underline">floor care</Link>, <Link href="/specialty-cleaning-services-central-ma" className="text-[#0090c8] font-semibold hover:underline">deep cleaning</Link>, disinfection, <Link href="/turnover-cleaning-central-ma" className="text-[#0090c8] font-semibold hover:underline">turnover cleaning</Link>, <Link href="/post-construction-cleaning-central-ma" className="text-[#0090c8] font-semibold hover:underline">post-construction cleaning</Link>, and 24/7 emergency <Link href="/emergency-restoration-services-central-ma" className="text-[#0090c8] font-semibold hover:underline">water and flood cleanup</Link>, across Central Massachusetts, Rhode Island, and Southern New Hampshire.</>
+    answer: <>We provide a full range of commercial cleaning services, including <Link href="/janitorial-services" className="text-[#0090c8] font-semibold hover:underline">commercial janitorial services</Link>, <Link href="/office-cleaning" className="text-[#0090c8] font-semibold hover:underline">office cleaning</Link>, <Link href="/medical-office-cleaning" className="text-[#0090c8] font-semibold hover:underline">medical office cleaning</Link>, <Link href="/floor-care-services-central-ma" className="text-[#0090c8] font-semibold hover:underline">floor care</Link>, <Link href="/specialty-cleaning-services-central-ma" className="text-[#0090c8] font-semibold hover:underline">deep cleaning</Link>, disinfection, <Link href="/turnover-cleaning-central-ma" className="text-[#0090c8] font-semibold hover:underline">turnover cleaning</Link>, <Link href="/post-construction-cleaning-massachusetts" className="text-[#0090c8] font-semibold hover:underline">post-construction cleaning</Link>, and 24/7 emergency <Link href="/emergency-restoration-services-central-ma" className="text-[#0090c8] font-semibold hover:underline">water and flood cleanup</Link>, across Central Massachusetts, Rhode Island, and Southern New Hampshire.</>
   },
   {
     question: "What makes Enterprise a different kind of cleaning company?",
@@ -58,7 +58,7 @@ const faqs = [
   },
   {
     question: "Do you provide construction cleaning services for contractors and developers?",
-    answer: <>Yes. We provide rough, final, and touch-up <Link href="/post-construction-cleaning-central-ma" className="text-[#0090c8] font-semibold hover:underline">post-construction cleaning</Link> for contractors, developers, and building owners across the region.</>
+    answer: <>Yes. We provide rough, final, and touch-up <Link href="/post-construction-cleaning-massachusetts" className="text-[#0090c8] font-semibold hover:underline">post-construction cleaning</Link> for contractors, developers, and building owners across the region.</>
   },
   {
     question: "Do you offer commercial floor waxing and stripping?",

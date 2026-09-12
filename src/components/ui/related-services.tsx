@@ -10,7 +10,7 @@ export const ALL_SERVICES = [
   { id: "specialty", title: "Deep Cleaning", href: "/specialty-cleaning-services-central-ma", icon: Sparkles },
   { id: "emergency", title: "Flood Cleanup", href: "/emergency-restoration-services-central-ma", icon: Wind },
   { id: "turnover", title: "Turnover Cleaning", href: "/turnover-cleaning-central-ma", icon: Droplets },
-  { id: "post-construction", title: "Post Construction", href: "/post-construction-cleaning-central-ma", icon: SprayCan },
+  { id: "post-construction", title: "Post Construction", href: "/post-construction-cleaning-massachusetts", icon: SprayCan },
 ];
 
 export function RelatedServices({ serviceIds, title = "Related Cleaning Services" }: { serviceIds: string[], title?: string }) {
