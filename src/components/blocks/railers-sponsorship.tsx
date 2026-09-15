@@ -51,7 +51,7 @@ export function RailersSponsorship({ className = "" }: RailersSponsorshipProps) 
                 {/* Poster Image */}
                 <div className="relative aspect-[818/1024] w-full overflow-hidden">
                   <Image
-                    src="/images/worcester-railers-poster.jpeg"
+                    src="/images/worcester-railers-poster.jpg"
                     alt="Enterprise Cleaning Corporation - Official Premier Partner of Worcester Railers HC"
                     fill
                     sizes="(max-width: 768px) 100vw, (max-width: 1200px) 45vw, 440px"
