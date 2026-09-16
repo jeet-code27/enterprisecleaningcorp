@@ -27,9 +27,9 @@ export function CareerForm() {
     email: "",
     phone: "",
     cityStateZip: "",
-    position: "Commercial Cleaning Technician",
-    employmentType: "Full-Time",
-    shiftPreference: "Night Shift",
+    position: "Part-Time Cleaning – East Greenwich, RI (2 Openings, $16/hr)",
+    employmentType: "Part-Time",
+    shiftPreference: "Evening Shift (6:00 PM)",
     startDate: "",
     yearsExperience: "1-3 years",
     hasDriversLicense: "Yes",
@@ -224,7 +224,8 @@ export function CareerForm() {
               onChange={handleChange}
               className="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-xl focus:ring-2 focus:ring-[#00B8FF] focus:bg-white outline-none transition-all text-slate-900 text-sm font-medium"
             >
-              <option value="Cleaning Technician – Derm Clinic (Concord, NH)">🔥 Featured: Cleaning Technician – Derm Clinic (Concord, NH)</option>
+              <option value="Part-Time Cleaning – East Greenwich, RI (2 Openings, $16/hr)">🔥 NEW: Part-Time Cleaning – East Greenwich, RI (2 Openings, $16/hr)</option>
+              <option value="Cleaning Technician – Derm Clinic (Concord, NH)">Featured: Cleaning Technician – Derm Clinic (Concord, NH)</option>
               <option value="Commercial Cleaning Technician">Commercial Cleaning Technician</option>
               <option value="Day Porter">Day Porter</option>
               <option value="Floor Care Specialist (Stripping & Waxing)">Floor Care Specialist (Stripping & Waxing)</option>

@@ -1,12 +1,13 @@
 import { Metadata } from "next";
 import { CareerForm } from "@/components/forms/CareerForm";
+import { EastGreenwichJobPosting } from "@/components/careers/EastGreenwichJobPosting";
 import { CheckCircle2, ShieldCheck, Award, Users, Clock, DollarSign, TrendingUp, Sparkles, HeartHandshake, ArrowRight, MapPin, Calendar, Phone, PartyPopper } from "lucide-react";
 import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Careers & Job Opportunities | Enterprise Cleaning Corporation",
-  description: "Join the team at Enterprise Cleaning Corporation. We offer commercial cleaning jobs with competitive pay, steady hours, paid training, and growth opportunities across Central MA.",
-  keywords: ["Commercial cleaning jobs", "Enterprise Cleaning careers", "Janitorial jobs Worcester MA", "Day porter jobs", "Cleaning employment Central MA"],
+  description: "Join the team at Enterprise Cleaning Corporation. We offer commercial cleaning jobs with competitive pay, steady hours, paid training, and growth opportunities across Central MA, Rhode Island, and New England.",
+  keywords: ["Commercial cleaning jobs", "Cleaning jobs East Greenwich RI", "Enterprise Cleaning careers", "Janitorial jobs Worcester MA", "Day porter jobs", "Cleaning employment Central MA", "Rhode Island cleaning jobs"],
   alternates: {
     canonical: "https://www.enterprisecleaningcorp.com/careers",
   },
@@ -267,9 +268,12 @@ export default function CareersPage() {
               Current Job Openings
             </h2>
             <p className="text-slate-600 font-medium">
-              We have immediate openings for motivated individuals in Central Massachusetts, New Hampshire, and surrounding areas.
+              We have immediate openings for motivated individuals in Rhode Island, Central Massachusetts, New Hampshire, and surrounding areas.
             </p>
           </div>
+
+          {/* Featured Rhode Island Opening (Multilingual: English, Spanish, Portuguese) */}
+          <EastGreenwichJobPosting />
 
           {/* Highlighted Top Job Card */}
           <div className="mb-12 bg-gradient-to-br from-slate-900 via-slate-900 to-[#003B7A] rounded-3xl p-6 sm:p-10 text-white shadow-2xl border-2 border-[#00B8FF]/40 relative overflow-hidden">
