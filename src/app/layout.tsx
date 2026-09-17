@@ -4,6 +4,7 @@ import "./globals.css";
 import Script from "next/script";
 import { LayoutWrapper } from "@/components/layout-wrapper";
 import AuthProvider from "@/components/auth-provider";
+import { MetaPixel } from "@/components/analytics/MetaPixel";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -97,6 +98,7 @@ export default function RootLayout({
           />
         </noscript>
         <AuthProvider>
+          <MetaPixel />
           <LayoutWrapper>{children}</LayoutWrapper>
         </AuthProvider>
       </body>

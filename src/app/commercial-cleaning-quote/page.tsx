@@ -30,7 +30,6 @@ import {
   Package
 } from "lucide-react";
 import { 
-  MetaPixel, 
   trackPhoneCallClick, 
   trackCTAButtonClick 
 } from "@/components/analytics/MetaPixel";
@@ -283,8 +282,6 @@ export default function CommercialCleaningLandingPage() {
 
   return (
     <div className="min-h-screen bg-slate-50 font-sans text-slate-800">
-      <MetaPixel />
-
       {/* 1. STREAMLINED HEADER WITH ORIGINAL OFFICIAL BRAND LOGO */}
       <header className="bg-white border-b border-slate-200 text-slate-900 sticky top-0 z-50 shadow-xs">
         <div className="container mx-auto px-4 py-3 flex items-center justify-between">

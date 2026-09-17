@@ -4,7 +4,7 @@ import { useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { CheckCircle2, PhoneCall, ArrowRight, ShieldCheck, Clock, Award, Calendar } from "lucide-react";
-import { MetaPixel, trackLeadSubmission } from "@/components/analytics/MetaPixel";
+import { trackLeadSubmission } from "@/components/analytics/MetaPixel";
 
 export default function CommercialCleaningThankYouPage() {
   useEffect(() => {
@@ -14,7 +14,6 @@ export default function CommercialCleaningThankYouPage() {
 
   return (
     <div className="min-h-screen bg-slate-50 flex flex-col justify-between font-sans">
-      <MetaPixel />
 
       {/* Streamlined Header - Logo & Direct Phone Call Only */}
       <header className="bg-white border-b border-slate-200 text-slate-900 sticky top-0 z-50 shadow-xs">

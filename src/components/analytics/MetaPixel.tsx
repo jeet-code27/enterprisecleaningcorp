@@ -1,8 +1,10 @@
 "use client";
 
 import Script from "next/script";
+import { usePathname } from "next/navigation";
+import { useEffect, useRef } from "react";
 
-export const META_PIXEL_ID = "1566283411954729";
+export const META_PIXEL_ID = "3610797432416368";
 
 declare global {
   interface Window {
@@ -12,13 +14,27 @@ declare global {
 }
 
 /**
- * Meta Pixel Component for tracking PageView and Custom Events
+ * Meta Pixel Component for tracking PageView across all pages and route transitions
  */
 export function MetaPixel() {
+  const pathname = usePathname();
+  const isFirstRender = useRef(true);
+
+  // Track PageView on client-side route transitions (excluding initial load, which is handled by script)
+  useEffect(() => {
+    if (isFirstRender.current) {
+      isFirstRender.current = false;
+      return;
+    }
+    if (typeof window !== "undefined" && window.fbq) {
+      window.fbq("track", "PageView");
+    }
+  }, [pathname]);
+
   return (
     <>
       <Script
-        id="meta-pixel"
+        id="meta-pixel-base"
         strategy="afterInteractive"
         dangerouslySetInnerHTML={{
           __html: `
@@ -28,7 +44,7 @@ export function MetaPixel() {
             if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
             n.queue=[];t=b.createElement(e);t.async=!0;
             t.src=v;s=b.getElementsByTagName(e)[0];
-            s.parentNode.insertBefore(t,s)}(window, document,'script',
+            s.parentNode.insertBefore(t,s)}(window,document,'script',
             'https://connect.facebook.net/en_US/fbevents.js');
             fbq('init', '${META_PIXEL_ID}');
             fbq('track', 'PageView');
@@ -41,7 +57,7 @@ export function MetaPixel() {
           width="1"
           style={{ display: "none" }}
           src={`https://www.facebook.com/tr?id=${META_PIXEL_ID}&ev=PageView&noscript=1`}
-          alt="Meta Pixel"
+          alt=""
         />
       </noscript>
     </>
