@@ -82,11 +82,11 @@ export default function FallCleaningAssessmentPage() {
         setSubmitStatus("success");
       } else {
         setSubmitStatus("error");
-        setErrorMessage(data.error || "Unable to submit your request. Please call us at (508) 890-1000.");
+        setErrorMessage(data.error || "Unable to submit your request. Please call Alex directly at +1 (508) 304-2369.");
       }
     } catch {
       setSubmitStatus("error");
-      setErrorMessage("Network error occurred. Please call our team at (508) 890-1000.");
+      setErrorMessage("Network error occurred. Please call Alex directly at +1 (508) 304-2369.");
     } finally {
       setIsSubmitting(false);
     }
@@ -201,7 +201,7 @@ export default function FallCleaningAssessmentPage() {
                     Claim Your Assessment
                   </h2>
                   <p className="text-xs sm:text-sm text-slate-600">
-                    Fill out this form or call <a href="tel:5088901000" className="text-[#0090c8] font-bold underline">(508) 890-1000</a>. We respond within 2 business hours.
+                    Fill out this form or call Alex directly at <a href="tel:5083042369" className="text-[#0090c8] font-bold underline">+1 (508) 304-2369</a>. We respond within 2 business hours.
                   </p>
                 </div>
 
@@ -218,10 +218,10 @@ export default function FallCleaningAssessmentPage() {
                     </p>
                     <div className="pt-2">
                       <a
-                        href="tel:5088901000"
+                        href="tel:5083042369"
                         className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-emerald-700 text-white font-bold text-sm shadow hover:bg-emerald-800 transition"
                       >
-                        <PhoneCall className="w-4 h-4" /> Need Immediate Info? Call Now
+                        <PhoneCall className="w-4 h-4" /> Need Immediate Info? Call Alex Direct: (508) 304-2369
                       </a>
                     </div>
                   </div>
@@ -388,12 +388,12 @@ export default function FallCleaningAssessmentPage() {
 
                 {/* Direct Call Quick Link */}
                 <div className="mt-6 pt-5 border-t border-slate-100 flex items-center justify-between text-xs sm:text-sm">
-                  <span className="text-slate-500 font-medium">Prefer speaking now?</span>
+                  <span className="text-slate-500 font-medium">Prefer speaking directly?</span>
                   <a
-                    href="tel:5088901000"
+                    href="tel:5083042369"
                     className="font-bold text-[#003B7A] hover:text-[#0090c8] flex items-center gap-1.5 transition"
                   >
-                    <PhoneCall className="w-4 h-4 text-[#E31837]" /> (508) 890-1000
+                    <PhoneCall className="w-4 h-4 text-[#E31837]" /> Call Alex: (508) 304-2369
                   </a>
                 </div>
               </div>
@@ -497,10 +497,10 @@ export default function FallCleaningAssessmentPage() {
                   Schedule Your Walkthrough <ArrowRight className="w-4 h-4" />
                 </button>
                 <a
-                  href="tel:5088901000"
+                  href="tel:5083042369"
                   className="px-6 py-3.5 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-900 font-bold text-sm transition flex items-center gap-2"
                 >
-                  <PhoneCall className="w-4 h-4 text-[#0090c8]" /> (508) 890-1000
+                  <PhoneCall className="w-4 h-4 text-[#0090c8]" /> Call Alex: (508) 304-2369
                 </a>
               </div>
             </div>
@@ -530,6 +530,19 @@ export default function FallCleaningAssessmentPage() {
                 </div>
 
                 <div className="flex items-start gap-3">
+                  <PhoneCall className="w-5 h-5 text-[#00B8FF] shrink-0 mt-0.5" />
+                  <div>
+                    <div className="font-bold text-white">Direct Campaign Contact</div>
+                    <div className="text-slate-200">
+                      Alex Puchulu (Director of Sales):{" "}
+                      <a href="tel:5083042369" className="text-[#FFE800] hover:underline font-bold">
+                        +1 (508) 304-2369
+                      </a>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="flex items-start gap-3">
                   <Clock className="w-5 h-5 text-[#FFE800] shrink-0 mt-0.5" />
                   <div>
                     <div className="font-bold text-white">Operational Coverage</div>
@@ -554,10 +567,10 @@ export default function FallCleaningAssessmentPage() {
         </div>
         <div className="flex items-center gap-2">
           <a
-            href="tel:5088901000"
+            href="tel:5083042369"
             className="px-3.5 py-2 rounded-xl bg-slate-100 text-slate-900 font-bold text-xs flex items-center gap-1"
           >
-            <PhoneCall className="w-3.5 h-3.5 text-[#0090c8]" /> Call
+            <PhoneCall className="w-3.5 h-3.5 text-[#0090c8]" /> Call Alex
           </a>
           <button
             onClick={scrollToForm}
