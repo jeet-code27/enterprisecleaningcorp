@@ -78,7 +78,10 @@ export async function POST(req: Request) {
     // 2. Send instant Email Notification to Alex
     try {
       const emailHtml = `
-        <div style="font-family: Arial, sans-serif; color: #1e293b; max-width: 600px; margin: 0 auto; border: 1px solid #e2e8f0; border-radius: 12px; padding: 24px;">
+        <div style="font-family: Arial, sans-serif; color: #1e293b; max-width: 600px; margin: 0 auto; border: 1px solid #e2e8f0; border-radius: 12px; padding: 24px; background-color: #ffffff;">
+          <div style="text-align: center; margin-bottom: 20px; padding-bottom: 12px; border-bottom: 1px solid #f1f5f9;">
+            <img src="https://res.cloudinary.com/dnd8u5sll/image/upload/v1787296503/ecc-new-logo_wzkxbr.png" alt="Enterprise Cleaning Corporation" style="max-width: 230px; width: 100%; height: auto; display: block; margin: 0 auto;" />
+          </div>
           <div style="background-color: #003057; padding: 16px 24px; border-radius: 8px; color: #ffffff; margin-bottom: 20px;">
             <h2 style="margin: 0; font-size: 20px;">🚨 New Ad Campaign Lead Received!</h2>
             <p style="margin: 4px 0 0 0; color: #00B8FF; font-size: 13px; font-weight: bold;">Commercial Cleaning Ad Landing Page</p>

@@ -29,7 +29,7 @@ export interface CareerFormData {
 const BRAND_NAVY = "#003B7A";
 const BRAND_CYAN = "#00B8FF";
 const BRAND_RED = "#E31837";
-const LOGO_URL = "https://res.cloudinary.com/dnd8u5sll/image/upload/v1785476409/enterprise-logo_eno6xq.png";
+const LOGO_URL = "https://res.cloudinary.com/dnd8u5sll/image/upload/v1787296503/ecc-new-logo_wzkxbr.png";
 const COMPANY_ADDRESS = "99 Hartwell Street, West Boylston, MA 01583 | (508) 890-1000";
 
 /**
