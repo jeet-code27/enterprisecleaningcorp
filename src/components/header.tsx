@@ -25,6 +25,12 @@ const InstagramIcon = ({ className = "size-3.5" }: { className?: string }) => (
   </svg>
 )
 
+const LinkedinIcon = ({ className = "size-3.5" }: { className?: string }) => (
+  <svg className={className} fill="currentColor" viewBox="0 0 24 24">
+    <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451c.979 0 1.778-.773 1.778-1.729V1.73C24 .774 23.205 0 22.225 0z" />
+  </svg>
+)
+
 const coreServices = [
   {
     title: "Janitorial Services",
@@ -140,6 +146,15 @@ export function Header() {
                   aria-label="Instagram"
                 >
                   <InstagramIcon className="size-4" />
+                </a>
+                <a
+                  href="https://www.linkedin.com/company/enterprise-cleaning-corporation/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-[#FFE800] transition-colors p-0.5"
+                  aria-label="LinkedIn"
+                >
+                  <LinkedinIcon className="size-4" />
                 </a>
               </div>
             </div>
@@ -414,6 +429,15 @@ function MobileNav({ isPostConstruction }: { isPostConstruction?: boolean }) {
                 aria-label="Instagram"
               >
                 <InstagramIcon className="size-5" />
+              </a>
+              <a
+                href="https://www.linkedin.com/company/enterprise-cleaning-corporation/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-10 h-10 rounded-full bg-slate-100 flex items-center justify-center text-slate-700 hover:bg-[#0090c8] hover:text-white transition-colors"
+                aria-label="LinkedIn"
+              >
+                <LinkedinIcon className="size-5" />
               </a>
             </div>
           </div>

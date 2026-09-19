@@ -75,6 +75,9 @@ const structuredDataOrganization = {
   "logo": "https://www.enterprisecleaningcorp.com/images/ecc-new-logo.png",
   "telephone": "508-890-1000",
   "sameAs": [
+    "https://www.linkedin.com/company/enterprise-cleaning-corporation/",
+    "https://www.facebook.com/people/Enterprise-Cleaning/61591593631296/",
+    "https://www.instagram.com/enterprisecleaningcorporation",
     "https://www.bbb.org/us/ma/west-boylston/profile/commercial-cleaning/enterprise-cleaning-corporation-0101-90059"
   ]
 };
