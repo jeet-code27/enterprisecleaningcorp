@@ -16,6 +16,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     "/terms-and-conditions",
     "/commercial-cleaning-quote",
     "/commercial-cleaning-quote/thank-you",
+    "/fall-cleaning-assessment",
     "/alex-puchulu-business-card",
     "/juilio-biage-business-card",
     "/stephen-buchter-business-card",
