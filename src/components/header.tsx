@@ -4,6 +4,7 @@ import * as React from "react"
 import { createPortal } from "react-dom"
 import Image from "next/image"
 import Link from "next/link"
+import { usePathname } from "next/navigation"
 import { Sparkles, Building2, HardHat, Droplets, SprayCan, Briefcase, ChevronRight, ChevronDown, Wind, MapPin, Clock, Phone, MenuIcon, XIcon, Mail, ArrowRight, Stethoscope, GraduationCap, Package } from "lucide-react"
 import { cn } from "@/lib/utils"
 import { GridCard } from "@/components/ui/grid-card"
@@ -86,6 +87,9 @@ const industryPages = [
 ]
 
 export function Header() {
+  const pathname = usePathname()
+  const isPostConstruction = pathname?.includes("post-construction")
+
   return (
     <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 flex flex-col">
       {/* Top Contact Bar - Brand Navy */}
@@ -159,19 +163,22 @@ export function Header() {
         <DesktopMenu />
 
         <div className="flex items-center gap-2">
-          {/* Desktop CTA */}
-          <Button asChild className="hidden md:inline-flex shadow transition-colors text-white font-semibold" style={{ background: "#E31837" }}>
-            <Link href="/contact">Get a Free Quote</Link>
-          </Button>
-          {/* Mobile CTA — compact, stays in sticky header */}
-          <Link
-            href="/contact"
-            className="inline-flex md:hidden items-center gap-1.5 px-3 py-2 rounded-lg text-white text-xs font-bold shadow-md active:scale-95 transition-transform"
-            style={{ background: "#E31837" }}
-          >
-            Free Quote
-          </Link>
-          <MobileNav />
+          {/* Desktop CTA & Mobile CTA - Hidden on post-construction pages as requested */}
+          {!isPostConstruction && (
+            <>
+              <Button asChild className="hidden md:inline-flex shadow transition-colors text-white font-semibold" style={{ background: "#E31837" }}>
+                <Link href="/contact">Get a Free Quote</Link>
+              </Button>
+              <Link
+                href="/contact"
+                className="inline-flex md:hidden items-center gap-1.5 px-3 py-2 rounded-lg text-white text-xs font-bold shadow-md active:scale-95 transition-transform"
+                style={{ background: "#E31837" }}
+              >
+                Free Quote
+              </Link>
+            </>
+          )}
+          <MobileNav isPostConstruction={isPostConstruction} />
         </div>
       </div>
     </header>
@@ -295,7 +302,7 @@ function DesktopMenu() {
   )
 }
 
-function MobileNav() {
+function MobileNav({ isPostConstruction }: { isPostConstruction?: boolean }) {
   const [open, setOpen] = React.useState(false);
   const [mounted, setMounted] = React.useState(false);
 
@@ -384,9 +391,11 @@ function MobileNav() {
             </AccordionItem>
           </Accordion>
           <div className="mt-8 space-y-4">
-            <Button asChild className="w-full" onClick={close}>
-              <Link href="/quote">Get a Quote</Link>
-            </Button>
+            {!isPostConstruction && (
+              <Button asChild className="w-full" onClick={close}>
+                <Link href="/quote">Get a Quote</Link>
+              </Button>
+            )}
             <div className="flex items-center justify-center gap-4 pt-2 border-t border-slate-100">
               <a
                 href="https://www.facebook.com/people/Enterprise-Cleaning/61591593631296/"
