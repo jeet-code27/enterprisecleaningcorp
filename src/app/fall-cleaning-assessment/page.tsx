@@ -125,7 +125,7 @@ export default function FallCleaningAssessmentPage() {
                   Comprehensive Facility Cleaning Assessment for a cleaner, safer season.
                 </p>
                 <p className="text-sm sm:text-base text-slate-600 leading-relaxed">
-                  Prepare your corporate office, medical clinic, industrial facility, or warehouse for the autumn and upcoming winter months. Our 100% in-house teams evaluate floor care, entryway defense, air ducts, and clinical sanitization — completely free with zero obligation.
+                  Prepare your corporate office, medical clinic, industrial facility, or warehouse for the autumn and upcoming winter months. Our 100% in-house teams evaluate floor care, entryway defense, air ducts, and clinical sanitization — scheduled with zero obligation.
                 </p>
               </div>
 
@@ -165,7 +165,7 @@ export default function FallCleaningAssessmentPage() {
               {/* Target Industries Covered in this Offer */}
               <div className="bg-slate-100/90 rounded-2xl p-5 border border-slate-200 space-y-3">
                 <h3 className="text-xs font-black uppercase tracking-widest text-slate-500">
-                  Industries Eligible for This Free Assessment
+                  Industries Eligible for This Assessment
                 </h3>
                 <div className="flex flex-wrap gap-2">
                   {[
@@ -198,7 +198,7 @@ export default function FallCleaningAssessmentPage() {
                     Claim Offer
                   </div>
                   <h2 className="text-2xl sm:text-3xl font-black text-slate-900 tracking-tight">
-                    Claim Your Free Assessment
+                    Claim Your Assessment
                   </h2>
                   <p className="text-xs sm:text-sm text-slate-600">
                     Fill out this form or call <a href="tel:5088901000" className="text-[#0090c8] font-bold underline">(508) 890-1000</a>. We respond within 2 business hours.
@@ -366,7 +366,7 @@ export default function FallCleaningAssessmentPage() {
                         </>
                       ) : (
                         <>
-                          <span>CLAIM YOUR FREE ASSESSMENT</span>
+                          <span>CLAIM YOUR ASSESSMENT</span>
                           <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
                         </>
                       )}
@@ -381,7 +381,7 @@ export default function FallCleaningAssessmentPage() {
                         <CheckCircle2 className="w-4 h-4 text-[#0090c8]" /> Zero Obligation
                       </span>
                       <span>·</span>
-                      <span>100% Free</span>
+                      <span>On-Site Inspection</span>
                     </div>
                   </form>
                 )}
@@ -411,7 +411,7 @@ export default function FallCleaningAssessmentPage() {
               Complete Facility Audit
             </span>
             <h2 className="text-3xl sm:text-4xl font-black text-slate-900 tracking-tight">
-              What Is Included In Your Free Fall Assessment?
+              What Is Included In Your Fall Facility Assessment?
             </h2>
             <p className="text-base text-slate-600">
               A comprehensive on-site walk-through led by an experienced facility specialist to uncover hidden sanitation vulnerabilities and prepare your facility for the colder months.
