@@ -13,6 +13,7 @@ const cityLinks: Record<string, string> = {
   "Fitchburg": "/commercial-cleaning-fitchburg-ma",
   "Boylston": "/commercial-cleaning-boylston-ma",
   "Nashua, NH": "/commercial-cleaning-nashua-nh",
+  "Westborough": "/commercial-cleaning-westborough-ma",
 };
 
 const locations = [
