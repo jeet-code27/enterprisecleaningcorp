@@ -32,30 +32,86 @@ export const metadata: Metadata = {
 
 const structuredDataService = {
   "@context": "https://schema.org",
-  "@type": "Service",
-  "serviceType": "Commercial Cleaning Services",
-  "provider": {
-    "@type": "ProfessionalService",
-    "name": "Enterprise Cleaning Corporation",
-    "image": "https://www.enterprisecleaningcorp.com/images/ecc-new-logo.png",
-    "telephone": "508-890-1000",
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "99 Hartwell Street, Suite B",
-      "addressLocality": "West Boylston",
-      "addressRegion": "MA",
-      "postalCode": "01583",
-      "addressCountry": "US"
-    },
-    "geo": {
-      "@type": "GeoCoordinates",
-      "latitude": 42.5834,
-      "longitude": -71.8023
-    },
-    "url": "https://www.enterprisecleaningcorp.com"
+  "@type": "CleaningService",
+  "name": "Enterprise Cleaning Corporation",
+  "image": "https://res.cloudinary.com/dnd8u5sll/image/upload/v1787296503/ecc-new-logo_wzkxbr.png",
+  "url": "https://www.enterprisecleaningcorp.com/commercial-cleaning-fitchburg-ma",
+  "telephone": "+1-508-890-1000",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "99 Hartwell Street",
+    "addressLocality": "West Boylston",
+    "addressRegion": "MA",
+    "postalCode": "01583",
+    "addressCountry": "US"
   },
-  "areaServed": { "@type": "City", "name": "Fitchburg, MA" },
-  "url": "https://www.enterprisecleaningcorp.com/commercial-cleaning-fitchburg-ma"
+  "areaServed": {
+    "@type": "City",
+    "name": "Fitchburg, Massachusetts"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 42.5834,
+    "longitude": -71.8023
+  },
+  "makesOffer": [
+    {
+      "@type": "Offer",
+      "itemOffered": {
+        "@type": "Service",
+        "name": "Carpet cleaning"
+      }
+    },
+    {
+      "@type": "Offer",
+      "itemOffered": {
+        "@type": "Service",
+        "name": "Post-construction cleaning"
+      }
+    },
+    {
+      "@type": "Offer",
+      "itemOffered": {
+        "@type": "Service",
+        "name": "Office and janitorial cleaning"
+      }
+    },
+    {
+      "@type": "Offer",
+      "itemOffered": {
+        "@type": "Service",
+        "name": "Medical and healthcare office cleaning"
+      }
+    },
+    {
+      "@type": "Offer",
+      "itemOffered": {
+        "@type": "Service",
+        "name": "Floor care"
+      }
+    },
+    {
+      "@type": "Offer",
+      "itemOffered": {
+        "@type": "Service",
+        "name": "Window cleaning"
+      }
+    },
+    {
+      "@type": "Offer",
+      "itemOffered": {
+        "@type": "Service",
+        "name": "Pressure washing"
+      }
+    },
+    {
+      "@type": "Offer",
+      "itemOffered": {
+        "@type": "Service",
+        "name": "Disinfection and electrostatic spraying"
+      }
+    }
+  ]
 };
 
 const structuredDataFAQ = {
