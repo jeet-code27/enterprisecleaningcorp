@@ -165,206 +165,221 @@ export default function FitchburgCityPage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredDataFAQ) }}
       />
 
-      {/* ─── HERO SECTION ─── */}
-      <section className="relative overflow-hidden bg-slate-900 text-white py-16 md:py-24">
-        {/* Brand Accent Bar */}
-        <div className="absolute top-0 left-0 w-full h-1.5 bg-gradient-to-r from-[#0090c8] via-[#E31837] to-[#FFE800]" />
-        
-        {/* Subtle Background Glow */}
-        <div className="absolute inset-0 opacity-20 pointer-events-none bg-[radial-gradient(#0090c8_1px,transparent_1px)] [background-size:24px_24px]" />
+      {/* ─── HERO ─── */}
+      <section className="relative overflow-hidden bg-white">
+        <div className="absolute top-0 left-0 w-full h-1" style={{ background: "linear-gradient(to right, #0090c8, #E31837, #FFE800)" }} />
 
-        <div className="container mx-auto px-4 md:px-6 relative z-10">
-          <div className="grid lg:grid-cols-12 gap-12 items-center">
-            
-            {/* Left Column: Headings & Intro */}
-            <div className="lg:col-span-7 space-y-6">
-              <div className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-[#00B8FF] bg-[#0090c8]/15 border border-[#0090c8]/30 px-3.5 py-1.5 rounded-full">
+        <div className="container mx-auto px-4 md:px-6">
+          <div className="grid lg:grid-cols-2 gap-10 items-center min-h-[540px]">
+
+            {/* Left: Copy */}
+            <div className="py-12 lg:py-16 pr-0 lg:pr-8 space-y-6">
+              <div className="inline-flex items-center gap-2 text-sm font-bold text-[#0090c8] bg-[#0090c8]/8 border border-[#0090c8]/20 px-4 py-1.5 rounded-full">
                 <MapPin className="w-3.5 h-3.5 text-[#E31837]" />
-                Fitchburg, Massachusetts &bull; Worcester County
+                Fitchburg, MA &bull; Nashua River &amp; Route 2 Commercial Hub
               </div>
 
-              <h1 className="text-3xl md:text-4xl lg:text-5xl font-extrabold text-white tracking-tight leading-tight">
-                Commercial cleaning services in Fitchburg, Massachusetts
-              </h1>
+              <div>
+                <p className="text-xs font-extrabold uppercase tracking-[0.2em] text-slate-400 mb-2 sm:mb-3">City Service Hub</p>
+                <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-[3.15rem] font-black leading-[1.12] tracking-tight text-slate-900">
+                  Commercial cleaning services in <span className="text-[#0090c8]">Fitchburg, Massachusetts</span>
+                </h1>
+              </div>
 
-              <p className="text-lg md:text-xl text-slate-300 font-medium leading-relaxed">
-                Expert carpet cleaning, post-construction cleanup, and customized commercial janitorial programs for Fitchburg&apos;s converted mills, historic downtown buildings, Route 2 commercial corridors, and modern facilities.
+              <p className="text-lg text-slate-600 font-medium leading-relaxed max-w-xl">
+                Specializing in commercial carpet cleaning, post-construction cleanup, and customized janitorial programs for converted mill complexes, downtown storefronts, and Route 2 healthcare and corporate offices across Fitchburg.
               </p>
 
-              {/* Trust Badges Bar */}
-              <div className="grid grid-cols-2 sm:grid-cols-3 gap-3 pt-2">
-                <div className="bg-slate-800/80 border border-slate-700/80 rounded-xl p-3 flex items-center gap-2.5">
-                  <Trophy className="w-5 h-5 text-[#FFE800] shrink-0" />
-                  <div>
-                    <div className="text-xs font-bold text-white">4x WBJ Winner</div>
-                    <div className="text-[11px] text-slate-400">Best of Business</div>
-                  </div>
-                </div>
-                <div className="bg-slate-800/80 border border-slate-700/80 rounded-xl p-3 flex items-center gap-2.5">
-                  <ShieldCheck className="w-5 h-5 text-[#00B8FF] shrink-0" />
-                  <div>
-                    <div className="text-xs font-bold text-white">BBB Accredited</div>
-                    <div className="text-[11px] text-slate-400">Since 2007 A+</div>
-                  </div>
-                </div>
-                <div className="bg-slate-800/80 border border-slate-700/80 rounded-xl p-3 flex items-center gap-2.5 col-span-2 sm:col-span-1">
-                  <Users className="w-5 h-5 text-[#E31837] shrink-0" />
-                  <div>
-                    <div className="text-xs font-bold text-white">97% Retention</div>
-                    <div className="text-[11px] text-slate-400">Client Loyalty</div>
-                  </div>
-                </div>
-              </div>
-
-              {/* Action Buttons */}
-              <div className="flex flex-wrap items-center gap-4 pt-4">
+              <div className="flex flex-col sm:flex-row flex-wrap gap-3 sm:gap-4 pt-1">
                 <Link
-                  href="/commercial-cleaning-quote"
-                  className="inline-flex items-center justify-center gap-2 px-7 py-3.5 rounded-xl font-bold text-white bg-[#E31837] hover:bg-[#c9142e] shadow-lg shadow-[#E31837]/30 transition-all text-sm md:text-base group"
+                  href="/contact"
+                  className="inline-flex items-center justify-center gap-2 bg-[#0090c8] text-white font-extrabold px-7 py-3.5 rounded-xl hover:bg-[#0078a8] transition-colors shadow-md shadow-[#0090c8]/25 text-base w-full sm:w-auto"
                 >
-                  <span>Request a walkthrough</span>
-                  <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                  Get a Free Quote <ArrowRight className="w-4 h-4" />
                 </Link>
                 <a
                   href="tel:5088901000"
-                  className="inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-xl font-bold text-white bg-slate-800 hover:bg-slate-750 border border-slate-700 hover:border-slate-600 transition-all text-sm md:text-base"
+                  className="inline-flex items-center justify-center gap-2 text-slate-800 font-bold px-7 py-3.5 rounded-xl hover:bg-slate-50 transition-colors border border-slate-200 text-base w-full sm:w-auto"
                 >
-                  <PhoneCall className="w-4 h-4 text-[#00B8FF]" />
-                  <span>(508) 890-1000</span>
+                  <PhoneCall className="w-4 h-4 text-[#0090c8]" />
+                  (508) 890-1000
                 </a>
+              </div>
+
+              <div className="flex flex-wrap gap-2.5 pt-1">
+                {["97% Client Retention", "4× WBJ Award Winner", "BBB Accredited Since 2007", "More Than Two Decades Local"].map(chip => (
+                  <span key={chip} className="inline-flex items-center gap-1.5 text-xs font-bold text-slate-700 bg-slate-100 px-3 py-1.5 rounded-full border border-slate-200/60">
+                    <CheckCircle2 className="w-3.5 h-3.5 text-[#0090c8]" />
+                    {chip}
+                  </span>
+                ))}
               </div>
             </div>
 
-            {/* Right Column: Hero Image with Stats Overlay */}
-            <div className="lg:col-span-5 relative">
-              <div className="relative rounded-2xl overflow-hidden shadow-2xl border border-slate-800 group">
+            {/* Right: Hero image */}
+            <div className="relative block pb-8 lg:py-10">
+              <div className="relative aspect-[4/3] w-full overflow-hidden rounded-2xl sm:rounded-3xl shadow-2xl border border-slate-200">
                 <Image
                   src="/images/fitchburg_cleaning_hero.png"
-                  alt="Enterprise Cleaning Corp commercial cleaning team operating hot water extraction carpet care and post construction cleanup in a converted Fitchburg mill space"
-                  width={600}
-                  height={500}
-                  className="w-full h-auto object-cover transform group-hover:scale-102 transition-transform duration-500"
+                  alt="Commercial cleaning in Fitchburg MA converted mill office"
+                  fill
+                  sizes="(max-width: 1024px) 100vw, 50vw"
+                  className="object-cover object-center"
                   priority
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent" />
-                <div className="absolute bottom-4 left-4 right-4 p-4 rounded-xl bg-slate-900/90 backdrop-blur-md border border-slate-700/80">
-                  <div className="flex items-center justify-between">
-                    <div>
-                      <p className="text-xs font-bold text-white uppercase tracking-wider">Local Leadership</p>
-                      <p className="text-xs text-slate-300">Steve Buchalter &amp; Julio Biage</p>
-                    </div>
-                    <span className="text-xs font-semibold px-2.5 py-1 rounded bg-[#0090c8]/20 text-[#00B8FF] border border-[#0090c8]/40">
-                      More than two decades
-                    </span>
+                {/* Floating badge */}
+                <div className="absolute bottom-3 left-3 sm:bottom-5 sm:left-5 bg-white/95 backdrop-blur-md rounded-xl sm:rounded-2xl px-3 py-2 sm:px-4 sm:py-3 shadow-xl flex items-center gap-2.5 sm:gap-3 border border-slate-100">
+                  <div className="w-7 h-7 sm:w-9 sm:h-9 rounded-full bg-[#E31837] flex items-center justify-center shrink-0">
+                    <Trophy className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-white" />
+                  </div>
+                  <div className="text-left">
+                    <div className="font-extrabold text-slate-900 text-xs sm:text-sm">4× Best of Business</div>
+                    <div className="text-slate-500 text-[10px] sm:text-xs">Worcester Business Journal</div>
                   </div>
                 </div>
               </div>
             </div>
-
           </div>
         </div>
       </section>
 
-      {/* ─── SECTION 1: TOWN HISTORY & RIVER HERITAGE ─── */}
-      <section className="py-16 md:py-20 bg-white">
-        <div className="container mx-auto px-4 md:px-6 max-w-5xl">
-          <div className="space-y-6">
-            <div className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-[#0090c8] bg-sky-50 px-3 py-1.5 rounded-full border border-sky-100">
-              <Building2 className="w-3.5 h-3.5 text-[#0090c8]" />
-              Fitchburg Heritage &bull; Established 1764
-            </div>
-            
-            <h2 className="text-2xl md:text-3xl lg:text-4xl font-extrabold text-slate-900 tracking-tight leading-tight">
-              A city shaped by the Nashua River and industrial ambition
-            </h2>
-
-            <div className="prose prose-slate max-w-none text-base md:text-lg text-slate-600 leading-relaxed space-y-5">
-              <p>
-                Fitchburg&apos;s whole story runs along the Nashua River. The area was first settled in 1730 as part of Lunenburg, back when the land was known as Turkey Hills for the wild turkeys that lived there. It took three years of petitioning by settlers including Amos Kimball and Samuel Hunt before the town was incorporated on its own in 1764, named for John Fitch, one of the men who pushed the petition through.
-              </p>
-              <p>
-                The river is what turned Fitchburg into something bigger than a farming town. Water power drew textile mills, paper mills, and machine shops to the banks of the Nashua starting in the early 1800s, and when the railroad reached Fitchburg in 1845, thanks largely to paper manufacturer Alvah Crocker&apos;s push to get the tracks built, the city took off. Fitchburg became a city in 1872, and the Victorian era buildings downtown, including City Hall and the homes along Highland Avenue, still reflect how much money moved through the city during its industrial peak.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* ─── SECTION 2: LANDMARKS & DIVERSE COMMERCIAL BASE ─── */}
-      <section className="py-16 md:py-20 bg-slate-50 border-y border-slate-200/80">
-        <div className="container mx-auto px-4 md:px-6 max-w-5xl">
-          <div className="space-y-8">
-            <div>
-              <div className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-[#E31837] bg-red-50 px-3 py-1.5 rounded-full border border-red-100 mb-3">
-                <Trophy className="w-3.5 h-3.5 text-[#E31837]" />
-                Commercial Continuity
+      {/* ─── STATS BAR ─── */}
+      <section className="bg-slate-900 text-white py-6">
+        <div className="container mx-auto px-4 md:px-6">
+          <div className="grid grid-cols-2 md:grid-cols-4 divide-x divide-white/10">
+            {[
+              { val: "20+", unit: "Years", label: "Serving Central MA" },
+              { val: "97%", unit: "", label: "Client Retention Rate" },
+              { val: "4×", unit: "", label: "WBJ Best of Business" },
+              { val: "Route 2", unit: "& Nashua River", label: "Regional Specialists" },
+            ].map((s, i) => (
+              <div key={i} className="px-4 md:px-8 py-2 text-center">
+                <div className="text-2xl md:text-3xl font-black text-white">
+                  {s.val}<span className="text-[#0090c8]">{s.unit}</span>
+                </div>
+                <div className="text-xs text-slate-400 font-semibold mt-0.5 uppercase tracking-wider">{s.label}</div>
               </div>
-              <h2 className="text-2xl md:text-3xl lg:text-4xl font-extrabold text-slate-900 tracking-tight leading-tight">
-                An industrial city with a lot still standing
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ─── TOWN HISTORY & ROOTS ─── */}
+      <section className="py-16 bg-white">
+        <div className="container mx-auto px-4 md:px-6">
+          <div className="max-w-5xl mx-auto">
+            <div className="mb-8">
+              <p className="text-xs font-extrabold uppercase tracking-[0.2em] text-[#0090c8] mb-2">Deep Colonial Heritage</p>
+              <h2 className="text-3xl md:text-4xl font-extrabold text-slate-900 leading-tight max-w-3xl">
+                Commercial cleaning grounded in Fitchburg&apos;s rich historical framework
               </h2>
             </div>
+            <div className="grid lg:grid-cols-5 gap-8 items-start">
+              {/* Text — wider column */}
+              <div className="lg:col-span-3 space-y-4 text-slate-600 font-medium leading-relaxed text-[0.97rem]">
+                <p>
+                  Fitchburg&apos;s whole story runs along the Nashua River. The area was first settled in 1730 as part of Lunenburg, back when the land was known as Turkey Hills for the wild turkeys that lived there. It took three years of petitioning by settlers including Amos Kimball and Samuel Hunt before the town was incorporated on its own in 1764, named for John Fitch, one of the men who pushed the petition through.
+                </p>
+                <p>
+                  The river is what turned Fitchburg into something bigger than a farming town. Water power drew textile mills, paper mills, and machine shops to the banks of the Nashua starting in the early 1800s, and when the railroad reached Fitchburg in 1845, thanks largely to paper manufacturer Alvah Crocker&apos;s push to get the tracks built, the city took off. Fitchburg became a city in 1872, and the Victorian era buildings downtown, including City Hall and the homes along Highland Avenue, still reflect how much money moved through the city during its industrial peak.
+                </p>
+                <p>
+                  That blend of rich industrial architecture and vibrant commercial enterprise defines Fitchburg today. Enterprise Cleaning Corporation brings owner-supervised{" "}
+                  <Link href="/janitorial-services" className="text-[#0090c8] font-bold hover:underline">janitorial care</Link>{" "}
+                  to this community, preserving the distinct character of historic downtown and converted mill spaces while maintaining clinical sanitation benchmarks in modern professional facilities.
+                </p>
+              </div>
 
-            <div className="prose prose-slate max-w-none text-base md:text-lg text-slate-600 leading-relaxed space-y-5">
-              <p>
-                Unlike a lot of New England mill towns that specialized in one product, Fitchburg never depended on just one industry. Paper mills, machine and tool works, textile factories, and eventually plastics and medical manufacturing have all had a home here at different points. That range is part of why Fitchburg has held onto more of its commercial base than some of its neighbors, even after the original mill economy faded.
-              </p>
+              {/* Districts and Commercial Hubs — narrower column */}
+              <div className="lg:col-span-2">
+                <div className="bg-slate-50 rounded-3xl p-6 border border-slate-200 shadow-sm">
+                  <div className="flex items-center gap-3 mb-4">
+                    <div className="w-9 h-9 rounded-xl bg-[#0090c8]/10 flex items-center justify-center shrink-0">
+                      <Building2 className="w-4 h-4 text-[#0090c8]" />
+                    </div>
+                    <h3 className="font-extrabold text-slate-900 text-base leading-tight">Key Fitchburg Districts</h3>
+                  </div>
+                  <p className="text-slate-500 text-xs font-medium mb-4">Enterprise Cleaning Corporation maintains commercial facilities across Fitchburg:</p>
+                  <div className="space-y-2.5">
+                    {[
+                      { area: "Downtown Core & City Hall", detail: "Municipal facilities, historic Main Street storefronts & offices" },
+                      { area: "Route 2 Commercial Corridor", detail: "Corporate offices, medical centers & retail plazas" },
+                      { area: "MBTA Commuter Rail District", detail: "Transit-oriented professional practices & commercial suites" },
+                      { area: "Converted Mill Complexes", detail: "Historic brick & timber factories repurposed as creative office space" },
+                      { area: "Rollstone Boulder & Upper Common", detail: "Civic center, legal practices & financial institutions" },
+                    ].map((d, i) => (
+                      <div key={i} className="flex gap-3 bg-white p-3 rounded-xl border border-slate-100 shadow-sm">
+                        <MapPin className="w-3.5 h-3.5 text-[#E31837] shrink-0 mt-0.5" />
+                        <div>
+                          <div className="font-bold text-slate-800 text-xs">{d.area}</div>
+                          <div className="text-slate-400 text-xs font-medium mt-0.5">{d.detail}</div>
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ─── INDUSTRIAL HERITAGE TO BUSINESS HUB ─── */}
+      <section className="py-20 bg-slate-50 border-y border-slate-200">
+        <div className="container mx-auto px-4 md:px-6 max-w-6xl">
+          <div className="max-w-3xl mx-auto text-center mb-14">
+            <p className="text-xs font-extrabold uppercase tracking-[0.2em] text-[#0090c8] mb-2">Industrial Resilience</p>
+            <h2 className="text-3xl md:text-4xl font-extrabold text-slate-900 mb-4">
+              An industrial city with a lot still standing
+            </h2>
+            <p className="text-slate-600 font-medium leading-relaxed">
+              Unlike a lot of New England mill towns that specialized in one product, Fitchburg never depended on just one industry. Paper mills, machine and tool works, textile factories, and eventually plastics and medical manufacturing have all had a home here at different points. That range is part of why Fitchburg has held onto more of its commercial base than some of its neighbors, even after the original mill economy faded.
+            </p>
+          </div>
+
+          <div className="bg-white rounded-3xl p-8 border border-slate-200 shadow-md space-y-6">
+            <div className="max-w-4xl mx-auto space-y-4 text-slate-600 font-medium leading-relaxed text-[0.97rem]">
               <p>
                 Downtown still carries the marks of that history. The Rollstone Boulder, a 110 ton glacial rock that was moved into the city common in 1929 to save it from being quarried, sits right in the middle of town as one of the most recognizable landmarks in the city. The Fitchburg Art Museum, founded in 1925, is a genuinely well regarded museum for a city this size, a legacy of the wealth the paper and textile industries generated a century ago. Coggshall Park, more than 250 wooded acres around Mirror Lake, gives the city green space that a lot of small industrial cities never got around to preserving.
               </p>
+              <p>
+                Whether managing older timber-framed mill conversions, medical facilities along Route 2, or busy downtown offices near City Hall, Enterprise Cleaning Corporation delivers versatile, accountable{" "}
+                <Link href="/office-cleaning" className="text-[#0090c8] font-bold hover:underline">office cleaning services</Link>{" "}
+                that protect the physical assets and prestige of your facility.
+              </p>
             </div>
 
-            {/* Visual Highlight Cards */}
-            <div className="grid sm:grid-cols-3 gap-5 pt-4">
-              <div className="bg-white p-5 rounded-xl border border-slate-200 shadow-sm space-y-2">
-                <div className="w-10 h-10 rounded-lg bg-sky-50 text-[#0090c8] flex items-center justify-center font-bold">
-                  <MapPin className="w-5 h-5" />
+            <div className="grid md:grid-cols-3 gap-4 pt-4 border-t border-slate-100">
+              {[
+                { title: "The Rollstone Boulder", desc: "110-ton glacial monument preserved in 1929 on the common, symbolizing Fitchburg's enduring strength." },
+                { title: "Fitchburg Art Museum", desc: "Founded in 1925, representing the lasting cultural legacy and civic wealth created by early industry." },
+                { title: "Coggshall Park Preservation", desc: "Over 250 scenic acres surrounding Mirror Lake, maintaining exceptional quality of life for the community." },
+              ].map((item, idx) => (
+                <div key={idx} className="p-4 rounded-2xl bg-slate-50 border border-slate-100 text-left">
+                  <div className="font-extrabold text-slate-900 text-sm mb-1">{item.title}</div>
+                  <div className="text-slate-500 text-xs leading-relaxed">{item.desc}</div>
                 </div>
-                <h3 className="font-bold text-slate-900 text-base">The Rollstone Boulder</h3>
-                <p className="text-xs text-slate-500 leading-relaxed">
-                  Saved from quarrying in 1929 and relocated to the upper common, this 110-ton landmark symbolizes the lasting endurance of the city.
-                </p>
-              </div>
-
-              <div className="bg-white p-5 rounded-xl border border-slate-200 shadow-sm space-y-2">
-                <div className="w-10 h-10 rounded-lg bg-red-50 text-[#E31837] flex items-center justify-center font-bold">
-                  <Sparkles className="w-5 h-5" />
-                </div>
-                <h3 className="font-bold text-slate-900 text-base">Fitchburg Art Museum</h3>
-                <p className="text-xs text-slate-500 leading-relaxed">
-                  Founded in 1925, housing world-class galleries and showcasing the cultural heritage that supported Central Mass industry.
-                </p>
-              </div>
-
-              <div className="bg-white p-5 rounded-xl border border-slate-200 shadow-sm space-y-2">
-                <div className="w-10 h-10 rounded-lg bg-emerald-50 text-emerald-600 flex items-center justify-center font-bold">
-                  <Building2 className="w-5 h-5" />
-                </div>
-                <h3 className="font-bold text-slate-900 text-base">Coggshall Park</h3>
-                <p className="text-xs text-slate-500 leading-relaxed">
-                  Over 250 pristine acres surrounding Mirror Lake, representing the civic preservation that distinguishes North Central Mass.
-                </p>
-              </div>
+              ))}
             </div>
           </div>
         </div>
       </section>
 
-      {/* ─── LEAD SERVICE #1: CARPET CLEANING ─── */}
-      <section className="py-16 md:py-20 bg-white">
-        <div className="container mx-auto px-4 md:px-6 max-w-5xl">
-          <div className="grid lg:grid-cols-12 gap-10 items-center">
+      {/* ─── LEAD SERVICE 1: CARPET CLEANING ─── */}
+      <section className="py-20 bg-white">
+        <div className="container mx-auto px-4 md:px-6 max-w-6xl">
+          <div className="grid lg:grid-cols-12 gap-12 items-center">
             
             <div className="lg:col-span-7 space-y-6">
-              <div className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-[#0090c8] bg-sky-50 px-3 py-1.5 rounded-full border border-sky-100">
-                <Sparkles className="w-3.5 h-3.5 text-[#0090c8]" />
-                Lead Specialty Service
+              <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-blue-50 border border-blue-200 text-[#0090c8] text-xs font-black uppercase tracking-wider">
+                <Sparkles className="w-3.5 h-3.5" /> High-Traffic Fabric Care
               </div>
 
-              <h2 className="text-2xl md:text-3xl lg:text-4xl font-extrabold text-slate-900 tracking-tight leading-tight">
+              <h2 className="text-3xl sm:text-4xl font-extrabold text-slate-900 leading-tight">
                 Carpet cleaning for Fitchburg&apos;s offices, mills, and storefronts
               </h2>
 
-              <div className="prose prose-slate max-w-none text-base md:text-lg text-slate-600 leading-relaxed space-y-4">
+              <div className="space-y-4 text-slate-600 font-medium leading-relaxed text-[0.97rem]">
                 <p>
                   Fitchburg&apos;s commercial buildings run the gamut, from converted mill space and historic downtown storefronts to newer office and medical buildings along Route 2. Carpet in an old mill conversion behaves differently than carpet in a modern medical office, and our crews adjust the method accordingly.
                 </p>
@@ -376,48 +391,45 @@ export default function FitchburgCityPage() {
                 </p>
               </div>
 
+              <div className="grid sm:grid-cols-2 gap-3 pt-2">
+                {[
+                  "Truck-Mounted Hot Water Extraction",
+                  "Low-Moisture Encapsulation Cleans",
+                  "Salt, Slush & Winter Soil Extraction",
+                  "High-Traffic Commercial Lane Revitalization",
+                  "Dedicated Spot & Beverage Treatment",
+                  "Flexible Night & Weekend Dispatch"
+                ].map((feature, i) => (
+                  <div key={i} className="flex items-center gap-2 text-sm font-semibold text-slate-800">
+                    <Check className="w-4 h-4 text-[#0090c8] shrink-0" />
+                    <span>{feature}</span>
+                  </div>
+                ))}
+              </div>
+
               <div className="pt-2">
                 <Link
                   href="/floor-care-services-central-ma"
-                  className="inline-flex items-center gap-2 text-sm font-bold text-[#0090c8] hover:text-[#007ba8] transition-colors"
+                  className="inline-flex items-center gap-2 text-[#0090c8] font-bold hover:text-[#0078a8] text-sm group"
                 >
-                  <span>Explore full floor care and carpet cleaning programs</span>
-                  <ArrowRight className="w-4 h-4" />
+                  Explore Commercial Carpet &amp; Floor Care Programs <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
                 </Link>
               </div>
             </div>
 
-            {/* Visual Box */}
-            <div className="lg:col-span-5 bg-gradient-to-br from-slate-900 to-slate-800 p-6 md:p-8 rounded-2xl text-white shadow-xl space-y-5 border border-slate-700">
-              <h3 className="text-lg font-bold text-white flex items-center gap-2">
-                <Layers className="w-5 h-5 text-[#00B8FF]" />
-                Carpet Care Protocols
-              </h3>
-              <ul className="space-y-3.5 text-sm text-slate-300">
-                <li className="flex items-start gap-2.5">
-                  <CheckCircle2 className="w-4 h-4 text-[#00B8FF] shrink-0 mt-0.5" />
-                  <span><strong>Truck-mount hot water extraction:</strong> Deep fiber flush removing soil, road salt, and ground-in residues from high-traffic corridors.</span>
-                </li>
-                <li className="flex items-start gap-2.5">
-                  <CheckCircle2 className="w-4 h-4 text-[#00B8FF] shrink-0 mt-0.5" />
-                  <span><strong>Encapsulation low-moisture cleaning:</strong> Fast-drying procedure for fast turnarounds in busy 24/7 or daytime offices.</span>
-                </li>
-                <li className="flex items-start gap-2.5">
-                  <CheckCircle2 className="w-4 h-4 text-[#00B8FF] shrink-0 mt-0.5" />
-                  <span><strong>Stain and high-traffic spot management:</strong> Immediate treatment of tough spills, beverage marks, and entrance track-in.</span>
-                </li>
-                <li className="flex items-start gap-2.5">
-                  <CheckCircle2 className="w-4 h-4 text-[#00B8FF] shrink-0 mt-0.5" />
-                  <span><strong>Adaptive care for converted mills:</strong> Safe handling of legacy subflooring, heavy timber environments, and mixed surfaces.</span>
-                </li>
-              </ul>
-              <div className="pt-2 border-t border-slate-700">
-                <Link
-                  href="/commercial-cleaning-quote"
-                  className="w-full inline-flex items-center justify-center gap-2 py-3 rounded-xl font-bold text-white bg-[#0090c8] hover:bg-[#007ba8] transition-all text-sm"
-                >
-                  Schedule carpet walkthrough
-                </Link>
+            <div className="lg:col-span-5">
+              <div className="relative rounded-3xl overflow-hidden shadow-2xl border border-slate-200 group">
+                <Image
+                  src="/images/fitchburg_cleaning_hero.png"
+                  alt="Commercial Carpet Cleaning in Fitchburg MA"
+                  width={600}
+                  height={500}
+                  className="w-full h-auto object-cover transition-transform duration-500 group-hover:scale-105"
+                />
+                <div className="absolute bottom-0 inset-x-0 p-6 bg-gradient-to-t from-slate-900/90 via-slate-900/60 to-transparent text-white">
+                  <div className="text-xs font-bold uppercase tracking-widest text-[#FFE800]">Historic Mills &amp; Route 2 Offices</div>
+                  <div className="text-lg font-extrabold mt-1">Specialized Carpet &amp; Deep Fiber Cleaning</div>
+                </div>
               </div>
             </div>
 
@@ -425,45 +437,37 @@ export default function FitchburgCityPage() {
         </div>
       </section>
 
-      {/* ─── LEAD SERVICE #2: POST-CONSTRUCTION CLEANUP ─── */}
-      <section className="py-16 md:py-20 bg-slate-50 border-t border-slate-200/80">
-        <div className="container mx-auto px-4 md:px-6 max-w-5xl">
-          <div className="grid lg:grid-cols-12 gap-10 items-center">
-            
-            {/* Left Column: Image Banner */}
+      {/* ─── LEAD SERVICE 2: POST CONSTRUCTION CLEANUP ─── */}
+      <section className="py-20 bg-slate-50 border-y border-slate-200">
+        <div className="container mx-auto px-4 md:px-6 max-w-6xl">
+          <div className="grid lg:grid-cols-12 gap-12 items-center">
+
             <div className="lg:col-span-5 order-2 lg:order-1">
-              <div className="rounded-2xl overflow-hidden shadow-lg border border-slate-200 bg-white">
+              <div className="relative rounded-3xl overflow-hidden shadow-2xl border border-slate-200 group">
                 <Image
                   src="/images/fitchburg_cleaning_banner.png"
-                  alt="Enterprise Cleaning Corp post construction cleanup and floor care in a newly renovated commercial office facility in Fitchburg MA"
-                  width={550}
-                  height={380}
-                  className="w-full h-auto object-cover"
+                  alt="Post Construction Cleaning for Fitchburg MA Renovation Projects"
+                  width={600}
+                  height={500}
+                  className="w-full h-auto object-cover transition-transform duration-500 group-hover:scale-105"
                 />
-                <div className="p-5 space-y-2">
-                  <div className="flex items-center gap-2 text-xs font-bold text-[#E31837] uppercase tracking-wider">
-                    <HardHat className="w-4 h-4" />
-                    Turnkey Handover Standard
-                  </div>
-                  <p className="text-xs text-slate-600 leading-relaxed">
-                    Three-stage post-construction detailing removing fine silica dust, drywall powder, and mechanical residues so renovations are move-in ready.
-                  </p>
+                <div className="absolute bottom-0 inset-x-0 p-6 bg-gradient-to-t from-slate-900/90 via-slate-900/60 to-transparent text-white">
+                  <div className="text-xs font-bold uppercase tracking-widest text-[#00B8FF]">Rough · Detail · Final Occupancy Pass</div>
+                  <div className="text-lg font-extrabold mt-1">Renovation &amp; Mill Turnover Specialists</div>
                 </div>
               </div>
             </div>
 
-            {/* Right Column: Copy */}
-            <div className="lg:col-span-7 order-1 lg:order-2 space-y-6">
-              <div className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-[#E31837] bg-red-50 px-3 py-1.5 rounded-full border border-red-100">
-                <HardHat className="w-3.5 h-3.5 text-[#E31837]" />
-                Renovations &amp; New Buildouts
+            <div className="lg:col-span-7 space-y-6 order-1 lg:order-2">
+              <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-red-50 border border-red-200 text-[#E31837] text-xs font-black uppercase tracking-wider">
+                <HardHat className="w-3.5 h-3.5" /> Project Turnover Specialists
               </div>
 
-              <h2 className="text-2xl md:text-3xl lg:text-4xl font-extrabold text-slate-900 tracking-tight leading-tight">
+              <h2 className="text-3xl sm:text-4xl font-extrabold text-slate-900 leading-tight">
                 Post construction cleanup for Fitchburg&apos;s renovated spaces
               </h2>
 
-              <div className="prose prose-slate max-w-none text-base md:text-lg text-slate-600 leading-relaxed space-y-4">
+              <div className="space-y-4 text-slate-600 font-medium leading-relaxed text-[0.97rem]">
                 <p>
                   A lot of Fitchburg&apos;s commercial growth in recent years has come from renovating older buildings rather than building new ones from scratch, and renovation work leaves behind just as much mess as new construction, sometimes more, since older buildings often have decades of accumulated dust and debris disturbed during the work.
                 </p>
@@ -475,29 +479,26 @@ export default function FitchburgCityPage() {
                 </p>
               </div>
 
-              {/* 3-Stage Process Grid */}
+              {/* 3-Stage Process Breakdown */}
               <div className="grid sm:grid-cols-3 gap-3 pt-2">
-                <div className="p-3.5 rounded-xl bg-white border border-slate-200">
-                  <div className="text-xs font-black text-[#E31837] uppercase tracking-wider mb-1">Phase 1: Rough</div>
-                  <div className="text-xs text-slate-600">Heavy debris, protective wraps, and bulk drywall dust extraction.</div>
-                </div>
-                <div className="p-3.5 rounded-xl bg-white border border-slate-200">
-                  <div className="text-xs font-black text-[#0090c8] uppercase tracking-wider mb-1">Phase 2: Detail</div>
-                  <div className="text-xs text-slate-600">Microfiber wiping of ducts, frames, vents, fixtures, and corners.</div>
-                </div>
-                <div className="p-3.5 rounded-xl bg-white border border-slate-200">
-                  <div className="text-xs font-black text-emerald-600 uppercase tracking-wider mb-1">Phase 3: Final</div>
-                  <div className="text-xs text-slate-600">Polished floors, spotless glass, and full tenant walk-through polish.</div>
-                </div>
+                {[
+                  { stage: "Stage 1: Rough Clean", desc: "Clearing bulk debris, heavy dust, packaging, and protective floor covers" },
+                  { stage: "Stage 2: Detail Clean", desc: "Deep wipe of vents, fixtures, sills, glass scraping, and machine floor scrub" },
+                  { stage: "Stage 3: Final Clean", desc: "Meticulous walk-through pass ready for immediate occupancy and opening day" }
+                ].map((item, idx) => (
+                  <div key={idx} className="p-4 rounded-xl bg-white border border-slate-200 shadow-sm text-left">
+                    <div className="text-xs font-black text-[#E31837] uppercase">{item.stage}</div>
+                    <div className="text-xs text-slate-500 font-medium mt-1 leading-relaxed">{item.desc}</div>
+                  </div>
+                ))}
               </div>
 
-              <div className="pt-2">
+              <div className="pt-2 flex flex-wrap gap-4 text-sm">
                 <Link
                   href="/post-construction-cleaning-massachusetts"
-                  className="inline-flex items-center gap-2 text-sm font-bold text-[#E31837] hover:text-[#c9142e] transition-colors"
+                  className="text-[#0090c8] font-bold hover:text-[#0078a8] inline-flex items-center gap-1.5"
                 >
-                  <span>Learn more about our post-construction services</span>
-                  <ArrowRight className="w-4 h-4" />
+                  Explore Post-Construction Capabilities <ArrowRight className="w-4 h-4" />
                 </Link>
               </div>
             </div>
@@ -506,179 +507,175 @@ export default function FitchburgCityPage() {
         </div>
       </section>
 
-      {/* ─── SECTION 4: FULL SERVICE LINEUP ─── */}
-      <section className="py-16 md:py-20 bg-white">
-        <div className="container mx-auto px-4 md:px-6 max-w-5xl">
-          <div className="space-y-6 mb-10 text-center max-w-3xl mx-auto">
-            <div className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-[#0090c8] bg-sky-50 px-3 py-1.5 rounded-full border border-sky-100">
-              <Briefcase className="w-3.5 h-3.5 text-[#0090c8]" />
-              Comprehensive Commercial Care
-            </div>
-            <h2 className="text-2xl md:text-3xl lg:text-4xl font-extrabold text-slate-900 tracking-tight leading-tight">
+      {/* ─── EVERYTHING ELSE FITCHBURG BUSINESSES NEED ─── */}
+      <section className="py-20 bg-white">
+        <div className="container mx-auto px-4 md:px-6 max-w-6xl">
+          <div className="text-center max-w-2xl mx-auto mb-14">
+            <p className="text-xs font-extrabold uppercase tracking-[0.2em] text-[#0090c8] mb-2">Comprehensive Facility Services</p>
+            <h2 className="text-3xl md:text-4xl font-extrabold text-slate-900 mb-4">
               The complete lineup for Fitchburg businesses
             </h2>
-            <p className="text-slate-600 text-base md:text-lg">
+            <p className="text-slate-600 font-medium leading-relaxed">
               Carpet cleaning and post construction work are two of the services we handle most often in Fitchburg, but our full service list covers:
             </p>
           </div>
 
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
-            {/* Service 1 */}
-            <div className="bg-slate-50 p-5 rounded-xl border border-slate-200 hover:border-[#0090c8] transition-colors group">
-              <div className="w-9 h-9 rounded-lg bg-[#0090c8]/10 text-[#0090c8] flex items-center justify-center mb-3 group-hover:bg-[#0090c8] group-hover:text-white transition-colors">
-                <Building2 className="w-5 h-5" />
-              </div>
-              <h3 className="font-bold text-slate-900 text-base mb-1.5">Nightly and scheduled janitorial</h3>
-              <p className="text-xs text-slate-600 leading-relaxed mb-3">
-                Thorough nighttime office cleaning, trash removal, surface sanitization, and restroom restocking customized to your building schedule.
-              </p>
-              <Link href="/janitorial-services" className="text-xs font-bold text-[#0090c8] inline-flex items-center gap-1 hover:underline">
-                Janitorial services <ArrowRight className="w-3 h-3" />
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {[
+              {
+                icon: Clock,
+                title: "Nightly and Scheduled Janitorial Cleaning",
+                desc: "Thorough nighttime office cleaning, trash removal, surface sanitization, and restroom restocking customized to your building schedule.",
+                href: "/janitorial-services"
+              },
+              {
+                icon: Users,
+                title: "Day Porter and Matron Staffing",
+                desc: "Continuous daytime maintenance for high-traffic lobbies, conference rooms, touchpoints, and cafeterias during business hours.",
+                href: "/office-cleaning"
+              },
+              {
+                icon: Stethoscope,
+                title: "Medical & Healthcare Office Cleaning",
+                desc: "Compliant healthcare facility cleaning with medical-grade hospital disinfectants, terminal cleaning, and cross-contamination control.",
+                href: "/medical-healthcare-cleaning-central-ma"
+              },
+              {
+                icon: Sparkles,
+                title: "Floor Care Beyond Carpet (Strip & Wax)",
+                desc: "High-solid strip and wax, machine scrubbing, VCT maintenance, ceramic tile and grout restoration, and warehouse concrete sealing.",
+                href: "/floor-care-services-central-ma"
+              },
+              {
+                icon: Building2,
+                title: "Window Cleaning (Interior & Exterior)",
+                desc: "Crystal-clear window cleaning for multi-story office facades, street-level retail displays, and executive conference room glass partitions.",
+                href: "/specialty-cleaning-services-central-ma"
+              },
+              {
+                icon: Truck,
+                title: "Pressure Washing for Entrances & Parking Areas",
+                desc: "High-PSI commercial washing to remove grime, salt residue, gum, and oil marks from concrete walkways, sidewalks, and parking areas.",
+                href: "/specialty-cleaning-services-central-ma"
+              },
+              {
+                icon: Layers,
+                title: "Disinfection & Electrostatic Spraying",
+                desc: "Complete wrap-around surface pathogen reduction with electrostatic spray systems for high-touch points, desks, and shared spaces.",
+                href: "/specialty-cleaning-services-central-ma"
+              },
+              {
+                icon: HardHat,
+                title: "Turnkey Post-Construction Cleanout",
+                desc: "Phased cleanup coordination with general contractors, transforming newly renovated buildings into turnkey tenant spaces.",
+                href: "/post-construction-cleaning-central-ma"
+              },
+              {
+                icon: Briefcase,
+                title: "Turnover Cleaning for Commercial Suites",
+                desc: "Fast, comprehensive turnover cleaning between commercial leases to help property managers prepare for incoming tenants.",
+                href: "/turnover-cleaning-central-ma"
+              },
+            ].map((svc, idx) => (
+              <Link key={idx} href={svc.href} className="p-6 rounded-2xl border-2 border-slate-100 hover:border-[#0090c8]/40 hover:shadow-lg transition-all group text-left block bg-white">
+                <div className="w-12 h-12 rounded-2xl bg-slate-50 group-hover:bg-[#0090c8]/8 flex items-center justify-center mb-5 transition-colors">
+                  <svc.icon className="w-6 h-6 text-[#0090c8]" />
+                </div>
+                <h3 className="font-extrabold text-slate-900 text-base mb-2 group-hover:text-[#0090c8] transition-colors">{svc.title}</h3>
+                <p className="text-slate-500 text-sm font-medium leading-relaxed">{svc.desc}</p>
+                <span className="inline-flex items-center gap-1 text-xs font-bold text-[#0090c8] mt-3">
+                  Service Details <ArrowRight className="w-3 h-3" />
+                </span>
               </Link>
-            </div>
-
-            {/* Service 2 */}
-            <div className="bg-slate-50 p-5 rounded-xl border border-slate-200 hover:border-[#0090c8] transition-colors group">
-              <div className="w-9 h-9 rounded-lg bg-[#0090c8]/10 text-[#0090c8] flex items-center justify-center mb-3 group-hover:bg-[#0090c8] group-hover:text-white transition-colors">
-                <UserCheck className="w-5 h-5" />
-              </div>
-              <h3 className="font-bold text-slate-900 text-base mb-1.5">Day porter and matron staffing</h3>
-              <p className="text-xs text-slate-600 leading-relaxed mb-3">
-                Continuous daytime maintenance for high-traffic lobbies, conference rooms, touchpoints, and cafeterias during business hours.
-              </p>
-              <Link href="/office-cleaning" className="text-xs font-bold text-[#0090c8] inline-flex items-center gap-1 hover:underline">
-                Office cleaning <ArrowRight className="w-3 h-3" />
-              </Link>
-            </div>
-
-            {/* Service 3 */}
-            <div className="bg-slate-50 p-5 rounded-xl border border-slate-200 hover:border-[#0090c8] transition-colors group">
-              <div className="w-9 h-9 rounded-lg bg-[#0090c8]/10 text-[#0090c8] flex items-center justify-center mb-3 group-hover:bg-[#0090c8] group-hover:text-white transition-colors">
-                <Stethoscope className="w-5 h-5" />
-              </div>
-              <h3 className="font-bold text-slate-900 text-base mb-1.5">Medical and healthcare cleaning</h3>
-              <p className="text-xs text-slate-600 leading-relaxed mb-3">
-                Compliant healthcare facility cleaning with medical-grade hospital disinfectants, terminal cleaning, and cross-contamination control.
-              </p>
-              <Link href="/medical-office-cleaning" className="text-xs font-bold text-[#0090c8] inline-flex items-center gap-1 hover:underline">
-                Healthcare cleaning <ArrowRight className="w-3 h-3" />
-              </Link>
-            </div>
-
-            {/* Service 4 */}
-            <div className="bg-slate-50 p-5 rounded-xl border border-slate-200 hover:border-[#0090c8] transition-colors group">
-              <div className="w-9 h-9 rounded-lg bg-[#0090c8]/10 text-[#0090c8] flex items-center justify-center mb-3 group-hover:bg-[#0090c8] group-hover:text-white transition-colors">
-                <Layers className="w-5 h-5" />
-              </div>
-              <h3 className="font-bold text-slate-900 text-base mb-1.5">Floor care beyond carpet</h3>
-              <p className="text-xs text-slate-600 leading-relaxed mb-3">
-                High-solid strip and wax, machine scrubbing, VCT maintenance, ceramic tile and grout restoration, and warehouse concrete sealing.
-              </p>
-              <Link href="/floor-care-services-central-ma" className="text-xs font-bold text-[#0090c8] inline-flex items-center gap-1 hover:underline">
-                Floor care services <ArrowRight className="w-3 h-3" />
-              </Link>
-            </div>
-
-            {/* Service 5 */}
-            <div className="bg-slate-50 p-5 rounded-xl border border-slate-200 hover:border-[#0090c8] transition-colors group">
-              <div className="w-9 h-9 rounded-lg bg-[#0090c8]/10 text-[#0090c8] flex items-center justify-center mb-3 group-hover:bg-[#0090c8] group-hover:text-white transition-colors">
-                <Sparkles className="w-5 h-5" />
-              </div>
-              <h3 className="font-bold text-slate-900 text-base mb-1.5">Window and exterior pressure washing</h3>
-              <p className="text-xs text-slate-600 leading-relaxed mb-3">
-                Streak-free interior and exterior architectural glass cleaning, combined with high-PSI washing for walkways, entrances, and parking lots.
-              </p>
-              <Link href="/specialty-cleaning-services-central-ma" className="text-xs font-bold text-[#0090c8] inline-flex items-center gap-1 hover:underline">
-                Specialty cleaning <ArrowRight className="w-3 h-3" />
-              </Link>
-            </div>
-
-            {/* Service 6 */}
-            <div className="bg-slate-50 p-5 rounded-xl border border-slate-200 hover:border-[#0090c8] transition-colors group">
-              <div className="w-9 h-9 rounded-lg bg-[#0090c8]/10 text-[#0090c8] flex items-center justify-center mb-3 group-hover:bg-[#0090c8] group-hover:text-white transition-colors">
-                <ShieldCheck className="w-5 h-5" />
-              </div>
-              <h3 className="font-bold text-slate-900 text-base mb-1.5">Disinfection &amp; electrostatic spraying</h3>
-              <p className="text-xs text-slate-600 leading-relaxed mb-3">
-                Complete wrap-around surface pathogen reduction with electrostatic spray systems for high-touch points, desks, and shared spaces.
-              </p>
-              <Link href="/turnover-cleaning-central-ma" className="text-xs font-bold text-[#0090c8] inline-flex items-center gap-1 hover:underline">
-                Turnover cleaning <ArrowRight className="w-3 h-3" />
-              </Link>
-            </div>
+            ))}
           </div>
 
-          <div className="mt-8 p-4 rounded-xl bg-sky-50 border border-sky-100 text-slate-700 text-sm md:text-base leading-relaxed text-center">
-            Property managers with older downtown buildings often start with a single deep clean or post construction job and move into a standing janitorial contract once they see how the crew handles the building.
+          <div className="mt-12 p-6 rounded-2xl bg-slate-50 border border-slate-200 text-center max-w-3xl mx-auto">
+            <p className="text-slate-700 text-sm sm:text-base font-medium leading-relaxed">
+              Property managers with older downtown buildings often start with a single deep clean or post construction job and move into a standing janitorial contract once they see how the crew handles the building.
+            </p>
           </div>
         </div>
       </section>
 
-      {/* ─── SECTION 5: LOCAL CREDENTIALS & TRUST ─── */}
-      <section className="py-16 md:py-20 bg-slate-900 text-white">
-        <div className="container mx-auto px-4 md:px-6 max-w-5xl">
+      {/* ─── LOCALLY OWNED & PROVEN CREDIBILITY ─── */}
+      <section className="py-20 bg-slate-50 border-y border-slate-200">
+        <div className="container mx-auto px-4 md:px-6 max-w-6xl">
           <div className="grid lg:grid-cols-12 gap-10 items-center">
             
-            <div className="lg:col-span-7 space-y-6">
-              <div className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-[#00B8FF] bg-[#0090c8]/15 border border-[#0090c8]/30 px-3.5 py-1.5 rounded-full">
-                <Trophy className="w-3.5 h-3.5 text-[#FFE800]" />
-                Local Experience &bull; Central MA Base
-              </div>
-
-              <h2 className="text-2xl md:text-3xl lg:text-4xl font-extrabold text-white tracking-tight leading-tight">
+            <div className="lg:col-span-7 space-y-5">
+              <span className="text-xs font-black tracking-widest uppercase text-[#0090c8] bg-blue-50 px-3.5 py-1.5 rounded-full border border-blue-200">
+                Local Ownership Leadership
+              </span>
+              <h2 className="text-3xl sm:text-4xl font-extrabold text-slate-900 leading-tight">
                 Locally owned, more than two decades in Central Massachusetts
               </h2>
-
-              <div className="text-slate-300 text-base md:text-lg leading-relaxed space-y-4">
+              <div className="space-y-4 text-slate-600 font-medium leading-relaxed text-[0.97rem]">
                 <p>
                   Enterprise Cleaning Corporation has been serving commercial clients across Central Massachusetts for more than two decades, run day to day by owners Steve Buchalter and Julio Biage out of our base in West Boylston.
                 </p>
                 <p>
-                  The company has been named a Worcester Business Journal Best of Business winner four times and has held Better Business Bureau accreditation since 2007.
+                  The company has been named a Worcester Business Journal Best of Business winner four times and has held Better Business Bureau accreditation since 2007. We hold a 97% client retention rate, and long term relationships with regional clients like MacIntire Insurance and the Worcester Club reflect that consistency.
                 </p>
                 <p>
-                  We hold a 97% client retention rate, and long term relationships with regional clients like MacIntire Insurance and the Worcester Club reflect that consistency. Fitchburg falls within our regular Worcester County service territory.
+                  Fitchburg falls within our regular Worcester County service territory, and our crews run scheduled routes through North Central Mass every week.
                 </p>
               </div>
 
-              <div className="pt-2">
+              <div className="flex flex-wrap gap-4 pt-3">
                 <Link
                   href="/about"
-                  className="inline-flex items-center gap-2 text-sm font-bold text-[#00B8FF] hover:text-white transition-colors"
+                  className="px-6 py-3 rounded-xl bg-[#003B7A] hover:bg-[#002f61] text-white font-extrabold text-sm shadow-md transition inline-flex items-center gap-2"
                 >
-                  <span>Learn more about our ownership and 97% retention story</span>
-                  <ArrowRight className="w-4 h-4" />
+                  About Enterprise Leadership <ArrowRight className="w-4 h-4" />
+                </Link>
+                <Link
+                  href="/success-stories"
+                  className="px-6 py-3 rounded-xl bg-white hover:bg-slate-100 text-slate-900 font-bold text-sm border border-slate-200 transition inline-flex items-center gap-2"
+                >
+                  View Client Case Studies
                 </Link>
               </div>
             </div>
 
-            {/* Right Card: Credential Counters */}
-            <div className="lg:col-span-5 bg-slate-800/90 border border-slate-700 rounded-2xl p-6 md:p-8 space-y-6">
-              <h3 className="text-lg font-bold text-white border-b border-slate-700 pb-3">
-                Why Worcester County relies on ECC
-              </h3>
+            <div className="lg:col-span-5">
+              <div className="bg-slate-900 rounded-3xl p-8 text-white shadow-2xl space-y-6 relative overflow-hidden">
+                <div className="absolute top-0 right-0 w-48 h-48 bg-[#0090c8]/20 rounded-full blur-3xl pointer-events-none" />
 
-              <div className="space-y-4">
-                <div className="flex items-center justify-between pb-3 border-b border-slate-700/60">
-                  <span className="text-sm text-slate-300">Client retention rate</span>
-                  <span className="text-lg font-black text-[#00B8FF]">97%</span>
+                <div className="space-y-2">
+                  <div className="flex items-center gap-2 text-[#FFE800]">
+                    <Award className="w-5 h-5" />
+                    <span className="text-xs font-black uppercase tracking-widest">Unmatched Retention</span>
+                  </div>
+                  <h3 className="text-2xl font-black text-white">97% Client Retention Rate</h3>
+                  <p className="text-sm text-slate-300 leading-relaxed">
+                    Long-term commercial partnerships built on direct owner accountability with Steve Buchalter and Julio Biage.
+                  </p>
                 </div>
-                <div className="flex items-center justify-between pb-3 border-b border-slate-700/60">
-                  <span className="text-sm text-slate-300">WBJ Best of Business awards</span>
-                  <span className="text-lg font-black text-[#FFE800]">4-Time Winner</span>
-                </div>
-                <div className="flex items-center justify-between pb-3 border-b border-slate-700/60">
-                  <span className="text-sm text-slate-300">BBB accreditation</span>
-                  <span className="text-lg font-black text-white">Since 2007 (A+)</span>
-                </div>
-                <div className="flex items-center justify-between">
-                  <span className="text-sm text-slate-300">Regional experience</span>
-                  <span className="text-lg font-black text-[#E31837]">20+ Years</span>
-                </div>
-              </div>
 
-              <div className="p-3.5 rounded-xl bg-slate-900/80 border border-slate-700/80 text-xs text-slate-400">
-                Direct owner oversight on every contract with customized quality inspection logs.
+                <div className="space-y-3.5 border-t border-white/10 pt-5 text-sm">
+                  <div className="flex items-center gap-3">
+                    <CheckCircle2 className="w-4 h-4 text-emerald-400 shrink-0" />
+                    <span>Four-Time WBJ Best of Business Winner</span>
+                  </div>
+                  <div className="flex items-center gap-3">
+                    <CheckCircle2 className="w-4 h-4 text-emerald-400 shrink-0" />
+                    <span>BBB Accredited with A+ Standing Since 2007</span>
+                  </div>
+                  <div className="flex items-center gap-3">
+                    <CheckCircle2 className="w-4 h-4 text-emerald-400 shrink-0" />
+                    <span>Fully Insured and Bonded In-House Cleaning Teams</span>
+                  </div>
+                  <div className="flex items-center gap-3">
+                    <CheckCircle2 className="w-4 h-4 text-emerald-400 shrink-0" />
+                    <span>Trusted by MacIntire Insurance &amp; The Worcester Club</span>
+                  </div>
+                </div>
+
+                <div className="pt-2 border-t border-white/10 flex items-center justify-between text-xs text-slate-300">
+                  <span>Home Base: West Boylston, MA</span>
+                  <span className="text-[#FFE800] font-bold">Worcester County Coverage</span>
+                </div>
               </div>
             </div>
 
@@ -686,186 +683,144 @@ export default function FitchburgCityPage() {
         </div>
       </section>
 
-      {/* ─── SECTION 6: WHERE WE WORK IN FITCHBURG ─── */}
-      <section className="py-16 md:py-20 bg-slate-50">
-        <div className="container mx-auto px-4 md:px-6 max-w-5xl">
-          <div className="space-y-6 mb-10">
-            <div className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-[#0090c8] bg-sky-50 px-3 py-1.5 rounded-full border border-sky-100">
-              <MapPin className="w-3.5 h-3.5 text-[#E31837]" />
-              Local Service Footprint
-            </div>
-            
-            <h2 className="text-2xl md:text-3xl lg:text-4xl font-extrabold text-slate-900 tracking-tight leading-tight">
-              Where we work in Fitchburg
-            </h2>
+      {/* ─── WHERE WE WORK IN FITCHBURG + BANNER IMAGE ─── */}
+      <section className="relative overflow-hidden">
+        <div className="absolute inset-0 z-0">
+          <Image
+            src="/images/fitchburg_cleaning_banner.png"
+            alt="Commercial cleaning in Fitchburg MA Route 2 corridor"
+            fill
+            className="object-cover object-center"
+          />
+          <div className="absolute inset-0 bg-slate-900/75" />
+        </div>
 
-            <p className="text-slate-600 text-base md:text-lg leading-relaxed">
-              We serve businesses throughout Fitchburg, from the downtown core near City Hall and the Rollstone Boulder to office and medical buildings along Route 2 and the commercial space near the commuter rail station. Property managers handling converted mill buildings and historic downtown storefronts both rely on us, since we adjust the cleaning approach to what an older building actually needs rather than treating every space the same way.
-            </p>
-          </div>
+        <div className="container mx-auto px-4 md:px-6 py-20 relative z-10">
+          <div className="max-w-5xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+            <div className="space-y-5">
+              <p className="text-xs font-extrabold uppercase tracking-[0.2em] text-[#00B8FF]">Full Geographic Coverage</p>
+              <h2 className="text-3xl md:text-4xl font-extrabold text-white leading-tight">
+                Where we work in Fitchburg
+              </h2>
+              <div className="space-y-4 text-slate-200 font-medium leading-relaxed text-[0.97rem]">
+                <p>
+                  We serve businesses throughout Fitchburg, from the downtown core near City Hall and the Rollstone Boulder to office and medical buildings along Route 2 and the commercial space near the commuter rail station.
+                </p>
+                <p>
+                  Property managers handling converted mill buildings and historic downtown storefronts both rely on us, since we adjust the cleaning approach to what an older building actually needs rather than treating every space the same way.
+                </p>
+              </div>
+              <div className="flex flex-wrap gap-4 pt-2">
+                <Link href="/contact" className="inline-flex items-center gap-2 bg-[#E31837] text-white font-extrabold px-6 py-3 rounded-xl hover:bg-red-700 transition-colors shadow-lg text-sm">
+                  Request a Free Walkthrough <ArrowRight className="w-4 h-4" />
+                </Link>
+                <a href="tel:5088901000" className="inline-flex items-center gap-2 text-white font-bold px-6 py-3 rounded-xl border border-white/30 hover:bg-white/10 transition-colors text-sm backdrop-blur-md">
+                  <PhoneCall className="w-4 h-4 text-[#00B8FF]" />
+                  (508) 890-1000
+                </a>
+              </div>
+            </div>
 
-          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
-            <div className="p-4 rounded-xl bg-white border border-slate-200">
-              <h3 className="font-bold text-slate-900 text-sm mb-1">Downtown &amp; City Hall</h3>
-              <p className="text-xs text-slate-500">Main Street businesses, municipal facilities, and offices around Rollstone Boulder.</p>
-            </div>
-            <div className="p-4 rounded-xl bg-white border border-slate-200">
-              <h3 className="font-bold text-slate-900 text-sm mb-1">Route 2 Corridor</h3>
-              <p className="text-xs text-slate-500">Corporate offices, medical centers, and highway-accessible commercial suites.</p>
-            </div>
-            <div className="p-4 rounded-xl bg-white border border-slate-200">
-              <h3 className="font-bold text-slate-900 text-sm mb-1">MBTA Commuter Rail Station</h3>
-              <p className="text-xs text-slate-500">Transit-adjacent mixed-use buildings, retail spaces, and professional practices.</p>
-            </div>
-            <div className="p-4 rounded-xl bg-white border border-slate-200">
-              <h3 className="font-bold text-slate-900 text-sm mb-1">Converted Mill Properties</h3>
-              <p className="text-xs text-slate-500">Repurposed historic textile and paper mill complexes now housing modern offices.</p>
+            <div className="grid grid-cols-2 gap-4">
+              {[
+                { icon: ShieldCheck, stat: "20+ Yrs", label: "Central Mass Experience" },
+                { icon: Trophy, stat: "4×", label: "WBJ Best of Business" },
+                { icon: Users, stat: "97%", label: "Client Retention Rate" },
+                { icon: MapPin, stat: "Route 2", label: "Highway Corridor Coverage" },
+              ].map((item, i) => (
+                <div key={i} className="bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl p-5 text-center hover:bg-white/20 transition-colors">
+                  <item.icon className="w-6 h-6 text-[#00B8FF] mx-auto mb-2" />
+                  <div className="text-2xl font-black text-white mb-0.5">{item.stat}</div>
+                  <div className="text-xs text-slate-300 font-semibold">{item.label}</div>
+                </div>
+              ))}
             </div>
           </div>
         </div>
       </section>
 
-      {/* ─── SECTION 7: FAQS ─── */}
-      <section className="py-16 md:py-20 bg-white border-t border-slate-200/80">
-        <div className="container mx-auto px-4 md:px-6 max-w-4xl">
-          <div className="text-center space-y-4 mb-12">
-            <div className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-[#0090c8] bg-sky-50 px-3 py-1.5 rounded-full border border-sky-100">
-              <ChevronDown className="w-3.5 h-3.5 text-[#0090c8]" />
-              Frequently Asked Questions
+      {/* ─── FAQS ─── */}
+      <section className="py-20 bg-white">
+        <div className="container mx-auto px-4 md:px-6">
+          <div className="max-w-4xl mx-auto">
+            <div className="text-center mb-14">
+              <p className="text-xs font-extrabold uppercase tracking-[0.2em] text-[#0090c8] mb-2">Common Questions</p>
+              <h2 className="text-3xl md:text-4xl font-extrabold text-slate-900 mb-3">
+                Common questions from Fitchburg business owners
+              </h2>
+              <p className="text-slate-500 font-medium">
+                Transparent answers regarding our commercial carpet, post-construction, and janitorial services in Fitchburg.
+              </p>
             </div>
-            <h2 className="text-2xl md:text-3xl lg:text-4xl font-extrabold text-slate-900 tracking-tight leading-tight">
-              Common questions from Fitchburg business owners
-            </h2>
-            <p className="text-slate-600 text-sm md:text-base">
-              Clear answers regarding our commercial cleaning, carpet care, and post-construction processes in Fitchburg.
-            </p>
-          </div>
 
-          <div className="space-y-4">
-            {/* FAQ 1 */}
-            <details className="group border border-slate-200 rounded-xl bg-white p-5 transition-colors open:bg-slate-50/60 open:border-[#0090c8]/40">
-              <summary className="flex items-center justify-between cursor-pointer font-bold text-slate-900 text-base md:text-lg list-none select-none">
-                <span>Do you clean older, historic commercial buildings?</span>
-                <span className="transition-transform group-open:rotate-180 text-slate-400 group-open:text-[#0090c8] shrink-0 ml-4">
-                  <ChevronDown className="w-5 h-5" />
-                </span>
-              </summary>
-              <div className="mt-3 text-slate-600 text-sm md:text-base leading-relaxed pt-2 border-t border-slate-100">
-                Yes. A lot of our Fitchburg work is in older downtown buildings and converted mill space. We adjust our methods for older flooring, plaster, and fixtures instead of using a one size fits all approach.
-              </div>
-            </details>
-
-            {/* FAQ 2 */}
-            <details className="group border border-slate-200 rounded-xl bg-white p-5 transition-colors open:bg-slate-50/60 open:border-[#0090c8]/40">
-              <summary className="flex items-center justify-between cursor-pointer font-bold text-slate-900 text-base md:text-lg list-none select-none">
-                <span>How do you handle post construction cleaning in a renovation project?</span>
-                <span className="transition-transform group-open:rotate-180 text-slate-400 group-open:text-[#0090c8] shrink-0 ml-4">
-                  <ChevronDown className="w-5 h-5" />
-                </span>
-              </summary>
-              <div className="mt-3 text-slate-600 text-sm md:text-base leading-relaxed pt-2 border-t border-slate-100">
-                We work directly with the contractor or property owner on timing, then run a rough clean, detail clean, and final clean so the space is ready for occupancy by the handover date.
-              </div>
-            </details>
-
-            {/* FAQ 3 */}
-            <details className="group border border-slate-200 rounded-xl bg-white p-5 transition-colors open:bg-slate-50/60 open:border-[#0090c8]/40">
-              <summary className="flex items-center justify-between cursor-pointer font-bold text-slate-900 text-base md:text-lg list-none select-none">
-                <span>Is carpet cleaning included in a standard janitorial contract, or is it separate?</span>
-                <span className="transition-transform group-open:rotate-180 text-slate-400 group-open:text-[#0090c8] shrink-0 ml-4">
-                  <ChevronDown className="w-5 h-5" />
-                </span>
-              </summary>
-              <div className="mt-3 text-slate-600 text-sm md:text-base leading-relaxed pt-2 border-t border-slate-100">
-                Carpet cleaning is usually scheduled separately from nightly janitorial service, since it needs different equipment and timing. Many Fitchburg clients bundle both into one ongoing contract for simplicity.
-              </div>
-            </details>
-
-            {/* FAQ 4 */}
-            <details className="group border border-slate-200 rounded-xl bg-white p-5 transition-colors open:bg-slate-50/60 open:border-[#0090c8]/40">
-              <summary className="flex items-center justify-between cursor-pointer font-bold text-slate-900 text-base md:text-lg list-none select-none">
-                <span>Do you serve buildings near the commuter rail station and downtown?</span>
-                <span className="transition-transform group-open:rotate-180 text-slate-400 group-open:text-[#0090c8] shrink-0 ml-4">
-                  <ChevronDown className="w-5 h-5" />
-                </span>
-              </summary>
-              <div className="mt-3 text-slate-600 text-sm md:text-base leading-relaxed pt-2 border-t border-slate-100">
-                Yes. Downtown Fitchburg, the area near City Hall, and the commercial buildings along Main Street and Route 2 are all part of our regular service area.
-              </div>
-            </details>
-          </div>
-
-          <div className="mt-8 text-center">
-            <Link
-              href="/commercial-cleaning-faq"
-              className="inline-flex items-center gap-2 text-sm font-bold text-[#0090c8] hover:underline"
-            >
-              <span>View our complete commercial cleaning FAQ repository</span>
-              <ArrowRight className="w-4 h-4" />
-            </Link>
+            <div className="space-y-3">
+              {structuredDataFAQ.mainEntity.map((faq, index) => (
+                <details key={index} className="group bg-slate-50 rounded-2xl border border-slate-200 hover:border-[#0090c8]/30 transition-colors overflow-hidden">
+                  <summary className="flex items-center justify-between gap-4 p-6 cursor-pointer list-none font-extrabold text-slate-900 hover:text-[#0090c8] transition-colors text-base">
+                    <span>{faq.name}</span>
+                    <ChevronDown className="w-5 h-5 text-slate-400 shrink-0 group-open:rotate-180 transition-transform" />
+                  </summary>
+                  <div className="px-6 pb-6 text-slate-600 font-medium leading-relaxed text-sm border-t border-slate-200 pt-4">
+                    {faq.acceptedAnswer.text}
+                  </div>
+                </details>
+              ))}
+            </div>
           </div>
         </div>
       </section>
 
-      {/* ─── SECTION 8: FINAL CALL TO ACTION ─── */}
-      <section className="py-16 md:py-20 bg-gradient-to-br from-slate-900 via-slate-850 to-slate-950 text-white relative overflow-hidden">
-        <div className="absolute inset-0 opacity-10 bg-[radial-gradient(#0090c8_1px,transparent_1px)] [background-size:24px_24px]" />
-        
-        <div className="container mx-auto px-4 md:px-6 max-w-4xl relative z-10 text-center space-y-8">
-          <div className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-[#00B8FF] bg-[#0090c8]/20 border border-[#0090c8]/40 px-3.5 py-1.5 rounded-full">
-            <CalendarCheck className="w-3.5 h-3.5 text-[#00B8FF]" />
-            Schedule an on-site walkthrough
-          </div>
+      {/* ─── FINAL CTA ─── */}
+      <section className="py-20 bg-slate-50 border-t border-slate-200">
+        <div className="container mx-auto px-4 md:px-6">
+          <div className="max-w-3xl mx-auto text-center space-y-8">
+            <div>
+              <p className="text-xs font-extrabold uppercase tracking-[0.2em] text-[#0090c8] mb-3">Get Started</p>
+              <h2 className="text-3xl md:text-4xl font-extrabold text-slate-900 leading-tight">
+                Ready to talk about cleaning for your Fitchburg building?
+              </h2>
+              <p className="text-slate-600 font-medium mt-4 leading-relaxed text-base">
+                For a quote on cleaning your Fitchburg building, call Enterprise Cleaning Corporation at <a href="tel:5088901000" className="text-[#0090c8] font-bold hover:underline">(508) 890-1000</a>, or reach out to <Link href="/alex-puchulu-business-card" className="text-[#0090c8] font-bold hover:underline">Alex Puchulu</Link>, our Director of Sales and Marketing, to schedule a walkthrough.
+              </p>
+            </div>
 
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-extrabold text-white tracking-tight leading-tight">
-            Ready to improve your Fitchburg facility&apos;s clean?
-          </h2>
-
-          <p className="text-base md:text-lg text-slate-300 max-w-2xl mx-auto leading-relaxed">
-            For a quote on cleaning your Fitchburg building, call Enterprise Cleaning Corporation at (508) 890-1000, or reach out to Alex, our Director of Sales and Marketing, to schedule a walkthrough.
-          </p>
-
-          {/* Contact Direct Cards */}
-          <div className="grid sm:grid-cols-2 gap-4 max-w-xl mx-auto text-left pt-2">
-            <a
-              href="tel:5083042369"
-              className="p-4 rounded-xl bg-slate-800/90 border border-slate-700 hover:border-[#00B8FF] transition-all group"
-            >
-              <div className="text-xs text-slate-400 mb-1">Director of Sales &amp; Marketing</div>
-              <div className="font-bold text-white text-base group-hover:text-[#00B8FF] transition-colors">Alex Puchulu</div>
-              <div className="text-sm font-semibold text-[#00B8FF] mt-1 flex items-center gap-1.5">
-                <Phone className="w-3.5 h-3.5" />
-                (508) 304-2369
-              </div>
-            </a>
-
-            <a
-              href="tel:5088901000"
-              className="p-4 rounded-xl bg-slate-800/90 border border-slate-700 hover:border-[#E31837] transition-all group"
-            >
-              <div className="text-xs text-slate-400 mb-1">West Boylston Main Office</div>
-              <div className="font-bold text-white text-base group-hover:text-red-400 transition-colors">Enterprise Cleaning Corp</div>
-              <div className="text-sm font-semibold text-red-400 mt-1 flex items-center gap-1.5">
-                <Phone className="w-3.5 h-3.5" />
+            <div className="flex flex-wrap justify-center gap-4">
+              <Link
+                href="/contact"
+                className="inline-flex items-center gap-2 bg-[#E31837] text-white font-extrabold px-8 py-4 rounded-xl hover:bg-[#c1122c] transition-colors shadow-lg shadow-[#E31837]/25 text-base"
+              >
+                Schedule an On-Site Walkthrough <ArrowRight className="w-4 h-4" />
+              </Link>
+              <a
+                href="tel:5088901000"
+                className="inline-flex items-center gap-2 text-slate-800 font-bold px-8 py-4 rounded-xl hover:bg-slate-100 transition-colors border border-slate-200 text-base"
+              >
+                <PhoneCall className="w-4 h-4 text-[#0090c8]" />
                 (508) 890-1000
-              </div>
-            </a>
-          </div>
+              </a>
+              <a
+                href="tel:5083042369"
+                className="inline-flex items-center gap-2 text-[#003B7A] bg-white font-bold px-8 py-4 rounded-xl hover:bg-blue-50 transition-colors border border-blue-200 text-base shadow-sm"
+              >
+                <UserCheck className="w-4 h-4 text-[#0090c8]" />
+                Call Alex Direct: (508) 304-2369
+              </a>
+            </div>
 
-          <div className="pt-4 flex flex-wrap items-center justify-center gap-4">
-            <Link
-              href="/commercial-cleaning-quote"
-              className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-xl font-bold text-white bg-[#E31837] hover:bg-[#c9142e] shadow-xl shadow-[#E31837]/30 transition-all text-base group"
-            >
-              <span>Get a customized quote</span>
-              <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
-            </Link>
-            <Link
-              href="/contact"
-              className="inline-flex items-center justify-center gap-2 px-7 py-4 rounded-xl font-bold text-slate-200 bg-slate-800 hover:bg-slate-700 border border-slate-700 hover:border-slate-600 transition-all text-base"
-            >
-              <span>Contact our team</span>
-            </Link>
+            <div className="flex flex-wrap justify-center gap-3 pt-2">
+              {[
+                "Insured & Bonded",
+                "97% Client Retention",
+                "4× WBJ Best of Business",
+                "Route 2 & Downtown Coverage",
+                "Steve & Julio Owner Oversight"
+              ].map(chip => (
+                <span key={chip} className="inline-flex items-center gap-1.5 text-xs font-bold text-slate-700 bg-white border border-slate-200 px-3.5 py-1.5 rounded-full shadow-sm">
+                  <CheckCircle2 className="w-3.5 h-3.5 text-[#0090c8]" />
+                  {chip}
+                </span>
+              ))}
+            </div>
           </div>
         </div>
       </section>
