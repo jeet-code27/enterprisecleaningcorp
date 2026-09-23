@@ -13,22 +13,29 @@ export const transporter = nodemailer.createTransport({
 
 export interface SendMailOptions {
   to: string;
+  cc?: string;
   subject: string;
   html: string;
   text?: string;
   replyTo?: string;
 }
 
-export async function sendEmail({ to, subject, html, text, replyTo }: SendMailOptions) {
+export async function sendEmail({ to, cc, subject, html, text, replyTo }: SendMailOptions) {
   try {
-    const info = await transporter.sendMail({
+    const mailOptions: any = {
       from: `"Enterprise Cleaning Corporation" <${smtpEmail}>`,
       to,
       subject,
       html,
       text: text || html.replace(/<[^>]+>/g, ""),
       replyTo: replyTo || smtpEmail,
-    });
+    };
+
+    if (cc) {
+      mailOptions.cc = cc;
+    }
+
+    const info = await transporter.sendMail(mailOptions);
     console.log("Email sent successfully:", info.messageId);
     return { success: true, messageId: info.messageId };
   } catch (error) {

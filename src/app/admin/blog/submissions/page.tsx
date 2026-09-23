@@ -6,7 +6,24 @@ export const dynamic = "force-dynamic";
 
 export default async function SubmissionsPage() {
   await dbConnect();
-  const rawSubmissions = await ContactSubmission.find().sort({ createdAt: -1 }).lean();
+  const rawSubmissions = await ContactSubmission.find({
+    $and: [
+      {
+        service: {
+          $nin: [
+            "GC Post-Construction Bid Center",
+            "Subcontractor Bid List Registration",
+          ],
+        },
+      },
+      { service: { $not: /construction/i } },
+      { department: { $not: /estimating/i } },
+      { message: { $not: /POST-CONSTRUCTION/i } },
+      { message: { $not: /SUBCONTRACTOR BID LIST/i } },
+    ],
+  })
+    .sort({ createdAt: -1 })
+    .lean();
 
   const submissions: ContactSubmissionItem[] = rawSubmissions.map((sub: any) => ({
     _id: sub._id.toString(),

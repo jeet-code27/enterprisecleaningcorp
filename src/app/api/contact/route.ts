@@ -6,10 +6,25 @@ import { getContactAdminEmailHtml, getContactUserAutoReplyHtml } from '@/lib/ema
 
 const DEFAULT_ADMIN = process.env.ADMIN_EMAIL || "alex@enterprisecleaningcorp.com";
 
-function getDepartmentRecipients(department?: string): { to: string; cc?: string } {
-  if (!department) return { to: DEFAULT_ADMIN };
+function getDepartmentRecipients(department?: string, service?: string): { to: string; cc?: string } {
+  const serv = (service || "").toLowerCase();
+  const dept = (department || "").toLowerCase();
 
-  const dept = department.toLowerCase();
+  // Specifically for Post-Construction / GC Bid submissions:
+  // Primary (To) goes to Alex, CC goes to Julio
+  if (
+    serv.includes("post-construction") ||
+    serv.includes("gc post-construction") ||
+    serv.includes("construction") ||
+    serv.includes("subcontractor bid") ||
+    dept.includes("estimating")
+  ) {
+    return { 
+      to: DEFAULT_ADMIN, 
+      cc: "jbiage@enterprisecleaningcorp.com" 
+    };
+  }
+
   if (dept.includes("operations")) {
     return { to: "jbiage@enterprisecleaningcorp.com", cc: DEFAULT_ADMIN };
   }
@@ -17,7 +32,7 @@ function getDepartmentRecipients(department?: string): { to: string; cc?: string
     return { to: "customerservice@enterprisecleaningcorp.com", cc: DEFAULT_ADMIN };
   }
   if (dept.includes("sales")) {
-    return { to: "alex@enterprisecleaningcorp.com" };
+    return { to: DEFAULT_ADMIN };
   }
   return { to: DEFAULT_ADMIN };
 }
@@ -47,14 +62,15 @@ export async function POST(req: Request) {
     await newSubmission.save();
 
     // 2. Determine department email recipient
-    const recipientInfo = getDepartmentRecipients(data.department);
+    const recipientInfo = getDepartmentRecipients(data.department, data.service);
 
     // 3. Send Nodemailer emails asynchronously
     try {
       // Department Notification Email
       const adminEmailPromise = sendEmail({
         to: recipientInfo.to,
-        subject: `New Contact Inquiry (${data.department || 'General'}): ${data.firstName} ${data.lastName}`,
+        cc: recipientInfo.cc,
+        subject: `New Contact Inquiry (${data.department || data.service || 'General'}): ${data.firstName} ${data.lastName}`,
         html: getContactAdminEmailHtml(data),
         replyTo: data.email,
       });

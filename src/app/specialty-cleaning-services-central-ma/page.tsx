@@ -10,9 +10,9 @@ import { CTASection } from "@/components/blocks/cta-with-glow";
 import { RelatedIndustries } from "@/components/ui/related-industries";
 
 export const metadata: Metadata = {
-  title: { absolute: "Window Cleaning & Pressure Washing Worcester MA" },
-  description: "Commercial window cleaning, pressure washing, and specialty services for buildings across Worcester and Central Massachusetts. Request a free quote today.",
-  keywords: "commercial window cleaning Central MA, commercial pressure washing Worcester, specialty commercial cleaning services, industrial power washing",
+  title: { absolute: "Worcester Window Cleaning & Washing Services | Enterprise Cleaning Corp" },
+  description: "Professional window cleaning services worcester businesses trust. As a top-rated worcester window cleaning company, we provide commercial window washing near me worcester, pressure washing, and specialty cleaning.",
+  keywords: "worcester window washing, window cleaning worcester, window cleaning services worcester, window cleaning near me worcester, worcester window cleaning, window cleaning company worcester, worcester window cleaning company, window washing worcester, window washing near me worcester, worcester window cleaning services, commercial window cleaning Central MA",
   alternates: {
     canonical: "https://www.enterprisecleaningcorp.com/specialty-cleaning-services-central-ma"
   },
@@ -69,10 +69,26 @@ const structuredDataFAQ = {
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "Do you offer one-time specialty projects, or only recurring contracts?",
+      "name": "Do you offer commercial window cleaning services in Worcester for multi-story buildings?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Both. We handle one-time window cleaning, pressure washing, and deep-clean projects, and we can also build specialty work into a recurring maintenance schedule."
+        "text": "Yes. Enterprise Cleaning Corporation is a trusted window cleaning company worcester property managers rely on. We provide full interior and exterior window cleaning services worcester facilities require, using streak-free pure-water technology and certified safety equipment."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Why choose Enterprise Cleaning as your Worcester window cleaning company?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "When businesses look for 'window cleaning near me worcester' or 'window washing near me worcester', they choose Enterprise Cleaning Corp because our dedicated crews deliver reliable worcester window cleaning services backed by 23+ years of experience, direct owner accessibility, and a 97% client retention rate."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How often should commercial window washing in Worcester be scheduled?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Most commercial facilities schedule window washing worcester properties need quarterly or bi-annually, while high-traffic storefronts and medical offices often book monthly worcester window washing to maintain crystal-clear curb appeal."
       }
     },
     {
@@ -81,14 +97,6 @@ const structuredDataFAQ = {
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "Yes. We pressure wash sidewalks, entrances, loading docks, dumpster areas, parking structures, and building facades for commercial properties across Central Massachusetts."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Do you do commercial window cleaning for multi-story buildings?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes. We provide interior and exterior window cleaning for commercial buildings, using safe, professional methods. Contact us with your building details for a tailored quote."
       }
     },
     {
@@ -155,7 +163,7 @@ export default function SpecialtyCleaningPage() {
               
               <div className="text-base md:text-lg text-white/95 font-medium max-w-2xl leading-relaxed mt-6 drop-shadow-sm space-y-4 text-left">
                 <p>
-                  Beyond routine janitorial work, commercial buildings need periodic specialty attention — the projects that keep a property looking sharp and well-cared-for from the curb to the top floor. Enterprise Cleaning Corporation provides a full range of specialty services across Central Massachusetts, from streak-free window cleaning to high-pressure exterior washing.
+                  Beyond routine janitorial care, commercial buildings require periodic specialty maintenance — particularly streak-free window cleaning worcester businesses rely on to project a pristine, professional image. As a trusted worcester window cleaning company, Enterprise Cleaning Corporation delivers comprehensive specialty services across Central Massachusetts, including precision worcester window washing, high-pressure exterior washing, and seasonal property detailing.
                 </p>
                 <p>
                   One of our greatest strengths is doing more than traditional janitorial work. Many of our best clients began with a recurring cleaning contract and later expanded into specialty projects — because once you have a cleaning partner you trust, it makes sense to give them everything. Our specialty division means you do not have to source, vet, and schedule a separate vendor for every project.
@@ -249,8 +257,8 @@ export default function SpecialtyCleaningPage() {
                 <div className="mx-auto w-16 h-16 rounded-2xl bg-slate-50 group-hover:bg-[#00B8FF]/10 transition-colors flex items-center justify-center mb-6">
                   <Droplets className="w-8 h-8 text-[#00B8FF]" strokeWidth={1.5} />
                 </div>
-                <h3 className="text-lg font-bold text-slate-900 mb-3">Window Cleaning</h3>
-                <p className="text-sm text-slate-600 leading-relaxed text-left mb-4">Interior and exterior commercial window cleaning for offices, storefronts, medical buildings, and multi-tenant properties. Streak-free glass, clean frames and sills, and safe technique are standard.</p>
+                <h3 className="text-lg font-bold text-slate-900 mb-3">Window Cleaning & Washing</h3>
+                <p className="text-sm text-slate-600 leading-relaxed text-left mb-4">Looking for top-quality worcester window cleaning or window washing worcester specialists? We deliver complete commercial window cleaning services worcester properties demand, leaving interior and exterior glass streak-free, with clean frames, sills, and tracks for corporate offices, medical complexes, and retail facilities.</p>
               </div>
               <div className="pt-4 border-t border-slate-100 text-left">
                 <Link
@@ -378,7 +386,10 @@ export default function SpecialtyCleaningPage() {
                     One of our greatest strengths is providing more than traditional janitorial work. Many of our best client relationships began with a single recurring contract and grew, over time, into a full-service partnership — floor care, window cleaning, pressure washing, post-construction projects, and emergency response, all handled by one team that already knows the building. That growth happens because trust, once earned, is worth consolidating.
                   </p>
                   <p>
-                    Specialty work also tends to be periodic and project-based, which makes it easy to overlook until it is suddenly urgent — the windows that have not been cleaned in a year, the entrance that needs pressure washing before a big visit, the deep clean required after a renovation. As your dedicated cleaning partner, we can plan this work into a schedule so it happens proactively, on a cadence that keeps your property consistently sharp rather than reactively patched.
+                    Specialty work also tends to be periodic and project-based, which makes it easy to overlook until it is suddenly urgent — windows that have not been washed in months, or facility managers searching for window cleaning near me worcester or window washing near me worcester ahead of a major client visit or corporate inspection. As your dedicated window cleaning company worcester partner, we plan this work into an organized maintenance calendar so it happens proactively, keeping your facility consistently sharp.
+                  </p>
+                  <p>
+                    Our customized worcester window cleaning services ensure safety-compliant high-reach execution, mineral deposit removal, and pristine exterior clarity for multi-story office buildings, medical campuses, and educational facilities throughout Central Massachusetts.
                   </p>
                   <p>
                     The practical benefit is simple: fewer vendors, consistent standards, and a single accountable point of contact. Instead of sourcing, vetting, and coordinating a different company for every project, you have one local partner who understands your facility and stands behind every job, from the nightly clean to the once-a-year specialty project.

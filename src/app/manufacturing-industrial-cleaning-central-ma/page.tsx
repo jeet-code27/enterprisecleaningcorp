@@ -11,9 +11,9 @@ import { CTASection } from "@/components/blocks/cta-with-glow";
 import { RelatedServices } from "@/components/ui/related-services";
 
 export const metadata: Metadata = {
-  title: { absolute: "Manufacturing & Industrial Cleaning Worcester MA" },
-  description: "Specialized commercial cleaning for manufacturing plants and industrial facilities across Worcester and Central Massachusetts. Safety-focused, 97% retention.",
-  keywords: "commercial industrial cleaning Central MA, manufacturing facility janitorial, factory cleaners Worcester, industrial plant cleaning services, commercial warehouse cleaning",
+  title: { absolute: "Industrial & Factory Cleaning Worcester MA | Enterprise Cleaning Corp" },
+  description: "Leading industrial cleaning company providing manufacturing plant cleaning services, warehouse cleaning worcester ma, factory cleaning, and industrial building maintenance across Central MA.",
+  keywords: "industrial cleaning, warehouse cleaning worcester ma, industrial building maintenance, industrial cleaners, factory cleaning, office cleaning services safety manufacturing facilities, warehouse cleaning services, manufacturing plant cleaning services, factory cleaning company worcester, industrial deep cleaning",
   alternates: {
     canonical: "https://www.enterprisecleaningcorp.com/manufacturing-industrial-cleaning-central-ma"
   },
@@ -70,10 +70,18 @@ const structuredDataFAQ = {
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "Do you clean active manufacturing and production floors?",
+      "name": "Do you offer warehouse cleaning services and warehouse cleaning in Worcester, MA?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes. We build cleaning programs around your production schedule and safety protocols, working around active areas and on the shifts that work best for your operation."
+        "text": "Yes. Enterprise Cleaning Corporation provides complete warehouse cleaning services and warehouse cleaning worcester ma distribution centers rely on, including rack dusting, high-bay lighting care, concrete sweeping, and floor degreasing."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Why choose your factory cleaning company in Worcester for manufacturing plant cleaning services?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "As a top-rated factory cleaning company worcester manufacturers trust, we deliver specialized manufacturing plant cleaning services, scheduled industrial deep cleaning, and office cleaning services safety manufacturing facilities require to maintain strict OSHA compliance without interrupting workflow."
       }
     },
     {
@@ -145,11 +153,11 @@ export default function IndustrialCleaningPage() {
               </h1>
               
               <p className="text-lg text-slate-600 font-medium leading-relaxed text-left">
-                Manufacturing and industrial facilities are unlike any other commercial environment. Production floors, machinery, warehousing, breakrooms, offices, and restrooms all sit under one roof, each with its own cleaning demands and safety considerations. Enterprise Cleaning Corporation has spent more than two decades cleaning complex commercial environments across Central Massachusetts — and industrial facilities are exactly the kind of demanding, high-standards work we do best.
+                Manufacturing plants and industrial facilities demand an exacting standard of hygiene and safety. As an established <strong>factory cleaning company worcester</strong> operations rely on, Enterprise Cleaning Corporation delivers comprehensive <strong>industrial cleaning</strong>, heavy-duty <strong>factory cleaning</strong>, and ongoing <strong>industrial building maintenance</strong> across Central Massachusetts.
               </p>
 
               <p className="text-lg text-slate-600 font-medium leading-relaxed text-left">
-                We understand that in a plant, cleanliness is not cosmetic — it is tied to safety, compliance, productivity, and the impression you make on the customers and auditors who walk your floor. We build a cleaning program around your operation, your shifts, and your safety requirements.
+                From recurring <strong>warehouse cleaning worcester ma</strong> facilities trust to specialized <strong>office cleaning services safety manufacturing facilities</strong> demand under strict OSHA guidelines, our vetted <strong>industrial cleaners</strong> build programs tailored around your shifts and production goals.
               </p>
               
               <div className="flex flex-col sm:flex-row gap-4 pt-4">
@@ -207,19 +215,19 @@ export default function IndustrialCleaningPage() {
             {[
               { 
                 icon: Settings, 
-                text: "Production and plant-floor cleaning around equipment and workflow.",
+                text: "Production floor and manufacturing plant cleaning services engineered around equipment and active shifts.",
                 blogUrl: null,
                 blogLabel: null
               },
               { 
                 icon: Factory, 
-                text: "Warehouse and storage-area cleaning and dust control.",
+                text: "Specialized warehouse cleaning services, inventory dust control, and logistics bay sanitation.",
                 blogUrl: "/blog/commercial-surface-dusting-massachusetts",
                 blogLabel: "Dust Control Guide"
               },
               { 
                 icon: Users, 
-                text: "Office, administrative, and conference-area janitorial.",
+                text: "Office, administrative, and conference-area janitorial built for industrial plants.",
                 blogUrl: "/blog/office-cleaning-services-massachusetts-rhode-island-new-hampshire",
                 blogLabel: "Office Cleaning Guide"
               },
@@ -237,7 +245,7 @@ export default function IndustrialCleaningPage() {
               },
               { 
                 icon: MapPin, 
-                text: "Hard-floor care — scrubbing, sweeping, and degreasing.",
+                text: "Hard-floor industrial deep cleaning — degreasing, concrete scrubbing, and sweeping.",
                 blogUrl: "/blog/vct-floor-stripping-and-waxing",
                 blogLabel: "Floor Care Guide"
               },
@@ -293,10 +301,10 @@ export default function IndustrialCleaningPage() {
                 </h2>
                 <div className="prose prose-lg text-slate-600 prose-p:leading-relaxed text-left">
                   <p>
-                    Industrial clients need a cleaning partner who respects the safety culture of a plant — crews who follow site protocols, stay clear of active production, and work cleanly and predictably. Our managed model means real supervision and accountability on every account, so standards hold shift after shift.
+                    Industrial clients need a cleaning partner who respects the safety culture of a plant — crews who follow site protocols, stay clear of active production, and work cleanly and predictably. Our managed model means real supervision and accountability on every account, ensuring our industrial cleaners maintain high standards shift after shift.
                   </p>
                   <p>
-                    Reliability is non-negotiable in manufacturing, and it is our strongest trait. Our 97% client retention rate reflects exactly that: when an industrial client brings us in, they keep us. Many start with nightly cleaning and expand into floor degreasing, high dusting, and specialty projects over time.
+                    Reliability is non-negotiable in manufacturing, and it is our strongest trait. Our 97% client retention rate reflects exactly that: when an industrial client brings us in, they keep us. Many start with nightly industrial building maintenance and expand into scheduled manufacturing plant cleaning services, industrial deep cleaning, and high dusting over time.
                   </p>
                 </div>
               </div>

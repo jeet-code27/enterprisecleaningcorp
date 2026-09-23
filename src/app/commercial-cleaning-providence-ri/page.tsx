@@ -11,8 +11,8 @@ import {
 
 export const metadata: Metadata = {
   title: { absolute: "Commercial Cleaning Providence, RI | Enterprise Cleaning Corp" },
-  description: "Commercial cleaning and janitorial services in Providence, RI. Serving downtown offices, medical facilities, and the Innovation District. Get a free quote.",
-  keywords: "commercial cleaning services rhode island, industrial cleaning company in rhode island, commercial cleaning services ri, medical cleaning services in rhode island, school cleaning services in rhode island, ri commercial cleaning service, commercial cleaning services, office cleaning services, commercial cleaning providence ri",
+  description: "Commercial cleaning services providence ri businesses trust. From office cleaning services in rhode island to day porter services providence and industrial cleaning, get a free quote.",
+  keywords: "commercial cleaning services providence ri, commercial cleaning rhode island, commercial cleaning services rhode island, office cleaning services in rhode island, day porter services providence, industrial cleaning company in rhode island, high technology janitorial services in rhode island, commercial cleaning services ri, medical cleaning services in rhode island, commercial cleaning providence ri",
   alternates: {
     canonical: "https://www.enterprisecleaningcorp.com/commercial-cleaning-providence-ri"
   },
@@ -67,8 +67,8 @@ const structuredDataFAQ = {
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "Does Enterprise Cleaning Corporation serve Providence, RI?",
-      "acceptedAnswer": { "@type": "Answer", "text": "Yes. Providence is a primary focus of our Rhode Island service area, covering downtown office buildings, medical facilities, and the Innovation District." }
+      "name": "Does Enterprise Cleaning Corporation provide commercial cleaning services in Providence, RI and throughout Rhode Island?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Yes. Enterprise Cleaning Corporation provides full-scope commercial cleaning services providence ri businesses rely on, extending premier commercial cleaning rhode island wide to downtown office buildings, healthcare facilities, and the Innovation District." }
     },
     {
       "@type": "Question",
@@ -78,7 +78,7 @@ const structuredDataFAQ = {
     {
       "@type": "Question",
       "name": "Does Enterprise Cleaning Corporation serve the Providence Innovation District?",
-      "acceptedAnswer": { "@type": "Answer", "text": "Yes. We serve office, lab, and mixed-use tenants in and around the Providence Innovation and Design District (the 195 District)." }
+      "acceptedAnswer": { "@type": "Answer", "text": "Yes. We deliver specialized high technology janitorial services in rhode island to research labs, biotechnology incubators, and mixed-use office tenants in the Providence 195 District." }
     },
     {
       "@type": "Question",
@@ -92,8 +92,8 @@ const structuredDataFAQ = {
     },
     {
       "@type": "Question",
-      "name": "What cleaning services are available for Providence office buildings?",
-      "acceptedAnswer": { "@type": "Answer", "text": "Nightly janitorial, day porter coverage, floor care, window cleaning and pressure washing, post-construction cleaning, and turnover cleaning." }
+      "name": "What is included in your office cleaning services in Rhode Island?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Our office cleaning services in rhode island include nightly janitorial care, on-site day porter services providence facilities need during business hours, floor care, window cleaning, and post-construction cleanup." }
     },
     {
       "@type": "Question",
@@ -148,7 +148,7 @@ export default function ProvidenceCityPage() {
               </div>
 
               <p className="text-lg text-slate-500 font-medium leading-relaxed max-w-xl">
-                Providence is Rhode Island&apos;s capital and commercial hub. Enterprise Cleaning Corporation extends its premier commercial cleaning, janitorial, and floor care services to Downcity offices, medical facilities, and the Innovation District.
+                Providence is Rhode Island&apos;s capital and commercial hub. As a leading provider of commercial cleaning services providence ri businesses trust for consistency, Enterprise Cleaning Corporation delivers comprehensive commercial cleaning rhode island property managers, Downcity corporate offices, healthcare facilities, and the Innovation District depend on every day.
               </p>
 
               <div className="flex flex-col sm:flex-row flex-wrap gap-3 sm:gap-4">
@@ -242,10 +242,10 @@ export default function ProvidenceCityPage() {
                   <Link href="/office-financial-cleaning-central-ma" className="text-[#0090c8] font-semibold hover:underline">financial, legal, and professional office space</Link>.
                 </p>
                 <p>
-                  That growth has created real demand for commercial cleaning that can keep pace with new Class A office space, lab and research suites, and a downtown core with high foot traffic from students, visitors, and office workers alike. Property managers overseeing buildings in and around Downcity and the Innovation District are often managing tenant expectations that are higher than what an older downtown building was built to support, and cleaning is one of the most visible parts of that experience.
+                  That growth has created real demand for specialized high technology janitorial services in rhode island that can keep pace with new Class A office space, lab and research suites, biotechnology incubators, and a downtown core with high foot traffic from students, visitors, and office workers alike. Property managers overseeing buildings in and around Downcity and the Innovation District are often managing tenant expectations that are higher than what an older downtown building was built to support, and cleaning is one of the most visible parts of that experience.
                 </p>
                 <p>
-                  Enterprise Cleaning Corporation has extended its Massachusetts service area into Rhode Island, with Providence as a primary focus. We bring the same{" "}
+                  Enterprise Cleaning Corporation has extended its regional footprint, establishing itself as a premier provider of commercial cleaning services rhode island organizations count on for accountable quality. We bring the same{" "}
                   <Link href="/office-cleaning" className="text-[#0090c8] font-semibold hover:underline">nightly janitorial, day porter</Link>, and{" "}
                   <Link href="/floor-care-services-central-ma" className="text-[#0090c8] font-semibold hover:underline">floor care standards</Link>
                   {" "}we&apos;ve built our reputation on in Central Massachusetts to Providence offices,{" "}
@@ -341,13 +341,13 @@ export default function ProvidenceCityPage() {
               {
                 icon: Clock,
                 title: "Office Cleaning",
-                desc: "Recurring after-hours cleaning for offices, common areas, restrooms, and break rooms, scheduled around your business hours so cleaning never disrupts operations.",
+                desc: "Comprehensive office cleaning services in rhode island covering recurring after-hours care for corporate suites, financial offices, and common areas, scheduled around your business hours so operations are never disrupted.",
                 href: "/office-cleaning"
               },
               {
                 icon: Users,
                 title: "Day Porter Services",
-                desc: "On-site daytime staff who handle restocking, spot-cleaning, restroom checks, and light maintenance while your facility is open and in use.",
+                desc: "Professional on-site day porter services providence commercial properties rely on to handle continuous restocking, high-touch sanitization, restroom checks, and daytime maintenance while your facility is open.",
                 href: "/office-cleaning"
               },
               {
@@ -408,7 +408,7 @@ export default function ProvidenceCityPage() {
               {
                 icon: Factory,
                 name: "Manufacturing & Industrial Facilities",
-                desc: "Production floors, warehouses, and industrial office space that need cleaning built around shift schedules and safety requirements.",
+                desc: "As an experienced industrial cleaning company in rhode island, we service production floors, warehouses, and industrial office space with cleaning built around shift schedules and safety requirements.",
                 href: "/manufacturing-industrial-cleaning-central-ma"
               },
               {
@@ -489,7 +489,7 @@ export default function ProvidenceCityPage() {
             {/* Full text — no blank gap */}
             <div className="space-y-4 text-slate-600 font-medium leading-relaxed text-[0.97rem] border-t border-slate-100 pt-8">
               <p>
-                Every Providence account starts the same way: a free, no-obligation walkthrough of your property with a member of our team, not a subcontractor or a franchise sales rep. We look at square footage, floor types, restroom count, tenant mix, and current pain points, then put together a written scope and price before any contract is signed.
+                Every Providence account starts the same way: a free, no-obligation walkthrough of your property with a member of our team, not a subcontractor or a franchise sales rep. When organizations evaluate commercial cleaning services providence ri options or compare long-term office cleaning services in rhode island, we look at square footage, floor types, restroom count, tenant mix, and current pain points, then put together a written scope and price before any contract is signed.
               </p>
               <p>
                 Once a schedule is set, your account gets a dedicated crew rather than a rotating pool of subcontracted labor, so the same people learn your building, your supply closets, and your particular quirks — a security system that needs a specific arm-and-disarm sequence, a{" "}
@@ -528,10 +528,10 @@ export default function ProvidenceCityPage() {
               </h2>
               <div className="space-y-4 text-slate-200 font-medium leading-relaxed text-[0.97rem]">
                 <p>
-                  In addition to Providence, Enterprise Cleaning Corporation regularly services commercial properties in the surrounding communities of Cranston, Pawtucket, East Providence, Warwick, and throughout the broader Central Massachusetts, Rhode Island, and Southern New Hampshire region.
+                  In addition to Providence, Enterprise Cleaning Corporation delivers comprehensive commercial cleaning rhode island facilities count on throughout Cranston, Pawtucket, East Providence, Warwick, and the broader Ocean State.
                 </p>
                 <p>
-                  For a Providence property manager weighing a national franchise against a smaller regional company, the practical difference shows up in the details: how fast a call gets answered, whether the same crew shows up week after week, and whether a scheduling problem gets solved in one phone call or escalated through a franchise support line. We built our reputation on the first version of that experience, and we bring it to every Providence account.
+                  For a Providence property manager weighing a national franchise against a dedicated regional provider of commercial cleaning services rhode island wide, the practical difference shows up in the details: how fast a call gets answered, whether the same crew shows up week after week, and whether a scheduling problem gets solved in one phone call or escalated through a franchise support line. We built our reputation on the first version of that experience, and we bring it to every Providence account.
                 </p>
               </div>
               <div className="flex gap-4 pt-2">

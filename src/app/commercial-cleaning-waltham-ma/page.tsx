@@ -11,8 +11,8 @@ import {
 
 export const metadata: Metadata = {
   title: { absolute: "Commercial Cleaning Waltham, MA | Enterprise Cleaning Corp" },
-  description: "Commercial cleaning and janitorial services in Waltham, MA. Serving Route 128 biotech, tech, and corporate offices. Get a free quote today.",
-  keywords: "commercial cleaning services, office cleaning services, commercial office cleaning services, commercial cleaning company, commercial cleaning services massachusetts, office cleaning services in massachusetts, corporate cleaning services near me, commercial disinfection services, commercial cleaning waltham ma",
+  description: "Premier commercial cleaning in waltham ma. From biotech building janitorial services to office cleaning waltham ma, day porter company in waltham ma, and floor cleaning waltham ma, get a free quote.",
+  keywords: "commercial cleaning in waltham ma, office cleaning waltham ma, biotech building janitorial services, day porter company in waltham ma, day porter services in waltham ma, floor cleaning waltham ma, commercial cleaning services waltham ma, janitorial services waltham ma, commercial cleaning services massachusetts",
   alternates: {
     canonical: "https://www.enterprisecleaningcorp.com/commercial-cleaning-waltham-ma"
   },
@@ -72,13 +72,13 @@ const structuredDataFAQ = {
     },
     {
       "@type": "Question",
-      "name": "Do you clean biotech and life-sciences office space in Waltham?",
-      "acceptedAnswer": { "@type": "Answer", "text": "Yes. We clean biotech-adjacent office suites in Waltham, coordinating cleaning schedules and protocols with each facility's compliance requirements." }
+      "name": "Do you provide biotech building janitorial services in Waltham?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Yes. Enterprise Cleaning Corporation delivers specialized biotech building janitorial services and laboratory-adjacent office sanitation in Waltham, adhering strictly to facility compliance protocols." }
     },
     {
       "@type": "Question",
       "name": "What cleaning services are available for Route 128 offices in Waltham?",
-      "acceptedAnswer": { "@type": "Answer", "text": "Nightly janitorial, day porter coverage, floor care, window cleaning and pressure washing, post-construction cleaning, and turnover cleaning." }
+      "acceptedAnswer": { "@type": "Answer", "text": "Full-scope commercial cleaning in waltham ma, routine office cleaning waltham ma packages, on-site day porter coverage, and specialized floor cleaning waltham ma." }
     },
     {
       "@type": "Question",
@@ -97,8 +97,8 @@ const structuredDataFAQ = {
     },
     {
       "@type": "Question",
-      "name": "Does Enterprise Cleaning Corporation offer day porter services in Waltham?",
-      "acceptedAnswer": { "@type": "Answer", "text": "Yes. Day porter coverage is available for Waltham businesses that need daytime restocking and spot cleaning in addition to nightly service." }
+      "name": "Are you an established day porter company in Waltham, MA?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Yes. As a trusted day porter company in waltham ma, we provide full-shift day porter services in waltham ma for continuous daytime restocking, touchpoint disinfection, and lobby upkeep." }
     },
     {
       "@type": "Question",
@@ -148,7 +148,7 @@ export default function WalthamCityPage() {
               </div>
 
               <p className="text-lg text-slate-500 font-medium leading-relaxed max-w-xl">
-                Waltham anchors the Route 128/I-95 technology and biotech corridor. Enterprise Cleaning Corporation provides tailored commercial cleaning, janitorial, and floor care for corporate parks, biotech campuses, and Moody Street businesses.
+                Waltham anchors the Route 128/I-95 technology and biotech corridor. Enterprise Cleaning Corporation provides premier commercial cleaning in waltham ma, delivering tailored biotech building janitorial services, dependable office cleaning waltham ma facilities require, and dedicated day porter services in waltham ma.
               </p>
 
               <div className="flex flex-col sm:flex-row flex-wrap gap-3 sm:gap-4">
@@ -241,7 +241,7 @@ export default function WalthamCityPage() {
                   Waltham anchors one of the most concentrated stretches of the Route 128/I-95 technology corridor — a stretch of Greater Boston sometimes referred to as &quot;America&apos;s Technology Highway&quot; — with roughly 4,800 businesses serving a population of about 66,000. Thermo Fisher Scientific&apos;s global headquarters sits on Presidential Way, anchoring a biotech and life-sciences cluster that includes companies like Arrakis Therapeutics and Upstream Bio, while Lionbridge and Rocket Software maintain major offices nearby. Bentley University and Brandeis University together enroll more than 12,000 students, feeding a steady pipeline of educated workers into Waltham&apos;s economy, and the Moody Street downtown district gives the city a walkable commercial core distinct from its corporate office parks.
                 </p>
                 <p>
-                  That combination — biotech and life-sciences campuses, corporate office parks along Route 128, and a compact downtown commercial district on Moody Street — means Waltham facility managers are often responsible for buildings with very different compliance and appearance standards. A biotech office suite may need cleaning protocols suited to lab-adjacent space, while a Moody Street storefront needs a completely different service model.
+                  That combination — biotech and life-sciences campuses, corporate office parks along Route 128, and a compact downtown commercial district on Moody Street — means Waltham facility managers are often responsible for buildings with very different compliance and appearance standards. A life-sciences facility requires advanced biotech building janitorial services suited to lab-adjacent space, while commercial corporate suites thrive with a dependable day porter company in waltham ma ensuring pristine common areas throughout the business day.
                 </p>
                 <p>
                   Enterprise Cleaning Corporation brings the same reliability standards that have earned us a 97% client retention rate in Central Massachusetts to Waltham&apos;s biotech, corporate, and downtown business community, with{" "}
@@ -250,7 +250,7 @@ export default function WalthamCityPage() {
                   {" "}built around the specific compliance and appearance expectations of each building type.
                 </p>
                 <p>
-                  Biotech and life-sciences tenants along Route 128 often have appearance and cleanliness expectations closer to a lab environment than a typical office, even in space that isn&apos;t technically wet-lab. We coordinate cleaning schedules and access with each facility&apos;s own requirements rather than assuming every Waltham account can be treated the same way a standard downtown office would be.
+                  Biotech and life-sciences tenants along Route 128 often have appearance and cleanliness expectations closer to a lab environment than a typical office, even in space that isn&apos;t technically wet-lab. As a top-rated commercial cleaning and day porter company in waltham ma, we coordinate cleaning schedules and access with each facility&apos;s own requirements rather than assuming every Waltham account can be treated the same way a standard downtown office would be.
                 </p>
               </div>
 
@@ -339,19 +339,19 @@ export default function WalthamCityPage() {
               {
                 icon: Clock,
                 title: "Office Cleaning",
-                desc: "Recurring after-hours cleaning for offices, common areas, restrooms, and break rooms, scheduled around your business hours so cleaning never disrupts operations.",
+                desc: "Comprehensive office cleaning waltham ma businesses rely on for recurring after-hours care of corporate suites, restrooms, conference rooms, and common areas, scheduled around your hours so work is never interrupted.",
                 href: "/office-cleaning"
               },
               {
                 icon: Users,
                 title: "Day Porter Services",
-                desc: "On-site daytime staff who handle restocking, spot-cleaning, restroom checks, and light maintenance while your facility is open and in use.",
+                desc: "Partner with an accountable day porter company in waltham ma providing proactive day porter services in waltham ma for continuous restocking, touchpoint disinfection, lobby maintenance, and prompt daytime response.",
                 href: "/office-cleaning"
               },
               {
                 icon: Sparkles,
                 title: "Floor Care Services",
-                desc: "Stripping, waxing, buffing, and polishing for VCT and hard-surface floors, plus scheduled carpet cleaning to protect flooring investments and maintain a professional appearance.",
+                desc: "Expert floor cleaning waltham ma solutions including stripping, waxing, buffing, and polishing for VCT and hard surfaces, along with commercial carpet cleaning to protect flooring investments and maintain professional aesthetics.",
                 href: "/floor-care-services-central-ma"
               },
               {
@@ -487,7 +487,7 @@ export default function WalthamCityPage() {
             {/* Full text — no blank gap */}
             <div className="space-y-4 text-slate-600 font-medium leading-relaxed text-[0.97rem] border-t border-slate-100 pt-8">
               <p>
-                Every Waltham account starts the same way: a free, no-obligation walkthrough of your property with a member of our team, not a subcontractor or a franchise sales rep. We look at square footage, floor types, restroom count, tenant mix, and current pain points, then put together a written scope and price before any contract is signed.
+                Every commercial cleaning in waltham ma contract starts the same way: a free, no-obligation walkthrough of your property with a member of our team, not a subcontractor or a franchise sales rep. Whether you need nightly office cleaning waltham ma teams can execute reliably or specialized biotech building janitorial services, we look at square footage, floor types, restroom count, tenant mix, and current pain points, then put together a written scope and price before any contract is signed.
               </p>
               <p>
                 Once a schedule is set, your account gets a dedicated crew rather than a rotating pool of subcontracted labor, so the same people learn your building, your supply closets, and your particular quirks — a security system that needs a specific arm-and-disarm sequence, a{" "}
@@ -529,7 +529,7 @@ export default function WalthamCityPage() {
                   In addition to Waltham, Enterprise Cleaning Corporation regularly services commercial properties in the surrounding communities of Chelmsford, Tewksbury, Dracut, Billerica, and throughout the broader Central Massachusetts, Rhode Island, and Southern New Hampshire region.
                 </p>
                 <p>
-                  For a Waltham facility manager overseeing a biotech office or a corporate suite on Route 128, the practical benefit is a cleaning partner who doesn&apos;t apply the same generic checklist to every property — floor care, restroom stocking, and scheduling are all adjusted to the specific building, not templated across the city.
+                  For a Waltham facility manager overseeing a biotech office or a corporate suite on Route 128, the practical benefit is a cleaning partner who doesn&apos;t apply the same generic checklist to every property — floor cleaning waltham ma standards, day porter services in waltham ma, and custom scheduling are all adjusted to the specific building, not templated across the city.
                 </p>
               </div>
               <div className="flex gap-4 pt-2">

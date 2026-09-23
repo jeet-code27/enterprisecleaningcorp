@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useMemo } from "react";
+import Link from "next/link";
 import { format } from "date-fns";
 import {
   HardHat,
@@ -107,7 +108,12 @@ export function ConstructionBidsClient({
   };
 
   const deleteBid = async (id: string) => {
-    if (!confirm("Are you sure you want to delete this construction bid?")) return;
+    if (
+      !confirm(
+        "Are you sure you want to permanently delete this construction bid?\n\nThis will also delete all attached blueprints, drawings, and documents from Cloudinary storage."
+      )
+    )
+      return;
 
     setLoadingId(id);
     try {
@@ -456,13 +462,13 @@ export function ConstructionBidsClient({
                       {/* Actions */}
                       <td className="py-3.5 px-4 text-right whitespace-nowrap">
                         <div className="flex items-center justify-end gap-1.5">
-                          <button
-                            onClick={() => setSelectedBid(bid)}
-                            className="p-1.5 rounded-lg bg-brand-blue/10 text-brand-blue hover:bg-brand-blue hover:text-white transition-colors"
-                            title="View Full Bid Package"
+                          <Link
+                            href={`/admin/blog/construction-bids/${bid._id}`}
+                            className="p-1.5 rounded-lg bg-brand-blue/10 text-brand-blue hover:bg-brand-blue hover:text-white transition-colors inline-flex items-center justify-center"
+                            title="View Full Bid Package (Dedicated Page)"
                           >
                             <Eye className="w-4 h-4" />
-                          </button>
+                          </Link>
                           <button
                             onClick={() => deleteBid(bid._id)}
                             disabled={loadingId === bid._id}

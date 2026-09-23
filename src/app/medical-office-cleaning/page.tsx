@@ -12,9 +12,9 @@ import { RelatedIndustries } from "@/components/ui/related-industries";
 import { RelatedServices } from "@/components/ui/related-services";
 
 export const metadata: Metadata = {
-  title: { absolute: "Medical Office Cleaning | Clinics & Practices in MA, RI, NH" },
-  description: "Medical office cleaning for clinics, practices, and healthcare facilities across Central Massachusetts, Rhode Island, and Southern NH. Request a walkthrough.",
-  keywords: "medical office cleaning, commercial disinfection services, janitorial cleaning services, electrostatic disinfection services, hospital janitorial services, medical cleaning near me, medical cleaning services near me, medical office cleaning near me, medical office cleaning services near me, medical cleaning services in rhode island, medical office cleaning worcester ma",
+  title: { absolute: "Medical Office Cleaning | MA, RI & NH Healthcare Facilities" },
+  description: "Expert medical office cleaning and medical cleaning services in massachusetts, medical facility cleaning rhode island, and healthcare cleaning in nh. Request a free walkthrough.",
+  keywords: "medical office cleaning, medical cleaning services in massachusetts, medical cleaning services in rhode island, healthcare cleaning and disinfectant services company nh, healthcare cleaning in nh, medical office cleaning holden, medical office cleaning company in rhode island, medical facility cleaning rhode island, commercial disinfection services, medical cleaning near me",
   alternates: {
     canonical: "https://www.enterprisecleaningcorp.com/medical-office-cleaning",
   },
@@ -165,18 +165,18 @@ const structuredDataFAQ = {
     },
     {
       "@type": "Question",
-      "name": "Who provides medical office cleaning in Worcester MA?",
+      "name": "Who provides medical office cleaning and medical cleaning services in Massachusetts?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Enterprise Cleaning Corporation provides medical office cleaning in Worcester, MA and throughout Worcester County, along with Rhode Island and Southern New Hampshire. If you are searching for medical cleaning near me or medical cleaning services near me, call (508) 890-1000 or request a walkthrough at enterprisecleaningcorp.com."
+        "text": "Enterprise Cleaning Corporation provides professional medical cleaning services in massachusetts, specializing in clinical medical office cleaning holden practices, Worcester outpatient centers, and Central MA clinics rely on. Call (508) 890-1000 to schedule a walkthrough."
       }
     },
     {
       "@type": "Question",
-      "name": "Do you provide medical cleaning services in Rhode Island and New Hampshire?",
+      "name": "Are you an established medical office cleaning company in Rhode Island and New Hampshire?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes. Enterprise Cleaning provides medical cleaning services in Rhode Island, including Providence and surrounding communities, and across Southern New Hampshire in the Nashua, Manchester, and Salem corridor, in addition to Central Massachusetts. We are the trusted choice for practices seeking medical office cleaning services near me."
+        "text": "Yes. Enterprise Cleaning Corporation is a premier medical office cleaning company in rhode island delivering full-scope medical facility cleaning rhode island practices trust. In New Hampshire, we operate as a top healthcare cleaning and disinfectant services company nh providers count on for reliable healthcare cleaning in nh."
       }
     }
   ]
@@ -260,7 +260,7 @@ export default function MedicalOfficeCleaningPage() {
               
               {/* Intro Subtitle */}
               <p className="text-base sm:text-lg md:text-xl text-white/95 font-medium leading-relaxed drop-shadow-sm text-left">
-                Specialized medical office cleaning and hospital-grade sanitization for clinical and administrative spaces. Dwell-time verified disinfection, strict cross-contamination controls, and accountable local crews across Central Massachusetts, Rhode Island, and Southern New Hampshire.
+                Specialized medical office cleaning and clinical-grade sanitization for practices and clinics. We provide premier medical cleaning services in massachusetts, dependable medical cleaning services in rhode island, and operate as a trusted healthcare cleaning and disinfectant services company nh facilities count on every day.
               </p>
 
               {/* Action Buttons */}
@@ -368,7 +368,7 @@ export default function MedicalOfficeCleaningPage() {
                 <Sparkle className="w-3.5 h-3.5" /> Featured Snippet Answer
               </div>
               <p className="text-lg md:text-xl text-slate-900 font-semibold leading-relaxed">
-                Medical office cleaning is the scheduled cleaning and disinfection of clinical and administrative spaces in a healthcare setting, including waiting rooms, exam rooms, reception areas, restrooms, and corridors. Enterprise Cleaning Corporation provides medical office cleaning for clinics, private practices, dental offices, urgent care centers, therapy practices, and medical office buildings across Central Massachusetts, Rhode Island, and Southern New Hampshire.
+                Medical office cleaning is the scheduled cleaning and disinfection of clinical and administrative spaces in a healthcare setting, including waiting rooms, exam rooms, reception areas, restrooms, and corridors. Enterprise Cleaning Corporation provides clinical medical office cleaning for clinics, dental practices, urgent care centers, and local providers seeking specialized medical office cleaning holden and Central Massachusetts healthcare suites require.
               </p>
             </div>
 
@@ -715,13 +715,16 @@ export default function MedicalOfficeCleaningPage() {
             </h2>
             <div className="space-y-4 text-base md:text-lg text-white/90 font-medium leading-relaxed max-w-3xl mx-auto text-left sm:text-center">
               <p>
-                Enterprise Cleaning provides <strong>medical office cleaning in Worcester, MA</strong> and across Worcester County, including Shrewsbury, West Boylston, Westborough, Northborough, Holden, Auburn, Leominster, and Fitchburg.
+                Enterprise Cleaning delivers leading <strong>medical cleaning services in massachusetts</strong>, providing dedicated <strong>medical office cleaning holden</strong> practices, Worcester clinics, and healthcare suites throughout Central Mass rely on for infection prevention.
               </p>
               <p>
-                <strong>Medical cleaning services in Rhode Island</strong> cover Providence and the surrounding communities, where outpatient practices and multi tenant medical buildings make up a large share of the market. In Southern New Hampshire, service reaches the Nashua, Manchester, and Salem corridor.
+                As an accredited <strong>medical office cleaning company in rhode island</strong>, we provide full-scope <strong>medical facility cleaning rhode island</strong> practices depend on across Providence, Cranston, Warwick, and Pawtucket.
               </p>
               <p>
-                Practices searching for <strong>medical office cleaning near me</strong> or <strong>medical office cleaning services near me</strong> usually find national franchises that subcontract the actual work. Enterprise Cleaning Corporation is locally owned, headquartered at 99 Hartwell Street in West Boylston, and has served the region for more than two decades.
+                In Southern New Hampshire, we provide specialized <strong>healthcare cleaning in nh</strong> and act as the premier <strong>healthcare cleaning and disinfectant services company nh</strong> clinical centers partner with throughout Nashua, Manchester, and Salem.
+              </p>
+              <p>
+                Whether you need routine <strong>medical office cleaning</strong> or specialized <strong>medical cleaning services in rhode island</strong>, our teams are background-checked, trained in pathogen control, and backed by a 97% client retention rate.
               </p>
             </div>
 
