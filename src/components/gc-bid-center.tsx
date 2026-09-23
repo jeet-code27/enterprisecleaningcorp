@@ -110,6 +110,15 @@ export function GcBidCenter() {
   const handleFileSelect = async (key: string, e: React.ChangeEvent<HTMLInputElement>) => {
     if (e.target.files && e.target.files[0]) {
       const file = e.target.files[0];
+
+      // Validate 10MB file limit
+      const MAX_FILE_SIZE = 10 * 1024 * 1024;
+      if (file.size > MAX_FILE_SIZE) {
+        alert(`File "${file.name}" is ${(file.size / (1024 * 1024)).toFixed(1)}MB, which exceeds the 10MB limit. Please upload files under 10MB.`);
+        e.target.value = "";
+        return;
+      }
+
       setUploadingKey(key);
 
       try {
@@ -130,15 +139,18 @@ export function GcBidCenter() {
               name: file.name,
               size: file.size,
               url: data.url,
+              type: file.type || "",
             },
           }));
         } else {
-          // If upload fails, still track file locally for note logging
+          const errData = await res.json().catch(() => null);
+          alert(errData?.error || "Upload failed. Please try again.");
           setUploadedFiles((prev) => ({
             ...prev,
             [key]: {
               name: file.name,
               size: file.size,
+              type: file.type || "",
             },
           }));
         }
@@ -734,7 +746,7 @@ Notes / Trade Scope: ${bidListData.notes || "Add Enterprise Cleaning Corporation
                     <span className="flex items-center justify-center w-6 h-6 rounded-full bg-[#0090c8] text-white text-xs font-bold">6</span>
                     <h3 className="text-base sm:text-lg font-bold text-slate-900 tracking-tight">Upload Plans, Scopes & Specifications</h3>
                   </div>
-                  <span className="text-[11px] text-slate-500 font-medium">PDF, DWG, DOCX, ZIP, Images</span>
+                  <span className="text-[11px] text-slate-500 font-medium">PDF, DWG, DOCX, ZIP, Images (Max 10MB per file)</span>
                 </div>
                 <p className="text-xs text-slate-500 mb-4">
                   Files are securely stored and directly shared with our commercial estimating team for review:

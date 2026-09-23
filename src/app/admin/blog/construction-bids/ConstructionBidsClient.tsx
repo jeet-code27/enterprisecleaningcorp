@@ -22,6 +22,7 @@ import {
   Layers,
   MapPin,
   ExternalLink,
+  Image as ImageIcon,
 } from "lucide-react";
 
 export interface ConstructionBidItem {
@@ -49,7 +50,7 @@ export interface ConstructionBidItem {
   unionRequirement?: string;
   nightWeekendWork?: string;
   uploadedDocuments?: {
-    [key: string]: { name: string; size: number; url?: string } | null;
+    [key: string]: { name: string; size: number; url?: string; type?: string } | null;
   };
   createdAt: string;
 }
@@ -68,6 +69,18 @@ export function ConstructionBidsClient({
   const [filterType, setFilterType] = useState<string>("All"); // All | Project Bid | Bid List
   const [filterStatus, setFilterStatus] = useState<string>("All");
   const [copied, setCopied] = useState(false);
+  const [previewImage, setPreviewImage] = useState<{ url: string; name: string } | null>(null);
+
+  const isImageFile = (filename: string, fileType?: string) => {
+    if (fileType && fileType.startsWith("image/")) return true;
+    const ext = filename.split(".").pop()?.toLowerCase();
+    return ["jpg", "jpeg", "png", "webp", "gif", "svg"].includes(ext || "");
+  };
+
+  const isPdfFile = (filename: string, fileType?: string) => {
+    if (fileType === "application/pdf") return true;
+    return filename.toLowerCase().endsWith(".pdf");
+  };
 
   const updateStatus = async (id: string, newStatus: string) => {
     setLoadingId(id);
@@ -622,38 +635,117 @@ export function ConstructionBidsClient({
                 <div className="p-4 rounded-xl bg-muted/40 border border-border">
                   <div className="text-xs font-bold uppercase tracking-wider text-muted-foreground mb-3 flex items-center justify-between">
                     <span>Attached Blueprints, Drawings & Specs</span>
+                    <span className="text-[11px] font-normal text-muted-foreground">Click image for instant full preview</span>
                   </div>
-                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5">
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                     {Object.entries(selectedBid.uploadedDocuments).map(([key, fileObj]) => {
                       if (!fileObj) return null;
+                      const isImg = isImageFile(fileObj.name, fileObj.type);
+                      const isPdf = isPdfFile(fileObj.name, fileObj.type);
+                      const downloadUrl = fileObj.url
+                        ? `/api/download?url=${encodeURIComponent(fileObj.url)}&filename=${encodeURIComponent(fileObj.name)}`
+                        : null;
+                      const inlinePdfUrl = fileObj.url
+                        ? `/api/download?inline=true&url=${encodeURIComponent(fileObj.url)}&filename=${encodeURIComponent(fileObj.name)}`
+                        : null;
+
                       return (
                         <div
                           key={key}
-                          className="flex items-center justify-between p-3 rounded-lg bg-card border border-border"
+                          className="flex flex-col p-3 rounded-xl bg-card border border-border shadow-sm space-y-2.5"
                         >
-                          <div className="flex items-center gap-2.5 min-w-0 pr-2">
-                            <FileText className="w-5 h-5 text-[#0090c8] shrink-0" />
-                            <div className="min-w-0">
-                              <div className="text-xs font-bold text-foreground truncate">
+                          <div className="flex items-start gap-3 min-w-0">
+                            {/* Preview Thumbnail for images */}
+                            {isImg && fileObj.url ? (
+                              <button
+                                type="button"
+                                onClick={() => setPreviewImage({ url: fileObj.url!, name: fileObj.name })}
+                                className="relative w-14 h-14 rounded-lg overflow-hidden border border-border group shrink-0 bg-slate-100 hover:ring-2 hover:ring-[#0090c8] transition-all cursor-pointer"
+                                title="Click for Instant Full Preview"
+                              >
+                                <img
+                                  src={fileObj.url}
+                                  alt={fileObj.name}
+                                  className="w-full h-full object-cover group-hover:scale-110 transition-transform"
+                                />
+                                <div className="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 flex items-center justify-center transition-opacity">
+                                  <Eye className="w-4 h-4 text-white" />
+                                </div>
+                              </button>
+                            ) : (
+                              <div className="w-12 h-12 rounded-lg bg-sky-50 text-[#0090c8] flex items-center justify-center shrink-0 border border-sky-100">
+                                {isPdf ? (
+                                  <FileText className="w-6 h-6 text-red-500" />
+                                ) : (
+                                  <Layers className="w-6 h-6 text-[#0090c8]" />
+                                )}
+                              </div>
+                            )}
+
+                            <div className="min-w-0 flex-1">
+                              <div className="text-xs font-bold text-foreground truncate" title={fileObj.name}>
                                 {fileObj.name}
                               </div>
-                              <div className="text-[10px] text-muted-foreground capitalize">
-                                {key} Document • {(fileObj.size / (1024 * 1024)).toFixed(2)} MB
+                              <div className="text-[10px] text-muted-foreground capitalize mt-0.5">
+                                <span className="font-semibold text-slate-700 uppercase">{key}</span> • {(fileObj.size / (1024 * 1024)).toFixed(2)} MB
                               </div>
+                              {isImg && (
+                                <span className="inline-block mt-1 px-1.5 py-0.5 rounded text-[9px] font-bold bg-emerald-50 text-emerald-700 border border-emerald-200">
+                                  Image • Ready to View
+                                </span>
+                              )}
+                              {isPdf && (
+                                <span className="inline-block mt-1 px-1.5 py-0.5 rounded text-[9px] font-bold bg-red-50 text-red-700 border border-red-200">
+                                  PDF Document
+                                </span>
+                              )}
+                              {!isImg && !isPdf && (
+                                <span className="inline-block mt-1 px-1.5 py-0.5 rounded text-[9px] font-bold bg-blue-50 text-blue-700 border border-blue-200">
+                                  CAD / Specs File
+                                </span>
+                              )}
                             </div>
                           </div>
-                          {fileObj.url ? (
-                            <a
-                              href={fileObj.url}
-                              target="_blank"
-                              rel="noopener noreferrer"
-                              className="px-3 py-1.5 rounded-md bg-[#0090c8] text-white text-xs font-bold hover:bg-[#007ba8] shrink-0 flex items-center gap-1"
-                            >
-                              <Download className="w-3.5 h-3.5" /> Download
-                            </a>
-                          ) : (
-                            <span className="text-[11px] text-muted-foreground">Uploaded with package</span>
-                          )}
+
+                          {/* Action Buttons */}
+                          <div className="flex items-center gap-2 pt-2 border-t border-border/60">
+                            {isImg && fileObj.url && (
+                              <button
+                                type="button"
+                                onClick={() => setPreviewImage({ url: fileObj.url!, name: fileObj.name })}
+                                className="flex-1 py-1.5 px-2.5 rounded-lg bg-slate-100 hover:bg-slate-200 text-slate-800 text-xs font-bold transition-colors flex items-center justify-center gap-1 cursor-pointer"
+                              >
+                                <Eye className="w-3.5 h-3.5 text-[#0090c8]" /> Instant Preview
+                              </button>
+                            )}
+
+                            {isPdf && inlinePdfUrl && (
+                              <a
+                                href={inlinePdfUrl}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="flex-1 py-1.5 px-2.5 rounded-lg bg-sky-50 hover:bg-sky-100 text-[#0090c8] text-xs font-bold transition-colors flex items-center justify-center gap-1 border border-sky-200"
+                              >
+                                <ExternalLink className="w-3.5 h-3.5" /> Open PDF
+                              </a>
+                            )}
+
+                            {downloadUrl ? (
+                              <a
+                                href={downloadUrl}
+                                className={`py-1.5 px-3 rounded-lg text-xs font-bold transition-colors flex items-center justify-center gap-1 shadow-sm ${
+                                  isImg
+                                    ? "bg-slate-800 text-white hover:bg-slate-700"
+                                    : "flex-1 bg-[#0090c8] text-white hover:bg-[#007ba8]"
+                                }`}
+                                title="Download to Computer"
+                              >
+                                <Download className="w-3.5 h-3.5" /> Download
+                              </a>
+                            ) : (
+                              <span className="text-[11px] text-muted-foreground">Uploaded with package</span>
+                            )}
+                          </div>
                         </div>
                       );
                     })}
@@ -711,6 +803,53 @@ export function ConstructionBidsClient({
                   Close
                 </button>
               </div>
+            </div>
+          </div>
+        </div>
+      )}
+
+      {/* ─── Instant Image Preview Lightbox ─── */}
+      {previewImage && (
+        <div
+          className="fixed inset-0 z-50 bg-black/80 backdrop-blur-sm flex items-center justify-center p-4 animate-in fade-in duration-200"
+          onClick={() => setPreviewImage(null)}
+        >
+          <div
+            className="relative max-w-4xl w-full bg-slate-900 rounded-2xl overflow-hidden border border-slate-700 shadow-2xl flex flex-col max-h-[90vh]"
+            onClick={(e) => e.stopPropagation()}
+          >
+            {/* Lightbox Header */}
+            <div className="flex items-center justify-between p-3.5 px-4 bg-slate-800/90 border-b border-slate-700 text-white shrink-0">
+              <div className="flex items-center gap-2 min-w-0 pr-4">
+                <ImageIcon className="w-4 h-4 text-[#0090c8] shrink-0" />
+                <span className="font-bold text-xs sm:text-sm truncate">{previewImage.name}</span>
+              </div>
+              <div className="flex items-center gap-2 shrink-0">
+                <a
+                  href={`/api/download?url=${encodeURIComponent(previewImage.url)}&filename=${encodeURIComponent(previewImage.name)}`}
+                  className="px-3 py-1.5 rounded-lg bg-[#0090c8] text-white text-xs font-bold hover:bg-[#007ba8] flex items-center gap-1.5 transition-colors"
+                  title="Download Image"
+                >
+                  <Download className="w-3.5 h-3.5" /> Download
+                </a>
+                <button
+                  type="button"
+                  onClick={() => setPreviewImage(null)}
+                  className="p-1.5 rounded-lg bg-slate-700 hover:bg-slate-600 text-slate-200 transition-colors"
+                >
+                  <X className="w-4 h-4" />
+                </button>
+              </div>
+            </div>
+
+            {/* Lightbox Image Body */}
+            <div className="p-4 flex items-center justify-center overflow-auto bg-slate-950/60 max-h-[75vh]">
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
+                src={previewImage.url}
+                alt={previewImage.name}
+                className="max-w-full max-h-[70vh] object-contain rounded-lg shadow-md"
+              />
             </div>
           </div>
         </div>

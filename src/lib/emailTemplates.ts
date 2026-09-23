@@ -7,6 +7,9 @@ export interface ContactFormData {
   service: string;
   department?: string;
   message: string;
+  uploadedDocuments?: {
+    [key: string]: { name: string; size: number; url?: string; type?: string } | null;
+  };
 }
 
 export interface CareerFormData {
@@ -108,6 +111,36 @@ export function getContactAdminEmailHtml(data: ContactFormData): string {
               ${data.message.replace(/\n/g, "<br/>")}
             </div>
           </div>
+
+          ${data.uploadedDocuments && Object.keys(data.uploadedDocuments).length > 0 ? `
+          <div style="margin-top: 25px;">
+            <p style="font-weight: 700; color: #0f172a; font-size: 14px; margin: 0 0 12px 0;">📁 Attached Drawings & Bid Documents:</p>
+            <table width="100%" border="0" cellspacing="0" cellpadding="0" style="background-color: #f8fafc; border-radius: 12px; border: 1px solid #e2e8f0; overflow: hidden;">
+              ${Object.entries(data.uploadedDocuments).map(([key, fileObj]) => {
+                if (!fileObj || !fileObj.url) return '';
+                const sizeMb = (fileObj.size / (1024 * 1024)).toFixed(2);
+                const isImage = fileObj.name.match(/\.(jpg|jpeg|png|webp|gif|svg)$/i);
+                const downloadUrl = `https://www.enterprisecleaningcorp.com/api/download?url=${encodeURIComponent(fileObj.url)}&filename=${encodeURIComponent(fileObj.name)}`;
+                return `
+                <tr>
+                  <td style="padding: 12px 16px; border-bottom: 1px solid #e2e8f0;">
+                    <div style="font-weight: 700; font-size: 13px; color: #0f172a;">${fileObj.name}</div>
+                    <div style="font-size: 11px; color: #64748b; margin-top: 3px;">
+                      <span style="text-transform: uppercase; font-weight: 600; color: ${BRAND_NAVY};">${key}</span> • ${sizeMb} MB
+                      ${isImage ? ' • <span style="color: #059669; font-weight: 600;">Image File</span>' : ''}
+                    </div>
+                  </td>
+                  <td style="padding: 12px 16px; text-align: right; border-bottom: 1px solid #e2e8f0;">
+                    <a href="${downloadUrl}" target="_blank" style="display: inline-block; background-color: ${BRAND_NAVY}; color: #ffffff; text-decoration: none; font-size: 12px; font-weight: 700; padding: 7px 14px; border-radius: 6px;">
+                      ${isImage ? '👁️ View / Download' : '📥 Download File'}
+                    </a>
+                  </td>
+                </tr>
+                `;
+              }).join('')}
+            </table>
+          </div>
+          ` : ''}
         </td>
       </tr>
 
