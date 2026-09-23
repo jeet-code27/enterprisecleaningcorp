@@ -411,11 +411,11 @@ export function BidDetailClient({ bid: initialBid }: BidDetailClientProps) {
                             onClick={() => setPreviewImage({ url: fileObj.url!, name: fileObj.name })}
                             className="relative aspect-video w-full rounded-xl overflow-hidden bg-slate-900/5 border border-border cursor-pointer group-hover:opacity-95 transition-opacity"
                           >
-                            <Image
+                            <img
                               src={fileObj.url}
                               alt={fileObj.name}
-                              fill
-                              className="object-cover"
+                              className="w-full h-full object-cover"
+                              loading="lazy"
                             />
                             <div className="absolute inset-0 bg-slate-900/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center gap-2 text-white text-xs font-bold">
                               <ZoomIn className="w-5 h-5" /> Click to Expand
@@ -636,12 +636,11 @@ export function BidDetailClient({ bid: initialBid }: BidDetailClientProps) {
                 </button>
               </div>
             </div>
-            <div className="relative flex-1 min-h-[500px] w-full bg-black/60 flex items-center justify-center p-4">
-              <Image
+            <div className="relative flex-1 min-h-[400px] max-h-[75vh] w-full bg-black/60 flex items-center justify-center p-4 overflow-auto">
+              <img
                 src={previewImage.url}
                 alt={previewImage.name}
-                fill
-                className="object-contain"
+                className="max-h-[70vh] w-auto max-w-full object-contain rounded-lg shadow-2xl"
               />
             </div>
           </div>

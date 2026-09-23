@@ -2,6 +2,8 @@ import { NextResponse } from "next/server";
 import dbConnect from "@/lib/mongoose";
 import ContactSubmission from "@/models/ContactSubmission";
 import { v2 as cloudinary } from "cloudinary";
+import path from "path";
+import fs from "fs";
 
 cloudinary.config({
   cloud_name: process.env.NEXT_PUBLIC_CLOUDINARY_CLOUD_NAME,
@@ -69,33 +71,46 @@ export async function DELETE(
       return NextResponse.json({ error: "Submission not found" }, { status: 404 });
     }
 
-    // Clean up uploaded documents (PDF, DOCX, ZIP, Images) from Cloudinary
+    // Clean up uploaded documents (Local Files in project + Images from Cloudinary)
     if (submission.uploadedDocuments && typeof submission.uploadedDocuments === "object") {
       const files = Object.values(submission.uploadedDocuments) as any[];
       for (const fileObj of files) {
         if (!fileObj) continue;
         try {
-          let publicId = fileObj.public_id;
-          const url = fileObj.url;
+          const publicId = fileObj.public_id || "";
+          const url = fileObj.url || "";
 
-          if (!publicId && url) {
-            // Extract public_id from Cloudinary URL (e.g., enterprise_bids/filename)
-            const match = url.match(/\/upload\/(?:v\d+\/)?(.+)$/);
-            if (match && match[1]) {
-              publicId = decodeURIComponent(match[1]);
+          // 1. If it's a locally stored document in the project (public/uploads/documents)
+          if (publicId.startsWith("local:") || url.startsWith("/uploads/") || url.includes("/uploads/documents/")) {
+            const fileName = publicId.startsWith("local:")
+              ? publicId.replace("local:", "")
+              : path.basename(url.split("?")[0]);
+            
+            const localFilePath = path.join(process.cwd(), "public", "uploads", "documents", fileName);
+            if (fs.existsSync(localFilePath)) {
+              await fs.promises.unlink(localFilePath).catch(() => null);
+            }
+          } else {
+            // 2. Otherwise delete from Cloudinary
+            let cldPublicId = publicId;
+            if (!cldPublicId && url) {
+              const match = url.match(/\/upload\/(?:v\d+\/)?(.+)$/);
+              if (match && match[1]) {
+                cldPublicId = decodeURIComponent(match[1]);
+              }
+            }
+
+            if (cldPublicId) {
+              const cleanImagePublicId = cldPublicId.replace(/\.[^/.]+$/, "");
+              // Delete image resource
+              await cloudinary.uploader.destroy(cleanImagePublicId, { resource_type: "image" }).catch(() => null);
+              // Delete raw resource (if any)
+              await cloudinary.uploader.destroy(cldPublicId, { resource_type: "raw" }).catch(() => null);
+              await cloudinary.uploader.destroy(cleanImagePublicId, { resource_type: "raw" }).catch(() => null);
             }
           }
-
-          if (publicId) {
-            const cleanImagePublicId = publicId.replace(/\.[^/.]+$/, "");
-            // Delete image resource
-            await cloudinary.uploader.destroy(cleanImagePublicId, { resource_type: "image" }).catch(() => null);
-            // Delete raw resource (PDFs, CAD, DOCX, ZIP)
-            await cloudinary.uploader.destroy(publicId, { resource_type: "raw" }).catch(() => null);
-            await cloudinary.uploader.destroy(cleanImagePublicId, { resource_type: "raw" }).catch(() => null);
-          }
         } catch (fileErr) {
-          console.error("Failed to delete Cloudinary file for bid:", fileErr);
+          console.error("Failed to delete file for bid:", fileErr);
         }
       }
     }
