@@ -52,6 +52,12 @@ const logos = [
     height: 48,
     darkBg: true,
   },
+  {
+    name: "Corridor 9/495 Regional Chamber of Commerce",
+    src: "/logos/corridor-9495-chamber.png",
+    width: 140,
+    height: 48,
+  },
 ];
 
 export function TrustedByMarquee() {

@@ -1,14 +1,19 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Handshake, RefreshCw, HardHat, Siren, ArrowRight } from "lucide-react";
+import { Handshake, RefreshCw, HardHat, Siren, Smartphone, ShieldCheck, ArrowRight } from "lucide-react";
 import Link from "next/link";
 
 const features = [
   {
-    icon: Handshake,
-    title: "Organizational accountability",
-    description: "When something needs attention, you can reach us directly — not a franchise ticket number or a call center.",
+    icon: Smartphone,
+    title: "We manage our cleaners, so you don't have to!",
+    description: "Powered by custom proprietary software built in 2020: GPS geo-fenced clock-ins, live cleaner messaging, and digital ongoing quality grading for effortless accountability.",
+  },
+  {
+    icon: ShieldCheck,
+    title: "OSHA certified safety & vetted staff",
+    description: "Project supervisors trained with OSHA 10-Hour certifications and safety leadership up to OSHA 30-Hour. Zero subcontractors — only vetted, permanent in-house staff.",
   },
   {
     icon: RefreshCw,
@@ -16,14 +21,14 @@ const features = [
     description: "Our clients don't leave — so you're never retraining a new crew on your building every six months.",
   },
   {
-    icon: HardHat,
-    title: "One permanent, trained team",
-    description: "Every cleaner is trained for your facility and fully vetted. We never subcontract your account out.",
+    icon: Siren,
+    title: "Full 24/7 emergency capability",
+    description: "One vendor for routine janitorial cleaning and immediate emergency water/flood restoration — a single call when disaster strikes.",
   },
   {
-    icon: Siren,
-    title: "Full emergency capability",
-    description: "One vendor for routine cleaning and 24/7 emergency cleanup — a single number when disaster strikes.",
+    icon: Handshake,
+    title: "Direct owner accountability",
+    description: "When something needs attention, you can reach company leadership directly — not a franchise ticket number or an out-of-state call center.",
   }
 ];
 

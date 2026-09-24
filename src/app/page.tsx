@@ -2,12 +2,10 @@ import { Metadata } from "next";
 import { Hero } from "@/components/blocks/hero";
 import { HowItWorks } from "@/components/ui/how-it-works";
 import { WhyChooseUs } from "@/components/ui/why-choose-us";
-import { StaggerTestimonials } from "@/components/ui/stagger-testimonials";
 import { ServicesSlideshow } from "@/components/blocks/services-slideshow";
 import { EmergencyCTA } from "@/components/blocks/emergency-cta";
 import { StatsBanner } from "@/components/ui/stats-banner";
 import { GallerySection } from "@/components/blocks/gallery-section";
-// import { ElfsightReviews } from "@/components/blocks/elfsight-reviews";
 import { WhyEnterprise } from "@/components/blocks/why-enterprise";
 import { ServiceAreas } from "@/components/blocks/service-areas";
 import { GoogleMapSection } from "@/components/blocks/google-map";
@@ -147,9 +145,6 @@ export default function Home() {
         <AwardsSection />
         <RailersSponsorship />
         <SuccessStoriesSection />
-        {/* <WhyChooseUs /> */}
-        <StaggerTestimonials />
-        {/* <ElfsightReviews /> */}
         <GoogleMapSection />
         <FAQSection />
         <ServiceAreas />
