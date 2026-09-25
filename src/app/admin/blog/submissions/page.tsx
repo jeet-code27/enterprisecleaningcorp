@@ -17,9 +17,11 @@ export default async function SubmissionsPage() {
         },
       },
       { service: { $not: /construction/i } },
+      { service: { $not: /emergency/i } },
       { department: { $not: /estimating/i } },
       { message: { $not: /POST-CONSTRUCTION/i } },
       { message: { $not: /SUBCONTRACTOR BID LIST/i } },
+      { message: { $not: /EMERGENCY DISPATCH/i } },
     ],
   })
     .sort({ createdAt: -1 })

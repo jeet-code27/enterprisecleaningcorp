@@ -37,6 +37,16 @@ const nextConfig: NextConfig = {
         permanent: true,
       },
       {
+        source: '/emergency-cleaning',
+        destination: '/emergency-restoration-services-central-ma',
+        permanent: true,
+      },
+      {
+        source: '/emergency-cleaning.html',
+        destination: '/emergency-restoration-services-central-ma',
+        permanent: true,
+      },
+      {
         source: '/software.html',
         destination: '/',
         permanent: true,

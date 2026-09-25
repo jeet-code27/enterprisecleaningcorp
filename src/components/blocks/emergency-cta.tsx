@@ -175,18 +175,20 @@ export function EmergencyCTA() {
           {/* Action Buttons */}
           <div className="flex flex-col sm:flex-row items-center gap-4 w-full lg:w-auto shrink-0">
             <a
-              href="tel:5083042369"
-              className="flex items-center justify-center gap-2 px-6 py-3.5 rounded-xl bg-black/10 border border-white/20 backdrop-blur-md text-xl md:text-2xl font-black text-white hover:bg-black/20 hover:text-[#FFE800] transition-colors w-full sm:w-auto"
+              href="tel:5088901000"
+              className="flex items-center justify-center gap-3 px-6 py-3.5 rounded-2xl bg-black/20 border-2 border-white/30 backdrop-blur-md hover:bg-black/35 hover:border-[#FFE800] transition-all w-full sm:w-auto group"
             >
-              <Phone className="size-5 md:size-6 shrink-0" />
-              (508) 304-2369
+              <Phone className="size-6 text-[#FFE800] shrink-0 group-hover:rotate-12 transition-transform" />
+              <div className="text-xl md:text-2xl font-black text-white leading-none">
+                (508) 890-1000
+              </div>
             </a>
 
             <Link
-              href="/contact?service=Emergency+Restoration+Services"
-              className="inline-flex items-center justify-center px-6 py-3.5 text-base md:text-lg font-bold text-[#E31837] bg-white rounded-xl shadow-lg hover:bg-slate-50 transition-all hover:scale-105 active:scale-95 w-full sm:w-auto whitespace-nowrap"
+              href="/emergency-restoration-services-central-ma#emergency-form"
+              className="inline-flex items-center justify-center px-6 py-4 text-base md:text-lg font-bold text-[#E31837] bg-white rounded-2xl shadow-xl hover:bg-slate-50 transition-all hover:scale-105 active:scale-95 w-full sm:w-auto whitespace-nowrap"
             >
-              Get Emergency Help →
+              Emergency Callback Form →
             </Link>
           </div>
         </div>

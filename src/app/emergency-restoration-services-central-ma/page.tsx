@@ -8,6 +8,7 @@ import {
 } from "lucide-react";
 import { CTASection } from "@/components/blocks/cta-with-glow";
 import { RelatedIndustries } from "@/components/ui/related-industries";
+import { EmergencyCallbackForm } from "@/components/forms/emergency-callback-form";
 
 export const metadata: Metadata = {
   title: { absolute: "24/7 Water Cleanup Worcester MA" },
@@ -166,12 +167,12 @@ export default function EmergencyRestorationPage() {
 
               {/* Action Buttons */}
               <div className="flex flex-wrap items-center gap-4 pt-2">
-                <Link 
-                  href="/contact" 
-                  className="inline-flex items-center gap-2 bg-[#FFE800] text-slate-900 font-extrabold px-7 py-3.5 rounded-full hover:bg-yellow-300 transition-all shadow-xl hover:scale-105 text-sm md:text-base"
+                <a 
+                  href="#emergency-form" 
+                  className="inline-flex items-center gap-2 bg-[#FFE800] text-slate-900 font-extrabold px-7 py-3.5 rounded-full hover:bg-yellow-300 transition-all shadow-xl hover:scale-105 text-sm md:text-base cursor-pointer"
                 >
-                  Request Emergency Service <ArrowRight className="w-4 h-4" />
-                </Link>
+                  Request Emergency Callback <ArrowRight className="w-4 h-4" />
+                </a>
                 <a 
                   href="tel:5088901000" 
                   className="inline-flex items-center gap-2 bg-white/15 hover:bg-white/25 backdrop-blur-md text-white font-bold px-6 py-3.5 rounded-full border border-white/30 transition-all text-sm md:text-base"
@@ -193,7 +194,7 @@ export default function EmergencyRestorationPage() {
                   <ShieldCheck className="w-8 h-8 text-[#FFE800]" />
                   <div>
                     <div className="font-bold text-lg">Fully</div>
-                    <div className="text-xs text-white/90">Insured & Bonded</div>
+                    <div className="text-xs text-white/90">Insured &amp; Bonded</div>
                   </div>
                 </div>
                 <div className="flex items-center gap-3">
@@ -215,7 +216,7 @@ export default function EmergencyRestorationPage() {
 
             {/* Right Floating Card */}
             <div className="w-full max-w-sm lg:mb-12">
-              <div className="bg-white p-8 rounded-3xl shadow-2xl text-center space-y-4 border-t-8 border-[#E31837]">
+              <div className="bg-white p-7 sm:p-8 rounded-3xl shadow-2xl text-center space-y-4 border-t-8 border-[#E31837]">
                 <div className="mx-auto w-16 h-16 rounded-full bg-[#E31837]/10 flex items-center justify-center mb-2">
                   <AlertTriangle className="w-8 h-8 text-[#E31837]" />
                 </div>
@@ -223,12 +224,15 @@ export default function EmergencyRestorationPage() {
                   Have an Emergency?
                 </h3>
                 <p className="text-sm text-slate-600 font-medium leading-relaxed">
-                  Call our dedicated emergency line for immediate assistance.
+                  Call our main emergency hotline directly for immediate 24/7 on-call dispatch.
                 </p>
-                <div className="pt-4 border-t border-slate-100">
-                  <a href="tel:5088901000" className="inline-flex items-center justify-center w-full bg-[#E31837] text-white font-extrabold text-xl py-4 rounded-xl hover:bg-red-700 transition-colors shadow-lg">
-                    <PhoneCall className="w-5 h-5 mr-3" />
-                    508-890-1000
+                <div className="pt-3 border-t border-slate-100">
+                  <a href="tel:5088901000" className="inline-flex items-center justify-center gap-2 w-full bg-[#E31837] text-white py-4 px-4 rounded-2xl hover:bg-red-700 transition-colors shadow-lg font-black text-xl">
+                    <PhoneCall className="w-5 h-5 shrink-0" />
+                    <span>(508) 890-1000</span>
+                  </a>
+                  <a href="#emergency-form" className="inline-block mt-3 text-xs font-bold text-slate-600 hover:text-red-600 underline">
+                    Or fill out rapid emergency callback form ↓
                   </a>
                 </div>
               </div>
@@ -238,25 +242,102 @@ export default function EmergencyRestorationPage() {
         </div>
       </section>
 
-      {/* Services Grid */}
-      <section className="py-20 bg-slate-50">
+      {/* Emergency Callback Form & Dispatch Workflow Section */}
+      <section className="py-16 md:py-20 bg-gradient-to-b from-slate-100 via-slate-50 to-white relative">
+        <div className="container mx-auto px-4 md:px-6">
+          <div className="max-w-4xl mx-auto space-y-12">
+            
+            {/* 3-Step DocuSign Response Workflow Header */}
+            <div className="text-center space-y-3">
+              <span className="px-3.5 py-1 rounded-full bg-red-100 text-red-700 font-black text-xs uppercase tracking-wider">
+                Dependable On-Call Dispatch Process
+              </span>
+              <h2 className="text-3xl md:text-4xl font-black text-slate-900 tracking-tight">
+                How Our Emergency Response Works
+              </h2>
+              <p className="text-sm sm:text-base text-slate-600 max-w-2xl mx-auto leading-relaxed">
+                When you submit an emergency request, our response begins within minutes. We follow a strict protocol so you know exactly when help will arrive:
+              </p>
+            </div>
+
+            {/* 3 Cards */}
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-6">
+              <div className="p-6 rounded-3xl bg-white border border-slate-200 shadow-md flex flex-col justify-between">
+                <div>
+                  <div className="size-10 rounded-2xl bg-red-500/10 text-red-600 font-black text-base flex items-center justify-center mb-4">
+                    1
+                  </div>
+                  <h3 className="text-base font-black text-slate-900 mb-2">Check Availability &amp; Immediate Callback</h3>
+                  <p className="text-xs sm:text-sm text-slate-600 leading-relaxed font-medium">
+                    Our on-call operations supervisor reviews on-call crew availability and calls your callback phone number immediately to confirm details.
+                  </p>
+                </div>
+                <div className="pt-4 mt-4 border-t border-slate-100 text-xs font-bold text-red-600">
+                  Target Response: Under 15 Minutes
+                </div>
+              </div>
+
+              <div className="p-6 rounded-3xl bg-white border border-slate-200 shadow-md flex flex-col justify-between">
+                <div>
+                  <div className="size-10 rounded-2xl bg-blue-500/10 text-blue-600 font-black text-base flex items-center justify-center mb-4">
+                    2
+                  </div>
+                  <h3 className="text-base font-black text-slate-900 mb-2">DocuSign Digital Authorization</h3>
+                  <p className="text-xs sm:text-sm text-slate-600 leading-relaxed font-medium">
+                    We send a quick digital authorization form via DocuSign to your email or phone for rapid sign-off so our crew can legally enter and begin work.
+                  </p>
+                </div>
+                <div className="pt-4 mt-4 border-t border-slate-100 text-xs font-bold text-blue-600">
+                  Fast Paperless Digital Sign-off
+                </div>
+              </div>
+
+              <div className="p-6 rounded-3xl bg-white border border-slate-200 shadow-md flex flex-col justify-between">
+                <div>
+                  <div className="size-10 rounded-2xl bg-emerald-500/10 text-emerald-600 font-black text-base flex items-center justify-center mb-4">
+                    3
+                  </div>
+                  <h3 className="text-base font-black text-slate-900 mb-2">Crew &amp; Fleet Dispatched</h3>
+                  <p className="text-xs sm:text-sm text-slate-600 leading-relaxed font-medium">
+                    Our fully-equipped mobile emergency van and certified technicians mobilize to your property with commercial extraction and drying equipment.
+                  </p>
+                </div>
+                <div className="pt-4 mt-4 border-t border-slate-100 text-xs font-bold text-emerald-600">
+                  Direct Insurance Billing Available
+                </div>
+              </div>
+            </div>
+
+            {/* Embedded Emergency Callback Form */}
+            <div className="pt-4">
+              <EmergencyCallbackForm />
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      {/* Services Grid (Client's 4 Core Recommended Emergency Services) */}
+      <section className="py-20 bg-slate-50 border-t border-slate-200">
         <div className="container mx-auto px-4 md:px-6">
           <div className="text-center max-w-4xl mx-auto mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-[#0090c8] mb-6">Emergency Services We Provide</h2>
-            <p className="text-lg text-slate-600 font-medium leading-relaxed">
-              Our emergency capabilities cover the full range of facility emergencies:
+            <h2 className="text-3xl md:text-4xl font-bold text-[#0090c8] mb-4">Emergency Services We Provide</h2>
+            <p className="text-base sm:text-lg text-slate-600 font-medium leading-relaxed">
+              Certified technicians and industrial-grade equipment mobilized for urgent commercial facility incidents:
             </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-7xl mx-auto">
-            {/* Card 1 */}
+            {/* Card 1: Water Extraction */}
             <div className="bg-white p-8 rounded-3xl shadow-sm border border-slate-100 text-center hover:shadow-xl hover:border-[#00B8FF]/30 transition-all duration-300 group flex flex-col justify-between">
               <div>
                 <div className="mx-auto w-16 h-16 rounded-2xl bg-slate-50 group-hover:bg-[#00B8FF]/10 transition-colors flex items-center justify-center mb-6">
                   <Droplets className="w-8 h-8 text-[#00B8FF]" strokeWidth={1.5} />
                 </div>
-                <h3 className="text-lg font-bold text-slate-900 mb-3">Water & Flood</h3>
-                <p className="text-sm text-slate-600 leading-relaxed text-left mb-4">Water and flood damage cleanup, extraction, and structural drying to stop damage in its tracks.</p>
+                <h3 className="text-lg font-bold text-slate-900 mb-3">Water Extraction &amp; Drying</h3>
+                <p className="text-sm text-slate-600 leading-relaxed text-left mb-4">
+                  Burst pipes, roof leaks, and flood damage. Heavy-duty submersible pumps, wet extractors, and dehumidification.
+                </p>
               </div>
               <div className="pt-4 border-t border-slate-100 text-left">
                 <Link
@@ -269,33 +350,60 @@ export default function EmergencyRestorationPage() {
               </div>
             </div>
             
-            {/* Card 3 */}
-            <div className="bg-white p-8 rounded-3xl shadow-sm border border-slate-100 text-center hover:shadow-xl hover:border-[#00B8FF]/30 transition-all duration-300 group">
-              <div className="mx-auto w-16 h-16 rounded-2xl bg-slate-50 group-hover:bg-[#00B8FF]/10 transition-colors flex items-center justify-center mb-6">
-                <ShieldCheck className="w-8 h-8 text-[#00B8FF]" strokeWidth={1.5} />
+            {/* Card 2: Restroom Cleanup */}
+            <div className="bg-white p-8 rounded-3xl shadow-sm border border-slate-100 text-center hover:shadow-xl hover:border-[#00B8FF]/30 transition-all duration-300 group flex flex-col justify-between">
+              <div>
+                <div className="mx-auto w-16 h-16 rounded-2xl bg-slate-50 group-hover:bg-[#00B8FF]/10 transition-colors flex items-center justify-center mb-6">
+                  <ShieldCheck className="w-8 h-8 text-[#00B8FF]" strokeWidth={1.5} />
+                </div>
+                <h3 className="text-lg font-bold text-slate-900 mb-3">Urgent Restroom Cleanup</h3>
+                <p className="text-sm text-slate-600 leading-relaxed text-left mb-4">
+                  Sewage backups, toilet overflows, and bio-contaminant sanitization with hospital-grade disinfectant and odor neutralization.
+                </p>
               </div>
-              <h3 className="text-lg font-bold text-slate-900 mb-3">Mold Remediation</h3>
-              <p className="text-sm text-slate-600 leading-relaxed text-left">Mold remediation and moisture control to eliminate hazards and prevent recurrence.</p>
+              <div className="pt-4 border-t border-slate-100 text-left">
+                <a
+                  href="#emergency-form"
+                  className="inline-flex items-center text-xs font-bold text-[#0090c8] hover:text-[#003057] transition-colors gap-1.5"
+                >
+                  <span>Request Urgent Service</span>
+                  <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform" />
+                </a>
+              </div>
             </div>
 
-
-            {/* Card 5 */}
-            <div className="bg-white p-8 rounded-3xl shadow-sm border border-slate-100 text-center hover:shadow-xl hover:border-[#00B8FF]/30 transition-all duration-300 group">
-              <div className="mx-auto w-16 h-16 rounded-2xl bg-slate-50 group-hover:bg-[#00B8FF]/10 transition-colors flex items-center justify-center mb-6">
-                <Wind className="w-8 h-8 text-[#00B8FF]" strokeWidth={1.5} />
+            {/* Card 3: Unexpected Spills */}
+            <div className="bg-white p-8 rounded-3xl shadow-sm border border-slate-100 text-center hover:shadow-xl hover:border-[#00B8FF]/30 transition-all duration-300 group flex flex-col justify-between">
+              <div>
+                <div className="mx-auto w-16 h-16 rounded-2xl bg-slate-50 group-hover:bg-[#00B8FF]/10 transition-colors flex items-center justify-center mb-6">
+                  <Flame className="w-8 h-8 text-[#00B8FF]" strokeWidth={1.5} />
+                </div>
+                <h3 className="text-lg font-bold text-slate-900 mb-3">Unexpected Spills &amp; Hazards</h3>
+                <p className="text-sm text-slate-600 leading-relaxed text-left mb-4">
+                  Chemical spills, oil leaks, product containment, and industrial slip-and-fall hazards neutralized safely by trained technicians.
+                </p>
               </div>
-              <h3 className="text-lg font-bold text-slate-900 mb-3">Storm Response</h3>
-              <p className="text-sm text-slate-600 leading-relaxed text-left">Disaster and storm-damage response for properties hit by severe New England weather.</p>
+              <div className="pt-4 border-t border-slate-100 text-left">
+                <a
+                  href="#emergency-form"
+                  className="inline-flex items-center text-xs font-bold text-[#0090c8] hover:text-[#003057] transition-colors gap-1.5"
+                >
+                  <span>Rapid Containment Dispatch</span>
+                  <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform" />
+                </a>
+              </div>
             </div>
 
-            {/* Card 6 */}
+            {/* Card 4: Emergency Deep Cleaning */}
             <div className="bg-white p-8 rounded-3xl shadow-sm border border-slate-100 text-center hover:shadow-xl hover:border-[#00B8FF]/30 transition-all duration-300 group flex flex-col justify-between">
               <div>
                 <div className="mx-auto w-16 h-16 rounded-2xl bg-slate-50 group-hover:bg-[#00B8FF]/10 transition-colors flex items-center justify-center mb-6">
                   <CheckCircle2 className="w-8 h-8 text-[#00B8FF]" strokeWidth={1.5} />
                 </div>
-                <h3 className="text-lg font-bold text-slate-900 mb-3">Post-Emergency Cleanup</h3>
-                <p className="text-sm text-slate-600 leading-relaxed text-left mb-4">Post-emergency deep cleaning, high-touch disinfection, and sanitization to fully normalize operations.</p>
+                <h3 className="text-lg font-bold text-slate-900 mb-3">Emergency Commercial Deep Cleaning</h3>
+                <p className="text-sm text-slate-600 leading-relaxed text-left mb-4">
+                  Rapid turnover sanitation, outbreak disinfection, and post-incident facility restoration to resume business operations immediately.
+                </p>
               </div>
               <div className="pt-4 border-t border-slate-100 text-left">
                 <Link

@@ -4,12 +4,13 @@ import { useSession, signOut } from "next-auth/react";
 import { useRouter } from "next/navigation";
 import { useEffect } from "react";
 import Link from "next/link";
-import { LayoutDashboard, FileText, Tags, Image as ImageIcon, LogOut, Loader2, MessageSquare, Briefcase, Target, HardHat } from "lucide-react";
+import { LayoutDashboard, FileText, Tags, Image as ImageIcon, LogOut, Loader2, MessageSquare, Briefcase, Target, HardHat, AlertTriangle } from "lucide-react";
 import { usePathname } from "next/navigation";
 import Image from "next/image";
 
 const navigation = [
   { name: "Dashboard", href: "/admin/blog", icon: LayoutDashboard },
+  { name: "Emergency Requests 🚨", href: "/admin/blog/emergency", icon: AlertTriangle },
   { name: "Ad Leads 🎯", href: "/admin/blog/leads", icon: Target },
   { name: "Construction Bids 🏗️", href: "/admin/blog/construction-bids", icon: HardHat },
   { name: "Posts", href: "/admin/blog/posts", icon: FileText },
