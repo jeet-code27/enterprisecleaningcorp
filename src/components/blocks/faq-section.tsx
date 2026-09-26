@@ -42,7 +42,7 @@ const faqs = [
   },
   {
     question: "Do you provide ongoing janitorial services or only one-time cleans?",
-    answer: "Both. Most clients are on a recurring nightly or day-and-night janitorial contract, and we also handle one-time deep cleans, turnovers, and post-construction jobs."
+    answer: "Both. We maintain 165+ recurring janitorial customers on scheduled nightly and day-porter programs, and complete over 500 yearly specialized facility projects, with a proud history of tens of thousands of satisfied customers across Massachusetts, Rhode Island, and New Hampshire."
   },
   {
     question: "Do you provide office cleaning for both small offices and large corporate spaces?",

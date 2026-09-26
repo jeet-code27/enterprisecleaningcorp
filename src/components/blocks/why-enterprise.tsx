@@ -9,6 +9,8 @@ const features = [
     icon: Smartphone,
     title: "We manage our cleaners, so you don't have to!",
     description: "Powered by custom proprietary software built in 2020: GPS geo-fenced clock-ins, live cleaner messaging, and digital ongoing quality grading for effortless accountability.",
+    link: "/blog/commercial-cleaning-accountability-worcester",
+    linkText: "Read how our management software ensures accountability",
   },
   {
     icon: ShieldCheck,
@@ -17,8 +19,8 @@ const features = [
   },
   {
     icon: RefreshCw,
-    title: "97% retention means consistency",
-    description: "Our clients don't leave — so you're never retraining a new crew on your building every six months.",
+    title: "97% retention across 165+ recurring accounts",
+    description: "Our clients don't leave — with 165+ recurring janitorial customers and over 500 yearly projects, you're never retraining a new crew on your building every six months.",
   },
   {
     icon: Siren,
@@ -66,6 +68,15 @@ export function WhyEnterprise() {
                   <div>
                     <h3 className="text-xl md:text-2xl font-bold text-slate-800 mb-2">{feature.title}</h3>
                     <p className="text-slate-600 leading-relaxed font-medium text-base md:text-lg">{feature.description}</p>
+                    {feature.link && (
+                      <Link
+                        href={feature.link}
+                        className="inline-flex items-center gap-1.5 text-[#00B8FF] hover:text-[#0090cc] font-semibold text-sm md:text-base mt-2.5 group/link transition-colors"
+                      >
+                        <span>{feature.linkText || "Learn more"}</span>
+                        <ArrowRight size={16} className="transition-transform group-hover/link:translate-x-1" />
+                      </Link>
+                    )}
                   </div>
                 </motion.div>
               ))}

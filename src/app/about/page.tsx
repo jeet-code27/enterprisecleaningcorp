@@ -228,7 +228,7 @@ export default function AboutPage() {
                   Cleaners are often in a facility after the office staff has gone home. Part of our hiring process involves background checks and references. We are usually the only service that will visit every square foot of your facility on a nightly basis. If any of our cleaning technicians notice something unusual, it is reported to our management. Our entire staff wears uniforms and badges that make it easy for your staff to identify they are ours.
                 </p>
                 <p className="font-bold text-slate-900">
-                  We are proud members of the BBB. Contact us today for a FREE estimate and get the cleaning service you require.
+                  We are proud A+ accredited members of the BBB, active members of the Worcester Regional Chamber of Commerce, and the Corridor 9/495 Regional Chamber of Commerce. Contact us today for a FREE estimate and get the cleaning service you require.
                 </p>
               </div>
             </div>
@@ -243,7 +243,7 @@ export default function AboutPage() {
                 <div className="w-full p-8 bg-white">
                   <h3 className="font-extrabold text-slate-900 text-2xl mb-2">Stephen Buchalter</h3>
                   <p className="font-medium text-slate-600 text-sm leading-relaxed">
-                    Stephen founded Enterprise Cleaning Corporation over 23+ years ago. From starting with just one employee, he has grown the company to over 150 team members, becoming one of the well respected companies in Massachusetts.
+                    Stephen founded Enterprise Cleaning Corporation over 23+ years ago. From starting with just one employee, he has grown the company to over 150 team members, serving 165+ recurring janitorial customers, completing over 500 yearly projects, and building a proud history of tens of thousands of satisfied clients across Massachusetts.
                   </p>
                 </div>
               </div>
@@ -478,7 +478,7 @@ export default function AboutPage() {
 
               <div className="pt-4 border-t border-white/10 flex items-center justify-between text-xs text-slate-400">
                 <span className="flex items-center gap-1.5 font-medium">
-                  <Radio className="w-3.5 h-3.5 text-emerald-400 animate-pulse" /> Precision Communication Across 100+ Accounts
+                  <Radio className="w-3.5 h-3.5 text-emerald-400 animate-pulse" /> Precision Communication Across 165+ Recurring Accounts &amp; 500+ Yearly Projects
                 </span>
                 <Link href="/contact" className="text-[#00B8FF] hover:underline font-bold inline-flex items-center gap-1">
                   Connect With Us <ArrowRight className="w-3 h-3" />

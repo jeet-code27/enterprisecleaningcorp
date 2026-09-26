@@ -335,8 +335,8 @@ export default function PostConstructionCleaningMassachusettsPage() {
                   <div className="flex items-center gap-3">
                     <Building2 className="w-7 h-7 text-[#FFE800] shrink-0" />
                     <div>
-                      <div className="font-bold text-lg leading-tight text-white">140+</div>
-                      <div className="text-xs text-white/80">Commercial Clients</div>
+                      <div className="font-bold text-lg leading-tight text-white">500+</div>
+                      <div className="text-xs text-white/80">Yearly Projects</div>
                     </div>
                   </div>
                   <div className="flex items-center gap-3">

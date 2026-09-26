@@ -89,7 +89,7 @@ const faqSchema = {
       "name": "What makes Enterprise different from other Worcester cleaning companies?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "A 97% client retention rate, four Worcester Business Journal “Best of Business” awards, 23+ years in business, direct owner accountability, and an in-house team that is never subcontracted."
+        "text": "A 97% client retention rate, 165+ recurring janitorial customers, over 500 yearly projects, four Worcester Business Journal “Best of Business” awards, 23+ years in business, direct owner accountability, and an in-house team that is never subcontracted."
       }
     },
     {

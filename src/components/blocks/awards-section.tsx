@@ -223,40 +223,52 @@ export function AwardsSection({ embedded = false, className = "" }: AwardsSectio
           </motion.div>
         </div>
 
-        {/* ─── CORRIDOR 9/495 REGIONAL CHAMBER OF COMMERCE TRUST BANNER ─── */}
+        {/* ─── DUAL REGIONAL CHAMBERS OF COMMERCE TRUST BANNER ─── */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.4, delay: 0.2 }}
-          className="mt-8 md:mt-10 rounded-2xl bg-gradient-to-r from-blue-950/80 via-slate-900/90 to-blue-950/80 border border-blue-500/30 p-5 sm:p-6 shadow-2xl backdrop-blur-md"
+          className="mt-8 md:mt-10 rounded-2xl bg-gradient-to-r from-blue-950/85 via-slate-900/95 to-blue-950/85 border border-blue-500/30 p-5 sm:p-6 shadow-2xl backdrop-blur-md"
         >
-          <div className="flex flex-col md:flex-row items-center justify-between gap-6">
-            <div className="flex flex-col sm:flex-row items-center sm:items-start md:items-center gap-5 text-center sm:text-left">
-              <div className="relative w-36 h-20 sm:w-44 sm:h-24 rounded-xl overflow-hidden bg-white/10 p-1.5 border border-white/20 shadow-lg shrink-0 group-hover:scale-105 transition-transform">
-                <Image
-                  src="/logos/corridor-9495-chamber.png"
-                  alt="Member of Corridor 9/495 Regional Chamber of MetroWest"
-                  fill
-                  className="object-contain p-1"
-                />
+          <div className="flex flex-col lg:flex-row items-center justify-between gap-6">
+            <div className="flex flex-col sm:flex-row items-center sm:items-start lg:items-center gap-5 text-center sm:text-left">
+              {/* Dual Chamber Badges */}
+              <div className="flex flex-wrap sm:flex-nowrap items-center justify-center gap-3 shrink-0">
+                <div className="relative w-36 h-20 sm:w-44 sm:h-24 rounded-xl overflow-hidden bg-white p-2 border border-white/20 shadow-lg shrink-0 hover:scale-105 transition-transform">
+                  <Image
+                    src="/logos/worcester-chamber-member.png"
+                    alt="Member of Worcester Regional Chamber of Commerce"
+                    fill
+                    className="object-contain p-1"
+                  />
+                </div>
+                <div className="relative w-32 h-20 sm:w-36 sm:h-24 rounded-xl overflow-hidden bg-white p-2 border border-white/20 shadow-lg shrink-0 hover:scale-105 transition-transform">
+                  <Image
+                    src="/logos/corridor-9495-chamber.png"
+                    alt="Member of Corridor 9/495 Regional Chamber of MetroWest"
+                    fill
+                    className="object-contain p-1"
+                  />
+                </div>
               </div>
+
               <div className="space-y-1">
                 <div className="inline-flex items-center gap-1.5 text-[11px] font-black uppercase tracking-widest text-[#FFE800]">
-                  <Award className="w-3.5 h-3.5" /> Regional Authority &amp; Local Chamber Partner
+                  <Award className="w-3.5 h-3.5" /> Regional Authority &amp; Chamber Partnerships
                 </div>
                 <h3 className="text-base sm:text-lg font-black text-white leading-snug">
-                  Proud Member of the Corridor 9/495 Regional Chamber of Commerce
+                  Proud Member of Worcester Regional &amp; Corridor 9/495 Chambers of Commerce
                 </h3>
                 <p className="text-xs sm:text-sm text-slate-300 font-medium max-w-2xl leading-relaxed">
-                  Headquartered in Westborough, MA and serving 20+ communities throughout MetroWest and Central Massachusetts. Enterprise Cleaning Corporation is committed to the highest regional business and facility standards.
+                  Enterprise Cleaning Corporation is an active member in good standing with both the Worcester Regional Chamber of Commerce and the Corridor 9/495 Regional Chamber. Serving 20+ communities throughout Central Massachusetts and MetroWest, we are committed to the highest regional business and facility standards.
                 </p>
               </div>
             </div>
-            <div className="shrink-0 w-full sm:w-auto">
+            <div className="shrink-0 w-full lg:w-auto">
               <Link
                 href="/contact"
-                className="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-full bg-[#FFE800] text-slate-950 font-black text-xs uppercase tracking-wider hover:bg-yellow-300 transition-all duration-200 shadow-lg hover:shadow-xl hover:scale-105 active:scale-95 w-full sm:w-auto"
+                className="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-full bg-[#FFE800] text-slate-950 font-black text-xs uppercase tracking-wider hover:bg-yellow-300 transition-all duration-200 shadow-lg hover:shadow-xl hover:scale-105 active:scale-95 w-full lg:w-auto"
               >
                 <span>Connect With Us</span>
                 <ArrowRight className="w-4 h-4" />

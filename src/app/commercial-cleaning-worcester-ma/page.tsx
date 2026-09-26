@@ -228,6 +228,44 @@ export default function WorcesterCityPage() {
         </div>
       </section>
 
+      {/* ─── WORCESTER REGIONAL CHAMBER OF COMMERCE TRUST BANNER ─── */}
+      <section className="bg-gradient-to-r from-blue-950 via-slate-900 to-blue-950 border-y border-blue-900/50 py-6 text-white">
+        <div className="container mx-auto px-4 md:px-6">
+          <div className="max-w-5xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6">
+            <div className="flex flex-col sm:flex-row items-center sm:items-start md:items-center gap-5 text-center sm:text-left">
+              <div className="relative w-44 h-20 sm:w-52 sm:h-24 rounded-xl overflow-hidden bg-white p-2 border border-white/20 shadow-lg shrink-0">
+                <Image
+                  src="/logos/worcester-chamber-member.png"
+                  alt="Member of Worcester Regional Chamber of Commerce"
+                  fill
+                  className="object-contain p-1.5"
+                />
+              </div>
+              <div className="space-y-1">
+                <div className="inline-flex items-center gap-1.5 text-[11px] font-black uppercase tracking-widest text-[#FFE800]">
+                  <Award className="w-3.5 h-3.5" /> Regional Authority &amp; Local Chamber Member
+                </div>
+                <h3 className="text-base sm:text-lg font-black text-white leading-snug">
+                  Proud Member of the Worcester Regional Chamber of Commerce
+                </h3>
+                <p className="text-xs sm:text-sm text-slate-300 font-medium max-w-xl leading-relaxed">
+                  Headquartered just 4 miles north in West Boylston, Enterprise Cleaning Corporation is dedicated to the economic vibrancy and pristine commercial standards of Greater Worcester businesses and institutions.
+                </p>
+              </div>
+            </div>
+            <div className="shrink-0">
+              <Link
+                href="/contact"
+                className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-[#FFE800] text-slate-950 font-black text-xs uppercase tracking-wider hover:bg-yellow-300 transition-colors shadow-md"
+              >
+                <span>Connect With Us</span>
+                <ArrowRight className="w-4 h-4" />
+              </Link>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <TrustedByMarquee />
 
       {/* ─── ABOUT WORCESTER ─── */}

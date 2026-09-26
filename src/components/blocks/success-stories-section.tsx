@@ -82,10 +82,10 @@ const featuredStories: FeaturedStory[] = [
 ];
 
 const highlights = [
+  { label: "Recurring Accounts", value: "165+", sub: "Janitorial recurring clients" },
+  { label: "Yearly Projects", value: "500+", sub: "Specialized facility projects annually" },
   { label: "Client Retention Rate", value: "97%", sub: "Industry leading stability" },
-  { label: "Years in Business", value: "23+", sub: "Serving Central MA since 2003" },
-  { label: "W2 Team Members", value: "100%", sub: "Zero subcontracting policy" },
-  { label: "Customer Satisfaction", value: "5.0 ★", sub: "Verified New England clients" },
+  { label: "Proven Heritage", value: "10,000s", sub: "History of tens of thousands served" },
 ];
 
 export function SuccessStoriesSection() {

@@ -49,7 +49,7 @@ export function ServiceAreas() {
             Proudly Serving <span className="text-[#00B8FF]">Central MA & Beyond</span>
           </h2>
           <p className="mt-4 text-slate-500 font-medium max-w-xl mx-auto text-sm md:text-base">
-            From Worcester to Rhode Island — trusted by 140+ businesses across the region.
+            From Worcester to Rhode Island — trusted by 165+ recurring janitorial customers &amp; 500+ yearly projects across the region.
           </p>
         </div>
 

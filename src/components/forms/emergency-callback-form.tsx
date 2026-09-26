@@ -18,11 +18,11 @@ import {
 } from "lucide-react";
 
 const EMERGENCY_TYPES = [
-  "Water Extraction & Flood Recovery",
-  "Urgent Restroom Cleanup & Overflow",
-  "Unexpected Spills & Chemical/Bio Hazard",
-  "Emergency Commercial Deep Cleaning",
-  "Urgent Sewage / Blackwater Backup",
+  "Water extraction and drying",
+  "Urgent bathroom cleanup",
+  "Unexpected spills",
+  "Emergency commercial deep cleaning & floor care",
+  "We coordinate with insurance companies",
   "Other Urgent Facility Cleanup",
 ];
 
@@ -32,7 +32,7 @@ export function EmergencyCallbackForm() {
     phone: "",
     propertyAddress: "",
     town: "",
-    emergencyType: EMERGENCY_TYPES[0],
+    emergencyType: "",
     description: "",
     email: "",
     companyName: "",
@@ -104,7 +104,7 @@ export function EmergencyCallbackForm() {
       !formData.emergencyType.trim() ||
       !formData.description.trim()
     ) {
-      setErrorMessage("Please fill in all required fields (Name, Phone, Property Address, Town, Emergency Type, Description).");
+      setErrorMessage("Please fill in all required fields and select what service you need.");
       return;
     }
 
@@ -316,10 +316,15 @@ export function EmergencyCallbackForm() {
               required
               value={formData.emergencyType}
               onChange={handleChange}
-              className="w-full px-4 py-3 rounded-xl bg-slate-50 border border-slate-200 text-slate-900 text-sm font-black focus:bg-white focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent transition-all cursor-pointer"
+              className={`w-full px-4 py-3 rounded-xl bg-slate-50 border border-slate-200 text-sm font-bold focus:bg-white focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent transition-all cursor-pointer ${
+                formData.emergencyType ? "text-slate-900 font-black" : "text-slate-500 font-semibold"
+              }`}
             >
+              <option value="" disabled className="text-slate-400">
+                Choose one...
+              </option>
               {EMERGENCY_TYPES.map((type) => (
-                <option key={type} value={type}>
+                <option key={type} value={type} className="text-slate-900 font-bold">
                   {type}
                 </option>
               ))}

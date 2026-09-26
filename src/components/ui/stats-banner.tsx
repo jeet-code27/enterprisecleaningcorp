@@ -1,12 +1,12 @@
 import React from "react"
 
 const STATS = [
-  { value: "97%", label: "Client retention", description: "your cleaning team stays consistent, year after year" },
-  { value: "23+ yrs", label: "Serving Central MA since 2003", description: "owner-accountable, never outsourced" },
-  { value: "24/7", label: "Emergency Response", description: "water, mold & emergency cleanup division" },
-  { value: "BBB - A+ Rating", label: "Accredited since 2007", description: "18+ years of verified trust" },
-  { value: "In-house", label: "Dedicated Teams", description: "No subcontractors used" },
-]
+  { value: "165+", label: "Recurring Customers", description: "165+ active janitorial recurring clients" },
+  { value: "500+", label: "Yearly Projects", description: "over 500 specialized facility projects completed annually" },
+  { value: "10,000s", label: "Satisfied Customers", description: "proud history of tens of thousands served" },
+  { value: "97%", label: "Client Retention", description: "your cleaning team stays consistent, year after year" },
+  { value: "23+ yrs", label: "Serving Central MA", description: "owner-accountable & in-house since 2003" },
+];
 
 export function StatsBanner() {
   return (

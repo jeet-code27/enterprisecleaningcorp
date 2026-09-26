@@ -90,7 +90,7 @@ export const Hero = () => {
         <motion.p {...fadeUp(0.4)} className="max-w-2xl text-xs sm:text-sm md:text-base text-white/75 mb-8 sm:mb-10 leading-relaxed">
           Trusted by{" "}
           <span className="text-white/90 font-medium">Workers Credit Union, APDerm, Shields Healthcare, Capital Group Properties, Millbury Credit Union</span>{" "}
-          &amp; 140+ Central MA businesses
+          &amp; 165+ recurring janitorial customers, 500+ yearly projects, and a history of tens of thousands of satisfied clients.
         </motion.p>
 
         {/* CTA Buttons */}

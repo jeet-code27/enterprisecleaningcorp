@@ -58,6 +58,12 @@ const logos = [
     width: 140,
     height: 48,
   },
+  {
+    name: "Worcester Regional Chamber of Commerce",
+    src: "/logos/worcester-chamber-member.png",
+    width: 140,
+    height: 48,
+  },
 ];
 
 export function TrustedByMarquee() {
@@ -67,8 +73,8 @@ export function TrustedByMarquee() {
   return (
     <div className="w-full bg-white border-b border-gray-100 py-6 overflow-hidden">
       {/* Header */}
-      <p className="text-center text-xs font-semibold text-gray-400 uppercase tracking-[0.25em] mb-5">
-        Trusted by 140+ Central MA Businesses
+      <p className="text-center text-xs font-bold text-gray-500 uppercase tracking-[0.2em] mb-5">
+        Trusted by 165+ Recurring Janitorial Customers &amp; Over 500 Yearly Projects
       </p>
 
       {/* Marquee wrapper */}
