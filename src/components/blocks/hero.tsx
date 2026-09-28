@@ -57,15 +57,20 @@ export const Hero = () => {
 
         {/* Top badge */}
         <motion.div {...fadeUp(0.1)} className="flex items-center gap-3 mb-6 sm:mb-8">
-          <div className="inline-flex items-center gap-2 sm:gap-2.5 bg-white/10 border border-white/15 backdrop-blur-md rounded-xl px-3 sm:px-4 py-2 sm:py-2.5 max-w-full">
+          <Link
+            href="/emergency-restoration-services-central-ma"
+            className="inline-flex items-center gap-2 sm:gap-2.5 bg-white/10 hover:bg-white/20 border border-white/15 hover:border-white/35 backdrop-blur-md rounded-xl px-3 sm:px-4 py-2 sm:py-2.5 max-w-full transition-all duration-200 cursor-pointer group shadow-sm hover:shadow-md"
+            title="24/7 Emergency Cleaning & Restoration - Contact Us"
+          >
             <span className="relative flex h-2.5 w-2.5 shrink-0">
               <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#E31837] opacity-75" />
               <span className="relative inline-flex h-2.5 w-2.5 rounded-full bg-[#E31837]" />
             </span>
             <span className="text-[11px] sm:text-xs font-extrabold text-white tracking-wider uppercase whitespace-nowrap shrink-0">24/7</span>
             <div className="w-px h-4 bg-white/20 shrink-0" />
-            <span className="text-[11px] sm:text-xs font-medium text-white/90 leading-tight">Emergency Response Available</span>
-          </div>
+            <span className="text-[11px] sm:text-xs font-medium text-white/90 group-hover:text-white leading-tight">Emergency Response Available</span>
+            <ArrowRight className="w-3.5 h-3.5 text-white/70 group-hover:text-white group-hover:translate-x-0.5 transition-all ml-0.5 shrink-0" />
+          </Link>
         </motion.div>
 
         {/* Main Headline */}

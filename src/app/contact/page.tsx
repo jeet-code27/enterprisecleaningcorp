@@ -114,11 +114,12 @@ export default function ContactPage() {
                     <Clock className="w-6 h-6 text-[#00B8FF]" />
                   </div>
                   <div className="min-w-0 flex-1">
-                    <h3 className="text-base sm:text-lg font-bold text-slate-900 mb-1">Business Hours</h3>
-                    <p className="text-base sm:text-lg text-slate-600 font-medium">
-                      Monday - Friday: 8:00 AM - 5:00 PM
+                    <h3 className="text-base sm:text-lg font-bold text-slate-900 mb-1">Service &amp; Emergency Hours</h3>
+                    <p className="text-base sm:text-lg text-slate-700 font-bold">
+                      24 Hours per Day / 7 Days per Week
                     </p>
-                    <span className="text-xs sm:text-sm text-[#E31837] font-bold mt-1 block">24/7 Emergency Service Available</span>
+                    <span className="text-xs sm:text-sm text-slate-500 font-medium mt-0.5 block">Office Administration: Monday – Friday: 8:00 AM – 5:00 PM</span>
+                    <span className="text-xs sm:text-sm text-[#E31837] font-bold mt-1 block">24/7 Rapid Emergency Response &amp; Dispatch</span>
                   </div>
                 </div>
               </div>

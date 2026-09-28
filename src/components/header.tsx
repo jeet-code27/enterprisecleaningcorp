@@ -105,12 +105,18 @@ export function Header() {
           <div className="flex sm:hidden w-full whitespace-nowrap overflow-hidden">
             <div className="flex items-center gap-6 animate-marquee">
               <span className="flex items-center gap-1.5 shrink-0"><MapPin className="size-3.5 text-white" />99 Hartwell Street, West Boylston, MA 01583</span>
-              <span className="flex items-center gap-1.5 shrink-0"><Clock className="size-3.5 text-white" />24 hrs / 7 Days</span>
+              <Link href="/emergency-restoration-services-central-ma" className="flex items-center gap-1.5 shrink-0 hover:text-[#FFE800] transition-colors" title="24/7 Emergency Response">
+                <Clock className="size-3.5 text-white" />
+                <span className="font-bold underline decoration-white/30">24/7 Emergency (24 hrs / 7 Days)</span>
+              </Link>
               <span className="flex items-center gap-1.5 font-bold shrink-0"><Phone className="size-3.5 text-[#FFE800]" />Serving New England: 508-890-1000</span>
 
               <span className="flex items-center gap-1.5 shrink-0"><Mail className="size-3.5 text-white" />customerservice@enterprisecleaningcorp.com</span>
               <span className="flex items-center gap-1.5 shrink-0"><MapPin className="size-3.5 text-white" />99 Hartwell Street, West Boylston, MA 01583</span>
-              <span className="flex items-center gap-1.5 shrink-0"><Clock className="size-3.5 text-white" />24 hrs / 7 Days</span>
+              <Link href="/emergency-restoration-services-central-ma" className="flex items-center gap-1.5 shrink-0 hover:text-[#FFE800] transition-colors" title="24/7 Emergency Response">
+                <Clock className="size-3.5 text-white" />
+                <span className="font-bold underline decoration-white/30">24/7 Emergency (24 hrs / 7 Days)</span>
+              </Link>
               <span className="flex items-center gap-1.5 font-bold shrink-0"><Phone className="size-3.5 text-[#FFE800]" />Serving New England: 508-890-1000</span>
 
               <span className="flex items-center gap-1.5 shrink-0"><Mail className="size-3.5 text-white" />customerservice@enterprisecleaningcorp.com</span>
@@ -121,7 +127,14 @@ export function Header() {
             <div className="flex items-center gap-4">
               <span className="flex items-center gap-1.5"><MapPin className="size-3.5 text-white" />99 Hartwell Street, West Boylston, MA 01583</span>
               <span className="text-white/50">|</span>
-              <span className="flex items-center gap-1.5"><Clock className="size-3.5 text-white" />24 hrs / 7 Days</span>
+              <Link
+                href="/emergency-restoration-services-central-ma"
+                className="flex items-center gap-1.5 hover:text-[#FFE800] transition-colors group cursor-pointer"
+                title="24/7 Emergency Response & Cleaning Services"
+              >
+                <Clock className="size-3.5 text-white group-hover:text-[#FFE800] transition-colors" />
+                <span className="font-bold underline decoration-white/40 group-hover:decoration-[#FFE800]">24/7 Emergency (24 hrs / 7 Days)</span>
+              </Link>
               <span className="text-white/50">|</span>
               <span className="flex items-center gap-1.5"><Mail className="size-3.5 text-white" />customerservice@enterprisecleaningcorp.com</span>
             </div>

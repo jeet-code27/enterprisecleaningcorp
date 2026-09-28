@@ -378,9 +378,9 @@ export default function EmergencyRestorationPage() {
                 <div className="mx-auto w-16 h-16 rounded-2xl bg-slate-50 group-hover:bg-[#00B8FF]/10 transition-colors flex items-center justify-center mb-6">
                   <Flame className="w-8 h-8 text-[#00B8FF]" strokeWidth={1.5} />
                 </div>
-                <h3 className="text-lg font-bold text-slate-900 mb-3">Unexpected Spills &amp; Hazards</h3>
+                <h3 className="text-lg font-bold text-slate-900 mb-3">Unexpected Spills</h3>
                 <p className="text-sm text-slate-600 leading-relaxed text-left mb-4">
-                  Chemical spills, oil leaks, product containment, and industrial slip-and-fall hazards neutralized safely by trained technicians.
+                  Prompt cleanup and containment to restore surfaces, safeguard facility walkways, and prevent slip-and-fall incidents.
                 </p>
               </div>
               <div className="pt-4 border-t border-slate-100 text-left">
@@ -388,7 +388,7 @@ export default function EmergencyRestorationPage() {
                   href="#emergency-form"
                   className="inline-flex items-center text-xs font-bold text-[#0090c8] hover:text-[#003057] transition-colors gap-1.5"
                 >
-                  <span>Rapid Containment Dispatch</span>
+                  <span>Rapid Spill Cleanup Dispatch</span>
                   <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform" />
                 </a>
               </div>

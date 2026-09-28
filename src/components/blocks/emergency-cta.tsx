@@ -26,7 +26,7 @@ const EMERGENCY_SERVICES = [
   {
     num: "3",
     title: "Unexpected spills",
-    desc: "Fast chemical, liquid, and hazard containment to safeguard your facility.",
+    desc: "Rapid cleanup and containment to safeguard your facility floors and walkways.",
     icon: AlertTriangle,
   },
   {
