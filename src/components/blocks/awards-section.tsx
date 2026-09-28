@@ -140,7 +140,7 @@ export function AwardsSection({ embedded = false, className = "" }: AwardsSectio
               <div className="relative w-full h-32 bg-[#0b1d33] border border-white/10 rounded-xl mb-4 shadow-md group-hover:scale-[1.02] transition-transform duration-300 overflow-hidden flex flex-col items-center justify-center p-3">
                 <div className="relative w-full h-14 mb-1">
                   <Image
-                    src="/logos/wbj-logo.png"
+                    src="/logos/worcester-business-journal-logo.png"
                     alt="Worcester Business Journal"
                     fill
                     className="object-contain"
@@ -187,7 +187,7 @@ export function AwardsSection({ embedded = false, className = "" }: AwardsSectio
               <div className="relative w-full h-32 bg-[#0b1d33] border border-white/10 rounded-xl mb-4 shadow-md group-hover:scale-[1.02] transition-transform duration-300 overflow-hidden flex flex-col items-center justify-center p-3">
                 <div className="relative w-full h-14 mb-1">
                   <Image
-                    src="/logos/wbj-logo.png"
+                    src="/logos/worcester-business-journal-logo.png"
                     alt="Worcester Business Journal"
                     fill
                     className="object-contain"
