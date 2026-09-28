@@ -85,6 +85,7 @@ const highlights = [
   { label: "Recurring Accounts", value: "165+", sub: "Janitorial recurring clients" },
   { label: "Yearly Projects", value: "500+", sub: "Specialized facility projects annually" },
   { label: "Client Retention Rate", value: "97%", sub: "Industry leading stability" },
+  { label: "BBB Accredited", value: "Since 2007", sub: "A+ standing & verified trust" },
   { label: "Proven Heritage", value: "10,000s", sub: "History of tens of thousands served" },
 ];
 
@@ -221,11 +222,11 @@ export function SuccessStoriesSection() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.5 }}
-          className="grid grid-cols-2 md:grid-cols-4 gap-4 bg-slate-50 border border-slate-200 rounded-3xl p-6 sm:p-8 mb-12 shadow-sm"
+          className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 bg-slate-50 border border-slate-200 rounded-3xl p-6 sm:p-8 mb-12 shadow-sm"
         >
           {highlights.map((item, idx) => (
-            <div key={idx} className="text-center sm:text-left border-b sm:border-b-0 sm:border-r border-slate-200 last:border-0 pb-4 sm:pb-0 px-2 sm:px-4">
-              <div className="text-2xl sm:text-3xl lg:text-4xl font-black text-[#003057] tracking-tight mb-1">
+            <div key={idx} className="text-center sm:text-left border-b lg:border-b-0 lg:border-r border-slate-200 last:border-0 pb-4 lg:pb-0 px-2 sm:px-4">
+              <div className="text-2xl sm:text-3xl lg:text-3xl font-black text-[#003057] tracking-tight mb-1 whitespace-nowrap">
                 {item.value}
               </div>
               <div className="text-xs sm:text-sm font-bold text-slate-800">{item.label}</div>
