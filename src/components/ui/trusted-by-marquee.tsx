@@ -46,21 +46,20 @@ const logos = [
     height: 48,
   },
   {
-    name: "Worcester Business Journal",
-    src: "/logos/wbj-logo.png",
-    width: 140,
-    height: 48,
-    darkBg: true,
-  },
-  {
-    name: "Corridor 9/495 Regional Chamber of Commerce",
-    src: "/logos/corridor-9495-chamber.png",
+    name: "West Boylston Municipal Light Department",
+    src: "/logos/west-boylston-light-department.png",
     width: 140,
     height: 48,
   },
   {
-    name: "Worcester Regional Chamber of Commerce",
-    src: "/logos/worcester-chamber-member.png",
+    name: "St. Benedict School",
+    src: "/logos/StBenedictsWordmark.png",
+    width: 140,
+    height: 48,
+  },
+  {
+    name: "Fremont Lofts Condominium",
+    src: "/logos/fremont-condo-association.png",
     width: 140,
     height: 48,
   },
@@ -94,13 +93,13 @@ export function TrustedByMarquee() {
               className="flex-shrink-0 flex items-center justify-center px-4 transition-all duration-300 opacity-90 hover:opacity-100 hover:scale-105"
               style={{ minWidth: "120px" }}
             >
-              <div className={logo.darkBg ? "bg-slate-800 rounded-lg px-3 py-2" : ""}>
+              <div className={logo.darkBg ? "bg-slate-800 rounded-lg px-3 py-2 flex items-center justify-center h-12" : "flex items-center justify-center h-12"}>
                 <Image
                   src={logo.src}
                   alt={logo.name}
                   width={logo.width}
                   height={logo.height}
-                  className="object-contain w-auto h-auto"
+                  className="object-contain max-h-10 w-auto"
                 />
               </div>
             </div>
