@@ -32,6 +32,7 @@ const logos = [
     src: "/logos/capital-group.png",
     width: 130,
     height: 48,
+    darkBg: true,
   },
   {
     name: "Avidia Bank",
