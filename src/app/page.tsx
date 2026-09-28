@@ -17,9 +17,9 @@ import { SuccessStoriesSection } from "@/components/blocks/success-stories-secti
 import Script from "next/script";
 
 export const metadata: Metadata = {
-  title: { absolute: "Commercial Cleaning & Janitorial Services │ Enterprise Cleaning Corp" },
-  description: "Commercial cleaning & janitorial services for Central MA, Rhode Island & Southern NH. 97% client retention, 23+ years in business. Get a free quote.",
-  keywords: "Commercial cleaning Worcester MA, Enterprise Cleaning Corp, janitorial services Central MA, Rhode Island, Southern NH, commercial cleaners, office cleaning",
+  title: { absolute: "Commercial Cleaning Services & Janitorial │ Enterprise Cleaning Corp" },
+  description: "Enterprise Cleaning Corporation provides top-rated commercial cleaning services, office cleaning services in Massachusetts, and commercial janitorial services near me with 97% client retention.",
+  keywords: "commercial cleaning services, office cleaning services in Massachusetts, commercial janitorial services in Massachusetts, industrial cleaning company in Massachusetts, high technology janitorial services in massachusetts, commercial cleaning services near me, office cleaning services, commercial cleaning massachusetts, commercial cleaning companies, commercial janitorial services near me, commercial cleaning, commercial cleaning services massachusetts, janitorial services near me, cleaning company near me, commercial cleaner near me, building cleaning services near me, Commercial cleaning Worcester MA, Enterprise Cleaning Corp",
   alternates: {
     canonical: "https://www.enterprisecleaningcorp.com/",
   },
@@ -78,6 +78,22 @@ const faqSchema = {
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Looking for commercial cleaning services near me or janitorial services near me?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Enterprise Cleaning Corporation is a leading cleaning company near me and trusted commercial cleaner near me. We deliver premier commercial cleaning services, commercial janitorial services near me, and building cleaning services near me across Worcester, Central Massachusetts, Boston, and Southern New Hampshire."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do you offer office cleaning services in Massachusetts and industrial facility cleaning?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. As one of the top commercial cleaning companies and a certified industrial cleaning company in Massachusetts, we provide customized office cleaning services in Massachusetts, commercial janitorial services in Massachusetts, and specialized high technology janitorial services in massachusetts for cleanrooms, tech hubs, and corporate parks."
+      }
+    },
     {
       "@type": "Question",
       "name": "What areas does Enterprise Cleaning serve?",

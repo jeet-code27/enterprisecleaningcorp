@@ -9,6 +9,14 @@ import Link from "next/link";
 
 const faqs = [
   {
+    question: "Looking for commercial cleaning services near me or janitorial services near me?",
+    answer: <>Enterprise Cleaning Corporation is a leading local <Link href="/contact" className="text-[#0090c8] font-semibold hover:underline">cleaning company near me</Link> and certified commercial cleaner near me. We provide routine commercial cleaning services, commercial janitorial services near me, and complete building cleaning services near me throughout Worcester, Greater Boston, and Central Massachusetts.</>
+  },
+  {
+    question: "Do you offer office cleaning services in Massachusetts and high technology janitorial services?",
+    answer: <>Yes. Recognized among top commercial cleaning companies and as an experienced industrial cleaning company in Massachusetts, we provide customized <Link href="/office-cleaning" className="text-[#0090c8] font-semibold hover:underline">office cleaning services in Massachusetts</Link>, routine <Link href="/janitorial-services" className="text-[#0090c8] font-semibold hover:underline">commercial janitorial services in Massachusetts</Link>, and specialized high technology janitorial services in massachusetts for cleanrooms, laboratories, and manufacturing facilities.</>
+  },
+  {
     question: "What areas does Enterprise Cleaning serve?",
     answer: "Enterprise Cleaning Corporation provides commercial cleaning and janitorial services across Worcester and Central Massachusetts, with service throughout Rhode Island and New Hampshire."
   },

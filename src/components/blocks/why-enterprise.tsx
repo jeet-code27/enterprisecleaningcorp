@@ -23,6 +23,11 @@ const features = [
     description: "Our clients don't leave — with 165+ recurring janitorial customers and over 500 yearly projects, you're never retraining a new crew on your building every six months.",
   },
   {
+    icon: HardHat,
+    title: "Industrial & High-Tech Facilities",
+    description: "As a trusted industrial cleaning company in Massachusetts, we provide specialized cleanroom and high technology janitorial services in massachusetts tailored to labs, manufacturers, and tech facilities.",
+  },
+  {
     icon: Siren,
     title: "Full 24/7 emergency capability",
     description: "One vendor for routine janitorial cleaning and immediate emergency water/flood restoration — a single call when disaster strikes.",
@@ -47,7 +52,7 @@ export function WhyEnterprise() {
               Enterprise <span className="text-[#00B8FF]">redefines</span>
             </h2>
             <p className="text-lg md:text-xl text-slate-600 font-medium leading-relaxed mb-12 text-left">
-              what businesses expect from a commercial cleaning partner — proving that a company can operate at enterprise scale while still delivering the personal accountability, consistency, and results that make switching providers unthinkable.
+              Ranked among the leading <strong>commercial cleaning companies</strong> in New England, Enterprise Cleaning Corporation sets the benchmark for <strong>commercial cleaning services massachusetts</strong> facilities depend on daily. From routine <strong>office cleaning services</strong> to full-scale <strong>commercial cleaning</strong> programs, we deliver enterprise-level reliability with hands-on owner accountability.
             </p>
 
             <div className="space-y-10">

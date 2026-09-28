@@ -48,8 +48,8 @@ export function ServiceAreas() {
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-extrabold text-slate-900 tracking-tight">
             Proudly Serving <span className="text-[#00B8FF]">Central MA & Beyond</span>
           </h2>
-          <p className="mt-4 text-slate-500 font-medium max-w-xl mx-auto text-sm md:text-base">
-            From Worcester to Rhode Island — trusted by 165+ recurring janitorial customers &amp; 500+ yearly projects across the region.
+          <p className="mt-4 text-slate-500 font-medium max-w-2xl mx-auto text-sm md:text-base">
+            Searching for reliable <strong>commercial cleaning services near me</strong> or <strong>janitorial services near me</strong>? Enterprise Cleaning Corporation provides premier <strong>commercial cleaning massachusetts</strong> businesses trust across Worcester County, Greater Boston, Rhode Island, and Southern NH.
           </p>
         </div>
 
@@ -86,8 +86,8 @@ export function ServiceAreas() {
         </div>
 
         {/* Bottom note */}
-        <p className="text-center text-slate-400 text-xs mt-8 font-medium">
-          Don't see your city? <a href="/contact" className="text-[#00B8FF] font-bold hover:underline">Contact us</a> — we likely service your area.
+        <p className="text-center text-slate-500 text-xs sm:text-sm mt-8 font-medium max-w-3xl mx-auto">
+          Looking for a trusted <strong>cleaning company near me</strong>, certified <strong>commercial cleaner near me</strong>, or dependable <strong>building cleaning services near me</strong>? Don&apos;t see your city listed? <a href="/contact" className="text-[#00B8FF] font-bold hover:underline">Contact our regional team</a> — we likely service your area!
         </p>
 
       </div>

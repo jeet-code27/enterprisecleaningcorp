@@ -93,9 +93,9 @@ export const Hero = () => {
 
         {/* Sub-headline */}
         <motion.p {...fadeUp(0.4)} className="max-w-2xl text-xs sm:text-sm md:text-base text-white/75 mb-8 sm:mb-10 leading-relaxed">
-          Trusted by{" "}
+          Delivering award-winning <strong>commercial cleaning services</strong>, specialized <strong>office cleaning services in Massachusetts</strong>, and dependable <strong>commercial janitorial services in Massachusetts</strong>. Trusted by{" "}
           <span className="text-white/90 font-medium">Workers Credit Union, APDerm, Shields Healthcare, Capital Group Properties, Millbury Credit Union</span>{" "}
-          &amp; 165+ recurring janitorial customers, 500+ yearly projects, and a history of tens of thousands of satisfied clients.
+          &amp; 165+ recurring janitorial customers, 500+ yearly projects, and tens of thousands of satisfied clients across the region.
         </motion.p>
 
         {/* CTA Buttons */}
