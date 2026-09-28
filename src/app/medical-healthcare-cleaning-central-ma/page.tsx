@@ -11,9 +11,9 @@ import { CTASection } from "@/components/blocks/cta-with-glow";
 import { RelatedServices } from "@/components/ui/related-services";
 
 export const metadata: Metadata = {
-  title: { absolute: "Medical & Healthcare Cleaning Worcester MA" },
-  description: "Healthcare-grade cleaning and disinfection for medical offices, clinics, and labs across Worcester and Central Massachusetts. Compliance-focused, 97% retention.",
-  keywords: "commercial medical facility cleaning, healthcare clinic janitorial services, medical office cleaners Central MA, hospital cleaning Worcester, commercial cleaning services",
+  title: { absolute: "Medical & Healthcare Cleaning Worcester & Massachusetts" },
+  description: "Healthcare-grade medical cleaning services in Massachusetts and Worcester. Serving clinics, doctor offices, and medical facilities with compliance-focused disinfection.",
+  keywords: "medical cleaning services in massachusetts, healthcare cleaning worcester ma, healthcare cleaning services worcester ma, doctor office cleaning worcester, medical office cleaning worcester ma, doctor office cleaning company worcester, healthcare cleaning services massachusetts, medical facility cleaning in wellesley, ma, healthcare cleaning services in wellesley, ma",
   alternates: {
     canonical: "https://www.enterprisecleaningcorp.com/medical-healthcare-cleaning-central-ma"
   },
@@ -145,11 +145,11 @@ export default function MedicalCleaningPage() {
               </h1>
               
               <p className="text-lg text-slate-600 font-medium leading-relaxed text-left">
-                In a healthcare environment, cleaning is a matter of patient safety. Medical offices, clinics, dental practices, outpatient centers, and laboratories require disinfection standards and attention to detail that go far beyond ordinary commercial cleaning. Enterprise Cleaning Corporation provides healthcare-focused cleaning across Central Massachusetts, helping medical facilities maintain the sanitary, compliant, and welcoming environment their patients deserve.
+                In a healthcare environment, cleaning is a matter of patient safety. Medical offices, clinics, dental practices, outpatient centers, and laboratories require medical cleaning services in massachusetts that adhere to rigorous disinfection standards and attention to detail. Enterprise Cleaning Corporation delivers comprehensive healthcare cleaning services massachusetts practices trust, providing specialized healthcare cleaning worcester ma clinics rely on daily.
               </p>
 
               <p className="text-lg text-slate-600 font-medium leading-relaxed text-left">
-                We understand the stakes. A waiting room must look immaculate and feel safe. Patient areas and high-touch surfaces must be properly disinfected. Restrooms must be maintained throughout patient hours. We build programs that meet these demands consistently, every day.
+                We understand the stakes. Whether you need medical office cleaning worcester ma providers trust, specialized doctor office cleaning worcester practices count on, or are seeking a top-rated doctor office cleaning company worcester healthcare managers recommend, we build programs that meet these demands consistently, every day.
               </p>
               
               <div className="flex flex-col sm:flex-row gap-4 pt-4">
@@ -378,7 +378,7 @@ export default function MedicalCleaningPage() {
               Healthcare-Grade Cleaning You Can Trust
             </h2>
             <p className="text-lg text-white/90 font-medium leading-relaxed max-w-4xl mx-auto text-left drop-shadow-md">
-              Worcester is a growing healthcare and life-sciences hub, and we are proud to serve medical practices throughout the region. From Worcester and Shrewsbury to Auburn, Holden, Westborough, and across Central MA, we keep medical and healthcare facilities clean, sanitary, and compliant. We bring 97% client retention, four Worcester Business Journal “Best of Business” awards, and BBB accreditation since 2007 to every healthcare contract and serve Massachusetts, Rhode Island, and New Hampshire.
+              Worcester is a growing healthcare and life-sciences hub, and we are proud to deliver the highest standard of healthcare cleaning services worcester ma clinics expect. From Worcester, Shrewsbury, Auburn, Holden, and Westborough to professional medical facility cleaning in wellesley, ma and specialized healthcare cleaning services in wellesley, ma, we keep medical and healthcare facilities clean, sanitary, and compliant. We bring 97% client retention, four Worcester Business Journal “Best of Business” awards, and BBB accreditation since 2007 to every healthcare contract across Massachusetts, Rhode Island, and New Hampshire.
             </p>
           </div>
 

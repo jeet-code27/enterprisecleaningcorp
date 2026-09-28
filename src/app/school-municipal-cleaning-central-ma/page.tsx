@@ -11,9 +11,9 @@ import { CTASection } from "@/components/blocks/cta-with-glow";
 import { RelatedServices } from "@/components/ui/related-services";
 
 export const metadata: Metadata = {
-  title: { absolute: "School & Municipal Cleaning Worcester MA" },
-  description: "Cleaning for schools, universities, and municipal buildings across Worcester and Central Massachusetts. Healthy environments, reliable service, 97% retention.",
-  keywords: "commercial school cleaning Central MA, municipal building janitorial services, university cleaners Worcester, educational facility commercial cleaning",
+  title: { absolute: "School Cleaning Services in Massachusetts | Enterprise Cleaning" },
+  description: "Premier school cleaning services in Massachusetts. Custodial and janitorial care for Worcester, Gardner, and Boston regional schools and municipal buildings.",
+  keywords: "school cleaning services in Massachusetts, school cleaning services Worcester, school janitorial services in Gardner, school and educational facility cleaning boston, commercial school cleaning Central MA, municipal building janitorial services",
   alternates: {
     canonical: "https://www.enterprisecleaningcorp.com/school-municipal-cleaning-central-ma"
   },
@@ -140,12 +140,12 @@ export default function SchoolCleaningPage() {
               </div>
               
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-black tracking-tight leading-[1.1] text-slate-900">
-                Educational & Municipal<br/>
-                <span className="text-[#0090c8]">Building Cleaning</span>
+                School Cleaning Services<br/>
+                <span className="text-[#0090c8]">in Massachusetts</span>
               </h1>
               
               <p className="text-lg text-slate-600 font-medium leading-relaxed text-left">
-                Schools, universities, libraries, town halls, and other public buildings serve their communities every day — and they need to be clean, healthy, and welcoming for the students, staff, and residents who depend on them. Enterprise Cleaning Corporation provides cleaning for educational and municipal facilities across Central Massachusetts, maintaining the high standards these high-traffic, high-visibility buildings require.
+                Schools, universities, libraries, town halls, and public facilities serve their communities every day — and they require dependable school cleaning services in Massachusetts to maintain safe, healthy, and welcoming learning environments for the students, staff, and residents who depend on them. Enterprise Cleaning Corporation provides tailored cleaning for educational and municipal facilities across Central Massachusetts, maintaining the high standards these high-traffic, high-visibility buildings require.
               </p>
 
               <p className="text-lg text-slate-600 font-medium leading-relaxed text-left">
@@ -377,7 +377,7 @@ export default function SchoolCleaningPage() {
               Reliable Care for Public Institutions
             </h2>
             <p className="text-lg text-white/90 font-medium leading-relaxed max-w-4xl mx-auto text-left drop-shadow-md">
-              We serve educational and municipal facilities throughout Central Massachusetts, from Worcester to Shrewsbury, Auburn, Holden, Westborough, Marlborough, Leominster, and beyond. We bring 97% client retention, four Worcester Business Journal “Best of Business” awards, and BBB accreditation since 2007 to every contract and serve Massachusetts, Rhode Island, and New Hampshire. We are also proud of our history serving public institutions in the region.
+              We deliver trusted school cleaning services in Massachusetts, serving educational institutions and municipal facilities from dependable school cleaning services Worcester campuses rely on, to dedicated school janitorial services in Gardner, along with regional school and educational facility cleaning Boston and MetroWest administrators count on. We bring 97% client retention, four Worcester Business Journal “Best of Business” awards, and BBB accreditation since 2007 to every contract, serving schools across Massachusetts, Rhode Island, and New Hampshire.
             </p>
           </div>
 

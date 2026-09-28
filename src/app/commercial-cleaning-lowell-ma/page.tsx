@@ -11,8 +11,8 @@ import {
 
 export const metadata: Metadata = {
   title: { absolute: "Commercial Cleaning Lowell, MA | Enterprise Cleaning Corp" },
-  description: "Commercial cleaning and janitorial services in Lowell, MA. Serving mill-building offices, healthcare, and tech employers. Get a free quote today.",
-  keywords: "commercial cleaning services, commercial cleaning company, office cleaning services, janitorial services near me, commercial cleaning services massachusetts, office cleaning services in massachusetts, commercial cleaning ma, hospital janitorial services, commercial cleaning lowell ma",
+  description: "Commercial cleaning, disinfecting, and floor care in Lowell, MA. Serving mill offices, cleanrooms, and commercial properties. Get a free quote today.",
+  keywords: "disinfecting lowell, commercial carpet cleaning lowell, tile cleaning services lowell, apartment carpet cleaning lowell, commercial carpet cleaning lowell ma, steam cleaning lowell ma, cleaning services lowell, commercial restoration lowell, cleanroom cleaning lowell ma, commercial cleaning services near me, commercial cleaning lowell ma",
   alternates: {
     canonical: "https://www.enterprisecleaningcorp.com/commercial-cleaning-lowell-ma"
   },
@@ -148,7 +148,7 @@ export default function LowellCityPage() {
               </div>
 
               <p className="text-lg text-slate-500 font-medium leading-relaxed max-w-xl">
-                Lowell is Massachusetts&apos;s fifth-largest city, blending historic converted textile mill office space with modern tech and healthcare corridors. Enterprise Cleaning Corporation provides tailored, high-grade janitorial and floor care services across Lowell.
+                Lowell is Massachusetts&apos;s fifth-largest city, blending historic converted textile mill office space with modern tech and healthcare corridors. If you are searching for dependable commercial cleaning services near me or specialized commercial cleaning lowell ma businesses trust, Enterprise Cleaning Corporation provides tailored cleaning services lowell facilities depend on — from high-touch disinfecting lowell workplaces require to complete commercial restoration lowell properties count on.
               </p>
 
               <div className="flex flex-col sm:flex-row flex-wrap gap-3 sm:gap-4">
@@ -249,7 +249,7 @@ export default function LowellCityPage() {
                   Enterprise Cleaning Corporation extends our Central Massachusetts service standards north to Lowell, offering the same{" "}
                   <Link href="/office-cleaning" className="text-[#0090c8] font-semibold hover:underline">nightly janitorial, day porter</Link>, and{" "}
                   <Link href="/floor-care-services-central-ma" className="text-[#0090c8] font-semibold hover:underline">floor care services</Link>
-                  {" "}we&apos;ve built our reputation on, adapted to the building types that make up Lowell&apos;s commercial base — from mill-building office suites to healthcare administrative space to modern tech offices near the Route 3/495 interchange.
+                  {" "}including routine commercial carpet cleaning lowell facilities require, adapted to the building types that make up Lowell&apos;s commercial base — from mill-building office suites to healthcare administrative space to modern tech offices near the Route 3/495 interchange.
                 </p>
                 <p>
                   Cleaning a 19th-century mill building isn&apos;t the same job as cleaning a modern office park, even when both are technically &quot;commercial office space.&quot; Mill conversions often keep original wood or brick flooring, older window stock, and layouts that weren&apos;t designed with modern janitorial closets in mind. Our Lowell crews are used to working around those constraints without treating a historic building like a liability.
@@ -332,7 +332,7 @@ export default function LowellCityPage() {
               Core Cleaning Services in Lowell, MA
             </h2>
             <p className="text-slate-500 font-medium leading-relaxed">
-              Enterprise Cleaning Corporation provides a full range of commercial cleaning services to Lowell businesses, scaled to fit everything from a single office suite to a multi-building portfolio:
+              Enterprise Cleaning Corporation provides a full range of commercial cleaning services to Lowell businesses, specialized cleanroom cleaning lowell ma tech firms require, and dedicated floor care across commercial suites and facilities:
             </p>
           </div>
 
@@ -353,7 +353,7 @@ export default function LowellCityPage() {
               {
                 icon: Sparkles,
                 title: "Floor Care Services",
-                desc: "Stripping, waxing, buffing, and polishing for VCT and hard-surface floors, plus scheduled carpet cleaning to protect flooring investments and maintain a professional appearance.",
+                desc: "Stripping, waxing, and polishing for VCT and hard floors, plus expert tile cleaning services lowell businesses rely on, steam cleaning lowell ma properties need, and commercial carpet cleaning lowell ma companies schedule to protect flooring investments.",
                 href: "/floor-care-services-central-ma"
               },
               {
@@ -371,7 +371,7 @@ export default function LowellCityPage() {
               {
                 icon: Truck,
                 title: "Turnover Cleaning",
-                desc: "Fast, thorough cleaning between tenants for commercial suites, apartment units, and multi-tenant properties, built around the tight timelines property managers work with.",
+                desc: "Fast, thorough cleaning between tenants for commercial suites, multi-tenant mill buildings, and apartment carpet cleaning lowell landlords and property managers count on.",
                 href: "/turnover-cleaning-central-ma"
               },
             ]) as { icon: React.ElementType; title: string; desc: string; href: string }[]).map((svc, idx) => (

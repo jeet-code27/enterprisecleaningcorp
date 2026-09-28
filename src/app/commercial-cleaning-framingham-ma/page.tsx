@@ -12,7 +12,7 @@ import {
 export const metadata: Metadata = {
   title: { absolute: "Commercial Cleaning Framingham, MA | Enterprise Cleaning Corp" },
   description: "Commercial cleaning and janitorial services in Framingham, MA. Serving Golden Triangle retail, Route 9 offices, and corporate headquarters. Get a free quote.",
-  keywords: "commercial cleaning services, commercial cleaning company, office cleaning services, commercial cleaning services massachusetts, commercial cleaning ma, office cleaning services in massachusetts, commercial floor waxing, commercial tile and grout cleaning, commercial cleaning framingham ma",
+  keywords: "commercial cleaning services, commercial cleaning company, office cleaning services, commercial cleaning services massachusetts, commercial cleaning ma, corporate office cleaning in framingham, ma, commercial cleaning projects in framingham, ma, commercial floor care in framingham, ma, office cleaning services in framingham, ma, commercial cleaning services in framingham, ma, commercial cleaning services framingham ma",
   alternates: {
     canonical: "https://www.enterprisecleaningcorp.com/commercial-cleaning-framingham-ma"
   },
@@ -148,7 +148,7 @@ export default function FraminghamCityPage() {
               </div>
 
               <p className="text-lg text-slate-500 font-medium leading-relaxed max-w-xl">
-                Framingham anchors the MetroWest commercial region. Enterprise Cleaning Corporation provides tailored janitorial, floor care, and day porter services for Golden Triangle retail, Route 9 office parks, and corporate headquarters.
+                Framingham anchors the MetroWest commercial region. Enterprise Cleaning Corporation provides premier commercial cleaning services in Framingham, MA, offering tailored corporate office cleaning in Framingham, MA, commercial floor care in Framingham, MA, and dedicated day porter support for Golden Triangle retail, Route 9 office parks, and diverse commercial cleaning projects in Framingham, MA.
               </p>
 
               <div className="flex flex-col sm:flex-row flex-wrap gap-3 sm:gap-4">
@@ -330,7 +330,7 @@ export default function FraminghamCityPage() {
               Core Cleaning Services in Framingham, MA
             </h2>
             <p className="text-slate-500 font-medium leading-relaxed">
-              Enterprise Cleaning Corporation provides a full range of commercial cleaning services to Framingham businesses, scaled to fit everything from a single office suite to a multi-building portfolio:
+              Enterprise Cleaning Corporation provides a full range of commercial cleaning services framingham ma organizations count on daily. From recurring office cleaning services in framingham, ma to specialized floor maintenance, our programs are scaled to fit single suites or multi-building campuses:
             </p>
           </div>
 

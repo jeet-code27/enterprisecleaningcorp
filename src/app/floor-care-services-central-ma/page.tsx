@@ -10,9 +10,9 @@ import { CTASection } from "@/components/blocks/cta-with-glow";
 import { RelatedIndustries } from "@/components/ui/related-industries";
 
 export const metadata: Metadata = {
-  title: { absolute: "Commercial Floor Care Central MA" },
-  description: "Strip and wax, VCT, carpet care, and hard-floor maintenance for commercial buildings across Central Massachusetts. Free assessment available.",
-  keywords: "commercial floor care Central MA, VCT stripping and waxing, commercial carpet cleaning Worcester, industrial floor maintenance, commercial floor cleaning services",
+  title: { absolute: "Commercial Floor Care Central MA | Enterprise Cleaning Corp" },
+  description: "Commercial floor maintenance, stripping, waxing, terrazzo, and hardwood floor cleaning in Massachusetts and Central MA. Free on-site assessment.",
+  keywords: "commercial floor maintenance near me, floor cleaning massachusetts, commercial floor waxing in natick, ma, terrazzo floor cleaning near me, floor cleaning ma, floor cleaning wilmington ma, hardwood floor cleaning worcester ma, VCT stripping and waxing, commercial carpet cleaning Worcester",
   alternates: {
     canonical: "https://www.enterprisecleaningcorp.com/floor-care-services-central-ma"
   },
@@ -154,10 +154,10 @@ export default function FloorCarePage() {
               
               <div className="text-base md:text-lg text-white/95 font-medium max-w-2xl leading-relaxed mt-6 drop-shadow-sm space-y-4 text-left">
                 <p>
-                  Floors take more wear than any other surface in a commercial building — and they are the first thing a visitor notices. Dull, scuffed, or worn flooring quietly undermines an otherwise professional space. Bright, well-maintained floors do the opposite: they signal care, quality, and attention to detail.
+                  Floors take more wear than any other surface in a commercial building — and they are the first thing a visitor notices. If you are searching for dependable commercial floor maintenance near me or professional floor cleaning massachusetts facilities count on, Enterprise Cleaning Corporation provides complete floor care solutions designed to protect your investment.
                 </p>
                 <p>
-                  Enterprise Cleaning Corporation provides complete commercial floor care across Central Massachusetts, from routine maintenance to full refinishing. Whether you manage a corporate office, a medical facility, a school, a retail space, or a warehouse, we protect your flooring investment and keep it looking its best.
+                  From routine floor cleaning ma programs to full refinishing, we service commercial offices, medical clinics, schools, and industrial facilities across Central and Eastern Massachusetts, keeping your surfaces pristine, safe, and durable.
                 </p>
               </div>
 
@@ -249,7 +249,7 @@ export default function FloorCarePage() {
                   <Layers className="w-8 h-8 text-[#00B8FF]" strokeWidth={1.5} />
                 </div>
                 <h3 className="text-lg font-bold text-slate-900 mb-3">Strip & Wax</h3>
-                <p className="text-sm text-slate-600 leading-relaxed text-left mb-4">Strip and wax of VCT and resilient tile — removing old finish and rebuilding a deep, durable shine.</p>
+                <p className="text-sm text-slate-600 leading-relaxed text-left mb-4">Strip and wax of VCT and resilient tile, including commercial floor waxing in natick, ma and surrounding MetroWest business properties.</p>
               </div>
               <div className="pt-4 border-t border-slate-100 text-left">
                 <Link
@@ -308,7 +308,7 @@ export default function FloorCarePage() {
                 <Sparkles className="w-8 h-8 text-[#00B8FF]" strokeWidth={1.5} />
               </div>
               <h3 className="text-lg font-bold text-slate-900 mb-3">Hard-Surface Care</h3>
-              <p className="text-sm text-slate-600 leading-relaxed text-left">Hard-surface care for terrazzo, concrete, hardwood, and laminate</p>
+              <p className="text-sm text-slate-600 leading-relaxed text-left">Hard-surface care for concrete, specialized terrazzo floor cleaning near me, and hardwood floor cleaning worcester ma facilities count on to maintain natural finish.</p>
             </div>
 
             {/* Card 5 */}
@@ -445,7 +445,7 @@ export default function FloorCarePage() {
               Proven Commercial Floor Care in Central MA
             </h2>
             <p className="text-lg text-white/80 font-medium leading-relaxed max-w-4xl mx-auto text-left">
-              We bring 97% client retention, four Worcester Business Journal “Best of Business” awards, and BBB accreditation since 2007 to every floor care contract, and we serve Massachusetts, Rhode Island, and New Hampshire. Our crews work throughout Shrewsbury, Auburn, Holden, Westborough, and the wider Central MA region, restoring and maintaining commercial floors for offices, healthcare facilities, schools, municipal buildings, and industrial sites.
+              We bring 97% client retention, four Worcester Business Journal “Best of Business” awards, and BBB accreditation since 2007 to every floor care contract, and we serve Massachusetts, Rhode Island, and New Hampshire. Our crews work throughout Shrewsbury, Auburn, Holden, Westborough, and the wider Central MA region — extending across Eastern MA to handle specialized floor cleaning wilmington ma business parks require — restoring and maintaining commercial floors for offices, healthcare facilities, schools, municipal buildings, and industrial sites.
             </p>
           </div>
 

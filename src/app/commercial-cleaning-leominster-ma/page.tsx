@@ -12,7 +12,7 @@ import {
 export const metadata: Metadata = {
   title: { absolute: "Commercial Cleaning Leominster, MA | Enterprise Cleaning Corp" },
   description: "Commercial cleaning and janitorial services in Leominster, MA. Serving manufacturing, medical device, and office facilities. Get a free quote today.",
-  keywords: "commercial cleaning services, warehouse cleaning, commercial janitorial services, industrial cleaning services near me, industrial cleaning near me, medical office cleaning, commercial cleaning services massachusetts, post construction cleaning massachusetts, commercial cleaning leominster ma",
+  keywords: "commercial cleaning leominster ma, cleaning company leominster, office cleaning leominster ma, carpet cleaner leominster ma, basement cleaning services leominster, ma, property cleanout company leominster, ma, commercial junk removal leominster, ma, commercial cleaning services, warehouse cleaning, commercial janitorial services, industrial cleaning services near me, industrial cleaning near me, medical office cleaning, commercial cleaning services massachusetts, post construction cleaning massachusetts",
   alternates: {
     canonical: "https://www.enterprisecleaningcorp.com/commercial-cleaning-leominster-ma"
   },
@@ -68,7 +68,12 @@ const structuredDataFAQ = {
     {
       "@type": "Question",
       "name": "Does Enterprise Cleaning Corporation serve Leominster, MA?",
-      "acceptedAnswer": { "@type": "Answer", "text": "Yes. Leominster is part of our Massachusetts service area, including its manufacturing, medical device, and retail base along Route 2." }
+      "acceptedAnswer": { "@type": "Answer", "text": "Yes. As a leading cleaning company leominster businesses rely on, Leominster is part of our core Massachusetts service area, including its manufacturing, medical device, and retail base along Route 2." }
+    },
+    {
+      "@type": "Question",
+      "name": "Do you offer cleanouts, basement cleaning, and junk removal in Leominster?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Yes. Beyond regular janitorial maintenance, we serve as a full-service property cleanout company leominster, ma, providing basement cleaning services leominster, ma and commercial junk removal leominster, ma for commercial buildings, warehouses, and multi-tenant properties." }
     },
     {
       "@type": "Question",
@@ -83,7 +88,7 @@ const structuredDataFAQ = {
     {
       "@type": "Question",
       "name": "What cleaning services are available for Leominster manufacturers?",
-      "acceptedAnswer": { "@type": "Answer", "text": "Nightly janitorial, day porter services, floor care, warehouse cleaning, post-construction cleaning, and turnover cleaning." }
+      "acceptedAnswer": { "@type": "Answer", "text": "Nightly janitorial, day porter services, floor care, carpet cleaner leominster ma solutions, warehouse cleaning, post-construction cleaning, and turnover cleaning." }
     },
     {
       "@type": "Question",
@@ -113,7 +118,7 @@ const structuredDataFAQ = {
     {
       "@type": "Question",
       "name": "How do I get a cleaning quote for my Leominster facility?",
-      "acceptedAnswer": { "@type": "Answer", "text": "Call (508) 890-1000 to schedule a free walkthrough and receive a written proposal for your Leominster facility." }
+      "acceptedAnswer": { "@type": "Answer", "text": "Call (508) 890-1000 to schedule a free walkthrough and receive a written proposal for commercial cleaning leominster ma." }
     }
   ]
 };
@@ -148,7 +153,7 @@ export default function LeominsterCityPage() {
               </div>
 
               <p className="text-lg text-slate-500 font-medium leading-relaxed max-w-xl">
-                Leominster is the second-largest city in Worcester County and the manufacturing capital of North Central MA. Enterprise Cleaning Corporation provides specialized janitorial, floor care, and industrial cleaning built around production schedules.
+                As a leading <strong>cleaning company leominster</strong> businesses trust, Enterprise Cleaning Corporation provides dependable <strong>commercial cleaning leominster ma</strong> and comprehensive <strong>office cleaning leominster ma</strong>. We deliver specialized janitorial, industrial floor care, and facility maintenance tailored to manufacturing plants and corporate facilities across North Central MA.
               </p>
 
               <div className="flex flex-col sm:flex-row flex-wrap gap-3 sm:gap-4">
@@ -340,7 +345,7 @@ export default function LeominsterCityPage() {
               {
                 icon: Clock,
                 title: "Office Cleaning",
-                desc: "Recurring after-hours cleaning for offices, common areas, restrooms, and break rooms, scheduled around your business hours so cleaning never disrupts operations.",
+                desc: "Recurring after-hours cleaning for offices, common areas, restrooms, and break rooms, providing dependable office cleaning leominster ma scheduled around your operations.",
                 href: "/office-cleaning"
               },
               {
@@ -351,8 +356,8 @@ export default function LeominsterCityPage() {
               },
               {
                 icon: Sparkles,
-                title: "Floor Care Services",
-                desc: "Stripping, waxing, buffing, and polishing for VCT and hard-surface floors, plus scheduled carpet cleaning to protect flooring investments and maintain a professional appearance.",
+                title: "Floor Care & Carpet Cleaning",
+                desc: "Stripping, waxing, buffing, and polishing for VCT and hard surfaces. When searching for a trusted carpet cleaner leominster ma, our deep carpet extraction revitalizes heavily trafficked commercial floors.",
                 href: "/floor-care-services-central-ma"
               },
               {
@@ -369,8 +374,8 @@ export default function LeominsterCityPage() {
               },
               {
                 icon: Truck,
-                title: "Turnover Cleaning",
-                desc: "Fast, thorough cleaning between tenants for commercial suites, apartment units, and multi-tenant properties, built around the tight timelines property managers work with.",
+                title: "Turnover, Cleanouts & Junk Removal",
+                desc: "Serving as your dedicated property cleanout company leominster, ma, we provide rapid tenant turnovers, specialized basement cleaning services leominster, ma, and professional commercial junk removal leominster, ma.",
                 href: "/turnover-cleaning-central-ma"
               },
             ]) as { icon: React.ElementType; title: string; desc: string; href: string }[]).map((svc, idx) => (

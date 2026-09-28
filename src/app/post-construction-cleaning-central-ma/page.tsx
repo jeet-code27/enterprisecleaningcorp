@@ -16,8 +16,8 @@ import { RelatedIndustries } from "@/components/ui/related-industries";
 
 export const metadata: Metadata = {
   title: { absolute: "Post-Construction Cleaning Services | Central MA, RI & Southern NH" },
-  description: "Rough, final & touch-up post-construction cleaning for contractors, developers & building owners across Central MA, Rhode Island & Southern NH. Get a free quote.",
-  keywords: "commercial post-construction cleaning Central MA, new build cleaning services, commercial renovation cleanup Worcester, construction site final cleaning",
+  description: "Rough, final & touch-up post-construction cleaning for contractors and developers across Massachusetts, NH, and RI. Get a free quote today.",
+  keywords: "post construction cleaning massachusetts, post construction cleaning glenburn, post construction cleaning holden, post construction cleaning company nh, post construction cleaning in concord ma, post construction cleaning orrington, post construction cleaning dedham, post construction cleaning, commercial construction cleanup nh",
   alternates: {
     canonical: "https://www.enterprisecleaningcorp.com/post-construction-cleaning-central-ma"
   },
@@ -196,10 +196,10 @@ export default function PostConstructionCleaningPage() {
               
               <div className="text-base md:text-lg text-white/95 font-medium max-w-2xl leading-relaxed mt-6 drop-shadow-sm space-y-4 text-left">
                 <p>
-                  A finished construction project is not truly finished until the dust, debris, and residue left behind by the build are gone. Contractors, developers, and building owners across Central Massachusetts, Rhode Island, and Southern New Hampshire rely on Enterprise Cleaning Corporation to turn a job site into a move-in ready space — on the timeline the project actually needs, not a generic schedule that ignores construction realities.
+                  A finished construction project is not truly finished until the dust, debris, and residue left behind by the build are gone. As a premier provider of post construction cleaning massachusetts general contractors and developers trust, Enterprise Cleaning Corporation turns active job sites into pristine, move-in-ready facilities. Whether you need rough, final, or touch-up post construction cleaning, we deliver on your critical milestones.
                 </p>
                 <p>
-                  Post-construction cleaning is different from routine janitorial work. It requires crews who understand construction dust, know how to protect newly installed finishes, and can work around contractors, inspectors, and tight occupancy deadlines without becoming the reason a project runs late.
+                  We are also a trusted post construction cleaning company nh builders rely on for comprehensive commercial construction cleanup nh projects, providing specialized crews who understand construction dust and protect newly installed finishes without delaying inspections or occupancy.
                 </p>
               </div>
 
@@ -509,7 +509,7 @@ export default function PostConstructionCleaningPage() {
               Serving Central Massachusetts, Rhode Island & Southern New Hampshire
             </h2>
             <p className="text-lg text-white/80 font-medium leading-relaxed max-w-4xl mx-auto text-left">
-              We provide post-construction cleaning throughout Worcester, Shrewsbury, Auburn, Holden, Westborough, Marlborough, and the surrounding Central Massachusetts region, as well as across Rhode Island — including Providence, Cranston, and Pawtucket — and Southern New Hampshire, including Nashua, Manchester, and Salem. For contractors and developers who work across all three states, that regional coverage means one crew and one point of contact can follow the project wherever it is built, rather than sourcing a new cleaning vendor for every new site.
+              We provide post-construction cleaning throughout Worcester, Shrewsbury, Auburn, Westborough, and Marlborough, delivering dedicated post construction cleaning holden developments require, post construction cleaning in concord ma commercial builds, and specialized post construction cleaning dedham contractors count on. Our regional footprint also services northern territories including post construction cleaning glenburn and post construction cleaning orrington developments, as well as Southern New Hampshire and Rhode Island. For contractors and developers who work across New England, that regional coverage means one dedicated crew and one point of contact can follow the project wherever it is built.
             </p>
           </div>
 
