@@ -39,13 +39,14 @@ export const metadata: Metadata = {
 const businessSchema = {
   "@context": "https://schema.org",
   "@type": "CleaningService",
-  "name": "Enterprise Cleaning and Restoration Corporation",
+  "name": "Enterprise Cleaning Corporation",
+  "alternateName": ["Enterprise Cleaning Corp", "Enterprise Cleaning and Restoration Corporation"],
   "image": "https://www.enterprisecleaningcorp.com/images/ecc-new-logo.png",
   "url": "https://www.enterprisecleaningcorp.com/",
-  "telephone": "+1 508-890-1000",
+  "telephone": "+1-508-890-1000",
   "address": {
     "@type": "PostalAddress",
-    "streetAddress": "99 Hartwell St Ste B",
+    "streetAddress": "99 Hartwell Street, Suite B",
     "addressLocality": "West Boylston",
     "addressRegion": "MA",
     "postalCode": "01583",

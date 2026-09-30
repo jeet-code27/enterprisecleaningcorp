@@ -103,7 +103,7 @@ export default function ContactPage() {
                   <div className="min-w-0 flex-1">
                     <h3 className="text-base sm:text-lg font-bold text-slate-900 mb-1">Headquarters</h3>
                     <p className="text-base sm:text-lg text-slate-600 font-medium">
-                      99 Hartwell Street<br />
+                      99 Hartwell Street, Suite B<br />
                       West Boylston, MA 01583
                     </p>
                   </div>

@@ -2,6 +2,8 @@
 
 import { useState, useRef, useEffect } from "react";
 import { ArrowRight, Loader2, CheckCircle2, AlertCircle } from "lucide-react";
+import { fireLeadConversion } from "@/components/analytics/ConversionTracker";
+import { trackLeadSubmission } from "@/components/analytics/MetaPixel";
 
 export function ContactForm() {
   const containerRef = useRef<HTMLDivElement>(null);
@@ -57,6 +59,8 @@ export function ContactForm() {
 
       if (response.ok) {
         setSubmitStatus("success");
+        fireLeadConversion("Contact Us Form", formData.service);
+        trackLeadSubmission(formData.service || "General Contact Inquiry");
         setFormData({
           firstName: "",
           lastName: "",

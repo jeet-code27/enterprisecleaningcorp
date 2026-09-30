@@ -5,11 +5,13 @@ import Link from "next/link";
 import Image from "next/image";
 import { CheckCircle2, PhoneCall, ArrowRight, ShieldCheck, Clock, Award, Calendar } from "lucide-react";
 import { trackLeadSubmission } from "@/components/analytics/MetaPixel";
+import { fireLeadConversion } from "@/components/analytics/ConversionTracker";
 
 export default function CommercialCleaningThankYouPage() {
   useEffect(() => {
-    // Fire Meta Pixel Lead Conversion Event on Mount
+    // Fire Lead Conversion Event across Meta Pixel, GTM, and GA4 on Mount
     trackLeadSubmission("Commercial Cleaning Quote Request");
+    fireLeadConversion("Commercial Cleaning Quote Request");
   }, []);
 
   return (

@@ -104,7 +104,7 @@ export function Header() {
           {/* Mobile Marquee */}
           <div className="flex sm:hidden w-full whitespace-nowrap overflow-hidden">
             <div className="flex items-center gap-6 animate-marquee">
-              <span className="flex items-center gap-1.5 shrink-0"><MapPin className="size-3.5 text-white" />99 Hartwell Street, West Boylston, MA 01583</span>
+              <span className="flex items-center gap-1.5 shrink-0"><MapPin className="size-3.5 text-white" />99 Hartwell Street, Suite B, West Boylston, MA 01583</span>
               <Link
                 href="/emergency-restoration-services-central-ma"
                 className="inline-flex items-center gap-1.5 bg-[#E31837] hover:bg-[#c91530] text-white px-2.5 py-0.5 rounded-full font-bold shadow-sm transition-all hover:scale-105 shrink-0 border border-white/25"
@@ -117,10 +117,10 @@ export function Header() {
                 <Clock className="size-3 text-white" />
                 <span>24/7 Emergency (24 hrs / 7 Days)</span>
               </Link>
-              <span className="flex items-center gap-1.5 font-bold shrink-0"><Phone className="size-3.5 text-[#FFE800]" />Serving New England: 508-890-1000</span>
+              <a href="tel:5088901000" className="flex items-center gap-1.5 font-bold shrink-0 hover:underline"><Phone className="size-3.5 text-[#FFE800]" />Serving New England: 508-890-1000</a>
 
-              <span className="flex items-center gap-1.5 shrink-0"><Mail className="size-3.5 text-white" />customerservice@enterprisecleaningcorp.com</span>
-              <span className="flex items-center gap-1.5 shrink-0"><MapPin className="size-3.5 text-white" />99 Hartwell Street, West Boylston, MA 01583</span>
+              <a href="mailto:customerservice@enterprisecleaningcorp.com" className="flex items-center gap-1.5 shrink-0 hover:underline"><Mail className="size-3.5 text-white" />customerservice@enterprisecleaningcorp.com</a>
+              <span className="flex items-center gap-1.5 shrink-0"><MapPin className="size-3.5 text-white" />99 Hartwell Street, Suite B, West Boylston, MA 01583</span>
               <Link
                 href="/emergency-restoration-services-central-ma"
                 className="inline-flex items-center gap-1.5 bg-[#E31837] hover:bg-[#c91530] text-white px-2.5 py-0.5 rounded-full font-bold shadow-sm transition-all hover:scale-105 shrink-0 border border-white/25"
@@ -133,15 +133,15 @@ export function Header() {
                 <Clock className="size-3 text-white" />
                 <span>24/7 Emergency (24 hrs / 7 Days)</span>
               </Link>
-              <span className="flex items-center gap-1.5 font-bold shrink-0"><Phone className="size-3.5 text-[#FFE800]" />Serving New England: 508-890-1000</span>
+              <a href="tel:5088901000" className="flex items-center gap-1.5 font-bold shrink-0 hover:underline"><Phone className="size-3.5 text-[#FFE800]" />Serving New England: 508-890-1000</a>
 
-              <span className="flex items-center gap-1.5 shrink-0"><Mail className="size-3.5 text-white" />customerservice@enterprisecleaningcorp.com</span>
+              <a href="mailto:customerservice@enterprisecleaningcorp.com" className="flex items-center gap-1.5 shrink-0 hover:underline"><Mail className="size-3.5 text-white" />customerservice@enterprisecleaningcorp.com</a>
             </div>
           </div>
           {/* Desktop Static Bar */}
           <div className="hidden sm:flex items-center w-full justify-between gap-4 flex-wrap">
             <div className="flex items-center gap-4">
-              <span className="flex items-center gap-1.5"><MapPin className="size-3.5 text-white" />99 Hartwell Street, West Boylston, MA 01583</span>
+              <span className="flex items-center gap-1.5"><MapPin className="size-3.5 text-white" />99 Hartwell Street, Suite B, West Boylston, MA 01583</span>
               <span className="text-white/50">|</span>
               <Link
                 href="/emergency-restoration-services-central-ma"
@@ -156,10 +156,10 @@ export function Header() {
                 <span>24/7 Emergency (24 hrs / 7 Days)</span>
               </Link>
               <span className="text-white/50">|</span>
-              <span className="flex items-center gap-1.5"><Mail className="size-3.5 text-white" />customerservice@enterprisecleaningcorp.com</span>
+              <a href="mailto:customerservice@enterprisecleaningcorp.com" className="flex items-center gap-1.5 hover:underline"><Mail className="size-3.5 text-white" />customerservice@enterprisecleaningcorp.com</a>
             </div>
             <div className="flex items-center gap-4">
-              <div className="flex items-center gap-1.5 font-bold"><Phone className="size-3.5 text-[#FFE800]" />Serving New England: 508-890-1000</div>
+              <a href="tel:5088901000" className="flex items-center gap-1.5 font-bold hover:underline"><Phone className="size-3.5 text-[#FFE800]" />Serving New England: 508-890-1000</a>
               <span className="text-white/50">|</span>
               <div className="flex items-center gap-2.5">
                 <a
@@ -438,12 +438,20 @@ function MobileNav({ isPostConstruction }: { isPostConstruction?: boolean }) {
               </Link>
             </AccordionItem>
           </Accordion>
-          <div className="mt-8 space-y-4">
+          <div className="mt-8 space-y-3">
             {!isPostConstruction && (
-              <Button asChild className="w-full" onClick={close}>
-                <Link href="/quote">Get a Quote</Link>
+              <Button asChild className="w-full text-white font-bold" style={{ background: "#E31837" }} onClick={close}>
+                <Link href="/commercial-cleaning-quote">Get a Free Quote</Link>
               </Button>
             )}
+            <a
+              href="tel:5088901000"
+              onClick={close}
+              className="flex items-center justify-center gap-2 w-full py-2.5 rounded-lg border-2 border-[#0090c8] text-[#0090c8] font-bold text-sm bg-sky-50/60 hover:bg-sky-100 transition-colors"
+            >
+              <Phone className="size-4 text-[#0090c8]" />
+              <span>Call (508) 890-1000</span>
+            </a>
             <div className="flex items-center justify-center gap-4 pt-2 border-t border-slate-100">
               <a
                 href="https://www.facebook.com/people/Enterprise-Cleaning/61591593631296/"

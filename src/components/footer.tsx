@@ -147,14 +147,13 @@ export function Footer() {
             <ul className="space-y-4 text-sm text-white/90">
               <li className="flex items-start gap-3">
                 <MapPin className="size-5 shrink-0 mt-0.5 text-white" />
-                <span>99 Hartwell Street,<br/>West Boylston, MA 01583</span>
+                <span>99 Hartwell Street, Suite B,<br/>West Boylston, MA 01583</span>
               </li>
               <li className="flex flex-col gap-2">
                 <div className="flex items-center gap-3">
                   <Phone className="size-5 shrink-0 text-white" />
-                  <span>Serving New England: <strong className="text-[#FFE800]">508-890-1000</strong></span>
+                  <span>Serving New England: <a href="tel:5088901000" className="text-[#FFE800] font-bold hover:underline">508-890-1000</a></span>
                 </div>
-
               </li>
               <li className="flex items-center gap-3">
                 <Mail className="size-5 shrink-0 text-white" />
