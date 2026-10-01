@@ -15,8 +15,8 @@ import { CTASection } from "@/components/blocks/cta-with-glow";
 import { RelatedIndustries } from "@/components/ui/related-industries";
 
 export const metadata: Metadata = {
-  title: { absolute: "Post-Construction Cleaning Services | Central MA, RI & Southern NH" },
-  description: "Rough, final & touch-up post-construction cleaning for contractors and developers across Massachusetts, NH, and RI. Get a free quote today.",
+  title: { absolute: "Post-Construction Cleaning Central MA | Same-Day Service" },
+  description: "Turn a construction mess into move-in ready — fast. Dust, debris & final detailing handled by pros across Central MA. Free quote in 24 hours.",
   keywords: "post construction cleaning massachusetts, post construction cleaning glenburn, post construction cleaning holden, post construction cleaning company nh, post construction cleaning in concord ma, post construction cleaning orrington, post construction cleaning dedham, post construction cleaning, commercial construction cleanup nh",
   alternates: {
     canonical: "https://www.enterprisecleaningcorp.com/post-construction-cleaning-central-ma"

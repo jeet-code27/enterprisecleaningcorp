@@ -10,8 +10,8 @@ import { CTASection } from "@/components/blocks/cta-with-glow";
 import { RelatedIndustries } from "@/components/ui/related-industries";
 
 export const metadata: Metadata = {
-  title: { absolute: "Worcester Window Cleaning & Washing Services | Enterprise Cleaning Corp" },
-  description: "Professional window cleaning services worcester businesses trust. As a top-rated worcester window cleaning company, we provide commercial window washing near me worcester, pressure washing, and specialty cleaning.",
+  title: { absolute: "Specialty Cleaning Central MA | Carpets, Windows & More" },
+  description: "One call, every cleaning need solved — carpets, windows, disaster cleanup & more. Serving Central MA. Get your free quote today.",
   keywords: "worcester window washing, window cleaning worcester, window cleaning services worcester, window cleaning near me worcester, worcester window cleaning, window cleaning company worcester, worcester window cleaning company, window washing worcester, window washing near me worcester, worcester window cleaning services, commercial window cleaning Central MA",
   alternates: {
     canonical: "https://www.enterprisecleaningcorp.com/specialty-cleaning-services-central-ma"

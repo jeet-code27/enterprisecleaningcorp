@@ -11,8 +11,8 @@ import { CTASection } from "@/components/blocks/cta-with-glow";
 import { RelatedServices } from "@/components/ui/related-services";
 
 export const metadata: Metadata = {
-  title: { absolute: "School Cleaning Services in Massachusetts | Enterprise Cleaning" },
-  description: "Premier school cleaning services in Massachusetts. Custodial and janitorial care for Worcester, Gardner, and Boston regional schools and municipal buildings.",
+  title: { absolute: "School & Municipal Cleaning | Central MA | Book Free Quote" },
+  description: "Keep students & staff safe with cleaning built around your schedule. Trusted by schools & municipal buildings across Central MA. Free quote — no wait.",
   keywords: "school cleaning services in Massachusetts, school cleaning services Worcester, school janitorial services in Gardner, school and educational facility cleaning boston, commercial school cleaning Central MA, municipal building janitorial services",
   alternates: {
     canonical: "https://www.enterprisecleaningcorp.com/school-municipal-cleaning-central-ma"

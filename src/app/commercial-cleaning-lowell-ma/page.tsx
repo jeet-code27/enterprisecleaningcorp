@@ -10,8 +10,8 @@ import {
 } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: { absolute: "Commercial Cleaning Lowell, MA | Enterprise Cleaning Corp" },
-  description: "Commercial cleaning, disinfecting, and floor care in Lowell, MA. Serving mill offices, cleanrooms, and commercial properties. Get a free quote today.",
+  title: { absolute: "Commercial Cleaning Lowell, MA | #1 Rated | Free Quote" },
+  description: "Lowell businesses trust Enterprise Cleaning for spotless, reliable results — every night, checked. Get a free, no-pressure quote in 24 hours.",
   keywords: "disinfecting lowell, commercial carpet cleaning lowell, tile cleaning services lowell, apartment carpet cleaning lowell, commercial carpet cleaning lowell ma, steam cleaning lowell ma, cleaning services lowell, commercial restoration lowell, cleanroom cleaning lowell ma, commercial cleaning services near me, commercial cleaning lowell ma",
   alternates: {
     canonical: "https://www.enterprisecleaningcorp.com/commercial-cleaning-lowell-ma"

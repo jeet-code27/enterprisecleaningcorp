@@ -10,8 +10,8 @@ import {
 } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: { absolute: "Commercial Cleaning Providence, RI | Enterprise Cleaning Corp" },
-  description: "Commercial cleaning services providence ri businesses trust. From office cleaning services in rhode island to day porter services providence and industrial cleaning, get a free quote.",
+  title: { absolute: "Commercial Cleaning Providence, RI | Free Quote Today" },
+  description: "Providence businesses trust Enterprise Cleaning for detail-focused, reliable results. Get a free, fast quote — no obligation.",
   keywords: "commercial cleaning services providence ri, commercial cleaning rhode island, commercial cleaning services rhode island, office cleaning services in rhode island, day porter services providence, industrial cleaning company in rhode island, high technology janitorial services in rhode island, commercial cleaning services ri, medical cleaning services in rhode island, commercial cleaning providence ri",
   alternates: {
     canonical: "https://www.enterprisecleaningcorp.com/commercial-cleaning-providence-ri"

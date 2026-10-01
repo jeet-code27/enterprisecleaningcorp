@@ -12,8 +12,8 @@ import { RelatedIndustries } from "@/components/ui/related-industries";
 import { RelatedServices } from "@/components/ui/related-services";
 
 export const metadata: Metadata = {
-  title: { absolute: "Medical Office Cleaning | MA, RI & NH Healthcare Facilities" },
-  description: "Expert medical office cleaning and medical cleaning services in massachusetts, medical facility cleaning rhode island, and healthcare cleaning in nh. Request a free walkthrough.",
+  title: { absolute: "Medical Office Cleaning | Strict Sanitation Standards" },
+  description: "Compliance-ready cleaning for medical offices across MA & RI. Trained technicians, proven protocols. Free quote — fast response.",
   keywords: "medical office cleaning, medical cleaning services in massachusetts, medical cleaning services in rhode island, healthcare cleaning and disinfectant services company nh, healthcare cleaning in nh, medical office cleaning holden, medical office cleaning company in rhode island, medical facility cleaning rhode island, commercial disinfection services, medical cleaning near me",
   alternates: {
     canonical: "https://www.enterprisecleaningcorp.com/medical-office-cleaning",

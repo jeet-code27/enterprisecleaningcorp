@@ -10,8 +10,8 @@ import {
 } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: { absolute: "Commercial Cleaning Leominster, MA | Enterprise Cleaning Corp" },
-  description: "Commercial cleaning and janitorial services in Leominster, MA. Serving manufacturing, medical device, and office facilities. Get a free quote today.",
+  title: { absolute: "Commercial Cleaning Leominster, MA | Free Quote in 24 Hrs" },
+  description: "Spotless offices, guaranteed. Enterprise Cleaning Corp serves Leominster, MA with nightly quality checks & trained crews. Get your free quote — no obligation.",
   keywords: "commercial cleaning leominster ma, cleaning company leominster, office cleaning leominster ma, carpet cleaner leominster ma, basement cleaning services leominster, ma, property cleanout company leominster, ma, commercial junk removal leominster, ma, commercial cleaning services, warehouse cleaning, commercial janitorial services, industrial cleaning services near me, industrial cleaning near me, medical office cleaning, commercial cleaning services massachusetts, post construction cleaning massachusetts",
   alternates: {
     canonical: "https://www.enterprisecleaningcorp.com/commercial-cleaning-leominster-ma"

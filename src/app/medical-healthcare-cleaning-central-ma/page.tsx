@@ -11,8 +11,8 @@ import { CTASection } from "@/components/blocks/cta-with-glow";
 import { RelatedServices } from "@/components/ui/related-services";
 
 export const metadata: Metadata = {
-  title: { absolute: "Medical & Healthcare Cleaning Worcester & Massachusetts" },
-  description: "Healthcare-grade medical cleaning services in Massachusetts and Worcester. Serving clinics, doctor offices, and medical facilities with compliance-focused disinfection.",
+  title: { absolute: "Medical & Healthcare Cleaning | Central MA | Free Quote" },
+  description: "Your patients notice a clean facility. So do inspectors. Trained, disinfection-focused cleaning crews for Central MA healthcare sites. Free quote today.",
   keywords: "medical cleaning services in massachusetts, healthcare cleaning worcester ma, healthcare cleaning services worcester ma, doctor office cleaning worcester, medical office cleaning worcester ma, doctor office cleaning company worcester, healthcare cleaning services massachusetts, medical facility cleaning in wellesley, ma, healthcare cleaning services in wellesley, ma",
   alternates: {
     canonical: "https://www.enterprisecleaningcorp.com/medical-healthcare-cleaning-central-ma"

@@ -10,8 +10,8 @@ import {
 } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: { absolute: "Commercial Cleaning Framingham, MA | Enterprise Cleaning Corp" },
-  description: "Commercial cleaning and janitorial services in Framingham, MA. Serving Golden Triangle retail, Route 9 offices, and corporate headquarters. Get a free quote.",
+  title: { absolute: "Commercial Cleaning Framingham, MA | Free Quote Today" },
+  description: "Framingham offices choose Enterprise Cleaning for consistent, checked-every-night results. See why — get your free quote in 24 hours.",
   keywords: "commercial cleaning services, commercial cleaning company, office cleaning services, commercial cleaning services massachusetts, commercial cleaning ma, corporate office cleaning in framingham, ma, commercial cleaning projects in framingham, ma, commercial floor care in framingham, ma, office cleaning services in framingham, ma, commercial cleaning services in framingham, ma, commercial cleaning services framingham ma",
   alternates: {
     canonical: "https://www.enterprisecleaningcorp.com/commercial-cleaning-framingham-ma"

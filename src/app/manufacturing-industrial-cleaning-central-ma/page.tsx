@@ -11,8 +11,8 @@ import { CTASection } from "@/components/blocks/cta-with-glow";
 import { RelatedServices } from "@/components/ui/related-services";
 
 export const metadata: Metadata = {
-  title: { absolute: "Industrial & Factory Cleaning Worcester MA | Enterprise Cleaning Corp" },
-  description: "Leading industrial cleaning company providing manufacturing plant cleaning services, warehouse cleaning worcester ma, factory cleaning, and industrial building maintenance across Central MA.",
+  title: { absolute: "Industrial Cleaning Central MA | Safety-First | Free Quote" },
+  description: "Heavy-duty cleaning for plants & warehouses, done right. Safety-trained crews serving Central MA. Get a free industrial cleaning quote now.",
   keywords: "industrial cleaning, warehouse cleaning worcester ma, industrial building maintenance, industrial cleaners, factory cleaning, office cleaning services safety manufacturing facilities, warehouse cleaning services, manufacturing plant cleaning services, factory cleaning company worcester, industrial deep cleaning",
   alternates: {
     canonical: "https://www.enterprisecleaningcorp.com/manufacturing-industrial-cleaning-central-ma"

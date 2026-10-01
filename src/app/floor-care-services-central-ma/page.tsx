@@ -10,8 +10,8 @@ import { CTASection } from "@/components/blocks/cta-with-glow";
 import { RelatedIndustries } from "@/components/ui/related-industries";
 
 export const metadata: Metadata = {
-  title: { absolute: "Commercial Floor Care Central MA | Enterprise Cleaning Corp" },
-  description: "Commercial floor maintenance, stripping, waxing, terrazzo, and hardwood floor cleaning in Massachusetts and Central MA. Free on-site assessment.",
+  title: { absolute: "Floor Care Central MA | Strip, Wax & Buff — Free Estimate" },
+  description: "Dull, scuffed floors? We fix that. Professional stripping, waxing & buffing for Central MA facilities. Free on-site estimate — book today.",
   keywords: "commercial floor maintenance near me, floor cleaning massachusetts, commercial floor waxing in natick, ma, terrazzo floor cleaning near me, floor cleaning ma, floor cleaning wilmington ma, hardwood floor cleaning worcester ma, VCT stripping and waxing, commercial carpet cleaning Worcester",
   alternates: {
     canonical: "https://www.enterprisecleaningcorp.com/floor-care-services-central-ma"
