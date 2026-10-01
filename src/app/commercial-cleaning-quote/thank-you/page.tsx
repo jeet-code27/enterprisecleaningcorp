@@ -32,11 +32,11 @@ export default function CommercialCleaningThankYouPage() {
           </div>
 
           <a
-            href="tel:508-890-1000"
+            href="tel:508-304-2369"
             className="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-[#E31837] text-white font-bold text-xs sm:text-sm hover:bg-red-700 transition-all shadow-md"
           >
             <PhoneCall className="w-4 h-4 text-[#FFE800]" />
-            <span>508-890-1000</span>
+            <span>508-304-2369</span>
           </a>
         </div>
       </header>
@@ -114,11 +114,11 @@ export default function CommercialCleaningThankYouPage() {
                 <div className="text-lg font-bold">Call Our Operations Hotline Directly</div>
               </div>
               <a
-                href="tel:508-890-1000"
+                href="tel:508-304-2369"
                 className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-[#E31837] text-white font-bold text-sm hover:bg-red-700 transition-all shadow-md shrink-0"
               >
                 <PhoneCall className="w-4 h-4 text-[#FFE800]" />
-                <span>508-890-1000</span>
+                <span>508-304-2369</span>
               </a>
             </div>
 

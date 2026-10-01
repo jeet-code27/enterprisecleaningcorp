@@ -274,7 +274,7 @@ export default function CommercialCleaningLandingPage() {
       }
     } catch (err: any) {
       console.error(err);
-      setErrorMessage(err.message || "Something went wrong. Please call us directly at 508-890-1000.");
+      setErrorMessage(err.message || "Something went wrong. Please call us directly at 508-304-2369.");
     } finally {
       setSubmitting(false);
     }
@@ -300,13 +300,13 @@ export default function CommercialCleaningLandingPage() {
 
           <div className="flex items-center gap-3 sm:gap-4">
             <a
-              href="tel:508-890-1000"
+              href="tel:508-304-2369"
               onClick={trackPhoneCallClick}
               className="inline-flex items-center gap-2 px-3 py-2 sm:px-4 sm:py-2.5 rounded-xl bg-slate-100 hover:bg-slate-200 border border-slate-300 text-slate-900 font-bold text-xs sm:text-sm transition-all"
             >
               <PhoneCall className="w-4 h-4 text-[#E31837]" />
               <span className="hidden sm:inline">Call Us:</span>
-              <span className="text-[#003057] font-extrabold">508-890-1000</span>
+              <span className="text-[#003057] font-extrabold">508-304-2369</span>
             </a>
 
             <a
@@ -845,12 +845,12 @@ export default function CommercialCleaningLandingPage() {
             </a>
 
             <a
-              href="tel:508-890-1000"
+              href="tel:508-304-2369"
               onClick={trackPhoneCallClick}
               className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-8 py-4 rounded-xl bg-white/15 hover:bg-white/25 text-white font-extrabold text-base transition-all border border-white/20"
             >
               <PhoneCall className="w-5 h-5 text-[#FFE800]" />
-              <span>Call 508-890-1000</span>
+              <span>Call 508-304-2369</span>
             </a>
           </div>
         </div>
