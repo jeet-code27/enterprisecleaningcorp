@@ -159,6 +159,8 @@ async function insertPost() {
     faqs: FAQS,
     status: 'Published',
     isFeatured: true,
+    createdAt: new Date('2026-10-01T12:00:00.000Z'),
+    updatedAt: new Date('2026-10-01T12:00:00.000Z'),
     seo: {
       metaTitle: 'Commercial Cleaning Services in Massachusetts | Enterprise Cleaning Corp',
       metaDescription: 'Discover what 23 years of commercial cleaning in Massachusetts taught us about consistency, 97% client retention, and keeping New England facilities running.',
