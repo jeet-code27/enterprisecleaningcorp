@@ -254,7 +254,7 @@ export function AwardsSection({ embedded = false, className = "" }: AwardsSectio
             </h3>
 
             <p className="text-xs sm:text-sm text-slate-300 font-medium mt-2.5 max-w-2xl mx-auto leading-relaxed">
-              Voted by local businesses, commercial property managers, and community readers across MetroWest and Central Massachusetts. Enterprise Cleaning Corporation has been named an official finalist or winner 4 years in a row—including back-to-back 2024 &amp; 2025 MetroWest Winner.
+              Presented by LocaliQ and the USA TODAY Network. Ever since the Cleaning Service Company category was introduced in 2022, Enterprise Cleaning Corporation has been recognized every single year—earning 4 consecutive years of honors, back-to-back MetroWest Winner titles, and active finalist standing.
             </p>
           </div>
 
@@ -376,15 +376,15 @@ export function AwardsSection({ embedded = false, className = "" }: AwardsSectio
           <div className="mt-8 flex flex-wrap items-center justify-center gap-3 text-center">
             <div className="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-white/5 border border-white/10 text-xs font-semibold text-slate-300">
               <CheckCircle2 className="w-4 h-4 text-emerald-400 shrink-0" />
-              <span>4 Consecutive Years Recognized</span>
+              <span>Recognized Every Year Since Category Inception (2022 – 2025)</span>
             </div>
             <div className="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-white/5 border border-white/10 text-xs font-semibold text-slate-300">
-              <Trophy className="w-4 h-4 text-[#FFE800] shrink-0" />
+              <Trophy className="w-4 h-4 text-[#FFE800]" />
               <span>Back-to-Back 2024 &amp; 2025 MetroWest Winner</span>
             </div>
             <div className="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-white/5 border border-white/10 text-xs font-semibold text-slate-300">
-              <Medal className="w-4 h-4 text-[#00B8FF] shrink-0" />
-              <span>Community-Voted Regional Authority</span>
+              <Medal className="w-4 h-4 text-[#00B8FF]" />
+              <span>Current Year Finalist (4+ Consecutive Years)</span>
             </div>
           </div>
         </motion.div>
