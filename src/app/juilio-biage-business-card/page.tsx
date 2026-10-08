@@ -4,7 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import {
   Phone, Mail, MapPin, Download, UserPlus, Globe,
-  Building2, Sparkles, ArrowRight,
+  Building2, Sparkles, ArrowRight, CheckCircle2, ExternalLink, FileText,
 } from "lucide-react";
 
 export const metadata: Metadata = {
@@ -54,6 +54,18 @@ export default function JulioBiageBusinessCardPage() {
           <p className="text-[#0090c8] font-bold text-sm sm:text-base md:text-lg tracking-wide uppercase">
             Director of Operations
           </p>
+          <div className="flex items-center justify-center gap-2 pt-1">
+            <a
+              href="/certification/julio-osha-30.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-emerald-500/15 border border-emerald-500/30 text-emerald-400 text-xs font-bold hover:bg-emerald-500/25 transition-all shadow-sm"
+            >
+              <CheckCircle2 className="w-3.5 h-3.5" />
+              <span>OSHA 30-Hour Construction Outreach Certified</span>
+              <ExternalLink className="w-3 h-3 opacity-70" />
+            </a>
+          </div>
         </div>
 
         {/* Quick Action Buttons Grid */}
