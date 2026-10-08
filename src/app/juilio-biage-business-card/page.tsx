@@ -56,7 +56,7 @@ export default function JulioBiageBusinessCardPage() {
           </p>
           <div className="flex items-center justify-center gap-2 pt-1">
             <a
-              href="/certification/julio-osha-30.pdf"
+              href="/certification/30%20Hour%20Construction%20Industry%20Outreach_42687105.pdf"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-emerald-500/15 border border-emerald-500/30 text-emerald-400 text-xs font-bold hover:bg-emerald-500/25 transition-all shadow-sm"

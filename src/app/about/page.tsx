@@ -392,7 +392,7 @@ export default function AboutPage() {
                       </div>
                     </div>
                     <a
-                      href="/certification/julio-osha-30.pdf"
+                      href="/certification/30%20Hour%20Construction%20Industry%20Outreach_42687105.pdf"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="inline-flex items-center justify-center gap-1.5 px-3.5 py-2 rounded-xl bg-slate-900 hover:bg-slate-800 text-white text-xs font-bold transition-colors shadow-sm shrink-0"
