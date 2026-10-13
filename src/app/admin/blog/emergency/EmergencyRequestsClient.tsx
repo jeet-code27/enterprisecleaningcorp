@@ -67,11 +67,20 @@ export function EmergencyRequestsClient({
   const stats = useMemo(() => {
     return {
       total: requests.length,
+      signedContracts: requests.filter((r) => r.contractSigned).length,
+      totalAuthorizedRevenue: requests.filter((r) => r.contractSigned).reduce((acc, r) => acc + (r.totalAmount || 0), 0),
       newCalls: requests.filter((r) => r.status === "New").length,
       dispatched: requests.filter((r) => r.status === "Dispatched" || r.status === "In Progress").length,
       completed: requests.filter((r) => r.status === "Completed").length,
     };
   }, [requests]);
+
+  const [copiedLink, setCopiedLink] = useState(false);
+  const handleCopyLink = () => {
+    navigator.clipboard.writeText("https://www.enterprisecleaningcorp.com/emergency-authorization");
+    setCopiedLink(true);
+    setTimeout(() => setCopiedLink(false), 2500);
+  };
 
   const handleStatusChange = async (id: string, newStatus: string) => {
     setUpdatingId(id);
@@ -156,18 +165,28 @@ export function EmergencyRequestsClient({
           </p>
         </div>
 
-        {/* Action hotline indicator */}
-        <div className="flex items-center gap-2 p-3 rounded-2xl bg-red-50 dark:bg-red-950/40 border border-red-200 dark:border-red-900/60 shadow-sm">
-          <Phone className="size-4 text-red-600 animate-pulse" />
-          <div className="text-xs">
-            <span className="font-bold text-red-700 dark:text-red-400">Emergency Hotline: </span>
-            <span className="font-black text-slate-900 dark:text-white">(508) 890-1000</span>
+        {/* Action hotline indicator and copy link */}
+        <div className="flex items-center gap-2 flex-wrap">
+          <button
+            onClick={handleCopyLink}
+            className="inline-flex items-center gap-1.5 px-3 py-2 rounded-xl bg-slate-900 dark:bg-white text-white dark:text-slate-900 text-xs font-black shadow-sm hover:opacity-90 transition-all cursor-pointer"
+          >
+            <FileCheck className="size-3.5 text-[#00B8FF]" />
+            <span>{copiedLink ? "✓ Link Copied!" : "Copy Dispatch Link (For Client)"}</span>
+          </button>
+
+          <div className="flex items-center gap-2 p-2 px-3 rounded-xl bg-red-50 dark:bg-red-950/40 border border-red-200 dark:border-red-900/60 shadow-sm">
+            <Phone className="size-3.5 text-red-600 animate-pulse" />
+            <div className="text-xs">
+              <span className="font-bold text-red-700 dark:text-red-400">Hotline: </span>
+              <span className="font-black text-slate-900 dark:text-white">(508) 890-1000</span>
+            </div>
           </div>
         </div>
       </div>
 
       {/* KPI Stats Cards */}
-      <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 sm:gap-4">
+      <div className="grid grid-cols-2 sm:grid-cols-5 gap-3 sm:gap-4">
         <div className="p-4 rounded-2xl bg-card border border-border shadow-sm flex items-center justify-between">
           <div>
             <p className="text-xs font-bold text-muted-foreground uppercase tracking-wider">Total Emergencies</p>
@@ -175,6 +194,18 @@ export function EmergencyRequestsClient({
           </div>
           <div className="p-3 rounded-xl bg-muted text-muted-foreground">
             <AlertTriangle className="size-5" />
+          </div>
+        </div>
+
+        <div className="p-4 rounded-2xl bg-card border border-emerald-500/30 bg-emerald-50/20 dark:bg-emerald-950/10 shadow-sm flex items-center justify-between">
+          <div>
+            <p className="text-xs font-bold text-emerald-600 uppercase tracking-wider">Signed &amp; Paid</p>
+            <p className="text-2xl font-black text-emerald-600 mt-1">
+              {stats.signedContracts} <span className="text-xs font-bold text-slate-500">(${stats.totalAuthorizedRevenue.toFixed(0)})</span>
+            </p>
+          </div>
+          <div className="p-3 rounded-xl bg-emerald-500/10 text-emerald-600">
+            <FileCheck className="size-5" />
           </div>
         </div>
 
@@ -294,9 +325,24 @@ export function EmergencyRequestsClient({
                       <div className="flex items-start gap-2">
                         {getEmergencyIcon(item.emergencyType)}
                         <div>
-                          <div className="font-bold text-foreground flex items-center gap-1.5">
+                          <div className="font-bold text-foreground flex items-center gap-1.5 flex-wrap">
                             <span>{item.emergencyType}</span>
+                            {item.contractSigned ? (
+                              <span className="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-emerald-500/15 text-emerald-600 dark:text-emerald-400 text-[10px] font-black border border-emerald-500/30">
+                                <FileCheck className="size-3" />
+                                <span>SIGNED &amp; PAID (${item.totalAmount?.toFixed(2)})</span>
+                              </span>
+                            ) : (
+                              <span className="inline-flex items-center gap-1 px-1.5 py-0.5 rounded-md bg-amber-500/10 text-amber-600 text-[10px] font-semibold border border-amber-500/20">
+                                Callback Request
+                              </span>
+                            )}
                           </div>
+                          {item.contractSigned && item.technicianCount && (
+                            <div className="text-[11px] font-semibold text-emerald-700 dark:text-emerald-300 mt-0.5">
+                              {item.technicianCount} Technicians &bull; {item.shiftType === "after_8pm_weekend" ? "After 8PM/Weekend" : "Weekday"}
+                            </div>
+                          )}
                           <p className="text-xs text-muted-foreground line-clamp-2 mt-1 max-w-xs leading-relaxed">
                             {item.description}
                           </p>

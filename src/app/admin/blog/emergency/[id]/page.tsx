@@ -32,6 +32,24 @@ export default async function EmergencyDetailPage({
     status: (raw as any).status || "New",
     priority: (raw as any).priority || "URGENT",
     notes: (raw as any).notes || "",
+    contractSigned: Boolean((raw as any).contractSigned),
+    signedBy: (raw as any).signedBy || "",
+    signerTitle: (raw as any).signerTitle || "",
+    signatureData: (raw as any).signatureData || "",
+    signedAt: (raw as any).signedAt
+      ? new Date((raw as any).signedAt).toISOString()
+      : "",
+    signerIp: (raw as any).signerIp || "",
+    shiftType: (raw as any).shiftType || "",
+    technicianCount: (raw as any).technicianCount,
+    baseRate: (raw as any).baseRate,
+    overtimeRatePerTech: (raw as any).overtimeRatePerTech,
+    paymentMethod: (raw as any).paymentMethod || "",
+    processingFee: (raw as any).processingFee,
+    totalAmount: (raw as any).totalAmount,
+    paymentStatus: (raw as any).paymentStatus || "",
+    stripePaymentIntentId: (raw as any).stripePaymentIntentId || "",
+    stripeReceiptUrl: (raw as any).stripeReceiptUrl || "",
     createdAt: (raw as any).createdAt
       ? new Date((raw as any).createdAt).toISOString()
       : new Date().toISOString(),

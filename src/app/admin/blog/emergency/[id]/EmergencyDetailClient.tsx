@@ -26,6 +26,10 @@ import {
   FileText,
   ShieldCheck,
   Image as ImageIcon,
+  Printer,
+  CreditCard,
+  Copy,
+  DollarSign,
 } from "lucide-react";
 import { EmergencyRequestItem } from "@/models/EmergencySubmission";
 
@@ -39,6 +43,14 @@ export function EmergencyDetailClient({ item: initialItem }: { item: EmergencyRe
   const [isDeleting, setIsDeleting] = useState(false);
   const [showDeleteModal, setShowDeleteModal] = useState(false);
   const [previewPhoto, setPreviewPhoto] = useState<string | null>(null);
+  const [copiedLink, setCopiedLink] = useState(false);
+
+  const copyDispatchLink = () => {
+    const link = "https://www.enterprisecleaningcorp.com/emergency-authorization";
+    navigator.clipboard.writeText(link);
+    setCopiedLink(true);
+    setTimeout(() => setCopiedLink(false), 2500);
+  };
 
   const handleSave = async (newStatus?: string) => {
     setIsSaving(true);
@@ -178,6 +190,186 @@ export function EmergencyDetailClient({ item: initialItem }: { item: EmergencyRe
           ))}
         </div>
       </div>
+
+      {/* Contract & Payment Authorization Card */}
+      {item.contractSigned ? (
+        <div className="p-6 sm:p-8 rounded-3xl bg-gradient-to-br from-emerald-950/20 via-card to-card border-2 border-emerald-500/50 shadow-xl space-y-6">
+          <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 pb-4 border-b border-border">
+            <div className="space-y-1">
+              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-500/15 text-emerald-600 dark:text-emerald-400 text-xs font-black uppercase tracking-wider">
+                <CheckCircle2 className="size-4" />
+                <span>Legally Signed &amp; Paid via Stripe</span>
+              </div>
+              <h2 className="text-xl sm:text-2xl font-black text-foreground">
+                Emergency Services Contract &amp; Authorization
+              </h2>
+              <p className="text-xs text-muted-foreground">
+                Digital contract executed in compliance with Enterprise Cleaning Corp dispatch standards
+              </p>
+            </div>
+
+            <div className="flex items-center gap-2 shrink-0">
+              <button
+                onClick={() => window.print()}
+                className="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl bg-muted hover:bg-muted/80 text-foreground text-xs font-black border border-border shadow-sm transition-colors"
+              >
+                <Printer className="size-4 text-emerald-600" />
+                <span>Print Contract / Work Order</span>
+              </button>
+            </div>
+          </div>
+
+          {/* Pricing & Crew Breakdown */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+            <div className="p-4 rounded-2xl bg-muted/40 border border-border space-y-1">
+              <span className="text-[11px] font-bold text-muted-foreground uppercase tracking-wider">Shift Schedule</span>
+              <p className="text-base font-black text-foreground">
+                {item.shiftType === "after_hours" ? "After 8 PM / Weekend" : "Weekday (until 10 PM)"}
+              </p>
+              <span className="text-[11px] text-muted-foreground">4-Hour Minimum Portal-to-Portal</span>
+            </div>
+
+            <div className="p-4 rounded-2xl bg-muted/40 border border-border space-y-1">
+              <span className="text-[11px] font-bold text-muted-foreground uppercase tracking-wider">Crew Dispatched</span>
+              <p className="text-base font-black text-foreground">
+                {item.technicianCount || 2} Certified Technicians
+              </p>
+              <span className="text-[11px] text-muted-foreground">
+                Overtime: ${item.overtimeRatePerTech || (item.shiftType === "after_hours" ? 95 : 75)}/hr/tech
+              </span>
+            </div>
+
+            <div className="p-4 rounded-2xl bg-muted/40 border border-border space-y-1">
+              <span className="text-[11px] font-bold text-muted-foreground uppercase tracking-wider">Base Rate &amp; Fee</span>
+              <p className="text-base font-black text-foreground">
+                ${item.baseRate?.toFixed(2) || "0.00"}
+                {item.processingFee ? (
+                  <span className="text-xs font-semibold text-muted-foreground ml-1.5">
+                    + ${item.processingFee.toFixed(2)} fee
+                  </span>
+                ) : null}
+              </p>
+              <span className="text-[11px] text-muted-foreground capitalize">
+                Paid via {item.paymentMethod || "Credit Card"}
+              </span>
+            </div>
+
+            <div className="p-4 rounded-2xl bg-emerald-500/10 border border-emerald-500/30 space-y-1">
+              <span className="text-[11px] font-black text-emerald-600 dark:text-emerald-400 uppercase tracking-wider flex items-center gap-1">
+                <DollarSign className="size-3.5" /> Total Amount Paid
+              </span>
+              <p className="text-2xl font-black text-emerald-600 dark:text-emerald-400">
+                ${item.totalAmount?.toFixed(2) || item.baseRate?.toFixed(2) || "0.00"}
+              </p>
+              <span className="text-[11px] font-bold text-emerald-700 dark:text-emerald-300">
+                Status: {item.paymentStatus ? item.paymentStatus.toUpperCase() : "PAID"}
+              </span>
+            </div>
+          </div>
+
+          {/* Legal Signer & Digital Signature Display */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 pt-2">
+            <div className="space-y-3 p-5 rounded-2xl bg-muted/30 border border-border">
+              <h3 className="text-xs font-black uppercase tracking-wider text-muted-foreground">
+                Authorized Signatory Information
+              </h3>
+              <div className="space-y-2 text-sm">
+                <div className="flex justify-between py-1 border-b border-border/50">
+                  <span className="text-xs text-muted-foreground">Signer Full Name:</span>
+                  <span className="font-bold text-foreground">{item.signedBy || item.name}</span>
+                </div>
+                <div className="flex justify-between py-1 border-b border-border/50">
+                  <span className="text-xs text-muted-foreground">Official Title:</span>
+                  <span className="font-bold text-foreground">{item.signerTitle || "Authorized Representative"}</span>
+                </div>
+                <div className="flex justify-between py-1 border-b border-border/50">
+                  <span className="text-xs text-muted-foreground">Date &amp; Time Signed:</span>
+                  <span className="font-bold text-foreground">
+                    {item.signedAt ? format(new Date(item.signedAt), "MMM d, yyyy 'at' h:mm a") : "Recorded"}
+                  </span>
+                </div>
+                <div className="flex justify-between py-1 border-b border-border/50">
+                  <span className="text-xs text-muted-foreground">Signer IP Address:</span>
+                  <span className="font-mono text-xs text-muted-foreground">{item.signerIp || "Logged"}</span>
+                </div>
+                {item.stripePaymentIntentId && (
+                  <div className="flex justify-between py-1">
+                    <span className="text-xs text-muted-foreground">Stripe Reference:</span>
+                    <span className="font-mono text-xs text-foreground truncate max-w-[200px]" title={item.stripePaymentIntentId}>
+                      {item.stripePaymentIntentId}
+                    </span>
+                  </div>
+                )}
+              </div>
+            </div>
+
+            {/* Signature Pad Canvas Image */}
+            <div className="space-y-2 p-5 rounded-2xl bg-muted/30 border border-border flex flex-col justify-between">
+              <div>
+                <h3 className="text-xs font-black uppercase tracking-wider text-muted-foreground">
+                  Binding Digital E-Signature
+                </h3>
+                <p className="text-[11px] text-muted-foreground mt-0.5">
+                  Signer affirmed authority and accepted portal-to-portal terms, overtime rates, and payment terms.
+                </p>
+              </div>
+
+              <div className="mt-3 p-4 rounded-xl bg-white border border-slate-300 shadow-inner flex items-center justify-center min-h-[100px]">
+                {item.signatureData ? (
+                  <img
+                    src={item.signatureData}
+                    alt="Digital Signature"
+                    className="max-h-24 max-w-full object-contain filter contrast-125"
+                  />
+                ) : (
+                  <span className="text-xs italic text-slate-400">Digital signature on file</span>
+                )}
+              </div>
+
+              <div className="text-[10px] text-muted-foreground text-center font-mono">
+                Verified Digital Signature • Enterprise Cleaning Corp DocuSign / Stripe Bridge
+              </div>
+            </div>
+          </div>
+        </div>
+      ) : (
+        <div className="p-6 rounded-3xl bg-amber-500/10 border-2 border-amber-500/30 space-y-4">
+          <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+            <div className="flex items-start gap-3">
+              <div className="size-10 rounded-xl bg-amber-500/20 text-amber-600 dark:text-amber-400 flex items-center justify-center shrink-0 mt-0.5">
+                <AlertTriangle className="size-5" />
+              </div>
+              <div>
+                <h3 className="text-base font-black text-foreground">
+                  Online Emergency Authorization &amp; Payment Not Yet Completed
+                </h3>
+                <p className="text-xs text-muted-foreground mt-0.5">
+                  Send this direct link to the caller to authorize the 4-hour minimum crew dispatch and complete card payment before rolling the trucks.
+                </p>
+              </div>
+            </div>
+
+            <div className="flex items-center gap-2 shrink-0">
+              <button
+                onClick={copyDispatchLink}
+                className="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl bg-amber-500 text-slate-950 font-black text-xs hover:bg-amber-400 shadow-md transition-all active:scale-95"
+              >
+                {copiedLink ? <Check className="size-4 text-emerald-950" /> : <Copy className="size-4" />}
+                <span>{copiedLink ? "Link Copied!" : "Copy Dispatch Link"}</span>
+              </button>
+              <a
+                href="/emergency-authorization"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-1.5 px-3.5 py-2.5 rounded-xl bg-muted border border-border text-xs font-bold hover:bg-muted/80 transition-colors"
+              >
+                <span>Open Form</span>
+                <ExternalLink className="size-3.5" />
+              </a>
+            </div>
+          </div>
+        </div>
+      )}
 
       {/* 2-Column Grid: Details */}
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-6">
