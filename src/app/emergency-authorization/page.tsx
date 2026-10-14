@@ -18,29 +18,29 @@ export const metadata: Metadata = {
 
 export default function EmergencyAuthorizationPage() {
   return (
-    <div className="min-h-screen bg-gradient-to-b from-slate-100 via-slate-50 to-slate-100 text-slate-900 py-8 sm:py-12 px-4 sm:px-6 lg:px-8 relative overflow-hidden">
+    <div className="min-h-screen bg-gradient-to-b from-slate-100 via-slate-50 to-slate-100 text-slate-900 py-6 sm:py-12 px-3 sm:px-6 lg:px-8 relative overflow-hidden">
       {/* Soft Ambient Brand Accents */}
       <div className="absolute top-0 left-1/3 w-[600px] h-[400px] bg-blue-200/30 rounded-full blur-[120px] pointer-events-none" />
       <div className="absolute top-1/2 right-10 w-[500px] h-[500px] bg-sky-100/50 rounded-full blur-[140px] pointer-events-none" />
 
       {/* Main Container */}
-      <div className="max-w-4xl mx-auto relative z-10 space-y-6">
+      <div className="max-w-4xl mx-auto relative z-10 space-y-6 sm:space-y-8">
         {/* Top Trust Navigation Bar */}
-        <div className="flex flex-col sm:flex-row items-center justify-between gap-3 px-4 py-2.5 rounded-2xl bg-white/80 backdrop-blur-md border border-slate-200/80 shadow-sm text-xs font-semibold text-slate-600">
-          <div className="flex items-center gap-2">
+        <div className="flex flex-col sm:flex-row items-center justify-between gap-2.5 sm:gap-4 px-4 py-3 rounded-2xl bg-white/80 backdrop-blur-md border border-slate-200/80 shadow-sm text-xs font-semibold text-slate-600">
+          <div className="flex flex-wrap items-center justify-center sm:justify-start gap-1.5 sm:gap-2">
             <Link href="/" className="text-slate-500 hover:text-slate-900 transition-colors">
               Enterprise Cleaning
             </Link>
-            <ChevronRight className="w-3.5 h-3.5 text-slate-400" />
+            <ChevronRight className="w-3.5 h-3.5 text-slate-400 shrink-0" />
             <Link href="/emergency-restoration-services-central-ma" className="text-slate-500 hover:text-slate-900 transition-colors">
               Emergency Services
             </Link>
-            <ChevronRight className="w-3.5 h-3.5 text-slate-400" />
+            <ChevronRight className="w-3.5 h-3.5 text-slate-400 shrink-0" />
             <span className="text-[#003B7A] font-bold">Dispatch Authorization</span>
           </div>
 
-          <div className="flex items-center gap-4">
-            <span className="hidden sm:inline-flex items-center gap-1 text-emerald-700 font-bold">
+          <div className="flex items-center gap-4 shrink-0">
+            <span className="hidden md:inline-flex items-center gap-1 text-emerald-700 font-bold">
               <ShieldCheck className="w-3.5 h-3.5" /> Fully Insured &amp; Bonded
             </span>
             <a

@@ -429,17 +429,17 @@ export function EmergencyAuthorizationForm() {
       </div>
 
       {/* Section 1: Customer & Service Details */}
-      <div className="bg-white text-slate-900 rounded-3xl p-6 sm:p-8 shadow-xl border border-slate-200 space-y-6">
-        <div className="flex items-center gap-2 pb-3 border-b border-slate-200">
+      <div className="bg-white text-slate-900 rounded-3xl p-5 sm:p-8 shadow-xl border border-slate-200 space-y-6">
+        <div className="flex items-center gap-2.5 pb-4 border-b border-slate-200">
           <Building2 className="w-5 h-5 text-[#003B7A]" />
-          <h2 className="text-lg font-black tracking-tight uppercase text-slate-900">
+          <h2 className="text-base sm:text-lg font-black tracking-tight uppercase text-slate-900">
             1. Customer &amp; Service Details
           </h2>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-5">
           <div>
-            <label className="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-1.5">
+            <label className="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-2">
               Customer / Company Name *
             </label>
             <input
@@ -449,12 +449,12 @@ export function EmergencyAuthorizationForm() {
               value={formData.companyName}
               onChange={handleInputChange}
               placeholder="e.g. Acme Property Management LLC"
-              className="w-full px-4 py-3 rounded-xl border border-slate-300 focus:ring-2 focus:ring-[#003B7A] focus:outline-none text-sm font-medium"
+              className="w-full px-4 py-3 sm:py-3.5 rounded-xl border border-slate-300 focus:ring-2 focus:ring-[#003B7A] focus:outline-none text-sm font-medium transition-all"
             />
           </div>
 
           <div>
-            <label className="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-1.5">
+            <label className="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-2">
               Authorized Contact Name *
             </label>
             <input
@@ -464,12 +464,12 @@ export function EmergencyAuthorizationForm() {
               value={formData.name}
               onChange={handleInputChange}
               placeholder="Full Legal Name"
-              className="w-full px-4 py-3 rounded-xl border border-slate-300 focus:ring-2 focus:ring-[#003B7A] focus:outline-none text-sm font-medium"
+              className="w-full px-4 py-3 sm:py-3.5 rounded-xl border border-slate-300 focus:ring-2 focus:ring-[#003B7A] focus:outline-none text-sm font-medium transition-all"
             />
           </div>
 
           <div>
-            <label className="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-1.5">
+            <label className="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-2">
               Signer Official Title *
             </label>
             <input
@@ -479,12 +479,12 @@ export function EmergencyAuthorizationForm() {
               value={formData.signerTitle}
               onChange={handleInputChange}
               placeholder="e.g. Property Manager, Facility Director, Owner"
-              className="w-full px-4 py-3 rounded-xl border border-slate-300 focus:ring-2 focus:ring-[#003B7A] focus:outline-none text-sm font-medium"
+              className="w-full px-4 py-3 sm:py-3.5 rounded-xl border border-slate-300 focus:ring-2 focus:ring-[#003B7A] focus:outline-none text-sm font-medium transition-all"
             />
           </div>
 
           <div>
-            <label className="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-1.5">
+            <label className="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-2">
               Direct Phone Number (24/7 Callback) *
             </label>
             <input
@@ -494,13 +494,13 @@ export function EmergencyAuthorizationForm() {
               value={formData.phone}
               onChange={handleInputChange}
               placeholder="(508) 555-0123"
-              className="w-full px-4 py-3 rounded-xl border border-slate-300 focus:ring-2 focus:ring-[#003B7A] focus:outline-none text-sm font-medium"
+              className="w-full px-4 py-3 sm:py-3.5 rounded-xl border border-slate-300 focus:ring-2 focus:ring-[#003B7A] focus:outline-none text-sm font-medium transition-all"
             />
           </div>
 
           <div>
-            <label className="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-1.5">
-              Email Address (For Signed Copy &amp; Stripe Receipt)
+            <label className="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-2">
+              Email Address (For Signed Copy &amp; Receipt)
             </label>
             <input
               type="email"
@@ -508,13 +508,13 @@ export function EmergencyAuthorizationForm() {
               value={formData.email}
               onChange={handleInputChange}
               placeholder="name@company.com"
-              className="w-full px-4 py-3 rounded-xl border border-slate-300 focus:ring-2 focus:ring-[#003B7A] focus:outline-none text-sm font-medium"
+              className="w-full px-4 py-3 sm:py-3.5 rounded-xl border border-slate-300 focus:ring-2 focus:ring-[#003B7A] focus:outline-none text-sm font-medium transition-all"
             />
           </div>
 
           <div>
-            <label className="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-1.5">
-              City / Town (Central MA Service Zone) *
+            <label className="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-2">
+              City / Town (Central MA Zone) *
             </label>
             <input
               type="text"
@@ -523,12 +523,12 @@ export function EmergencyAuthorizationForm() {
               value={formData.town}
               onChange={handleInputChange}
               placeholder="e.g. Worcester, West Boylston, Shrewsbury"
-              className="w-full px-4 py-3 rounded-xl border border-slate-300 focus:ring-2 focus:ring-[#003B7A] focus:outline-none text-sm font-medium"
+              className="w-full px-4 py-3 sm:py-3.5 rounded-xl border border-slate-300 focus:ring-2 focus:ring-[#003B7A] focus:outline-none text-sm font-medium transition-all"
             />
           </div>
 
           <div className="sm:col-span-2">
-            <label className="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-1.5">
+            <label className="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-2">
               Incident Property Street Address *
             </label>
             <input
@@ -538,12 +538,12 @@ export function EmergencyAuthorizationForm() {
               value={formData.propertyAddress}
               onChange={handleInputChange}
               placeholder="e.g. 100 Main Street, Suite 400"
-              className="w-full px-4 py-3 rounded-xl border border-slate-300 focus:ring-2 focus:ring-[#003B7A] focus:outline-none text-sm font-medium"
+              className="w-full px-4 py-3 sm:py-3.5 rounded-xl border border-slate-300 focus:ring-2 focus:ring-[#003B7A] focus:outline-none text-sm font-medium transition-all"
             />
           </div>
 
           <div className="sm:col-span-2">
-            <label className="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-1.5">
+            <label className="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-2">
               Nature of Emergency &amp; Scope of Work Requested
             </label>
             <textarea
@@ -552,53 +552,55 @@ export function EmergencyAuthorizationForm() {
               value={formData.description}
               onChange={handleInputChange}
               placeholder="Describe what occurred (e.g. pipe burst on 2nd floor, water leaking into server room, sewage backup, need urgent extraction)..."
-              className="w-full px-4 py-3 rounded-xl border border-slate-300 focus:ring-2 focus:ring-[#003B7A] focus:outline-none text-sm font-medium"
+              className="w-full px-4 py-3 sm:py-3.5 rounded-xl border border-slate-300 focus:ring-2 focus:ring-[#003B7A] focus:outline-none text-sm font-medium transition-all"
             />
           </div>
         </div>
       </div>
 
       {/* Section 2: Shift Schedule & Rates */}
-      <div className="bg-white text-slate-900 rounded-3xl p-6 sm:p-8 shadow-xl border border-slate-200 space-y-6">
-        <div className="flex items-center justify-between pb-3 border-b border-slate-200 flex-wrap gap-2">
-          <div className="flex items-center gap-2">
-            <span className="w-6 h-6 rounded-lg bg-[#003B7A]/10 text-[#003B7A] flex items-center justify-center font-black text-sm">
+      <div className="bg-white text-slate-900 rounded-3xl p-5 sm:p-8 shadow-xl border border-slate-200 space-y-6 sm:space-y-8">
+        <div className="flex flex-col sm:flex-row sm:items-center justify-between pb-4 border-b border-slate-200 gap-2">
+          <div className="flex items-center gap-2.5">
+            <span className="w-7 h-7 rounded-lg bg-[#003B7A]/10 text-[#003B7A] flex items-center justify-center font-black text-sm">
               $
             </span>
-            <h2 className="text-lg font-black tracking-tight uppercase text-slate-900">
+            <h2 className="text-base sm:text-lg font-black tracking-tight uppercase text-slate-900">
               2. Shift Schedule &amp; Authorized Rates
             </h2>
           </div>
-          <span className="text-xs font-bold text-[#003B7A] bg-blue-50 px-3 py-1 rounded-full border border-blue-200">
+          <span className="self-start sm:self-auto text-xs font-bold text-[#003B7A] bg-blue-50 px-3 py-1 rounded-full border border-blue-200">
             Official Contract Rates
           </span>
         </div>
 
         {/* Shift Type Toggle */}
-        <div>
-          <label className="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-2">
+        <div className="space-y-2.5">
+          <label className="block text-xs font-bold text-slate-700 uppercase tracking-wider">
             Select Dispatch Shift Window:
           </label>
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4">
             <button
               type="button"
               onClick={() => setFormData((prev) => ({ ...prev, shiftType: "weekday" }))}
-              className={`p-4 rounded-2xl border text-left transition-all flex flex-col justify-between ${
+              className={`p-4 sm:p-5 rounded-2xl border text-left transition-all flex flex-col justify-between ${
                 formData.shiftType === "weekday"
-                  ? "bg-blue-50/80 border-[#003B7A] ring-2 ring-[#003B7A] shadow-md"
+                  ? "bg-blue-50/90 border-[#003B7A] ring-2 ring-[#003B7A] shadow-md"
                   : "bg-slate-50 border-slate-200 hover:bg-slate-100"
               }`}
             >
               <div className="flex items-center justify-between">
-                <span className="text-xs font-bold text-[#003B7A] uppercase">Standard Shift</span>
+                <span className="text-xs font-extrabold text-[#003B7A] uppercase tracking-wider">
+                  Standard Shift
+                </span>
                 {formData.shiftType === "weekday" && (
-                  <CheckCircle2 className="w-4 h-4 text-[#003B7A]" />
+                  <CheckCircle2 className="w-5 h-5 text-[#003B7A]" />
                 )}
               </div>
-              <div className="text-base font-black text-slate-900 mt-1">
+              <div className="text-base sm:text-lg font-black text-slate-900 mt-2">
                 Weekday (Until 10 PM)
               </div>
-              <div className="text-xs text-slate-600 mt-1">
+              <div className="text-xs text-slate-600 mt-2 pt-2 border-t border-slate-200/80">
                 Additional time beyond 4 hrs: <strong>$75.00/tech/hr</strong> ($18.75/15-min)
               </div>
             </button>
@@ -606,115 +608,144 @@ export function EmergencyAuthorizationForm() {
             <button
               type="button"
               onClick={() => setFormData((prev) => ({ ...prev, shiftType: "after_8pm_weekend" }))}
-              className={`p-4 rounded-2xl border text-left transition-all flex flex-col justify-between ${
+              className={`p-4 sm:p-5 rounded-2xl border text-left transition-all flex flex-col justify-between ${
                 formData.shiftType === "after_8pm_weekend"
-                  ? "bg-amber-50/80 border-amber-600 ring-2 ring-amber-600 shadow-md"
+                  ? "bg-amber-50/90 border-amber-600 ring-2 ring-amber-600 shadow-md"
                   : "bg-slate-50 border-slate-200 hover:bg-slate-100"
               }`}
             >
               <div className="flex items-center justify-between">
-                <span className="text-xs font-bold text-amber-700 uppercase">Overnight &bull; Weekend</span>
+                <span className="text-xs font-extrabold text-amber-800 uppercase tracking-wider">
+                  Overnight &bull; Weekend
+                </span>
                 {formData.shiftType === "after_8pm_weekend" && (
-                  <CheckCircle2 className="w-4 h-4 text-amber-600" />
+                  <CheckCircle2 className="w-5 h-5 text-amber-600" />
                 )}
               </div>
-              <div className="text-base font-black text-slate-900 mt-1">
+              <div className="text-base sm:text-lg font-black text-slate-900 mt-2">
                 Starting After 8 PM &amp; Weekends
               </div>
-              <div className="text-xs text-slate-600 mt-1">
+              <div className="text-xs text-slate-600 mt-2 pt-2 border-t border-amber-200/80">
                 Additional time beyond 4 hrs: <strong>$95.00/tech/hr</strong> ($23.75/15-min)
               </div>
             </button>
           </div>
         </div>
 
-        {/* Crew Size & Pricing Schedule */}
-        <div>
-          <div className="flex items-center justify-between mb-2">
-            <label className="block text-xs font-bold text-slate-700 uppercase tracking-wider">
+        {/* Crew Size & Pricing Schedule with Clean Gapping & In-Card Badges */}
+        <div className="space-y-3.5">
+          <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-1.5">
+            <label className="block text-xs font-extrabold text-slate-800 uppercase tracking-wider">
               Crew Sizing &amp; Contractual Rates (4-Hour Minimum):
             </label>
-            <span className="text-[11px] font-bold text-emerald-700 bg-emerald-50 px-2.5 py-0.5 rounded-full border border-emerald-200">
+            <span className="self-start sm:self-auto text-[11px] font-bold text-emerald-800 bg-emerald-50 px-3 py-1 rounded-full border border-emerald-200/80">
               Initial Deposit = 2 Techs Only
             </span>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-3">
-            {/* 2 Technicians - Active Charge */}
-            <div className="relative p-5 rounded-2xl bg-gradient-to-b from-slate-900 to-slate-800 text-white border-2 border-emerald-500 shadow-xl ring-2 ring-emerald-500/20 text-center flex flex-col justify-between">
-              <div className="absolute -top-3 left-1/2 -translate-x-1/2 bg-emerald-500 text-white text-[10px] font-black uppercase tracking-wider px-3 py-0.5 rounded-full shadow-sm flex items-center gap-1 whitespace-nowrap">
-                <CheckCircle2 className="w-3 h-3" /> Charged Today (Deposit)
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-5">
+            {/* 2 Technicians - Active Charge Card */}
+            <div className="p-5 sm:p-6 rounded-2xl bg-gradient-to-b from-slate-950 via-slate-900 to-slate-950 text-white border-2 border-emerald-500 shadow-xl ring-4 ring-emerald-500/10 flex flex-col justify-between transition-all">
+              <div>
+                <div className="flex items-center justify-between gap-2 pb-3.5 border-b border-slate-800 mb-3.5">
+                  <span className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-emerald-500 text-white text-[11px] font-black uppercase tracking-wider shadow-sm">
+                    <CheckCircle2 className="w-3.5 h-3.5" /> Charged Today
+                  </span>
+                  <span className="text-[11px] font-bold text-emerald-400 bg-emerald-950/80 px-2 py-0.5 rounded border border-emerald-700/50">
+                    Deposit
+                  </span>
+                </div>
+                <div className="text-center sm:text-left">
+                  <div className="text-xs uppercase font-extrabold tracking-wider text-slate-300">
+                    2 Technicians Dispatch
+                  </div>
+                  <div className="text-3xl sm:text-4xl font-black mt-1.5 text-[#FFE800] tracking-tight">
+                    ${RATES[formData.shiftType][2].toFixed(2)}
+                  </div>
+                  <div className="text-xs text-emerald-300 font-semibold mt-1">
+                    Active Initial Crew Authorization
+                  </div>
+                </div>
               </div>
-              <div className="pt-2">
-                <div className="text-xs uppercase font-extrabold tracking-wider text-slate-300">
-                  2 Technicians
-                </div>
-                <div className="text-3xl font-black mt-1 text-[#FFE800]">
-                  ${RATES[formData.shiftType][2].toFixed(2)}
-                </div>
-                <div className="text-[11px] text-emerald-300 font-bold mt-1">
-                  Active Initial Crew Dispatch
-                </div>
-              </div>
-              <div className="text-[11px] text-slate-300 border-t border-slate-700/80 pt-2.5 mt-3">
+              <div className="text-[11px] text-slate-400 border-t border-slate-800 pt-3 mt-4 text-center sm:text-left flex items-center justify-center sm:justify-start gap-1.5">
+                <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 shrink-0" />
                 Covers first 4 hours portal-to-portal
               </div>
             </div>
 
-            {/* 3 Technicians - Informational Scope Rate */}
-            <div className="relative p-5 rounded-2xl bg-slate-50/90 text-slate-900 border border-slate-200/80 text-center flex flex-col justify-between">
-              <div className="absolute -top-3 left-1/2 -translate-x-1/2 bg-slate-200 text-slate-700 text-[10px] font-black uppercase tracking-wider px-3 py-0.5 rounded-full border border-slate-300 whitespace-nowrap">
-                On-Site Scope Rate
+            {/* 3 Technicians - Scope Reference Rate */}
+            <div className="p-5 sm:p-6 rounded-2xl bg-slate-50/90 hover:bg-slate-100/80 transition-all text-slate-900 border border-slate-200/90 flex flex-col justify-between">
+              <div>
+                <div className="flex items-center justify-between gap-2 pb-3.5 border-b border-slate-200 mb-3.5">
+                  <span className="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-slate-200/90 text-slate-700 text-[11px] font-bold uppercase tracking-wider">
+                    On-Site Scope Rate
+                  </span>
+                  <span className="text-[11px] font-semibold text-slate-500">
+                    Contract Ref
+                  </span>
+                </div>
+                <div className="text-center sm:text-left">
+                  <div className="text-xs uppercase font-extrabold tracking-wider text-slate-500">
+                    3 Technicians Crew
+                  </div>
+                  <div className="text-2xl sm:text-3xl font-black mt-1.5 text-slate-800 tracking-tight">
+                    ${RATES[formData.shiftType][3].toFixed(2)}
+                  </div>
+                  <div className="text-xs text-slate-500 font-medium mt-1">
+                    4-Hour Minimum Rate
+                  </div>
+                </div>
               </div>
-              <div className="pt-2">
-                <div className="text-xs uppercase font-extrabold tracking-wider text-slate-500">
-                  3 Technicians
-                </div>
-                <div className="text-2xl font-black mt-1 text-slate-800">
-                  ${RATES[formData.shiftType][3].toFixed(2)}
-                </div>
-                <div className="text-[11px] text-slate-500 font-medium mt-1">
-                  Reference Contract Rate
-                </div>
-              </div>
-              <div className="text-[11px] text-slate-500 border-t border-slate-200 pt-2.5 mt-3">
-                Applied only if crew evaluates 3 techs required
+              <div className="text-[11px] text-slate-500 border-t border-slate-200 pt-3 mt-4 text-center sm:text-left">
+                Billed only if on-site crew confirms 3 techs needed
               </div>
             </div>
 
-            {/* 4 Technicians - Informational Scope Rate */}
-            <div className="relative p-5 rounded-2xl bg-slate-50/90 text-slate-900 border border-slate-200/80 text-center flex flex-col justify-between">
-              <div className="absolute -top-3 left-1/2 -translate-x-1/2 bg-slate-200 text-slate-700 text-[10px] font-black uppercase tracking-wider px-3 py-0.5 rounded-full border border-slate-300 whitespace-nowrap">
-                On-Site Scope Rate
+            {/* 4 Technicians - Scope Reference Rate */}
+            <div className="p-5 sm:p-6 rounded-2xl bg-slate-50/90 hover:bg-slate-100/80 transition-all text-slate-900 border border-slate-200/90 flex flex-col justify-between">
+              <div>
+                <div className="flex items-center justify-between gap-2 pb-3.5 border-b border-slate-200 mb-3.5">
+                  <span className="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-slate-200/90 text-slate-700 text-[11px] font-bold uppercase tracking-wider">
+                    On-Site Scope Rate
+                  </span>
+                  <span className="text-[11px] font-semibold text-slate-500">
+                    Contract Ref
+                  </span>
+                </div>
+                <div className="text-center sm:text-left">
+                  <div className="text-xs uppercase font-extrabold tracking-wider text-slate-500">
+                    4 Technicians Crew
+                  </div>
+                  <div className="text-2xl sm:text-3xl font-black mt-1.5 text-slate-800 tracking-tight">
+                    ${RATES[formData.shiftType][4].toFixed(2)}
+                  </div>
+                  <div className="text-xs text-slate-500 font-medium mt-1">
+                    4-Hour Minimum Rate
+                  </div>
+                </div>
               </div>
-              <div className="pt-2">
-                <div className="text-xs uppercase font-extrabold tracking-wider text-slate-500">
-                  4 Technicians
-                </div>
-                <div className="text-2xl font-black mt-1 text-slate-800">
-                  ${RATES[formData.shiftType][4].toFixed(2)}
-                </div>
-                <div className="text-[11px] text-slate-500 font-medium mt-1">
-                  Reference Contract Rate
-                </div>
-              </div>
-              <div className="text-[11px] text-slate-500 border-t border-slate-200 pt-2.5 mt-3">
-                Applied only if crew evaluates 4 techs required
+              <div className="text-[11px] text-slate-500 border-t border-slate-200 pt-3 mt-4 text-center sm:text-left">
+                Billed only if on-site crew confirms 4 techs needed
               </div>
             </div>
           </div>
 
           {/* Explanation Banner */}
-          <div className="mt-3 p-3.5 rounded-xl bg-blue-50/70 border border-blue-200/70 text-xs text-blue-950 flex items-start gap-2.5 leading-relaxed font-medium">
-            <span className="text-blue-600 font-black text-sm shrink-0">ℹ️</span>
-            <div>
-              <strong>Transparent Crew Sizing Policy:</strong> Your card is charged today strictly for the <strong>2-technician initial crew deposit (${RATES[formData.shiftType][2].toFixed(2)})</strong>. Once on site, our certified supervisors assess the severity and square footage of the damage. If an expanded crew (3 or 4 technicians) is required to swiftly mitigate loss, the pre-authorized rates shown above will govern billing.
+          <div className="p-4 sm:p-5 rounded-2xl bg-blue-50/80 border border-blue-200/80 text-xs sm:text-sm text-blue-950 flex items-start gap-3 leading-relaxed font-medium">
+            <span className="text-blue-600 font-black text-base shrink-0 mt-0.5">ℹ️</span>
+            <div className="space-y-1">
+              <div className="font-bold text-blue-950 text-xs uppercase tracking-wider">
+                Transparent Crew Sizing Policy:
+              </div>
+              <p className="text-slate-700 text-xs sm:text-sm">
+                Your card is charged today strictly for the <strong>2-technician initial crew deposit (${RATES[formData.shiftType][2].toFixed(2)})</strong>. Once on site, our certified supervisors assess the severity and square footage of the damage. If an expanded crew (3 or 4 technicians) is required to swiftly mitigate loss, the pre-authorized contract rates above will govern final billing.
+              </p>
             </div>
           </div>
         </div>
 
         {/* Contract Legal Clauses Box */}
-        <div className="p-4 rounded-2xl bg-amber-50/80 border border-amber-200 text-xs text-amber-950 space-y-2 leading-relaxed">
+        <div className="p-4 sm:p-5 rounded-2xl bg-amber-50/80 border border-amber-200 text-xs sm:text-sm text-amber-950 space-y-2 leading-relaxed">
           <div className="font-bold uppercase tracking-wider text-amber-900 flex items-center gap-1.5">
             <AlertTriangle className="w-4 h-4 text-amber-600 shrink-0" />
             Mandatory Contract Terms (As Stated in Contract):
@@ -729,25 +760,25 @@ export function EmergencyAuthorizationForm() {
       </div>
 
       {/* Section 3: Payment Method & Processing Surcharge */}
-      <div className="bg-white text-slate-900 rounded-3xl p-6 sm:p-8 shadow-xl border border-slate-200 space-y-6">
-        <div className="flex items-center justify-between pb-3 border-b border-slate-200 flex-wrap gap-2">
-          <div className="flex items-center gap-2">
+      <div className="bg-white text-slate-900 rounded-3xl p-5 sm:p-8 shadow-xl border border-slate-200 space-y-6 sm:space-y-8">
+        <div className="flex flex-col sm:flex-row sm:items-center justify-between pb-4 border-b border-slate-200 gap-2">
+          <div className="flex items-center gap-2.5">
             <CreditCard className="w-5 h-5 text-[#003B7A]" />
-            <h2 className="text-lg font-black tracking-tight uppercase text-slate-900">
+            <h2 className="text-base sm:text-lg font-black tracking-tight uppercase text-slate-900">
               3. Payment Method &amp; Processing Surcharge
             </h2>
           </div>
-          <span className="text-xs font-bold text-emerald-700 bg-emerald-50 px-3 py-1 rounded-full border border-emerald-200 flex items-center gap-1.5">
+          <span className="self-start sm:self-auto text-xs font-bold text-emerald-700 bg-emerald-50 px-3 py-1 rounded-full border border-emerald-200 flex items-center gap-1.5">
             <Lock className="w-3.5 h-3.5 text-emerald-600" /> Stripe 256-Bit SSL Encrypted
           </span>
         </div>
 
         {/* Payment Method Selector */}
-        <div>
-          <label className="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-2">
+        <div className="space-y-2.5">
+          <label className="block text-xs font-bold text-slate-700 uppercase tracking-wider">
             Select Method of Payment:
           </label>
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 sm:gap-4">
             {[
               { id: "credit_card", label: "Credit Card", fee: "3.5% Surcharge", icon: "💳" },
               { id: "debit_card", label: "Debit Card", fee: "1.5% Surcharge", icon: "💳" },
@@ -764,23 +795,23 @@ export function EmergencyAuthorizationForm() {
                       paymentMethod: method.id as FormState["paymentMethod"],
                     }))
                   }
-                  className={`p-4 rounded-xl border text-left transition-all ${
+                  className={`p-4 sm:p-5 rounded-2xl border text-left transition-all ${
                     isSelected
                       ? "bg-slate-900 text-white border-slate-900 shadow-md ring-2 ring-blue-500"
                       : "bg-slate-50 text-slate-900 border-slate-200 hover:bg-slate-100"
                   }`}
                 >
                   <div className="flex items-center justify-between">
-                    <span className="text-base">{method.icon}</span>
+                    <span className="text-xl">{method.icon}</span>
                     <span
-                      className={`text-[11px] font-black uppercase ${
-                        isSelected ? "text-[#00B8FF]" : "text-slate-500"
+                      className={`text-[11px] font-black uppercase px-2 py-0.5 rounded ${
+                        isSelected ? "bg-blue-900/60 text-[#00B8FF]" : "bg-slate-200/80 text-slate-600"
                       }`}
                     >
                       {method.fee}
                     </span>
                   </div>
-                  <div className="text-sm font-black mt-1">{method.label}</div>
+                  <div className="text-sm font-black mt-2">{method.label}</div>
                 </button>
               );
             })}
@@ -788,31 +819,31 @@ export function EmergencyAuthorizationForm() {
         </div>
 
         {/* Live Calculation Summary */}
-        <div className="p-6 rounded-2xl bg-slate-900 text-white space-y-3">
+        <div className="p-5 sm:p-7 rounded-2xl sm:rounded-3xl bg-slate-900 text-white space-y-3.5 shadow-xl">
           <div className="text-xs font-bold text-slate-400 uppercase tracking-wider">
             Authorization &amp; Billing Breakdown:
           </div>
-          <div className="flex items-center justify-between text-sm">
+          <div className="flex items-center justify-between text-sm sm:text-base">
             <span className="text-slate-300">
               Initial Crew Deposit (2 Technicians &bull; 4-Hr Minimum):
             </span>
-            <span className="font-bold">${baseRate.toFixed(2)}</span>
+            <span className="font-bold text-white">${baseRate.toFixed(2)}</span>
           </div>
-          <div className="flex items-center justify-between text-sm">
+          <div className="flex items-center justify-between text-sm sm:text-base">
             <span className="text-slate-300">
               Payment Processing Fee ({feePercentageLabel}):
             </span>
             <span className="font-bold text-amber-300">+${processingFee.toFixed(2)}</span>
           </div>
-          <div className="pt-3 border-t border-slate-700 flex items-center justify-between text-lg sm:text-xl font-black">
+          <div className="pt-3.5 border-t border-slate-700/80 flex flex-col sm:flex-row sm:items-center justify-between gap-1 text-lg sm:text-xl font-black">
             <span className="text-white">TOTAL AUTHORIZED TODAY:</span>
-            <span className="text-[#FFE800] text-2xl font-mono">${totalAmount.toFixed(2)}</span>
+            <span className="text-[#FFE800] text-2xl sm:text-3xl font-mono">${totalAmount.toFixed(2)}</span>
           </div>
         </div>
 
         {/* Stripe Hosted Gateway Explanation Box */}
-        <div className="p-4 rounded-2xl bg-gradient-to-r from-blue-50 to-indigo-50 border border-blue-200/80 flex items-start gap-3">
-          <div className="size-9 rounded-xl bg-[#003B7A] text-white flex items-center justify-center shrink-0 mt-0.5 shadow-sm font-black text-xs">
+        <div className="p-4 sm:p-5 rounded-2xl bg-gradient-to-r from-blue-50 to-indigo-50 border border-blue-200/80 flex flex-col sm:flex-row items-start gap-3.5">
+          <div className="size-10 rounded-xl bg-[#003B7A] text-white flex items-center justify-center shrink-0 shadow-sm font-black text-sm">
             S
           </div>
           <div className="space-y-1">
@@ -822,7 +853,7 @@ export function EmergencyAuthorizationForm() {
                 PCI-DSS Level 1
               </span>
             </div>
-            <p className="text-xs text-slate-600 leading-relaxed font-medium">
+            <p className="text-xs sm:text-sm text-slate-600 leading-relaxed font-medium">
               When you submit this agreement, you will be taken directly to Stripe&apos;s encrypted payment gateway. You can securely pay via <strong>Credit Card, Debit Card, Apple Pay, Google Pay, or US Bank Transfer</strong>. Once payment is confirmed, emergency trucks are dispatched.
             </p>
           </div>
@@ -830,16 +861,16 @@ export function EmergencyAuthorizationForm() {
       </div>
 
       {/* Section 4: Legal Authorization & Electronic Signature */}
-      <div className="bg-white text-slate-900 rounded-3xl p-6 sm:p-8 shadow-xl border border-slate-200 space-y-6">
-        <div className="flex items-center gap-2 pb-3 border-b border-slate-200">
+      <div className="bg-white text-slate-900 rounded-3xl p-5 sm:p-8 shadow-xl border border-slate-200 space-y-6">
+        <div className="flex items-center gap-2.5 pb-4 border-b border-slate-200">
           <FileCheck className="w-5 h-5 text-[#003B7A]" />
-          <h2 className="text-lg font-black tracking-tight uppercase text-slate-900">
+          <h2 className="text-base sm:text-lg font-black tracking-tight uppercase text-slate-900">
             4. Authorization to Perform Emergency Services
           </h2>
         </div>
 
         {/* Legal Text from DocuSign Contract */}
-        <div className="p-4 bg-slate-50 border border-slate-200 rounded-2xl text-xs sm:text-sm text-slate-700 leading-relaxed font-medium">
+        <div className="p-4 sm:p-5 bg-slate-50 border border-slate-200 rounded-2xl text-xs sm:text-sm text-slate-700 leading-relaxed font-medium">
           <p className="font-semibold text-slate-900 mb-2">Legal Affirmation &amp; Agreement:</p>
           &ldquo;By signing below, I authorize <strong>Enterprise Cleaning Corporation</strong> to perform the emergency services described above. I confirm that I am authorized to request these services on behalf of the customer identified above and agree to the minimum charge, billing start time, travel time policy, and additional hourly charges stated in this contract.&rdquo;
         </div>
@@ -851,15 +882,15 @@ export function EmergencyAuthorizationForm() {
         />
 
         {/* Mandatory Agreement Checkbox */}
-        <label className="flex items-start gap-3 cursor-pointer pt-2">
+        <label className="flex items-start gap-3.5 cursor-pointer p-4 rounded-2xl bg-slate-50 hover:bg-slate-100/80 transition-colors border border-slate-200/80">
           <input
             type="checkbox"
             name="agreeToTerms"
             checked={formData.agreeToTerms}
             onChange={handleInputChange}
-            className="mt-1 w-4 h-4 rounded text-[#003B7A] focus:ring-[#003B7A] border-slate-300"
+            className="mt-1 w-5 h-5 rounded text-[#003B7A] focus:ring-[#003B7A] border-slate-300 shrink-0 cursor-pointer"
           />
-          <span className="text-xs sm:text-sm font-bold text-slate-800 leading-snug">
+          <span className="text-xs sm:text-sm font-bold text-slate-800 leading-relaxed">
             I confirm I am authorized to bind payment for this company and agree to the initial 2-technician deposit of ${baseRate.toFixed(2)} + processing fee (Total: ${totalAmount.toFixed(2)}). I acknowledge and accept the contractual 3 &amp; 4 technician rates and overtime terms if an expanded crew is determined necessary upon on-site evaluation.
           </span>
         </label>
@@ -874,11 +905,11 @@ export function EmergencyAuthorizationForm() {
       )}
 
       {/* Submit / Dispatch CTA Button */}
-      <div className="text-center space-y-3">
+      <div className="text-center space-y-3 pt-2">
         <button
           type="submit"
           disabled={isSubmitting}
-          className="w-full py-4 sm:py-5 px-8 rounded-2xl bg-[#E31837] hover:bg-red-700 active:scale-95 text-white font-black text-lg sm:text-xl transition-all shadow-xl hover:shadow-2xl hover:shadow-red-500/25 flex items-center justify-center gap-3 disabled:opacity-60 disabled:cursor-not-allowed cursor-pointer"
+          className="w-full py-4 sm:py-5 px-6 sm:px-8 rounded-2xl bg-[#E31837] hover:bg-red-700 active:scale-95 text-white font-black text-base sm:text-xl transition-all shadow-xl hover:shadow-2xl hover:shadow-red-500/25 flex items-center justify-center gap-3 disabled:opacity-60 disabled:cursor-not-allowed cursor-pointer"
         >
           {isSubmitting ? (
             <>
