@@ -134,9 +134,9 @@ export function EmergencyAuthorizationForm() {
     }
   }, [sessionId, submissionId]);
 
-  // Dynamic calculations
+  // Dynamic calculations - Initial deposit is always for 2 Technicians ($475 weekday / $575 after-hours)
   const { baseRate, processingFee, feePercentageLabel, totalAmount, overtimeRates } = useMemo(() => {
-    const base = RATES[formData.shiftType][formData.technicianCount];
+    const base = RATES[formData.shiftType][2];
     let feeRate = 0.035;
     let feeLabel = "3.5% Card Surcharge";
 
@@ -162,7 +162,7 @@ export function EmergencyAuthorizationForm() {
       totalAmount: total,
       overtimeRates: OVERTIME_RATES[formData.shiftType],
     };
-  }, [formData.shiftType, formData.technicianCount, formData.paymentMethod]);
+  }, [formData.shiftType, formData.paymentMethod]);
 
   const handleInputChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement>
@@ -628,44 +628,88 @@ export function EmergencyAuthorizationForm() {
           </div>
         </div>
 
-        {/* Technician Count Selector */}
+        {/* Crew Size & Pricing Schedule */}
         <div>
-          <label className="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-2">
-            Select Crew Size (Four-Hour Minimum Charges):
-          </label>
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
-            {[2, 3, 4].map((count) => {
-              const rate = RATES[formData.shiftType][count as 2 | 3 | 4];
-              const isSelected = formData.technicianCount === count;
-              return (
-                <button
-                  key={count}
-                  type="button"
-                  onClick={() =>
-                    setFormData((prev) => ({ ...prev, technicianCount: count as 2 | 3 | 4 }))
-                  }
-                  className={`p-4 rounded-2xl border text-center transition-all ${
-                    isSelected
-                      ? "bg-slate-900 text-white border-slate-900 shadow-lg ring-2 ring-blue-500"
-                      : "bg-slate-50 text-slate-900 border-slate-200 hover:bg-slate-100"
-                  }`}
-                >
-                  <div className="text-xs uppercase font-extrabold tracking-wider opacity-80">
-                    {count} Technicians
-                  </div>
-                  <div
-                    className={`text-2xl font-black mt-1 ${
-                      isSelected ? "text-[#FFE800]" : "text-[#003B7A]"
-                    }`}
-                  >
-                    ${rate.toFixed(2)}
-                  </div>
-                  <div className="text-[11px] opacity-70 mt-1">
-                    Initial 4-Hour Deposit
-                  </div>
-                </button>
-              );
-            })}
+          <div className="flex items-center justify-between mb-2">
+            <label className="block text-xs font-bold text-slate-700 uppercase tracking-wider">
+              Crew Sizing &amp; Contractual Rates (4-Hour Minimum):
+            </label>
+            <span className="text-[11px] font-bold text-emerald-700 bg-emerald-50 px-2.5 py-0.5 rounded-full border border-emerald-200">
+              Initial Deposit = 2 Techs Only
+            </span>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-3">
+            {/* 2 Technicians - Active Charge */}
+            <div className="relative p-5 rounded-2xl bg-gradient-to-b from-slate-900 to-slate-800 text-white border-2 border-emerald-500 shadow-xl ring-2 ring-emerald-500/20 text-center flex flex-col justify-between">
+              <div className="absolute -top-3 left-1/2 -translate-x-1/2 bg-emerald-500 text-white text-[10px] font-black uppercase tracking-wider px-3 py-0.5 rounded-full shadow-sm flex items-center gap-1 whitespace-nowrap">
+                <CheckCircle2 className="w-3 h-3" /> Charged Today (Deposit)
+              </div>
+              <div className="pt-2">
+                <div className="text-xs uppercase font-extrabold tracking-wider text-slate-300">
+                  2 Technicians
+                </div>
+                <div className="text-3xl font-black mt-1 text-[#FFE800]">
+                  ${RATES[formData.shiftType][2].toFixed(2)}
+                </div>
+                <div className="text-[11px] text-emerald-300 font-bold mt-1">
+                  Active Initial Crew Dispatch
+                </div>
+              </div>
+              <div className="text-[11px] text-slate-300 border-t border-slate-700/80 pt-2.5 mt-3">
+                Covers first 4 hours portal-to-portal
+              </div>
+            </div>
+
+            {/* 3 Technicians - Informational Scope Rate */}
+            <div className="relative p-5 rounded-2xl bg-slate-50/90 text-slate-900 border border-slate-200/80 text-center flex flex-col justify-between">
+              <div className="absolute -top-3 left-1/2 -translate-x-1/2 bg-slate-200 text-slate-700 text-[10px] font-black uppercase tracking-wider px-3 py-0.5 rounded-full border border-slate-300 whitespace-nowrap">
+                On-Site Scope Rate
+              </div>
+              <div className="pt-2">
+                <div className="text-xs uppercase font-extrabold tracking-wider text-slate-500">
+                  3 Technicians
+                </div>
+                <div className="text-2xl font-black mt-1 text-slate-800">
+                  ${RATES[formData.shiftType][3].toFixed(2)}
+                </div>
+                <div className="text-[11px] text-slate-500 font-medium mt-1">
+                  Reference Contract Rate
+                </div>
+              </div>
+              <div className="text-[11px] text-slate-500 border-t border-slate-200 pt-2.5 mt-3">
+                Applied only if crew evaluates 3 techs required
+              </div>
+            </div>
+
+            {/* 4 Technicians - Informational Scope Rate */}
+            <div className="relative p-5 rounded-2xl bg-slate-50/90 text-slate-900 border border-slate-200/80 text-center flex flex-col justify-between">
+              <div className="absolute -top-3 left-1/2 -translate-x-1/2 bg-slate-200 text-slate-700 text-[10px] font-black uppercase tracking-wider px-3 py-0.5 rounded-full border border-slate-300 whitespace-nowrap">
+                On-Site Scope Rate
+              </div>
+              <div className="pt-2">
+                <div className="text-xs uppercase font-extrabold tracking-wider text-slate-500">
+                  4 Technicians
+                </div>
+                <div className="text-2xl font-black mt-1 text-slate-800">
+                  ${RATES[formData.shiftType][4].toFixed(2)}
+                </div>
+                <div className="text-[11px] text-slate-500 font-medium mt-1">
+                  Reference Contract Rate
+                </div>
+              </div>
+              <div className="text-[11px] text-slate-500 border-t border-slate-200 pt-2.5 mt-3">
+                Applied only if crew evaluates 4 techs required
+              </div>
+            </div>
+          </div>
+
+          {/* Explanation Banner */}
+          <div className="mt-3 p-3.5 rounded-xl bg-blue-50/70 border border-blue-200/70 text-xs text-blue-950 flex items-start gap-2.5 leading-relaxed font-medium">
+            <span className="text-blue-600 font-black text-sm shrink-0">ℹ️</span>
+            <div>
+              <strong>Transparent Crew Sizing Policy:</strong> Your card is charged today strictly for the <strong>2-technician initial crew deposit (${RATES[formData.shiftType][2].toFixed(2)})</strong>. Once on site, our certified supervisors assess the severity and square footage of the damage. If an expanded crew (3 or 4 technicians) is required to swiftly mitigate loss, the pre-authorized rates shown above will govern billing.
+            </div>
           </div>
         </div>
 
@@ -750,7 +794,7 @@ export function EmergencyAuthorizationForm() {
           </div>
           <div className="flex items-center justify-between text-sm">
             <span className="text-slate-300">
-              Base Charge ({formData.technicianCount} Technicians &bull; 4-Hr Minimum):
+              Initial Crew Deposit (2 Technicians &bull; 4-Hr Minimum):
             </span>
             <span className="font-bold">${baseRate.toFixed(2)}</span>
           </div>
@@ -816,7 +860,7 @@ export function EmergencyAuthorizationForm() {
             className="mt-1 w-4 h-4 rounded text-[#003B7A] focus:ring-[#003B7A] border-slate-300"
           />
           <span className="text-xs sm:text-sm font-bold text-slate-800 leading-snug">
-            I confirm I am authorized to bind payment for this company and agree to the 4-hour minimum charge of ${baseRate.toFixed(2)} + processing fee (Total: ${totalAmount.toFixed(2)}).
+            I confirm I am authorized to bind payment for this company and agree to the initial 2-technician deposit of ${baseRate.toFixed(2)} + processing fee (Total: ${totalAmount.toFixed(2)}). I acknowledge and accept the contractual 3 &amp; 4 technician rates and overtime terms if an expanded crew is determined necessary upon on-site evaluation.
           </span>
         </label>
       </div>

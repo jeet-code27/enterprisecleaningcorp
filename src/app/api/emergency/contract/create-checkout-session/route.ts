@@ -63,13 +63,15 @@ export async function POST(req: NextRequest) {
       propertyAddress,
       town,
       shiftType = 'weekday',
-      technicianCount = 2,
       paymentMethod = 'credit_card',
       signerTitle = 'Authorized Representative',
       signatureData,
       emergencyType = 'Water Extraction & Rapid Emergency Cleanup',
       description = 'Emergency Dispatch Authorization Form (Online Signed & Paid)',
     } = body;
+
+    // Initial booking deposit is strictly for 2 technicians ($475 weekday / $575 after-hours)
+    const technicianCount = 2;
 
     if (!name || !phone || !propertyAddress || !town) {
       return NextResponse.json(
@@ -130,8 +132,8 @@ export async function POST(req: NextRequest) {
           price_data: {
             currency: 'usd',
             product_data: {
-              name: `Emergency Crew Dispatch (4-Hour Minimum)`,
-              description: `${technicianCount} Certified Technicians — ${shiftLabel}. Central MA Portal-to-Portal Dispatch.`,
+              name: `Emergency Crew Initial Deposit (2 Technicians • 4-Hr Minimum)`,
+              description: `2 Certified Technicians — ${shiftLabel}. Central MA Portal-to-Portal Dispatch from 99 Hartwell St, West Boylston.`,
             },
             unit_amount: Math.round(baseRate * 100),
           },
