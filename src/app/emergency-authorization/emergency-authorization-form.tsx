@@ -386,9 +386,9 @@ export function EmergencyAuthorizationForm() {
       {/* Contract Header Card */}
       <div className="bg-white text-slate-900 rounded-3xl p-6 sm:p-8 shadow-2xl border border-slate-200 relative overflow-hidden">
         {/* Top Header Row with Logo and Address */}
-        <div className="flex flex-col sm:flex-row items-center justify-between gap-6 pb-6 border-b border-slate-200 text-center sm:text-left">
-          <div className="flex items-center gap-4">
-            <div className="relative w-40 h-16 shrink-0">
+        <div className="flex flex-col sm:flex-row items-center justify-between gap-5 sm:gap-6 pb-6 border-b border-slate-200 text-center sm:text-left">
+          <div className="flex flex-col sm:flex-row items-center gap-3 sm:gap-5 text-center sm:text-left">
+            <div className="relative w-44 h-16 shrink-0">
               <Image
                 src="/images/ecc-new-logo.png"
                 alt="Enterprise Cleaning Corporation"
@@ -397,8 +397,8 @@ export function EmergencyAuthorizationForm() {
                 priority
               />
             </div>
-            <div>
-              <div className="text-xs font-extrabold tracking-widest text-[#003B7A] uppercase">
+            <div className="space-y-0.5">
+              <div className="text-xs sm:text-sm font-extrabold tracking-wider text-[#003B7A] uppercase">
                 Enterprise Cleaning Corporation
               </div>
               <div className="text-xs text-slate-500 font-medium">
@@ -407,11 +407,11 @@ export function EmergencyAuthorizationForm() {
             </div>
           </div>
 
-          <div className="flex flex-col items-center sm:items-end">
+          <div className="flex flex-col items-center sm:items-end gap-1">
             <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-red-100 text-[#E31837] text-xs font-black uppercase tracking-wider border border-red-200">
               <Clock className="w-3.5 h-3.5" /> 24/7 Rapid Response
             </span>
-            <div className="text-xs font-bold text-slate-600 mt-1">
+            <div className="text-xs font-bold text-slate-600">
               Hotline: <a href="tel:5088901000" className="text-[#003B7A] underline font-black">508-890-1000</a>
             </div>
           </div>
@@ -673,59 +673,59 @@ export function EmergencyAuthorizationForm() {
               </div>
             </div>
 
-            {/* 3 Technicians - Scope Reference Rate */}
+            {/* 3 Technicians - Contract Reference Rate */}
             <div className="p-5 sm:p-6 rounded-2xl bg-slate-50/90 hover:bg-slate-100/80 transition-all text-slate-900 border border-slate-200/90 flex flex-col justify-between">
               <div>
                 <div className="flex items-center justify-between gap-2 pb-3.5 border-b border-slate-200 mb-3.5">
-                  <span className="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-slate-200/90 text-slate-700 text-[11px] font-bold uppercase tracking-wider">
-                    On-Site Scope Rate
+                  <span className="inline-flex items-center px-2.5 py-1 rounded-full bg-slate-200 text-slate-700 text-[11px] font-bold uppercase tracking-wider">
+                    Contract Rate
                   </span>
-                  <span className="text-[11px] font-semibold text-slate-500">
-                    Contract Ref
+                  <span className="text-[11px] font-semibold text-slate-400">
+                    4-Hour Min
                   </span>
                 </div>
                 <div className="text-center sm:text-left">
                   <div className="text-xs uppercase font-extrabold tracking-wider text-slate-500">
-                    3 Technicians Crew
+                    3 Technicians
                   </div>
                   <div className="text-2xl sm:text-3xl font-black mt-1.5 text-slate-800 tracking-tight">
                     ${RATES[formData.shiftType][3].toFixed(2)}
                   </div>
                   <div className="text-xs text-slate-500 font-medium mt-1">
-                    4-Hour Minimum Rate
+                    Standard Contract Rate
                   </div>
                 </div>
               </div>
-              <div className="text-[11px] text-slate-500 border-t border-slate-200 pt-3 mt-4 text-center sm:text-left">
-                Billed only if on-site crew confirms 3 techs needed
+              <div className="text-[11px] text-slate-400 border-t border-slate-200 pt-3 mt-4 text-center sm:text-left">
+                Official Contract Schedule
               </div>
             </div>
 
-            {/* 4 Technicians - Scope Reference Rate */}
+            {/* 4 Technicians - Contract Reference Rate */}
             <div className="p-5 sm:p-6 rounded-2xl bg-slate-50/90 hover:bg-slate-100/80 transition-all text-slate-900 border border-slate-200/90 flex flex-col justify-between">
               <div>
                 <div className="flex items-center justify-between gap-2 pb-3.5 border-b border-slate-200 mb-3.5">
-                  <span className="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-slate-200/90 text-slate-700 text-[11px] font-bold uppercase tracking-wider">
-                    On-Site Scope Rate
+                  <span className="inline-flex items-center px-2.5 py-1 rounded-full bg-slate-200 text-slate-700 text-[11px] font-bold uppercase tracking-wider">
+                    Contract Rate
                   </span>
-                  <span className="text-[11px] font-semibold text-slate-500">
-                    Contract Ref
+                  <span className="text-[11px] font-semibold text-slate-400">
+                    4-Hour Min
                   </span>
                 </div>
                 <div className="text-center sm:text-left">
                   <div className="text-xs uppercase font-extrabold tracking-wider text-slate-500">
-                    4 Technicians Crew
+                    4 Technicians
                   </div>
                   <div className="text-2xl sm:text-3xl font-black mt-1.5 text-slate-800 tracking-tight">
                     ${RATES[formData.shiftType][4].toFixed(2)}
                   </div>
                   <div className="text-xs text-slate-500 font-medium mt-1">
-                    4-Hour Minimum Rate
+                    Standard Contract Rate
                   </div>
                 </div>
               </div>
-              <div className="text-[11px] text-slate-500 border-t border-slate-200 pt-3 mt-4 text-center sm:text-left">
-                Billed only if on-site crew confirms 4 techs needed
+              <div className="text-[11px] text-slate-400 border-t border-slate-200 pt-3 mt-4 text-center sm:text-left">
+                Official Contract Schedule
               </div>
             </div>
           </div>
