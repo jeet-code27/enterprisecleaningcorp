@@ -43,13 +43,18 @@ export default function EmergencyAuthorizationPage() {
             <span className="hidden md:inline-flex items-center gap-1 text-emerald-700 font-bold">
               <ShieldCheck className="w-3.5 h-3.5" /> Fully Insured &amp; Bonded
             </span>
-            <a
-              href="tel:5088901000"
-              className="inline-flex items-center gap-1.5 font-bold text-[#E31837] hover:underline"
-            >
-              <PhoneCall className="w-3.5 h-3.5" />
-              <span>(508) 890-1000</span>
-            </a>
+            <div className="flex flex-col items-center sm:items-end">
+              <a
+                href="tel:5088901000"
+                className="inline-flex items-center gap-1.5 font-bold text-[#E31837] hover:underline"
+              >
+                <PhoneCall className="w-3.5 h-3.5" />
+                <span>(508) 890-1000</span>
+              </a>
+              <span className="text-[10px] text-slate-500 font-medium">
+                Calls 10 PM – 8 AM returned by 8 AM
+              </span>
+            </div>
           </div>
         </div>
 
@@ -70,13 +75,13 @@ export default function EmergencyAuthorizationPage() {
         <div className="pt-6 pb-2 text-center space-y-2 border-t border-slate-200/60">
           <div className="flex flex-wrap items-center justify-center gap-6 text-xs text-slate-500 font-medium">
             <span className="flex items-center gap-1.5">
-              <CheckCircle2 className="w-3.5 h-3.5 text-emerald-600" /> 24/7 Mobile Extraction Fleet
+              <CheckCircle2 className="w-3.5 h-3.5 text-emerald-600" /> We Work 24/7 (On-Site Mitigation)
             </span>
             <span className="flex items-center gap-1.5">
               <ShieldCheck className="w-3.5 h-3.5 text-[#003B7A]" /> OSHA 30-Hour Certified Field Operations
             </span>
             <span className="flex items-center gap-1.5">
-              <Clock className="w-3.5 h-3.5 text-amber-600" /> Average Response: Under 15 Minutes
+              <Clock className="w-3.5 h-3.5 text-amber-600" /> Calls 10 PM – 8 AM Returned by 8 AM
             </span>
           </div>
           <p className="text-[11px] text-slate-400">

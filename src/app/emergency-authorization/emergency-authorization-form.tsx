@@ -407,12 +407,15 @@ export function EmergencyAuthorizationForm() {
             </div>
           </div>
 
-          <div className="flex flex-col items-center sm:items-end gap-1">
+          <div className="flex flex-col items-center sm:items-end gap-1.5 text-center sm:text-right">
             <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-red-100 text-[#E31837] text-xs font-black uppercase tracking-wider border border-red-200">
-              <Clock className="w-3.5 h-3.5" /> 24/7 Rapid Response
+              <Clock className="w-3.5 h-3.5" /> We Work 24/7
             </span>
-            <div className="text-xs font-bold text-slate-600">
+            <div className="text-xs font-bold text-slate-700">
               Hotline: <a href="tel:5088901000" className="text-[#003B7A] underline font-black">508-890-1000</a>
+            </div>
+            <div className="text-[11px] text-slate-500 font-medium max-w-[260px] leading-snug">
+              Phone availability: Calls between 10 PM and 8 AM will be returned by 8 AM
             </div>
           </div>
         </div>
@@ -745,11 +748,17 @@ export function EmergencyAuthorizationForm() {
         </div>
 
         {/* Contract Legal Clauses Box */}
-        <div className="p-4 sm:p-5 rounded-2xl bg-amber-50/80 border border-amber-200 text-xs sm:text-sm text-amber-950 space-y-2 leading-relaxed">
+        <div className="p-4 sm:p-5 rounded-2xl bg-amber-50/80 border border-amber-200 text-xs sm:text-sm text-amber-950 space-y-2.5 leading-relaxed">
           <div className="font-bold uppercase tracking-wider text-amber-900 flex items-center gap-1.5">
             <AlertTriangle className="w-4 h-4 text-amber-600 shrink-0" />
             Mandatory Contract Terms (As Stated in Contract):
           </div>
+          <p>
+            &bull; <strong>24/7 Emergency Operations:</strong> We do work 24/7. Emergency response crews and industrial drying equipment are dispatched on-call around the clock.
+          </p>
+          <p>
+            &bull; <strong>Phone Availability (10 PM – 8 AM):</strong> For phone calls received between 10:00 PM and 8:00 AM, our team will get back to you by 8:00 AM.
+          </p>
           <p>
             &bull; <strong>Four-hour minimum charges:</strong> The minimum charge applies even if the work is completed in less than four hours.
           </p>
@@ -925,8 +934,8 @@ export function EmergencyAuthorizationForm() {
           )}
         </button>
 
-        <p className="text-xs text-slate-600 font-medium">
-          Once authorized and paid, Enterprise Cleaning dispatch coordinates with on-call supervisors immediately. Questions? Call <a href="tel:5088901000" className="underline font-bold text-[#003B7A] hover:text-[#E31837]">508-890-1000</a>.
+        <p className="text-xs text-slate-600 font-medium leading-relaxed max-w-xl mx-auto">
+          We perform emergency mitigation work <strong>24/7</strong>. Phone availability note: For calls received between 10:00 PM and 8:00 AM, our team will get back to you by 8:00 AM. Direct line: <a href="tel:5088901000" className="underline font-bold text-[#003B7A] hover:text-[#E31837]">508-890-1000</a>.
         </p>
       </div>
     </form>

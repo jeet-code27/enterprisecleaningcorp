@@ -217,7 +217,8 @@ export function EmergencyCallbackForm() {
             <a href="tel:5088901000" className="text-base font-black text-slate-900 hover:text-red-600">
               (508) 890-1000
             </a>
-            <div className="text-[11px] font-bold text-red-600">24/7 Immediate Dispatch</div>
+            <div className="text-[11px] font-bold text-red-600">We Work 24/7</div>
+            <div className="text-[10px] text-slate-500 font-medium">Calls 10 PM – 8 AM returned by 8 AM</div>
           </div>
         </div>
       </div>
@@ -264,7 +265,7 @@ export function EmergencyCallbackForm() {
               />
             </div>
             <span className="text-[11px] text-slate-500 mt-1 block">
-              We will call this number immediately to confirm crew availability.
+              We work 24/7. (Calls received between 10:00 PM and 8:00 AM will be returned by 8:00 AM).
             </span>
           </div>
         </div>

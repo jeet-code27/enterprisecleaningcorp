@@ -72,10 +72,10 @@ const structuredDataFAQ = {
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "What number do I call for a cleaning or flood emergency?",
+      "name": "What number do I call for a cleaning or flood emergency, and what are your phone hours?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "For 24/7 emergency water, flood, and cleanup response, call (508) 890-1000."
+        "text": "For emergency water, flood, and cleanup response, call (508) 890-1000. We do work 24/7. Phone availability: For calls received between 10:00 PM and 8:00 AM, our team will get back to you by 8:00 AM."
       }
     },
     {
@@ -224,13 +224,16 @@ export default function EmergencyRestorationPage() {
                   Have an Emergency?
                 </h3>
                 <p className="text-sm text-slate-600 font-medium leading-relaxed">
-                  Call our main emergency hotline directly for immediate 24/7 on-call dispatch.
+                  We do work 24/7. Phone availability: For calls received between 10:00 PM and 8:00 AM, we will get back to you by 8:00 AM.
                 </p>
                 <div className="pt-3 border-t border-slate-100">
                   <a href="tel:5088901000" className="inline-flex items-center justify-center gap-2 w-full bg-[#E31837] text-white py-4 px-4 rounded-2xl hover:bg-red-700 transition-colors shadow-lg font-black text-xl">
                     <PhoneCall className="w-5 h-5 shrink-0" />
                     <span>(508) 890-1000</span>
                   </a>
+                  <span className="block mt-1.5 text-[11px] text-slate-500 font-semibold">
+                    Calls 10 PM – 8 AM returned by 8 AM
+                  </span>
                   <a href="#emergency-form" className="inline-block mt-3 text-xs font-bold text-slate-600 hover:text-red-600 underline">
                     Or fill out rapid emergency callback form ↓
                   </a>
