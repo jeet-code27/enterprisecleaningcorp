@@ -250,22 +250,75 @@ export function AwardsSection({ embedded = false, className = "" }: AwardsSectio
             </div>
 
             <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold tracking-tight text-white">
-              4-Year Consecutive Finalist &amp; <span className="text-[#00B8FF]">MetroWest Winner</span>
+              5-Year Consecutive Honoree &amp; <span className="text-[#00B8FF]">MetroWest Winner</span>
             </h3>
 
             <p className="text-xs sm:text-sm text-slate-300 font-medium mt-2.5 max-w-2xl mx-auto leading-relaxed">
-              Presented by LocaliQ and the USA TODAY Network. Ever since the Cleaning Service Company category was introduced in 2022, Enterprise Cleaning Corporation has been recognized every single year—earning 4 consecutive years of honors, back-to-back MetroWest Winner titles, and active finalist standing.
+              Presented by LocaliQ and the USA TODAY Network. Ever since the Commercial Cleaning Service category was introduced in 2022, Enterprise Cleaning Corporation has been recognized every single year—earning 5 consecutive years of regional honors (2022–2026), back-to-back MetroWest Winner titles, and current 2026 Commercial Cleaning Finalist standing.
             </p>
           </div>
 
-          {/* 3 Awards Cards Grid */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto">
-            {/* Card 1: 2025 MetroWest Winner */}
+          {/* 4 Awards Cards Grid */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 max-w-6xl mx-auto">
+            {/* Card 1: 2026 Commercial Cleaning Finalist */}
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.4, delay: 0.1 }}
+              className="bg-white/5 backdrop-blur-md border border-[#00B8FF]/40 rounded-2xl p-5 flex flex-col justify-between hover:bg-white/[0.08] hover:border-[#00B8FF] transition-all duration-300 group shadow-lg relative overflow-hidden ring-1 ring-[#00B8FF]/30"
+            >
+              <div className="absolute top-0 right-0 bg-gradient-to-l from-[#00B8FF] to-cyan-500 text-slate-950 text-[9px] font-black uppercase tracking-wider px-2.5 py-0.5 rounded-bl-lg shadow-sm">
+                2026 Latest
+              </div>
+
+              <div>
+                <div className="relative w-full h-40 bg-white rounded-xl mb-4 shadow-md group-hover:scale-[1.02] transition-transform duration-300 overflow-hidden">
+                  <Image
+                    src="/logos/2026.png"
+                    alt="2026 The Official Community's Choice Awards MetroWest Commercial Cleaning Finalist - Enterprise Cleaning Corp"
+                    fill
+                    sizes="(max-width: 768px) 100vw, 25vw"
+                    className="object-contain p-3"
+                  />
+                </div>
+
+                <div className="flex items-center justify-between mb-2">
+                  <h4 className="text-base font-bold text-white">2026 Finalist</h4>
+                  <span className="px-2.5 py-0.5 rounded-full text-[10px] font-extrabold bg-[#00B8FF]/20 border border-[#00B8FF]/50 text-[#00B8FF] shrink-0">
+                    FINALIST
+                  </span>
+                </div>
+
+                <p className="text-xs text-slate-300 font-medium leading-relaxed mb-3">
+                  Recognized as 2026 Commercial Cleaning Finalist in the official MetroWest Community's Choice Awards.
+                </p>
+              </div>
+
+              <div>
+                <a
+                  href="https://metrowestdailynews.gannettcontests.com/2026-MetroWest-Communitys-Choice-Awards-Winners/gallery?group=560987"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-full mb-3 inline-flex items-center justify-center gap-1.5 py-2 px-3 rounded-lg bg-[#00B8FF]/15 hover:bg-[#00B8FF]/25 border border-[#00B8FF]/40 text-[#00B8FF] hover:text-white text-xs font-bold transition-colors group/btn"
+                >
+                  <span>View Official Ballot</span>
+                  <ExternalLink className="w-3.5 h-3.5 group-hover/btn:translate-x-0.5 transition-transform" />
+                </a>
+
+                <div className="text-[11px] font-semibold text-slate-400 border-t border-white/10 pt-2 flex items-center justify-between">
+                  <span>Community's Choice</span>
+                  <span className="text-cyan-400 font-bold">2026 Finalist</span>
+                </div>
+              </div>
+            </motion.div>
+
+            {/* Card 2: 2025 MetroWest Winner */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.4, delay: 0.15 }}
               className="bg-white/5 backdrop-blur-md border border-white/10 rounded-2xl p-5 flex flex-col justify-between hover:bg-white/[0.08] hover:border-[#00B8FF]/50 transition-all duration-300 group shadow-lg"
             >
               <div>
@@ -274,13 +327,13 @@ export function AwardsSection({ embedded = false, className = "" }: AwardsSectio
                     src="/logos/2025.png"
                     alt="2025 The Official Community's Choice Awards MetroWest Winner - Enterprise Cleaning Corp"
                     fill
-                    sizes="(max-width: 768px) 100vw, 33vw"
+                    sizes="(max-width: 768px) 100vw, 25vw"
                     className="object-contain p-3"
                   />
                 </div>
 
                 <div className="flex items-center justify-between mb-2">
-                  <h4 className="text-base font-bold text-white">2025 MetroWest Winner</h4>
+                  <h4 className="text-base font-bold text-white">2025 Winner</h4>
                   <span className="px-2.5 py-0.5 rounded-full text-[10px] font-extrabold bg-[#00B8FF]/20 border border-[#00B8FF]/40 text-[#00B8FF] shrink-0">
                     WINNER
                   </span>
@@ -293,11 +346,11 @@ export function AwardsSection({ embedded = false, className = "" }: AwardsSectio
 
               <div className="text-[11px] font-semibold text-slate-400 border-t border-white/10 pt-2 flex items-center justify-between">
                 <span>Community's Choice</span>
-                <span className="text-emerald-400 font-bold">Latest Edition</span>
+                <span className="text-emerald-400 font-bold">MetroWest #1</span>
               </div>
             </motion.div>
 
-            {/* Card 2: 2024 MetroWest Winner */}
+            {/* Card 3: 2024 MetroWest Winner */}
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -311,13 +364,13 @@ export function AwardsSection({ embedded = false, className = "" }: AwardsSectio
                     src="/logos/2024.webp"
                     alt="2024 The Official Community's Choice Awards MetroWest Winner - Enterprise Cleaning Corp"
                     fill
-                    sizes="(max-width: 768px) 100vw, 33vw"
+                    sizes="(max-width: 768px) 100vw, 25vw"
                     className="object-contain p-3"
                   />
                 </div>
 
                 <div className="flex items-center justify-between mb-2">
-                  <h4 className="text-base font-bold text-white">2024 MetroWest Winner</h4>
+                  <h4 className="text-base font-bold text-white">2024 Winner</h4>
                   <span className="px-2.5 py-0.5 rounded-full text-[10px] font-extrabold bg-[#00B8FF]/20 border border-[#00B8FF]/40 text-[#00B8FF] shrink-0">
                     WINNER
                   </span>
@@ -334,12 +387,12 @@ export function AwardsSection({ embedded = false, className = "" }: AwardsSectio
               </div>
             </motion.div>
 
-            {/* Card 3: 2022 Best of the Best Finalist */}
+            {/* Card 4: 2022 Best of the Best Finalist */}
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              transition={{ duration: 0.4, delay: 0.3 }}
+              transition={{ duration: 0.4, delay: 0.25 }}
               className="bg-white/5 backdrop-blur-md border border-white/10 rounded-2xl p-5 flex flex-col justify-between hover:bg-white/[0.08] hover:border-[#FFE800]/50 transition-all duration-300 group shadow-lg"
             >
               <div>
@@ -348,7 +401,7 @@ export function AwardsSection({ embedded = false, className = "" }: AwardsSectio
                     src="/logos/2022.png"
                     alt="2022 Best of the Best Finalist - The Enterprise & Taunton Daily Gazette"
                     fill
-                    sizes="(max-width: 768px) 100vw, 33vw"
+                    sizes="(max-width: 768px) 100vw, 25vw"
                     className="object-contain p-3"
                   />
                 </div>
@@ -367,24 +420,38 @@ export function AwardsSection({ embedded = false, className = "" }: AwardsSectio
 
               <div className="text-[11px] font-semibold text-slate-400 border-t border-white/10 pt-2 flex items-center justify-between">
                 <span>The Enterprise / Gazette</span>
-                <span className="text-amber-300 font-bold">Top Finalist</span>
+                <span className="text-amber-300 font-bold">Inaugural Year</span>
               </div>
             </motion.div>
+          </div>
+
+          {/* Official Verification CTA Button */}
+          <div className="mt-8 text-center">
+            <a
+              href="https://metrowestdailynews.gannettcontests.com/2026-MetroWest-Communitys-Choice-Awards-Winners/gallery?group=560987"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2.5 px-6 py-3 rounded-full bg-gradient-to-r from-[#00B8FF]/20 via-white/10 to-[#00B8FF]/20 hover:from-[#00B8FF]/30 hover:to-[#00B8FF]/30 border border-[#00B8FF]/40 text-white font-bold text-xs sm:text-sm tracking-wide transition-all duration-300 shadow-lg hover:shadow-cyan-500/20 hover:scale-[1.02] group"
+            >
+              <Medal className="w-4 h-4 text-[#FFE800] shrink-0" />
+              <span>Verify Official 2026 MetroWest Community's Choice Awards Finalist Ballot</span>
+              <ExternalLink className="w-3.5 h-3.5 text-[#00B8FF] group-hover:translate-x-0.5 transition-transform shrink-0" />
+            </a>
           </div>
 
           {/* Trust Badges Strip */}
           <div className="mt-8 flex flex-wrap items-center justify-center gap-3 text-center">
             <div className="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-white/5 border border-white/10 text-xs font-semibold text-slate-300">
               <CheckCircle2 className="w-4 h-4 text-emerald-400 shrink-0" />
-              <span>Recognized Every Year Since Category Inception (2022 – 2025)</span>
+              <span>Recognized Every Single Year (2022 – 2026)</span>
             </div>
             <div className="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-white/5 border border-white/10 text-xs font-semibold text-slate-300">
               <Trophy className="w-4 h-4 text-[#FFE800]" />
-              <span>Back-to-Back 2024 &amp; 2025 MetroWest Winner</span>
+              <span>Multi-Year MetroWest Winner (2024 &amp; 2025)</span>
             </div>
             <div className="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-white/5 border border-white/10 text-xs font-semibold text-slate-300">
               <Medal className="w-4 h-4 text-[#00B8FF]" />
-              <span>Current Year Finalist (4+ Consecutive Years)</span>
+              <span>2026 Commercial Cleaning Finalist (5 Consecutive Years)</span>
             </div>
           </div>
         </motion.div>
