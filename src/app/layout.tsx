@@ -20,7 +20,7 @@ const localBusinessSchema = {
   "logo": "https://www.enterprisecleaningcorp.com/images/ecc-new-logo.png",
   "url": "https://www.enterprisecleaningcorp.com/",
   "telephone": "+1-508-890-1000",
-  "email": "customerservice@enterprisecleaningcorp.com",
+  "email": "sales@enterprisecleaningcorp.com",
   "priceRange": "$$",
   "currenciesAccepted": "USD",
   "paymentAccepted": "Cash, Credit Card, Check, Invoice",

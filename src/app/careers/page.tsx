@@ -446,7 +446,7 @@ export default function CareersPage() {
         <div className="container mx-auto px-4 sm:px-6 max-w-4xl text-center">
           <h3 className="text-2xl font-bold mb-2">Have Questions About Working With Us?</h3>
           <p className="text-slate-400 text-sm mb-6">
-            Contact our office directly at <strong className="text-white">(508) 890-1000</strong> or email <a href="mailto:customerservice@enterprisecleaningcorp.com" className="text-[#00B8FF] hover:underline">customerservice@enterprisecleaningcorp.com</a>.
+            Contact our office directly at <strong className="text-white">(508) 890-1000</strong> or email <a href="mailto:sales@enterprisecleaningcorp.com" className="text-[#00B8FF] hover:underline">sales@enterprisecleaningcorp.com</a>.
           </p>
         </div>
       </section>

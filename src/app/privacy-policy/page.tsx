@@ -145,7 +145,7 @@ export default function PrivacyPolicyPage() {
             <li><strong>Enterprise Cleaning Corporation</strong></li>
             <li>99 Hartwell Street, Suite B, West Boylston, MA 01583</li>
             <li>Phone: (508) 890-1000</li>
-            <li>Email: <a href="mailto:customerservice@enterprisecleaningcorp.com">customerservice@enterprisecleaningcorp.com</a></li>
+            <li>Email: <a href="mailto:sales@enterprisecleaningcorp.com">sales@enterprisecleaningcorp.com</a></li>
           </ul>
 
           <h2>13. Changes to This Policy</h2>

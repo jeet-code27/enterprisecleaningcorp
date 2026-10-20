@@ -90,8 +90,8 @@ export default function ContactPage() {
                   </div>
                   <div className="min-w-0 flex-1">
                     <h3 className="text-base sm:text-lg font-bold text-slate-900 mb-1">Email Us</h3>
-                    <a href="mailto:customerservice@enterprisecleaningcorp.com" className="text-base sm:text-lg text-slate-600 hover:text-[#00B8FF] font-medium transition-colors break-all">
-                      customerservice@enterprisecleaningcorp.com
+                    <a href="mailto:sales@enterprisecleaningcorp.com" className="text-base sm:text-lg text-slate-600 hover:text-[#00B8FF] font-medium transition-colors break-all">
+                      sales@enterprisecleaningcorp.com
                     </a>
                   </div>
                 </div>
@@ -224,11 +224,11 @@ export default function ContactPage() {
               <h3 className="text-lg sm:text-xl font-extrabold text-slate-900">Customer Service</h3>
               <span className="mt-1 mb-3 sm:mb-4 inline-block text-xs font-bold uppercase tracking-widest text-[#00B8FF] bg-blue-50 px-3 py-1 rounded-full">Support Team</span>
               <a
-                href="mailto:customerservice@enterprisecleaningcorp.com"
+                href="mailto:sales@enterprisecleaningcorp.com"
                 className="flex items-center gap-1.5 text-xs lg:text-sm font-semibold text-slate-600 hover:text-[#00B8FF] transition-colors break-all"
               >
                 <Mail className="w-4 h-4 shrink-0 text-[#00B8FF]" />
-                customerservice@enterprisecleaningcorp.com
+                sales@enterprisecleaningcorp.com
               </a>
             </div>
 

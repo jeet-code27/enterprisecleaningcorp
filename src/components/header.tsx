@@ -119,7 +119,7 @@ export function Header() {
               </Link>
               <a href="tel:5088901000" className="flex items-center gap-1.5 font-bold shrink-0 hover:underline"><Phone className="size-3.5 text-[#FFE800]" />Serving New England: 508-890-1000</a>
 
-              <a href="mailto:customerservice@enterprisecleaningcorp.com" className="flex items-center gap-1.5 shrink-0 hover:underline"><Mail className="size-3.5 text-white" />customerservice@enterprisecleaningcorp.com</a>
+              <a href="mailto:sales@enterprisecleaningcorp.com" className="flex items-center gap-1.5 shrink-0 hover:underline"><Mail className="size-3.5 text-white" />sales@enterprisecleaningcorp.com</a>
               <span className="flex items-center gap-1.5 shrink-0"><MapPin className="size-3.5 text-white" />99 Hartwell Street, Suite B, West Boylston, MA 01583</span>
               <Link
                 href="/emergency-restoration-services-central-ma"
@@ -135,7 +135,7 @@ export function Header() {
               </Link>
               <a href="tel:5088901000" className="flex items-center gap-1.5 font-bold shrink-0 hover:underline"><Phone className="size-3.5 text-[#FFE800]" />Serving New England: 508-890-1000</a>
 
-              <a href="mailto:customerservice@enterprisecleaningcorp.com" className="flex items-center gap-1.5 shrink-0 hover:underline"><Mail className="size-3.5 text-white" />customerservice@enterprisecleaningcorp.com</a>
+              <a href="mailto:sales@enterprisecleaningcorp.com" className="flex items-center gap-1.5 shrink-0 hover:underline"><Mail className="size-3.5 text-white" />sales@enterprisecleaningcorp.com</a>
             </div>
           </div>
           {/* Desktop Static Bar */}
@@ -156,7 +156,7 @@ export function Header() {
                 <span>24/7 Emergency (24 hrs / 7 Days)</span>
               </Link>
               <span className="text-white/50">|</span>
-              <a href="mailto:customerservice@enterprisecleaningcorp.com" className="flex items-center gap-1.5 hover:underline"><Mail className="size-3.5 text-white" />customerservice@enterprisecleaningcorp.com</a>
+              <a href="mailto:sales@enterprisecleaningcorp.com" className="flex items-center gap-1.5 hover:underline"><Mail className="size-3.5 text-white" />sales@enterprisecleaningcorp.com</a>
             </div>
             <div className="flex items-center gap-4">
               <a href="tel:5088901000" className="flex items-center gap-1.5 font-bold hover:underline"><Phone className="size-3.5 text-[#FFE800]" />Serving New England: 508-890-1000</a>

@@ -157,8 +157,8 @@ export function Footer() {
               </li>
               <li className="flex items-center gap-3">
                 <Mail className="size-5 shrink-0 text-white" />
-                <a href="mailto:customerservice@enterprisecleaningcorp.com" className="hover:underline transition-colors break-all">
-                  customerservice@enterprisecleaningcorp.com
+                <a href="mailto:sales@enterprisecleaningcorp.com" className="hover:underline transition-colors break-all">
+                  sales@enterprisecleaningcorp.com
                 </a>
               </li>
               <li className="flex items-center gap-3">

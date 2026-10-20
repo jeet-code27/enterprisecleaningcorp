@@ -29,7 +29,7 @@ function getDepartmentRecipients(department?: string, service?: string): { to: s
     return { to: "jbiage@enterprisecleaningcorp.com", cc: DEFAULT_ADMIN };
   }
   if (dept.includes("customer service") || dept.includes("support")) {
-    return { to: "customerservice@enterprisecleaningcorp.com", cc: DEFAULT_ADMIN };
+    return { to: "sales@enterprisecleaningcorp.com", cc: DEFAULT_ADMIN };
   }
   if (dept.includes("sales")) {
     return { to: DEFAULT_ADMIN };
