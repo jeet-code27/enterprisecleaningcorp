@@ -1,6 +1,7 @@
 import { MetadataRoute } from "next";
 import dbConnect from "@/lib/mongoose";
 import Post from "@/models/Post";
+import { regionalCities } from "@/data/regional-cities";
 
 const baseUrl = process.env.NEXT_PUBLIC_APP_URL || "https://www.enterprisecleaningcorp.com";
 
@@ -92,6 +93,8 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     "/commercial-cleaning-berlin-ma",
     "/commercial-cleaning-hudson-ma",
     "/commercial-cleaning-natick-ma",
+    // Western Massachusetts & Connecticut
+    ...regionalCities.map(c => `/${c.slug}`),
   ];
 
   const sitemap: MetadataRoute.Sitemap = [

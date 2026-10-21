@@ -93,7 +93,9 @@ const localBusinessSchema = {
     { "@type": "AdministrativeArea", "name": "Middlesex County, MA" },
     { "@type": "AdministrativeArea", "name": "Greater Boston, MA" },
     { "@type": "AdministrativeArea", "name": "Rhode Island" },
-    { "@type": "AdministrativeArea", "name": "Southern New Hampshire" }
+    { "@type": "AdministrativeArea", "name": "Southern New Hampshire" },
+    { "@type": "AdministrativeArea", "name": "Western Massachusetts" },
+    { "@type": "AdministrativeArea", "name": "Connecticut" }
   ],
   "hasOfferCatalog": {
     "@type": "OfferCatalog",

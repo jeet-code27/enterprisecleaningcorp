@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { MapPin } from "lucide-react";
+import { regionalCitiesByRegion } from "@/data/regional-cities";
 
 const cityLinks: Record<string, string> = {
   "Worcester": "/commercial-cleaning-worcester-ma",
@@ -53,7 +54,7 @@ const locations = [
 
 export function ServiceAreas() {
   return (
-    <section className="py-20 md:py-28 bg-white relative overflow-hidden">
+    <section id="service-areas" className="py-20 md:py-28 bg-white relative overflow-hidden scroll-mt-24">
       {/* Top border accent */}
       <div className="absolute top-0 left-0 w-full h-1" style={{ background: "linear-gradient(to right, #00B8FF, #E31837, #FFE800)" }} />
 
@@ -107,6 +108,35 @@ export function ServiceAreas() {
               </div>
             );
           })}
+        </div>
+
+        {/* Western MA & Connecticut */}
+        <div className="mt-12">
+          <h3 className="text-center text-xl md:text-2xl font-extrabold text-slate-900 mb-6">
+            Now Expanding into <span className="text-[#00B8FF]">Western MA &amp; Connecticut</span>
+          </h3>
+          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
+            {regionalCitiesByRegion().map(group => (
+              <div key={group.region} className="rounded-2xl border border-slate-200 bg-slate-50/60 p-4">
+                <p className="text-xs font-extrabold uppercase tracking-widest text-[#E31837] mb-3">{group.region}</p>
+                <div className="grid grid-cols-2 sm:grid-cols-1 gap-2">
+                  {group.cities.map(c => (
+                    <Link
+                      key={c.slug}
+                      href={`/${c.slug}`}
+                      title={`Commercial cleaning in ${c.city}, ${c.state}`}
+                      className="flex items-center gap-2 px-3 py-2.5 bg-[#0090c8]/10 border border-[#0090c8]/40 rounded-xl hover:border-[#0090c8] hover:bg-[#0090c8]/20 transition-all duration-200 group"
+                    >
+                      <span className="w-2 h-2 rounded-full bg-[#0090c8] shrink-0 group-hover:bg-[#E31837] transition-colors" />
+                      <span className="text-slate-900 font-bold text-xs md:text-sm leading-tight">
+                        {c.city}
+                      </span>
+                    </Link>
+                  ))}
+                </div>
+              </div>
+            ))}
+          </div>
         </div>
 
         {/* Bottom note */}

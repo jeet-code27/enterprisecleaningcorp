@@ -1,0 +1,15 @@
+import React from "react";
+import { notFound } from "next/navigation";
+import { getRegionalCityBySlug } from "@/data/regional-cities";
+import { RegionalCityPageTemplate, regionalCityMetadata } from "@/components/templates/regional-city-page-template";
+
+const SLUG = "best-commercial-cleaning-company-chicopee-ma";
+const HERO_IMAGE_INDEX = 7;
+
+export const metadata = regionalCityMetadata(getRegionalCityBySlug(SLUG)!, HERO_IMAGE_INDEX);
+
+export default function ChicopeeMaCommercialCleaningPage() {
+  const city = getRegionalCityBySlug(SLUG);
+  if (!city) notFound();
+  return <RegionalCityPageTemplate city={city} heroImageIndex={HERO_IMAGE_INDEX} />;
+}
