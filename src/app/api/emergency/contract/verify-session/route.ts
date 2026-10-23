@@ -126,9 +126,9 @@ export async function GET(req: NextRequest) {
         // Send to admin team
         await sendEmail({
           to: notifyRecipients.join(', '),
-          subject: `🚨 URGENT: Emergency Contract SIGNED & PAID ($${submission.totalAmount.toFixed(
+          subject: `DISPATCH AUTHORIZATION: Emergency Contract Signed & Paid ($${submission.totalAmount.toFixed(
             2
-          )}) — Dispatch ${submission.technicianCount} Techs to ${submission.town}`,
+          )}) - Dispatch ${submission.technicianCount} Techs to ${submission.town}`,
           html: adminHtml,
         });
 
@@ -138,10 +138,10 @@ export async function GET(req: NextRequest) {
 
           await sendEmail({
             to: submission.email,
-            subject: `Confirmed: Emergency Dispatch Authorization & Payment Receipt #${submission._id
+            subject: `Emergency Services Dispatch Confirmation & Payment Receipt #${submission._id
               .toString()
               .slice(-8)
-              .toUpperCase()} — Enterprise Cleaning Corp`,
+              .toUpperCase()} - Enterprise Cleaning Corp`,
             html: userHtml,
           });
         }

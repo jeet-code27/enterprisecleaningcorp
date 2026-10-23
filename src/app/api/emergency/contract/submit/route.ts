@@ -113,7 +113,7 @@ export async function POST(req: Request) {
       // Alert Alex & Julio
       const adminEmailPromise = sendEmail({
         to: `${ALEX_EMAIL}, ${JULIO_EMAIL}`,
-        subject: `🚨 [CONTRACT SIGNED & DISPATCH READY] $${calculation.totalAmount.toFixed(2)} - ${data.companyName} (${data.phone})`,
+        subject: `DISPATCH AUTHORIZATION: Emergency Contract Signed & Paid ($${calculation.totalAmount.toFixed(2)}) - ${data.companyName} (${data.phone})`,
         html: getEmergencyContractAdminEmailHtml(emailData),
         replyTo: data.email || undefined,
       });
@@ -123,7 +123,7 @@ export async function POST(req: Request) {
       if (data.email && data.email.includes('@')) {
         customerEmailPromise = sendEmail({
           to: data.email,
-          subject: `Confirmed: Emergency Services Dispatch Contract - Enterprise Cleaning Corp`,
+          subject: `Emergency Services Dispatch Confirmation & Payment Receipt - Enterprise Cleaning Corp`,
           html: getEmergencyContractUserEmailHtml(emailData),
         });
       }

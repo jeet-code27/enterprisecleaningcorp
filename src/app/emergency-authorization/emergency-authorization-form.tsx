@@ -54,8 +54,8 @@ const OVERTIME_RATES = {
   after_8pm_weekend: { perHour: 95.0, perIncrement: 23.75 },
 };
 
-// TEMPORARY $1.00 TEST MODE FOR LIVE STRIPE PAYMENT TESTING (Set to false after testing)
-const IS_ONE_DOLLAR_TEST = true;
+// Test mode disabled: original contract prices active ($475 weekday / $575 after-hours)
+const IS_ONE_DOLLAR_TEST = false;
 
 export function EmergencyAuthorizationForm() {
   const searchParams = useSearchParams();
@@ -678,7 +678,11 @@ export function EmergencyAuthorizationForm() {
                   <div className="text-3xl sm:text-4xl font-black mt-1.5 text-[#FFE800] tracking-tight">
                     ${RATES[formData.shiftType][2].toFixed(2)}
                   </div>
-                  <div className="text-xs text-emerald-300 font-semibold mt-1">
+                  <div className="mt-2 inline-flex items-center gap-1.5 px-2.5 py-1 rounded-lg bg-emerald-950/90 border border-emerald-500/50 text-emerald-300 text-xs font-bold">
+                    <span>${(RATES[formData.shiftType][2] / 2).toFixed(2)} / technician</span>
+                    <span className="text-slate-400 text-[10px] font-normal">(4-hr min)</span>
+                  </div>
+                  <div className="text-xs text-slate-300 font-medium mt-2">
                     Active Initial Crew Authorization
                   </div>
                 </div>
@@ -707,7 +711,11 @@ export function EmergencyAuthorizationForm() {
                   <div className="text-2xl sm:text-3xl font-black mt-1.5 text-slate-800 tracking-tight">
                     ${RATES[formData.shiftType][3].toFixed(2)}
                   </div>
-                  <div className="text-xs text-slate-500 font-medium mt-1">
+                  <div className="mt-2 inline-flex items-center gap-1 px-2.5 py-1 rounded-lg bg-slate-200/90 text-slate-800 text-xs font-bold">
+                    <span>${(RATES[formData.shiftType][3] / 3).toFixed(2)} / tech</span>
+                    <span className="text-slate-500 text-[10px] font-normal">(4-hr min)</span>
+                  </div>
+                  <div className="text-xs text-slate-500 font-medium mt-2">
                     Standard Contract Rate
                   </div>
                 </div>
@@ -735,7 +743,11 @@ export function EmergencyAuthorizationForm() {
                   <div className="text-2xl sm:text-3xl font-black mt-1.5 text-slate-800 tracking-tight">
                     ${RATES[formData.shiftType][4].toFixed(2)}
                   </div>
-                  <div className="text-xs text-slate-500 font-medium mt-1">
+                  <div className="mt-2 inline-flex items-center gap-1 px-2.5 py-1 rounded-lg bg-slate-200/90 text-slate-800 text-xs font-bold">
+                    <span>${(RATES[formData.shiftType][4] / 4).toFixed(2)} / tech</span>
+                    <span className="text-slate-500 text-[10px] font-normal">(4-hr min)</span>
+                  </div>
+                  <div className="text-xs text-slate-500 font-medium mt-2">
                     Standard Contract Rate
                   </div>
                 </div>
@@ -748,13 +760,13 @@ export function EmergencyAuthorizationForm() {
 
           {/* Explanation Banner */}
           <div className="p-4 sm:p-5 rounded-2xl bg-blue-50/80 border border-blue-200/80 text-xs sm:text-sm text-blue-950 flex items-start gap-3 leading-relaxed font-medium">
-            <span className="text-blue-600 font-black text-base shrink-0 mt-0.5">ℹ️</span>
+            <Info className="w-5 h-5 text-blue-600 shrink-0 mt-0.5" />
             <div className="space-y-1">
               <div className="font-bold text-blue-950 text-xs uppercase tracking-wider">
                 Transparent Crew Sizing Policy:
               </div>
               <p className="text-slate-700 text-xs sm:text-sm">
-                Your card is charged today strictly for the <strong>2-technician initial crew deposit (${RATES[formData.shiftType][2].toFixed(2)})</strong>. Once on site, our certified supervisors assess the severity and square footage of the damage. If an expanded crew (3 or 4 technicians) is required to swiftly mitigate loss, the pre-authorized contract rates above will govern final billing.
+                Each technician is billed at <strong>${(RATES[formData.shiftType][2] / 2).toFixed(2)} per technician</strong> for the initial 4-hour portal-to-portal dispatch. Your card is authorized today for the initial 2-technician crew deposit (<strong>${RATES[formData.shiftType][2].toFixed(2)}</strong>). If on-site evaluation by our crew supervisor confirms that 3 or 4 technicians are needed for rapid loss containment, the contracted per-technician rates above apply to the final invoice.
               </p>
             </div>
           </div>
@@ -852,10 +864,15 @@ export function EmergencyAuthorizationForm() {
             Authorization &amp; Billing Breakdown:
           </div>
           <div className="flex items-center justify-between text-sm sm:text-base">
-            <span className="text-slate-300">
-              Initial Crew Deposit (2 Technicians &bull; 4-Hr Minimum):
-            </span>
-            <span className="font-bold text-white">${baseRate.toFixed(2)}</span>
+            <div className="flex flex-col">
+              <span className="text-slate-300 font-bold">
+                Initial Crew Deposit (2 Technicians &bull; 4-Hr Minimum):
+              </span>
+              <span className="text-xs text-emerald-400 font-medium">
+                ${(baseRate / 2).toFixed(2)} per technician for initial 4 hours
+              </span>
+            </div>
+            <span className="font-bold text-white text-base">${baseRate.toFixed(2)}</span>
           </div>
           <div className="flex items-center justify-between text-sm sm:text-base">
             <span className="text-slate-300">
@@ -919,7 +936,7 @@ export function EmergencyAuthorizationForm() {
             className="mt-1 w-5 h-5 rounded text-[#003B7A] focus:ring-[#003B7A] border-slate-300 shrink-0 cursor-pointer"
           />
           <span className="text-xs sm:text-sm font-bold text-slate-800 leading-relaxed">
-            I confirm I am authorized to bind payment for this company and agree to the initial 2-technician deposit of ${baseRate.toFixed(2)} + processing fee (Total: ${totalAmount.toFixed(2)}). I acknowledge and accept the contractual 3 &amp; 4 technician rates and overtime terms if an expanded crew is determined necessary upon on-site evaluation.
+            I confirm I am authorized to bind payment for this company and agree to the initial 2-technician deposit of ${baseRate.toFixed(2)} (${(baseRate / 2).toFixed(2)}/technician for 4-hr minimum) + processing fee (Total: ${totalAmount.toFixed(2)}). I acknowledge and accept the contractual 3 &amp; 4 technician rates and overtime terms if an expanded crew is determined necessary upon on-site evaluation.
           </span>
         </label>
       </div>

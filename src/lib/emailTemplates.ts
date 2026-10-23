@@ -751,129 +751,217 @@ export interface EmergencyContractEmailData {
 }
 
 export function getEmergencyContractAdminEmailHtml(data: EmergencyContractEmailData): string {
+  const perTechRate = data.technicianCount > 0 ? (data.baseRate / data.technicianCount).toFixed(2) : '237.50';
+  const isAfterHours = data.shiftLabel.toLowerCase().includes('after') || data.shiftLabel.toLowerCase().includes('weekend');
+  const standardOrAfter = isAfterHours ? 'After-Hours / Weekend' : 'Standard Business Hours';
+
   return `
   <!DOCTYPE html>
   <html>
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>🚨 DISPATCH READY: Contract Signed & Paid</title>
+    <title>Dispatch Authorization: Contract Signed and Paid</title>
   </head>
-  <body style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; background-color: #0f172a; margin: 0; padding: 25px 10px; -webkit-font-smoothing: antialiased;">
-    <table width="100%" border="0" cellspacing="0" cellpadding="0" style="max-width: 660px; margin: 0 auto; background-color: #ffffff; border-radius: 16px; overflow: hidden; box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5); border: 3px solid #16a34a;">
+  <body style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; background-color: #f1f5f9; margin: 0; padding: 25px 10px; -webkit-font-smoothing: antialiased;">
+    <table width="100%" border="0" cellspacing="0" cellpadding="0" style="max-width: 660px; margin: 0 auto; background-color: #ffffff; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 20px rgba(15, 23, 42, 0.08); border: 1px solid #cbd5e1;">
       
-      <!-- Top Alert Banner -->
+      <!-- Top Brand Accent -->
       <tr>
-        <td style="background: linear-gradient(135deg, #15803d 0%, #16a34a 50%, #14532d 100%); padding: 26px 20px; text-align: center;">
-          <div style="display: inline-block; background-color: #fef08a; color: #14532d; font-size: 12px; font-weight: 900; text-transform: uppercase; letter-spacing: 1.5px; padding: 6px 16px; border-radius: 50px; margin-bottom: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.2);">
-            ✅ CONTRACT SIGNED &amp; PAYMENT AUTHORIZED — ROLL CREW
+        <td style="background-color: ${BRAND_NAVY}; height: 5px; font-size: 0; line-height: 0;">&nbsp;</td>
+      </tr>
+
+      <!-- Official Header with Logo -->
+      <tr>
+        <td style="background-color: #ffffff; padding: 28px 25px 20px 25px; text-align: center; border-bottom: 1px solid #e2e8f0;">
+          <a href="https://enterprisecleaningcorp.com" target="_blank" style="text-decoration: none; display: inline-block;">
+            <img src="${LOGO_URL}" alt="Enterprise Cleaning Corporation" width="240" style="max-width: 240px; width: 100%; height: auto; display: block; margin: 0 auto;" />
+          </a>
+          <div style="margin-top: 10px;">
+            <span style="color: ${BRAND_NAVY}; font-size: 11px; font-weight: 800; letter-spacing: 1.5px; text-transform: uppercase;">
+              Emergency Commercial Restoration &bull; Rapid Dispatch Division
+            </span>
           </div>
-          <h1 style="color: #ffffff; margin: 0; font-size: 26px; font-weight: 900; letter-spacing: -0.5px;">
-            $${data.totalAmount.toFixed(2)} Paid • ${data.technicianCount} Technicians
+        </td>
+      </tr>
+
+      <!-- Dispatch Authorization Banner (Solid Colors, Zero Emojis, Pure White Text) -->
+      <tr>
+        <td style="background-color: #003B7A; padding: 22px 20px; text-align: center;">
+          <div style="display: inline-block; background-color: #059669; color: #ffffff; font-size: 11px; font-weight: 800; text-transform: uppercase; letter-spacing: 1.2px; padding: 5px 14px; border-radius: 4px; margin-bottom: 8px;">
+            Dispatch Authorized &bull; Payment Processed
+          </div>
+          <h1 style="color: #ffffff; margin: 0; font-size: 24px; font-weight: 800; line-height: 1.2;">
+            $${data.totalAmount.toFixed(2)} USD Authorized
           </h1>
-          <p style="color: #dcfce7; margin: 8px 0 0 0; font-size: 15px; font-weight: 700;">
-            ${data.companyName} (${data.town}, MA)
+          <p style="color: #ffffff; margin: 6px 0 0 0; font-size: 15px; font-weight: 700;">
+            ${data.companyName || data.name} &bull; ${data.town}, MA
           </p>
         </td>
       </tr>
 
-      <!-- Action Box -->
+      <!-- Action Panel -->
       <tr>
-        <td style="padding: 20px 25px; text-align: center; background-color: #f0fdf4; border-bottom: 1px solid #bbf7d0;">
-          <a href="https://www.enterprisecleaningcorp.com/admin/blog/emergency/${data.submissionId}" style="display: inline-block; background-color: #16a34a; color: #ffffff; text-decoration: none; padding: 14px 28px; border-radius: 12px; font-size: 16px; font-weight: 900; box-shadow: 0 4px 14px rgba(22, 163, 74, 0.4); margin-bottom: 8px;">
-            📄 View Signed Contract in Admin Panel ↗
+        <td style="padding: 18px 25px; text-align: center; background-color: #f8fafc; border-bottom: 1px solid #e2e8f0;">
+          <a href="https://www.enterprisecleaningcorp.com/admin/blog/emergency/${data.submissionId}" style="display: inline-block; background-color: ${BRAND_NAVY}; color: #ffffff; text-decoration: none; padding: 12px 28px; border-radius: 6px; font-size: 14px; font-weight: 700; letter-spacing: 0.3px; margin-bottom: 6px;">
+            View Signed Authorization in Admin Portal
           </a>
-          <div>
-            <a href="tel:${data.phone.replace(/[^0-9+]/g, '')}" style="display: inline-block; color: #15803d; font-weight: 800; font-size: 14px; text-decoration: underline;">
-              Call Client Immediately: ${data.phone}
+          <div style="margin-top: 6px;">
+            <span style="color: #475569; font-size: 13px; font-weight: 600;">Immediate Client Callback: </span>
+            <a href="tel:${data.phone.replace(/[^0-9+]/g, '')}" style="color: ${BRAND_NAVY}; font-weight: 800; font-size: 14px; text-decoration: underline;">
+              ${data.phone}
             </a>
           </div>
         </td>
       </tr>
       
-      <!-- Contract Breakdown -->
+      <!-- Contract & Dispatch Details Table -->
       <tr>
-        <td style="padding: 25px 30px;">
-          <h2 style="font-size: 15px; color: #0f172a; margin: 0 0 15px 0; text-transform: uppercase; letter-spacing: 0.8px; font-weight: 800;">
-            Contract &amp; Dispatch Details
+        <td style="padding: 26px 28px;">
+          <h2 style="font-size: 14px; color: #0f172a; margin: 0 0 14px 0; text-transform: uppercase; letter-spacing: 0.8px; font-weight: 800;">
+            Dispatch &amp; Incident Summary
           </h2>
 
-          <table width="100%" border="0" cellspacing="0" cellpadding="10" style="background-color: #f8fafc; border-radius: 12px; border: 1px solid #e2e8f0; font-size: 14px; margin-bottom: 20px;">
+          <table width="100%" border="0" cellspacing="0" cellpadding="10" style="background-color: #ffffff; border-radius: 8px; border: 1px solid #e2e8f0; font-size: 13px; margin-bottom: 20px;">
             <tr>
-              <td width="38%" style="font-weight: 700; color: #475569; background-color: #f1f5f9;">Customer / Company:</td>
+              <td width="38%" style="font-weight: 700; color: #475569; background-color: #f8fafc;">Customer / Company:</td>
               <td style="color: #0f172a; font-weight: 800;">${data.companyName}</td>
             </tr>
             <tr>
-              <td style="font-weight: 700; color: #475569; border-top: 1px solid #e2e8f0; background-color: #f1f5f9;">Authorized Signer:</td>
-              <td style="color: #0f172a; font-weight: 800; border-top: 1px solid #e2e8f0;">${data.name} ${data.signerTitle ? '(' + data.signerTitle + ')' : ''}</td>
+              <td style="font-weight: 700; color: #475569; border-top: 1px solid #e2e8f0; background-color: #f8fafc;">Authorized Signer:</td>
+              <td style="color: #0f172a; font-weight: 700; border-top: 1px solid #e2e8f0;">
+                ${data.name} ${data.signerTitle ? '(' + data.signerTitle + ')' : ''}
+              </td>
             </tr>
             <tr>
-              <td style="font-weight: 700; color: #475569; border-top: 1px solid #e2e8f0; background-color: #f1f5f9;">Callback Phone:</td>
-              <td style="color: #16a34a; font-weight: 900; border-top: 1px solid #e2e8f0;">${data.phone}</td>
+              <td style="font-weight: 700; color: #475569; border-top: 1px solid #e2e8f0; background-color: #f8fafc;">Primary Phone:</td>
+              <td style="color: #0f172a; font-weight: 800; border-top: 1px solid #e2e8f0;">
+                <a href="tel:${data.phone.replace(/[^0-9+]/g, '')}" style="color: ${BRAND_NAVY}; text-decoration: none;">${data.phone}</a>
+              </td>
             </tr>
             <tr>
-              <td style="font-weight: 700; color: #475569; border-top: 1px solid #e2e8f0; background-color: #f1f5f9;">Service Address:</td>
+              <td style="font-weight: 700; color: #475569; border-top: 1px solid #e2e8f0; background-color: #f8fafc;">Email Address:</td>
+              <td style="color: #0f172a; border-top: 1px solid #e2e8f0;">
+                <a href="mailto:${data.email}" style="color: ${BRAND_NAVY}; text-decoration: underline;">${data.email}</a>
+              </td>
+            </tr>
+            <tr>
+              <td style="font-weight: 700; color: #475569; border-top: 1px solid #e2e8f0; background-color: #f8fafc;">Service Address:</td>
               <td style="color: #0f172a; font-weight: 700; border-top: 1px solid #e2e8f0;">
                 ${data.propertyAddress}, ${data.town}, MA
                 <div>
-                  <a href="https://maps.google.com/?q=${encodeURIComponent(data.propertyAddress + ', ' + data.town + ', MA')}" target="_blank" style="font-size: 12px; color: #0284c7; text-decoration: underline; font-weight: 600;">Open in Maps ↗</a>
+                  <a href="https://maps.google.com/?q=${encodeURIComponent(data.propertyAddress + ', ' + data.town + ', MA')}" target="_blank" style="font-size: 11px; color: #0284c7; text-decoration: underline; font-weight: 600;">Open Location in Google Maps</a>
                 </div>
               </td>
             </tr>
             <tr>
-              <td style="font-weight: 700; color: #475569; border-top: 1px solid #e2e8f0; background-color: #f1f5f9;">Incident / Type:</td>
+              <td style="font-weight: 700; color: #475569; border-top: 1px solid #e2e8f0; background-color: #f8fafc;">Emergency Category:</td>
               <td style="color: #dc2626; font-weight: 800; border-top: 1px solid #e2e8f0;">${data.emergencyType}</td>
             </tr>
             <tr>
-              <td style="font-weight: 700; color: #475569; border-top: 1px solid #e2e8f0; background-color: #f1f5f9;">Shift &amp; Crew:</td>
-              <td style="color: #0f172a; font-weight: 800; border-top: 1px solid #e2e8f0;">
-                ${data.technicianCount} Technicians • ${data.shiftLabel}
+              <td style="font-weight: 700; color: #475569; border-top: 1px solid #e2e8f0; background-color: #f8fafc;">Shift Classification:</td>
+              <td style="color: #0f172a; font-weight: 700; border-top: 1px solid #e2e8f0;">${data.shiftLabel}</td>
+            </tr>
+          </table>
+
+          <!-- Transparent Pricing Breakdown Section -->
+          <h2 style="font-size: 14px; color: #0f172a; margin: 20px 0 12px 0; text-transform: uppercase; letter-spacing: 0.8px; font-weight: 800;">
+            Transparent Pricing &amp; Billing Breakdown
+          </h2>
+
+          <table width="100%" border="0" cellspacing="0" cellpadding="10" style="background-color: #ffffff; border-radius: 8px; border: 1px solid #e2e8f0; font-size: 13px; margin-bottom: 20px;">
+            <tr>
+              <td width="55%" style="font-weight: 700; color: #475569; background-color: #f8fafc;">Dispatched Crew Sizing:</td>
+              <td style="color: #0f172a; font-weight: 800;">${data.technicianCount} Certified Technicians</td>
+            </tr>
+            <tr>
+              <td style="font-weight: 700; color: #475569; border-top: 1px solid #e2e8f0; background-color: #f8fafc;">Per-Technician Rate (Initial 4-Hr Min):</td>
+              <td style="color: #0284c7; font-weight: 800; border-top: 1px solid #e2e8f0;">
+                $${perTechRate} / technician
               </td>
             </tr>
             <tr>
-              <td style="font-weight: 700; color: #475569; border-top: 1px solid #e2e8f0; background-color: #f1f5f9;">Base (4-Hr Min):</td>
-              <td style="color: #0f172a; font-weight: 700; border-top: 1px solid #e2e8f0;">$${data.baseRate.toFixed(2)}</td>
+              <td style="font-weight: 700; color: #475569; border-top: 1px solid #e2e8f0; background-color: #f8fafc;">Initial Crew Deposit (2 Techs &bull; 4 Hrs):</td>
+              <td style="color: #0f172a; font-weight: 700; border-top: 1px solid #e2e8f0;">$${data.baseRate.toFixed(2)} USD</td>
             </tr>
             <tr>
-              <td style="font-weight: 700; color: #475569; border-top: 1px solid #e2e8f0; background-color: #f1f5f9;">Processing Fee:</td>
+              <td style="font-weight: 700; color: #475569; border-top: 1px solid #e2e8f0; background-color: #f8fafc;">Processing Surcharge:</td>
               <td style="color: #64748b; border-top: 1px solid #e2e8f0;">$${data.processingFee.toFixed(2)} (${data.paymentMethod.toUpperCase()})</td>
             </tr>
             <tr>
-              <td style="font-weight: 900; color: #0f172a; border-top: 2px solid #cbd5e1; background-color: #e2e8f0;">TOTAL AUTHORIZED:</td>
-              <td style="color: #16a34a; font-weight: 900; font-size: 16px; border-top: 2px solid #cbd5e1; background-color: #e2e8f0;">$${data.totalAmount.toFixed(2)} (${data.paymentStatus.toUpperCase()})</td>
+              <td style="font-weight: 800; color: #0f172a; border-top: 2px solid #cbd5e1; background-color: #f1f5f9; font-size: 14px;">Total Authorized &amp; Charged:</td>
+              <td style="color: #059669; font-weight: 900; font-size: 15px; border-top: 2px solid #cbd5e1; background-color: #f1f5f9;">
+                $${data.totalAmount.toFixed(2)} USD (${data.paymentStatus.toUpperCase()})
+              </td>
             </tr>
             <tr>
-              <td style="font-weight: 700; color: #475569; border-top: 1px solid #e2e8f0; background-color: #f1f5f9;">Overtime Rate:</td>
-              <td style="color: #0f172a; border-top: 1px solid #e2e8f0;">$${data.overtimeRatePerTech.toFixed(2)} / technician / hour</td>
-            </tr>
-            <tr>
-              <td style="font-weight: 700; color: #475569; border-top: 1px solid #e2e8f0; background-color: #f1f5f9;">Signed At &amp; IP:</td>
-              <td style="color: #64748b; font-size: 12px; border-top: 1px solid #e2e8f0;">
-                ${data.signedAt} • IP: ${data.signerIp || 'Recorded'}
+              <td style="font-weight: 700; color: #475569; border-top: 1px solid #e2e8f0; background-color: #f8fafc;">Overtime Rate (Beyond 4 Hours):</td>
+              <td style="color: #0f172a; font-weight: 700; border-top: 1px solid #e2e8f0;">
+                $${data.overtimeRatePerTech.toFixed(2)} / technician / hour (billed in 15-min increments)
               </td>
             </tr>
           </table>
 
-          <div style="background-color: #f8fafc; border: 1px solid #e2e8f0; border-radius: 12px; padding: 15px; margin-bottom: 20px;">
-            <div style="font-size: 12px; font-weight: 800; color: #475569; text-transform: uppercase; margin-bottom: 6px;">Access &amp; Description:</div>
-            <div style="font-size: 14px; color: #0f172a; line-height: 1.5;">${data.description}</div>
+          <!-- Crew Sizing Reference Schedule Box -->
+          <div style="background-color: #f0f9ff; border: 1px solid #bae6fd; border-radius: 8px; padding: 14px 16px; margin-bottom: 20px;">
+            <div style="font-size: 12px; font-weight: 800; color: #0369a1; text-transform: uppercase; margin-bottom: 6px;">
+              Contractual Crew Sizing Schedule (${standardOrAfter})
+            </div>
+            <p style="margin: 0 0 8px 0; font-size: 12px; color: #0c4a6e; line-height: 1.5;">
+              Enterprise maintains full rate transparency. Mandatory dispatch is 2 technicians. If severe conditions require expanding the crew on-site with client approval, the following contractual rate schedule applies:
+            </p>
+            <table width="100%" border="0" cellspacing="0" cellpadding="6" style="font-size: 12px; color: #0c4a6e;">
+              <tr>
+                <td style="font-weight: 700; width: 33%;">2 Technicians (Initial):</td>
+                <td>$${isAfterHours ? '575.00' : '475.00'} ($${isAfterHours ? '287.50' : '237.50'} / tech) &bull; 4-hr min</td>
+              </tr>
+              <tr>
+                <td style="font-weight: 700;">3 Technicians:</td>
+                <td>$${isAfterHours ? '863.00' : '713.00'} ($${isAfterHours ? '287.67' : '237.67'} / tech) &bull; 4-hr min</td>
+              </tr>
+              <tr>
+                <td style="font-weight: 700;">4 Technicians:</td>
+                <td>$${isAfterHours ? '1,150.00' : '950.00'} ($${isAfterHours ? '287.50' : '237.50'} / tech) &bull; 4-hr min</td>
+              </tr>
+            </table>
           </div>
 
+          <!-- Description and Access Notes -->
+          <div style="background-color: #f8fafc; border: 1px solid #e2e8f0; border-radius: 8px; padding: 14px 16px; margin-bottom: 20px;">
+            <div style="font-size: 12px; font-weight: 800; color: #475569; text-transform: uppercase; margin-bottom: 6px;">
+              Access &amp; On-Site Instructions:
+            </div>
+            <div style="font-size: 13px; color: #0f172a; line-height: 1.5;">
+              ${data.description || 'No additional access notes provided.'}
+            </div>
+          </div>
+
+          <!-- Digital Signature Block -->
           ${data.signatureData ? `
-          <div style="background-color: #ffffff; border: 2px dashed #94a3b8; border-radius: 12px; padding: 15px; text-align: center;">
-            <div style="font-size: 11px; font-weight: 800; color: #64748b; text-transform: uppercase; margin-bottom: 8px;">Customer Digital Signature:</div>
-            <img src="${data.signatureData}" alt="Digital Signature" style="max-height: 80px; max-width: 250px; display: block; margin: 0 auto;" />
-            <div style="font-size: 11px; color: #94a3b8; margin-top: 6px;">Signed by: ${data.name} on ${data.signedAt}</div>
+          <div style="background-color: #ffffff; border: 1px solid #cbd5e1; border-radius: 8px; padding: 14px; text-align: center; margin-bottom: 20px;">
+            <div style="font-size: 11px; font-weight: 800; color: #64748b; text-transform: uppercase; margin-bottom: 8px;">
+              Legally Binding Digital Signature on File
+            </div>
+            <img src="${data.signatureData}" alt="Digital Signature" style="max-height: 70px; max-width: 240px; display: block; margin: 0 auto;" />
+            <div style="font-size: 11px; color: #64748b; margin-top: 6px;">
+              Signed by ${data.name} on ${data.signedAt} &bull; Recorded IP: ${data.signerIp || 'Verified'}
+            </div>
           </div>
           ` : ''}
+
+          <!-- Contract Terms Summary -->
+          <div style="font-size: 11px; color: #64748b; line-height: 1.5; border-top: 1px solid #e2e8f0; padding-top: 12px;">
+            Portal-to-portal terms apply: billable time begins when the crew departs 99 Hartwell St, West Boylston, MA and concludes upon return. The 4-hour minimum applies regardless of completion time.
+          </div>
         </td>
       </tr>
 
-      <!-- Footer -->
+      <!-- Corporate Footer -->
       <tr>
-        <td style="background-color: #0f172a; padding: 20px; text-align: center; color: #94a3b8; font-size: 12px;">
-          <p style="margin: 0 0 4px 0; color: #ffffff; font-weight: 600;">Enterprise Cleaning Corporation</p>
-          <p style="margin: 0 0 4px 0;">99 Hartwell Street, West Boylston, MA 01583 | (508) 890-1000</p>
+        <td style="background-color: #0f172a; padding: 22px 25px; text-align: center; color: #94a3b8; font-size: 12px; line-height: 1.6;">
+          <p style="margin: 0 0 4px 0; color: #ffffff; font-weight: 700;">Enterprise Cleaning Corporation</p>
+          <p style="margin: 0 0 4px 0;">99 Hartwell Street, West Boylston, MA 01583 &bull; 24/7 Dispatch Desk: (508) 890-1000</p>
+          <p style="margin: 0;"><a href="https://enterprisecleaningcorp.com" style="color: #38bdf8; text-decoration: none;">www.enterprisecleaningcorp.com</a></p>
         </td>
       </tr>
     </table>
@@ -883,71 +971,185 @@ export function getEmergencyContractAdminEmailHtml(data: EmergencyContractEmailD
 }
 
 export function getEmergencyContractUserEmailHtml(data: EmergencyContractEmailData): string {
+  const perTechRate = data.technicianCount > 0 ? (data.baseRate / data.technicianCount).toFixed(2) : '237.50';
+  const isAfterHours = data.shiftLabel.toLowerCase().includes('after') || data.shiftLabel.toLowerCase().includes('weekend');
+  const standardOrAfter = isAfterHours ? 'After-Hours / Weekend' : 'Standard Business Hours';
+
   return `
   <!DOCTYPE html>
   <html>
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Emergency Services Contract &amp; Payment Confirmation</title>
+    <title>Emergency Services Dispatch Confirmation &amp; Payment Receipt</title>
   </head>
-  <body style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; background-color: #f8fafc; margin: 0; padding: 25px 10px;">
-    <table width="100%" border="0" cellspacing="0" cellpadding="0" style="max-width: 620px; margin: 0 auto; background-color: #ffffff; border-radius: 16px; overflow: hidden; border: 1px solid #e2e8f0; box-shadow: 0 10px 25px rgba(0,0,0,0.05);">
+  <body style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; background-color: #f1f5f9; margin: 0; padding: 25px 10px; -webkit-font-smoothing: antialiased;">
+    <table width="100%" border="0" cellspacing="0" cellpadding="0" style="max-width: 640px; margin: 0 auto; background-color: #ffffff; border-radius: 12px; overflow: hidden; border: 1px solid #cbd5e1; box-shadow: 0 4px 20px rgba(15, 23, 42, 0.08);">
+      
+      <!-- Top Brand Accent -->
       <tr>
-        <td style="background-color: #003B7A; padding: 25px; text-align: center;">
-          <h1 style="color: #ffffff; margin: 0; font-size: 22px; font-weight: 900;">Enterprise Cleaning Corporation</h1>
-          <p style="color: #93c5fd; margin: 6px 0 0 0; font-size: 14px;">Emergency Services Contract &amp; Dispatch Confirmation</p>
+        <td style="background-color: ${BRAND_NAVY}; height: 5px; font-size: 0; line-height: 0;">&nbsp;</td>
+      </tr>
+
+      <!-- Official Header with Logo -->
+      <tr>
+        <td style="background-color: #ffffff; padding: 28px 25px 20px 25px; text-align: center; border-bottom: 1px solid #e2e8f0;">
+          <a href="https://enterprisecleaningcorp.com" target="_blank" style="text-decoration: none; display: inline-block;">
+            <img src="${LOGO_URL}" alt="Enterprise Cleaning Corporation" width="240" style="max-width: 240px; width: 100%; height: auto; display: block; margin: 0 auto;" />
+          </a>
+          <div style="margin-top: 10px;">
+            <span style="color: ${BRAND_NAVY}; font-size: 11px; font-weight: 800; letter-spacing: 1.5px; text-transform: uppercase;">
+              Emergency Commercial Restoration &bull; Rapid Dispatch Division
+            </span>
+          </div>
         </td>
       </tr>
+
+      <!-- Receipt & Confirmation Header (Clean, Corporate, Solid) -->
       <tr>
-        <td style="padding: 25px 30px;">
+        <td style="background-color: #003B7A; padding: 22px 20px; text-align: center;">
+          <div style="display: inline-block; background-color: #059669; color: #ffffff; font-size: 11px; font-weight: 800; text-transform: uppercase; letter-spacing: 1.2px; padding: 5px 14px; border-radius: 4px; margin-bottom: 8px;">
+            Dispatch Confirmed &bull; Payment Authorized
+          </div>
+          <h1 style="color: #ffffff; margin: 0; font-size: 22px; font-weight: 800; line-height: 1.2;">
+            Emergency Services Authorization &amp; Payment Receipt
+          </h1>
+          <p style="color: #93c5fd; margin: 6px 0 0 0; font-size: 13px; font-weight: 600;">
+            Receipt Reference: ECC-EMG-${data.submissionId.slice(-8).toUpperCase()}
+          </p>
+        </td>
+      </tr>
+
+      <!-- Content Body -->
+      <tr>
+        <td style="padding: 26px 28px;">
           <p style="font-size: 15px; color: #0f172a; font-weight: 700; margin: 0 0 12px 0;">
             Dear ${data.name},
           </p>
           <p style="font-size: 14px; color: #334155; line-height: 1.6; margin: 0 0 20px 0;">
-            Thank you for completing the Emergency Services Authorization. Your payment authorization has been confirmed, and our dispatch team has received your order.
+            Thank you for authorizing emergency dispatch services with Enterprise Cleaning Corporation. Your signed service agreement and payment authorization have been successfully processed, and our dispatch desk has alerted the rapid response crew for mobilization.
           </p>
 
-          <table width="100%" border="0" cellspacing="0" cellpadding="10" style="background-color: #f8fafc; border-radius: 12px; border: 1px solid #e2e8f0; font-size: 13px; margin-bottom: 20px;">
+          <!-- Summary Table -->
+          <h2 style="font-size: 13px; color: #0f172a; margin: 0 0 12px 0; text-transform: uppercase; letter-spacing: 0.8px; font-weight: 800;">
+            Authorized Service &amp; Payment Summary
+          </h2>
+
+          <table width="100%" border="0" cellspacing="0" cellpadding="10" style="background-color: #ffffff; border-radius: 8px; border: 1px solid #e2e8f0; font-size: 13px; margin-bottom: 22px;">
             <tr>
-              <td width="40%" style="font-weight: 700; color: #475569;">Company:</td>
+              <td width="45%" style="font-weight: 700; color: #475569; background-color: #f8fafc;">Customer / Company:</td>
               <td style="color: #0f172a; font-weight: 700;">${data.companyName}</td>
             </tr>
             <tr>
-              <td style="font-weight: 700; color: #475569; border-top: 1px solid #e2e8f0;">Service Address:</td>
+              <td style="font-weight: 700; color: #475569; border-top: 1px solid #e2e8f0; background-color: #f8fafc;">Service Address:</td>
               <td style="color: #0f172a; border-top: 1px solid #e2e8f0;">${data.propertyAddress}, ${data.town}, MA</td>
             </tr>
             <tr>
-              <td style="font-weight: 700; color: #475569; border-top: 1px solid #e2e8f0;">Crew &amp; Timing:</td>
-              <td style="color: #0f172a; border-top: 1px solid #e2e8f0;">${data.technicianCount} Technicians (${data.shiftLabel})</td>
+              <td style="font-weight: 700; color: #475569; border-top: 1px solid #e2e8f0; background-color: #f8fafc;">Emergency Type:</td>
+              <td style="color: #0f172a; font-weight: 700; border-top: 1px solid #e2e8f0;">${data.emergencyType}</td>
             </tr>
             <tr>
-              <td style="font-weight: 700; color: #475569; border-top: 1px solid #e2e8f0;">Total Authorized:</td>
-              <td style="color: #16a34a; font-weight: 900; font-size: 15px; border-top: 1px solid #e2e8f0;">$${data.totalAmount.toFixed(2)}</td>
+              <td style="font-weight: 700; color: #475569; border-top: 1px solid #e2e8f0; background-color: #f8fafc;">Assigned Crew:</td>
+              <td style="color: #0f172a; font-weight: 700; border-top: 1px solid #e2e8f0;">
+                ${data.technicianCount} Technicians (${data.shiftLabel})
+              </td>
             </tr>
             <tr>
-              <td style="font-weight: 700; color: #475569; border-top: 1px solid #e2e8f0;">Signed By:</td>
-              <td style="color: #0f172a; border-top: 1px solid #e2e8f0;">${data.name} on ${data.signedAt}</td>
+              <td style="font-weight: 700; color: #475569; border-top: 1px solid #e2e8f0; background-color: #f8fafc;">Per-Technician Rate (Initial 4-Hr Min):</td>
+              <td style="color: #0284c7; font-weight: 700; border-top: 1px solid #e2e8f0;">
+                $${perTechRate} / technician
+              </td>
+            </tr>
+            <tr>
+              <td style="font-weight: 700; color: #475569; border-top: 1px solid #e2e8f0; background-color: #f8fafc;">Initial Crew Deposit (2 Techs &bull; 4 Hrs):</td>
+              <td style="color: #0f172a; font-weight: 700; border-top: 1px solid #e2e8f0;">$${data.baseRate.toFixed(2)} USD</td>
+            </tr>
+            <tr>
+              <td style="font-weight: 700; color: #475569; border-top: 1px solid #e2e8f0; background-color: #f8fafc;">Card Processing Surcharge:</td>
+              <td style="color: #64748b; border-top: 1px solid #e2e8f0;">$${data.processingFee.toFixed(2)} (${data.paymentMethod.toUpperCase()})</td>
+            </tr>
+            <tr>
+              <td style="font-weight: 800; color: #0f172a; border-top: 2px solid #cbd5e1; background-color: #f1f5f9; font-size: 14px;">Total Authorized &amp; Charged:</td>
+              <td style="color: #059669; font-weight: 900; font-size: 15px; border-top: 2px solid #cbd5e1; background-color: #f1f5f9;">
+                $${data.totalAmount.toFixed(2)} USD (${data.paymentStatus.toUpperCase()})
+              </td>
+            </tr>
+            <tr>
+              <td style="font-weight: 700; color: #475569; border-top: 1px solid #e2e8f0; background-color: #f8fafc;">Overtime Rate (Beyond 4 Hours):</td>
+              <td style="color: #0f172a; border-top: 1px solid #e2e8f0;">
+                $${data.overtimeRatePerTech.toFixed(2)} / technician / hour (billed in 15-min increments)
+              </td>
+            </tr>
+            <tr>
+              <td style="font-weight: 700; color: #475569; border-top: 1px solid #e2e8f0; background-color: #f8fafc;">Authorized Signer:</td>
+              <td style="color: #0f172a; font-size: 12px; border-top: 1px solid #e2e8f0;">
+                ${data.name} on ${data.signedAt}
+              </td>
             </tr>
           </table>
 
-          <div style="background-color: #eff6ff; border: 1px solid #bfdbfe; border-radius: 12px; padding: 15px; margin-bottom: 20px;">
-            <p style="font-size: 13px; color: #1e3a8a; font-weight: 700; margin: 0 0 6px 0;">Important Contract Notes:</p>
-            <ul style="margin: 0; padding-left: 20px; font-size: 12px; color: #1e40af; line-height: 1.5;">
-              <li>The four-hour minimum charge applies even if completed in less than four hours.</li>
-              <li>Billable time starts when the crew leaves our West Boylston office (99 Hartwell St) and includes return travel.</li>
-              <li>Additional time beyond four hours is billed in 15-minute increments.</li>
+          <!-- Transparent Pricing & Crew Sizing Schedule Box -->
+          <div style="background-color: #f0f9ff; border: 1px solid #bae6fd; border-radius: 8px; padding: 14px 16px; margin-bottom: 20px;">
+            <div style="font-size: 12px; font-weight: 800; color: #0369a1; text-transform: uppercase; margin-bottom: 6px;">
+              Transparent Crew Sizing Policy (${standardOrAfter})
+            </div>
+            <p style="margin: 0 0 8px 0; font-size: 12px; color: #0c4a6e; line-height: 1.5;">
+              Enterprise Cleaning operates under a strictly transparent rate structure. Initial crew authorization covers 2 technicians. Should severe circumstances warrant additional personnel with on-site authorization, contractual rates are:
+            </p>
+            <table width="100%" border="0" cellspacing="0" cellpadding="6" style="font-size: 12px; color: #0c4a6e;">
+              <tr>
+                <td style="font-weight: 700; width: 35%;">2 Technicians (Dispatched):</td>
+                <td>$${isAfterHours ? '575.00' : '475.00'} ($${isAfterHours ? '287.50' : '237.50'} / tech) &bull; 4-hr minimum</td>
+              </tr>
+              <tr>
+                <td style="font-weight: 700;">3 Technicians:</td>
+                <td>$${isAfterHours ? '863.00' : '713.00'} ($${isAfterHours ? '287.67' : '237.67'} / tech) &bull; 4-hr minimum</td>
+              </tr>
+              <tr>
+                <td style="font-weight: 700;">4 Technicians:</td>
+                <td>$${isAfterHours ? '1,150.00' : '950.00'} ($${isAfterHours ? '287.50' : '237.50'} / tech) &bull; 4-hr minimum</td>
+              </tr>
+            </table>
+          </div>
+
+          <!-- Contract Terms Box -->
+          <div style="background-color: #f8fafc; border: 1px solid #e2e8f0; border-radius: 8px; padding: 14px 16px; margin-bottom: 22px;">
+            <div style="font-size: 12px; color: #0f172a; font-weight: 800; text-transform: uppercase; margin-bottom: 8px;">
+              Important Contractual Terms:
+            </div>
+            <ul style="margin: 0; padding-left: 18px; font-size: 12px; color: #475569; line-height: 1.6;">
+              <li>The four-hour minimum deposit applies to all emergency dispatches regardless of earlier job completion.</li>
+              <li>Portal-to-portal billing: Billable hours commence when the response crew departs 99 Hartwell St, West Boylston, MA and concludes upon return.</li>
+              <li>Work exceeding the initial four hours is billed at the agreed overtime rate in fifteen-minute increments.</li>
             </ul>
           </div>
 
-          <p style="font-size: 13px; color: #475569; line-height: 1.5;">
-            If you need to speak with our dispatch team immediately, please call our 24/7 line at <strong>(508) 890-1000</strong>.
-          </p>
+          <!-- 24/7 Direct Contact Bar -->
+          <div style="background-color: #f8fafc; border: 1px solid #cbd5e1; border-radius: 8px; padding: 14px; text-align: center; margin-bottom: 20px;">
+            <p style="font-size: 13px; color: #0f172a; font-weight: 700; margin: 0 0 6px 0;">
+              Questions or immediate updates for our field crew?
+            </p>
+            <p style="margin: 0; font-size: 14px; color: ${BRAND_NAVY}; font-weight: 800;">
+              24/7 Operations Desk: <a href="tel:5088901000" style="color: ${BRAND_NAVY}; text-decoration: none;">(508) 890-1000</a>
+            </p>
+          </div>
+
+          <div style="border-top: 1px solid #f1f5f9; padding-top: 18px;">
+            <p style="font-size: 13px; color: #475569; margin: 0; line-height: 1.6;">
+              Sincerely,<br>
+              <strong style="color: ${BRAND_NAVY}; font-size: 15px;">Enterprise Cleaning Corporation</strong><br>
+              <span style="font-size: 12px; color: #64748b;">Rapid Commercial Restoration Division</span>
+            </p>
+          </div>
         </td>
       </tr>
+
+      <!-- Corporate Footer -->
       <tr>
-        <td style="background-color: #0f172a; padding: 15px; text-align: center; color: #94a3b8; font-size: 12px;">
-          Enterprise Cleaning Corporation • 99 Hartwell Street, West Boylston, MA 01583
+        <td style="background-color: #0f172a; padding: 20px; text-align: center; color: #94a3b8; font-size: 12px; line-height: 1.5;">
+          <p style="margin: 0 0 4px 0; color: #ffffff; font-weight: 700;">Enterprise Cleaning Corporation</p>
+          <p style="margin: 0 0 4px 0;">99 Hartwell Street, West Boylston, MA 01583 &bull; (508) 890-1000</p>
+          <p style="margin: 0;"><a href="https://enterprisecleaningcorp.com" style="color: #38bdf8; text-decoration: none;">www.enterprisecleaningcorp.com</a></p>
         </td>
       </tr>
     </table>
@@ -955,4 +1157,5 @@ export function getEmergencyContractUserEmailHtml(data: EmergencyContractEmailDa
   </html>
   `;
 }
+
 
