@@ -7,8 +7,8 @@ import { CityPageTemplate } from "@/components/templates/city-page-template";
 const SLUG = "upton-ma";
 
 export const metadata: Metadata = {
-  title: { absolute: "Commercial Cleaning Upton, MA | Enterprise Cleaning Corp" },
-  description: "Commercial cleaning in Upton, MA: janitorial, office, medical office, floor care, deep cleaning, flood cleanup, turnovers and post-construction. Free quote.",
+  title: { absolute: "Commercial Cleaning Upton, MA | Same Crew Every Visit" },
+  description: "Upton businesses want cleaning that just works. Same crew every visit, owner-accessible, insured and bonded. Free walkthrough and quote.",
   alternates: {
     canonical: "https://www.enterprisecleaningcorp.com/commercial-cleaning-upton-ma",
   },

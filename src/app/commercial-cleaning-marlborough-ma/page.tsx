@@ -11,8 +11,8 @@ import {
 } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: { absolute: "Commercial Cleaning Marlborough, MA | Enterprise Cleaning Corp" },
-  description: "Carpet cleaning, post-construction cleanup and full commercial cleaning for Marlborough, MA businesses. Family-run, trusted across Central Mass. Get a free quote.",
+  title: { absolute: "Commercial Cleaning Marlborough, MA | Owner-Run, 23+ Years" },
+  description: "Main Street brick to I-495 tech parks, we clean it all. Carpet care, post-construction cleanup and nightly janitorial from one local team. Free quote.",
   keywords: "commercial cleaning Marlborough MA, carpet cleaning Marlborough MA, post-construction cleaning Marlborough MA, office cleaning Marlborough MA, janitorial services Marlborough MA, post construction cleaning 495 corridor, commercial cleaners Marlborough",
   alternates: {
     canonical: "https://www.enterprisecleaningcorp.com/commercial-cleaning-marlborough-ma"

@@ -11,8 +11,8 @@ import {
 } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: { absolute: "Commercial Cleaning Westborough, MA | Enterprise Cleaning Corp" },
-  description: "Carpet cleaning, post-construction cleanup and full commercial cleaning for Westborough, MA businesses. Locally owned, 97% client retention. Get a free quote.",
+  title: { absolute: "Commercial Cleaning Westborough, MA | No Subcontractors" },
+  description: "Salt-stained carpets or a new build to hand over? Route 9 and I-495 carpet cleaning and post-construction cleanup by in-house crews. Free quote.",
   keywords: "commercial cleaning Westborough MA, carpet cleaning Westborough MA, post-construction cleaning Westborough MA, office cleaning Westborough MA, janitorial services Westborough MA, commercial carpet cleaning Westborough, post construction cleanup Worcester County",
   alternates: {
     canonical: "https://www.enterprisecleaningcorp.com/commercial-cleaning-westborough-ma"

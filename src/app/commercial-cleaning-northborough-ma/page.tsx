@@ -7,8 +7,8 @@ import { CityPageTemplate } from "@/components/templates/city-page-template";
 const SLUG = "northborough-ma";
 
 export const metadata: Metadata = {
-  title: { absolute: "Commercial Cleaning Northborough, MA | Enterprise Cleaning Corp" },
-  description: "Commercial cleaning in Northborough, MA: janitorial, office, medical office, floor care, deep cleaning, flood cleanup, turnovers and post-construction. Free quote.",
+  title: { absolute: "Commercial Cleaning Northborough, MA | 24/7 Emergency Help" },
+  description: "Need Northborough offices or medical suites cleaned without disruption? Nightly janitorial, day porters and 24/7 emergency response. Get a free quote.",
   alternates: {
     canonical: "https://www.enterprisecleaningcorp.com/commercial-cleaning-northborough-ma",
   },

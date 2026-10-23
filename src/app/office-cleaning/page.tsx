@@ -14,7 +14,7 @@ import { RelatedServices } from "@/components/ui/related-services";
 export const metadata: Metadata = {
   title: { absolute: "Office Cleaning Services | Central MA, RI & Southern NH" },
   description: "Office cleaning for businesses across Central Massachusetts, Rhode Island, and Southern New Hampshire. Day porter and nightly crews. Get a free walkthrough.",
-  keywords: "office cleaning, office cleaning services, commercial office cleaning, commercial office cleaning services near me, office cleaning service near me, office cleaning company near me, clean offices near me, office cleaning services in massachusetts, office cleaning services Worcester MA, office cleaner near me, day porter services near me, daily office cleaning service Worcester, commercial cleaning services Rhode island",
+  keywords: "office cleaning, office cleaning services, commercial office cleaning, commercial office cleaning services near me, office cleaning service near me, office cleaning company near me, clean offices near me, office cleaning services in massachusetts, office cleaning services Worcester MA, office cleaning nabnasset, office cleaning westford ma, office cleaner near me, day porter services near me, daily office cleaning service Worcester, commercial cleaning services Rhode island",
   alternates: {
     canonical: "https://www.enterprisecleaningcorp.com/office-cleaning",
   },
@@ -129,6 +129,14 @@ const structuredDataFAQ = {
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "Enterprise Cleaning Corporation provides office cleaning services in Worcester, MA and throughout Worcester County from its West Boylston headquarters. Service also covers Rhode Island and Southern New Hampshire. Call (508) 890-1000 or request a walkthrough at enterprisecleaningcorp.com."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do you provide office cleaning in Nabnasset and Westford, MA?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Enterprise Cleaning Corporation provides office cleaning in Nabnasset, Westford, and the surrounding Merrimack Valley, including Lowell and Chelmsford. Service includes nightly cleaning, day porter coverage, and floor care, with a free walkthrough and written quote before any contract is signed."
       }
     },
     {
@@ -583,7 +591,7 @@ export default function OfficeCleaningPage() {
             </h2>
             <div className="space-y-4 text-base md:text-lg text-white/90 font-medium leading-relaxed max-w-3xl mx-auto text-left sm:text-center">
               <p>
-                Enterprise Cleaning provides <strong>office cleaning services in Massachusetts</strong> across Worcester, Shrewsbury, West Boylston, Westborough, Northborough, Holden, Auburn, Leominster, and Fitchburg, along with the surrounding Worcester County towns.
+                Enterprise Cleaning provides <strong>office cleaning services in Massachusetts</strong> across Worcester, Shrewsbury, West Boylston, Westborough, Northborough, Holden, Auburn, Leominster, and Fitchburg, along with the surrounding Worcester County towns. To the north, crews provide <strong>office cleaning in Nabnasset</strong>, Westford, Chelmsford, and <Link href="/commercial-cleaning-lowell-ma" className="text-[#FFE800] font-bold hover:underline">Lowell</Link>.
               </p>
               <p>
                 In Rhode Island, crews cover Providence and the surrounding communities for <strong>commercial office cleaning</strong> and janitorial contracts, delivering full <strong>commercial cleaning services Rhode Island</strong> businesses rely on. In Southern New Hampshire, service extends to the Nashua, Manchester, and Salem corridor.
@@ -616,11 +624,17 @@ export default function OfficeCleaningPage() {
               <h3 className="text-xl font-bold">Local Service Locations</h3>
             </div>
             
-            <div className="grid sm:grid-cols-3 gap-6 text-sm">
+            <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 text-sm">
               <div>
                 <h4 className="font-bold text-[#FFE800] mb-2 uppercase tracking-wide text-xs">Central Massachusetts</h4>
                 <p className="text-white/80 leading-relaxed font-medium">
                   Worcester · Shrewsbury · West Boylston · Westborough · Northborough · Holden · Auburn · Leominster · Fitchburg
+                </p>
+              </div>
+              <div>
+                <h4 className="font-bold text-[#FFE800] mb-2 uppercase tracking-wide text-xs">Merrimack Valley</h4>
+                <p className="text-white/80 leading-relaxed font-medium">
+                  Lowell · Chelmsford · Westford · Nabnasset
                 </p>
               </div>
               <div>
@@ -708,7 +722,7 @@ export default function OfficeCleaningPage() {
                 Frequently Asked Questions
               </h2>
               <p className="mt-3 text-slate-600 font-medium text-base">
-                Six voice search FAQs. Each answer leads with the direct response so it can be lifted as a featured snippet or an AI assistant answer.
+                Seven voice search FAQs. Each answer leads with the direct response so it can be lifted as a featured snippet or an AI assistant answer.
               </p>
             </div>
             

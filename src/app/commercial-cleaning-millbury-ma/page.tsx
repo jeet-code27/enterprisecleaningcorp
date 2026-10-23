@@ -7,8 +7,8 @@ import { CityPageTemplate } from "@/components/templates/city-page-template";
 const SLUG = "millbury-ma";
 
 export const metadata: Metadata = {
-  title: { absolute: "Commercial Cleaning Millbury, MA | Enterprise Cleaning Corp" },
-  description: "Commercial cleaning in Millbury, MA: janitorial, office, medical office, floor care, deep cleaning, flood cleanup, turnovers and post-construction. Free quote.",
+  title: { absolute: "Commercial Cleaning Millbury, MA | 97% Clients Stay" },
+  description: "Millbury businesses stay with us: 97% client retention, 4x WBJ Best of Business. Janitorial, floor care and post-construction cleanup. Free quote.",
   alternates: {
     canonical: "https://www.enterprisecleaningcorp.com/commercial-cleaning-millbury-ma",
   },

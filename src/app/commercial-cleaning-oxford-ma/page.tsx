@@ -7,8 +7,8 @@ import { CityPageTemplate } from "@/components/templates/city-page-template";
 const SLUG = "oxford-ma";
 
 export const metadata: Metadata = {
-  title: { absolute: "Commercial Cleaning Oxford, MA | Enterprise Cleaning Corp" },
-  description: "Commercial cleaning in Oxford, MA: janitorial, office, medical office, floor care, deep cleaning, flood cleanup, turnovers and post-construction. Free quote.",
+  title: { absolute: "Commercial Cleaning Oxford, MA | 24/7 Emergency Help" },
+  description: "Oxford retail, office and warehouse cleaning on Route 12 and Route 20. Flood and storm cleanup 24/7. 97% client retention. Free quote today.",
   alternates: {
     canonical: "https://www.enterprisecleaningcorp.com/commercial-cleaning-oxford-ma",
   },

@@ -7,8 +7,8 @@ import { CityPageTemplate } from "@/components/templates/city-page-template";
 const SLUG = "holden-ma";
 
 export const metadata: Metadata = {
-  title: { absolute: "Commercial Cleaning Holden, MA | Enterprise Cleaning Corp" },
-  description: "Commercial cleaning in Holden, MA: janitorial, office, medical office, floor care, deep cleaning, flood cleanup, turnovers and post-construction. Free quote.",
+  title: { absolute: "Commercial Cleaning Holden, MA | Same Crew Every Visit" },
+  description: "Holden offices, clinics and schools get the same crew every visit. Janitorial and floor care on Route 122A, backed by 97% retention. Free quote.",
   alternates: {
     canonical: "https://www.enterprisecleaningcorp.com/commercial-cleaning-holden-ma",
   },

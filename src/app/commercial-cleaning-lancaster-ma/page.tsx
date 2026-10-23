@@ -7,8 +7,8 @@ import { CityPageTemplate } from "@/components/templates/city-page-template";
 const SLUG = "lancaster-ma";
 
 export const metadata: Metadata = {
-  title: { absolute: "Commercial Cleaning Lancaster, MA | Enterprise Cleaning Corp" },
-  description: "Commercial cleaning in Lancaster, MA: janitorial, office, medical office, floor care, deep cleaning, flood cleanup, turnovers and post-construction. Free quote.",
+  title: { absolute: "Commercial Cleaning Lancaster, MA | Free Walkthrough" },
+  description: "Lancaster offices and schools, cleaned on your schedule. Dedicated crew, written scope, no contract signed before you review it. Free walkthrough.",
   alternates: {
     canonical: "https://www.enterprisecleaningcorp.com/commercial-cleaning-lancaster-ma",
   },

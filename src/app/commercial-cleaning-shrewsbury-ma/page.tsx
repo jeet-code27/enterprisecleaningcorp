@@ -10,8 +10,8 @@ import {
 } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: { absolute: "Commercial Cleaning Shrewsbury, MA | Enterprise Cleaning Corp" },
-  description: "Commercial cleaning and janitorial services in Shrewsbury, MA. Trusted by offices, medical facilities, and businesses along Route 9. Get a free quote today.",
+  title: { absolute: "Commercial Cleaning Shrewsbury, MA | Free Walkthrough" },
+  description: "Tired of juggling cleaning vendors for a mixed-tenant building? One crew for your office, medical suite and retail space on Route 9. Get a free quote.",
   keywords: "commercial cleaning services, office cleaning services, medical office cleaning, commercial cleaning company, commercial cleaning ma, commercial cleaning services massachusetts, medical office cleaning services near me, office cleaning services in massachusetts, commercial cleaning shrewsbury ma",
   alternates: {
     canonical: "https://www.enterprisecleaningcorp.com/commercial-cleaning-shrewsbury-ma"

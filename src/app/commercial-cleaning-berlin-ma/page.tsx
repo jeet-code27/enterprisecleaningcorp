@@ -7,8 +7,8 @@ import { CityPageTemplate } from "@/components/templates/city-page-template";
 const SLUG = "berlin-ma";
 
 export const metadata: Metadata = {
-  title: { absolute: "Commercial Cleaning Berlin, MA | Enterprise Cleaning Corp" },
-  description: "Commercial cleaning in Berlin, MA: janitorial, office, medical office, floor care, deep cleaning, flood cleanup, turnovers and post-construction. Free quote.",
+  title: { absolute: "Commercial Cleaning Berlin, MA | Same Crew Every Visit" },
+  description: "Berlin offices and local businesses: dependable nightly cleaning, floor care and day porters from an insured, bonded, owner-run team. Free walkthrough.",
   alternates: {
     canonical: "https://www.enterprisecleaningcorp.com/commercial-cleaning-berlin-ma",
   },

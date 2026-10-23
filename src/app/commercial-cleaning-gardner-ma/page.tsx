@@ -7,8 +7,8 @@ import { CityPageTemplate } from "@/components/templates/city-page-template";
 const SLUG = "gardner-ma";
 
 export const metadata: Metadata = {
-  title: { absolute: "Commercial Cleaning Gardner, MA | Enterprise Cleaning Corp" },
-  description: "Commercial cleaning in Gardner, MA: janitorial, office, medical office, floor care, deep cleaning, flood cleanup, turnovers and post-construction. Free quote.",
+  title: { absolute: "Commercial Cleaning Gardner, MA | 97% Clients Stay" },
+  description: "Gardner warehouses, manufacturers and offices: floor care, stripping and waxing plus nightly janitorial around your shifts. Free quote, written scope.",
   alternates: {
     canonical: "https://www.enterprisecleaningcorp.com/commercial-cleaning-gardner-ma",
   },

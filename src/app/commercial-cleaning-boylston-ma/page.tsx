@@ -10,8 +10,8 @@ import {
 } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: { absolute: "Commercial Cleaning Boylston, MA | Enterprise Cleaning Corp" },
-  description: "Commercial cleaning and janitorial services in Boylston, MA. Serving Route 140 businesses and light-industrial tenants near Worcester. Get a free quote.",
+  title: { absolute: "Commercial Cleaning Boylston, MA | Minutes From Our HQ" },
+  description: "Boylston is practically next door to our West Boylston HQ. Fast response, nightly janitorial, floor care and 24/7 emergency cleanup. Free quote.",
   keywords: "commercial cleaning services, commercial cleaner near me, business cleaning service near me, janitorial company near me, commercial cleaning ma, commercial cleaning services massachusetts, floor cleaning massachusetts, office cleaning service near me, commercial cleaning boylston ma",
   alternates: {
     canonical: "https://www.enterprisecleaningcorp.com/commercial-cleaning-boylston-ma"

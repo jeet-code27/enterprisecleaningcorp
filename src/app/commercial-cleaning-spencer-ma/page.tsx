@@ -7,8 +7,8 @@ import { CityPageTemplate } from "@/components/templates/city-page-template";
 const SLUG = "spencer-ma";
 
 export const metadata: Metadata = {
-  title: { absolute: "Commercial Cleaning Spencer, MA | Enterprise Cleaning Corp" },
-  description: "Commercial cleaning in Spencer, MA: janitorial, office, medical office, floor care, deep cleaning, flood cleanup, turnovers and post-construction. Free quote.",
+  title: { absolute: "Commercial Cleaning Spencer, MA | Owner-Run, 23+ Years" },
+  description: "Spencer business owners get direct access to the owners, not a call center. Janitorial, office and floor care. Free quote in writing.",
   alternates: {
     canonical: "https://www.enterprisecleaningcorp.com/commercial-cleaning-spencer-ma",
   },

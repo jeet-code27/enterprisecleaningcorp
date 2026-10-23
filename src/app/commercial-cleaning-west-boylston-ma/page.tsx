@@ -10,8 +10,8 @@ import {
 } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: { absolute: "Commercial Cleaning West Boylston, MA | Enterprise Cleaning Corp" },
-  description: "Commercial cleaning and janitorial services in West Boylston, MA — home of Enterprise Cleaning Corporation. Get a free quote from our local headquarters team.",
+  title: { absolute: "Commercial Cleaning West Boylston, MA | 97% Clients Stay" },
+  description: "Our home base is right here in West Boylston, so crews arrive fast. Janitorial, floor care and 24/7 emergency cleanup. 97% of clients stay. Free quote.",
   keywords: "commercial cleaning services, commercial cleaning company, commercial janitorial services, commercial cleaning near me, commercial cleaner near me, industrial cleaning near me, commercial cleaning ma, floor cleaning massachusetts, commercial cleaning west boylston ma",
   alternates: {
     canonical: "https://www.enterprisecleaningcorp.com/commercial-cleaning-west-boylston-ma"

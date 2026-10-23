@@ -11,8 +11,8 @@ import {
 } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: { absolute: "Commercial Cleaning Fitchburg, MA | Enterprise Cleaning Corp" },
-  description: "Carpet cleaning, post-construction cleanup and full commercial cleaning for Fitchburg, MA businesses. Locally owned, serving Worcester County. Get a free quote.",
+  title: { absolute: "Commercial Cleaning Fitchburg, MA | 4x WBJ Award Winner" },
+  description: "Fitchburg offices, medical suites and industrial buildings: 4x WBJ Best of Business, 97% client retention. Free walkthrough: 508-890-1000.",
   keywords: "commercial cleaning Fitchburg MA, carpet cleaning Fitchburg MA, post-construction cleaning Fitchburg MA, office cleaning Fitchburg MA, janitorial services Fitchburg MA, converted mill cleaning Fitchburg, commercial cleaners Fitchburg",
   alternates: {
     canonical: "https://www.enterprisecleaningcorp.com/commercial-cleaning-fitchburg-ma"

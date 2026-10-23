@@ -7,8 +7,8 @@ import { CityPageTemplate } from "@/components/templates/city-page-template";
 const SLUG = "clinton-ma";
 
 export const metadata: Metadata = {
-  title: { absolute: "Commercial Cleaning Clinton, MA | Enterprise Cleaning Corp" },
-  description: "Commercial cleaning in Clinton, MA: janitorial, office, medical office, floor care, deep cleaning, flood cleanup, turnovers and post-construction. Free quote.",
+  title: { absolute: "Commercial Cleaning Clinton, MA | No Subcontractors" },
+  description: "Clinton property managers: one vendor for nightly cleaning, floor care and tenant turnovers. In-house crews, no subcontractors. Free quote.",
   alternates: {
     canonical: "https://www.enterprisecleaningcorp.com/commercial-cleaning-clinton-ma",
   },
