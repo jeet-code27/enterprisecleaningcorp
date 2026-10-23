@@ -54,6 +54,9 @@ const OVERTIME_RATES = {
   after_8pm_weekend: { perHour: 95.0, perIncrement: 23.75 },
 };
 
+// TEMPORARY $1.00 TEST MODE FOR LIVE STRIPE PAYMENT TESTING (Set to false after testing)
+const IS_ONE_DOLLAR_TEST = true;
+
 export function EmergencyAuthorizationForm() {
   const searchParams = useSearchParams();
   const sessionId = searchParams.get("session_id");
@@ -136,6 +139,16 @@ export function EmergencyAuthorizationForm() {
 
   // Dynamic calculations - Initial deposit is always for 2 Technicians ($475 weekday / $575 after-hours)
   const { baseRate, processingFee, feePercentageLabel, totalAmount, overtimeRates } = useMemo(() => {
+    if (IS_ONE_DOLLAR_TEST) {
+      return {
+        baseRate: 1.0,
+        processingFee: 0.0,
+        feePercentageLabel: "Live Test Mode ($1.00)",
+        totalAmount: 1.0,
+        overtimeRates: OVERTIME_RATES[formData.shiftType],
+      };
+    }
+
     const base = RATES[formData.shiftType][2];
     let feeRate = 0.035;
     let feeLabel = "3.5% Card Surcharge";
@@ -829,6 +842,12 @@ export function EmergencyAuthorizationForm() {
 
         {/* Live Calculation Summary */}
         <div className="p-5 sm:p-7 rounded-2xl sm:rounded-3xl bg-slate-900 text-white space-y-3.5 shadow-xl">
+          {IS_ONE_DOLLAR_TEST && (
+            <div className="p-3 rounded-xl bg-amber-500/20 border border-amber-400/40 text-amber-300 text-xs font-bold flex items-center gap-2">
+              <AlertTriangle className="w-4 h-4 shrink-0 text-amber-400" />
+              <span>TEST MODE ACTIVE: Total deposit is temporarily set to $1.00 USD for live Stripe transaction verification.</span>
+            </div>
+          )}
           <div className="text-xs font-bold text-slate-400 uppercase tracking-wider">
             Authorization &amp; Billing Breakdown:
           </div>

@@ -87,11 +87,12 @@ export async function POST(req: NextRequest) {
       );
     }
 
-    const { baseRate, processingFee, totalAmount, overtimeRatePerTech } = calculateEmergencyTotals(
-      shiftType,
-      technicianCount,
-      paymentMethod
-    );
+    // TEMPORARY $1.00 TEST MODE FOR LIVE STRIPE PAYMENT TESTING (Set to false after testing)
+    const IS_ONE_DOLLAR_TEST = true;
+
+    const { baseRate, processingFee, totalAmount, overtimeRatePerTech } = IS_ONE_DOLLAR_TEST
+      ? { baseRate: 1.0, processingFee: 0, totalAmount: 1.0, overtimeRatePerTech: 75.0 }
+      : calculateEmergencyTotals(shiftType, technicianCount, paymentMethod);
 
     const clientIp = req.headers.get('x-forwarded-for')?.split(',')[0] || req.headers.get('x-real-ip') || 'Recorded';
     const origin = req.headers.get('origin') || process.env.NEXTAUTH_URL || 'https://www.enterprisecleaningcorp.com';
@@ -132,8 +133,12 @@ export async function POST(req: NextRequest) {
           price_data: {
             currency: 'usd',
             product_data: {
-              name: `Emergency Crew Initial Deposit (2 Technicians • 4-Hr Minimum)`,
-              description: `2 Certified Technicians — ${shiftLabel}. Central MA Portal-to-Portal Dispatch from 99 Hartwell St, West Boylston.`,
+              name: IS_ONE_DOLLAR_TEST
+                ? `Emergency Dispatch Authorization [Live Test Mode - $1.00]`
+                : `Emergency Crew Initial Deposit (2 Technicians • 4-Hr Minimum)`,
+              description: IS_ONE_DOLLAR_TEST
+                ? `Stripe Live Payment Verification — 2 Certified Technicians (${shiftLabel}).`
+                : `2 Certified Technicians — ${shiftLabel}. Central MA Portal-to-Portal Dispatch from 99 Hartwell St, West Boylston.`,
             },
             unit_amount: Math.round(baseRate * 100),
           },
@@ -141,7 +146,7 @@ export async function POST(req: NextRequest) {
         },
       ];
 
-      if (processingFee > 0) {
+      if (!IS_ONE_DOLLAR_TEST && processingFee > 0) {
         lineItems.push({
           price_data: {
             currency: 'usd',
