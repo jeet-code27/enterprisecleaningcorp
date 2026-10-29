@@ -1,7 +1,7 @@
 import regionalCitiesRaw from "./regional-cities.json";
 
-// Western Massachusetts & Connecticut landing pages.
-// Content source: new-city-pages/ECC_Western_MA_and_CT_Landing_Pages.docx
+// Greater Boston, Western Massachusetts & Connecticut landing pages.
+// Content source: scratch/Greater_Boston_Landing_Pages.docx & ECC_Western_MA_and_CT_Landing_Pages.docx
 
 export interface RegionalNamedItem {
   name: string;

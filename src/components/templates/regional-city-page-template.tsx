@@ -66,10 +66,29 @@ const COPY_LINKS: Record<string, string> = {
   "office cleaning": "/office-cleaning",
   "warehouse cleaning": "/warehouse-distribution-cleaning-central-ma",
   "post construction cleaning services": "/post-construction-cleaning-massachusetts",
+  "post-construction cleaning": "/post-construction-cleaning-massachusetts",
+  "post construction cleaning": "/post-construction-cleaning-massachusetts",
+  "day porter services": "/janitorial-services",
+  "day porter": "/janitorial-services",
+  "turnover cleaning": "/turnover-cleaning-central-ma",
   "commercial tile and grout cleaning": "/floor-care-services-central-ma",
   "commercial floor waxing": "/floor-care-services-central-ma",
+  "carpet cleaning": "/floor-care-services-central-ma",
+  "window cleaning and pressure washing": "/specialty-cleaning-services-central-ma",
+  "pressure washing": "/specialty-cleaning-services-central-ma",
+  "commercial cleaning services": "/commercial-cleaning-quote",
+  "free walkthrough": "/contact",
   "contact page": "/contact",
   "(508) 890-1000": PHONE_HREF,
+};
+
+const NATIVE_TOWN_LINKS: Record<string, string> = {
+  "Waltham": "/commercial-cleaning-waltham-ma",
+  "Framingham": "/commercial-cleaning-framingham-ma",
+  "Lowell": "/commercial-cleaning-lowell-ma",
+  "Natick": "/commercial-cleaning-natick-ma",
+  "Worcester": "/commercial-cleaning-worcester-ma",
+  "West Boylston": "/commercial-cleaning-west-boylston-ma",
 };
 
 const LINK_CLASS = "text-[#0090c8] font-semibold hover:underline";
@@ -480,15 +499,17 @@ export function RegionalCityPageTemplate({ city, heroImageIndex = 0 }: RegionalC
             <ul className="flex flex-wrap gap-2">
               {city.areas.nearby.map(town => {
                 const page = findRegionalCity(town, city.state);
+                const nativeHref = NATIVE_TOWN_LINKS[town];
+                const targetHref = page ? `/${page.slug}` : nativeHref;
                 return (
                   <li key={town}>
-                    {page ? (
+                    {targetHref ? (
                       <Link
-                        href={`/${page.slug}`}
+                        href={targetHref}
                         className="inline-flex items-center gap-1.5 text-sm font-bold bg-[#0090c8] text-white px-3.5 py-2 rounded-full hover:bg-[#00B8FF] transition-colors"
                       >
                         <MapPin className="w-3.5 h-3.5" />
-                        Commercial cleaning in {town}, {page.state}
+                        Commercial cleaning in {town}, {page ? page.state : city.state}
                       </Link>
                     ) : (
                       <span className="inline-flex items-center gap-1.5 text-sm font-semibold bg-white/10 border border-white/15 text-slate-200 px-3.5 py-2 rounded-full">

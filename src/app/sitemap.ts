@@ -93,7 +93,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     "/commercial-cleaning-berlin-ma",
     "/commercial-cleaning-hudson-ma",
     "/commercial-cleaning-natick-ma",
-    // Western Massachusetts & Connecticut
+    // Greater Boston, Western Massachusetts & Connecticut
     ...regionalCities.map(c => `/${c.slug}`),
   ];
 

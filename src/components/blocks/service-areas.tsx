@@ -40,6 +40,11 @@ const cityLinks: Record<string, string> = {
   "Lowell": "/commercial-cleaning-lowell-ma",
   "Waltham": "/commercial-cleaning-waltham-ma",
   "Nashua, NH": "/commercial-cleaning-nashua-nh",
+  "Burlington": "/best-commercial-cleaning-company-burlington-ma",
+  "Woburn": "/best-commercial-cleaning-company-woburn-ma",
+  "Newton": "/best-commercial-cleaning-company-newton-ma",
+  "Needham": "/best-commercial-cleaning-company-needham-ma",
+  "Norwood": "/best-commercial-cleaning-company-norwood-ma",
 };
 
 const locations = [
@@ -110,12 +115,12 @@ export function ServiceAreas() {
           })}
         </div>
 
-        {/* Western MA & Connecticut */}
+        {/* Greater Boston, Western MA & Connecticut */}
         <div className="mt-12">
           <h3 className="text-center text-xl md:text-2xl font-extrabold text-slate-900 mb-6">
-            Now Expanding into <span className="text-[#00B8FF]">Western MA &amp; Connecticut</span>
+            Now Expanding across <span className="text-[#00B8FF]">Greater Boston, Western MA &amp; Connecticut</span>
           </h3>
-          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-4">
             {regionalCitiesByRegion().map(group => (
               <div key={group.region} className="rounded-2xl border border-slate-200 bg-slate-50/60 p-4">
                 <p className="text-xs font-extrabold uppercase tracking-widest text-[#E31837] mb-3">{group.region}</p>
