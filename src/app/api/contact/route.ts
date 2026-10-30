@@ -5,36 +5,21 @@ import { sendEmail } from '@/lib/nodemailer';
 import { getContactAdminEmailHtml, getContactUserAutoReplyHtml } from '@/lib/emailTemplates';
 
 const DEFAULT_ADMIN = process.env.ADMIN_EMAIL || "alex@enterprisecleaningcorp.com";
+const JULIO_EMAIL = "jbiage@enterprisecleaningcorp.com";
 
 function getDepartmentRecipients(department?: string, service?: string): { to: string; cc?: string } {
   const serv = (service || "").toLowerCase();
   const dept = (department || "").toLowerCase();
 
-  // Specifically for Post-Construction / GC Bid submissions:
-  // Primary (To) goes to Alex, CC goes to Julio
-  if (
-    serv.includes("post-construction") ||
-    serv.includes("gc post-construction") ||
-    serv.includes("construction") ||
-    serv.includes("subcontractor bid") ||
-    dept.includes("estimating")
-  ) {
-    return { 
-      to: DEFAULT_ADMIN, 
-      cc: "jbiage@enterprisecleaningcorp.com" 
-    };
+  // If designated specifically for customer service/support:
+  if (dept.includes("customer service") || dept.includes("support")) {
+    return { to: "sales@enterprisecleaningcorp.com", cc: `${DEFAULT_ADMIN}, ${JULIO_EMAIL}` };
   }
 
-  if (dept.includes("operations")) {
-    return { to: "jbiage@enterprisecleaningcorp.com", cc: DEFAULT_ADMIN };
-  }
-  if (dept.includes("customer service") || dept.includes("support")) {
-    return { to: "sales@enterprisecleaningcorp.com", cc: DEFAULT_ADMIN };
-  }
-  if (dept.includes("sales")) {
-    return { to: DEFAULT_ADMIN };
-  }
-  return { to: DEFAULT_ADMIN };
+  // All sales inquiries, quotes, estimating, operations, GC bids, and general leads go to both Alex & Julio:
+  return { 
+    to: `${DEFAULT_ADMIN}, ${JULIO_EMAIL}` 
+  };
 }
 
 export async function POST(req: Request) {

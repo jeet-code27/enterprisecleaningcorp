@@ -4,7 +4,8 @@ import AdLead from '@/models/AdLead';
 import ContactSubmission from '@/models/ContactSubmission';
 import { sendEmail } from '@/lib/nodemailer';
 
-const ALEX_EMAIL = "alex@enterprisecleaningcorp.com";
+const ALEX_EMAIL = process.env.ADMIN_EMAIL || "alex@enterprisecleaningcorp.com";
+const JULIO_EMAIL = "jbiage@enterprisecleaningcorp.com";
 
 export async function POST(req: Request) {
   try {
@@ -131,13 +132,13 @@ export async function POST(req: Request) {
       `;
 
       await sendEmail({
-        to: ALEX_EMAIL,
+        to: `${ALEX_EMAIL}, ${JULIO_EMAIL}`,
         subject: `🚨 AD LEAD: ${fullName} - ${companyName || serviceType}`,
         html: emailHtml,
         replyTo: email,
       });
     } catch (emailErr) {
-      console.error("Failed to send email to Alex:", emailErr);
+      console.error("Failed to send email to Alex and Julio:", emailErr);
     }
 
     // Always return success & redirect URL for high-converting user experience

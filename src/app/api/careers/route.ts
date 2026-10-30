@@ -5,6 +5,7 @@ import { sendEmail } from "@/lib/nodemailer";
 import { getCareerAdminEmailHtml, getCareerUserAutoReplyHtml } from "@/lib/emailTemplates";
 
 const ADMIN_EMAIL = process.env.ADMIN_EMAIL || "alex@enterprisecleaningcorp.com";
+const JULIO_EMAIL = "jbiage@enterprisecleaningcorp.com";
 
 export async function POST(req: Request) {
   try {
@@ -24,7 +25,7 @@ export async function POST(req: Request) {
     try {
       // Admin Notification Email
       const adminEmailPromise = sendEmail({
-        to: ADMIN_EMAIL,
+        to: `${ADMIN_EMAIL}, ${JULIO_EMAIL}`,
         subject: `New Job Application: ${data.fullName} - ${data.position}`,
         html: getCareerAdminEmailHtml(data),
         replyTo: data.email,

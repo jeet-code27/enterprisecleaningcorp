@@ -117,11 +117,16 @@ export async function GET(req: NextRequest) {
 
         const adminHtml = getEmergencyContractAdminEmailHtml(emailData);
 
-        const notifyRecipients = [
-          'alex@enterprisecleaningcorp.com',
-          process.env.ADMIN_EMAIL,
-          process.env.SMTP_EMAIL,
-        ].filter(Boolean) as string[];
+        const notifyRecipients = Array.from(
+          new Set(
+            [
+              'alex@enterprisecleaningcorp.com',
+              'jbiage@enterprisecleaningcorp.com',
+              process.env.ADMIN_EMAIL,
+              process.env.SMTP_EMAIL,
+            ].filter(Boolean) as string[]
+          )
+        );
 
         // Send to admin team
         await sendEmail({
