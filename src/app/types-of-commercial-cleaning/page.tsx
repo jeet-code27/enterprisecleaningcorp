@@ -3,7 +3,7 @@ import { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import {
-  ArrowRight, BookOpen, CalendarClock, CheckCircle2, ChevronDown, ChevronRight,
+  ArrowRight, BadgeCheck, BookOpen, CalendarClock, CheckCircle2, ChevronDown, ChevronRight,
   Clock, ExternalLink, Factory, Lightbulb, ListChecks, PhoneCall, Quote, Share2, Sparkles,
 } from "lucide-react";
 import { cleaningTypesGuide as guide, CLEANING_TYPE_SERVICE_LINKS } from "@/data/types-of-commercial-cleaning";
@@ -21,6 +21,9 @@ const AUTHOR = {
   image: "/images/alex-new.jpeg",
   href: "/alex-puchulu-business-card",
 };
+// Client confirmed ECC delivers all twenty types.
+const SERVICE_AREA_TEXT = "Massachusetts, Rhode Island, Connecticut, and Southern New Hampshire";
+const PROVIDED_BADGE = "Enterprise Cleaning provides this service";
 
 const PUBLISHED_LABEL = formatDate(guide.datePublished);
 const UPDATED_LABEL = formatDate(guide.dateModified);
@@ -125,6 +128,27 @@ const structuredData = {
         "name": f.q,
         "acceptedAnswer": { "@type": "Answer", "text": f.a },
       })),
+    },
+    {
+      "@type": "OfferCatalog",
+      "@id": `${PAGE_URL}#services`,
+      "name": "Commercial cleaning services from Enterprise Cleaning Corporation",
+      "numberOfItems": guide.types.length,
+      "itemListElement": guide.types.map(t => {
+        const service = CLEANING_TYPE_SERVICE_LINKS[t.n];
+        return {
+          "@type": "Offer",
+          "offeredBy": { "@id": `${SITE_URL}/#organization` },
+          "itemOffered": {
+            "@type": "Service",
+            "name": t.name,
+            "description": t.definition,
+            "url": service ? `${SITE_URL}${service.href}` : `${PAGE_URL}#${typeId(t.n, t.name)}`,
+            "provider": { "@id": `${SITE_URL}/#organization` },
+            "areaServed": SERVICE_AREA_TEXT,
+          },
+        };
+      }),
     },
     {
       "@type": "Person",
@@ -309,9 +333,10 @@ export default function TypesOfCommercialCleaningPage() {
                   <table className="w-full text-sm text-left">
                     <thead className="bg-slate-900 text-white">
                       <tr>
-                        <th scope="col" className="px-4 py-3 font-extrabold w-[28%]">Type</th>
-                        <th scope="col" className="px-4 py-3 font-extrabold w-[30%]">Typical frequency</th>
+                        <th scope="col" className="px-4 py-3 font-extrabold w-[26%]">Type</th>
+                        <th scope="col" className="px-4 py-3 font-extrabold w-[28%]">Typical frequency</th>
                         <th scope="col" className="px-4 py-3 font-extrabold">Primary industries</th>
+                        <th scope="col" className="px-4 py-3 font-extrabold w-16 text-center">ECC</th>
                       </tr>
                     </thead>
                     <tbody className="divide-y divide-slate-100">
@@ -322,6 +347,10 @@ export default function TypesOfCommercialCleaningPage() {
                           </th>
                           <td className="px-4 py-3 text-slate-600 font-medium">{row.frequency}</td>
                           <td className="px-4 py-3 text-slate-600 font-medium">{row.industries}</td>
+                          <td className="px-4 py-3 text-center">
+                            <BadgeCheck className="w-5 h-5 text-emerald-600 inline-block" aria-hidden="true" />
+                            <span className="sr-only">{PROVIDED_BADGE}</span>
+                          </td>
                         </tr>
                       ))}
                     </tbody>
@@ -331,7 +360,12 @@ export default function TypesOfCommercialCleaningPage() {
                 <ul className="md:hidden space-y-3">
                   {guide.quickReference.map((row, i) => (
                     <li key={row.type} className="rounded-xl bg-white border border-slate-200 p-4">
-                      <a href={`#${typeId(i + 1, row.type)}`} className="font-extrabold text-slate-900 hover:text-[#0090c8]">{i + 1}. {row.type}</a>
+                      <div className="flex items-start justify-between gap-3">
+                        <a href={`#${typeId(i + 1, row.type)}`} className="font-extrabold text-slate-900 hover:text-[#0090c8]">{i + 1}. {row.type}</a>
+                        <span className="inline-flex items-center gap-1 text-[11px] font-bold text-emerald-700 shrink-0">
+                          <BadgeCheck className="w-3.5 h-3.5" /> ECC
+                        </span>
+                      </div>
                       <p className="text-xs text-slate-600 font-medium mt-2"><span className="font-bold text-slate-800">Frequency:</span> {row.frequency}</p>
                       <p className="text-xs text-slate-600 font-medium mt-1"><span className="font-bold text-slate-800">Industries:</span> {row.industries}</p>
                     </li>
@@ -342,7 +376,19 @@ export default function TypesOfCommercialCleaningPage() {
               {/* The twenty types */}
               <section id="the-twenty-types" className="scroll-mt-28">
                 <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 mb-3">The twenty types of commercial cleaning</h2>
-                <p className="text-slate-600 font-medium mb-8">{guide.typesIntro}</p>
+                <p className="text-slate-600 font-medium mb-6">{guide.typesIntro}</p>
+
+                <div className="mb-8 rounded-2xl bg-emerald-50 border border-emerald-200 p-5 sm:p-6 flex flex-col sm:flex-row sm:items-center gap-4 justify-between">
+                  <div className="flex gap-3">
+                    <BadgeCheck className="w-7 h-7 text-emerald-600 shrink-0" />
+                    <p className="text-slate-800 font-semibold leading-relaxed">
+                      Enterprise Cleaning Corporation provides all twenty types of commercial cleaning on this list across {SERVICE_AREA_TEXT}.
+                    </p>
+                  </div>
+                  <Link href="/contact" className="inline-flex items-center justify-center gap-2 bg-[#0090c8] text-white font-extrabold px-5 py-3 rounded-xl hover:bg-[#0078a8] transition-colors text-sm shrink-0">
+                    Get a free quote <ArrowRight className="w-4 h-4" />
+                  </Link>
+                </div>
 
                 <ol className="space-y-6">
                   {guide.types.map(t => {
@@ -352,7 +398,12 @@ export default function TypesOfCommercialCleaningPage() {
                         <li id={typeId(t.n, t.name)} className="scroll-mt-28 rounded-2xl bg-white border border-slate-200 p-5 sm:p-7 shadow-sm">
                           <div className="flex items-start gap-4 mb-4">
                             <span className="w-11 h-11 sm:w-12 sm:h-12 shrink-0 rounded-xl bg-[#0090c8] text-white font-black text-lg flex items-center justify-center">{t.n}</span>
-                            <h3 className="text-xl sm:text-2xl font-extrabold text-slate-900 leading-tight pt-1.5">{t.name}</h3>
+                            <div className="pt-1 space-y-2">
+                              <h3 className="text-xl sm:text-2xl font-extrabold text-slate-900 leading-tight">{t.name}</h3>
+                              <span className="inline-flex items-center gap-1.5 text-[11px] sm:text-xs font-bold text-emerald-700 bg-emerald-50 border border-emerald-200 px-2.5 py-1 rounded-full">
+                                <BadgeCheck className="w-3.5 h-3.5" /> {PROVIDED_BADGE}
+                              </span>
+                            </div>
                           </div>
                           <p className="text-slate-700 leading-relaxed font-medium mb-5">
                             <strong className="text-slate-900">Definition.</strong> {t.definition}
@@ -379,9 +430,13 @@ export default function TypesOfCommercialCleaningPage() {
                               </div>
                             </dl>
                           </div>
-                          {service && (
+                          {service ? (
                             <Link href={service.href} className="mt-5 inline-flex items-center gap-1.5 text-sm font-bold text-[#0090c8] hover:underline">
                               Enterprise Cleaning service: {service.label} <ArrowRight className="w-4 h-4" />
+                            </Link>
+                          ) : (
+                            <Link href="/contact" className="mt-5 inline-flex items-center gap-1.5 text-sm font-bold text-[#E31837] hover:underline">
+                              Request a quote for {t.name.toLowerCase()} <ArrowRight className="w-4 h-4" />
                             </Link>
                           )}
                         </li>
