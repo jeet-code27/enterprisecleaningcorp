@@ -301,6 +301,13 @@ export default function CommercialCleaningFAQPage() {
               <span className="flex items-center gap-2"><CheckCircle2 className="w-4 h-4 text-[#00B8FF]" /> No Obligation</span>
               <span className="flex items-center gap-2"><CheckCircle2 className="w-4 h-4 text-[#00B8FF]" /> Direct Owner Contact</span>
             </div>
+
+            <p className="text-sm text-slate-400 pt-2">
+              Not sure which services your building needs? Read our guide to the{" "}
+              <Link href="/types-of-commercial-cleaning" className="text-[#00B8FF] font-bold hover:underline">
+                twenty types of commercial cleaning
+              </Link>.
+            </p>
           </div>
         </div>
       </section>

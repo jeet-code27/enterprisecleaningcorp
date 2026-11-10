@@ -1,0 +1,530 @@
+{
+  "h1": "Types of commercial cleaning: definitions, uses, and the industries that need them",
+  "metaTitle": "Types of Commercial Cleaning: Definitions and Uses | ECC",
+  "metaDescription": "Twenty types of commercial cleaning defined, with what each covers, which industries use it, and how often it is scheduled. A reference guide.",
+  "category": "Commercial Cleaning Reference",
+  "datePublished": "2026-11-09",
+  "dateModified": "2026-11-09",
+  "readingMinutes": 12,
+  "wordCount": 2555,
+  "cutToTheChase": "Commercial cleaning is the paid, contracted cleaning of non-residential buildings. It splits into roughly twenty distinct service types, each with its own scope, frequency, and regulatory context. The four that cover most buildings are janitorial services, office cleaning, deep cleaning, and floor care. The rest are specialist work triggered by an industry requirement, a building condition, or a one-time event.",
+  "atAGlance": [
+    "Janitorial services is the recurring baseline. Everything else is either scheduled on top of it or replaces it in a specialist setting.",
+    "Cleaning, sanitizing, and disinfecting are three different outcomes with three different standards, and the words are not interchangeable.",
+    "Regulated settings such as healthcare, food service, and childcare pull the cleaning scope into a compliance document rather than a service list.",
+    "Frequency is set by traffic, soil type, and regulation, not by building size.",
+    "Most commercial contracts combine one recurring type with two or three periodic types on a quarterly or annual cycle."
+  ],
+  "quickReference": [
+    {
+      "type": "Janitorial services",
+      "frequency": "Nightly, or two to five nights per week",
+      "industries": "Offices, schools, medical buildings, industrial sites, retail, religious facilities, municipal buildings"
+    },
+    {
+      "type": "Office cleaning",
+      "frequency": "Nightly or several nights per week, after hours",
+      "industries": "Professional services, finance, insurance, legal, technology, coworking spaces, corporate headquarters"
+    },
+    {
+      "type": "Day porter services",
+      "frequency": "Daily during business hours, often a fixed shift",
+      "industries": "Class A office buildings, hospitals, airports, universities, large retail, stadiums, conference centers"
+    },
+    {
+      "type": "Commercial deep cleaning",
+      "frequency": "Quarterly, semiannually, or at seasonal breaks",
+      "industries": "Every commercial sector, commonly offices, schools, restaurants, medical, and manufacturing"
+    },
+    {
+      "type": "Disinfection services",
+      "frequency": "Added to nightly work, or on demand after an outbreak",
+      "industries": "Healthcare, schools, childcare, gyms, food service, offices during outbreak periods"
+    },
+    {
+      "type": "Medical facility cleaning",
+      "frequency": "Nightly, with periodic deep work on a quarterly cycle",
+      "industries": "Hospitals, outpatient clinics, dental and specialist practices, dialysis centers, imaging centers, veterinary clinics"
+    },
+    {
+      "type": "Terminal cleaning",
+      "frequency": "On isolation room release, or on a set procedure room cycle",
+      "industries": "Hospitals, surgical centers, isolation units, procedure suites, laboratories"
+    },
+    {
+      "type": "Post-construction cleaning",
+      "frequency": "One-time, usually in two or three staged visits",
+      "industries": "General contractors, developers, property managers, commercial landlords, retail fit-outs, medical buildouts"
+    },
+    {
+      "type": "Commercial floor care",
+      "frequency": "Burnishing monthly, strip and refinish annually or semiannually",
+      "industries": "Schools, retail, healthcare, warehouses, offices, religious facilities, municipal buildings"
+    },
+    {
+      "type": "Carpet cleaning and extraction",
+      "frequency": "Semiannually or annually, with spot work as needed",
+      "industries": "Offices, hotels, conference centers, schools, churches, theaters, residential property common areas"
+    },
+    {
+      "type": "Tile and grout cleaning",
+      "frequency": "Quarterly to annually depending on grease load",
+      "industries": "Restaurants, commercial kitchens, restrooms in any sector, locker rooms, retail entries, healthcare"
+    },
+    {
+      "type": "Commercial window cleaning",
+      "frequency": "Monthly or quarterly for storefronts, semiannually for upper floors",
+      "industries": "Retail storefronts, offices, car dealerships, restaurants, medical buildings, hotels"
+    },
+    {
+      "type": "High dusting and high ceiling cleaning",
+      "frequency": "Annually, or semiannually in dusty production settings",
+      "industries": "Warehouses, manufacturing plants, gyms, churches, schools, food production facilities"
+    },
+    {
+      "type": "Warehouse and industrial cleaning",
+      "frequency": "Nightly or several nights per week, with periodic deep work",
+      "industries": "Distribution centers, third party logistics, manufacturing, food production, cold storage, automotive"
+    },
+    {
+      "type": "Restaurant and commercial kitchen cleaning",
+      "frequency": "Nightly for front of house, monthly to quarterly for degreasing",
+      "industries": "Restaurants, bars, cafes, hotel kitchens, corporate dining, school and hospital cafeterias, breweries"
+    },
+    {
+      "type": "School and education facility cleaning",
+      "frequency": "Nightly in term, with deep cleaning at February, April, and summer breaks",
+      "industries": "Public school districts, private and charter schools, universities, trade schools, daycare and childcare centers"
+    },
+    {
+      "type": "Retail store cleaning",
+      "frequency": "Nightly, with day porter coverage in larger formats",
+      "industries": "Shopping centers, big box retail, grocery, pharmacy, convenience stores, showrooms, car dealerships"
+    },
+    {
+      "type": "Hospitality and hotel cleaning",
+      "frequency": "Daily, with day porter coverage and periodic deep work",
+      "industries": "Hotels, conference centers, banquet halls, event venues, private clubs, casinos"
+    },
+    {
+      "type": "Event cleaning",
+      "frequency": "One-time, scheduled around the event",
+      "industries": "Conference centers, stadiums, festivals, corporate functions, trade shows, weddings, municipal events"
+    },
+    {
+      "type": "Property turnover cleaning",
+      "frequency": "On vacancy, often clustered at lease cycle dates",
+      "industries": "Property management companies, apartment communities, commercial landlords, student housing, senior living"
+    }
+  ],
+  "typesIntro": "Each entry below gives the definition, what the work covers, the industries that buy it, and how often it is normally scheduled.",
+  "types": [
+    {
+      "n": 1,
+      "name": "Janitorial services",
+      "definition": "Janitorial services are recurring, scheduled cleaning of a commercial building under contract, covering the routine tasks that keep a facility usable day to day.",
+      "covers": [
+        "Floors swept, vacuumed, and damp mopped",
+        "Restrooms cleaned and restocked",
+        "Trash and recycling removed",
+        "High-touch points disinfected",
+        "Common areas, entries, and break rooms reset"
+      ],
+      "industries": "Offices, schools, medical buildings, industrial sites, retail, religious facilities, municipal buildings",
+      "frequency": "Nightly, or two to five nights per week"
+    },
+    {
+      "n": 2,
+      "name": "Office cleaning",
+      "definition": "Office cleaning is janitorial work scoped specifically to workplace environments, with the emphasis on desks, shared equipment, meeting rooms, kitchens, and restrooms.",
+      "covers": [
+        "Desk surfaces, shared keyboards, and phones wiped",
+        "Conference rooms reset between uses",
+        "Kitchen and break room surfaces, sinks, and appliance exteriors",
+        "Entry glass, reception, and lobby floors",
+        "Restroom cleaning and consumables restocking"
+      ],
+      "industries": "Professional services, finance, insurance, legal, technology, coworking spaces, corporate headquarters",
+      "frequency": "Nightly or several nights per week, after hours"
+    },
+    {
+      "n": 3,
+      "name": "Day porter services",
+      "definition": "A day porter is a cleaner stationed in a building during operating hours to handle spills, restrooms, entries, and visible problems as they happen rather than overnight.",
+      "covers": [
+        "Restroom checks and restocking through the day",
+        "Spill and incident response",
+        "Lobby, entry, and elevator upkeep during peak traffic",
+        "Trash in high-use areas such as cafes and conference floors",
+        "Event and meeting room turnover"
+      ],
+      "industries": "Class A office buildings, hospitals, airports, universities, large retail, stadiums, conference centers",
+      "frequency": "Daily during business hours, often a fixed shift"
+    },
+    {
+      "n": 4,
+      "name": "Commercial deep cleaning",
+      "definition": "Commercial deep cleaning is an intensive, scheduled clean that reaches the surfaces routine nightly work does not, including behind and underneath fixed equipment.",
+      "covers": [
+        "Furniture moved and cleaned underneath",
+        "Walls, doors, frames, and baseboards washed",
+        "Vents, light fixtures, and high surfaces dusted",
+        "Floors machine scrubbed or refinished",
+        "Restrooms descaled and grout cleaned"
+      ],
+      "industries": "Every commercial sector, commonly offices, schools, restaurants, medical, and manufacturing",
+      "frequency": "Quarterly, semiannually, or at seasonal breaks"
+    },
+    {
+      "n": 5,
+      "name": "Disinfection services",
+      "definition": "Disinfection services apply an EPA-registered product to surfaces for the contact time its label requires, in order to kill specified pathogens rather than simply remove soil.",
+      "covers": [
+        "Surface cleaning first, then disinfectant application",
+        "High-touch point treatment across the building",
+        "Electrostatic or fogging application for large or irregular areas",
+        "Product selection matched to the target organism",
+        "Documented coverage and dwell time"
+      ],
+      "industries": "Healthcare, schools, childcare, gyms, food service, offices during outbreak periods",
+      "frequency": "Added to nightly work, or on demand after an outbreak"
+    },
+    {
+      "n": 6,
+      "name": "Medical facility cleaning",
+      "definition": "Medical facility cleaning is infection-control cleaning of clinical buildings, using zoned risk levels, color-coded equipment, registered disinfectants, and written documentation of each room.",
+      "covers": [
+        "Risk zoning from administrative areas to procedure rooms",
+        "Color-coded cloths and single-room mop heads",
+        "High-touch disinfection with recorded dwell times",
+        "Waiting rooms, restrooms, and corridors",
+        "Room-by-room completion logs"
+      ],
+      "industries": "Hospitals, outpatient clinics, dental and specialist practices, dialysis centers, imaging centers, veterinary clinics",
+      "frequency": "Nightly, with periodic deep work on a quarterly cycle"
+    },
+    {
+      "n": 7,
+      "name": "Terminal cleaning",
+      "definition": "Terminal cleaning is a full top-to-bottom clean and disinfection of a clinical room, including walls, fixtures, curtains, and every horizontal surface, performed when the room is emptied.",
+      "covers": [
+        "All removable items stripped out",
+        "Walls, fixtures, and curtains cleaned",
+        "Every horizontal surface disinfected to label contact time",
+        "Floor cleaned last, edges included",
+        "Completion documented before the room returns to use"
+      ],
+      "industries": "Hospitals, surgical centers, isolation units, procedure suites, laboratories",
+      "frequency": "On isolation room release, or on a set procedure room cycle"
+    },
+    {
+      "n": 8,
+      "name": "Post-construction cleaning",
+      "definition": "Post-construction cleaning removes construction dust, debris, adhesive, and protective coverings from a newly built or renovated space so it can be occupied.",
+      "covers": [
+        "Rough clean of debris during the build",
+        "Fine clean of dust from every surface including ledges and vents",
+        "Sticker, adhesive, paint, and compound removal from glass and fixtures",
+        "Floor protection removal and first finish application",
+        "Final detail clean before handover"
+      ],
+      "industries": "General contractors, developers, property managers, commercial landlords, retail fit-outs, medical buildouts",
+      "frequency": "One-time, usually in two or three staged visits"
+    },
+    {
+      "n": 9,
+      "name": "Commercial floor care",
+      "definition": "Commercial floor care is the maintenance of hard floors through scrubbing, stripping, refinishing, burnishing, and sealing, separate from routine mopping.",
+      "covers": [
+        "Machine scrubbing to lift embedded soil",
+        "Stripping old finish back to the substrate",
+        "Applying and curing new floor finish coats",
+        "Burnishing for gloss and wear resistance",
+        "Sealing concrete and porous surfaces"
+      ],
+      "industries": "Schools, retail, healthcare, warehouses, offices, religious facilities, municipal buildings",
+      "frequency": "Burnishing monthly, strip and refinish annually or semiannually"
+    },
+    {
+      "n": 10,
+      "name": "Carpet cleaning and extraction",
+      "definition": "Commercial carpet cleaning uses hot water extraction or encapsulation to pull soil out of carpet fiber, which vacuuming alone cannot remove.",
+      "covers": [
+        "Pre-treatment of traffic lanes and spots",
+        "Hot water extraction or encapsulation",
+        "Spot and stain treatment",
+        "Drying and airflow management",
+        "Protective treatment where specified"
+      ],
+      "industries": "Offices, hotels, conference centers, schools, churches, theaters, residential property common areas",
+      "frequency": "Semiannually or annually, with spot work as needed"
+    },
+    {
+      "n": 11,
+      "name": "Tile and grout cleaning",
+      "definition": "Tile and grout cleaning mechanically removes soil and grease from porous grout lines that mopping spreads rather than lifts.",
+      "covers": [
+        "Alkaline or degreasing pre-treatment",
+        "Mechanical agitation of grout lines",
+        "High pressure rinse and extraction",
+        "Grout color restoration where needed",
+        "Sealing to slow resoiling"
+      ],
+      "industries": "Restaurants, commercial kitchens, restrooms in any sector, locker rooms, retail entries, healthcare",
+      "frequency": "Quarterly to annually depending on grease load"
+    },
+    {
+      "n": 12,
+      "name": "Commercial window cleaning",
+      "definition": "Commercial window cleaning covers interior and exterior glass, frames, and sills on commercial buildings, including access work above ground level.",
+      "covers": [
+        "Interior glass, frames, and sills",
+        "Exterior ground level glass and entries",
+        "Pole or lift access for upper floors",
+        "Mineral and hard water stain treatment",
+        "Screen and track cleaning"
+      ],
+      "industries": "Retail storefronts, offices, car dealerships, restaurants, medical buildings, hotels",
+      "frequency": "Monthly or quarterly for storefronts, semiannually for upper floors"
+    },
+    {
+      "n": 13,
+      "name": "High dusting and high ceiling cleaning",
+      "definition": "High dusting removes accumulated dust from surfaces above normal reach, including beams, duct runs, light fixtures, sprinkler heads, and ceiling decks.",
+      "covers": [
+        "Structural steel, beams, and joists",
+        "Duct exteriors and vent grilles",
+        "Light fixtures and sprinkler heads",
+        "Ceiling decks and upper wall surfaces",
+        "Lift or pole access with containment below"
+      ],
+      "industries": "Warehouses, manufacturing plants, gyms, churches, schools, food production facilities",
+      "frequency": "Annually, or semiannually in dusty production settings"
+    },
+    {
+      "n": 14,
+      "name": "Warehouse and industrial cleaning",
+      "definition": "Warehouse and industrial cleaning handles large-footprint facilities where the soil is dust, tire marks, oil, and production residue rather than office soil.",
+      "covers": [
+        "Ride-on scrubbing of aisles and dock areas",
+        "Dock door, bay, and loading area cleaning",
+        "Racking and high dusting",
+        "Oil and tire mark removal",
+        "Break room, restroom, and office cleaning inside the facility"
+      ],
+      "industries": "Distribution centers, third party logistics, manufacturing, food production, cold storage, automotive",
+      "frequency": "Nightly or several nights per week, with periodic deep work"
+    },
+    {
+      "n": 15,
+      "name": "Restaurant and commercial kitchen cleaning",
+      "definition": "Restaurant cleaning covers front of house, restrooms, and back of house degreasing, and is distinct from the hood and duct cleaning that falls under NFPA 96.",
+      "covers": [
+        "Dining room, bar, and entry floors and surfaces",
+        "Restrooms cleaned fixture by fixture",
+        "Back of house wall and equipment exterior degreasing",
+        "Quarry tile and grout deep cleaning",
+        "Trash and grease area wash down"
+      ],
+      "industries": "Restaurants, bars, cafes, hotel kitchens, corporate dining, school and hospital cafeterias, breweries",
+      "frequency": "Nightly for front of house, monthly to quarterly for degreasing"
+    },
+    {
+      "n": 16,
+      "name": "School and education facility cleaning",
+      "definition": "School cleaning services combine daily custodial work during term with outbreak response and intensive deep cleaning during scheduled breaks.",
+      "covers": [
+        "Classrooms, corridors, and restrooms nightly",
+        "High-touch disinfection during illness season",
+        "Gym floors, locker rooms, and mats",
+        "Cafeteria dining areas and hard floors",
+        "Strip, wax, and classroom resets at term breaks"
+      ],
+      "industries": "Public school districts, private and charter schools, universities, trade schools, daycare and childcare centers",
+      "frequency": "Nightly in term, with deep cleaning at February, April, and summer breaks"
+    },
+    {
+      "n": 17,
+      "name": "Retail store cleaning",
+      "definition": "Retail cleaning keeps a sales floor presentable during trading hours and resets it overnight, with the emphasis on entries, floors, fitting rooms, and restrooms.",
+      "covers": [
+        "Entry matting, glass, and door handles",
+        "Sales floor hard floor or carpet maintenance",
+        "Fitting rooms and mirrors",
+        "Customer restrooms",
+        "Stock room and back of house areas"
+      ],
+      "industries": "Shopping centers, big box retail, grocery, pharmacy, convenience stores, showrooms, car dealerships",
+      "frequency": "Nightly, with day porter coverage in larger formats"
+    },
+    {
+      "n": 18,
+      "name": "Hospitality and hotel cleaning",
+      "definition": "Hospitality cleaning covers the public and back of house areas of hotels and venues, separate from the housekeeping team that services guest rooms.",
+      "covers": [
+        "Lobby, reception, and corridor floors",
+        "Meeting and banquet space turnover",
+        "Public restrooms through the day",
+        "Fitness and pool area surfaces",
+        "Back of house, staff areas, and service corridors"
+      ],
+      "industries": "Hotels, conference centers, banquet halls, event venues, private clubs, casinos",
+      "frequency": "Daily, with day porter coverage and periodic deep work"
+    },
+    {
+      "n": 19,
+      "name": "Event cleaning",
+      "definition": "Event cleaning is one-time cleaning scheduled before, during, and after a gathering, sized to the crowd rather than the building.",
+      "covers": [
+        "Pre-event setup clean and restroom staging",
+        "During-event restroom checks and trash rotation",
+        "Spill and incident response",
+        "Post-event breakdown, floor clearing, and trash removal",
+        "Full reset of the venue for next use"
+      ],
+      "industries": "Conference centers, stadiums, festivals, corporate functions, trade shows, weddings, municipal events",
+      "frequency": "One-time, scheduled around the event"
+    },
+    {
+      "n": 20,
+      "name": "Property turnover cleaning",
+      "definition": "Turnover cleaning returns a vacated commercial or residential unit to a leasable condition between tenants.",
+      "covers": [
+        "Full unit clean including appliances and cabinetry interiors",
+        "Floor cleaning or refinishing",
+        "Window, blind, and fixture cleaning",
+        "Debris and abandoned item removal",
+        "Final inspection detail before showing"
+      ],
+      "industries": "Property management companies, apartment communities, commercial landlords, student housing, senior living",
+      "frequency": "On vacancy, often clustered at lease cycle dates"
+    }
+  ],
+  "midCta": "Not sure which of these your building needs? Call (508) 890-1000 or request a free quote at https://www.enterprisecleaningcorp.com/contact",
+  "termsIntro": "Six words appear across commercial cleaning contracts as if they mean the same thing. They describe different outcomes, and the difference matters when a contract is written or an inspector reads one.",
+  "terms": [
+    {
+      "term": "Cleaning",
+      "means": "Removes soil, dust, and organic matter with detergent and friction",
+      "applies": "Makes a surface visibly clean. Required before any disinfection step"
+    },
+    {
+      "term": "Sanitizing",
+      "means": "Reduces germs on a surface to a level public health standards consider safe",
+      "applies": "Common in food contact and childcare settings"
+    },
+    {
+      "term": "Disinfecting",
+      "means": "Kills specified pathogens using an EPA-registered product held at label contact time",
+      "applies": "Required in healthcare and during outbreaks"
+    },
+    {
+      "term": "Janitorial",
+      "means": "The recurring contracted service that performs routine cleaning",
+      "applies": "Describes the contract and the crew, not a single task"
+    },
+    {
+      "term": "Custodial",
+      "means": "In-house staff performing the same routine work, usually in schools and municipal buildings",
+      "applies": "Describes employment model rather than a different scope"
+    },
+    {
+      "term": "Commercial cleaning",
+      "means": "The umbrella term for all paid cleaning of non-residential buildings",
+      "applies": "Includes janitorial work plus every specialist type on this list"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Set the recurring baseline first",
+      "text": "Decide what has to happen every service night. For most buildings that is janitorial or office cleaning. Everything else gets scheduled around it."
+    },
+    {
+      "title": "Add the periodic work your surfaces need",
+      "text": "Hard floors, carpet, grout, glass, and high surfaces all degrade on their own cycle. Put each on a named frequency rather than calling it when someone notices."
+    },
+    {
+      "title": "Check whether your industry changes the scope",
+      "text": "Healthcare, food service, childcare, and education carry requirements that turn a service list into a compliance document. Find out before you price it."
+    },
+    {
+      "title": "Separate what needs a licensed or certified trade",
+      "text": "Hood and duct cleaning, grease trap pumping, and regulated medical waste are not general cleaning work. Assign them to the right contractor in writing."
+    },
+    {
+      "title": "Match the schedule to your access window",
+      "text": "A scope that needs five hours in a three hour window fails every night. Fix the window, then size the scope to it."
+    },
+    {
+      "title": "Write the quality check into the contract",
+      "text": "Agree a walkthrough schedule, who attends, and what happens when something fails. A monthly joint inspection with a signed sheet prevents most disputes."
+    }
+  ],
+  "about": "Enterprise Cleaning Corporation has worked out of Central Massachusetts since 2003. Steve Buchalter, Owner and President, founded the company and still runs it. Julio Biage, Director of Operations, builds the crews and the quality checks behind every contract. The company works from 99 Hartwell Street in West Boylston, holds a 97% client retention rate, has won four Worcester Business Journal Best of Business awards, and has held BBB accreditation since 2007. Clients include MacIntire Insurance and the Worcester Club.",
+  "faqs": [
+    {
+      "q": "What are the main types of commercial cleaning?",
+      "a": "The recurring types are janitorial services, office cleaning, and day porter services. The periodic types are deep cleaning, floor care, carpet and tile work, window cleaning, and high dusting. The specialist types are medical, restaurant, school, warehouse, retail, hospitality, post-construction, event, and turnover cleaning."
+    },
+    {
+      "q": "What is the difference between janitorial and commercial cleaning?",
+      "a": "Commercial cleaning is the umbrella term for all paid cleaning of non-residential buildings. Janitorial services is one type within it, specifically the recurring contracted work that happens on a set schedule. Every janitorial contract is commercial cleaning, but not all commercial cleaning is janitorial."
+    },
+    {
+      "q": "What is the difference between cleaning, sanitizing, and disinfecting?",
+      "a": "Cleaning removes soil with detergent and friction. Sanitizing reduces germs to a level public health standards consider safe. Disinfecting kills specified pathogens using an EPA-registered product held wet for the contact time on the label. Surfaces must be cleaned before they can be disinfected."
+    },
+    {
+      "q": "How often should a commercial building be cleaned?",
+      "a": "Most commercial buildings run nightly or several nights per week for routine janitorial work, with deep cleaning quarterly or semiannually and floor refinishing annually. Traffic volume, soil type, and regulatory requirements set the actual frequency, not building size."
+    },
+    {
+      "q": "What type of commercial cleaning does a medical office need?",
+      "a": "A medical office needs medical facility cleaning, which uses risk zoning, color-coded equipment, EPA-registered disinfectants held at label contact times, and room-by-room documentation. Terminal cleaning is added for procedure and isolation rooms."
+    },
+    {
+      "q": "What is a day porter?",
+      "a": "A day porter is a cleaner stationed in a building during operating hours who handles restrooms, spills, entries, and visible problems as they occur. Overnight janitorial crews clean an empty building; a day porter maintains an occupied one."
+    },
+    {
+      "q": "Is post-construction cleaning the same as deep cleaning?",
+      "a": "No. Post-construction cleaning removes construction dust, adhesive, debris, and protective coverings from a new or renovated space, and it is a one-time job in staged visits. Deep cleaning is a recurring intensive clean of a building already in use."
+    },
+    {
+      "q": "Which industries need specialist commercial cleaning?",
+      "a": "Healthcare, food service, childcare, education, food production, and laboratories all carry regulatory requirements that turn the cleaning scope into a compliance document. Warehousing, manufacturing, and hospitality need specialist equipment and scheduling rather than regulatory scope."
+    },
+    {
+      "q": "Can one cleaning company handle all of these types?",
+      "a": "Most full-service commercial cleaning companies cover janitorial, office, deep cleaning, floor care, carpet, tile, and the major industry verticals. Kitchen hood and duct cleaning under NFPA 96, grease trap pumping, and regulated medical waste are separate licensed or certified trades."
+    },
+    {
+      "q": "How do I choose the right type of commercial cleaning for my building?",
+      "a": "Start with the recurring baseline your building needs nightly, then add periodic types for the surfaces that degrade on a slower cycle, then check whether your industry carries a regulatory requirement that changes the scope. Most contracts end up as one recurring type plus two or three periodic ones."
+    }
+  ],
+  "readyToTalk": "Enterprise Cleaning Corporation has delivered commercial cleaning across Central Massachusetts, Rhode Island, and Southern New Hampshire since 2003. Call (508) 890-1000 or request a free quote and we will walk your building and tell you which of these types it actually needs.",
+  "citation": "Enterprise Cleaning Corporation. \"Types of commercial cleaning: definitions, uses, and the industries that need them.\" Published November 9, 2026.",
+  "sources": [
+    {
+      "label": "Infection control and environmental cleaning guidance, Centers for Disease Control and Prevention",
+      "url": "https://www.cdc.gov/infectioncontrol"
+    },
+    {
+      "label": "Selected EPA-Registered Disinfectants, United States Environmental Protection Agency",
+      "url": "https://www.epa.gov/pesticide-registration/selected-epa-registered-disinfectants"
+    },
+    {
+      "label": "105 CMR 590.000, State Sanitary Code Chapter X, Massachusetts Department of Public Health",
+      "url": "https://www.mass.gov/doc/105-cmr-590-state-sanitary-code-chapter-x-minimum-sanitation-standards-for-food-establishments/download"
+    },
+    {
+      "label": "NFPA 96, Standard for Ventilation Control and Fire Protection of Commercial Cooking Operations",
+      "url": "https://www.nfpa.org/codes-and-standards/nfpa-96-standard-development/96"
+    },
+    {
+      "label": "Indoor Air Quality Program, Massachusetts Department of Public Health",
+      "url": "https://www.mass.gov/dph/iaq"
+    }
+  ]
+}
