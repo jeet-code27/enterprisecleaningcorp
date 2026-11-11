@@ -5,8 +5,8 @@ import { CheckCircle2, ShieldCheck, Award, Users, Clock, DollarSign, TrendingUp,
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Careers & Job Opportunities | Enterprise Cleaning Corporation",
-  description: "Join the team at Enterprise Cleaning Corporation. We offer commercial cleaning jobs with competitive pay, steady hours, paid training, and growth opportunities across Central MA, Rhode Island, and New England.",
+  title: "Cleaning Jobs Worcester MA | Careers at Enterprise Cleaning",
+  description: "Join Enterprise Cleaning Corp: cleaning jobs and janitorial careers in Worcester and Central MA with in-house crews and local owners. See openings and apply.",
   keywords: ["Commercial cleaning jobs", "Cleaning jobs East Greenwich RI", "Enterprise Cleaning careers", "Janitorial jobs Worcester MA", "Day porter jobs", "Cleaning employment Central MA", "Rhode Island cleaning jobs"],
   alternates: {
     canonical: "https://www.enterprisecleaningcorp.com/careers",
@@ -446,7 +446,7 @@ export default function CareersPage() {
         <div className="container mx-auto px-4 sm:px-6 max-w-4xl text-center">
           <h3 className="text-2xl font-bold mb-2">Have Questions About Working With Us?</h3>
           <p className="text-slate-400 text-sm mb-6">
-            Contact our office directly at <strong className="text-white">(508) 890-1000</strong> or email <a href="mailto:sales@enterprisecleaningcorp.com" className="text-[#00B8FF] hover:underline">sales@enterprisecleaningcorp.com</a>.
+            Contact our office directly at <strong className="text-white">(508) 304-2369</strong> or email <a href="mailto:sales@enterprisecleaningcorp.com" className="text-[#00B8FF] hover:underline">sales@enterprisecleaningcorp.com</a>.
           </p>
         </div>
       </section>

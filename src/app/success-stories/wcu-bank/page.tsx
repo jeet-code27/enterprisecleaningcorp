@@ -12,15 +12,15 @@ import {
 } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: { absolute: "WCU Bank Testimonial & Case Study | Enterprise Cleaning Corp" },
-  description: "WCU Bank trusts Enterprise Cleaning Corp for daily commercial janitorial and high-touch disinfection across 7+ banking locations.",
+  title: { absolute: "Bank Cleaning Services Massachusetts | WCU Case Study" },
+  description: "How Enterprise Cleaning Corp keeps 7+ Workers Credit Union branches clean, disinfected and secure with nightly bank cleaning. Read the full case study.",
   keywords: ["WCU Bank cleaning testimonial", "bank janitorial services New England", "financial institution cleaning MA", "commercial bank disinfection", "multi-location bank cleaning"],
   alternates: {
     canonical: "https://www.enterprisecleaningcorp.com/success-stories/wcu-bank",
   },
   openGraph: {
-    title: "WCU Bank Testimonial & Case Study | Enterprise Cleaning Corp",
-    description: "WCU Bank trusts Enterprise Cleaning Corp for daily commercial janitorial and high-touch disinfection across 7+ banking locations.",
+    title: "Bank Cleaning Services Massachusetts | WCU Case Study",
+    description: "How Enterprise Cleaning Corp keeps 7+ Workers Credit Union branches clean, disinfected and secure with nightly bank cleaning. Read the full case study.",
     url: "https://www.enterprisecleaningcorp.com/success-stories/wcu-bank",
     type: "article",
   },

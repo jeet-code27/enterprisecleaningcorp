@@ -12,8 +12,8 @@ import {
 } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: { absolute: "Capital Group Properties Success Story | Enterprise Cleaning Corp" },
-  description: "Learn how Enterprise Cleaning Corp provides reliable property management cleaning services across 10+ Capital Group Properties facilities with a dedicated team.",
+  title: { absolute: "Class-A Office Cleaning Worcester | Capital Group Study" },
+  description: "How Enterprise Cleaning Corp serves 10+ Capital Group Properties buildings with day porters and common-area care. Read the property management case study.",
   keywords: [
     "Capital Group Properties cleaning",
     "property management janitorial services MA",
@@ -25,8 +25,8 @@ export const metadata: Metadata = {
     canonical: "https://www.enterprisecleaningcorp.com/success-stories/capital-group-properties",
   },
   openGraph: {
-    title: "Capital Group Properties Success Story | Enterprise Cleaning Corp",
-    description: "Learn how Enterprise Cleaning Corp provides reliable property management cleaning services across 10+ Capital Group Properties facilities with a dedicated team.",
+    title: "Class-A Office Cleaning Worcester | Capital Group Study",
+    description: "How Enterprise Cleaning Corp serves 10+ Capital Group Properties buildings with day porters and common-area care. Read the property management case study.",
     url: "https://www.enterprisecleaningcorp.com/success-stories/capital-group-properties",
     type: "article",
   },

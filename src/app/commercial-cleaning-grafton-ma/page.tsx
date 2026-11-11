@@ -8,7 +8,7 @@ const SLUG = "grafton-ma";
 
 export const metadata: Metadata = {
   title: { absolute: "Commercial Cleaning Grafton, MA | Enterprise Cleaning Corp" },
-  description: "Commercial cleaning in Grafton, MA: janitorial, office, medical office, floor care, deep cleaning, flood cleanup, turnovers and post-construction. Free quote.",
+  description: "Commercial cleaning for Grafton medical, veterinary and education sites plus offices on Routes 140 and 122. 4x WBJ Best of Business winner. Get a free quote.",
   alternates: {
     canonical: "https://www.enterprisecleaningcorp.com/commercial-cleaning-grafton-ma",
   },

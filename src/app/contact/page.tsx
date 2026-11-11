@@ -7,8 +7,8 @@ import { CTASection } from "@/components/blocks/cta-with-glow";
 import { ContactForm } from "@/components/forms/ContactForm";
 
 export const metadata: Metadata = {
-  title: { absolute: "Contact Enterprise Cleaning │ Free Quote, Central MA & RI" },
-  description: "Request a free on-site quote from Enterprise Cleaning Corporation. Serving Central MA, Rhode Island & Southern NH. Call (508) 890-1000 or submit a form.",
+  title: { absolute: "Contact Enterprise Cleaning Corp | Free Quote Worcester" },
+  description: "Contact Enterprise Cleaning Corp in West Boylston, MA for a free on-site walkthrough and written quote. Call 508-304-2369 or request service online today.",
   keywords: "Contact Enterprise Cleaning Corporation, free commercial cleaning quote, cleaning services Central MA, janitorial quote Rhode Island",
   alternates: {
     canonical: "https://www.enterprisecleaningcorp.com/contact",
@@ -78,8 +78,8 @@ export default function ContactPage() {
                   </div>
                   <div className="min-w-0 flex-1">
                     <h3 className="text-base sm:text-lg font-bold text-slate-900 mb-1">Call Us 24/7</h3>
-                    <a href="tel:5088901000" className="text-base sm:text-lg text-slate-600 hover:text-[#00B8FF] font-medium transition-colors">
-                      (508) 890-1000
+                    <a href="tel:5083042369" className="text-base sm:text-lg text-slate-600 hover:text-[#00B8FF] font-medium transition-colors">
+                      (508) 304-2369
                     </a>
                   </div>
                 </div>
@@ -251,8 +251,8 @@ export default function ContactPage() {
         className="bg-white border-t border-slate-100"
         title="Need Immediate Assistance?"
         action={{
-          text: "Call (508) 890-1000",
-          href: "tel:5088901000",
+          text: "Call (508) 304-2369",
+          href: "tel:5083042369",
           variant: "destructive",
         }}
       >

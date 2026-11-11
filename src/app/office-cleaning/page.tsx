@@ -12,8 +12,8 @@ import { RelatedIndustries } from "@/components/ui/related-industries";
 import { RelatedServices } from "@/components/ui/related-services";
 
 export const metadata: Metadata = {
-  title: { absolute: "Office Cleaning Services | Central MA, RI & Southern NH" },
-  description: "Office cleaning for businesses across Central Massachusetts, Rhode Island, and Southern New Hampshire. Day porter and nightly crews. Get a free walkthrough.",
+  title: { absolute: "Office Cleaning Services Massachusetts | Enterprise Cleaning" },
+  description: "Office cleaning services in Massachusetts: nightly crews, day porters and custom daily, weekly or monthly plans for your workplace. Book a free walkthrough.",
   keywords: "office cleaning, office cleaning services, commercial office cleaning, commercial office cleaning services near me, office cleaning service near me, office cleaning company near me, clean offices near me, office cleaning services in massachusetts, office cleaning services Worcester MA, office cleaning nabnasset, office cleaning westford ma, office cleaner near me, day porter services near me, daily office cleaning service Worcester, commercial cleaning services Rhode island",
   alternates: {
     canonical: "https://www.enterprisecleaningcorp.com/office-cleaning",
@@ -30,8 +30,8 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: "Office Cleaning Services | Central MA, RI & Southern NH",
-    description: "Office cleaning for businesses across Central Massachusetts, Rhode Island, and Southern New Hampshire. Day porter and nightly crews. Get a free walkthrough.",
+    title: "Office Cleaning Services Massachusetts | Enterprise Cleaning",
+    description: "Office cleaning services in Massachusetts: nightly crews, day porters and custom daily, weekly or monthly plans for your workplace. Book a free walkthrough.",
     url: "https://www.enterprisecleaningcorp.com/office-cleaning",
     siteName: "Enterprise Cleaning Corporation",
     locale: "en_US",
@@ -128,7 +128,7 @@ const structuredDataFAQ = {
       "name": "Who provides office cleaning services in Worcester MA?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Enterprise Cleaning Corporation provides office cleaning services in Worcester, MA and throughout Worcester County from its West Boylston headquarters. Service also covers Rhode Island and Southern New Hampshire. Call (508) 890-1000 or request a walkthrough at enterprisecleaningcorp.com."
+        "text": "Enterprise Cleaning Corporation provides office cleaning services in Worcester, MA and throughout Worcester County from its West Boylston headquarters. Service also covers Rhode Island and Southern New Hampshire. Call (508) 304-2369 or request a walkthrough at enterprisecleaningcorp.com."
       }
     },
     {
@@ -248,10 +248,10 @@ export default function OfficeCleaningPage() {
                   Get a Free Walkthrough <ArrowRight className="w-4 h-4" />
                 </Link>
                 <a 
-                  href="tel:5088901000" 
+                  href="tel:5083042369" 
                   className="inline-flex items-center gap-2 bg-white/15 hover:bg-white/25 backdrop-blur-md text-white font-bold px-6 py-3.5 rounded-full border border-white/30 transition-all text-sm md:text-base"
                 >
-                  <PhoneCall className="w-4 h-4 text-[#FFE800]" /> (508) 890-1000
+                  <PhoneCall className="w-4 h-4 text-[#FFE800]" /> (508) 304-2369
                 </a>
               </div>
               
@@ -603,10 +603,10 @@ export default function OfficeCleaningPage() {
 
             <div className="mt-8 flex flex-wrap items-center justify-center gap-4">
               <a 
-                href="tel:5088901000" 
+                href="tel:5083042369" 
                 className="inline-flex items-center gap-2 bg-[#FFE800] text-slate-900 font-extrabold px-8 py-4 rounded-full hover:bg-yellow-300 transition-all shadow-xl text-base"
               >
-                <PhoneCall className="w-5 h-5" /> Call (508) 890-1000
+                <PhoneCall className="w-5 h-5" /> Call (508) 304-2369
               </a>
               <Link 
                 href="/contact" 

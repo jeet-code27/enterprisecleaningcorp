@@ -117,7 +117,7 @@ export function Header() {
                 <Clock className="size-3 text-white" />
                 <span>24/7 Emergency (24 hrs / 7 Days)</span>
               </Link>
-              <a href="tel:5088901000" className="flex items-center gap-1.5 font-bold shrink-0 hover:underline"><Phone className="size-3.5 text-[#FFE800]" />Serving New England: 508-890-1000</a>
+              <a href="tel:5083042369" className="flex items-center gap-1.5 font-bold shrink-0 hover:underline"><Phone className="size-3.5 text-[#FFE800]" />Serving New England: 508-304-2369</a>
 
               <a href="mailto:sales@enterprisecleaningcorp.com" className="flex items-center gap-1.5 shrink-0 hover:underline"><Mail className="size-3.5 text-white" />sales@enterprisecleaningcorp.com</a>
               <span className="flex items-center gap-1.5 shrink-0"><MapPin className="size-3.5 text-white" />99 Hartwell Street, Suite B, West Boylston, MA 01583</span>
@@ -133,7 +133,7 @@ export function Header() {
                 <Clock className="size-3 text-white" />
                 <span>24/7 Emergency (24 hrs / 7 Days)</span>
               </Link>
-              <a href="tel:5088901000" className="flex items-center gap-1.5 font-bold shrink-0 hover:underline"><Phone className="size-3.5 text-[#FFE800]" />Serving New England: 508-890-1000</a>
+              <a href="tel:5083042369" className="flex items-center gap-1.5 font-bold shrink-0 hover:underline"><Phone className="size-3.5 text-[#FFE800]" />Serving New England: 508-304-2369</a>
 
               <a href="mailto:sales@enterprisecleaningcorp.com" className="flex items-center gap-1.5 shrink-0 hover:underline"><Mail className="size-3.5 text-white" />sales@enterprisecleaningcorp.com</a>
             </div>
@@ -159,7 +159,7 @@ export function Header() {
               <a href="mailto:sales@enterprisecleaningcorp.com" className="flex items-center gap-1.5 hover:underline"><Mail className="size-3.5 text-white" />sales@enterprisecleaningcorp.com</a>
             </div>
             <div className="flex items-center gap-4">
-              <a href="tel:5088901000" className="flex items-center gap-1.5 font-bold hover:underline"><Phone className="size-3.5 text-[#FFE800]" />Serving New England: 508-890-1000</a>
+              <a href="tel:5083042369" className="flex items-center gap-1.5 font-bold hover:underline"><Phone className="size-3.5 text-[#FFE800]" />Serving New England: 508-304-2369</a>
               <span className="text-white/50">|</span>
               <div className="flex items-center gap-2.5">
                 <a
@@ -445,12 +445,12 @@ function MobileNav({ isPostConstruction }: { isPostConstruction?: boolean }) {
               </Button>
             )}
             <a
-              href="tel:5088901000"
+              href="tel:5083042369"
               onClick={close}
               className="flex items-center justify-center gap-2 w-full py-2.5 rounded-lg border-2 border-[#0090c8] text-[#0090c8] font-bold text-sm bg-sky-50/60 hover:bg-sky-100 transition-colors"
             >
               <Phone className="size-4 text-[#0090c8]" />
-              <span>Call (508) 890-1000</span>
+              <span>Call (508) 304-2369</span>
             </a>
             <div className="flex items-center justify-center gap-4 pt-2 border-t border-slate-100">
               <a

@@ -10,8 +10,8 @@ import { CTASection } from "@/components/blocks/cta-with-glow";
 import { RelatedIndustries } from "@/components/ui/related-industries";
 
 export const metadata: Metadata = {
-  title: { absolute: "Specialty Cleaning Central MA | Carpets, Windows & More" },
-  description: "One call, every cleaning need solved — carpets, windows, disaster cleanup & more. Serving Central MA. Get your free quote today.",
+  title: { absolute: "Specialty Cleaning Services Central MA | Enterprise Cleaning" },
+  description: "Specialty and deep cleaning for commercial spaces in Central MA, like carpets, windows and one-time projects. Enterprise Cleaning Corp. Request a free quote.",
   keywords: "worcester window washing, window cleaning worcester, window cleaning services worcester, window cleaning near me worcester, worcester window cleaning, window cleaning company worcester, worcester window cleaning company, window washing worcester, window washing near me worcester, worcester window cleaning services, commercial window cleaning Central MA",
   alternates: {
     canonical: "https://www.enterprisecleaningcorp.com/specialty-cleaning-services-central-ma"
@@ -112,7 +112,7 @@ const structuredDataFAQ = {
       "name": "How do I request a specialty cleaning quote?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Call (508) 890-1000 or request a free quote online, and we will scope the project and provide a no-obligation proposal."
+        "text": "Call (508) 304-2369 or request a free quote online, and we will scope the project and provide a no-obligation proposal."
       }
     }
   ]
@@ -179,10 +179,10 @@ export default function SpecialtyCleaningPage() {
                   Book a Walkthrough <ArrowRight className="w-4 h-4" />
                 </Link>
                 <a 
-                  href="tel:5088901000" 
+                  href="tel:5083042369" 
                   className="inline-flex items-center gap-2 bg-white/15 hover:bg-white/25 backdrop-blur-md text-white font-bold px-6 py-3.5 rounded-full border border-white/30 transition-all text-sm md:text-base"
                 >
-                  <PhoneCall className="w-4 h-4 text-[#FFE800]" /> (508) 890-1000
+                  <PhoneCall className="w-4 h-4 text-[#FFE800]" /> (508) 304-2369
                 </a>
               </div>
               
@@ -535,7 +535,7 @@ export default function SpecialtyCleaningPage() {
       >
         <div className="flex flex-col items-center gap-6">
           <p className="text-lg text-slate-600 max-w-2xl font-medium leading-relaxed text-left">
-            Whether you need a one-time pressure washing project or recurring window cleaning, we provide a no-obligation proposal tailored to your property. Call (508) 890-1000 today.
+            Whether you need a one-time pressure washing project or recurring window cleaning, we provide a no-obligation proposal tailored to your property. Call (508) 304-2369 today.
           </p>
           <div className="flex flex-wrap justify-center gap-3 pt-2 animate-appear delay-100">
             {[

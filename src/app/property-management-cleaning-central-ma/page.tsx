@@ -12,8 +12,8 @@ import { CTASection } from "@/components/blocks/cta-with-glow";
 import { RelatedServices } from "@/components/ui/related-services";
 
 export const metadata: Metadata = {
-  title: { absolute: "Property Management Cleaning Worcester MA" },
-  description: "Janitorial, common-area, and turnover cleaning for property managers across Worcester and Central Massachusetts. One reliable partner, 97% retention.",
+  title: { absolute: "Property Management Cleaning in MA | Enterprise Cleaning" },
+  description: "Cleaning for property managers in Central MA: common areas, lobbies, tenant turnovers and day porters under one vendor. Flexible plans. Request a free quote.",
   keywords: "commercial property management cleaning Central MA, multi-tenant building janitorial, common area commercial cleaning Worcester, HOA cleaning services",
   alternates: {
     canonical: "https://www.enterprisecleaningcorp.com/property-management-cleaning-central-ma"
@@ -90,7 +90,7 @@ const structuredDataFAQ = {
       "name": "What if there is an after-hours emergency at one of my buildings?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "We have a full emergency division and a 24/7 emergency line (508-890-1000) for water and storm damage, so you have one trusted partner for both routine cleaning and emergencies."
+        "text": "We have a full emergency division and a 24/7 emergency line (508-304-2369) for water and storm damage, so you have one trusted partner for both routine cleaning and emergencies."
       }
     },
     {
@@ -106,7 +106,7 @@ const structuredDataFAQ = {
       "name": "How do I get a property management cleaning quote?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Call (508) 890-1000 or request a free on-site assessment, and we will build a program around your property or portfolio."
+        "text": "Call (508) 304-2369 or request a free on-site assessment, and we will build a program around your property or portfolio."
       }
     }
   ]
@@ -157,9 +157,9 @@ export default function PropertyManagementPage() {
                 <Link href="/contact" className="inline-flex items-center justify-center gap-2 bg-[#0090c8] text-white font-extrabold px-8 py-4 rounded-xl hover:bg-[#007aa8] transition-colors shadow-lg shadow-[#0090c8]/30 text-lg">
                   Get a Free Quote <ArrowRight className="w-5 h-5" />
                 </Link>
-                <a href="tel:5088901000" className="inline-flex items-center justify-center gap-2 bg-white text-slate-900 font-bold px-8 py-4 rounded-xl hover:bg-slate-50 transition-colors border border-slate-200 shadow-sm text-lg">
+                <a href="tel:5083042369" className="inline-flex items-center justify-center gap-2 bg-white text-slate-900 font-bold px-8 py-4 rounded-xl hover:bg-slate-50 transition-colors border border-slate-200 shadow-sm text-lg">
                   <PhoneCall className="w-5 h-5 text-[#0090c8]" />
-                  (508) 890-1000
+                  (508) 304-2369
                 </a>
               </div>
             </div>
@@ -442,7 +442,7 @@ export default function PropertyManagementPage() {
       >
         <div className="flex flex-col items-center gap-6">
           <p className="text-lg text-slate-600 max-w-2xl font-medium leading-relaxed text-left">
-            Call (508) 890-1000 today, and we will build a cleaning and maintenance program around your property or portfolio.
+            Call (508) 304-2369 today, and we will build a cleaning and maintenance program around your property or portfolio.
           </p>
           <div className="flex flex-wrap justify-center gap-3 pt-2 animate-appear delay-100">
             {[

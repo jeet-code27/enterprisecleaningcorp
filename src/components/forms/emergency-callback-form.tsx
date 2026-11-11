@@ -129,7 +129,7 @@ export function EmergencyCallbackForm() {
       setSubmitted(true);
     } catch (err: any) {
       console.error("Submission error:", err);
-      setErrorMessage(err.message || "An unexpected error occurred. Please call our hotline immediately at (508) 890-1000 Option 1.");
+      setErrorMessage(err.message || "An unexpected error occurred. Please call our hotline immediately at (508) 304-2369.");
     } finally {
       setIsSubmitting(false);
     }
@@ -176,11 +176,11 @@ export function EmergencyCallbackForm() {
 
         <div className="pt-2 flex flex-col sm:flex-row items-center justify-center gap-3">
           <a
-            href="tel:5088901000"
+            href="tel:5083042369"
             className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-8 py-4 rounded-2xl bg-[#E31837] text-white hover:bg-red-700 font-black text-base shadow-xl transition-transform hover:scale-105"
           >
             <Phone className="size-5" />
-            <span>Need Instant Verbal Contact? Call (508) 890-1000</span>
+            <span>Need Instant Verbal Contact? Call (508) 304-2369</span>
           </a>
         </div>
       </div>
@@ -214,8 +214,8 @@ export function EmergencyCallbackForm() {
             <div className="text-[10px] font-bold text-slate-500 uppercase tracking-widest">
               Direct Emergency Hotline
             </div>
-            <a href="tel:5088901000" className="text-base font-black text-slate-900 hover:text-red-600">
-              (508) 890-1000
+            <a href="tel:5083042369" className="text-base font-black text-slate-900 hover:text-red-600">
+              (508) 304-2369
             </a>
             <div className="text-[11px] font-bold text-red-600">We Work 24/7</div>
             <div className="text-[10px] text-slate-500 font-medium">Calls 10 PM – 8 AM returned by 8 AM</div>

@@ -13,15 +13,15 @@ import {
 } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: { absolute: "Coghlin Companies Success Story | Enterprise Cleaning Corp" },
-  description: "Enterprise Cleaning Corp delivers manufacturing cleaning, day & night porters, and clean room sanitation across 5+ Coghlin Companies facilities.",
+  title: { absolute: "Cleanroom & ESD Floor Cleaning MA | Coghlin Case Study" },
+  description: "How Enterprise Cleaning Corp cares for high-tech assembly sites with ESD floor maintenance and lab sanitization. Read the Coghlin Companies case study.",
   keywords: ["Coghlin Companies cleaning case study", "manufacturing plant janitorial services", "clean room sanitation MA", "industrial day porter services", "commercial floor cleaning equipment"],
   alternates: {
     canonical: "https://www.enterprisecleaningcorp.com/success-stories/coghlin-companies",
   },
   openGraph: {
-    title: "Coghlin Companies Success Story | Enterprise Cleaning Corp",
-    description: "Enterprise Cleaning Corp delivers manufacturing cleaning, day & night porters, and clean room sanitation across 5+ Coghlin Companies facilities.",
+    title: "Cleanroom & ESD Floor Cleaning MA | Coghlin Case Study",
+    description: "How Enterprise Cleaning Corp cares for high-tech assembly sites with ESD floor maintenance and lab sanitization. Read the Coghlin Companies case study.",
     url: "https://www.enterprisecleaningcorp.com/success-stories/coghlin-companies",
     type: "article",
   },

@@ -130,9 +130,9 @@ export function FloatingContact() {
                   >
                     Send Another Message
                   </button>
-                  <a href="tel:5088901000" className="w-full">
+                  <a href="tel:5083042369" className="w-full">
                     <button className="w-full bg-[#003B7A] hover:bg-[#002855] text-white text-[11px] font-semibold py-1.5 rounded-lg transition-colors flex items-center justify-center gap-1.5">
-                      <Phone size={12} /> Call Us: (508) 890-1000
+                      <Phone size={12} /> Call Us: (508) 304-2369
                     </button>
                   </a>
                 </div>
@@ -252,8 +252,8 @@ export function FloatingContact() {
                 </form>
 
                 <div className="pt-2 mt-2 border-t border-slate-100 text-center">
-                  <a href="tel:5088901000" className="text-[10px] sm:text-[11px] font-semibold text-slate-600 hover:text-[#00B8FF] transition-colors flex items-center justify-center gap-1">
-                    <Phone size={11} className="text-[#00B8FF]" /> Or Call Us 24/7: (508) 890-1000
+                  <a href="tel:5083042369" className="text-[10px] sm:text-[11px] font-semibold text-slate-600 hover:text-[#00B8FF] transition-colors flex items-center justify-center gap-1">
+                    <Phone size={11} className="text-[#00B8FF]" /> Or Call Us 24/7: (508) 304-2369
                   </a>
                 </div>
               </>

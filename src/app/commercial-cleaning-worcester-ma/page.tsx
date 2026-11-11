@@ -13,7 +13,7 @@ import { TrustedByMarquee } from "@/components/ui/trusted-by-marquee";
 
 export const metadata: Metadata = {
   title: { absolute: "Commercial Cleaning Worcester, MA | 4x WBJ Best of Business" },
-  description: "Worcester facility managers keep us for a reason: 97% client retention and 4x WBJ Best of Business. Free walkthrough, written quote, call 508-890-1000.",
+  description: "Worcester facility managers keep us for a reason: 97% client retention and 4x WBJ Best of Business. Free walkthrough, written quote, call 508-304-2369.",
   keywords: "Commercial cleaning services, commercial cleaning, janitorial services, office cleaning, commercial office cleaning, commercial cleaning services worcester, worcester commercial cleaning services, medical office cleaning worcester ma, post construction cleaning massachusetts",
   alternates: {
     canonical: "https://www.enterprisecleaningcorp.com/commercial-cleaning-worcester-ma"
@@ -107,7 +107,7 @@ const structuredDataFAQ = {
     {
       "@type": "Question",
       "name": "How do I get a free cleaning quote for my Worcester property?",
-      "acceptedAnswer": { "@type": "Answer", "text": "Call (508) 890-1000 or submit a quote request. We schedule a free on-site walkthrough of your Worcester property and provide a written proposal." }
+      "acceptedAnswer": { "@type": "Answer", "text": "Call (508) 304-2369 or submit a quote request. We schedule a free on-site walkthrough of your Worcester property and provide a written proposal." }
     },
     {
       "@type": "Question",
@@ -161,11 +161,11 @@ export default function WorcesterCityPage() {
                   Get a Free Quote <ArrowRight className="w-4 h-4" />
                 </Link>
                 <a
-                  href="tel:5088901000"
+                  href="tel:5083042369"
                   className="inline-flex items-center justify-center gap-2 text-slate-800 font-bold px-7 py-3.5 rounded-xl hover:bg-slate-50 transition-colors border border-slate-200 text-base w-full sm:w-auto"
                 >
                   <PhoneCall className="w-4 h-4 text-[#0090c8]" />
-                  (508) 890-1000
+                  (508) 304-2369
                 </a>
               </div>
 
@@ -590,9 +590,9 @@ export default function WorcesterCityPage() {
                 <Link href="/contact" className="inline-flex items-center gap-2 bg-white text-slate-900 font-extrabold px-6 py-3 rounded-xl hover:bg-slate-100 transition-colors shadow-lg text-sm">
                   Request a Free Quote <ArrowRight className="w-4 h-4" />
                 </Link>
-                <a href="tel:5088901000" className="inline-flex items-center gap-2 text-white font-bold px-6 py-3 rounded-xl border border-white/30 hover:bg-white/10 transition-colors text-sm backdrop-blur-md">
+                <a href="tel:5083042369" className="inline-flex items-center gap-2 text-white font-bold px-6 py-3 rounded-xl border border-white/30 hover:bg-white/10 transition-colors text-sm backdrop-blur-md">
                   <PhoneCall className="w-4 h-4 text-[#0090c8]" />
-                  (508) 890-1000
+                  (508) 304-2369
                 </a>
               </div>
             </div>
@@ -667,11 +667,11 @@ export default function WorcesterCityPage() {
                 Get a Free Worcester Quote <ArrowRight className="w-4 h-4" />
               </Link>
               <a
-                href="tel:5088901000"
+                href="tel:5083042369"
                 className="inline-flex items-center gap-2 text-slate-800 font-bold px-8 py-4 rounded-xl hover:bg-slate-100 transition-colors border border-slate-200 text-base"
               >
                 <PhoneCall className="w-4 h-4 text-[#0090c8]" />
-                (508) 890-1000
+                (508) 304-2369
               </a>
             </div>
             <div className="flex flex-wrap justify-center gap-3 pt-2">

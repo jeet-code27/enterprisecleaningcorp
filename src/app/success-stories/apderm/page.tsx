@@ -12,15 +12,15 @@ import {
 } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: { absolute: "APDerm Healthcare Case Study | Enterprise Cleaning Corp" },
-  description: "Learn how Enterprise Cleaning Corp provides specialized medical cleaning, operating room sanitation, and facility support for APDerm across 30+ clinics.",
+  title: { absolute: "Medical Clinic Cleaning Across New England | APDerm Study" },
+  description: "How Enterprise Cleaning Corp supports 30+ APDerm clinical locations across MA, RI and NH with medical-grade disinfection. Read the full case study.",
   keywords: ["APDerm medical cleaning", "dermatology clinic janitorial services", "operating room cleaning MA RI NH", "healthcare facility disinfection", "medical office cleaning New England"],
   alternates: {
     canonical: "https://www.enterprisecleaningcorp.com/success-stories/apderm",
   },
   openGraph: {
-    title: "APDerm Healthcare Case Study | Enterprise Cleaning Corp",
-    description: "Learn how Enterprise Cleaning Corp provides specialized medical cleaning, operating room sanitation, and facility support for APDerm across 30+ clinics.",
+    title: "Medical Clinic Cleaning Across New England | APDerm Study",
+    description: "How Enterprise Cleaning Corp supports 30+ APDerm clinical locations across MA, RI and NH with medical-grade disinfection. Read the full case study.",
     url: "https://www.enterprisecleaningcorp.com/success-stories/apderm",
     type: "article",
   },

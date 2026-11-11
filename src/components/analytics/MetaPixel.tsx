@@ -90,8 +90,14 @@ export function trackMetaCustomEvent(eventName: string, params?: Record<string, 
   }
 }
 
-export function trackPhoneCallClick() {
-  trackMetaEvent("Contact", { content_name: "Phone Call Click", phone: "508-890-1000" });
+/** Accepts the dialed number, or a click event on a tel: link (when used directly as onClick). */
+export function trackPhoneCallClick(numberOrEvent?: unknown) {
+  let phone = typeof numberOrEvent === "string" ? numberOrEvent : "";
+  if (!phone && numberOrEvent && typeof numberOrEvent === "object" && "currentTarget" in numberOrEvent) {
+    const href = (numberOrEvent.currentTarget as HTMLElement | null)?.getAttribute?.("href") || "";
+    phone = href.replace("tel:", "").trim();
+  }
+  trackMetaEvent("Contact", { content_name: "Phone Call Click", phone });
   trackMetaCustomEvent("PhoneCall_Click", { timestamp: new Date().toISOString() });
 }
 

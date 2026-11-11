@@ -34,8 +34,8 @@ export async function generateMetadata({ searchParams }: { searchParams: Promise
   }
 
   return {
-    title: "Commercial Cleaning Blog & Insights | Enterprise Cleaning Corp",
-    description: "Read the latest news, commercial cleaning tips, facility maintenance guides, and updates from Enterprise Cleaning Corporation.",
+    title: "Commercial Cleaning Blog & Tips | Enterprise Cleaning Corp",
+    description: "Commercial cleaning tips, checklists and guides for Massachusetts facility managers from Enterprise Cleaning Corp. Read our latest cleaning insights.",
     keywords: "commercial cleaning blog, facility management tips, janitorial insights, office cleaning guide, Enterprise Cleaning Corp",
     alternates: {
       canonical: "https://www.enterprisecleaningcorp.com/blog",

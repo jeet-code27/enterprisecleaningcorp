@@ -49,7 +49,7 @@ export function ConversionTracker() {
           }
 
           // Meta Pixel Event
-          trackPhoneCallClick();
+          trackPhoneCallClick(cleanNumber);
         }
       }
 

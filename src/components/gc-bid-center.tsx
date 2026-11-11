@@ -253,7 +253,7 @@ ${formData.projectNotes || "No additional notes provided"}
       });
 
       if (!response.ok) {
-        throw new Error("Submission failed. Please try again or call us at 508-890-1000.");
+        throw new Error("Submission failed. Please try again or call us at 508-304-2369.");
       }
 
       setSubmitStatus("success");
@@ -300,7 +300,7 @@ Notes / Trade Scope: ${bidListData.notes || "Add Enterprise Cleaning Corporation
       });
 
       if (!response.ok) {
-        throw new Error("Unable to register at this time. Please email Alex directly or call 508-890-1000.");
+        throw new Error("Unable to register at this time. Please email Alex directly or call 508-304-2369.");
       }
 
       setSubmitStatus("success");

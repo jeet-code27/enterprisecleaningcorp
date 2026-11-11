@@ -11,8 +11,8 @@ import { CTASection } from "@/components/blocks/cta-with-glow";
 import { RelatedServices } from "@/components/ui/related-services";
 
 export const metadata: Metadata = {
-  title: { absolute: "Industrial Cleaning Central MA | Safety-First | Free Quote" },
-  description: "Heavy-duty cleaning for plants & warehouses, done right. Safety-trained crews serving Central MA. Get a free industrial cleaning quote now.",
+  title: { absolute: "Industrial Cleaning Central MA | Enterprise Cleaning Corp" },
+  description: "Industrial and manufacturing facility cleaning in Central MA. Safety-trained crews and scheduled plans for plants, labs and shops. Get a free industrial quote.",
   keywords: "industrial cleaning, warehouse cleaning worcester ma, industrial building maintenance, industrial cleaners, factory cleaning, office cleaning services safety manufacturing facilities, warehouse cleaning services, manufacturing plant cleaning services, factory cleaning company worcester, industrial deep cleaning",
   alternates: {
     canonical: "https://www.enterprisecleaningcorp.com/manufacturing-industrial-cleaning-central-ma"
@@ -113,7 +113,7 @@ const structuredDataFAQ = {
       "name": "How do I get an industrial cleaning quote?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Call (508) 890-1000 or request a free on-site assessment. We will tour your facility, learn your requirements, and provide a comprehensive proposal."
+        "text": "Call (508) 304-2369 or request a free on-site assessment. We will tour your facility, learn your requirements, and provide a comprehensive proposal."
       }
     }
   ]
@@ -164,9 +164,9 @@ export default function IndustrialCleaningPage() {
                 <Link href="/contact" className="inline-flex items-center justify-center gap-2 bg-[#0090c8] text-white font-extrabold px-8 py-4 rounded-xl hover:bg-[#007aa8] transition-colors shadow-lg shadow-[#0090c8]/30 text-lg">
                   Get a Free Quote <ArrowRight className="w-5 h-5" />
                 </Link>
-                <a href="tel:5088901000" className="inline-flex items-center justify-center gap-2 bg-white text-slate-900 font-bold px-8 py-4 rounded-xl hover:bg-slate-50 transition-colors border border-slate-200 shadow-sm text-lg">
+                <a href="tel:5083042369" className="inline-flex items-center justify-center gap-2 bg-white text-slate-900 font-bold px-8 py-4 rounded-xl hover:bg-slate-50 transition-colors border border-slate-200 shadow-sm text-lg">
                   <PhoneCall className="w-5 h-5 text-[#0090c8]" />
-                  (508) 890-1000
+                  (508) 304-2369
                 </a>
               </div>
             </div>
@@ -449,7 +449,7 @@ export default function IndustrialCleaningPage() {
       >
         <div className="flex flex-col items-center gap-6">
           <p className="text-lg text-slate-600 max-w-2xl font-medium leading-relaxed text-left">
-            We will tour your facility, learn your requirements, and provide a comprehensive proposal designed around your shifts and safety protocols. Call (508) 890-1000 today.
+            We will tour your facility, learn your requirements, and provide a comprehensive proposal designed around your shifts and safety protocols. Call (508) 304-2369 today.
           </p>
           <div className="flex flex-wrap justify-center gap-3 pt-2 animate-appear delay-100">
             {[

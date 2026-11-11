@@ -12,8 +12,8 @@ import { RelatedIndustries } from "@/components/ui/related-industries";
 import { RelatedServices } from "@/components/ui/related-services";
 
 export const metadata: Metadata = {
-  title: { absolute: "Janitorial Services | Restroom Cleaning MA, RI & NH" },
-  description: "Janitorial services with restroom cleaning done right, for businesses in Central Massachusetts, Rhode Island, and Southern New Hampshire. Book a walkthrough.",
+  title: { absolute: "Janitorial Services Massachusetts | Enterprise Cleaning" },
+  description: "Janitorial services in Massachusetts with restroom care, restocking and custom nightly or daily schedules. In-house crews, no subcontractors. Free quote.",
   keywords: "janitorial services, janitorial cleaning services, commercial janitorial services, cleaning and janitorial services, office janitorial services near me, janitorial cleaning services near me, janitorial services near me, janitorial company near me, commercial janitorial services in massachusetts, janitor near me, day porter services near me, janitorial staffing agencies near me, commercial disinfection services",
   alternates: {
     canonical: "https://www.enterprisecleaningcorp.com/janitorial-services",
@@ -30,8 +30,8 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: "Janitorial Services | Restroom Cleaning MA, RI & NH",
-    description: "Janitorial services with restroom cleaning done right, for businesses in Central Massachusetts, Rhode Island, and Southern New Hampshire. Book a walkthrough.",
+    title: "Janitorial Services Massachusetts | Enterprise Cleaning",
+    description: "Janitorial services in Massachusetts with restroom care, restocking and custom nightly or daily schedules. In-house crews, no subcontractors. Free quote.",
     url: "https://www.enterprisecleaningcorp.com/janitorial-services",
     siteName: "Enterprise Cleaning Corporation",
     locale: "en_US",
@@ -168,7 +168,7 @@ const structuredDataFAQ = {
       "name": "Who provides janitorial services near me in Worcester County?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Enterprise Cleaning Corporation provides janitorial services throughout Worcester County from its West Boylston headquarters, including Worcester, Shrewsbury, Westborough, Northborough, Holden, Auburn, Leominster, and Fitchburg, plus Rhode Island and Southern New Hampshire. Call (508) 890-1000 or request a walkthrough at enterprisecleaningcorp.com."
+        "text": "Enterprise Cleaning Corporation provides janitorial services throughout Worcester County from its West Boylston headquarters, including Worcester, Shrewsbury, Westborough, Northborough, Holden, Auburn, Leominster, and Fitchburg, plus Rhode Island and Southern New Hampshire. Call (508) 304-2369 or request a walkthrough at enterprisecleaningcorp.com."
       }
     }
   ]
@@ -264,10 +264,10 @@ export default function JanitorialServicesPage() {
                   Book a Walkthrough <ArrowRight className="w-4 h-4" />
                 </Link>
                 <a 
-                  href="tel:5088901000" 
+                  href="tel:5083042369" 
                   className="inline-flex items-center gap-2 bg-white/15 hover:bg-white/25 backdrop-blur-md text-white font-bold px-6 py-3.5 rounded-full border border-white/30 transition-all text-sm md:text-base"
                 >
-                  <PhoneCall className="w-4 h-4 text-[#FFE800]" /> (508) 890-1000
+                  <PhoneCall className="w-4 h-4 text-[#FFE800]" /> (508) 304-2369
                 </a>
               </div>
               
@@ -862,10 +862,10 @@ export default function JanitorialServicesPage() {
 
             <div className="mt-8 flex flex-wrap items-center justify-center gap-4">
               <a 
-                href="tel:5088901000" 
+                href="tel:5083042369" 
                 className="inline-flex items-center gap-2 bg-[#FFE800] text-slate-900 font-extrabold px-8 py-4 rounded-full hover:bg-yellow-300 transition-all shadow-xl text-base"
               >
-                <PhoneCall className="w-5 h-5" /> Call (508) 890-1000
+                <PhoneCall className="w-5 h-5" /> Call (508) 304-2369
               </a>
               <Link 
                 href="/contact" 

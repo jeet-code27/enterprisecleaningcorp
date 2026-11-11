@@ -124,11 +124,11 @@ export function EmergencyCTA() {
             {/* Action CTA Buttons */}
             <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3 pt-2">
               <a
-                href="tel:5088901000"
+                href="tel:5083042369"
                 className="flex items-center justify-center gap-2.5 px-6 py-3.5 rounded-xl bg-white text-[#c8102e] hover:bg-slate-100 font-black text-base shadow-lg hover:shadow-xl transition-all duration-200 hover:scale-[1.02] active:scale-[0.98] group"
               >
                 <Phone className="size-5 text-[#c8102e] group-hover:rotate-12 transition-transform" />
-                <span>Call (508) 890-1000</span>
+                <span>Call (508) 304-2369</span>
               </a>
 
               <Link

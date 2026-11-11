@@ -11,8 +11,8 @@ import { RelatedIndustries } from "@/components/ui/related-industries";
 import { EmergencyCallbackForm } from "@/components/forms/emergency-callback-form";
 
 export const metadata: Metadata = {
-  title: { absolute: "24/7 Water Cleanup Worcester MA" },
-  description: "24/7 emergency water, flood, and mold cleanup across Worcester and Central Massachusetts. Call (508) 890-1000 for rapid response.",
+  title: { absolute: "Emergency Restoration Central MA | Enterprise Cleaning Corp" },
+  description: "24/7 emergency cleanup and restoration for Central MA businesses after water, flood, fire or storm damage. Rapid response and insurance support. Call now.",
   keywords: "commercial emergency cleanup Central MA, 24/7 commercial water damage restoration, industrial flood cleanup Worcester, commercial disaster recovery cleaning",
   alternates: {
     canonical: "https://www.enterprisecleaningcorp.com/emergency-restoration-services-central-ma"
@@ -35,7 +35,7 @@ const structuredDataService = {
   "@type": "Service",
   "serviceType": "Emergency Water Cleanup & Flood Restoration",
   "name": "24/7 Water Cleanup Worcester MA — Enterprise Cleaning Corporation",
-  "description": "24/7 emergency water, flood, and mold cleanup across Worcester and Central Massachusetts. Call (508) 890-1000 for rapid response.",
+  "description": "24/7 emergency cleanup and restoration for Central MA businesses after water, flood, fire or storm damage. Rapid response and insurance support. Call now.",
   "url": "https://www.enterprisecleaningcorp.com/emergency-restoration-services-central-ma",
   "provider": {
     "@type": "EmergencyService",
@@ -75,7 +75,7 @@ const structuredDataFAQ = {
       "name": "What number do I call for a cleaning or flood emergency, and what are your phone hours?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "For emergency water, flood, and cleanup response, call (508) 890-1000. We do work 24/7. Phone availability: For calls received between 10:00 PM and 8:00 AM, our team will get back to you by 8:00 AM."
+        "text": "For emergency water, flood, and cleanup response, call (508) 304-2369. We do work 24/7. Phone availability: For calls received between 10:00 PM and 8:00 AM, our team will get back to you by 8:00 AM."
       }
     },
     {
@@ -174,10 +174,10 @@ export default function EmergencyRestorationPage() {
                   Request Emergency Callback <ArrowRight className="w-4 h-4" />
                 </a>
                 <a 
-                  href="tel:5088901000" 
+                  href="tel:5083042369" 
                   className="inline-flex items-center gap-2 bg-white/15 hover:bg-white/25 backdrop-blur-md text-white font-bold px-6 py-3.5 rounded-full border border-white/30 transition-all text-sm md:text-base"
                 >
-                  <PhoneCall className="w-4 h-4 text-[#FFE800]" /> 24/7 Hotline: (508) 890-1000
+                  <PhoneCall className="w-4 h-4 text-[#FFE800]" /> 24/7 Hotline: (508) 304-2369
                 </a>
               </div>
               
@@ -227,9 +227,9 @@ export default function EmergencyRestorationPage() {
                   We do work 24/7. Phone availability: For calls received between 10:00 PM and 8:00 AM, we will get back to you by 8:00 AM.
                 </p>
                 <div className="pt-3 border-t border-slate-100">
-                  <a href="tel:5088901000" className="inline-flex items-center justify-center gap-2 w-full bg-[#E31837] text-white py-4 px-4 rounded-2xl hover:bg-red-700 transition-colors shadow-lg font-black text-xl">
+                  <a href="tel:5083042369" className="inline-flex items-center justify-center gap-2 w-full bg-[#E31837] text-white py-4 px-4 rounded-2xl hover:bg-red-700 transition-colors shadow-lg font-black text-xl">
                     <PhoneCall className="w-5 h-5 shrink-0" />
-                    <span>(508) 890-1000</span>
+                    <span>(508) 304-2369</span>
                   </a>
                   <span className="block mt-1.5 text-[11px] text-slate-500 font-semibold">
                     Calls 10 PM – 8 AM returned by 8 AM
@@ -564,9 +564,9 @@ export default function EmergencyRestorationPage() {
                 </div>
                 <p className="text-white font-bold text-lg md:text-2xl leading-snug">Worcester &amp; Central MA · Rhode Island · New Hampshire</p>
               </div>
-              <a href="tel:5088901000" className="shrink-0 inline-flex items-center gap-2 bg-[#E31837] text-white font-extrabold px-6 py-3 rounded-full hover:bg-red-700 transition-colors shadow-lg text-sm">
+              <a href="tel:5083042369" className="shrink-0 inline-flex items-center gap-2 bg-[#E31837] text-white font-extrabold px-6 py-3 rounded-full hover:bg-red-700 transition-colors shadow-lg text-sm">
                 <PhoneCall className="w-4 h-4" />
-                508-890-1000
+                508-304-2369
               </a>
             </div>
           </div>
@@ -605,14 +605,14 @@ export default function EmergencyRestorationPage() {
         className="bg-white border-t border-slate-100"
         title="Experiencing an Emergency?"
         action={{
-          text: "Call (508) 890-1000",
-          href: "tel:5088901000",
+          text: "Call (508) 304-2369",
+          href: "tel:5083042369",
           variant: "destructive",
         }}
       >
         <div className="flex flex-col items-center gap-6">
           <p className="text-lg text-slate-600 max-w-2xl font-medium leading-relaxed text-left">
-            For non-emergency cleanup inquiries, you can also request a free on-site assessment online or call (508) 890-1000 during business hours.
+            For non-emergency cleanup inquiries, you can also request a free on-site assessment online or call (508) 304-2369 during business hours.
           </p>
           <div className="flex flex-wrap justify-center gap-3 pt-2 animate-appear delay-100">
             {[

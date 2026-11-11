@@ -21,8 +21,8 @@ interface RegionalCityPageTemplateProps {
 }
 
 const SITE_URL = "https://www.enterprisecleaningcorp.com";
-const PHONE_DISPLAY = "(508) 890-1000";
-const PHONE_HREF = "tel:5088901000";
+const PHONE_DISPLAY = "(508) 304-2369";
+const PHONE_HREF = "tel:5083042369";
 
 const HERO_IMAGES = [
   { src: "/images/office_cleaning_hero.png", alt: "Office cleaning" },
@@ -79,7 +79,7 @@ const COPY_LINKS: Record<string, string> = {
   "commercial cleaning services": "/commercial-cleaning-quote",
   "free walkthrough": "/contact",
   "contact page": "/contact",
-  "(508) 890-1000": PHONE_HREF,
+  "(508) 304-2369": PHONE_HREF,
 };
 
 const NATIVE_TOWN_LINKS: Record<string, string> = {

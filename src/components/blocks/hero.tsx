@@ -110,11 +110,11 @@ export const Hero = () => {
           </Link>
 
           <a
-            href="tel:5088901000"
+            href="tel:5083042369"
             className="group inline-flex items-center justify-center gap-2.5 border border-white/25 bg-white/8 backdrop-blur-md text-white px-6 sm:px-7 py-3.5 rounded-xl font-bold text-sm transition-all duration-300 hover:border-[#00B8FF]/60 hover:bg-white/15 hover:-translate-y-0.5 h-12 w-full sm:w-auto text-center"
           >
             <Phone className="w-4 h-4 text-[#00B8FF] shrink-0" />
-            (508) 890-1000
+            (508) 304-2369
           </a>
         </motion.div>
 

@@ -10,8 +10,8 @@ import { CTASection } from "@/components/blocks/cta-with-glow";
 import { RelatedIndustries } from "@/components/ui/related-industries";
 
 export const metadata: Metadata = {
-  title: { absolute: "Floor Care Central MA | Strip, Wax & Buff — Free Estimate" },
-  description: "Dull, scuffed floors? We fix that. Professional stripping, waxing & buffing for Central MA facilities. Free on-site estimate — book today.",
+  title: { absolute: "Floor Stripping & Waxing Central MA | Enterprise Cleaning" },
+  description: "Commercial floor stripping, waxing, buffing and carpet care in Central MA. Enterprise Cleaning Corp restores floors to a clean, polished finish. Free quote.",
   keywords: "commercial floor maintenance near me, floor cleaning massachusetts, commercial floor waxing in natick, ma, terrazzo floor cleaning near me, floor cleaning ma, floor cleaning wilmington ma, hardwood floor cleaning worcester ma, VCT stripping and waxing, commercial carpet cleaning Worcester",
   alternates: {
     canonical: "https://www.enterprisecleaningcorp.com/floor-care-services-central-ma"
@@ -103,7 +103,7 @@ const structuredDataFAQ = {
       "name": "How do I get a floor care quote?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Call (508) 890-1000 or request a free on-site assessment online. We will evaluate your flooring and provide a no-obligation proposal."
+        "text": "Call (508) 304-2369 or request a free on-site assessment online. We will evaluate your flooring and provide a no-obligation proposal."
       }
     }
   ]
@@ -170,10 +170,10 @@ export default function FloorCarePage() {
                   Book a Walkthrough <ArrowRight className="w-4 h-4" />
                 </Link>
                 <a 
-                  href="tel:5088901000" 
+                  href="tel:5083042369" 
                   className="inline-flex items-center gap-2 bg-white/15 hover:bg-white/25 backdrop-blur-md text-white font-bold px-6 py-3.5 rounded-full border border-white/30 transition-all text-sm md:text-base"
                 >
-                  <PhoneCall className="w-4 h-4 text-[#FFE800]" /> (508) 890-1000
+                  <PhoneCall className="w-4 h-4 text-[#FFE800]" /> (508) 304-2369
                 </a>
               </div>
               
@@ -534,7 +534,7 @@ export default function FloorCarePage() {
       >
         <div className="flex flex-col items-center gap-6">
           <p className="text-lg text-slate-600 max-w-2xl font-medium leading-relaxed text-left">
-            Get a comprehensive floor care plan designed specifically for your facility's traffic and flooring type. Call (508) 890-1000 or request a free quote online.
+            Get a comprehensive floor care plan designed specifically for your facility's traffic and flooring type. Call (508) 304-2369 or request a free quote online.
           </p>
           <div className="flex flex-wrap justify-center gap-3 pt-2 animate-appear delay-100">
             {[

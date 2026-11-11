@@ -13,8 +13,8 @@ import { CTASection } from "@/components/blocks/cta-with-glow";
 import { RelatedIndustries } from "@/components/ui/related-industries";
 
 export const metadata: Metadata = {
-  title: { absolute: "Turnover Cleaning Services | Central MA, RI & Southern NH" },
-  description: "Fast move-in, move-out & tenant turnover cleaning for apartments, commercial suites & managed properties across Central MA, Rhode Island & Southern NH.",
+  title: { absolute: "Turnover Cleaning Services Central MA | Enterprise Cleaning" },
+  description: "Move-out and tenant turnover cleaning for property managers in Central MA. Enterprise Cleaning Corp gets units and suites rent-ready fast. Free quote.",
   keywords: "commercial turnover cleaning Central MA, apartment turnover cleaning services, commercial property turnover cleaners Worcester, tenant changeover cleaning",
   alternates: {
     canonical: "https://www.enterprisecleaningcorp.com/turnover-cleaning-central-ma"
@@ -143,7 +143,7 @@ const structuredDataFAQ = {
       "name": "How do I schedule a turnover cleaning quote?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Call (508) 890-1000 or request a free quote online with your move-out date, and we will confirm a cleaning window that fits your leasing schedule."
+        "text": "Call (508) 304-2369 or request a free quote online with your move-out date, and we will confirm a cleaning window that fits your leasing schedule."
       }
     }
   ]
@@ -210,10 +210,10 @@ export default function TurnoverCleaningPage() {
                   Book a Walkthrough <ArrowRight className="w-4 h-4" />
                 </Link>
                 <a 
-                  href="tel:5088901000" 
+                  href="tel:5083042369" 
                   className="inline-flex items-center gap-2 bg-white/15 hover:bg-white/25 backdrop-blur-md text-white font-bold px-6 py-3.5 rounded-full border border-white/30 transition-all text-sm md:text-base"
                 >
-                  <PhoneCall className="w-4 h-4 text-[#FFE800]" /> (508) 890-1000
+                  <PhoneCall className="w-4 h-4 text-[#FFE800]" /> (508) 304-2369
                 </a>
               </div>
               

@@ -45,11 +45,11 @@ export default function EmergencyAuthorizationPage() {
             </span>
             <div className="flex flex-col items-center sm:items-end">
               <a
-                href="tel:5088901000"
+                href="tel:5083042369"
                 className="inline-flex items-center gap-1.5 font-bold text-[#E31837] hover:underline"
               >
                 <PhoneCall className="w-3.5 h-3.5" />
-                <span>(508) 890-1000</span>
+                <span>(508) 304-2369</span>
               </a>
               <span className="text-[10px] text-slate-500 font-medium">
                 Calls 10 PM – 8 AM returned by 8 AM

@@ -17,8 +17,8 @@ import { SuccessStoriesSection } from "@/components/blocks/success-stories-secti
 import Script from "next/script";
 
 export const metadata: Metadata = {
-  title: { absolute: "Commercial Cleaning Services & Janitorial │ Enterprise Cleaning Corp" },
-  description: "Enterprise Cleaning Corporation provides top-rated commercial cleaning services, office cleaning services in Massachusetts, and commercial janitorial services near me with 97% client retention.",
+  title: { absolute: "Commercial Cleaning Services MA & RI | Enterprise Cleaning" },
+  description: "Commercial cleaning, janitorial and floor care for offices, medical and industrial sites across Massachusetts and RI. 97% client retention. Get a free quote.",
   keywords: "commercial cleaning services, office cleaning services in Massachusetts, commercial janitorial services in Massachusetts, industrial cleaning company in Massachusetts, high technology janitorial services in massachusetts, commercial cleaning services near me, office cleaning services, commercial cleaning massachusetts, commercial cleaning companies, commercial janitorial services near me, commercial cleaning, commercial cleaning services massachusetts, janitorial services near me, cleaning company near me, commercial cleaner near me, building cleaning services near me, Commercial cleaning Worcester MA, Enterprise Cleaning Corp",
   alternates: {
     canonical: "https://www.enterprisecleaningcorp.com/",

@@ -20,15 +20,15 @@ import {
 } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: { absolute: "Customer Success Stories & Case Studies | Enterprise Cleaning Corp" },
-  description: "Discover how Enterprise Cleaning Corp delivers top-tier commercial, medical, and manufacturing cleaning services across New England.",
+  title: { absolute: "Commercial Cleaning Case Studies | Enterprise Cleaning Corp" },
+  description: "See how Enterprise Cleaning Corp serves banks, medical networks, manufacturers and property managers across New England. Read our client success stories.",
   keywords: ["commercial cleaning success stories", "janitorial case studies New England", "enterprise cleaning testimonials", "bank cleaning case study", "medical cleaning case study", "manufacturing cleaning case study"],
   alternates: {
     canonical: "https://www.enterprisecleaningcorp.com/success-stories",
   },
   openGraph: {
-    title: "Customer Success Stories & Case Studies | Enterprise Cleaning Corp",
-    description: "Discover how Enterprise Cleaning Corp delivers top-tier commercial, medical, and manufacturing cleaning services across New England.",
+    title: "Commercial Cleaning Case Studies | Enterprise Cleaning Corp",
+    description: "See how Enterprise Cleaning Corp serves banks, medical networks, manufacturers and property managers across New England. Read our client success stories.",
     url: "https://www.enterprisecleaningcorp.com/success-stories",
     type: "website",
   },
@@ -925,11 +925,11 @@ export default function SuccessStoriesPage() {
                 <ArrowRight className="w-5 h-5" />
               </Link>
               <a
-                href="tel:508-890-1000"
+                href="tel:508-304-2369"
                 className="inline-flex items-center justify-center gap-2 px-6 py-4 rounded-xl bg-white/15 text-white font-bold text-base hover:bg-white/25 transition-all text-center border border-white/20"
               >
                 <PhoneCall className="w-5 h-5 text-[#FFE800]" />
-                <span>508-890-1000</span>
+                <span>508-304-2369</span>
               </a>
             </div>
           </div>

@@ -137,8 +137,8 @@ export function FAQSection() {
         {/* Additional CTA */}
         <div className="mt-16 text-center">
           <p className="text-slate-600 font-medium mb-4 text-lg">Have another question?</p>
-          <a href="tel:5088901000" className="inline-flex items-center justify-center px-8 py-4 rounded-full bg-[#0090c8] text-white font-bold text-lg hover:bg-[#007aa8] transition-colors shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 duration-200">
-            Call Us Now: (508) 890-1000
+          <a href="tel:5083042369" className="inline-flex items-center justify-center px-8 py-4 rounded-full bg-[#0090c8] text-white font-bold text-lg hover:bg-[#007aa8] transition-colors shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 duration-200">
+            Call Us Now: (508) 304-2369
           </a>
         </div>
       </div>

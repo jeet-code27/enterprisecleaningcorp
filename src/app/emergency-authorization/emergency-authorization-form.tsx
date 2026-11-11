@@ -131,7 +131,7 @@ export function EmergencyAuthorizationForm() {
         })
         .catch((err) => {
           console.error("Verification error:", err);
-          setErrorMessage("Error verifying payment session. Please call (508) 890-1000.");
+          setErrorMessage("Error verifying payment session. Please call (508) 304-2369.");
         })
         .finally(() => setIsVerifying(false));
     }
@@ -246,7 +246,7 @@ export function EmergencyAuthorizationForm() {
     } catch (err: any) {
       console.error(err);
       setErrorMessage(
-        err.message || "An error occurred while connecting to Stripe. Please call (508) 890-1000."
+        err.message || "An error occurred while connecting to Stripe. Please call (508) 304-2369."
       );
       setIsSubmitting(false);
     }
@@ -372,11 +372,11 @@ export function EmergencyAuthorizationForm() {
           </button>
 
           <a
-            href="tel:5088901000"
+            href="tel:5083042369"
             className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-xl bg-[#E31837] text-white font-bold text-sm hover:bg-red-700 transition-colors shadow-md"
           >
             <PhoneCall className="w-4 h-4 text-[#FFE800]" />
-            <span>Call Operations: 508-890-1000</span>
+            <span>Call Operations: 508-304-2369</span>
           </a>
         </div>
       </div>
@@ -425,7 +425,7 @@ export function EmergencyAuthorizationForm() {
               <Clock className="w-3.5 h-3.5" /> We Work 24/7
             </span>
             <div className="text-xs font-bold text-slate-700">
-              Hotline: <a href="tel:5088901000" className="text-[#003B7A] underline font-black">508-890-1000</a>
+              Hotline: <a href="tel:5083042369" className="text-[#003B7A] underline font-black">508-304-2369</a>
             </div>
             <div className="text-[11px] text-slate-500 font-medium max-w-[260px] leading-snug">
               Phone availability: Calls between 10 PM and 8 AM will be returned by 8 AM
@@ -971,7 +971,7 @@ export function EmergencyAuthorizationForm() {
         </button>
 
         <p className="text-xs text-slate-600 font-medium leading-relaxed max-w-xl mx-auto">
-          We perform emergency mitigation work <strong>24/7</strong>. Phone availability note: For calls received between 10:00 PM and 8:00 AM, our team will get back to you by 8:00 AM. Direct line: <a href="tel:5088901000" className="underline font-bold text-[#003B7A] hover:text-[#E31837]">508-890-1000</a>.
+          We perform emergency mitigation work <strong>24/7</strong>. Phone availability note: For calls received between 10:00 PM and 8:00 AM, our team will get back to you by 8:00 AM. Direct line: <a href="tel:5083042369" className="underline font-bold text-[#003B7A] hover:text-[#E31837]">508-304-2369</a>.
         </p>
       </div>
     </form>

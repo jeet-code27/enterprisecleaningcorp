@@ -9,8 +9,8 @@ import { CTASection } from "@/components/blocks/cta-with-glow";
 import { AwardsSection } from "@/components/blocks/awards-section";
 
 export const metadata: Metadata = {
-  title: { absolute: "About Enterprise Cleaning │ 23+ Years Serving Central MA" },
-  description: "Meet the team behind Enterprise Cleaning Corporation — 23+ years serving Central MA, RI & Southern NH. 4x WBJ award winner, BBB accredited, 97% retention.",
+  title: { absolute: "About Enterprise Cleaning Corp | Worcester MA Cleaners" },
+  description: "Meet the owner-led team behind Enterprise Cleaning Corp: 23+ years in Central MA, 4x WBJ Best of Business and a 97% client retention rate. Get to know us.",
   keywords: "About Enterprise Cleaning Corporation, commercial cleaning Central MA, Stephen Buchalter, commercial cleaning team, BBB accredited cleaning company, 23 years experience, Worcester Business Journal award",
   alternates: {
     canonical: "https://www.enterprisecleaningcorp.com/about",

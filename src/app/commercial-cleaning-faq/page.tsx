@@ -15,8 +15,8 @@ import {
 import FAQAccordionList from "@/app/commercial-cleaning-faq/faq-client";
 
 export const metadata: Metadata = {
-  title: { absolute: "Commercial Cleaning FAQs | Enterprise Cleaning Corporation" },
-  description: "Answers to the questions facility managers and office decision-makers ask before hiring a commercial cleaning company. Serving Central MA, RI, and Southern NH.",
+  title: { absolute: "Commercial Cleaning FAQs | Enterprise Cleaning Corp" },
+  description: "Answers to common commercial cleaning questions: pricing, schedules, day porters, floor care and emergency cleanup in MA. Ask Enterprise Cleaning Corp.",
   keywords: "Commercial cleaning FAQ, office cleaning questions, facility manager FAQ, commercial janitorial FAQ, Enterprise Cleaning Corporation questions, Worcester commercial cleaning FAQ",
   alternates: {
     canonical: "https://www.enterprisecleaningcorp.com/commercial-cleaning-faq",
@@ -288,11 +288,11 @@ export default function CommercialCleaningFAQPage() {
                 Schedule a Free Walkthrough <ArrowRight className="w-5 h-5" />
               </Link>
               <a
-                href="tel:5088901000"
+                href="tel:5083042369"
                 className="inline-flex items-center gap-2 bg-white/10 hover:bg-white/20 text-white font-bold px-8 py-4 rounded-xl transition-colors border border-white/20 text-base"
               >
                 <PhoneCall className="w-5 h-5 text-[#FFE800]" />
-                Call (508) 890-1000
+                Call (508) 304-2369
               </a>
             </div>
 

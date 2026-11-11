@@ -148,7 +148,7 @@ const structuredDataFAQ = {
       "name": "How do I schedule cleaning for a listing or closing?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Call (508) 890-1000 or request a free quote online with your listing or closing date, and we will confirm a cleaning window that fits your timeline."
+        "text": "Call (508) 304-2369 or request a free quote online with your listing or closing date, and we will confirm a cleaning window that fits your timeline."
       }
     }
   ]
@@ -199,9 +199,9 @@ export default function RealEstateCleaningPage() {
                 <Link href="/contact" className="inline-flex items-center justify-center gap-2 bg-[#0090c8] text-white font-extrabold px-8 py-4 rounded-xl hover:bg-[#007aa8] transition-colors shadow-lg shadow-[#0090c8]/30 text-lg">
                   Get a Free Quote <ArrowRight className="w-5 h-5" />
                 </Link>
-                <a href="tel:5088901000" className="inline-flex items-center justify-center gap-2 bg-white text-slate-900 font-bold px-8 py-4 rounded-xl hover:bg-slate-50 transition-colors border border-slate-200 shadow-sm text-lg">
+                <a href="tel:5083042369" className="inline-flex items-center justify-center gap-2 bg-white text-slate-900 font-bold px-8 py-4 rounded-xl hover:bg-slate-50 transition-colors border border-slate-200 shadow-sm text-lg">
                   <PhoneCall className="w-5 h-5 text-[#0090c8]" />
-                  (508) 890-1000
+                  (508) 304-2369
                 </a>
               </div>
             </div>

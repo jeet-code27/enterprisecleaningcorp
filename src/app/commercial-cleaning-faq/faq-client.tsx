@@ -233,7 +233,7 @@ export default function FAQAccordionList() {
           <HelpCircle className="w-12 h-12 text-slate-300 mx-auto" />
           <h3 className="text-base font-bold text-slate-700">No matching questions found</h3>
           <p className="text-xs text-slate-500 max-w-md mx-auto">
-            Try adjusting your search query or category filter, or call our team directly at (508) 890-1000 for immediate answers.
+            Try adjusting your search query or category filter, or call our team directly at (508) 304-2369 for immediate answers.
           </p>
         </div>
       )}

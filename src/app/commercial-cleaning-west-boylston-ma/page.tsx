@@ -105,12 +105,12 @@ const structuredDataFAQ = {
     {
       "@type": "Question",
       "name": "Can I visit Enterprise Cleaning Corporation's office in West Boylston?",
-      "acceptedAnswer": { "@type": "Answer", "text": "Our office is located at 99 Hartwell Street, Suite B, West Boylston, MA 01583. Call (508) 890-1000 to schedule a visit or a walkthrough of your property." }
+      "acceptedAnswer": { "@type": "Answer", "text": "Our office is located at 99 Hartwell Street, Suite B, West Boylston, MA 01583. Call (508) 304-2369 to schedule a visit or a walkthrough of your property." }
     },
     {
       "@type": "Question",
       "name": "How do I get a cleaning quote for my West Boylston business?",
-      "acceptedAnswer": { "@type": "Answer", "text": "Call (508) 890-1000. Because we're headquartered in West Boylston, we can typically schedule a walkthrough faster here than almost anywhere else we serve." }
+      "acceptedAnswer": { "@type": "Answer", "text": "Call (508) 304-2369. Because we're headquartered in West Boylston, we can typically schedule a walkthrough faster here than almost anywhere else we serve." }
     }
   ]
 };
@@ -164,11 +164,11 @@ export default function WestBoylstonCityPage() {
                   Get a Free Quote <ArrowRight className="w-4 h-4" />
                 </Link>
                 <a
-                  href="tel:5088901000"
+                  href="tel:5083042369"
                   className="inline-flex items-center justify-center gap-2 text-slate-800 font-bold px-7 py-3.5 rounded-xl hover:bg-slate-50 transition-colors border border-slate-200 text-base w-full sm:w-auto"
                 >
                   <PhoneCall className="w-4 h-4 text-[#0090c8]" />
-                  (508) 890-1000
+                  (508) 304-2369
                 </a>
               </div>
 
@@ -555,9 +555,9 @@ export default function WestBoylstonCityPage() {
                 <Link href="/contact" className="inline-flex items-center gap-2 bg-white text-slate-900 font-extrabold px-6 py-3 rounded-xl hover:bg-slate-100 transition-colors shadow-lg text-sm">
                   Request a Free Quote <ArrowRight className="w-4 h-4" />
                 </Link>
-                <a href="tel:5088901000" className="inline-flex items-center gap-2 text-white font-bold px-6 py-3 rounded-xl border border-white/30 hover:bg-white/10 transition-colors text-sm backdrop-blur-md">
+                <a href="tel:5083042369" className="inline-flex items-center gap-2 text-white font-bold px-6 py-3 rounded-xl border border-white/30 hover:bg-white/10 transition-colors text-sm backdrop-blur-md">
                   <PhoneCall className="w-4 h-4 text-[#0090c8]" />
-                  (508) 890-1000
+                  (508) 304-2369
                 </a>
               </div>
             </div>
@@ -621,7 +621,7 @@ export default function WestBoylstonCityPage() {
                 Get a Free Cleaning Quote for Your West Boylston Property
               </h2>
               <p className="text-slate-500 font-medium mt-4 leading-relaxed">
-                Enterprise Cleaning Corporation offers a free, no-obligation on-site walkthrough for every West Boylston property. Call (508) 890-1000 or request a quote online to schedule yours and receive a written proposal built around your building, your schedule, and your budget.
+                Enterprise Cleaning Corporation offers a free, no-obligation on-site walkthrough for every West Boylston property. Call (508) 304-2369 or request a quote online to schedule yours and receive a written proposal built around your building, your schedule, and your budget.
               </p>
             </div>
             <div className="flex flex-wrap justify-center gap-4">
@@ -632,11 +632,11 @@ export default function WestBoylstonCityPage() {
                 Get a Free Quote <ArrowRight className="w-4 h-4" />
               </Link>
               <a
-                href="tel:5088901000"
+                href="tel:5083042369"
                 className="inline-flex items-center gap-2 text-slate-800 font-bold px-8 py-4 rounded-xl hover:bg-slate-100 transition-colors border border-slate-200 text-base"
               >
                 <PhoneCall className="w-4 h-4 text-[#0090c8]" />
-                (508) 890-1000
+                (508) 304-2369
               </a>
             </div>
             <div className="flex flex-wrap justify-center gap-3 pt-2">

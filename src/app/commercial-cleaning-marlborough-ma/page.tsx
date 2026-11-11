@@ -192,11 +192,11 @@ export default function MarlboroughCityPage() {
                   Get a Free Quote <ArrowRight className="w-4 h-4" />
                 </Link>
                 <a
-                  href="tel:5088901000"
+                  href="tel:5083042369"
                   className="inline-flex items-center justify-center gap-2 text-slate-800 font-bold px-7 py-3.5 rounded-xl hover:bg-slate-50 transition-colors border border-slate-200 text-base w-full sm:w-auto"
                 >
                   <PhoneCall className="w-4 h-4 text-[#0090c8]" />
-                  (508) 890-1000
+                  (508) 304-2369
                 </a>
               </div>
 
@@ -719,9 +719,9 @@ export default function MarlboroughCityPage() {
                 <Link href="/contact" className="inline-flex items-center gap-2 bg-[#E31837] text-white font-extrabold px-6 py-3 rounded-xl hover:bg-red-700 transition-colors shadow-lg text-sm">
                   Request a Free Walkthrough <ArrowRight className="w-4 h-4" />
                 </Link>
-                <a href="tel:5088901000" className="inline-flex items-center gap-2 text-white font-bold px-6 py-3 rounded-xl border border-white/30 hover:bg-white/10 transition-colors text-sm backdrop-blur-md">
+                <a href="tel:5083042369" className="inline-flex items-center gap-2 text-white font-bold px-6 py-3 rounded-xl border border-white/30 hover:bg-white/10 transition-colors text-sm backdrop-blur-md">
                   <PhoneCall className="w-4 h-4 text-[#00B8FF]" />
-                  (508) 890-1000
+                  (508) 304-2369
                 </a>
               </div>
             </div>
@@ -785,7 +785,7 @@ export default function MarlboroughCityPage() {
                 Ready to talk about cleaning for your Marlborough building?
               </h2>
               <p className="text-slate-600 font-medium mt-4 leading-relaxed text-base">
-                To get a quote for your Marlborough building, call Enterprise Cleaning Corporation at <a href="tel:5088901000" className="text-[#0090c8] font-bold hover:underline">(508) 890-1000</a>, or contact <Link href="/alex-puchulu-business-card" className="text-[#0090c8] font-bold hover:underline">Alex Puchulu</Link>, our Director of Sales and Marketing, to set up a walkthrough.
+                To get a quote for your Marlborough building, call Enterprise Cleaning Corporation at <a href="tel:5083042369" className="text-[#0090c8] font-bold hover:underline">(508) 304-2369</a>, or contact <Link href="/alex-puchulu-business-card" className="text-[#0090c8] font-bold hover:underline">Alex Puchulu</Link>, our Director of Sales and Marketing, to set up a walkthrough.
               </p>
             </div>
 
@@ -797,11 +797,11 @@ export default function MarlboroughCityPage() {
                 Schedule an On-Site Walkthrough <ArrowRight className="w-4 h-4" />
               </Link>
               <a
-                href="tel:5088901000"
+                href="tel:5083042369"
                 className="inline-flex items-center gap-2 text-slate-800 font-bold px-8 py-4 rounded-xl hover:bg-slate-100 transition-colors border border-slate-200 text-base"
               >
                 <PhoneCall className="w-4 h-4 text-[#0090c8]" />
-                (508) 890-1000
+                (508) 304-2369
               </a>
               <a
                 href="tel:5083042369"

@@ -179,11 +179,11 @@ export function RailersSponsorship({ className = "" }: RailersSponsorshipProps) 
               </a>
 
               <a
-                href="tel:508-890-1000"
+                href="tel:5083042369"
                 className="inline-flex items-center justify-center gap-2 bg-transparent hover:bg-white/5 text-slate-300 hover:text-white border border-white/10 px-4 py-3.5 rounded-xl font-semibold text-sm transition-all duration-200"
               >
                 <PhoneCall className="w-4 h-4 text-[#00B8FF]" />
-                <span>508-890-1000</span>
+                <span>508-304-2369</span>
               </a>
             </div>
 

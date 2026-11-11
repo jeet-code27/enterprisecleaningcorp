@@ -152,7 +152,7 @@ export function Footer() {
               <li className="flex flex-col gap-2">
                 <div className="flex items-center gap-3">
                   <Phone className="size-5 shrink-0 text-white" />
-                  <span>Serving New England: <a href="tel:5088901000" className="text-[#FFE800] font-bold hover:underline">508-890-1000</a></span>
+                  <span>Serving New England: <a href="tel:5083042369" className="text-[#FFE800] font-bold hover:underline">508-304-2369</a></span>
                 </div>
               </li>
               <li className="flex items-center gap-3">

@@ -30,10 +30,10 @@ import { gcPostConstructionFaqs } from "@/lib/gc-faqs";
 
 export const metadata: Metadata = {
   title: {
-    absolute: "Post-Construction Cleaning Massachusetts | Enterprise Cleaning",
+    absolute: "Post-Construction Cleaning in MA | Enterprise Cleaning Corp",
   },
   description:
-    "Massachusetts post-construction cleaning for general contractors, builders and construction managers. Rough clean, final clean, punch-list touch-up and janitorial transition. Request a bid.",
+    "Post-construction cleaning in Massachusetts for contractors and builders. Rough clean, final clean and punch-list touch-ups so it's ready. Request a bid.",
   keywords: [
     "post-construction cleaning Massachusetts",
     "commercial post-construction cleaning Massachusetts",
@@ -209,7 +209,7 @@ export default function PostConstructionCleaningMassachusettsPage() {
         </div>
         <div className="flex items-center gap-2">
           <a
-            href="tel:508-890-1000"
+            href="tel:508-304-2369"
             className="p-2.5 rounded-xl bg-slate-100 border border-slate-300 text-slate-800 hover:text-[#0090c8] transition-colors"
             aria-label="Call Enterprise"
           >
@@ -1486,8 +1486,8 @@ export default function PostConstructionCleaningMassachusettsPage() {
                 </a>
               </div>
               <div className="text-white font-bold pt-1">
-                <a href="tel:508-890-1000" className="hover:text-[#FFE800] transition-colors">
-                  508-890-1000
+                <a href="tel:508-304-2369" className="hover:text-[#FFE800] transition-colors">
+                  508-304-2369
                 </a>
               </div>
               <div className="text-white/80 pt-2 text-xs">

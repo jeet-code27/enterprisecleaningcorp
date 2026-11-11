@@ -445,14 +445,14 @@ export default function TypesOfCommercialCleaningPage() {
                           <li className="list-none rounded-2xl bg-gradient-to-br from-[#00103A] to-[#0a2558] text-white p-6 sm:p-7 flex flex-col sm:flex-row sm:items-center gap-5 justify-between">
                             <div>
                               <p className="text-xs font-extrabold uppercase tracking-[0.2em] text-[#FFE800] mb-2">Get a quote</p>
-                              <p className="font-semibold text-white/90 leading-relaxed">Not sure which of these your building needs? Call (508) 890-1000 or request a free quote.</p>
+                              <p className="font-semibold text-white/90 leading-relaxed">Not sure which of these your building needs? Call (508) 304-2369 or request a free quote.</p>
                             </div>
                             <div className="flex flex-col sm:flex-row gap-3 shrink-0">
                               <Link href="/contact" className="inline-flex items-center justify-center gap-2 bg-[#E31837] text-white font-extrabold px-5 py-3 rounded-xl hover:bg-[#c1122c] transition-colors text-sm">
                                 Request a free quote <ArrowRight className="w-4 h-4" />
                               </Link>
-                              <a href="tel:5088901000" className="inline-flex items-center justify-center gap-2 border border-white/30 text-white font-bold px-5 py-3 rounded-xl hover:bg-white/10 transition-colors text-sm">
-                                <PhoneCall className="w-4 h-4" />(508) 890-1000
+                              <a href="tel:5083042369" className="inline-flex items-center justify-center gap-2 border border-white/30 text-white font-bold px-5 py-3 rounded-xl hover:bg-white/10 transition-colors text-sm">
+                                <PhoneCall className="w-4 h-4" />(508) 304-2369
                               </a>
                             </div>
                           </li>
@@ -548,8 +548,8 @@ export default function TypesOfCommercialCleaningPage() {
                   <Link href="/contact" className="inline-flex items-center justify-center gap-2 bg-white text-slate-900 font-extrabold px-6 py-3 rounded-xl hover:bg-slate-100 transition-colors">
                     Request a free quote <ArrowRight className="w-4 h-4" />
                   </Link>
-                  <a href="tel:5088901000" className="inline-flex items-center justify-center gap-2 border border-white/40 text-white font-bold px-6 py-3 rounded-xl hover:bg-white/10 transition-colors">
-                    <PhoneCall className="w-4 h-4" />(508) 890-1000
+                  <a href="tel:5083042369" className="inline-flex items-center justify-center gap-2 border border-white/40 text-white font-bold px-6 py-3 rounded-xl hover:bg-white/10 transition-colors">
+                    <PhoneCall className="w-4 h-4" />(508) 304-2369
                   </a>
                 </div>
               </div>

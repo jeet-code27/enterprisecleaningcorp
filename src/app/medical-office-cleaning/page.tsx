@@ -12,8 +12,8 @@ import { RelatedIndustries } from "@/components/ui/related-industries";
 import { RelatedServices } from "@/components/ui/related-services";
 
 export const metadata: Metadata = {
-  title: { absolute: "Medical Office Cleaning | Strict Sanitation Standards" },
-  description: "Compliance-ready cleaning for medical offices across MA & RI. Trained technicians, proven protocols. Free quote — fast response.",
+  title: { absolute: "Medical Office Cleaning Massachusetts | Enterprise Cleaning" },
+  description: "Medical office cleaning for clinics, dental and healthcare practices in MA. Trained crews, infection-control routines and patient-area focus. Free quote.",
   keywords: "medical office cleaning, medical cleaning services in massachusetts, medical cleaning services in rhode island, healthcare cleaning and disinfectant services company nh, healthcare cleaning in nh, medical office cleaning holden, medical office cleaning company in rhode island, medical facility cleaning rhode island, commercial disinfection services, medical cleaning near me",
   alternates: {
     canonical: "https://www.enterprisecleaningcorp.com/medical-office-cleaning",
@@ -30,8 +30,8 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: "Medical Office Cleaning | Clinics & Practices in MA, RI, NH",
-    description: "Medical office cleaning for clinics, practices, and healthcare facilities across Central Massachusetts, Rhode Island, and Southern NH. Request a walkthrough.",
+    title: "Medical Office Cleaning Massachusetts | Enterprise Cleaning",
+    description: "Medical office cleaning for clinics, dental and healthcare practices in MA. Trained crews, infection-control routines and patient-area focus. Free quote.",
     url: "https://www.enterprisecleaningcorp.com/medical-office-cleaning",
     siteName: "Enterprise Cleaning Corporation",
     locale: "en_US",
@@ -168,7 +168,7 @@ const structuredDataFAQ = {
       "name": "Who provides medical office cleaning and medical cleaning services in Massachusetts?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Enterprise Cleaning Corporation provides professional medical cleaning services in massachusetts, specializing in clinical medical office cleaning holden practices, Worcester outpatient centers, and Central MA clinics rely on. Call (508) 890-1000 to schedule a walkthrough."
+        "text": "Enterprise Cleaning Corporation provides professional medical cleaning services in massachusetts, specializing in clinical medical office cleaning holden practices, Worcester outpatient centers, and Central MA clinics rely on. Call (508) 304-2369 to schedule a walkthrough."
       }
     },
     {
@@ -272,10 +272,10 @@ export default function MedicalOfficeCleaningPage() {
                   Request a Walkthrough <ArrowRight className="w-4 h-4" />
                 </Link>
                 <a 
-                  href="tel:5088901000" 
+                  href="tel:5083042369" 
                   className="inline-flex items-center gap-2 bg-white/15 hover:bg-white/25 backdrop-blur-md text-white font-bold px-6 py-3.5 rounded-full border border-white/30 transition-all text-sm md:text-base"
                 >
-                  <PhoneCall className="w-4 h-4 text-[#FFE800]" /> (508) 890-1000
+                  <PhoneCall className="w-4 h-4 text-[#FFE800]" /> (508) 304-2369
                 </a>
               </div>
               
@@ -730,10 +730,10 @@ export default function MedicalOfficeCleaningPage() {
 
             <div className="mt-8 flex flex-wrap items-center justify-center gap-4">
               <a 
-                href="tel:5088901000" 
+                href="tel:5083042369" 
                 className="inline-flex items-center gap-2 bg-[#FFE800] text-slate-900 font-extrabold px-8 py-4 rounded-full hover:bg-yellow-300 transition-all shadow-xl text-base"
               >
-                <PhoneCall className="w-5 h-5" /> Call (508) 890-1000
+                <PhoneCall className="w-5 h-5" /> Call (508) 304-2369
               </a>
               <Link 
                 href="/contact" 

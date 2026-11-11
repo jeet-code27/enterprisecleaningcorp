@@ -11,8 +11,8 @@ import { CTASection } from "@/components/blocks/cta-with-glow";
 import { RelatedServices } from "@/components/ui/related-services";
 
 export const metadata: Metadata = {
-  title: { absolute: "School & Municipal Cleaning | Central MA | Book Free Quote" },
-  description: "Keep students & staff safe with cleaning built around your schedule. Trusted by schools & municipal buildings across Central MA. Free quote — no wait.",
+  title: { absolute: "School & Municipal Cleaning Central MA | Enterprise Cleaning" },
+  description: "School and municipal building cleaning in Central MA. Enterprise Cleaning Corp keeps classrooms, offices and public spaces clean and safe. Get a free quote.",
   keywords: "school cleaning services in Massachusetts, school cleaning services Worcester, school janitorial services in Gardner, school and educational facility cleaning boston, commercial school cleaning Central MA, municipal building janitorial services",
   alternates: {
     canonical: "https://www.enterprisecleaningcorp.com/school-municipal-cleaning-central-ma"
@@ -105,7 +105,7 @@ const structuredDataFAQ = {
       "name": "How do I request a quote for school or municipal cleaning?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Call (508) 890-1000 or request a free on-site assessment, and we will design a program for your facility and budget."
+        "text": "Call (508) 304-2369 or request a free on-site assessment, and we will design a program for your facility and budget."
       }
     }
   ]
@@ -156,9 +156,9 @@ export default function SchoolCleaningPage() {
                 <Link href="/contact" className="inline-flex items-center justify-center gap-2 bg-[#0090c8] text-white font-extrabold px-8 py-4 rounded-xl hover:bg-[#007aa8] transition-colors shadow-lg shadow-[#0090c8]/30 text-lg">
                   Get a Free Quote <ArrowRight className="w-5 h-5" />
                 </Link>
-                <a href="tel:5088901000" className="inline-flex items-center justify-center gap-2 bg-white text-slate-900 font-bold px-8 py-4 rounded-xl hover:bg-slate-50 transition-colors border border-slate-200 shadow-sm text-lg">
+                <a href="tel:5083042369" className="inline-flex items-center justify-center gap-2 bg-white text-slate-900 font-bold px-8 py-4 rounded-xl hover:bg-slate-50 transition-colors border border-slate-200 shadow-sm text-lg">
                   <PhoneCall className="w-5 h-5 text-[#0090c8]" />
-                  (508) 890-1000
+                  (508) 304-2369
                 </a>
               </div>
             </div>
@@ -441,7 +441,7 @@ export default function SchoolCleaningPage() {
       >
         <div className="flex flex-col items-center gap-6">
           <p className="text-lg text-slate-600 max-w-2xl font-medium leading-relaxed text-left">
-            Call (508) 890-1000 today, and we will design a program that works for your facility and your budget.
+            Call (508) 304-2369 today, and we will design a program that works for your facility and your budget.
           </p>
           <div className="flex flex-wrap justify-center gap-3 pt-2 animate-appear delay-100">
             {[
