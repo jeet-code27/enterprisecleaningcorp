@@ -239,11 +239,31 @@ export default function RootLayout({
             })(window,document,'script','dataLayer','GTM-TXMPTWHN');
           `}
         </Script>
+        {/* Google Tag Manager (GTM-WVV563DN), snippet as supplied by the client */}
+        <Script
+          src="https://www.googletagmanager.com/gtm.js?id=GTM-WVV563DN"
+          strategy="afterInteractive"
+        />
+        <Script id="google-tag-manager-wvv563dn" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+          `}
+        </Script>
       </head>
       <body className="min-h-full flex flex-col" suppressHydrationWarning>
         <noscript>
           <iframe
             src="https://www.googletagmanager.com/ns.html?id=GTM-TXMPTWHN"
+            height="0"
+            width="0"
+            style={{ display: "none", visibility: "hidden" }}
+          />
+        </noscript>
+        <noscript>
+          <iframe
+            src="https://www.googletagmanager.com/ns.html?id=GTM-WVV563DN"
             height="0"
             width="0"
             style={{ display: "none", visibility: "hidden" }}
