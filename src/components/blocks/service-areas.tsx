@@ -40,6 +40,7 @@ const cityLinks: Record<string, string> = {
   "Lowell": "/commercial-cleaning-lowell-ma",
   "Waltham": "/commercial-cleaning-waltham-ma",
   "Nashua, NH": "/commercial-cleaning-nashua-nh",
+  "Mansfield": "/commercial-cleaning-mansfield-ma",
   "Burlington": "/best-commercial-cleaning-company-burlington-ma",
   "Woburn": "/best-commercial-cleaning-company-woburn-ma",
   "Newton": "/best-commercial-cleaning-company-newton-ma",
@@ -55,6 +56,7 @@ const locations = [
   "Upton", "Uxbridge", "Whitinsville", "Oxford", "Charlton",
   "Sturbridge", "Webster", "Dudley", "Boylston", "Berlin",
   "Hudson", "Framingham", "Natick", "Providence, RI", "Lowell", "Waltham",
+  "Mansfield",
 ];
 
 export function ServiceAreas() {

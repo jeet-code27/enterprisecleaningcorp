@@ -80,10 +80,10 @@
     "city": "Holden",
     "state": "MA",
     "slug": "holden-ma",
-    "seoTitle": "Commercial Cleaning Holden, MA | Same Crew Every Visit",
-    "metaDescription": "Holden offices, clinics and schools get the same crew every visit. Janitorial and floor care on Route 122A, backed by 97% retention. Free quote.",
+    "seoTitle": "Property Management Cleaning Holden, MA | Commercial Cleaning",
+    "metaDescription": "Commercial and property management cleaning in Holden, MA: common areas, turnovers and multi-tenant buildings, one accountable crew. Free walkthrough.",
     "eyebrow": "Holden, MA \u2022 Local Service Area",
-    "h1": "Commercial Cleaning Services in Holden, MA",
+    "h1": "Commercial & Property Management Cleaning in Holden, MA",
     "heroIntro": "Enterprise Cleaning Corporation provides commercial cleaning, janitorial, floor care, specialty cleanup, and facility support for professional offices, medical practices, schools, municipal facilities and local commercial properties throughout Holden. Service is scheduled around your operating hours, access requirements, and the way your building is actually used.",
     "localHeading": "Commercial Cleaning Built for Holden's Business Community",
     "localCopy": "Holden combines a growing suburban business base with professional, healthcare, education and municipal facilities. Commercial activity is concentrated around Main Street and the Route 122A corridor, where consistent after-hours cleaning and dependable local supervision matter to offices and customer-facing facilities.",
@@ -136,6 +136,14 @@
         "a": "Yes. Holden is within Enterprise Cleaning Corporation's regional service area. Contact the team to schedule a free on-site walkthrough and receive a cleaning plan built around your facility."
       },
       {
+        "q": "Do you offer property management cleaning in Holden, MA?",
+        "a": "Yes. Enterprise Cleaning Corporation provides property management cleaning in Holden, including common-area cleaning, tenant turnovers, shared restrooms, floor care and post-renovation cleanup for multi-tenant and managed properties."
+      },
+      {
+        "q": "Can one cleaning vendor cover several Holden properties?",
+        "a": "Yes. Property managers can bundle multiple Holden buildings under one cleaning program with a single point of contact, consistent crews, and one invoice."
+      },
+      {
         "q": "What types of commercial properties do you clean in Holden?",
         "a": "Enterprise can build programs for professional offices, medical practices, schools, municipal facilities and local commercial properties. The exact scope and frequency are set after reviewing the property, traffic levels, operating hours, floor types, and security requirements."
       },
@@ -151,7 +159,25 @@
         "q": "How do I get a commercial cleaning quote in Holden?",
         "a": "Request a free on-site walkthrough from Enterprise Cleaning Corporation. The team reviews the facility and service requirements before preparing a written proposal."
       }
-    ]
+    ],
+    "spotlight": {
+      "eyebrow": "Property Management Cleaning Holden",
+      "heading": "Property Management Cleaning in Holden, MA",
+      "paragraphs": [
+        "Property managers in Holden juggle multi-tenant office buildings, medical suites, retail strips along Main Street and Route 122A, and residential-style common areas, often with a different tenant schedule on every floor. Enterprise Cleaning Corporation gives Holden property managers one accountable cleaning vendor for the whole portfolio instead of a separate contractor for each building.",
+        "We clean lobbies, hallways, stairwells, elevators, shared restrooms and entryways on a fixed schedule, handle vacant-unit turnovers between tenants, and add floor care, window cleaning and post-renovation cleanup when a property needs it. Because our headquarters is next door in West Boylston, Holden properties get fast supervisor visits and a direct line to ownership when a tenant raises an issue."
+      ],
+      "bullets": [
+        "Common-area cleaning for lobbies, corridors, stairwells and elevators",
+        "Tenant turnover and vacant-unit cleaning on tight move-in timelines",
+        "Shared restroom, break room and entryway care",
+        "Floor care, carpet extraction and seasonal deep cleaning",
+        "One invoice and one point of contact across multiple Holden properties",
+        "Documented inspections you can share with owners and tenants"
+      ],
+      "linkHref": "/property-management-cleaning-central-ma",
+      "linkLabel": "See all property management cleaning services"
+    }
   },
   {
     "city": "Northborough",

@@ -33,7 +33,7 @@ const SERVICE_CONFIG: Record<string, { icon: React.ElementType; href: string }> 
   "Deep Cleaning": { icon: Sparkles, href: "/specialty-cleaning-services-central-ma" },
   "Flood Cleanup": { icon: Truck, href: "/emergency-restoration-services-central-ma" },
   "Turnover Cleaning": { icon: CalendarCheck, href: "/turnover-cleaning-central-ma" },
-  "Post Construction": { icon: Building2, href: "/post-construction-cleaning-central-ma" },
+  "Post Construction": { icon: Building2, href: "/post-construction-cleaning-massachusetts" },
 };
 
 const INDUSTRIES = [
@@ -263,7 +263,8 @@ export function CityPageTemplate({ city, heroImageIndex = 0 }: CityPageTemplateP
                 <p>
                   Enterprise Cleaning Corporation is headquartered in West Boylston and serves {city.city} and surrounding Central Massachusetts communities with{" "}
                   <Link href="/office-cleaning" className="text-[#0090c8] font-semibold hover:underline">nightly janitorial, day porter</Link>, and{" "}
-                  <Link href="/floor-care-services-central-ma" className="text-[#0090c8] font-semibold hover:underline">commercial floor care</Link>.
+                  <Link href="/floor-care-services-central-ma" className="text-[#0090c8] font-semibold hover:underline">commercial floor care</Link>. Businesses in the city itself can see our{" "}
+                  <Link href="/commercial-cleaning-worcester-ma" className="text-[#0090c8] font-semibold hover:underline">commercial cleaning services in Worcester, MA</Link>.
                 </p>
               </div>
 
@@ -300,6 +301,34 @@ export function CityPageTemplate({ city, heroImageIndex = 0 }: CityPageTemplateP
           </div>
         </div>
       </section>
+
+      {/* ─── KEYWORD SPOTLIGHT (optional) ─── */}
+      {city.spotlight && (
+        <section className="py-16 bg-white border-t border-slate-100">
+          <div className="container mx-auto px-4 md:px-6">
+            <div className="max-w-5xl mx-auto grid lg:grid-cols-5 gap-8 items-start">
+              <div className="lg:col-span-3 space-y-4">
+                <p className="text-xs font-extrabold uppercase tracking-[0.2em] text-[#0090c8]">{city.spotlight.eyebrow}</p>
+                <h2 className="text-3xl md:text-4xl font-extrabold text-slate-900 leading-tight">{city.spotlight.heading}</h2>
+                <div className="space-y-4 text-slate-600 font-medium leading-relaxed text-[0.97rem]">
+                  {city.spotlight.paragraphs.map((p, i) => <p key={i}>{p}</p>)}
+                </div>
+                <Link href={city.spotlight.linkHref} className="inline-flex items-center gap-1.5 text-sm font-bold text-[#0090c8] hover:underline">
+                  {city.spotlight.linkLabel} <ArrowRight className="w-4 h-4" />
+                </Link>
+              </div>
+              <ul className="lg:col-span-2 bg-slate-50 rounded-3xl p-6 border border-slate-200 space-y-3">
+                {city.spotlight.bullets.map((b, i) => (
+                  <li key={i} className="flex gap-3 text-sm text-slate-700 font-medium leading-relaxed">
+                    <CheckCircle2 className="w-4 h-4 text-[#0090c8] shrink-0 mt-0.5" />
+                    <span>{b}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
+        </section>
+      )}
 
       {/* ─── WHY CHOOSE US ─── */}
       <section className="py-20 bg-slate-50 border-y border-slate-200">

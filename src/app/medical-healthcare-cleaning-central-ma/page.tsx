@@ -11,8 +11,8 @@ import { CTASection } from "@/components/blocks/cta-with-glow";
 import { RelatedServices } from "@/components/ui/related-services";
 
 export const metadata: Metadata = {
-  title: { absolute: "Medical Facility Cleaning Central MA | Enterprise Cleaning" },
-  description: "Healthcare facility cleaning in Central MA for clinics, outpatient centers and care sites. Disinfection-focused, compliance-minded crews. Request a free quote.",
+  title: { absolute: "Medical Cleaning Services in Massachusetts | Free Quote" },
+  description: "Medical cleaning services in Massachusetts for clinics, outpatient centers and care sites. Disinfection-focused, compliance-minded crews. Call 508-304-2369.",
   keywords: "medical cleaning services in massachusetts, healthcare cleaning worcester ma, healthcare cleaning services worcester ma, doctor office cleaning worcester, medical office cleaning worcester ma, doctor office cleaning company worcester, healthcare cleaning services massachusetts, medical facility cleaning in wellesley, ma, healthcare cleaning services in wellesley, ma",
   alternates: {
     canonical: "https://www.enterprisecleaningcorp.com/medical-healthcare-cleaning-central-ma"
@@ -140,8 +140,8 @@ export default function MedicalCleaningPage() {
               </div>
               
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-black tracking-tight leading-[1.1] text-slate-900">
-                Medical & Healthcare<br/>
-                <span className="text-[#0090c8]">Facility Cleaning</span>
+                Medical Cleaning Services<br/>
+                <span className="text-[#0090c8]">in Massachusetts</span>
               </h1>
               
               <p className="text-lg text-slate-600 font-medium leading-relaxed text-left">
@@ -160,6 +160,15 @@ export default function MedicalCleaningPage() {
                   <PhoneCall className="w-5 h-5 text-[#0090c8]" />
                   (508) 304-2369
                 </a>
+              </div>
+
+              <div className="flex flex-wrap gap-2.5">
+                {["Background-Checked Crews", "Trained in Pathogen Control", "BBB Accredited Since 2007", "97% Client Retention"].map(chip => (
+                  <span key={chip} className="inline-flex items-center gap-1.5 text-xs font-bold text-slate-600 bg-white border border-slate-200 px-3 py-1.5 rounded-full shadow-sm">
+                    <CheckCircle2 className="w-3.5 h-3.5 text-[#0090c8]" />
+                    {chip}
+                  </span>
+                ))}
               </div>
             </div>
 

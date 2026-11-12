@@ -12,7 +12,7 @@ import { RailersSponsorship } from "@/components/blocks/railers-sponsorship";
 import { TrustedByMarquee } from "@/components/ui/trusted-by-marquee";
 
 export const metadata: Metadata = {
-  title: { absolute: "Commercial Cleaning Worcester, MA | 4x WBJ Best of Business" },
+  title: { absolute: "Commercial Cleaning Services Worcester, MA | 4x WBJ Winner" },
   description: "Worcester facility managers keep us for a reason: 97% client retention and 4x WBJ Best of Business. Free walkthrough, written quote, call 508-304-2369.",
   keywords: "Commercial cleaning services, commercial cleaning, janitorial services, office cleaning, commercial office cleaning, commercial cleaning services worcester, worcester commercial cleaning services, medical office cleaning worcester ma, post construction cleaning massachusetts",
   alternates: {
@@ -64,6 +64,11 @@ const structuredDataFAQ = {
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Which Worcester neighborhoods do you provide commercial cleaning services in?",
+      "acceptedAnswer": { "@type": "Answer", "text": "We clean commercial properties across Worcester, including Downtown and the Canal District, Shrewsbury Street, Gateway Park, the Route 9 and Route 146 corridors, Greendale and the Lincoln Street area, plus nearby Holden, Grafton, Shrewsbury and Auburn." }
+    },
     {
       "@type": "Question",
       "name": "What commercial cleaning services does Enterprise Cleaning Corporation offer in Worcester, MA?",
@@ -420,7 +425,7 @@ export default function WorcesterCityPage() {
                 icon: Truck,
                 title: "Post Construction",
                 desc: "Detailed rough, final, and touch-up cleaning after construction projects — for contractors, developers, and property owners.",
-                href: "/post-construction-cleaning-central-ma"
+                href: "/post-construction-cleaning-massachusetts"
               },
             ] as { icon: React.ElementType; title: string; desc: string; href: string }[]).map((svc, idx) => (
               <Link key={idx} href={svc.href} className="p-6 rounded-2xl border-2 border-slate-100 hover:border-[#0090c8]/40 hover:shadow-lg transition-all group text-left block">

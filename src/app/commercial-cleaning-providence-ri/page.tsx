@@ -10,8 +10,8 @@ import {
 } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: { absolute: "Commercial Cleaning Providence, RI | Free Quote Today" },
-  description: "Providence businesses trust Enterprise Cleaning for detail-focused, reliable results. Get a free, fast quote — no obligation.",
+  title: { absolute: "Commercial Cleaning Providence RI | High Technology Janitorial" },
+  description: "Commercial cleaning and high technology janitorial services in Rhode Island: labs, data centers, cleanrooms and R&D offices in Providence. Free quote.",
   keywords: "commercial cleaning services providence ri, commercial cleaning rhode island, commercial cleaning services rhode island, office cleaning services in rhode island, day porter services providence, industrial cleaning company in rhode island, high technology janitorial services in rhode island, commercial cleaning services ri, medical cleaning services in rhode island, commercial cleaning providence ri",
   alternates: {
     canonical: "https://www.enterprisecleaningcorp.com/commercial-cleaning-providence-ri"
@@ -65,6 +65,16 @@ const structuredDataFAQ = {
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Do you provide high technology janitorial services in Rhode Island?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Yes. Enterprise Cleaning Corporation provides high technology janitorial services in Rhode Island for labs, data centers, cleanroom support areas, electronics facilities and R&D offices in Providence and across the state." }
+    },
+    {
+      "@type": "Question",
+      "name": "How do you clean data centers and labs without disrupting equipment?",
+      "acceptedAnswer": { "@type": "Answer", "text": "We agree a written scope of what can be touched, use HEPA-filtered vacuums, low-residue approved products and ESD-safe practices, and schedule work around production, experiments and maintenance windows with badge or escort access as required." }
+    },
     {
       "@type": "Question",
       "name": "Does Enterprise Cleaning Corporation provide commercial cleaning services in Providence, RI and throughout Rhode Island?",
@@ -141,8 +151,8 @@ export default function ProvidenceCityPage() {
               <div>
                 <p className="text-xs font-extrabold uppercase tracking-[0.2em] text-slate-400 mb-2 sm:mb-3">City Service Hub</p>
                 <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-[3.25rem] font-black leading-[1.1] tracking-tight text-slate-900">
-                  Commercial<br />
-                  Cleaning Services<br />
+                  Commercial Cleaning &amp;<br />
+                  High Technology Janitorial Services<br />
                   <span className="text-[#0090c8]">in Providence, Rhode Island</span>
                 </h1>
               </div>
@@ -386,6 +396,62 @@ export default function ProvidenceCityPage() {
                 </span>
               </Link>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ─── HIGH TECHNOLOGY JANITORIAL SERVICES IN RHODE ISLAND ─── */}
+      <section className="py-16 bg-slate-50 border-y border-slate-100">
+        <div className="container mx-auto px-4 md:px-6">
+          <div className="max-w-5xl mx-auto grid lg:grid-cols-5 gap-8 items-start">
+            <div className="lg:col-span-3 space-y-4">
+              <p className="text-xs font-extrabold uppercase tracking-[0.2em] text-[#0090c8]">High-Tech Facility Janitorial</p>
+              <h2 className="text-3xl md:text-4xl font-extrabold text-slate-900 leading-tight">High Technology Janitorial Services in Rhode Island</h2>
+              <div className="space-y-4 text-slate-600 font-medium leading-relaxed text-[0.97rem] text-left">
+                <p>
+                  Rhode Island's life-science labs, data centers, electronics manufacturers and university R&D space need more than a standard office cleaning contract. Enterprise Cleaning Corporation provides high technology janitorial services in Rhode Island for Providence's Innovation District, the I-95 and Route 146 corridors, and technology tenants across the state, with crews trained to work around sensitive equipment and controlled areas.
+                </p>
+                <p>
+                  Every high-tech account starts with a written scope that maps which rooms can be touched, which require escort or badge access, and which products are allowed. We use HEPA-filtered vacuums to keep particulates down, approved low-residue and non-corrosive chemistry, ESD-safe practices near electronics, and color-coded microfiber to prevent cross-contamination between labs, cleanrooms, restrooms and offices.
+                </p>
+                <p>
+                  Cleaning is scheduled around experiments, production runs and maintenance windows, and documented with checklists your quality or EHS team can audit. High-tech janitorial pairs with our <Link href="/manufacturing-industrial-cleaning-central-ma" className="text-[#0090c8] font-semibold hover:underline">manufacturing and industrial cleaning</Link> and <Link href="/floor-care-services-central-ma" className="text-[#0090c8] font-semibold hover:underline">floor care</Link> programs when your facility combines labs, production and office space.
+                </p>
+              </div>
+            </div>
+            <div className="lg:col-span-2 bg-slate-50 rounded-3xl p-6 border border-slate-200">
+              <h3 className="font-extrabold text-slate-900 text-base mb-4">High-Tech Cleaning Checklist</h3>
+              <ul className="space-y-3">
+                  <li className="flex gap-3 text-sm text-slate-700 font-medium leading-relaxed">
+                    <CheckCircle2 className="w-4 h-4 text-[#0090c8] shrink-0 mt-0.5" />
+                    <span>Laboratories and R&D offices</span>
+                  </li>
+                  <li className="flex gap-3 text-sm text-slate-700 font-medium leading-relaxed">
+                    <CheckCircle2 className="w-4 h-4 text-[#0090c8] shrink-0 mt-0.5" />
+                    <span>Data centers and server rooms (raised-floor and below-floor cleaning)</span>
+                  </li>
+                  <li className="flex gap-3 text-sm text-slate-700 font-medium leading-relaxed">
+                    <CheckCircle2 className="w-4 h-4 text-[#0090c8] shrink-0 mt-0.5" />
+                    <span>Cleanroom support areas, gowning rooms and anterooms</span>
+                  </li>
+                  <li className="flex gap-3 text-sm text-slate-700 font-medium leading-relaxed">
+                    <CheckCircle2 className="w-4 h-4 text-[#0090c8] shrink-0 mt-0.5" />
+                    <span>ESD-safe practices around electronics and test equipment</span>
+                  </li>
+                  <li className="flex gap-3 text-sm text-slate-700 font-medium leading-relaxed">
+                    <CheckCircle2 className="w-4 h-4 text-[#0090c8] shrink-0 mt-0.5" />
+                    <span>HEPA vacuums and low-residue, approved chemistry</span>
+                  </li>
+                  <li className="flex gap-3 text-sm text-slate-700 font-medium leading-relaxed">
+                    <CheckCircle2 className="w-4 h-4 text-[#0090c8] shrink-0 mt-0.5" />
+                    <span>Background-checked staff and badge/escort coordination</span>
+                  </li>
+                  <li className="flex gap-3 text-sm text-slate-700 font-medium leading-relaxed">
+                    <CheckCircle2 className="w-4 h-4 text-[#0090c8] shrink-0 mt-0.5" />
+                    <span>Documented checklists for QA and EHS audits</span>
+                  </li>
+              </ul>
+            </div>
           </div>
         </div>
       </section>

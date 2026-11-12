@@ -10,8 +10,8 @@ import {
 } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: { absolute: "Commercial Cleaning Lowell, MA | #1 Rated | Free Quote" },
-  description: "Lowell businesses trust Enterprise Cleaning for spotless, reliable results — every night, checked. Get a free, no-pressure quote in 24 hours.",
+  title: { absolute: "Commercial Cleaning Lowell, MA | Commercial Carpet Cleaning" },
+  description: "Commercial cleaning and commercial carpet cleaning in Lowell, MA: hot-water extraction, spot treatment and nightly janitorial. Free walkthrough and quote.",
   keywords: "disinfecting lowell, commercial carpet cleaning lowell, tile cleaning services lowell, apartment carpet cleaning lowell, commercial carpet cleaning lowell ma, steam cleaning lowell ma, cleaning services lowell, commercial restoration lowell, cleanroom cleaning lowell ma, commercial cleaning services near me, commercial cleaning lowell ma",
   alternates: {
     canonical: "https://www.enterprisecleaningcorp.com/commercial-cleaning-lowell-ma"
@@ -65,6 +65,16 @@ const structuredDataFAQ = {
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Do you offer commercial carpet cleaning in Lowell, MA?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Yes. Enterprise Cleaning Corporation provides commercial carpet cleaning in Lowell, including hot-water extraction, low-moisture encapsulation, spot and traffic-lane treatment, and recurring carpet maintenance plans for offices, schools, clinics and multi-tenant buildings." }
+    },
+    {
+      "@type": "Question",
+      "name": "How often should commercial carpet be cleaned in a Lowell office?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Most Lowell offices benefit from daily or nightly vacuuming plus deep extraction every three to six months; high-traffic entries and corridors may need more frequent interim cleaning." }
+    },
     {
       "@type": "Question",
       "name": "Does Enterprise Cleaning Corporation serve Lowell, MA?",
@@ -386,6 +396,62 @@ export default function LowellCityPage() {
                 </span>
               </Link>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ─── COMMERCIAL CARPET CLEANING IN LOWELL, MA ─── */}
+      <section className="py-16 bg-slate-50 border-y border-slate-100">
+        <div className="container mx-auto px-4 md:px-6">
+          <div className="max-w-5xl mx-auto grid lg:grid-cols-5 gap-8 items-start">
+            <div className="lg:col-span-3 space-y-4">
+              <p className="text-xs font-extrabold uppercase tracking-[0.2em] text-[#0090c8]">Commercial Carpet Cleaning Lowell</p>
+              <h2 className="text-3xl md:text-4xl font-extrabold text-slate-900 leading-tight">Commercial Carpet Cleaning in Lowell, MA</h2>
+              <div className="space-y-4 text-slate-600 font-medium leading-relaxed text-[0.97rem] text-left">
+                <p>
+                  Lowell office buildings, mill conversions, clinics and schools carry a lot of carpet, and high foot traffic from the Hamilton Canal District to the Route 3 and I-495 office parks wears it down quickly. Enterprise Cleaning Corporation provides commercial carpet cleaning in Lowell as a stand-alone project or as part of a recurring cleaning program, so your carpet is maintained on a schedule instead of replaced early.
+                </p>
+                <p>
+                  Our process starts with a walkthrough to identify fiber type, traffic lanes and problem stains. Crews then vacuum with commercial HEPA uprights, pre-treat spots and traffic lanes, and clean with truck-mounted or portable hot-water extraction depending on building access. Low-moisture encapsulation is available for spaces that must be back in use the next morning, and air movers are used to speed drying.
+                </p>
+                <p>
+                  Carpet care is scheduled after hours or on weekends so tenants are not disrupted, and it can be combined with our <Link href="/floor-care-services-central-ma" className="text-[#0090c8] font-semibold hover:underline">commercial floor care services</Link> for hard floors and with nightly <Link href="/office-cleaning" className="text-[#0090c8] font-semibold hover:underline">office cleaning</Link> so one crew is accountable for the whole building.
+                </p>
+              </div>
+            </div>
+            <div className="lg:col-span-2 bg-slate-50 rounded-3xl p-6 border border-slate-200">
+              <h3 className="font-extrabold text-slate-900 text-base mb-4">What&apos;s Included</h3>
+              <ul className="space-y-3">
+                  <li className="flex gap-3 text-sm text-slate-700 font-medium leading-relaxed">
+                    <CheckCircle2 className="w-4 h-4 text-[#0090c8] shrink-0 mt-0.5" />
+                    <span>Hot-water extraction (truck-mounted or portable)</span>
+                  </li>
+                  <li className="flex gap-3 text-sm text-slate-700 font-medium leading-relaxed">
+                    <CheckCircle2 className="w-4 h-4 text-[#0090c8] shrink-0 mt-0.5" />
+                    <span>Low-moisture encapsulation for fast return to service</span>
+                  </li>
+                  <li className="flex gap-3 text-sm text-slate-700 font-medium leading-relaxed">
+                    <CheckCircle2 className="w-4 h-4 text-[#0090c8] shrink-0 mt-0.5" />
+                    <span>Spot, stain and traffic-lane pre-treatment</span>
+                  </li>
+                  <li className="flex gap-3 text-sm text-slate-700 font-medium leading-relaxed">
+                    <CheckCircle2 className="w-4 h-4 text-[#0090c8] shrink-0 mt-0.5" />
+                    <span>Commercial HEPA vacuuming between deep cleans</span>
+                  </li>
+                  <li className="flex gap-3 text-sm text-slate-700 font-medium leading-relaxed">
+                    <CheckCircle2 className="w-4 h-4 text-[#0090c8] shrink-0 mt-0.5" />
+                    <span>Entry mat and walk-off area care</span>
+                  </li>
+                  <li className="flex gap-3 text-sm text-slate-700 font-medium leading-relaxed">
+                    <CheckCircle2 className="w-4 h-4 text-[#0090c8] shrink-0 mt-0.5" />
+                    <span>After-hours and weekend scheduling</span>
+                  </li>
+                  <li className="flex gap-3 text-sm text-slate-700 font-medium leading-relaxed">
+                    <CheckCircle2 className="w-4 h-4 text-[#0090c8] shrink-0 mt-0.5" />
+                    <span>Quarterly or semi-annual maintenance plans</span>
+                  </li>
+              </ul>
+            </div>
           </div>
         </div>
       </section>

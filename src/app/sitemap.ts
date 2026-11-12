@@ -68,6 +68,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     "/commercial-cleaning-fitchburg-ma",
     "/commercial-cleaning-boylston-ma",
     "/commercial-cleaning-nashua-nh",
+    "/commercial-cleaning-mansfield-ma",
     "/commercial-cleaning-westborough-ma",
     "/commercial-cleaning-marlborough-ma",
     "/commercial-cleaning-auburn-ma",

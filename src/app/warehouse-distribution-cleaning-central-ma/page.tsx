@@ -11,8 +11,8 @@ import { CTASection } from "@/components/blocks/cta-with-glow";
 import { RelatedServices } from "@/components/ui/related-services";
 
 export const metadata: Metadata = {
-  title: { absolute: "Warehouse Cleaning Services Central MA | Enterprise Cleaning" },
-  description: "Warehouse and distribution center cleaning in Central MA. Enterprise Cleaning Corp offers floor scrubbing, dust control and safety-first crews. Free quote.",
+  title: { absolute: "Distribution Center Cleaning Services | Warehouse Cleaning MA" },
+  description: "Distribution center cleaning services in Massachusetts: floor scrubbing, dock cleaning, dust control and night-shift crews for warehouses. Free quote.",
   keywords: "commercial warehouse cleaning Central MA, distribution center janitorial services, industrial logistics cleaning Worcester, large scale commercial cleaners",
   alternates: {
     canonical: "https://www.enterprisecleaningcorp.com/warehouse-distribution-cleaning-central-ma"
@@ -68,6 +68,21 @@ const structuredDataFAQ = {
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What do distribution center cleaning services include?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Distribution center cleaning services include auto-scrubbing of aisles and staging lanes, loading dock and leveler pit cleaning, high-reach dust control on racking and lights, spill response, and full janitorial for break rooms, restrooms, locker rooms and shipping offices." }
+    },
+    {
+      "@type": "Question",
+      "name": "How much do distribution center cleaning services cost?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Cost depends on square footage, floor condition, number of shifts, dock count, racking height and how often each zone is cleaned. We provide a free walkthrough and a written scope that separates nightly, weekly and quarterly tasks." }
+    },
+    {
+      "@type": "Question",
+      "name": "Can you clean a distribution center that runs 24/7?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Yes. We schedule crews between shifts, overnight or on weekends and clean zone by zone so receiving and shipping never stop." }
+    },
     {
       "@type": "Question",
       "name": "Do you clean large warehouse and distribution facilities?",
@@ -140,8 +155,8 @@ export default function WarehouseCleaningPage() {
               </div>
               
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-black tracking-tight leading-[1.1] text-slate-900">
-                Warehouse & Distribution<br/>
-                <span className="text-[#0090c8]">Center Cleaning</span>
+                Distribution Center<br/>
+                <span className="text-[#0090c8]">Cleaning Services</span>
               </h1>
               
               <p className="text-lg text-slate-600 font-medium leading-relaxed text-left">
@@ -351,6 +366,72 @@ export default function WarehouseCleaningPage() {
               </div>
             </div>
             
+          </div>
+        </div>
+      </section>
+
+      {/* ─── DISTRIBUTION CENTER CLEANING SERVICES, BUILT AROUND YOUR SHIFTS ─── */}
+      <section className="py-16 bg-white border-y border-slate-100">
+        <div className="container mx-auto px-4 md:px-6">
+          <div className="max-w-5xl mx-auto grid lg:grid-cols-5 gap-8 items-start">
+            <div className="lg:col-span-3 space-y-4">
+              <p className="text-xs font-extrabold uppercase tracking-[0.2em] text-[#0090c8]">Distribution Center Cleaning Services</p>
+              <h2 className="text-3xl md:text-4xl font-extrabold text-slate-900 leading-tight">Distribution Center Cleaning Services, Built Around Your Shifts</h2>
+              <div className="space-y-4 text-slate-600 font-medium leading-relaxed text-[0.97rem] text-left">
+                <p>
+                  A distribution center never really closes, so cleaning has to fit between waves of inbound and outbound freight. Enterprise Cleaning Corporation provides distribution center cleaning services across Central Massachusetts, MetroWest and the I-495, I-290 and Mass Pike logistics corridors, with crews scheduled on nights, weekends or between shifts so docks keep moving.
+                </p>
+                <p>
+                  Floor scrubbing is the core of the program. Ride-on and walk-behind auto-scrubbers remove tire marks, pallet debris and spilled product from sealed concrete across aisles, pick zones and staging lanes, which improves traction and keeps forklift lanes visible. Loading docks get debris removal, dock-plate and leveler-pit cleaning, and periodic degreasing, while high-reach dust control removes buildup from racking, beams, lights and HVAC returns that otherwise settles on inventory.
+                </p>
+                <p>
+                  Break rooms, locker rooms, restrooms, shipping offices and driver lounges are cleaned to office standards, because they are where your team spends its downtime. Every crew works to your site safety rules: hi-vis, forklift right-of-way, lockout zones and restricted areas are part of onboarding, not an afterthought.
+                </p>
+                <p>
+                  Pricing for distribution center cleaning depends on square footage, floor condition, how many shifts the building runs, dock count, racking height for dust control, and how often each zone is cleaned. After a free walkthrough we provide a written scope that separates nightly tasks from weekly and quarterly work, so you only pay for the frequency each area needs.
+                </p>
+                <p>
+                  Distribution center cleaning often pairs with <Link href="/manufacturing-industrial-cleaning-central-ma" className="text-[#0090c8] font-semibold hover:underline">manufacturing and industrial cleaning</Link> and <Link href="/floor-care-services-central-ma" className="text-[#0090c8] font-semibold hover:underline">commercial floor care</Link>. We also serve warehouses near our West Boylston headquarters, including <Link href="/commercial-cleaning-holden-ma" className="text-[#0090c8] font-semibold hover:underline">Holden</Link>, <Link href="/commercial-cleaning-worcester-ma" className="text-[#0090c8] font-semibold hover:underline">Worcester</Link> and <Link href="/commercial-cleaning-auburn-ma" className="text-[#0090c8] font-semibold hover:underline">Auburn</Link>.
+                </p>
+              </div>
+            </div>
+            <div className="lg:col-span-2 bg-slate-50 rounded-3xl p-6 border border-slate-200">
+              <h3 className="font-extrabold text-slate-900 text-base mb-4">Distribution Center Cleaning Checklist</h3>
+              <ul className="space-y-3">
+                  <li className="flex gap-3 text-sm text-slate-700 font-medium leading-relaxed">
+                    <CheckCircle2 className="w-4 h-4 text-[#0090c8] shrink-0 mt-0.5" />
+                    <span>Auto-scrubbing of aisles, pick zones and staging lanes</span>
+                  </li>
+                  <li className="flex gap-3 text-sm text-slate-700 font-medium leading-relaxed">
+                    <CheckCircle2 className="w-4 h-4 text-[#0090c8] shrink-0 mt-0.5" />
+                    <span>Loading dock, dock plate and leveler pit cleaning</span>
+                  </li>
+                  <li className="flex gap-3 text-sm text-slate-700 font-medium leading-relaxed">
+                    <CheckCircle2 className="w-4 h-4 text-[#0090c8] shrink-0 mt-0.5" />
+                    <span>High-reach dust control on racking, beams and lights</span>
+                  </li>
+                  <li className="flex gap-3 text-sm text-slate-700 font-medium leading-relaxed">
+                    <CheckCircle2 className="w-4 h-4 text-[#0090c8] shrink-0 mt-0.5" />
+                    <span>Spill response and floor degreasing</span>
+                  </li>
+                  <li className="flex gap-3 text-sm text-slate-700 font-medium leading-relaxed">
+                    <CheckCircle2 className="w-4 h-4 text-[#0090c8] shrink-0 mt-0.5" />
+                    <span>Break room, locker room, restroom and office cleaning</span>
+                  </li>
+                  <li className="flex gap-3 text-sm text-slate-700 font-medium leading-relaxed">
+                    <CheckCircle2 className="w-4 h-4 text-[#0090c8] shrink-0 mt-0.5" />
+                    <span>Night-shift, weekend and between-shift scheduling</span>
+                  </li>
+                  <li className="flex gap-3 text-sm text-slate-700 font-medium leading-relaxed">
+                    <CheckCircle2 className="w-4 h-4 text-[#0090c8] shrink-0 mt-0.5" />
+                    <span>Site safety onboarding: hi-vis, forklift lanes, lockout zones</span>
+                  </li>
+                  <li className="flex gap-3 text-sm text-slate-700 font-medium leading-relaxed">
+                    <CheckCircle2 className="w-4 h-4 text-[#0090c8] shrink-0 mt-0.5" />
+                    <span>Written nightly, weekly and quarterly scope</span>
+                  </li>
+              </ul>
+            </div>
           </div>
         </div>
       </section>

@@ -420,7 +420,7 @@ export default function RealEstateCleaningPage() {
               Listing-Ready Cleaning Built For Real Estate Success
             </h2>
             <p className="text-lg text-white/90 font-medium leading-relaxed max-w-4xl mx-auto text-left drop-shadow-md">
-              From Worcester, Shrewsbury, Auburn, Holden, Westborough, and Marlborough to Providence RI and Southern NH, we keep real estate properties pristine. We bring 97% client retention, four Worcester Business Journal “Best of Business” awards, and BBB accreditation since 2007 to every listing and serve Massachusetts, Rhode Island, and New Hampshire.
+              From Worcester, Shrewsbury, Auburn, Holden, Westborough, and Marlborough to Providence RI and Southern NH, including <Link href="/commercial-cleaning-nashua-nh" className="underline decoration-white/50 hover:decoration-white font-bold">commercial cleaning in Nashua, NH</Link>, we keep real estate properties pristine. We bring 97% client retention, four Worcester Business Journal “Best of Business” awards, and BBB accreditation since 2007 to every listing and serve Massachusetts, Rhode Island, and New Hampshire.
             </p>
           </div>
 

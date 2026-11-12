@@ -385,7 +385,7 @@ export default function IndustrialCleaningPage() {
               Proven Industrial Cleaners
             </h2>
             <p className="text-lg text-white/90 font-medium leading-relaxed max-w-4xl mx-auto text-left drop-shadow-md">
-              Central Massachusetts has a deep manufacturing and industrial base, and we serve it. From Worcester to Shrewsbury, Auburn, Holden, Westborough, Marlborough, Leominster, and Fitchburg, we keep plants and industrial buildings clean, safe, and audit-ready. We bring 97% client retention, four Worcester Business Journal “Best of Business” awards, and BBB accreditation since 2007 to every industrial contract and serve Massachusetts, Rhode Island, and New Hampshire.
+              Central Massachusetts has a deep manufacturing and industrial base, and we serve it. From Worcester to Shrewsbury, Auburn, Holden, Westborough, Marlborough, Leominster, and Fitchburg, we keep plants and industrial buildings clean, safe, and audit-ready. We bring 97% client retention, four Worcester Business Journal “Best of Business” awards, and BBB accreditation since 2007 to every industrial contract and serve Massachusetts, Rhode Island, and New Hampshire, including <Link href="/warehouse-distribution-cleaning-central-ma" className="underline decoration-white/50 hover:decoration-white font-bold">distribution center cleaning services</Link> and <Link href="/commercial-cleaning-providence-ri" className="underline decoration-white/50 hover:decoration-white font-bold">high technology janitorial services in Rhode Island</Link>.
             </p>
           </div>
 

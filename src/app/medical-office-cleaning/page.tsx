@@ -12,7 +12,7 @@ import { RelatedIndustries } from "@/components/ui/related-industries";
 import { RelatedServices } from "@/components/ui/related-services";
 
 export const metadata: Metadata = {
-  title: { absolute: "Medical Office Cleaning Massachusetts | Enterprise Cleaning" },
+  title: { absolute: "Medical Office Cleaning Massachusetts | Salem MA & Statewide" },
   description: "Medical office cleaning for clinics, dental and healthcare practices in MA. Trained crews, infection-control routines and patient-area focus. Free quote.",
   keywords: "medical office cleaning, medical cleaning services in massachusetts, medical cleaning services in rhode island, healthcare cleaning and disinfectant services company nh, healthcare cleaning in nh, medical office cleaning holden, medical office cleaning company in rhode island, medical facility cleaning rhode island, commercial disinfection services, medical cleaning near me",
   alternates: {
@@ -30,7 +30,7 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: "Medical Office Cleaning Massachusetts | Enterprise Cleaning",
+    title: "Medical Office Cleaning Massachusetts | Salem MA & Statewide",
     description: "Medical office cleaning for clinics, dental and healthcare practices in MA. Trained crews, infection-control routines and patient-area focus. Free quote.",
     url: "https://www.enterprisecleaningcorp.com/medical-office-cleaning",
     siteName: "Enterprise Cleaning Corporation",
@@ -99,6 +99,11 @@ const structuredDataFAQ = {
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Do you provide medical office cleaning in Salem, MA?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Yes. Enterprise Cleaning Corporation provides medical office cleaning in Salem, MA for medical, dental, physical therapy and outpatient practices, with after-hours scheduling, EPA-registered disinfection and background-checked crews trained in pathogen control." }
+    },
     {
       "@type": "Question",
       "name": "What is included in medical office cleaning?",
@@ -532,6 +537,58 @@ export default function MedicalOfficeCleaningPage() {
         </div>
       </section>
 
+      {/* ─── MEDICAL OFFICE CLEANING IN SALEM, MA ─── */}
+      <section className="py-16 bg-slate-50 border-y border-slate-100">
+        <div className="container mx-auto px-4 md:px-6">
+          <div className="max-w-5xl mx-auto grid lg:grid-cols-5 gap-8 items-start">
+            <div className="lg:col-span-3 space-y-4">
+              <p className="text-xs font-extrabold uppercase tracking-[0.2em] text-[#0090c8]">North Shore Medical Offices</p>
+              <h2 className="text-3xl md:text-4xl font-extrabold text-slate-900 leading-tight">Medical Office Cleaning in Salem, MA</h2>
+              <div className="space-y-4 text-slate-600 font-medium leading-relaxed text-[0.97rem] text-left">
+                <p>
+                  Salem has a dense mix of medical and dental practices, outpatient suites near North Shore Medical Center, physical therapy clinics and behavioral health offices along Highland Avenue, Route 114 and the downtown core. Enterprise Cleaning Corporation provides medical office cleaning in Salem, MA with the same infection-control routines, EPA-registered disinfectants and patient-area focus we use across Massachusetts.
+                </p>
+                <p>
+                  Salem practices get cleaning scheduled after patient hours, high-touch disinfection in waiting rooms and exam rooms, restroom sanitation, and floor care that holds up to wheelchairs and foot traffic. Crews are background-checked, trained in pathogen control, and work to your written scope, so clinical waste and sterile processing stay with your licensed vendors.
+                </p>
+                <p>
+                  Salem medical offices can combine nightly cleaning with <Link href="/floor-care-services-central-ma" className="text-[#0090c8] font-semibold hover:underline">commercial floor care</Link> and periodic deep cleaning under one contract. For hospitals, surgery centers and larger care sites, see our <Link href="/medical-healthcare-cleaning-central-ma" className="text-[#0090c8] font-semibold hover:underline">medical cleaning services in Massachusetts</Link>.
+                </p>
+              </div>
+            </div>
+            <div className="lg:col-span-2 bg-slate-50 rounded-3xl p-6 border border-slate-200">
+              <h3 className="font-extrabold text-slate-900 text-base mb-4">Salem Medical Office Cleaning</h3>
+              <ul className="space-y-3">
+                  <li className="flex gap-3 text-sm text-slate-700 font-medium leading-relaxed">
+                    <CheckCircle2 className="w-4 h-4 text-[#0090c8] shrink-0 mt-0.5" />
+                    <span>After-hours cleaning for Salem medical and dental practices</span>
+                  </li>
+                  <li className="flex gap-3 text-sm text-slate-700 font-medium leading-relaxed">
+                    <CheckCircle2 className="w-4 h-4 text-[#0090c8] shrink-0 mt-0.5" />
+                    <span>EPA-registered disinfection of exam rooms and waiting areas</span>
+                  </li>
+                  <li className="flex gap-3 text-sm text-slate-700 font-medium leading-relaxed">
+                    <CheckCircle2 className="w-4 h-4 text-[#0090c8] shrink-0 mt-0.5" />
+                    <span>High-touch point and restroom sanitation</span>
+                  </li>
+                  <li className="flex gap-3 text-sm text-slate-700 font-medium leading-relaxed">
+                    <CheckCircle2 className="w-4 h-4 text-[#0090c8] shrink-0 mt-0.5" />
+                    <span>Background-checked crews trained in pathogen control</span>
+                  </li>
+                  <li className="flex gap-3 text-sm text-slate-700 font-medium leading-relaxed">
+                    <CheckCircle2 className="w-4 h-4 text-[#0090c8] shrink-0 mt-0.5" />
+                    <span>Floor care for VCT, LVT and carpet</span>
+                  </li>
+                  <li className="flex gap-3 text-sm text-slate-700 font-medium leading-relaxed">
+                    <CheckCircle2 className="w-4 h-4 text-[#0090c8] shrink-0 mt-0.5" />
+                    <span>Serving Salem, Peabody, Beverly, Marblehead and Danvers</span>
+                  </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Feature Visual: Waiting Room & Reception */}
       <section className="py-20 bg-white">
         <div className="container mx-auto px-4 md:px-6">
@@ -721,7 +778,7 @@ export default function MedicalOfficeCleaningPage() {
                 As an accredited <strong>medical office cleaning company in rhode island</strong>, we provide full-scope <strong>medical facility cleaning rhode island</strong> practices depend on across Providence, Cranston, Warwick, and Pawtucket.
               </p>
               <p>
-                In Southern New Hampshire, we provide specialized <strong>healthcare cleaning in nh</strong> and act as the premier <strong>healthcare cleaning and disinfectant services company nh</strong> clinical centers partner with throughout Nashua, Manchester, and Salem.
+                In Southern New Hampshire, we provide specialized <strong>healthcare cleaning in nh</strong> and act as the premier <strong>healthcare cleaning and disinfectant services company nh</strong> clinical centers partner with throughout Manchester, Salem, and <Link href="/commercial-cleaning-nashua-nh" className="text-[#FFE800] font-bold hover:underline">commercial cleaning in Nashua, NH</Link>.
               </p>
               <p>
                 Whether you need routine <strong>medical office cleaning</strong> or specialized <strong>medical cleaning services in rhode island</strong>, our teams are background-checked, trained in pathogen control, and backed by a 97% client retention rate.

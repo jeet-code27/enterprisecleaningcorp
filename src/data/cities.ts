@@ -10,6 +10,16 @@ export interface CityFAQ {
   a: string;
 }
 
+/** Optional keyword-focused section shown after the local intro (e.g. property management in Holden). */
+export interface CitySpotlight {
+  eyebrow: string;
+  heading: string;
+  paragraphs: string[];
+  bullets: string[];
+  linkHref: string;
+  linkLabel: string;
+}
+
 export interface CityData {
   city: string;
   state: string;
@@ -27,6 +37,7 @@ export interface CityData {
   nearby: string[];
   services: CityService[];
   faqs: CityFAQ[];
+  spotlight?: CitySpotlight;
 }
 
 export const allCities: CityData[] = citiesRaw as CityData[];

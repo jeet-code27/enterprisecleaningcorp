@@ -378,7 +378,7 @@ export default function PropertyManagementPage() {
               One Partner For Your Entire Portfolio
             </h2>
             <p className="text-lg text-white/90 font-medium leading-relaxed max-w-4xl mx-auto text-left drop-shadow-md">
-              We work with property managers throughout Worcester and Central Massachusetts — Shrewsbury, Auburn, Holden, Westborough, Marlborough, and the surrounding region — keeping commercial and multi-tenant properties immaculate. We bring 97% client retention, four Worcester Business Journal “Best of Business” awards, and BBB accreditation since 2007 to every property and serve Massachusetts, Rhode Island, and New Hampshire.
+              We work with property managers throughout Worcester and Central Massachusetts — Shrewsbury, Auburn, Holden, Westborough, Marlborough, and the surrounding region — keeping commercial and multi-tenant properties immaculate. Managing a building in Holden? See our dedicated <Link href="/commercial-cleaning-holden-ma" className="underline decoration-white/50 hover:decoration-white font-bold">property management cleaning in Holden, MA</Link> page. We bring 97% client retention, four Worcester Business Journal “Best of Business” awards, and BBB accreditation since 2007 to every property and serve Massachusetts, Rhode Island, and New Hampshire.
             </p>
           </div>
 

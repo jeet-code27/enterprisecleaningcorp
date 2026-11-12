@@ -14,11 +14,11 @@ const faqs = [
   },
   {
     question: "Do you offer office cleaning services in Massachusetts and high technology janitorial services?",
-    answer: <>Yes. Recognized among top commercial cleaning companies and as an experienced industrial cleaning company in Massachusetts, we provide customized <Link href="/office-cleaning" className="text-[#0090c8] font-semibold hover:underline">office cleaning services in Massachusetts</Link>, routine <Link href="/janitorial-services" className="text-[#0090c8] font-semibold hover:underline">commercial janitorial services in Massachusetts</Link>, and specialized high technology janitorial services in massachusetts for cleanrooms, laboratories, and manufacturing facilities.</>
+    answer: <>Yes. Recognized among top commercial cleaning companies and as an experienced industrial cleaning company in Massachusetts, we provide customized <Link href="/office-cleaning" className="text-[#0090c8] font-semibold hover:underline">office cleaning services in Massachusetts</Link>, routine <Link href="/janitorial-services" className="text-[#0090c8] font-semibold hover:underline">commercial janitorial services in Massachusetts</Link>, and specialized high technology janitorial services in massachusetts for cleanrooms, laboratories, and manufacturing facilities, including <Link href="/commercial-cleaning-providence-ri" className="text-[#0090c8] font-semibold hover:underline">high technology janitorial services in Rhode Island</Link>.</>
   },
   {
     question: "What areas does Enterprise Cleaning serve?",
-    answer: "Enterprise Cleaning Corporation provides commercial cleaning and janitorial services across Worcester and Central Massachusetts, with service throughout Rhode Island and New Hampshire."
+    answer: <>Enterprise Cleaning Corporation provides commercial cleaning and janitorial services across Worcester and Central Massachusetts, Greater Boston and the I-95/I-495 corridor (including <Link href="/commercial-cleaning-mansfield-ma" className="text-[#0090c8] font-semibold hover:underline">Mansfield, MA</Link>), with service throughout Rhode Island and New Hampshire. Worcester businesses can visit our <Link href="/commercial-cleaning-worcester-ma" className="text-[#0090c8] font-semibold hover:underline">commercial cleaning services in Worcester, MA</Link> page.</>
   },
   {
     question: "What makes Enterprise different from other Worcester cleaning companies?",

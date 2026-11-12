@@ -10,8 +10,8 @@ import {
 } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: { absolute: "Commercial Cleaning Nashua, NH | Enterprise Cleaning Corp" },
-  description: "Commercial cleaning and janitorial services in Nashua, NH. Serving tech, defense, and corporate offices along Route 3. Get a free quote today.",
+  title: { absolute: "Commercial Cleaning in Nashua, NH | Enterprise Cleaning Corp" },
+  description: "Commercial cleaning in Nashua, NH for tech, defense, medical and corporate offices from Gateway Hills to Route 3. Same crew every visit. Free quote.",
   keywords: "commercial cleaning services, commercial cleaning company, office cleaning services, commercial janitorial services, corporate cleaning services near me, industrial cleaning services near me, commercial cleaning near me, office cleaning company near me, commercial cleaning nashua nh",
   alternates: {
     canonical: "https://www.enterprisecleaningcorp.com/commercial-cleaning-nashua-nh"
@@ -142,8 +142,8 @@ export default function NashuaCityPage() {
                 <p className="text-xs font-extrabold uppercase tracking-[0.2em] text-slate-400 mb-2 sm:mb-3">City Service Hub</p>
                 <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-[3.25rem] font-black leading-[1.1] tracking-tight text-slate-900">
                   Commercial<br />
-                  Cleaning Services<br />
-                  <span className="text-[#0090c8]">in Nashua, New Hampshire</span>
+                  Cleaning<br />
+                  <span className="text-[#0090c8]">in Nashua, NH</span>
                 </h1>
               </div>
 
