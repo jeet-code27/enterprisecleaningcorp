@@ -157,22 +157,37 @@ export default async function BlogPostPage({ params }: { params: Params }) {
     recentPosts = [...recentPosts, ...fallbackPosts];
   }
 
-  const baseUrl = process.env.NEXT_PUBLIC_APP_URL || 'https://enterprisecleaning.com';
-  
+  const baseUrl = process.env.NEXT_PUBLIC_APP_URL || 'https://www.enterprisecleaningcorp.com';
+  const canonicalUrl = `${baseUrl}/blog/${post.slug}`;
+
   // Advanced AI & Geo SEO Schema Graph
   const jsonLdGraph: any[] = [
     {
       "@type": "BlogPosting",
-      "@id": `${baseUrl}/blog/${post.slug}#blogposting`,
-      "headline": post.title,
-      "image": post.featuredImage?.url ? [post.featuredImage.url] : [],
-      "datePublished": post.createdAt,
-      "dateModified": post.updatedAt,
-      "author": {
-        "@type": "Person",
-        "name": post.author?.name || "Enterprise Cleaning Team"
+      "@id": `${canonicalUrl}#blogposting`,
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": canonicalUrl
       },
-      "publisher": { "@id": `${baseUrl}/#organization` },
+      "headline": post.title,
+      "description": post.seo?.metaDescription || post.excerpt || post.title,
+      "image": post.featuredImage?.url ? [post.featuredImage.url] : [],
+      "datePublished": post.createdAt ? new Date(post.createdAt).toISOString() : new Date().toISOString(),
+      "dateModified": post.updatedAt ? new Date(post.updatedAt).toISOString() : new Date().toISOString(),
+      "author": {
+        "@type": "Organization",
+        "name": "Enterprise Cleaning Corporation",
+        "url": baseUrl
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Enterprise Cleaning Corporation",
+        "url": baseUrl,
+        "logo": {
+          "@type": "ImageObject",
+          "url": `${baseUrl}/images/logo.png`
+        }
+      },
       "about": post.seo?.targetLocations?.length > 0 ? {
         "@type": "Place",
         "name": post.seo.targetLocations.join(", ")
