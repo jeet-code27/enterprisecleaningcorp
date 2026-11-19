@@ -164,16 +164,19 @@ export default async function BlogPostPage({ params }: { params: Params }) {
   const jsonLdGraph: any[] = [
     {
       "@type": "BlogPosting",
-      "@id": `${canonicalUrl}#blogposting`,
+      "@id": `${canonicalUrl}#article`,
       "mainEntityOfPage": {
         "@type": "WebPage",
         "@id": canonicalUrl
       },
       "headline": post.title,
       "description": post.seo?.metaDescription || post.excerpt || post.title,
-      "image": post.featuredImage?.url ? [post.featuredImage.url] : [],
-      "datePublished": post.createdAt ? new Date(post.createdAt).toISOString() : new Date().toISOString(),
-      "dateModified": post.updatedAt ? new Date(post.updatedAt).toISOString() : new Date().toISOString(),
+      "image": post.featuredImage?.url ? {
+        "@type": "ImageObject",
+        "url": post.featuredImage.url,
+        "width": 1200,
+        "height": 630
+      } : [],
       "author": {
         "@type": "Organization",
         "name": "Enterprise Cleaning Corporation",
@@ -188,6 +191,11 @@ export default async function BlogPostPage({ params }: { params: Params }) {
           "url": `${baseUrl}/images/logo.png`
         }
       },
+      "datePublished": post.createdAt ? new Date(post.createdAt).toISOString() : new Date().toISOString(),
+      "dateModified": post.updatedAt ? new Date(post.updatedAt).toISOString() : new Date().toISOString(),
+      "articleSection": post.category && post.category.length > 0 ? post.category.map((c: any) => c.name).join(", ") : "Commercial Cleaning",
+      "inLanguage": "en-US",
+      "keywords": post.seo?.focusKeyword || (post.tags ? post.tags.map((t: any) => t.name).join(', ') : ""),
       "about": post.seo?.targetLocations?.length > 0 ? {
         "@type": "Place",
         "name": post.seo.targetLocations.join(", ")
