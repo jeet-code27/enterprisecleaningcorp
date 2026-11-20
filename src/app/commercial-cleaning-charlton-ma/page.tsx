@@ -7,8 +7,8 @@ import { CityPageTemplate } from "@/components/templates/city-page-template";
 const SLUG = "charlton-ma";
 
 export const metadata: Metadata = {
-  title: { absolute: "Commercial Cleaning Charlton, MA | Owner-Run, 23+ Years" },
-  description: "Charlton warehouses and offices near the Pike: janitorial and floor care from an owner-run team with 23+ years in Central MA. Get a free quote.",
+  title: { absolute: "Commercial Cleaning Charlton, MA | Enterprise Cleaning Corp" },
+  description: "Commercial cleaning for Charlton offices, retail and light industrial sites. Owner-led since 2003 with 97% client retention. Get your free walkthrough.",
   alternates: {
     canonical: "https://www.enterprisecleaningcorp.com/commercial-cleaning-charlton-ma",
   },
