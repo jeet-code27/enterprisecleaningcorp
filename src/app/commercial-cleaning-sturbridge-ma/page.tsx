@@ -7,8 +7,8 @@ import { CityPageTemplate } from "@/components/templates/city-page-template";
 const SLUG = "sturbridge-ma";
 
 export const metadata: Metadata = {
-  title: { absolute: "Commercial Cleaning Sturbridge, MA | 97% Clients Stay" },
-  description: "Sturbridge offices, retail and hospitality spaces stay guest-ready with nightly janitorial and floor care. 97% client retention. Free quote.",
+  title: { absolute: "Commercial Cleaning Sturbridge, MA | Free Quote" },
+  description: "Commercial cleaning for Sturbridge offices and local businesses. Enterprise Cleaning: Owner-led since 2003 with 97% client retention. Get a free quote.",
   alternates: {
     canonical: "https://www.enterprisecleaningcorp.com/commercial-cleaning-sturbridge-ma",
   },

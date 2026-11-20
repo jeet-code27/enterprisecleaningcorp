@@ -11,7 +11,7 @@ import { RelatedIndustries } from "@/components/ui/related-industries";
 
 export const metadata: Metadata = {
   title: { absolute: "Floor Stripping & Waxing Central MA | Enterprise Cleaning" },
-  description: "Commercial floor stripping, waxing, buffing and carpet care in Central MA. Enterprise Cleaning Corp restores floors to a clean, polished finish. Free quote.",
+  description: "Commercial floor stripping, waxing, buffing and carpet care in Central MA. Enterprise Cleaning Corp restores worn floors to a clean, polished finish. Free quote.",
   keywords: "commercial floor maintenance near me, floor cleaning massachusetts, commercial floor waxing in natick, ma, terrazzo floor cleaning near me, floor cleaning ma, floor cleaning wilmington ma, hardwood floor cleaning worcester ma, VCT stripping and waxing, commercial carpet cleaning Worcester",
   alternates: {
     canonical: "https://www.enterprisecleaningcorp.com/floor-care-services-central-ma"

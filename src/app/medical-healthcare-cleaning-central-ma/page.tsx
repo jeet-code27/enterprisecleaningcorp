@@ -11,8 +11,8 @@ import { CTASection } from "@/components/blocks/cta-with-glow";
 import { RelatedServices } from "@/components/ui/related-services";
 
 export const metadata: Metadata = {
-  title: { absolute: "Medical Cleaning Services in Massachusetts | Free Quote" },
-  description: "Medical cleaning services in Massachusetts for clinics, outpatient centers and care sites. Disinfection-focused, compliance-minded crews. Call 508-304-2369.",
+  title: { absolute: "Medical Facility Cleaning Central MA | Enterprise Cleaning" },
+  description: "Healthcare facility cleaning in Central MA for clinics, outpatient centers and care sites. Disinfection-focused, compliance-minded crews. Request a free quote.",
   keywords: "medical cleaning services in massachusetts, healthcare cleaning worcester ma, healthcare cleaning services worcester ma, doctor office cleaning worcester, medical office cleaning worcester ma, doctor office cleaning company worcester, healthcare cleaning services massachusetts, medical facility cleaning in wellesley, ma, healthcare cleaning services in wellesley, ma",
   alternates: {
     canonical: "https://www.enterprisecleaningcorp.com/medical-healthcare-cleaning-central-ma"

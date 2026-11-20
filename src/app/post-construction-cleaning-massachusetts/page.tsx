@@ -30,10 +30,10 @@ import { gcPostConstructionFaqs } from "@/lib/gc-faqs";
 
 export const metadata: Metadata = {
   title: {
-    absolute: "Post Construction Cleaning Massachusetts | Enterprise Cleaning",
+    absolute: "Post-Construction Cleaning in MA | Enterprise Cleaning Corp",
   },
   description:
-    "Post-construction cleaning in Massachusetts for contractors and builders. Rough clean, final clean and punch-list touch-ups so it's ready. Request a bid.",
+    "Post-construction cleaning in Massachusetts for contractors and builders. Rough clean, final clean and punch-list touch-ups so your space is ready. Request a bid.",
   keywords: [
     "post-construction cleaning Massachusetts",
     "commercial post-construction cleaning Massachusetts",

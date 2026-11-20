@@ -7,8 +7,8 @@ import { CityPageTemplate } from "@/components/templates/city-page-template";
 const SLUG = "dudley-ma";
 
 export const metadata: Metadata = {
-  title: { absolute: "Commercial Cleaning Dudley, MA | No Subcontractors" },
-  description: "Dudley schools, offices and small plants: janitorial, floor care and turnover cleaning without subcontractors. Free quote, insured and bonded.",
+  title: { absolute: "Commercial Cleaning Dudley, MA | Free Quote" },
+  description: "Commercial cleaning for Dudley offices and local businesses. Enterprise Cleaning: Owner-led since 2003 with 97% client retention. Get a free quote.",
   alternates: {
     canonical: "https://www.enterprisecleaningcorp.com/commercial-cleaning-dudley-ma",
   },

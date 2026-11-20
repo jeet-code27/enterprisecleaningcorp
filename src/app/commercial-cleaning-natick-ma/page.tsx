@@ -7,8 +7,8 @@ import { CityPageTemplate } from "@/components/templates/city-page-template";
 const SLUG = "natick-ma";
 
 export const metadata: Metadata = {
-  title: { absolute: "Commercial Cleaning Natick, MA | Free Walkthrough & Quote" },
-  description: "Natick offices, clinics and retail on Route 9: nightly janitorial, carpet cleaning and post-construction cleanup. Owner-supervised. Free quote.",
+  title: { absolute: "Commercial Cleaning Natick, MA | Free Quote" },
+  description: "Commercial cleaning for Natick offices and local businesses. Enterprise Cleaning: Owner-led since 2003 with 97% client retention. Get a free quote.",
   keywords: "commercial cleaning natick ma, office cleaning natick ma, office cleaning west natick, janitorial services natick ma, commercial cleaning services",
   alternates: {
     canonical: "https://www.enterprisecleaningcorp.com/commercial-cleaning-natick-ma",

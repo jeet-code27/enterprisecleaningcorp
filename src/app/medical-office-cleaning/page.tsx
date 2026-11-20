@@ -12,8 +12,8 @@ import { RelatedIndustries } from "@/components/ui/related-industries";
 import { RelatedServices } from "@/components/ui/related-services";
 
 export const metadata: Metadata = {
-  title: { absolute: "Medical Office Cleaning Massachusetts | Salem MA & Statewide" },
-  description: "Medical office cleaning for clinics, dental and healthcare practices in MA. Trained crews, infection-control routines and patient-area focus. Free quote.",
+  title: { absolute: "Medical Office Cleaning Massachusetts | Enterprise Cleaning" },
+  description: "Medical office cleaning for clinics, dental and healthcare practices in Massachusetts. Trained crews, infection-control routines and patient-area focus. Free quote.",
   keywords: "medical office cleaning, medical cleaning services in massachusetts, medical cleaning services in rhode island, healthcare cleaning and disinfectant services company nh, healthcare cleaning in nh, medical office cleaning holden, medical office cleaning company in rhode island, medical facility cleaning rhode island, commercial disinfection services, medical cleaning near me",
   alternates: {
     canonical: "https://www.enterprisecleaningcorp.com/medical-office-cleaning",
@@ -30,8 +30,8 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: "Medical Office Cleaning Massachusetts | Salem MA & Statewide",
-    description: "Medical office cleaning for clinics, dental and healthcare practices in MA. Trained crews, infection-control routines and patient-area focus. Free quote.",
+    title: "Medical Office Cleaning Massachusetts | Enterprise Cleaning",
+    description: "Medical office cleaning for clinics, dental and healthcare practices in Massachusetts. Trained crews, infection-control routines and patient-area focus. Free quote.",
     url: "https://www.enterprisecleaningcorp.com/medical-office-cleaning",
     siteName: "Enterprise Cleaning Corporation",
     locale: "en_US",

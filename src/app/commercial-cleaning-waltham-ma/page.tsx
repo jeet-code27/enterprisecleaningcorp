@@ -10,8 +10,8 @@ import {
 } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: { absolute: "Commercial Cleaning Waltham, MA | Trusted | Free Quote" },
-  description: "Waltham businesses get spotless results, guaranteed nightly. Trained staff, flexible contracts. Free quote — respond within 24 hours.",
+  title: { absolute: "Commercial Cleaning Waltham, MA | Free Quote" },
+  description: "Commercial cleaning for Waltham offices and local businesses. Enterprise Cleaning: Owner-led since 2003 with 97% client retention. Get a free quote.",
   keywords: "commercial cleaning in waltham ma, office cleaning waltham ma, biotech building janitorial services, day porter company in waltham ma, day porter services in waltham ma, floor cleaning waltham ma, commercial cleaning services waltham ma, janitorial services waltham ma, commercial cleaning services massachusetts",
   alternates: {
     canonical: "https://www.enterprisecleaningcorp.com/commercial-cleaning-waltham-ma"

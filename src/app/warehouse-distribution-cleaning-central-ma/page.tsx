@@ -11,8 +11,8 @@ import { CTASection } from "@/components/blocks/cta-with-glow";
 import { RelatedServices } from "@/components/ui/related-services";
 
 export const metadata: Metadata = {
-  title: { absolute: "Distribution Center Cleaning Services | Warehouse Cleaning MA" },
-  description: "Distribution center cleaning services in Massachusetts: floor scrubbing, dock cleaning, dust control and night-shift crews for warehouses. Free quote.",
+  title: { absolute: "Warehouse Cleaning Services Central MA | Enterprise Cleaning" },
+  description: "Warehouse and distribution center cleaning in Central MA. Enterprise Cleaning Corp offers floor scrubbing, dust control and safety-first crews. Get a free quote.",
   keywords: "commercial warehouse cleaning Central MA, distribution center janitorial services, industrial logistics cleaning Worcester, large scale commercial cleaners",
   alternates: {
     canonical: "https://www.enterprisecleaningcorp.com/warehouse-distribution-cleaning-central-ma"

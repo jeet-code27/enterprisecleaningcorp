@@ -7,8 +7,8 @@ import { CityPageTemplate } from "@/components/templates/city-page-template";
 const SLUG = "auburn-ma";
 
 export const metadata: Metadata = {
-  title: { absolute: "Commercial Cleaning Auburn, MA | Free Walkthrough & Quote" },
-  description: "Retail, office or warehouse near I-290 and the Pike? Get nightly janitorial and floor care with 24/7 flood response. Free walkthrough, scope in writing.",
+  title: { absolute: "Commercial Cleaning Auburn, MA | Free Quote" },
+  description: "Commercial cleaning for Auburn offices and local businesses. Enterprise Cleaning: Owner-led since 2003 with 97% client retention. Get a free quote.",
   alternates: {
     canonical: "https://www.enterprisecleaningcorp.com/commercial-cleaning-auburn-ma",
   },

@@ -7,8 +7,8 @@ import { CityPageTemplate } from "@/components/templates/city-page-template";
 const SLUG = "southborough-ma";
 
 export const metadata: Metadata = {
-  title: { absolute: "Commercial Cleaning Southborough, MA | Free Walkthrough" },
-  description: "Southborough offices, minutes off Route 9 and I-495: spotless every morning. Owner-supervised crews, free on-site walkthrough, written quote.",
+  title: { absolute: "Commercial Cleaning Southborough, MA | Free Quote" },
+  description: "Commercial cleaning for Southborough offices and local businesses. Owner-led since 2003 with 97% client retention. Get your free walkthrough.",
   alternates: {
     canonical: "https://www.enterprisecleaningcorp.com/commercial-cleaning-southborough-ma",
   },

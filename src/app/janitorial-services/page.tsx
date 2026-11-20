@@ -13,7 +13,7 @@ import { RelatedServices } from "@/components/ui/related-services";
 
 export const metadata: Metadata = {
   title: { absolute: "Janitorial Services Massachusetts | Enterprise Cleaning" },
-  description: "Janitorial services in Massachusetts with restroom care, restocking and custom nightly or daily schedules. In-house crews, no subcontractors. Free quote.",
+  description: "Commercial janitorial services in Massachusetts with restroom care, restocking and custom nightly or daily schedules. In-house crews, no subcontractors. Free quote.",
   keywords: "janitorial services, janitorial cleaning services, commercial janitorial services, cleaning and janitorial services, office janitorial services near me, janitorial cleaning services near me, janitorial services near me, janitorial company near me, commercial janitorial services in massachusetts, janitor near me, day porter services near me, janitorial staffing agencies near me, commercial disinfection services",
   alternates: {
     canonical: "https://www.enterprisecleaningcorp.com/janitorial-services",
@@ -31,7 +31,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: "Janitorial Services Massachusetts | Enterprise Cleaning",
-    description: "Janitorial services in Massachusetts with restroom care, restocking and custom nightly or daily schedules. In-house crews, no subcontractors. Free quote.",
+    description: "Commercial janitorial services in Massachusetts with restroom care, restocking and custom nightly or daily schedules. In-house crews, no subcontractors. Free quote.",
     url: "https://www.enterprisecleaningcorp.com/janitorial-services",
     siteName: "Enterprise Cleaning Corporation",
     locale: "en_US",

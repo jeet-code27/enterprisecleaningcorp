@@ -10,8 +10,8 @@ import {
 } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: { absolute: "Commercial Cleaning Providence RI | High Technology Janitorial" },
-  description: "Commercial cleaning and high technology janitorial services in Rhode Island: labs, data centers, cleanrooms and R&D offices in Providence. Free quote.",
+  title: { absolute: "Commercial Cleaning Providence, RI | Free Quote" },
+  description: "Commercial cleaning for Providence offices and local businesses. Enterprise Cleaning: Owner-led since 2003 with 97% client retention. Get a free quote.",
   keywords: "commercial cleaning services providence ri, commercial cleaning rhode island, commercial cleaning services rhode island, office cleaning services in rhode island, day porter services providence, industrial cleaning company in rhode island, high technology janitorial services in rhode island, commercial cleaning services ri, medical cleaning services in rhode island, commercial cleaning providence ri",
   alternates: {
     canonical: "https://www.enterprisecleaningcorp.com/commercial-cleaning-providence-ri"

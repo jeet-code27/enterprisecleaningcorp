@@ -8,7 +8,7 @@ import { ContactForm } from "@/components/forms/ContactForm";
 
 export const metadata: Metadata = {
   title: { absolute: "Contact Enterprise Cleaning Corp | Free Quote Worcester" },
-  description: "Contact Enterprise Cleaning Corp in West Boylston, MA for a free on-site walkthrough and written quote. Call 508-304-2369 or request service online today.",
+  description: "Contact Enterprise Cleaning Corp in West Boylston, MA for a free on-site walkthrough and written quote. Call 508-890-1000 or request service online today.",
   keywords: "Contact Enterprise Cleaning Corporation, free commercial cleaning quote, cleaning services Central MA, janitorial quote Rhode Island",
   alternates: {
     canonical: "https://www.enterprisecleaningcorp.com/contact",

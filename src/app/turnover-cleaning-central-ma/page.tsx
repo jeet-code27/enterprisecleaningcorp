@@ -14,7 +14,7 @@ import { RelatedIndustries } from "@/components/ui/related-industries";
 
 export const metadata: Metadata = {
   title: { absolute: "Turnover Cleaning Services Central MA | Enterprise Cleaning" },
-  description: "Move-out and tenant turnover cleaning for property managers in Central MA. Enterprise Cleaning Corp gets units and suites rent-ready fast. Free quote.",
+  description: "Move-out and tenant turnover cleaning for property managers in Central MA. Enterprise Cleaning Corp gets units and commercial suites rent-ready fast. Free quote.",
   keywords: "commercial turnover cleaning Central MA, apartment turnover cleaning services, commercial property turnover cleaners Worcester, tenant changeover cleaning",
   alternates: {
     canonical: "https://www.enterprisecleaningcorp.com/turnover-cleaning-central-ma"

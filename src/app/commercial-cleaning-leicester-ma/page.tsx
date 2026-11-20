@@ -7,8 +7,8 @@ import { CityPageTemplate } from "@/components/templates/city-page-template";
 const SLUG = "leicester-ma";
 
 export const metadata: Metadata = {
-  title: { absolute: "Commercial Cleaning Leicester, MA | Same Crew Every Visit" },
-  description: "Same crew, every visit, in Leicester. They learn your building, access needs and schedule. Janitorial and floor care. Get a free walkthrough.",
+  title: { absolute: "Commercial Cleaning Leicester, MA | Free Quote" },
+  description: "Commercial cleaning for Leicester offices and local businesses. Enterprise Cleaning: Owner-led since 2003 with 97% client retention. Get a free quote.",
   alternates: {
     canonical: "https://www.enterprisecleaningcorp.com/commercial-cleaning-leicester-ma",
   },

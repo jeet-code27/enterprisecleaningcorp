@@ -7,8 +7,8 @@ import { CityPageTemplate } from "@/components/templates/city-page-template";
 const SLUG = "hudson-ma";
 
 export const metadata: Metadata = {
-  title: { absolute: "Commercial Cleaning Hudson, MA | 4x WBJ Award Winner" },
-  description: "Hudson downtown offices, retail and light industrial: 4x WBJ Best of Business cleaning crews, 97% retention. Free walkthrough, written quote.",
+  title: { absolute: "Commercial Cleaning Hudson, MA | Free Quote" },
+  description: "Commercial cleaning for Hudson offices and local businesses. Enterprise Cleaning: Owner-led since 2003 with 97% client retention. Get a free quote.",
   alternates: {
     canonical: "https://www.enterprisecleaningcorp.com/commercial-cleaning-hudson-ma",
   },

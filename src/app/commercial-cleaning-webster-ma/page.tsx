@@ -7,8 +7,8 @@ import { CityPageTemplate } from "@/components/templates/city-page-template";
 const SLUG = "webster-ma";
 
 export const metadata: Metadata = {
-  title: { absolute: "Commercial Cleaning Webster, MA | Free Walkthrough & Quote" },
-  description: "Webster businesses: skip the call center. Talk to the owners, get a free walkthrough and a written quote. Janitorial and floor care by in-house crews.",
+  title: { absolute: "Commercial Cleaning Webster, MA | Free Quote" },
+  description: "Commercial cleaning for Webster offices and local businesses. Enterprise Cleaning: Owner-led since 2003 with 97% client retention. Get a free quote.",
   alternates: {
     canonical: "https://www.enterprisecleaningcorp.com/commercial-cleaning-webster-ma",
   },

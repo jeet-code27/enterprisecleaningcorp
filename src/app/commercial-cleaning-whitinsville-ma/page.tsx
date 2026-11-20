@@ -7,8 +7,8 @@ import { CityPageTemplate } from "@/components/templates/city-page-template";
 const SLUG = "whitinsville-ma";
 
 export const metadata: Metadata = {
-  title: { absolute: "Commercial Cleaning Whitinsville, MA | No Subcontractors" },
-  description: "Whitinsville offices, medical suites and industrial buildings cleaned by in-house crews, never subcontractors. 24/7 emergency response. Get a free quote.",
+  title: { absolute: "Commercial Cleaning Whitinsville, MA | Free Quote" },
+  description: "Commercial cleaning for Whitinsville offices and local businesses. Owner-led since 2003 with 97% client retention. Get your free walkthrough.",
   alternates: {
     canonical: "https://www.enterprisecleaningcorp.com/commercial-cleaning-whitinsville-ma",
   },

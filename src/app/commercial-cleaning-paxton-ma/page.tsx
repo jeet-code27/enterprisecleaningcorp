@@ -7,8 +7,8 @@ import { CityPageTemplate } from "@/components/templates/city-page-template";
 const SLUG = "paxton-ma";
 
 export const metadata: Metadata = {
-  title: { absolute: "Commercial Cleaning Paxton, MA | Free Walkthrough & Quote" },
-  description: "Small office in Paxton? Get big-company reliability: dedicated crew, insured and bonded, owner-accessible. Free on-site walkthrough and written quote.",
+  title: { absolute: "Commercial Cleaning Paxton, MA | Free Quote" },
+  description: "Commercial cleaning for Paxton offices and local businesses. Enterprise Cleaning: Owner-led since 2003 with 97% client retention. Get a free quote.",
   alternates: {
     canonical: "https://www.enterprisecleaningcorp.com/commercial-cleaning-paxton-ma",
   },

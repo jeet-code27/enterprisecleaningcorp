@@ -16,7 +16,7 @@ import FAQAccordionList from "@/app/commercial-cleaning-faq/faq-client";
 
 export const metadata: Metadata = {
   title: { absolute: "Commercial Cleaning FAQs | Enterprise Cleaning Corp" },
-  description: "Answers to common commercial cleaning questions: pricing, schedules, day porters, floor care and emergency cleanup in MA. Ask Enterprise Cleaning Corp.",
+  description: "Answers to common commercial cleaning questions: pricing, schedules, day porters, floor care and emergency cleanup in Massachusetts. Ask Enterprise Cleaning Corp.",
   keywords: "Commercial cleaning FAQ, office cleaning questions, facility manager FAQ, commercial janitorial FAQ, Enterprise Cleaning Corporation questions, Worcester commercial cleaning FAQ",
   alternates: {
     canonical: "https://www.enterprisecleaningcorp.com/commercial-cleaning-faq",

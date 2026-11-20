@@ -7,8 +7,8 @@ import { CityPageTemplate } from "@/components/templates/city-page-template";
 const SLUG = "uxbridge-ma";
 
 export const metadata: Metadata = {
-  title: { absolute: "Commercial Cleaning Uxbridge, MA | Free Walkthrough & Quote" },
-  description: "Uxbridge medical offices, small plants and local businesses: janitorial done right. Free walkthrough, then a written scope and price.",
+  title: { absolute: "Commercial Cleaning Uxbridge, MA | Free Quote" },
+  description: "Commercial cleaning for Uxbridge offices and local businesses. Enterprise Cleaning: Owner-led since 2003 with 97% client retention. Get a free quote.",
   alternates: {
     canonical: "https://www.enterprisecleaningcorp.com/commercial-cleaning-uxbridge-ma",
   },

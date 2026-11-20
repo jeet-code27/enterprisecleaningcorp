@@ -11,8 +11,8 @@ import {
 } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: { absolute: "Commercial Cleaning Westborough, MA | No Subcontractors" },
-  description: "Salt-stained carpets or a new build to hand over? Route 9 and I-495 carpet cleaning and post-construction cleanup by in-house crews. Free quote.",
+  title: { absolute: "Commercial Cleaning Westborough, MA | Free Quote" },
+  description: "Commercial cleaning for Westborough offices and local businesses. Insured and bonded crews, same team every visit. Get your free walkthrough.",
   keywords: "commercial cleaning Westborough MA, carpet cleaning Westborough MA, post-construction cleaning Westborough MA, office cleaning Westborough MA, janitorial services Westborough MA, commercial carpet cleaning Westborough, post construction cleanup Worcester County",
   alternates: {
     canonical: "https://www.enterprisecleaningcorp.com/commercial-cleaning-westborough-ma"

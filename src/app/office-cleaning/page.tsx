@@ -13,7 +13,7 @@ import { RelatedServices } from "@/components/ui/related-services";
 
 export const metadata: Metadata = {
   title: { absolute: "Office Cleaning Services Massachusetts | Enterprise Cleaning" },
-  description: "Office cleaning services in Massachusetts: nightly crews, day porters and custom daily, weekly or monthly plans for your workplace. Book a free walkthrough.",
+  description: "Office cleaning services in Massachusetts: nightly crews, day porters and custom daily, weekly or monthly plans for your workplace. Book a free walkthrough today.",
   keywords: "office cleaning, office cleaning services, commercial office cleaning, commercial office cleaning services near me, office cleaning service near me, office cleaning company near me, clean offices near me, office cleaning services in massachusetts, office cleaning services Worcester MA, office cleaning nabnasset, office cleaning westford ma, office cleaner near me, day porter services near me, daily office cleaning service Worcester, commercial cleaning services Rhode island",
   alternates: {
     canonical: "https://www.enterprisecleaningcorp.com/office-cleaning",
@@ -31,7 +31,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: "Office Cleaning Services Massachusetts | Enterprise Cleaning",
-    description: "Office cleaning services in Massachusetts: nightly crews, day porters and custom daily, weekly or monthly plans for your workplace. Book a free walkthrough.",
+    description: "Office cleaning services in Massachusetts: nightly crews, day porters and custom daily, weekly or monthly plans for your workplace. Book a free walkthrough today.",
     url: "https://www.enterprisecleaningcorp.com/office-cleaning",
     siteName: "Enterprise Cleaning Corporation",
     locale: "en_US",

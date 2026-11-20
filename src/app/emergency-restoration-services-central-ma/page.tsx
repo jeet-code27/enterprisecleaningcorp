@@ -12,7 +12,7 @@ import { EmergencyCallbackForm } from "@/components/forms/emergency-callback-for
 
 export const metadata: Metadata = {
   title: { absolute: "Emergency Restoration Central MA | Enterprise Cleaning Corp" },
-  description: "24/7 emergency cleanup and restoration for Central MA businesses after water, flood, fire or storm damage. Rapid response and insurance support. Call now.",
+  description: "24/7 emergency cleanup and restoration for Central MA businesses after water, flood, fire or storm damage. Rapid response and insurance support. Call for a quote.",
   keywords: "commercial emergency cleanup Central MA, 24/7 commercial water damage restoration, industrial flood cleanup Worcester, commercial disaster recovery cleaning",
   alternates: {
     canonical: "https://www.enterprisecleaningcorp.com/emergency-restoration-services-central-ma"
@@ -35,7 +35,7 @@ const structuredDataService = {
   "@type": "Service",
   "serviceType": "Emergency Water Cleanup & Flood Restoration",
   "name": "24/7 Water Cleanup Worcester MA — Enterprise Cleaning Corporation",
-  "description": "24/7 emergency cleanup and restoration for Central MA businesses after water, flood, fire or storm damage. Rapid response and insurance support. Call now.",
+  "description": "24/7 emergency cleanup and restoration for Central MA businesses after water, flood, fire or storm damage. Rapid response and insurance support. Call for a quote.",
   "url": "https://www.enterprisecleaningcorp.com/emergency-restoration-services-central-ma",
   "provider": {
     "@type": "EmergencyService",

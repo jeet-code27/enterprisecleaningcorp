@@ -11,7 +11,7 @@ import { RelatedIndustries } from "@/components/ui/related-industries";
 
 export const metadata: Metadata = {
   title: { absolute: "Specialty Cleaning Services Central MA | Enterprise Cleaning" },
-  description: "Specialty and deep cleaning for commercial spaces in Central MA, like carpets, windows and one-time projects. Enterprise Cleaning Corp. Request a free quote.",
+  description: "Specialty and deep cleaning for commercial spaces in Central MA, including carpets, windows and one-time projects. Enterprise Cleaning Corp. Request a free quote.",
   keywords: "worcester window washing, window cleaning worcester, window cleaning services worcester, window cleaning near me worcester, worcester window cleaning, window cleaning company worcester, worcester window cleaning company, window washing worcester, window washing near me worcester, worcester window cleaning services, commercial window cleaning Central MA",
   alternates: {
     canonical: "https://www.enterprisecleaningcorp.com/specialty-cleaning-services-central-ma"

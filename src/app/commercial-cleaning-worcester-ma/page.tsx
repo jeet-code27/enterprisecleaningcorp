@@ -12,8 +12,8 @@ import { RailersSponsorship } from "@/components/blocks/railers-sponsorship";
 import { TrustedByMarquee } from "@/components/ui/trusted-by-marquee";
 
 export const metadata: Metadata = {
-  title: { absolute: "Commercial Cleaning Services Worcester, MA | 4x WBJ Winner" },
-  description: "Worcester facility managers keep us for a reason: 97% client retention and 4x WBJ Best of Business. Free walkthrough, written quote, call 508-304-2369.",
+  title: { absolute: "Commercial Cleaning Worcester, MA | Free Quote" },
+  description: "Commercial cleaning for Worcester offices and local businesses. Enterprise Cleaning: Owner-led since 2003 with 97% client retention. Get a free quote.",
   keywords: "Commercial cleaning services, commercial cleaning, janitorial services, office cleaning, commercial office cleaning, commercial cleaning services worcester, worcester commercial cleaning services, medical office cleaning worcester ma, post construction cleaning massachusetts",
   alternates: {
     canonical: "https://www.enterprisecleaningcorp.com/commercial-cleaning-worcester-ma"

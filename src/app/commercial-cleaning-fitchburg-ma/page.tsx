@@ -11,8 +11,8 @@ import {
 } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: { absolute: "Commercial Cleaning Fitchburg, MA | 4x WBJ Award Winner" },
-  description: "Fitchburg offices, medical suites and industrial buildings: 4x WBJ Best of Business, 97% client retention. Free walkthrough: 508-304-2369.",
+  title: { absolute: "Commercial Cleaning Fitchburg, MA | Free Quote" },
+  description: "Commercial cleaning for Fitchburg offices and local businesses. Enterprise Cleaning: Owner-led since 2003 with 97% client retention. Get a free quote.",
   keywords: "commercial cleaning Fitchburg MA, carpet cleaning Fitchburg MA, post-construction cleaning Fitchburg MA, office cleaning Fitchburg MA, janitorial services Fitchburg MA, converted mill cleaning Fitchburg, commercial cleaners Fitchburg",
   alternates: {
     canonical: "https://www.enterprisecleaningcorp.com/commercial-cleaning-fitchburg-ma"
