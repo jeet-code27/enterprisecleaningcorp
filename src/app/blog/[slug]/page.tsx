@@ -43,14 +43,7 @@ export async function generateMetadata({ params }: { params: Params }): Promise<
     canonicalUrl = `https://www.enterprisecleaningcorp.com${canonicalUrl.startsWith('/') ? '' : '/'}${canonicalUrl}`;
   }
 
-  const rawMetaTitle = post.seo?.metaTitle?.trim();
-  const rawTitle = post.title?.trim() || "Blog Article";
-  const siteBrand = "Enterprise Cleaning Corp";
-
-  let metaTitle = rawMetaTitle || rawTitle;
-  if (!metaTitle.includes("Enterprise Cleaning")) {
-    metaTitle = `${metaTitle} | ${siteBrand}`;
-  }
+  const metaTitle = post.seo?.metaTitle?.trim() || post.title?.trim() || "Blog Article";
 
   return {
     title: metaTitle,
