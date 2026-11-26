@@ -8,6 +8,7 @@ import { notFound } from "next/navigation";
 import { Calendar, TagIcon, ArrowLeft, User } from "lucide-react";
 import { Metadata } from "next";
 import { BlogFAQ } from "@/components/blog/BlogFAQ";
+import { BLOG_POST_SCHEMA } from "@/data/blog-post-schema";
 
 export const revalidate = 60; // Revalidate every 60 seconds
 
@@ -209,6 +210,9 @@ export default async function BlogPostPage({ params }: { params: Params }) {
       }
     }
   ];
+
+  const customPosting = BLOG_POST_SCHEMA[post.slug];
+  if (customPosting) jsonLdGraph[0] = customPosting;
 
   if (explicitFaqs.length > 0) {
     jsonLdGraph.push({
