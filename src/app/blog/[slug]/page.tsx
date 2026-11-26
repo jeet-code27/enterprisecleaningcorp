@@ -201,11 +201,13 @@ export default async function BlogPostPage({ params }: { params: Params }) {
       "name": "Enterprise Cleaning Corporation",
       "areaServed": post.seo?.targetLocations?.length > 0 ? post.seo.targetLocations : ["Central Massachusetts", "Worcester, MA"],
       "url": baseUrl,
-      "telephone": "+15089269411", // Add your actual phone number
+      "telephone": "+1-508-890-1000",
       "address": {
         "@type": "PostalAddress",
-        "addressLocality": "Worcester",
+        "streetAddress": "99 Hartwell Street, Suite B",
+        "addressLocality": "West Boylston",
         "addressRegion": "MA",
+        "postalCode": "01583",
         "addressCountry": "US"
       }
     }
